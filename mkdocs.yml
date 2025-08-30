@@ -1,10 +1,10 @@
-site_name: CS自学指南
+site_name: 微电子自学指南
 site_url: https://crys-chen.github.io/Fudan-ME/
-site_author: PKUFlyingPig
+site_author: Crys-Chen
 site_description: >-
-  CS自学指南
+  微电子自学指南
 
-repo_name: cs-self-learning
+repo_name: Fudan-ME
 repo_url: https://github.com/Crys-Chen/Fudan-ME
 
 copyright: Copyright &copy; 2021-present <a href="https://github.com/PKUFlyingPig" target="_blank" rel="noopener noreferrer">PKUFlyingPig</a>
