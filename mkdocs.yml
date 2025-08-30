@@ -52,6 +52,9 @@ theme:
 
   custom_dir: overrides
 
+extra_javascript:
+  - https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js
+
 markdown_extensions:
   - attr_list
   - md_in_html
