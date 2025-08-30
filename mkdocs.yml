@@ -1,8 +1,8 @@
-site_name: 微电子自学指南
+site_name: IC自学指南
 site_url: https://crys-chen.github.io/Fudan-ME/
 site_author: Crys-Chen
 site_description: >-
-  微电子自学指南
+  IC自学指南
 
 repo_name: Fudan-ME
 repo_url: https://github.com/Crys-Chen/Fudan-ME
@@ -56,6 +56,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
+  - pymdownx.superfences:
+      custom_formatters:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - i18n:
