@@ -1,17 +1,29 @@
-<div align="center">
+<!-- <div align="center">
   <img src=./docs/images/title.png >
-</div>
+</div> -->
 
-# CS 自学指南
+# 微电子自学指南
 
-> *Everyone should enjoy CS if you have a good teacher to teach you a good course.*
-
-<a href="https://trendshift.io/repositories/4643" target="_blank"><img src="https://trendshift.io/api/badge/repositories/4643" alt="PKUFlyingPig%2Fcs-self-learning | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+> *本仓库的框架完全从北京大学的[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)处继承而来，感谢前辈！*
 
 [![Website](https://img.shields.io/badge/website-csdiy.wiki-blue)](https://csdiy.wiki)
-[![License](https://img.shields.io/github/license/PKUFlyingPig/cs-self-learning)](https://github.com/PKUFlyingPig/cs-self-learning/blob/master/LICENSE)
-[![Issues](https://img.shields.io/github/issues/PKUFlyingPig/cs-self-learning)](https://github.com/PKUFlyingPig/cs-self-learning/issues)
-[![Stars](https://img.shields.io/github/stars/PKUFlyingPig/cs-self-learning)](https://github.com/PKUFlyingPig/cs-self-learning)
+[![License](https://img.shields.io/github/license/Crys-Chen/Fudan-ME)](https://github.com/Crys-Chen/Fudan-ME/blob/master/LICENSE)
+[![Issues](https://img.shields.io/github/issues/Crys-Chen/Fudan-ME)](https://github.com/Crys-Chen/Fudan-ME/issues)
+[![Stars](https://img.shields.io/github/stars/Crys-Chen/Fudan-ME)](https://github.com/Crys-Chen/Fudan-ME)
+
+## 建站大纲
+
+- **知识体系梳理**：以复旦大学微电子专业培养方案为基础，梳理微电子包罗万象的知识体系。
+
+- **科研方向巡礼**：横向涵盖电子设计自动化（EDA）、计算机体系结构、数字电路设计、模拟电路设计、半导体器件工艺、先进封装技术等，纵向涵盖AI芯片、嵌入式SoC、FPGA、硬件安全、具身智能、近存计算等。
+
+- **导师通讯录**：罗列国内外相关领域的知名教授及其研究方向，帮助大家匹配科研导师。
+
+- **资料分享**：以复旦大学专业课程为基础，无偿分享学习资料。
+
+  > - PPT：由于PPT涉及到任课老师的知识产权问题，假如老师未主动将课程资源上传到公开互联网，我们也不会上传该课程的PPT。
+  > - 往年试题：各门课程的往年期中期末试题早已在学生群体内部广泛流传，假如我们继续掩耳盗铃，会让没有从学长姐处获得往年试题的同学处于劣势，这对不善交际或不屑于此的同学不公平。因此我们收集了一些广泛流传的往年试题，在此一并公开。也希望各位老师关注到后及时更新自己的题库。
+
 
 
 新冠肆虐，网课当道，CS 爆火，这一系列的事件都让自学计算机成为了一种潮流。
@@ -30,11 +42,11 @@
 
 ## 如何成为贡献者
 
-一个人的力量终究是有限的，对于书中任意章节你若有想要补充的内容，欢迎各位提出 [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)。如果你想贡献一门新的课程，可以参考目前 repo 中的 [template](./template.md) 文件作为模版，并在 [mkdocs.yml](./mkdocs.yml) 文件中添加其navigation，当然你还可以在 [CS 学习规划](./docs/CS学习规划.md) 里的对应模块为其添加言简意赅的导语。如果你有想推荐的书籍，请参考 [好书推荐](https://raw.githubusercontent.com/PKUFlyingPig/cs-self-learning/master/docs/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90.md) 模块上方的注释按相应格式添加内容。
+一个人的力量终究是有限的，对于书中任意章节你若有想要补充的内容，欢迎各位提出 [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)。如果你想贡献一门新的课程，可以参考目前 repo 中的 [template](./template.md) 文件作为模版，并在 [mkdocs.yml](./mkdocs.yml) 文件中添加其navigation，当然你还可以在 [CS 学习规划](./docs/CS学习规划.md) 里的对应模块为其添加言简意赅的导语。如果你有想推荐的书籍，请参考 [好书推荐](https://raw.githubusercontent.com/Crys-Chen/Fudan-ME/master/docs/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90.md) 模块上方的注释按相应格式添加内容。
 
-对于中英混合排版的要点规范，可以参考[这个仓库](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-Hans.md)，我们将会对您的 Pull Request 做相应的校对，具体原因参见这个 [issue](https://github.com/PKUFlyingPig/cs-self-learning/issues/114)。
+对于中英混合排版的要点规范，可以参考[这个仓库](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-Hans.md)，我们将会对您的 Pull Request 做相应的校对，具体原因参见这个 [issue](https://github.com/Crys-Chen/Fudan-ME/issues/114)。
 
-本书支持英文版，因此贡献的内容需要提供对应的英文翻译，具体流程可以参考这个 [issue](https://github.com/PKUFlyingPig/cs-self-learning/issues/222)。
+本书支持英文版，因此贡献的内容需要提供对应的英文翻译，具体流程可以参考这个 [issue](https://github.com/Crys-Chen/Fudan-ME/issues/222)。
 
 同时由于个人水平有限，书中难免有笔误甚至概念错误之处，也请各位不吝赐教，在 issue 中提出来。
 
@@ -44,14 +56,14 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=PKUFlyingPig/cs-self-learning&type=Timeline)](https://star-history.com/#PKUFlyingPig/cs-self-learning&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=Crys-Chen/Fudan-ME&type=Timeline)](https://star-history.com/#Crys-Chen/Fudan-ME&Timeline)
 
 ## ✨ 鸣谢
 
-特别感谢 @[AlfredThiel](https://github.com/AlfredThiel) 为项目制作了精美的 Logo。
+
 <!--  support by https://contrib.rocks -->
-<a href="https://github.com/PKUFlyingPig/cs-self-learning/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PKUFlyingPig/cs-self-learning"/>
+<a href="https://github.com/Crys-Chen/Fudan-ME/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Crys-Chen/Fudan-ME"/>
 </a>
 
 ## 许可
