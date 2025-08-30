@@ -56,11 +56,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
-  - pymdownx.superfences:
-      custom_formatters:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.superfences:
+  #     custom_formatters:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - i18n:
