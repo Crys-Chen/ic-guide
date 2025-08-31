@@ -53,7 +53,8 @@ theme:
   custom_dir: overrides
 
 extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  # - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
   - javascripts/config.js
 
 markdown_extensions:
