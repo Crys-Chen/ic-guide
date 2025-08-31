@@ -1,1 +1,1 @@
-mermaid.initialize({ startOnLoad: true });
+window.addEventListener("load", () => { mermaid.initialize({ startOnLoad: true }); });
