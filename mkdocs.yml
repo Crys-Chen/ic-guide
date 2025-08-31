@@ -52,29 +52,11 @@ theme:
 
   custom_dir: overrides
 
-# extra_javascript:
-#   # - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-#   - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
-#   - javascripts/config.js
-
 markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
   - admonition
-  # - pymdownx.details
-  # - pymdownx.superfences
-  
-  # - pymdownx.superfences:
-  #     custom_formatters:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - i18n:
