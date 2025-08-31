@@ -52,12 +52,16 @@ theme:
 
   custom_dir: overrides
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/config.js
+
 markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
   - admonition
-  - pymdownx.details
+  # - pymdownx.details
   - pymdownx.superfences
   
   # - pymdownx.superfences:
