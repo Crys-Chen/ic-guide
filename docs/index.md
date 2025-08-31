@@ -15,6 +15,16 @@
 这是一个流程图示例：
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    markdown["`This **is** _Markdown_`"]
+    newLines["`Line1
+    Line 2
+    Line 3`"]
+    markdown --> newLines
+```
+
+```mermaid
 graph TD
     A[开始] --> B(处理中);
     B --> C{决策};
