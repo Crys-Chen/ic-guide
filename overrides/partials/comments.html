@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 </script>
 
-<head>
+<!-- <head>
 	...
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js" type="text/javascript"></script>
 	...
@@ -67,4 +67,10 @@ document.addEventListener("DOMContentLoaded", function() {
         mermaid.initialize(config);
         window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     </script>
-</body>
+</body> -->
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true,theme:'neutral'})
+    await mermaid.run({querySelector:'code.language-mermaid'})
+</script>
