@@ -47,3 +47,24 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 })
 </script>
+
+<head>
+	...
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js" type="text/javascript"></script>
+	...
+</head>
+<body>
+    ...
+    <script>
+        var config = {
+            startOnLoad: true,
+            theme: 'forest',
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true
+            }
+        };
+        mermaid.initialize(config);
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    </script>
+</body>

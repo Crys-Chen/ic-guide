@@ -14,36 +14,23 @@
 
 这是一个流程图示例：
 
+```mermaid
+graph TD
+    A[开始] --> B(处理中);
+    B --> C{决策};
+    C -->|条件一| D[结果一];
+    C -->|条件二| E[结果二];
+```
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mermaid Example</title>
+这是一个饼图示例：
 
-    <!-- Load Mermaid Library in the head -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>
-        // Initialize Mermaid on DOMContentLoaded to ensure all elements are ready
-        document.addEventListener('DOMContentLoaded', function() {
-            mermaid.initialize({ startOnLoad: true });
-        });
-    </script>
-</head>
-<body>
-
-    <!-- Mermaid diagram code block -->
-    <div class="mermaid">
-    graph TD
-        A[Start] --> B{Is it working?};
-        B -->|Yes| C[Great!];
-        B -->|No| D[Debug Further];
-        C --> E[End];
-        D --> E;
-    </div>
-
-</body>
-
-
+```mermaid
+pie
+    title 宠物拥有情况
+    "狗" : 386
+    "猫" : 85
+    "鱼" : 15
+```
 
 这个方向是计算机+集成电路交叉的一个典型，目前没有一个本科专业能囊括该方向所需要的基础知识。因此，对这个方向感兴趣的同学，如果本科是集成电路，可以自行补充AI相关知识；如果本科学计算机，可以自行补充数字电路相关知识。我们之后会列出各个细分方向所需要的基础课程，高年级的同学可以以此为参考，查缺补漏；低年级的同学也可以根据自己的兴趣，在之后的选课中有所侧重。在网课如此兴盛的当下，尽管内地几百所高校凑不出一门能听的线性代数课程，但MIT早就将大牛Gilbert Strang的高质量课程公开，自助者天助之。
 
