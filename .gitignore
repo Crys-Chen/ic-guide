@@ -3,3 +3,5 @@
 archive/
 /venv
 /site
+/old_docs
+*.pdf
