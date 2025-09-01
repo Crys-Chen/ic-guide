@@ -1,4 +1,4 @@
-# Stanford: Cryptography I
+# Stanford: 密码学 I
 
 ## 课程简介
 
