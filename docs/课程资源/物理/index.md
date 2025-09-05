@@ -1,4 +1,4 @@
-# 知识体系
+# 知识谱系
 ```mermaid
 graph
 	Phy[大学物理]
@@ -10,6 +10,7 @@ graph
 	Quantum --> Solid
 	Solid --> Semi
 ```
+
 
 # 物理在ECE的地位
 物理对ECE有什么作用呢？
