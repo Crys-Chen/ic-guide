@@ -249,6 +249,40 @@
   margin-top: .4em;
 }
 
+/* ─── 科研方向层次图 ─────────────────────────────────────── */
+.dm-wrap { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0 2rem; }
+.dm-row { display: flex; align-items: center; gap: .8rem; padding: .75rem 1rem; border-radius: 10px; flex-wrap: wrap; }
+.dm-device  { background: #FEF3E2; border-left: 4px solid #F97316; }
+.dm-circuit { background: #F0FDF4; border-left: 4px solid #16A34A; }
+.dm-arch    { background: #FFFBEB; border-left: 4px solid #D97706; }
+.dm-cross   { background: #EFF6FF; border-left: 4px solid #3B82F6; }
+.dm-lbl { font-weight: 700; font-size: .8rem; min-width: 7.5em; white-space: nowrap; }
+.dm-device .dm-lbl  { color: #C2410C; }
+.dm-circuit .dm-lbl { color: #15803D; }
+.dm-arch .dm-lbl    { color: #B45309; }
+.dm-cross .dm-lbl   { color: #1D4ED8; }
+.dm-chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+.dm-chip { border-radius: 12px; padding: .22em .75em; font-size: .78rem; text-decoration: none !important; transition: filter .15s, transform .12s; }
+.dm-chip:hover { filter: brightness(.9); transform: translateY(-1px); }
+.dm-device .dm-chip  { background: rgba(249,115,22,.12); color: #C2410C !important; border: 1px solid rgba(249,115,22,.28); }
+.dm-circuit .dm-chip { background: rgba(22,163,74,.1);   color: #15803D !important; border: 1px solid rgba(22,163,74,.25); }
+.dm-arch .dm-chip    { background: rgba(217,119,6,.1);   color: #B45309 !important; border: 1px solid rgba(217,119,6,.25); }
+.dm-cross .dm-chip   { background: rgba(59,130,246,.1);  color: #1D4ED8 !important; border: 1px solid rgba(59,130,246,.25); }
+.dm-conn { text-align: center; color: var(--md-default-fg-color--lighter); font-size: .85rem; padding: .1rem 1.5rem; user-select: none; }
+.dm-dotted { letter-spacing: .15em; font-style: italic; }
+[data-md-color-scheme="slate"] .dm-device  { background: rgba(249,115,22,.1); }
+[data-md-color-scheme="slate"] .dm-circuit { background: rgba(22,163,74,.1); }
+[data-md-color-scheme="slate"] .dm-arch    { background: rgba(217,119,6,.1); }
+[data-md-color-scheme="slate"] .dm-cross   { background: rgba(59,130,246,.1); }
+[data-md-color-scheme="slate"] .dm-device .dm-chip  { color: #FB923C !important; border-color: rgba(249,115,22,.35); background: rgba(249,115,22,.15); }
+[data-md-color-scheme="slate"] .dm-circuit .dm-chip { color: #4ADE80 !important; border-color: rgba(22,163,74,.35);   background: rgba(22,163,74,.15); }
+[data-md-color-scheme="slate"] .dm-arch .dm-chip    { color: #FCD34D !important; border-color: rgba(217,119,6,.35);   background: rgba(217,119,6,.15); }
+[data-md-color-scheme="slate"] .dm-cross .dm-chip   { color: #93C5FD !important; border-color: rgba(59,130,246,.35);  background: rgba(59,130,246,.15); }
+@media (max-width: 600px) {
+  .dm-lbl { min-width: 100%; margin-bottom: .25rem; font-size: .75rem; }
+  .dm-conn { padding: .1rem 0; }
+}
+
 /* ─── 首页 Hero 轮播 ─────────────────────────────────────── */
 .hero-carousel {
   position: relative;
