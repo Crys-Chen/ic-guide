@@ -174,6 +174,12 @@ plugins:
       minify_html: true
   - open-in-new-tab:
 
+extra_css:
+  - stylesheets/likes.css
+
+extra_javascript:
+  - javascripts/likes.js
+
 extra:
   social:
     - icon: fontawesome/brands/github

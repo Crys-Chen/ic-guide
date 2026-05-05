@@ -46,6 +46,10 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 | [李萌（Meng Li）](https://mengli.me/) | 北京大学集成电路学院（国优青海外） | EDA 与硬件软件协同设计、高效安全多模态 AI 加速，EDAA 杰出博士论文奖 |
 | [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室） | 模拟电路 EDA、ML 辅助 IC 设计自动化 |
 | [郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/) | 上海交通大学密西根学院 | AI 辅助 EDA、低功耗设计、FPGA 加速器 |
+| [谢知遥（Zhiyao Xie）](https://zhiyaoxie.com/) | 香港科技大学电子与计算机工程系 | AI 辅助 EDA，聚焦功耗建模、RTL 代码生成（LLM for EDA）、时序分析；ACM+EDAA Outstanding Dissertation Award 双奖（2023），MICRO 2021 最佳论文，RGC Early Career Award |
+| [余蓓（Bei Yu）](https://www.cse.cuhk.edu.hk/~byu/) | 香港中文大学计算机科学与工程系（副教授） | ML + EDA，光刻热点检测（OPC/DFM）、布局布线优化、LLM for EDA；10 项顶会最佳论文，引用 13,971+ |
+| [何宗毅（Tsung-Yi Ho）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/) | 香港中文大学计算机科学与工程系（IEEE Fellow 2024） | 3D IC/先进封装 EDA、Chiplet 设计自动化、微流控生物芯片设计自动化 |
+| [徐强（Qiang Xu）](https://www.cse.cuhk.edu.hk/~qxu/) | 香港中文大学计算机科学与工程系（教授） | EDA 测试与验证、硬件安全（VeriTrust 硬件信任验证）、近似计算；8000+ 引用，ICCAD 十年回顾最具影响力论文 |
 
 **国际**
 

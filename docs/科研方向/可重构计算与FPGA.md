@@ -43,6 +43,8 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 | [梁云（Eric Liang）](https://ericlyun.github.io/) | 北京大学集成电路学院 | FPGA HLS 编译优化、硬件软件协同设计、神经网络 FPGA 加速 |
 | [王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm) | 复旦大学微电子学院 | FPGA 结构研究与安全可编程计算、抗辐射 FPGA、可重构系统（上海市技术发明奖，前 Altera 欧洲研发中心） |
 | [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室） | 模拟电路 EDA 与 ML 辅助 IC 设计自动化，涉及 FPGA 流程 |
+| [张薇（Wei Zhang）](https://ece.hkust.edu.hk/eeweiz) | 香港科技大学电子与计算机工程系（IEEE Fellow 2026） | FPGA 敏捷设计流程、硬件-软件协同设计（含嵌入式安全应用）、DNN FPGA 加速；ICCAD 2017 & 2022 最佳论文 |
+| [何国曦（Hayden Kwok-Hay So）](https://www.eee.hku.hk/~hso/) | 香港大学电气与电子工程系（副教授，CASR Lab 主任） | 异构可重构计算系统、FPGA Overlay（QuickDough 框架）、事件驱动视觉处理；Croucher Innovation Award 2013 |
 
 **国际**
 
