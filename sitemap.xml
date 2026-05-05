@@ -533,6 +533,20 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/GitHub/"/>
     </url>
     <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/"/>
+    </url>
+    <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/"/>
+    </url>
+    <url>
         <loc>https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LaTeX/</loc>
         <lastmod>2026-05-05</lastmod>
         <changefreq>daily</changefreq>
@@ -580,6 +594,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
+    </url>
+    <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
     </url>
     <url>
         <loc>https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%BF%BB%E5%A2%99/</loc>
@@ -2038,6 +2059,20 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/GitHub/"/>
     </url>
     <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/KiCad/"/>
+    </url>
+    <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LTspice/"/>
+    </url>
+    <url>
         <loc>https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/LaTeX/</loc>
         <lastmod>2026-05-05</lastmod>
         <changefreq>daily</changefreq>
@@ -2085,6 +2120,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/"/>
+    </url>
+    <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/"/>
     </url>
     <url>
         <loc>https://crys-chen.github.io/Fudan-ME/en/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/%E7%BF%BB%E5%A2%99/</loc>
