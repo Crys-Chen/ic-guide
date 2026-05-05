@@ -123,7 +123,7 @@
 /* 所有导航链接悬停/激活色统一为 primary，覆盖 Material 的 accent */
 .md-nav__link:hover,
 .md-nav__link:focus {
-  color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color) !important;
 }
 
 /* ─── 侧边栏当前节标题 ──────────────────────────────────── */
@@ -508,7 +508,7 @@
   cursor: pointer;
   transition: background .2s ease;
   backdrop-filter: blur(4px);
-  z-index: 10;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,7 +529,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero-dot {
@@ -659,4 +659,21 @@
 .md-typeset h2:hover,
 .md-typeset h3:hover {
   transform: scaleX(1.012) translateX(2px);
+}
+
+/* ─── 移动端导航抽屉优化 ──────────────────────────────────── */
+@media screen and (max-width: 76.25em) {
+  /* 抽屉内导航条目字号和行高 */
+  .md-nav--primary .md-nav__link {
+    font-size: .95rem;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+  }
+
+  /* active/hover 颜色统一（移动端也要强制覆盖） */
+  .md-nav__link--active,
+  .md-nav__link:hover,
+  .md-nav__link:focus {
+    color: var(--md-primary-fg-color) !important;
+  }
 }
