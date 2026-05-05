@@ -36,23 +36,23 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 **国内**
 
-| 姓名 | 单位 | 主页 | 研究方向 |
-|------|------|------|----------|
-| [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm) | 清华大学集成电路学院（IEEE Fellow） | 个人主页 | 可重构计算架构、软件定义芯片、VLSI 设计方法学；国内可重构计算方向奠基人之一 |
-| [刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm) | 清华大学集成电路学院 | 个人主页 | 软件定义芯片架构与编译器、密码处理器、可重构计算系统，400+ 论文 200+ 专利 |
-| [梁云（Eric Liang）](https://ericlyun.github.io/) | 北京大学集成电路学院 | 个人主页 | FPGA HLS 编译优化、硬件软件协同设计、神经网络 FPGA 加速 |
-| [王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm) | 复旦大学微电子学院 | 复旦教师页 | FPGA 结构研究与安全可编程计算、抗辐射 FPGA、可重构系统（上海市技术发明奖，前 Altera 欧洲研发中心） |
-| [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室） | ASIC 实验室 | 模拟电路 EDA 与 ML 辅助 IC 设计自动化，涉及 FPGA 流程 |
+| 姓名 | 单位 | 研究方向 |
+|------|------|----------|
+| [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm) | 清华大学集成电路学院（IEEE Fellow） | 可重构计算架构、软件定义芯片、VLSI 设计方法学；国内可重构计算方向奠基人之一 |
+| [刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm) | 清华大学集成电路学院 | 软件定义芯片架构与编译器、密码处理器、可重构计算系统，400+ 论文 200+ 专利 |
+| [梁云（Eric Liang）](https://ericlyun.github.io/) | 北京大学集成电路学院 | FPGA HLS 编译优化、硬件软件协同设计、神经网络 FPGA 加速 |
+| [王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm) | 复旦大学微电子学院 | FPGA 结构研究与安全可编程计算、抗辐射 FPGA、可重构系统（上海市技术发明奖，前 Altera 欧洲研发中心） |
+| [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室） | 模拟电路 EDA 与 ML 辅助 IC 设计自动化，涉及 FPGA 流程 |
 
 **国际**
 
-| 姓名 | 单位 | 主页 | 研究方向 |
-|------|------|------|----------|
-| [Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/) | University of Toronto ECE | 个人主页 | FPGA 架构与 CAD 先驱，VPR/VTR 开源工具主导开发者；FPGA 布局布线算法最权威学者 |
-| [Jason Anderson](https://janders.eecg.utoronto.ca/) | University of Toronto ECE | 个人主页 | FPGA 架构设计（LUT/FF/路由结构）、HLS、FPGA 物理设计自动化 |
-| [Deming Chen](https://dchen.ece.illinois.edu/) | UIUC ECE | Chen Group | FPGA HLS、ML for EDA、FPGA 加速神经网络，Xilinx/AMD 合作密切 |
-| [Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong) | UCLA CS（美国工程院院士） | VAST Lab | FPGA 设计自动化先驱、HLS（FPGA 专属 HLS 工具 AUTOESL 创始人，后被 Xilinx 收购），现专注领域专用计算 |
-| [Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/) | Cornell ECE | Zhang Research Group | 高层次综合（HLS）算法、FPGA 加速器自动生成、硬件-算法协同优化 |
+| 姓名 | 单位 | 研究方向 |
+|------|------|----------|
+| [Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/) | University of Toronto ECE | FPGA 架构与 CAD 先驱，VPR/VTR 开源工具主导开发者；FPGA 布局布线算法最权威学者 |
+| [Jason Anderson](https://janders.eecg.utoronto.ca/) | University of Toronto ECE | FPGA 架构设计（LUT/FF/路由结构）、HLS、FPGA 物理设计自动化 |
+| [Deming Chen](https://dchen.ece.illinois.edu/) | UIUC ECE | FPGA HLS、ML for EDA、FPGA 加速神经网络，Xilinx/AMD 合作密切 |
+| [Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong) | UCLA CS（美国工程院院士） | FPGA 设计自动化先驱、HLS（FPGA 专属 HLS 工具 AUTOESL 创始人，后被 Xilinx 收购），现专注领域专用计算 |
+| [Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/) | Cornell ECE | 高层次综合（HLS）算法、FPGA 加速器自动生成、硬件-算法协同优化 |
 
 ## 知识路径
 
