@@ -119,6 +119,33 @@ plugins:
             机器学习进阶: Advanced Machine Learning
             学习路线图: Roadmap
             后记: Postscript
+            课程资源: Course Resources
+            数学: Mathematics
+            物理: Physics
+            器件与工艺: Devices and Fabrication
+            电路: Circuits
+            算法编程: Algorithm and Programming
+            系统架构: System Architecture
+            前端: Frontend
+            导言: Introduction
+            速通: Quick Start
+            嵌入式SoC: Embedded SoC
+            集成电路工艺: IC Fabrication
+            数字: Digital Circuits
+            模拟: Analog Circuits
+            信号处理: Signal Processing
+            数字逻辑基础: Digital Logic
+            数字集成电路: Digital IC
+            模拟电子线路: Analog Electronics
+            模拟集成电路: Analog IC
+            电路分析基础: Circuit Analysis
+            数模模数转换器: ADC/DAC
+            硬件描述语言(HDL): Hardware Description Language
+            高频电子线路: High-Frequency Circuits
+            射频集成电路: RF Integrated Circuits
+            EDA工具: EDA Tools
+            数字EDA: Digital EDA
+            模拟EDA: Analog EDA
   - search:
       lang:
         - zh
@@ -140,9 +167,9 @@ nav:
   - 前言: "index.md"
   - 如何使用这本书: "使用指南.md"
   - 一个仅供参考的CS学习规划: "CS学习规划.md"
-  - 知识体系: "知识体系.md"
+  - 知识谱系: "知识谱系.md"
   - 课程资源:
-    - 数学: 
+    - 数学:
       - 导言: "课程资源/数学/index.md"
       - 数学基础:
         - 数学分析:
@@ -159,16 +186,16 @@ nav:
           - "MIT 6.042J": "课程资源/数学/数学进阶/速通/6.042J.md"
         - 矩阵分析:
           - "MIT18.065": "课程资源/数学/数学进阶/矩阵分析/MIT18.065.md"
-          - "严质彬(哈工大)": "课程资源/数学/数学进阶/矩阵分析/HIT.md"
+          - 严质彬(哈工大): "课程资源/数学/数学进阶/矩阵分析/HIT.md"
         - 高等代数:
-          - "丘维声(北大)": "课程资源/数学/数学进阶/高等代数/pku.md"
+          - 丘维声(北大): "课程资源/数学/数学进阶/高等代数/pku.md"
         - 抽象代数:
-          - "Harvard": "课程资源/数学/数学进阶/抽象代数/harvard.md"
+          - Harvard: "课程资源/数学/数学进阶/抽象代数/harvard.md"
         - 密码学:
-          - "Standford": "课程资源/数学/数学进阶/密码学/StandfordCrypto.md"
+          - Standford: "课程资源/数学/数学进阶/密码学/StandfordCrypto.md"
         - 信息论:
-          - "信息论基础": "课程资源/数学/数学进阶/信息论/information.md"
-          - "信息论进阶(UCB CS126)": 课程资源/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
+          - 信息论基础: "课程资源/数学/数学进阶/信息论/information.md"
+          - "信息论进阶(UCB CS126)": "课程资源/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
         - 离散数学:
           - "UCB CS126": "课程资源/数学/数学进阶/离散数学/CS126.md"
         - 数值分析:
@@ -176,7 +203,7 @@ nav:
         - 凸优化:
           - "Standford EE364A": "课程资源/数学/数学进阶/凸优化/convex.md"
         - 复变函数:
-          - "Bilibili": "课程资源/数学/数学进阶/复变函数/bilibili.md"
+          - Bilibili: "课程资源/数学/数学进阶/复变函数/bilibili.md"
     - 物理:
       - 导言: "课程资源/物理/index.md"
       - 大学物理:
@@ -189,163 +216,193 @@ nav:
         - 半导体物理(复旦): "课程资源/物理/半导体物理/MICR130005.md"
       - 其他:
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
+    - 器件与工艺:
+      - 集成电路工艺:
+        - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
+    - 电路:
+      - 导言: "课程资源/电路/index.md"
+      - 速通:
+        - "EE16A&B: Designing Information Devices and Systems": "课程资源/电路/速通/EE16.md"
+        - "UCB EE120: Signal and Systems": "课程资源/电路/速通/signal.md"
+        - "MIT 6.007 Signals and Systems": "课程资源/电路/速通/Signals_and_Systems_AVO.md"
+      - 硬件描述语言(HDL):
+        - Verilog:
+          - "HDLBits: Verilog Practice": "课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md"
+          - "Nandland: Learn FPGA & Verilog": "课程资源/电路/硬件描述语言(HDL)/Verilog/nandland.md"
+          - "UCB EECS151/251A": "课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md"
+        - Chisel:
+          - Chisel Bootcamp: "课程资源/电路/硬件描述语言(HDL)/Chisel/chisel-bootcamp.md"
+      - 数字:
+        - 数字逻辑基础:
+          - 数字逻辑基础(复旦): "课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md"
+        - 数字集成电路:
+          - 数字集成电路设计原理(复旦): "课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
+      - 模拟:
+        - 模拟电子线路:
+          - 模拟电子线路(复旦): "课程资源/电路/模拟/模拟电子线路/MICR130002.md"
+        - 模拟集成电路:
+          - 模拟集成电路(复旦): "课程资源/电路/模拟/模拟集成电路/MICR130030.md"
+        - 电路分析基础:
+          - 电路基础(Bilibili): "课程资源/电路/模拟/电路分析基础/tingyi.md"
+        - 高频电子线路:
+          - "EE613: High-Frequency Analog Circuit Design": "课程资源/电路/模拟/高频电子线路/EE613.md"
+          - "MIT 6.776: High Speed Communication Circuits": "课程资源/电路/模拟/高频电子线路/MIT6.776.md"
+        - 射频集成电路:
+          - "Razavi RF Microelectronics (UCLA EE164)": "课程资源/电路/模拟/射频集成电路/razavi_rf.md"
+          - "UCB EE142: IC for Communications": "课程资源/电路/模拟/射频集成电路/EE142.md"
+      - 信号处理:
+        - 信号与系统:
+          - "MIT 6.003: Signals and Systems": "课程资源/电路/信号处理/信号与系统/MIT6.003.md"
+          - "UCB EE120: Signals and Systems": "课程资源/电路/信号处理/信号与系统/EE120.md"
+        - 数模模数转换器:
+          - 数模模数转换器(复旦): "课程资源/电路/信号处理/数模模数转换器/INFO130270.md"
+      - EDA工具:
+        - 数字EDA:
+          - "Vivado 入门": "课程资源/电路/EDA/vivado.md"
+        - 模拟EDA:
+          - "Cadence Virtuoso 入门": "课程资源/电路/EDA/cadence.md"
+      - 嵌入式SoC:
+        - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
+    - 算法编程:
+      - 编程入门:
+        - MIT-Missing-Semester: "课程资源/算法编程/编程入门/MIT-Missing-Semester.md"
+        - "Sysadmin DeCal": "课程资源/算法编程/编程入门/DeCal.md"
+        - Python 语言:
+          - "UCB CS61A": "课程资源/算法编程/编程入门/Python/CS61A.md"
+          - "CS50P": "课程资源/算法编程/编程入门/Python/CS50P.md"
+          - "MIT6.100L": "课程资源/算法编程/编程入门/Python/MIT6.100L.md"
+        - C 语言:
+          - "Harvard CS50": "课程资源/算法编程/编程入门/C/CS50.md"
+          - "Duke Introductory C Programming": "课程资源/算法编程/编程入门/C/Duke-Coursera-Intro-C.md"
+        - C++ 语言:
+          - "AUT AP1400-2: Advanced Programming": "课程资源/算法编程/编程入门/cpp/AUT1400.md"
+          - "Stanford CS106L": "课程资源/算法编程/编程入门/cpp/CS106L.md"
+          - "Stanford CS106B/X": "课程资源/算法编程/编程入门/cpp/CS106B_CS106X.md"
+        - Rust 语言:
+          - "Stanford CS110L": "课程资源/算法编程/编程入门/Rust/CS110L.md"
+          - "KAIST CS220": "课程资源/算法编程/编程入门/Rust/cs220.md"
+          - "KAIST CS431": "课程资源/算法编程/编程入门/Rust/cs431.md"
+      - 数据结构与算法:
+        - "UCB CS61B": "课程资源/算法编程/数据结构与算法/CS61B.md"
+        - "Coursera: Algorithms I & II": "课程资源/算法编程/数据结构与算法/Algo.md"
+        - "MIT 6.006": "课程资源/算法编程/数据结构与算法/6.006.md"
+        - "MIT 6.046": "课程资源/算法编程/数据结构与算法/6.046.md"
+        - "UCB CS170": "课程资源/算法编程/数据结构与算法/CS170.md"
+      - 编程语言设计与分析:
+        - "Stanford CS242": "课程资源/算法编程/编程语言设计与分析/CS242.md"
+        - NJU 软件分析: "课程资源/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md"
+        - PKU 软件分析: "课程资源/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
+        - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
+    - 系统架构:
+      - 计算机系统基础:
+        - "CMU 15-213: CSAPP": "课程资源/系统架构/速通/CSAPP.md"
+        - "Stanford CS110": "课程资源/系统架构/速通/CS110.md"
+      - 体系结构:
+        - "Coursera: Nand2Tetris": "课程资源/系统架构/体系结构/N2T.md"
+        - "UCB CS61C": "课程资源/系统架构/体系结构/CS61C.md"
+        - "ETHz: Digital Design and Computer Architecture": "课程资源/系统架构/体系结构/DDCA.md"
+        - "ETHz: Computer Architecture": "课程资源/系统架构/体系结构/CA.md"
+      - 操作系统:
+        - "MIT 6.S081": "课程资源/系统架构/操作系统/MIT6.S081.md"
+        - "UCB CS162": "课程资源/系统架构/操作系统/CS162.md"
+        - "NJU OS": "课程资源/系统架构/操作系统/NJUOS.md"
+        - "HIT OS": "课程资源/系统架构/操作系统/HITOS.md"
+      - 并行与分布式系统:
+        - "CMU 15-418/Stanford CS149": "课程资源/系统架构/并行与分布式系统/CS149.md"
+        - "MIT 6.824": "课程资源/系统架构/并行与分布式系统/MIT6.824.md"
+      - 计算机系统安全:
+        - "UCB CS161": "课程资源/系统架构/系统安全/CS161.md"
+        - "MIT 6.1600": "课程资源/系统架构/系统安全/MIT6.1600.md"
+        - "MIT 6.858": "课程资源/系统架构/系统安全/MIT6.858.md"
+        - "ASU CSE365": "课程资源/系统架构/系统安全/CSE365.md"
+        - "ASU CSE466": "课程资源/系统架构/系统安全/CSE466.md"
+        - "SU SEED Labs": "课程资源/系统架构/系统安全/SEEDLabs.md"
+      - 计算机网络:
+        - "UCB CS168": "课程资源/系统架构/计算机网络/CS168.md"
+        - "Stanford CS144": "课程资源/系统架构/计算机网络/CS144.md"
+        - "USTC Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown_ustc.md"
+        - "Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown.md"
+      - 数据库系统:
+        - "UCB CS186": "课程资源/系统架构/数据库系统/CS186.md"
+        - "CMU 15-445": "课程资源/系统架构/数据库系统/15445.md"
+        - "Caltech CS122": "课程资源/系统架构/数据库系统/CS122.md"
+        - "Stanford CS346": "课程资源/系统架构/数据库系统/CS346.md"
+        - "CMU 15-799": "课程资源/系统架构/数据库系统/15799.md"
+      - 编译原理:
+        - "PKU 编译原理实践": "课程资源/系统架构/编译原理/PKU-Compilers.md"
+        - "Stanford CS143": "课程资源/系统架构/编译原理/CS143.md"
+        - "NJU 编译原理": "课程资源/系统架构/编译原理/NJU-Compilers.md"
+        - "KAIST CS420": "课程资源/系统架构/编译原理/CS420.md"
+        - "USTC 编译原理与技术": "课程资源/系统架构/编译原理/USTC-Compilers.md"
+        - "SJTU 编译原理": "课程资源/系统架构/编译原理/SJTU-Compilers.md"
+    - 前端:
+      - 计算机图形学:
+        - GAMES101: "课程资源/前端/计算机图形学/GAMES101.md"
+        - GAMES202: "课程资源/前端/计算机图形学/GAMES202.md"
+        - GAMES103: "课程资源/前端/计算机图形学/GAMES103.md"
+        - "Stanford CS148": "课程资源/前端/计算机图形学/CS148.md"
+        - "CMU 15-462": "课程资源/前端/计算机图形学/15462.md"
+        - "USTC CG": "课程资源/前端/计算机图形学/USTC ComputerGraphics.md"
+      - 软件工程:
+        - "MIT 6.031": "课程资源/前端/软件工程/6031.md"
+        - "UCB CS169": "课程资源/前端/软件工程/CS169.md"
+        - "CMU 17-803": "课程资源/前端/软件工程/17803.md"
+      - Web开发:
+        - "MIT web development course": "课程资源/前端/Web开发/mitweb.md"
+        - "Stanford CS142": "课程资源/前端/Web开发/CS142.md"
+        - "University of Helsinki: Full Stack open": "课程资源/前端/Web开发/fullstackopen.md"
+        - "CS571 Building UI": "课程资源/前端/Web开发/CS571.md"
+    - 人工智能:
+      - 速通:
+        - "Neural Networks: Zero to Hero": "课程资源/人工智能/速通/Neural Networks：Zero to Hero.md"
+        - "Harvard CS50 AI": "课程资源/人工智能/速通/CS50.md"
+        - "UCB CS188": "课程资源/人工智能/速通/CS188.md"
+      - 机器学习:
+        - "Coursera: Machine Learning": "课程资源/人工智能/机器学习/ML.md"
+        - "Stanford CS229": "课程资源/人工智能/机器学习/CS229.md"
+        - "UCB CS189": "课程资源/人工智能/机器学习/CS189.md"
+      - 机器学习系统:
+        - 智能计算系统: "课程资源/人工智能/机器学习系统/AICS.md"
+        - "CMU 10-414/714: Deep Learning Systems": "课程资源/人工智能/机器学习系统/CMU10-414.md"
+        - "MIT6.5940: TinyML and Efficient Deep Learning": "课程资源/人工智能/机器学习系统/EML.md"
+        - "Machine Learning Compilation": "课程资源/人工智能/机器学习系统/MLC.md"
+      - 深度学习:
+        - "Coursera: Deep Learning": "课程资源/人工智能/深度学习/CS230.md"
+        - "国立台湾大学: 李宏毅机器学习": "课程资源/人工智能/深度学习/LHY.md"
+        - "UMich EECS 498-007: Deep Learning for Computer Vision": "课程资源/人工智能/深度学习/EECS498-007.md"
+        - "Stanford CS231n": "课程资源/人工智能/深度学习/CS231.md"
+        - "Stanford CS224n": "课程资源/人工智能/深度学习/CS224n.md"
+        - "Stanford CS224w": "课程资源/人工智能/深度学习/CS224w.md"
+        - "UCB CS285": "课程资源/人工智能/深度学习/CS285.md"
+      - 深度生成模型:
+        - 学习路线图: "课程资源/人工智能/深度生成模型/roadmap.md"
+        - "MIT 6.S184": "课程资源/人工智能/深度生成模型/MIT6.S184.md"
+        - 大语言模型:
+          - "CMU 11-868: Large Language Model Systems": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md"
+          - "CMU 11-667: LLM Methods and Applications": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-667.md"
+          - "CMU 11-711: Advanced NLP": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-711.md"
+      - 机器学习进阶:
+        - 学习路线图: "课程资源/人工智能/机器学习进阶/roadmap.md"
+        - "CMU 10-708: Probabilistic Graphical Models": "课程资源/人工智能/机器学习进阶/CMU10-708.md"
+        - "Columbia STAT 8201": "课程资源/人工智能/机器学习进阶/STAT8201.md"
+        - "U Toronto STA 4273": "课程资源/人工智能/机器学习进阶/STA4273.md"
+        - "Stanford CS229M": "课程资源/人工智能/机器学习进阶/CS229M.md"
+      - 数据科学:
+        - "UCB Data100": "课程资源/人工智能/数据科学/Data100.md"
   - 工程工具:
-      - 翻墙: "工程工具/翻墙.md"
-      - Vim: "工程工具/Vim.md"
-      - Emacs: "工程工具/Emacs.md"
-      - Git: "工程工具/Git.md"
-      - GitHub: "工程工具/GitHub.md"
-      - "GNU Make": "工程工具/GNU_Make.md"
-      - CMake: "工程工具/CMake.md"
-      - LaTeX: "工程工具/LaTeX.md"
-      - Docker: "工程工具/Docker.md"
-      - Scoop: "工程工具/Scoop.md"
-      - 日常学习工作流: "工程工具/workflow.md"
-      - 实用工具箱: "工程工具/tools.md"
-      - 毕业论文: "工程工具/thesis.md"
-      - 信息检索: "工程工具/信息检索.md"
+      - 翻墙: "课程资源/必学工具/翻墙.md"
+      - Vim: "课程资源/必学工具/Vim.md"
+      - Emacs: "课程资源/必学工具/Emacs.md"
+      - Git: "课程资源/必学工具/Git.md"
+      - GitHub: "课程资源/必学工具/GitHub.md"
+      - "GNU Make": "课程资源/必学工具/GNU_Make.md"
+      - CMake: "课程资源/必学工具/CMake.md"
+      - LaTeX: "课程资源/必学工具/LaTeX.md"
+      - Docker: "课程资源/必学工具/Docker.md"
+      - Scoop: "课程资源/必学工具/Scoop.md"
+      - 日常学习工作流: "课程资源/必学工具/workflow.md"
+      - 实用工具箱: "课程资源/必学工具/tools.md"
+      - 毕业论文: "课程资源/必学工具/thesis.md"
+      - 信息检索: "课程资源/必学工具/信息检索.md"
   - 好书推荐: "好书推荐.md"
-
-  # - 数学基础:
-  #     - "MIT18.01/18.02: Calculus": "数学基础/MITmaths.md"
-  #     - "MIT18.06: Linear Algebra": "数学基础/MITLA.md"
-  #     - "MIT6.050J: Information theory and Entropy": "数学基础/information.md"
-  # - 数学进阶:
-  #     - "UCB CS70: discrete Math and probability theory": "数学进阶/CS70.md"
-  #     - "UCB CS126: probability theory": "数学进阶/CS126.md"
-  #     - "MIT 6.042J: Mathematics for Computer Science": "数学进阶/6.042J.md"
-  #     - "MIT18.330: Introduction to numerical analysis": "数学进阶/numerical.md"
-  #     - "Standford EE364A: Convex Optimization": "数学进阶/convex.md"
-  #     - "The Information Theory, Pattern Recognition, and Neural Networks": "数学进阶/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
-  # - 编程入门:
-  #     - "MIT-Missing-Semester": "编程入门/MIT-Missing-Semester.md"
-  #     - "Sysadmin DeCal": "编程入门/DeCal.md"
-  #     - Python 语言:
-  #       - "UCB CS61A: Structure and Interpretation of Computer Programs": "编程入门/Python/CS61A.md"
-  #       - "CS50P: CS50's Introduction to Programming with Python": "编程入门/Python/CS50P.md"
-  #       - "MIT6.100L: Introduction to CS and Programming using Python": "编程入门/Python/MIT6.100L.md"
-  #     - C 语言:
-  #       - "Harvard CS50: This is CS50x": "编程入门/C/CS50.md"
-  #       - "Duke University: Introductory C Programming Specialization": "编程入门/C/Duke-Coursera-Intro-C.md"
-  #     - C++ 语言:
-  #       - "AmirKabir University of Technology AP1400-2: Advanced Programming": "编程入门/cpp/AUT1400.md"
-  #       - "Stanford CS106L: Standard C++ Programming": "编程入门/cpp/CS106L.md"
-  #       - "Stanford CS106B/X": "编程入门/cpp/CS106B_CS106X.md"
-  #     - Java 语言:
-  #       - "MIT 6.092: Introduction To Programming In Java": "编程入门/Java/MIT 6.092.md"
-  #     - Rust 语言:
-  #       - "Stanford CS110L: Safety in Systems Programming": "编程入门/Rust/CS110L.md"
-  #       - "KAIST CS220: Programming Principles": "编程入门/Rust/cs220.md"
-  #       - "KAIST CS431: Concurrent Programming": "编程入门/Rust/cs431.md"
-  #     - 函数式语言:
-  #       - "Cornell CS3110: OCaml Programming Correct + Efficient + Beautiful": "编程入门/Functional/CS3110.md"
-  #       - "Haskell MOOC": "编程入门/Functional/Haskell-MOOC.md"
-  # - 电子基础:
-  #     - "EE16A&B: Designing Information Devices and Systems I&II": "电子基础/EE16.md"
-  #     - "UCB EE120 : Signal and Systems": "电子基础/signal.md"
-  #     - "MIT 6.007 Signals and Systems": "电子基础/Signals_and_Systems_AVO.md"
-  # - 数据结构与算法:
-  #     - "UCB CS61B: Data Structures and Algorithms": "数据结构与算法/CS61B.md"
-  #     - "Coursera: Algorithms I & II": "数据结构与算法/Algo.md"
-  #     - "MIT 6.006: Introduction to Algorithms": "数据结构与算法/6.006.md"
-  #     - "MIT 6.046: Design and Analysis of Algorithms": "数据结构与算法/6.046.md"
-  #     - "UCB CS170: Efficient Algorithms and Intractable Problems": "数据结构与算法/CS170.md"
-  # - 软件工程:
-  #     - "MIT 6.031: Software Construction": "软件工程/6031.md"
-  #     - "UCB CS169: software engineering": "软件工程/CS169.md"
-  #     - "CMU 17-803: Empirical Methods": "软件工程/17803.md"
-  # - 计算机系统基础:
-  #     - "CMU 15-213: CSAPP": "计算机系统基础/CSAPP.md"
-  #     - "Stanford CS110: Principles of Computer Systems": "计算机系统基础/CS110.md"
-  # - 体系结构:
-  #     - "Coursera: Nand2Tetris": "体系结构/N2T.md"
-  #     - "UCB CS61C: Great Ideas in Computer Architecture": "体系结构/CS61C.md"
-  #     - "ETHz: Digital Design and Computer Architecture": "体系结构/DDCA.md"
-  #     - "ETHz: Computer Architecture": "体系结构/CA.md"
-  # - 操作系统:
-  #     - "MIT 6.S081: Operating System Engineering": "操作系统/MIT6.S081.md"
-  #     - "UCB CS162: Operating System": "操作系统/CS162.md"
-  #     - "NJU OS: Operating System Design and Implementation": "操作系统/NJUOS.md"
-  #     - "HIT OS: Operating System": "操作系统/HITOS.md"
-  # - 并行与分布式系统:
-  #     - "CMU 15-418/Stanford CS149: Parallel Computing": "并行与分布式系统/CS149.md"
-  #     - "MIT 6.824: Distributed System": "并行与分布式系统/MIT6.824.md"
-  # - 计算机系统安全:
-  #     - "UCB CS161: Computer Security": "系统安全/CS161.md"
-  #     - "MIT 6.1600: Foundations of Computer Security": "系统安全/MIT6.1600.md"
-  #     - "MIT 6.858: Computer System Security": "系统安全/MIT6.858.md"
-  #     - "ASU CSE365: Introduction to Cybersecurity": "系统安全/CSE365.md"
-  #     - "ASU CSE466: Computer Systems Security": "系统安全/CSE466.md"
-  #     - "SU SEED Labs": "系统安全/SEEDLabs.md"
-  # - 计算机网络:
-  #     - "UCB CS168: Introduction to the Internet: Architecture and Protocols": "计算机网络/CS168.md"
-  #     - "Stanford CS144: Computer Network": "计算机网络/CS144.md"
-  #     - "USTC Computer Networking:A Top-Down Approach": "计算机网络/topdown_ustc.md"
-  #     - "Computer Networking: A Top-Down Approach": "计算机网络/topdown.md"
-  # - 数据库系统:
-  #     - "UCB CS186: Introduction to Database System": "数据库系统/CS186.md"
-  #     - "CMU 15-445: Database Systems": "数据库系统/15445.md"
-  #     - "Caltech CS122: Database System Implementation": "数据库系统/CS122.md"
-  #     - "Stanford CS346: Database System Implementation": "数据库系统/CS346.md"
-  #     - "CMU 15-799: Special Topics in Database Systems": "数据库系统/15799.md"
-  # - 编译原理:
-  #     - "PKU 编译原理实践": "编译原理/PKU-Compilers.md"
-  #     - "Stanford CS143: Compilers": "编译原理/CS143.md"
-  #     - "NJU 编译原理": "编译原理/NJU-Compilers.md"
-  #     - "KAIST CS420: Compiler Design": "编译原理/CS420.md"
-  #     - "USTC 编译原理与技术": "编译原理/USTC-Compilers.md"
-  #     - "SJTU 编译原理": "编译原理/SJTU-Compilers.md"
-  # - 编程语言设计与分析:
-  #     - "Stanford CS242: Programming Languages": "编程语言设计与分析/CS242.md"
-  #     - "NJU 软件分析": "编程语言设计与分析/NJU-SoftwareAnalysis.md"
-  #     - "PKU 软件分析": "编程语言设计与分析/PKU-SoftwareAnalysis.md"
-  #     - "Cambridge: Semantics of Programming Languages": "编程语言设计与分析/Cambridge-Semantics.md"
-  # - 计算机图形学:
-  #     - "GAMES101": "计算机图形学/GAMES101.md"
-  #     - "GAMES202": "计算机图形学/GAMES202.md"
-  #     - "GAMES103": "计算机图形学/GAMES103.md"
-  #     - "Stanford CS148": "计算机图形学/CS148.md"
-  #     - "CMU 15-462": "计算机图形学/15462.md"
-  #     - "USTC CG": "计算机图形学/USTC ComputerGraphics.md"
-  # - Web开发:
-  #     - "MIT web development course": "Web开发/mitweb.md"
-  #     - "Stanford CS142: Web Applications": "Web开发/CS142.md"
-  #     - "University of Helsinki: Full Stack open 2022": "Web开发/fullstackopen.md"
-  #     - "CS571 Building UI (React & React Native)": "Web开发/CS571.md"
-  # - 数据科学:
-  #     - "UCB Data100: Principles and Techniques of Data Science": "数据科学/Data100.md"
-  # - 人工智能:
-  #     - "Neural Networks: Zero to Hero": "人工智能/Neural Networks: Zero to Hero.md"
-  #     - "Harvard CS50's Introduction to AI with Python": "人工智能/CS50.md"
-  #     - "UCB CS188: Introduction to Artificial Intelligence": "人工智能/CS188.md"
-  # - 机器学习:
-  #     - "Coursera: Machine Learning": "机器学习/ML.md"
-  #     - "Stanford CS229: Machine Learning": "机器学习/CS229.md"
-  #     - "UCB CS189: Introduction to Machine Learning": "机器学习/CS189.md"
-  # - 机器学习系统:
-  #     - "智能计算系统": "机器学习系统/AICS.md"
-  #     - "CMU 10-414/714: Deep Learning Systems": "机器学习系统/CMU10-414.md"
-  #     - "MIT6.5940: TinyML and Efficient Deep Learning Computing": "机器学习系统/EML.md"
-  #     - "Machine Learning Compilation": "机器学习系统/MLC.md"
-  # - 深度学习:
-  #     - "Coursera: Deep Learning": "深度学习/CS230.md"
-  #     - "国立台湾大学: 李宏毅机器学习": "深度学习/LHY.md"
-  #     - "UMich EECS 498-007 / 598-005: Deep Learning for Computer Vision": "深度学习/EECS498-007.md"
-  #     - "Stanford CS231n: CNN for Visual Recognition": "深度学习/CS231.md"
-  #     - "Stanford CS224n: Natural Language Processing": "深度学习/CS224n.md"
-  #     - "Stanford CS224w: Machine Learning with Graphs": "深度学习/CS224w.md"
-  #     - "UCB CS285: Deep Reinforcement Learning": "深度学习/CS285.md"
-  # - 深度生成模型:
-  #     - "学习路线图": "深度生成模型/roadmap.md"
-  #     - "MIT 6.S184: Generative AI with Stochastic Differential Equations": "深度生成模型/MIT6.S184.md"
-  #     - "大语言模型":
-  #       - "CMU 11-868: Large Language Model System": "深度生成模型/大语言模型/CMU11-868.md"
-  #       - "CMU 11-667: Large Language Models: Methods and Applications": "深度生成模型/大语言模型/CMU11-667.md"
-  #       - "CMU 11-711: Advanced Natural Language Processing": "深度生成模型/大语言模型/CMU11-711.md"
-  # - 机器学习进阶:
-  #     - "学习路线图": "机器学习进阶/roadmap.md"
-  #     - "CMU 10-708: Probabilistic Graphical Models": "机器学习进阶/CMU10-708.md"
-  #     - "Columbia STAT 8201: Deep Generative Models": "机器学习进阶/STAT8201.md"
-  #     - "U Toronto STA 4273 Winter 2021: Minimizing Expectations": "机器学习进阶/STA4273.md"
-  #     - "Stanford STATS214 / CS229M: Machine Learning Theory": "机器学习进阶/CS229M.md"
   - 后记: "后记.md"
