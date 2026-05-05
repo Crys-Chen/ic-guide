@@ -334,20 +334,24 @@
   border-left-color: rgba(255, 255, 255, .1);
 }
 
-/* ─── C: 链接基础：圆角 + 过渡 ──────────────────────────── */
+/* ─── C: 链接基础：圆角 + 过渡（桌面端才有 hover 动效） ─── */
 .md-nav--primary .md-nav__link {
   border-radius: 4px;
-  transition: transform .15s ease, background .15s ease, color .15s ease;
 }
 
-/* ─── C: 悬停滑入 ───────────────────────────────────────── */
-.md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
-  transform: translateX(3px);
-  background: rgba(3, 33, 104, .06);
-}
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary .md-nav__link {
+    transition: transform .15s ease, background .15s ease, color .15s ease;
+  }
 
-[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
-  background: rgba(179, 157, 219, .09);
+  .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
+    transform: translateX(3px);
+    background: rgba(3, 33, 104, .06);
+  }
+
+  [data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
+    background: rgba(179, 157, 219, .09);
+  }
 }
 
 /* ─── C: 当前页渐变高亮（覆盖原有纯左边框） ───────────────── */
@@ -598,28 +602,30 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   左侧导航栏：加宽 + 淡蓝底色
+   左侧导航栏：加宽 + 淡蓝底色（仅桌面端）
    ══════════════════════════════════════════════════════════ */
 
-/* 侧边栏加宽：覆盖 Material 硬编码的 12.1rem */
-.md-sidebar--primary {
-  width: 14.4rem !important;
-  background-color: #f5f7fb;
-}
+@media screen and (min-width: 76.25em) {
+  /* 侧边栏加宽：覆盖 Material 硬编码的 12.1rem */
+  .md-sidebar--primary {
+    width: 14.4rem;
+    background-color: #f5f7fb;
+  }
 
-/* 同步扩展内容区可见宽度（否则背景变宽但文字区域仍锁死在 11.5rem） */
-[dir=ltr] .md-sidebar--primary .md-sidebar__inner {
-  padding-right: calc(100% - 13.8rem) !important;
-}
+  /* 同步扩展内容区可见宽度 */
+  [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
+    padding-right: calc(100% - 13.8rem) !important;
+  }
 
-[data-md-color-scheme="slate"] .md-sidebar--primary {
-  background-color: rgba(15, 25, 60, .35);
-}
+  [data-md-color-scheme="slate"] .md-sidebar--primary {
+    background-color: rgba(15, 25, 60, .35);
+  }
 
-/* 导航字号：Material 默认 .7rem 太小，提升到 .82rem */
-.md-sidebar--primary .md-nav {
-  font-size: .82rem;
-  line-height: 1.4;
+  /* 导航字号：Material 默认 .7rem 太小，提升到 .82rem */
+  .md-sidebar--primary .md-nav {
+    font-size: .82rem;
+    line-height: 1.4;
+  }
 }
 
 /* ─── 标题悬停：颜色统一为主色 + 轻微放大 ───────────────── */
