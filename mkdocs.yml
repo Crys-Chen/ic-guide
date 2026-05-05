@@ -63,6 +63,8 @@ markdown_extensions:
   - footnotes
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
