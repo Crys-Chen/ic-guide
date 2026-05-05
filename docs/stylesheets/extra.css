@@ -161,86 +161,26 @@
   width: 100% !important;
 }
 
-/* ─── 垂直 Tab（分领域详图左侧导航样式） ────────────────── */
-.md-typeset .tabbed-alternate {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  align-items: flex-start;
-  gap: 0;
-}
-
+/* ─── 横向 Tab：标签均分撑满 2/3 页宽 ───────────────────── */
 .md-typeset .tabbed-alternate .tabbed-labels {
+  width: 66%;
+  min-width: 300px;
   display: flex !important;
-  flex-direction: column !important;
-  flex-shrink: 0;
-  width: 120px;
-  border-bottom: none !important;
-  border-right: 2px solid var(--md-default-fg-color--lightest);
-  padding: .3em 0;
-  gap: 2px;
+  flex-wrap: nowrap;
 }
 
 .md-typeset .tabbed-alternate .tabbed-labels > label {
-  border-bottom: none !important;
-  padding: .45em .9em;
-  border-radius: 4px 0 0 4px;
-  font-size: .82rem;
-  white-space: nowrap;
-  cursor: pointer;
-  color: var(--md-typeset-color);
-  transition: background .15s, color .15s;
-  margin-right: -2px;
-}
-
-.md-typeset .tabbed-alternate .tabbed-labels > label:hover {
-  background: rgba(3, 33, 104, .07);
-  color: var(--md-primary-fg-color);
-}
-
-/* 激活态：右边框 + 背景高亮（覆盖 Material 的底部线） */
-.md-typeset .tabbed-alternate > input:nth-child(1):checked ~ .tabbed-labels > label:nth-child(1),
-.md-typeset .tabbed-alternate > input:nth-child(2):checked ~ .tabbed-labels > label:nth-child(2),
-.md-typeset .tabbed-alternate > input:nth-child(3):checked ~ .tabbed-labels > label:nth-child(3),
-.md-typeset .tabbed-alternate > input:nth-child(4):checked ~ .tabbed-labels > label:nth-child(4),
-.md-typeset .tabbed-alternate > input:nth-child(5):checked ~ .tabbed-labels > label:nth-child(5),
-.md-typeset .tabbed-alternate > input:nth-child(6):checked ~ .tabbed-labels > label:nth-child(6),
-.md-typeset .tabbed-alternate > input:nth-child(7):checked ~ .tabbed-labels > label:nth-child(7),
-.md-typeset .tabbed-alternate > input:nth-child(8):checked ~ .tabbed-labels > label:nth-child(8) {
-  background: rgba(3, 33, 104, .1) !important;
-  color: var(--md-primary-fg-color) !important;
-  border-right: 2px solid var(--md-primary-fg-color);
-}
-
-[data-md-color-scheme="slate"] .md-typeset .tabbed-alternate > input:nth-child(1):checked ~ .tabbed-labels > label:nth-child(1),
-[data-md-color-scheme="slate"] .md-typeset .tabbed-alternate > input:nth-child(2):checked ~ .tabbed-labels > label:nth-child(2),
-[data-md-color-scheme="slate"] .md-typeset .tabbed-alternate > input:nth-child(3):checked ~ .tabbed-labels > label:nth-child(3),
-[data-md-color-scheme="slate"] .md-typeset .tabbed-alternate > input:nth-child(4):checked ~ .tabbed-labels > label:nth-child(4),
-[data-md-color-scheme="slate"] .md-typeset .tabbed-alternate > input:nth-child(5):checked ~ .tabbed-labels > label:nth-child(5) {
-  background: rgba(138, 171, 222, .15) !important;
-  color: #8AABDE !important;
-  border-right: 2px solid #8AABDE;
-}
-
-.md-typeset .tabbed-alternate .tabbed-content {
   flex: 1;
-  min-width: 0;
-  padding-left: 1.2em;
+  text-align: center;
+  padding: .5em .2em;
+  font-size: .85rem;
 }
 
-/* 移动端回退：小屏仍用横向 */
+/* 移动端：撑满全宽 */
 @media screen and (max-width: 600px) {
-  .md-typeset .tabbed-alternate {
-    flex-direction: column !important;
-  }
   .md-typeset .tabbed-alternate .tabbed-labels {
     width: 100%;
-    flex-direction: row !important;
-    border-right: none !important;
-    border-bottom: 2px solid var(--md-default-fg-color--lightest) !important;
-  }
-  .md-typeset .tabbed-alternate .tabbed-content {
-    padding-left: 0;
+    min-width: 0;
   }
 }
 
