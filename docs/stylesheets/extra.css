@@ -1,5 +1,5 @@
 /* ─── Google Fonts：思源黑体（标题专用） ────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&family=Noto+Serif+SC:wght@400;600&display=swap');
 
 /* ═══════════════════════════════════════════════════════════
    ECE 自学指南 — 视觉增强
@@ -215,20 +215,7 @@
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
-/* ─── 课题组折叠：前 10 可见，其余点击展开 ──────────────── */
-.prof-collapse > ul > li:nth-child(n+11) {
-  display: none;
-}
-
-.prof-collapse.show-all > ul > li:nth-child(n+11) {
-  display: list-item;
-}
-
-/* 当卡片数 ≤10 时，自动隐藏按钮（:has 现代浏览器支持） */
-.prof-collapse:not(:has(> ul > li:nth-child(11))) + .prof-show-all {
-  display: none !important;
-}
-
+/* ─── 课题组折叠：由 prof-collapse.js 控制显示/隐藏 ─────── */
 .prof-show-all {
   display: block;
   margin: .6em auto 1.8em;
@@ -481,32 +468,31 @@
    字体排版：无衬线标题 + 思源宋体正文
    ══════════════════════════════════════════════════════════ */
 
-/* ─── 正文：思源宋体（优雅、利于长读） ─────────────────── */
+/* ─── 全局正文：思源黑体 ──────────────────────────────── */
 .md-typeset {
-  font-family: "Noto Serif SC", "Source Han Serif SC",
-               "STSong", "SimSun", Georgia, serif;
-  line-height: 1.95;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+               "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.85;
 }
 
-/* ─── 标题：思源黑体，有力、醒目 ────────────────────────── */
+/* ─── 标题：加粗、加大、颜色饱满 ────────────────────────── */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
-               "Helvetica Neue", Arial, sans-serif;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   letter-spacing: -.01em;
   color: var(--md-default-fg-color);
 }
 
-.md-typeset h1 { font-size: 2rem;   font-weight: 800; }
+.md-typeset h1 { font-size: 2rem;   font-weight: 900; }
 .md-typeset h2 { font-size: 1.5rem; font-weight: 700; }
 .md-typeset h3 { font-size: 1.2rem; font-weight: 700; }
 .md-typeset h4 { font-size: 1rem;   font-weight: 700; }
 
-/* ─── 导航 / header 沿用无衬线 ──────────────────────────── */
+/* ─── 导航 / header ──────────────────────────────────────── */
 .md-nav__link,
 .md-nav__title,
 .md-header__title,
@@ -514,12 +500,43 @@
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
+/* ─── 科研方向页面正文：思源宋体（JS 注入 .is-research-page） */
+.is-research-page .md-typeset {
+  font-family: "Noto Serif SC", "Source Han Serif SC",
+               "STSong", "SimSun", Georgia, serif;
+  line-height: 1.95;
+}
+
+.is-research-page .md-typeset h1,
+.is-research-page .md-typeset h2,
+.is-research-page .md-typeset h3,
+.is-research-page .md-typeset h4 {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 /* ══════════════════════════════════════════════════════════
-   左侧导航栏：加宽 + 淡蓝底色（消除白色失衡感）
+   左侧导航栏：加宽 + 淡蓝底色
    ══════════════════════════════════════════════════════════ */
 
-:root {
-  --md-sidebar-width: 14.4rem;
+/* 覆盖 sidebar 宽度（桌面端，sticky 布局） */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 14.4rem;
+  }
+}
+
+/*
+ * Material 在 @supports ::-webkit-scrollbar 里把内容宽度锁死在 11.5rem：
+ *   padding-right: calc(100% - 11.5rem)
+ * 侧边栏宽 14.4rem 时需同步调整为 calc(100% - 13.8rem)，
+ * 否则背景变宽但导航文字区域不变。
+ */
+@supports selector(::-webkit-scrollbar) {
+  @media screen and (min-width: 76.25em) {
+    [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
+      padding-right: calc(100% - 13.8rem);
+    }
+  }
 }
 
 .md-sidebar--primary {
@@ -528,4 +545,10 @@
 
 [data-md-color-scheme="slate"] .md-sidebar--primary {
   background-color: rgba(15, 25, 60, .35);
+}
+
+/* ─── 标题锚链接悬停颜色统一为主色 ──────────────────────── */
+.md-typeset :is(h1, h2, h3, h4) .headerlink:hover,
+.md-typeset :is(h1, h2, h3, h4) .headerlink:focus {
+  color: var(--md-primary-fg-color);
 }

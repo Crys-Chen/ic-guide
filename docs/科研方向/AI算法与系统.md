@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # AI 算法与系统
 
 ## 一句话定义
@@ -30,6 +34,45 @@
 | **企业** | OpenAI、Google DeepMind、Meta AI、Anthropic | 智谱AI、月之暗面、百度、阿里通义 |
 | **高校** | MIT、CMU、Stanford、UCB、UIUC | 清华、北大、浙大、上交 |
 | **顶会** | NeurIPS、ICML、ICLR、CVPR、EMNLP、MLSys | — |
+
+## 知识路径
+
+```mermaid
+graph LR
+    A["线性代数 + 概率统计"] --> B["机器学习基础\nCS229/UCB CS189"]
+    B --> C["深度学习\nCS231n/CS224n"]
+    C --> D["强化学习\nCS285/Spinning Up"]
+    C --> E["大语言模型\nAttention/Transformer"]
+    E --> F["LLM 系统\nvLLM/TGI"]
+    D --> G["AI Agent\nAutoGPT/ReAct"]
+
+    H["计算机组成原理"] --> I["TinyML\nMIT 6.5940"]
+    C --> I
+
+    classDef core fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
+    classDef supp fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
+    class A,B,C,D,E,F,G core
+    class H,I supp
+```
+
+**本站相关课程：**
+
+- [机器学习（Stanford CS229）](../课程资源/人工智能/机器学习/CS229.md)
+- [深度学习（CS231n）](../课程资源/人工智能/深度学习/CS231.md) · [CS224n](../课程资源/人工智能/深度学习/CS224n.md)
+- [强化学习（UCB CS285）](../课程资源/人工智能/深度学习/CS285.md)
+- [TinyML（MIT 6.5940）](../课程资源/人工智能/机器学习系统/EML.md)
+- [大语言模型系统（CMU 11-868）](../课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md)
+
+## 入门三步走
+
+**第一步：补齐算法基础**  
+如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
+
+**第二步：理解系统约束**  
+阅读 [Efficient ML](https://efficientml.ai/)（Song Han MIT 6.5940 课程主页），特别是关于量化和剪枝的讲义。你的硬件背景会让你在这一步比纯软件背景的同学理解得更深。
+
+**第三步：选一个具体问题**  
+RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 3 篇你感兴趣方向的最近 NeurIPS/ICML 论文，感受问题的粒度和评价指标，再决定深入哪个子方向。
 
 ## 相关课题组
 
@@ -86,43 +129,4 @@
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
 
 </div>
-<button class="prof-show-all" onclick="this.previousElementSibling.classList.add('show-all');this.style.display='none'">显示全部 ↓</button>
-
-## 知识路径
-
-```mermaid
-graph LR
-    A["线性代数 + 概率统计"] --> B["机器学习基础\nCS229/UCB CS189"]
-    B --> C["深度学习\nCS231n/CS224n"]
-    C --> D["强化学习\nCS285/Spinning Up"]
-    C --> E["大语言模型\nAttention/Transformer"]
-    E --> F["LLM 系统\nvLLM/TGI"]
-    D --> G["AI Agent\nAutoGPT/ReAct"]
-
-    H["计算机组成原理"] --> I["TinyML\nMIT 6.5940"]
-    C --> I
-
-    classDef core fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
-    classDef supp fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
-    class A,B,C,D,E,F,G core
-    class H,I supp
-```
-
-**本站相关课程：**
-
-- [机器学习（Stanford CS229）](../课程资源/人工智能/机器学习/CS229.md)
-- [深度学习（CS231n）](../课程资源/人工智能/深度学习/CS231.md) · [CS224n](../课程资源/人工智能/深度学习/CS224n.md)
-- [强化学习（UCB CS285）](../课程资源/人工智能/深度学习/CS285.md)
-- [TinyML（MIT 6.5940）](../课程资源/人工智能/机器学习系统/EML.md)
-- [大语言模型系统（CMU 11-868）](../课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md)
-
-## 入门三步走
-
-**第一步：补齐算法基础**  
-如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
-
-**第二步：理解系统约束**  
-阅读 [Efficient ML](https://efficientml.ai/)（Song Han MIT 6.5940 课程主页），特别是关于量化和剪枝的讲义。你的硬件背景会让你在这一步比纯软件背景的同学理解得更深。
-
-**第三步：选一个具体问题**  
-RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 3 篇你感兴趣方向的最近 NeurIPS/ICML 论文，感受问题的粒度和评价指标，再决定深入哪个子方向。
+<button class="prof-show-all">显示全部 ↓</button>

@@ -41,9 +41,9 @@ function initFirebase() {
   db = firebase.firestore();
 }
 
-// Stable doc ID: sha-like hash of professor name + page path
+// Stable doc ID: hash of professor name only (cross-page sync)
 function makeDocId(name) {
-  const key = name.trim() + "|" + location.pathname;
+  const key = name.trim();
   let hash = 0;
   for (let i = 0; i < key.length; i++) {
     hash = (Math.imul(31, hash) + key.charCodeAt(i)) | 0;

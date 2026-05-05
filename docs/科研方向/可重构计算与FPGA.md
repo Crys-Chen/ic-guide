@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # 可重构计算与 FPGA
 
 ## 一句话定义
@@ -31,6 +35,43 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 | **企业** | AMD/Xilinx、Intel/Altera、Lattice、Achronix | 复旦微电子（FMC）、安路科技、高云半导体 |
 | **高校** | U Toronto（VTR/VPR）、UCLA、Cornell、UIUC | 清华、北大、复旦、国防科大 |
 | **顶会** | FPGA、FCCM、FPL、DAC、ASPLOS、ISLPED | — |
+
+## 知识路径
+
+```mermaid
+graph LR
+    A["数字逻辑基础\nLUT·触发器·时序分析"] --> B["HDL / Verilog\n硬件描述与仿真"]
+    B --> C["FPGA 开发工具\nVivado·Quartus·约束文件"]
+    C --> D["数字IC设计原理\n时序收敛·功耗优化"]
+    D --> E["FPGA 加速研究\nHLS·布局布线·神经网络映射"]
+
+    F["算法基础\nC/C++·数据结构"] --> G["高层次综合\nHLS·Pragma优化"]
+    G --> E
+
+    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
+    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
+    class A,B,C,D,E core
+    class F,G supp
+```
+
+**本站相关课程：**
+
+- [数字逻辑基础（复旦）](../课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md)
+- [Verilog HDL · HDLBits](../课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md) · [UCB EECS151](../课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md)
+- [FPGA 数字系统设计（复旦）](../课程资源/电路/数字/FPGA/MICR130024.md)
+- [数字集成电路设计原理（复旦）](../课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md)
+- [EDA 工具（复旦）](../课程资源/电路/EDA/MICR130035.md) · [Vivado 入门](../课程资源/电路/EDA/vivado.md)
+
+## 入门三步走
+
+**第一步：上手一块真实 FPGA**  
+跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
+
+**第二步：理解布局布线的难点**  
+阅读 Betz & Rose, *VPR: A New Packing, Placement and Routing Tool for FPGA Research* (1997) 原始论文（6 页），以及 VTR 项目的文档（github.com/verilog-to-routing/vtr-verilog-to-routing），了解 FPGA P&R 为什么难、学术界如何定量评估新算法。
+
+**第三步：跟进 HLS 与 AI 加速前沿**  
+阅读 Chen et al., *FPGA-optimized Hardware Acceleration for Deep Neural Networks* (FPGA 2019)，或浏览 FPGA 顶会（fpga.org）近两年论文列表，感受当前研究的粒度：不是"能不能跑神经网络"，而是"如何在给定 DSP/LUT 预算下把吞吐量再提 2 倍"。
 
 ## 相关课题组
 
@@ -99,41 +140,4 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
     FPGA 神经网络加速 · ML for EDA · 高效 DNN 硬件映射
 
 </div>
-<button class="prof-show-all" onclick="this.previousElementSibling.classList.add('show-all');this.style.display='none'">显示全部 ↓</button>
-
-## 知识路径
-
-```mermaid
-graph LR
-    A["数字逻辑基础\nLUT·触发器·时序分析"] --> B["HDL / Verilog\n硬件描述与仿真"]
-    B --> C["FPGA 开发工具\nVivado·Quartus·约束文件"]
-    C --> D["数字IC设计原理\n时序收敛·功耗优化"]
-    D --> E["FPGA 加速研究\nHLS·布局布线·神经网络映射"]
-
-    F["算法基础\nC/C++·数据结构"] --> G["高层次综合\nHLS·Pragma优化"]
-    G --> E
-
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,D,E core
-    class F,G supp
-```
-
-**本站相关课程：**
-
-- [数字逻辑基础（复旦）](../课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md)
-- [Verilog HDL · HDLBits](../课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md) · [UCB EECS151](../课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md)
-- [FPGA 数字系统设计（复旦）](../课程资源/电路/数字/FPGA/MICR130024.md)
-- [数字集成电路设计原理（复旦）](../课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md)
-- [EDA 工具（复旦）](../课程资源/电路/EDA/MICR130035.md) · [Vivado 入门](../课程资源/电路/EDA/vivado.md)
-
-## 入门三步走
-
-**第一步：上手一块真实 FPGA**  
-跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
-
-**第二步：理解布局布线的难点**  
-阅读 Betz & Rose, *VPR: A New Packing, Placement and Routing Tool for FPGA Research* (1997) 原始论文（6 页），以及 VTR 项目的文档（github.com/verilog-to-routing/vtr-verilog-to-routing），了解 FPGA P&R 为什么难、学术界如何定量评估新算法。
-
-**第三步：跟进 HLS 与 AI 加速前沿**  
-阅读 Chen et al., *FPGA-optimized Hardware Acceleration for Deep Neural Networks* (FPGA 2019)，或浏览 FPGA 顶会（fpga.org）近两年论文列表，感受当前研究的粒度：不是"能不能跑神经网络"，而是"如何在给定 DSP/LUT 预算下把吞吐量再提 2 倍"。
+<button class="prof-show-all">显示全部 ↓</button>

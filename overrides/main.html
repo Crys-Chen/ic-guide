@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    /* 科研方向页面注入 .is-research-page，供 CSS 切换宋体正文 */
+    document$.subscribe(function () {
+      var el = document.querySelector('.md-content__inner');
+      if (!el) return;
+      var path = decodeURIComponent(location.pathname);
+      el.classList.toggle('is-research-page', path.indexOf('科研方向') !== -1);
+    });
+  </script>
+{% endblock %}
