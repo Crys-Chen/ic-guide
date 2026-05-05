@@ -577,8 +577,17 @@
    ══════════════════════════════════════════════════════════ */
 
 /* 隐藏侧边栏顶部重复的 section 标题（与 tabs 重复） */
-.md-nav--lifted > .md-nav__title {
-  display: none;
+.md-nav--lifted > .md-nav__title,
+.md-nav--lifted .md-nav__title,
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
+  display: none !important;
+}
+
+/* 桌面端：主导航里所有 nav__title 均隐藏（section 名称已在 tabs 显示） */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav__title {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 76.25em) {
