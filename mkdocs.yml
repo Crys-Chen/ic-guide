@@ -62,6 +62,11 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - i18n:
@@ -186,6 +191,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/likes.js
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
 
 extra:
   social:
