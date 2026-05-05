@@ -170,6 +170,28 @@
 [data-md-color-scheme="slate"] .badge-other    { background: rgba(255,183,77,.2);  color: #FFB74D; }
 [data-md-color-scheme="slate"] .badge-intl     { background: rgba(176,190,197,.2); color: #B0BEC5; }
 
+/* 教授卡片内点赞按钮 */
+.grid.cards li .like-btn {
+  display: inline-block;
+  margin-top: .5em;
+  background: none;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 12px;
+  padding: 2px 9px;
+  font-size: .72rem;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+  line-height: 1.6;
+}
+
+.grid.cards li .like-btn:hover {
+  background: rgba(57, 73, 171, .07);
+}
+
+.grid.cards li .like-btn.liked {
+  border-color: #e91e63;
+}
+
 /* 教授卡片网格：每格更紧凑 */
 .prof-grid .md-typeset .grid.cards > ul,
 .md-typeset .prof-grid.grid.cards > ul {
