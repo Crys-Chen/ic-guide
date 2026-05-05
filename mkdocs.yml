@@ -146,6 +146,12 @@ plugins:
             EDA工具: EDA Tools
             数字EDA: Digital EDA
             模拟EDA: Analog EDA
+            半导体器件: Semiconductor Devices
+            先进工艺技术: Advanced Process Technology
+            FPGA: FPGA Design
+            数字信号处理: Digital Signal Processing
+            MATLAB: MATLAB
+            ASIC: ASIC Design
   - search:
       lang:
         - zh
@@ -219,6 +225,10 @@ nav:
     - 器件与工艺:
       - 集成电路工艺:
         - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
+      - 半导体器件:
+        - 半导体器件原理(复旦): "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md"
+      - 先进工艺技术:
+        - 先进集成电路工艺技术(复旦): "课程资源/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
     - 电路:
       - 导言: "课程资源/电路/index.md"
       - 速通:
@@ -235,6 +245,8 @@ nav:
       - 数字:
         - 数字逻辑基础:
           - 数字逻辑基础(复旦): "课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md"
+        - FPGA:
+          - FPGA数字系统设计(复旦): "课程资源/电路/数字/FPGA/MICR130024.md"
         - 数字集成电路:
           - 数字集成电路设计原理(复旦): "课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
       - 模拟:
@@ -252,15 +264,23 @@ nav:
           - "UCB EE142: IC for Communications": "课程资源/电路/模拟/射频集成电路/EE142.md"
       - 信号处理:
         - 信号与系统:
+          - 信号与系统(复旦): "课程资源/电路/信号处理/信号与系统/MICR130004.md"
           - "MIT 6.003: Signals and Systems": "课程资源/电路/信号处理/信号与系统/MIT6.003.md"
           - "UCB EE120: Signals and Systems": "课程资源/电路/信号处理/信号与系统/EE120.md"
+        - 数字信号处理:
+          - 数字信号处理(复旦): "课程资源/电路/信号处理/数字信号处理/INFO130010.md"
+        - MATLAB:
+          - MATLAB(复旦): "课程资源/电路/信号处理/MATLAB/MICR130022.md"
         - 数模模数转换器:
           - 数模模数转换器(复旦): "课程资源/电路/信号处理/数模模数转换器/INFO130270.md"
       - EDA工具:
+        - EDA工具(复旦): "课程资源/电路/EDA/MICR130035.md"
         - 数字EDA:
           - "Vivado 入门": "课程资源/电路/EDA/vivado.md"
         - 模拟EDA:
           - "Cadence Virtuoso 入门": "课程资源/电路/EDA/cadence.md"
+      - ASIC:
+        - ASIC设计(复旦): "课程资源/电路/ASIC/INFO130094.md"
       - 嵌入式SoC:
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
     - 算法编程:
@@ -283,6 +303,7 @@ nav:
           - "KAIST CS220": "课程资源/算法编程/编程入门/Rust/cs220.md"
           - "KAIST CS431": "课程资源/算法编程/编程入门/Rust/cs431.md"
       - 数据结构与算法:
+        - 数据结构与算法(复旦): "课程资源/算法编程/数据结构与算法/MICR130009.md"
         - "UCB CS61B": "课程资源/算法编程/数据结构与算法/CS61B.md"
         - "Coursera: Algorithms I & II": "课程资源/算法编程/数据结构与算法/Algo.md"
         - "MIT 6.006": "课程资源/算法编程/数据结构与算法/6.006.md"
@@ -295,6 +316,7 @@ nav:
         - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
     - 系统架构:
       - 计算机系统基础:
+        - 计算机组成原理(复旦): "课程资源/系统架构/速通/MICR130038.md"
         - "CMU 15-213: CSAPP": "课程资源/系统架构/速通/CSAPP.md"
         - "Stanford CS110": "课程资源/系统架构/速通/CS110.md"
       - 体系结构:
