@@ -164,6 +164,7 @@ plugins:
             生物电子与脑机接口: Bioelectronics and Brain-Computer Interface
             具身智能: Embodied Intelligence
             硬件安全: Hardware Security
+            可重构计算与FPGA: Reconfigurable Computing and FPGA
   - search:
       lang:
         - zh
@@ -199,6 +200,7 @@ nav:
     - 生物电子与脑机接口: "科研方向/生物电子与脑机接口.md"
     - 具身智能: "科研方向/具身智能.md"
     - 硬件安全: "科研方向/硬件安全.md"
+    - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
   - 课程资源:
     - 数学:
       - 导言: "课程资源/数学/index.md"
