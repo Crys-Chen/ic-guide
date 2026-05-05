@@ -86,6 +86,58 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     知识图谱 · 大语言模型 · AI 社会系统
 
+-   **[刘知远](https://nlp.csai.tsinghua.edu.cn/~lzy/)** <span class="badge-tsinghua">清华</span>
+
+    大语言模型 · 知识增强预训练 · NLP 系统
+
+-   **[陈键飞](https://ml.cs.tsinghua.edu.cn/~jianfei/)** <span class="badge-tsinghua">清华</span>
+
+    神经网络量化 · 高效机器学习 · 随机优化算法
+
+-   **[曹婷](https://air.tsinghua.edu.cn/en/info/1046/1941.htm)** <span class="badge-tsinghua">清华 AIR</span>
+
+    边缘 AI · 神经网络推理系统 · AI 加速器 · 基础模型算法
+
+-   **[吴翼](https://jxwuyi.weebly.com/)** <span class="badge-tsinghua">清华 IIIS</span>
+
+    大规模强化学习 · LLM 对齐 · 多智能体系统
+
+-   **[崔斌](https://cuibinpku.github.io/)** <span class="badge-pku">北大</span>
+
+    分布式 AI 系统 · 大模型训练与服务 · ML 系统基础设施
+
+-   **[杨耀东](https://yangyaodong.com/)** <span class="badge-pku">北大</span>
+
+    强化学习 · 多智能体 · AI 对齐 · 具身 AI
+
+-   **[董豪](http://zsdonghao.github.io)** <span class="badge-pku">北大</span>
+
+    深度强化学习 · 机器学习系统 · 开源 AI 框架（TensorLayer）
+
+-   **[邱锡鹏](https://xpqiu.github.io/)** <span class="badge-fudan">复旦</span>
+
+    大语言模型新架构 · 多模态后训练 · 高效 NLP 系统（FastNLP）
+
+-   **[陈涛](https://eetchen.github.io/)** <span class="badge-fudan">复旦</span>
+
+    边缘 AI · 轻量深度视觉 · 模型压缩与嵌入式部署
+
+-   **[陈全](https://www.cs.sjtu.edu.cn/~chen-quan/)** <span class="badge-other">交大</span>
+
+    端边云 AI 推理系统 · LLM serving · 并行计算
+
+-   **[蒋力](https://cs.sjtu.edu.cn/~jiangli/)** <span class="badge-other">交大</span>
+
+    AI 专用处理器与编译器 · 神经网络压缩 · 存内计算架构
+
+-   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
+
+    端云协同分布式 ML · 垂域基础模型 · AI 系统平台
+
+-   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院计算所</span>
+
+    深度学习专用处理器 · 神经网络指令集（寒武纪）· 存算协同架构
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -97,25 +149,17 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     高效深度学习 · LLM 量化与压缩（AWQ/SpAtten）· TinyML · 硬件感知 NAS
 
--   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
+-   **[Vivienne Sze](https://eems.mit.edu/)** <span class="badge-intl">MIT</span>
 
-    TinyML · 边缘 AI 系统 · MLPerf 基准测试 · 移动设备推理
+    硬件高效深度学习 · 神经网络加速器设计 · 边缘视觉计算
 
--   **[Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/)** <span class="badge-intl">UC Berkeley</span>
+-   **[Tianqi Chen（陈天奇）](https://tqchen.com/)** <span class="badge-intl">CMU</span>
 
-    深度强化学习 · 模仿学习 · 机器人操控策略
+    AI 编译器（TVM/Apache MXNet）· LLM 全平台部署（MLC-LLM）· ML 系统全栈
 
--   **[Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)** <span class="badge-intl">UC Berkeley</span>
+-   **[Zhihao Jia](https://www.cs.cmu.edu/~zhihaoj2/)** <span class="badge-intl">CMU</span>
 
-    离线强化学习 · 机器人学习 · 决策 Transformer
-
--   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
-
-    强化学习理论 · 教育与医疗 RL · 样本效率
-
--   **[Percy Liang](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
-
-    基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
+    ML 编译器 · 分布式 DL 并行化 · LLM 推理（FlexFlow/SpecInfer）
 
 -   **[Graham Neubig](https://www.phontron.com/)** <span class="badge-intl">CMU</span>
 
@@ -125,13 +169,57 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     LLM 推理系统（vLLM/Ray）· 分布式 AI 基础设施
 
+-   **[Matei Zaharia](https://people.eecs.berkeley.edu/~matei/)** <span class="badge-intl">UC Berkeley</span>
+
+    LLM 应用系统（DSPy）· 分布式 ML 运行时 · Sky Lab
+
+-   **[Joseph Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/)** <span class="badge-intl">UC Berkeley</span>
+
+    LLM serving（SGLang）· LLM Agent 系统 · ML 推理优化
+
+-   **[Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/)** <span class="badge-intl">UC Berkeley</span>
+
+    深度强化学习 · 模仿学习 · 机器人操控策略
+
+-   **[Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)** <span class="badge-intl">UC Berkeley</span>
+
+    离线强化学习 · 机器人学习 · 决策 Transformer
+
 -   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
 
     可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
 
+-   **[Chelsea Finn](https://ai.stanford.edu/~cbfinn/)** <span class="badge-intl">Stanford</span>
+
+    元学习 · 高效学习适应 · 机器人强化学习
+
+-   **[Percy Liang](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
+
+    基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
+
+-   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
+
+    强化学习理论 · 教育与医疗 RL · 样本效率
+
+-   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
+
+    TinyML · 边缘 AI 系统 · MLPerf 基准测试 · 移动设备推理
+
 -   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
+
+-   **[Kai Chen（陈凯）](https://cse.hkust.edu.hk/~kaichen/)** <span class="badge-hk">港科大</span>
+
+    机器学习系统 · 分布式训练网络 · AI 集群调度
+
+-   **[James Kwok](https://www.cse.ust.hk/~jamesk/)** <span class="badge-hk">港科大</span>
+
+    模型压缩与量化 · 高效深度学习 · 联邦学习
+
+-   **[Xiaowen Chu（储晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大（广州）</span>
+
+    ML 系统 · GPU 计算 · LLM 稀疏推理
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
