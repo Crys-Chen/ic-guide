@@ -142,6 +142,41 @@
 }
 
 /* ══════════════════════════════════════════════════════════
+   教授卡片：机构标签 + 紧凑网格
+   ══════════════════════════════════════════════════════════ */
+
+.badge-fudan, .badge-tsinghua, .badge-pku,
+.badge-hk, .badge-intl, .badge-other {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  vertical-align: middle;
+  margin-left: .35em;
+}
+.badge-fudan    { background: rgba(57,73,171,.13);  color: #3949AB; }
+.badge-tsinghua { background: rgba(106,13,173,.12); color: #7B1FA2; }
+.badge-pku      { background: rgba(198,40,40,.12);  color: #C62828; }
+.badge-hk       { background: rgba(0,121,107,.12);  color: #00796B; }
+.badge-other    { background: rgba(230,81,0,.12);   color: #E65100; }
+.badge-intl     { background: rgba(69,90,100,.13);  color: #455A64; }
+
+[data-md-color-scheme="slate"] .badge-fudan    { background: rgba(121,134,203,.2); color: #9FA8DA; }
+[data-md-color-scheme="slate"] .badge-tsinghua { background: rgba(206,147,216,.2); color: #CE93D8; }
+[data-md-color-scheme="slate"] .badge-pku      { background: rgba(239,154,154,.2); color: #EF9A9A; }
+[data-md-color-scheme="slate"] .badge-hk       { background: rgba(128,203,196,.2); color: #80CBC4; }
+[data-md-color-scheme="slate"] .badge-other    { background: rgba(255,183,77,.2);  color: #FFB74D; }
+[data-md-color-scheme="slate"] .badge-intl     { background: rgba(176,190,197,.2); color: #B0BEC5; }
+
+/* 教授卡片网格：每格更紧凑 */
+.prof-grid .md-typeset .grid.cards > ul,
+.md-typeset .prof-grid.grid.cards > ul {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* ══════════════════════════════════════════════════════════
    左侧导航：树状缩进线（A）+ 悬停滑入 / 当前页渐变（C）
    ══════════════════════════════════════════════════════════ */
 
