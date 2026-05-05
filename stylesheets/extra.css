@@ -1,3 +1,6 @@
+/* ─── Google Fonts：思源黑体（标题专用） ────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;800&display=swap');
+
 /* ═══════════════════════════════════════════════════════════
    ECE 自学指南 — 视觉增强
    ═══════════════════════════════════════════════════════════ */
@@ -472,4 +475,57 @@
   .hero-desc   { font-size: .8rem; margin-bottom: .9rem; }
   .hero-icon   { font-size: 2.2rem; }
   .hero-btn    { width: 32px; height: 32px; font-size: 1.1rem; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   字体排版：无衬线标题 + 思源宋体正文
+   ══════════════════════════════════════════════════════════ */
+
+/* ─── 正文：思源宋体（优雅、利于长读） ─────────────────── */
+.md-typeset {
+  font-family: "Noto Serif SC", "Source Han Serif SC",
+               "STSong", "SimSun", Georgia, serif;
+  line-height: 1.95;
+}
+
+/* ─── 标题：思源黑体，有力、醒目 ────────────────────────── */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+               "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -.01em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 { font-size: 2rem;   font-weight: 800; }
+.md-typeset h2 { font-size: 1.5rem; font-weight: 700; }
+.md-typeset h3 { font-size: 1.2rem; font-weight: 700; }
+.md-typeset h4 { font-size: 1rem;   font-weight: 700; }
+
+/* ─── 导航 / header 沿用无衬线 ──────────────────────────── */
+.md-nav__link,
+.md-nav__title,
+.md-header__title,
+.md-tabs__link {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* ══════════════════════════════════════════════════════════
+   左侧导航栏：加宽 + 淡蓝底色（消除白色失衡感）
+   ══════════════════════════════════════════════════════════ */
+
+:root {
+  --md-sidebar-width: 14.4rem;
+}
+
+.md-sidebar--primary {
+  background-color: #f5f7fb;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  background-color: rgba(15, 25, 60, .35);
 }
