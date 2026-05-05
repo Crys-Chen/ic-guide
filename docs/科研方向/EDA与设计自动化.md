@@ -16,6 +16,18 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 
 从国家战略的角度看，EDA 是芯片产业链里最典型的卡脖子环节：Synopsys、Cadence、Siemens EDA 三家美国公司占据全球市场 80% 以上的份额，2019 年对华为的禁令直接暴露了这一脆弱点，海思几乎在一夜之间失去了推进先进制程设计的工具。国内华大九天在模拟 EDA 工具上已有量产能力，DARPA 资助的 OpenROAD 是完全开源的数字后端全流程平台，被学术界广泛用于研究 AI for EDA 算法——这是目前进入这个方向最直接的实验基础。
 
+## AI for EDA
+
+AI for EDA 是过去五年增长最快的子方向，核心逻辑是：EDA 中的优化问题大多是 NP 难的组合优化，传统启发式算法在设计规模指数级增长后逐渐失效，而深度学习恰好擅长从海量历史设计数据中提炼规律。以下是几个最活跃的研究分支：
+
+**强化学习做布局（RL for Floorplanning）**：Google 2021 年在 *Nature* 发表 AlphaChip，把宏单元摆放建模为序列决策问题，智能体通过反复试错学习"哪里放最优"，在 TPU 实际设计上超越人类工程师数周手工优化结果。此后 DeepMind 将其改名为 AlphaChip 并用于 TPU v5 全流程。
+
+**图神经网络做时序与拥塞预测（GNN for Timing/Congestion）**：布线完成前就能预测哪些区域会拥塞、哪条路径会违例，让工程师在设计早期介入调整，而非等到布线后才发现返工。NVIDIA、Synopsys 均已将 GNN 集成进商业工具。
+
+**大语言模型做 RTL 生成（LLM for RTL/EDA）**：NVIDIA 的 ChipNemo、RTLCoder、VerilogCoder 等模型可以把自然语言需求直接转成可综合的 Verilog 代码，或自动生成验证 testbench。HKUST 谢知遥团队是学术界在 LLM for EDA 上最活跃的组之一（ASPLOS 2026 Best Paper）。
+
+**开源研究平台**：DARPA 资助的 [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) 提供完整的数字后端开源流程（综合到 GDSII），是研究 AI for EDA 算法的标准实验基础；北大林亦波团队发布的 [CircuitNet](https://circuitnet.github.io/) 是国内首个面向 AI for EDA 的大规模开源数据集。
+
 ## 核心研究问题
 
 - **可扩展性**：2nm 以下工艺下，布局布线的搜索空间指数级爆炸，现有算法如何扩展？
@@ -44,7 +56,8 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 | [罗国杰](http://ceca.pku.edu.cn/en/people_/faculty_/guojie_luo/) | 北京大学计算机学院（CECA 中心执行主任） | 物理设计自动化、FPGA 布局布线、领域专用加速器，ACM SIGDA 博士论文奖 |
 | [林亦波](https://ic.pku.edu.cn/szdw/zzjs/sjzdhyjsxtx1/lyb_ae03bbb7dd1548659c1ffe83edd4a047/index.htm) | 北京大学集成电路学院（CCF 集成电路青年奖） | AI for EDA、GPU/FPGA 加速 EDA 算法；CircuitNet 开源数据集（国内首个 EDA AI 数据集）创始人 |
 | [李萌（Meng Li）](https://mengli.me/) | 北京大学集成电路学院（国优青海外） | EDA 与硬件软件协同设计、高效安全多模态 AI 加速，EDAA 杰出博士论文奖 |
-| [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室） | 模拟电路 EDA、ML 辅助 IC 设计自动化 |
+| [陈建利](https://sme.fudan.edu.cn/5f/c6/c31141a352198/page.htm) | 复旦大学微电子学院（教授，博导） | IC 布局算法（Placement/Legalization）、VLSI 物理设计优化；DAC Under-40 Innovators Award 2023，大陆学者 54 年来首次以第一作者获 DAC 最佳论文，创立立芯（Lichip）EDA 初创公司（获华为投资） |
+| [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院（ASIC 国家重点实验室，长江学者，杰青） | 模拟电路 EDA（行为级建模、版图自动化）、ML 辅助 IC 设计自动化、高速互连分析；140+ 论文 |
 | [郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/) | 上海交通大学密西根学院 | AI 辅助 EDA、低功耗设计、FPGA 加速器 |
 | [谢知遥（Zhiyao Xie）](https://zhiyaoxie.com/) | 香港科技大学电子与计算机工程系 | AI 辅助 EDA，聚焦功耗建模、RTL 代码生成（LLM for EDA）、时序分析；ACM+EDAA Outstanding Dissertation Award 双奖（2023），MICRO 2021 最佳论文，RGC Early Career Award |
 | [余蓓（Bei Yu）](https://www.cse.cuhk.edu.hk/~byu/) | 香港中文大学计算机科学与工程系（副教授） | ML + EDA，光刻热点检测（OPC/DFM）、布局布线优化、LLM for EDA；10 项顶会最佳论文，引用 13,971+ |
