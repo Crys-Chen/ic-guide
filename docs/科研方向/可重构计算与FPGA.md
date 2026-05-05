@@ -77,13 +77,9 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[尹首一](https://www.sic.tsinghua.edu.cn/info/1040/1567.htm)** <span class="badge-tsinghua">清华</span>
+-   **[尹首一](https://www.sic.tsinghua.edu.cn/info/1040/1567.htm) & [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
 
     软件定义芯片 · 可重构计算架构 · 神经网络加速器（Thinker）· VLSI 设计方法学
-
--   **[魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
-
-    软件定义芯片 · 可重构计算架构 · VLSI 设计方法学
 
 -   **[刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm)** <span class="badge-tsinghua">清华</span>
 
