@@ -152,6 +152,18 @@ plugins:
             数字信号处理: Digital Signal Processing
             MATLAB: MATLAB
             ASIC: ASIC Design
+            科研方向: Research Directions
+            计算芯片与处理器架构: Compute Chips and Processor Architecture
+            存储器与存算一体: Memory and Compute-in-Memory
+            EDA与设计自动化: EDA and Design Automation
+            射频与毫米波: RF and Millimeter-Wave
+            功率半导体与宽禁带器件: Power Semiconductors and WBG Devices
+            先进制程与异构集成: Advanced Process and Heterogeneous Integration
+            硅光子与光电集成: Silicon Photonics and Optoelectronics
+            神经形态计算: Neuromorphic Computing
+            生物电子与脑机接口: Bioelectronics and Brain-Computer Interface
+            具身智能: Embodied Intelligence
+            硬件安全: Hardware Security
   - search:
       lang:
         - zh
@@ -174,6 +186,19 @@ nav:
   - 如何使用这本书: "使用指南.md"
   - 一个仅供参考的CS学习规划: "CS学习规划.md"
   - 知识谱系: "知识谱系.md"
+  - 科研方向:
+    - 导言: "科研方向/index.md"
+    - 计算芯片与处理器架构: "科研方向/计算芯片与处理器架构.md"
+    - 存储器与存算一体: "科研方向/存储器与存算一体.md"
+    - EDA与设计自动化: "科研方向/EDA与设计自动化.md"
+    - 射频与毫米波: "科研方向/射频与毫米波.md"
+    - 功率半导体与宽禁带器件: "科研方向/功率半导体与宽禁带器件.md"
+    - 先进制程与异构集成: "科研方向/先进制程与异构集成.md"
+    - 硅光子与光电集成: "科研方向/硅光子与光电集成.md"
+    - 神经形态计算: "科研方向/神经形态计算.md"
+    - 生物电子与脑机接口: "科研方向/生物电子与脑机接口.md"
+    - 具身智能: "科研方向/具身智能.md"
+    - 硬件安全: "科研方向/硬件安全.md"
   - 课程资源:
     - 数学:
       - 导言: "课程资源/数学/index.md"
