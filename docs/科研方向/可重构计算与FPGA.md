@@ -32,7 +32,7 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 | **高校** | U Toronto（VTR/VPR）、UCLA、Cornell、UIUC | 清华、北大、复旦、国防科大 |
 | **顶会** | FPGA、FCCM、FPL、DAC、ASPLOS、ISLPED | — |
 
-## 值得关注的课题组
+## 相关课题组
 
 **国内——清华大学**
 

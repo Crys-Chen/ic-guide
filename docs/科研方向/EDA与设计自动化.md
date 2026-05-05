@@ -31,7 +31,7 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 | **高校** | UCSD（Andrew Kahng）、UT Austin、UCLA | 北大、清华、复旦、东南大学 |
 | **顶会** | DAC、ICCAD、DATE、ASP-DAC | — |
 
-## 值得关注的课题组
+## 相关课题组
 
 **国内——清华大学**
 
