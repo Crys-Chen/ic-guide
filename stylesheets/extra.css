@@ -123,7 +123,7 @@
 
 /* ─── Markmap 容器 ──────────────────────────────────────── */
 .markmap {
-  min-height: 420px;
+  min-height: max(520px, 65vh);
   border-radius: 10px;
   border: 1px solid var(--md-default-fg-color--lightest);
   box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
@@ -294,7 +294,7 @@
 
 .hero-track {
   position: relative;
-  height: 250px;
+  height: 320px;
 }
 
 .hero-slide {
@@ -418,10 +418,10 @@
 }
 
 @media (max-width: 600px) {
-  .hero-track  { height: 210px; }
-  .hero-slide  { padding: 1.5rem 3.5rem 2.8rem; }
-  .hero-title  { font-size: 1.25rem; }
+  .hero-track  { height: 280px; }
+  .hero-slide  { padding: 1.6rem 3.2rem 2.8rem; }
+  .hero-title  { font-size: 1.3rem; }
   .hero-desc   { font-size: .8rem; margin-bottom: .9rem; }
-  .hero-icon   { font-size: 2rem; }
+  .hero-icon   { font-size: 2.2rem; }
   .hero-btn    { width: 32px; height: 32px; font-size: 1.1rem; }
 }
