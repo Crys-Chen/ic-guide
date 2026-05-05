@@ -31,96 +31,98 @@
 | **高校** | MIT、CMU、Stanford、UCB、UIUC | 清华、北大、浙大、上交 |
 | **顶会** | NeurIPS、ICML、ICLR、CVPR、EMNLP、MLSys | — |
 
-??? info "相关课题组"
+## 相关课题组
 
 
-    <div class="grid cards" markdown>
 
-    -   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
+<div class="grid cards prof-collapse" markdown>
 
-        高效深度学习 · LLM 量化与压缩（AWQ/SpAtten）· TinyML · 硬件感知 NAS
+-   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
 
-    -   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
+    高效深度学习 · LLM 量化与压缩（AWQ/SpAtten）· TinyML · 硬件感知 NAS
 
-        TinyML · 边缘 AI 系统 · MLPerf 基准测试 · 移动设备推理
+-   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
 
-    -   **[Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/)** <span class="badge-intl">UC Berkeley</span>
+    TinyML · 边缘 AI 系统 · MLPerf 基准测试 · 移动设备推理
 
-        深度强化学习 · 模仿学习 · 机器人操控策略
+-   **[Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/)** <span class="badge-intl">UC Berkeley</span>
 
-    -   **[Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)** <span class="badge-intl">UC Berkeley</span>
+    深度强化学习 · 模仿学习 · 机器人操控策略
 
-        离线强化学习 · 机器人学习 · 决策 Transformer
+-   **[Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)** <span class="badge-intl">UC Berkeley</span>
 
-    -   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
+    离线强化学习 · 机器人学习 · 决策 Transformer
 
-        强化学习理论 · 教育与医疗 RL · 样本效率
+-   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
 
-    -   **[Percy Liang](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
+    强化学习理论 · 教育与医疗 RL · 样本效率
 
-        基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
+-   **[Percy Liang](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
 
-    -   **[Graham Neubig](https://www.phontron.com/)** <span class="badge-intl">CMU</span>
+    基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
 
-        LLM Agent · 代码生成 · 多语言 NLP
+-   **[Graham Neubig](https://www.phontron.com/)** <span class="badge-intl">CMU</span>
 
-    -   **[Ion Stoica](https://people.eecs.berkeley.edu/~istoica/)** <span class="badge-intl">UC Berkeley</span>
+    LLM Agent · 代码生成 · 多语言 NLP
 
-        LLM 推理系统（vLLM/Ray）· 分布式 AI 基础设施
+-   **[Ion Stoica](https://people.eecs.berkeley.edu/~istoica/)** <span class="badge-intl">UC Berkeley</span>
 
-    -   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
+    LLM 推理系统（vLLM/Ray）· 分布式 AI 基础设施
 
-        生成模型 · 贝叶斯深度学习 · 扩散模型理论
+-   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
 
-    -   **[唐杰](https://keg.cs.tsinghua.edu.cn/jietang/)** <span class="badge-tsinghua">清华</span>
+    生成模型 · 贝叶斯深度学习 · 扩散模型理论
 
-        知识图谱 · 大语言模型 · AI 社会系统
+-   **[唐杰](https://keg.cs.tsinghua.edu.cn/jietang/)** <span class="badge-tsinghua">清华</span>
 
-    -   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
+    知识图谱 · 大语言模型 · AI 社会系统
 
-        可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
+-   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
 
-    -   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
+    可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
 
-        LLM 加速器设计 · ML for EDA · FPGA 推理加速
+-   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
-    </div>
+    LLM 加速器设计 · ML for EDA · FPGA 推理加速
 
-    ## 知识路径
+</div>
+<button class="prof-show-all" onclick="this.previousElementSibling.classList.add('show-all');this.style.display='none'">显示全部 ↓</button>
 
-    ```mermaid
-    graph LR
-        A["线性代数 + 概率统计"] --> B["机器学习基础\nCS229/UCB CS189"]
-        B --> C["深度学习\nCS231n/CS224n"]
-        C --> D["强化学习\nCS285/Spinning Up"]
-        C --> E["大语言模型\nAttention/Transformer"]
-        E --> F["LLM 系统\nvLLM/TGI"]
-        D --> G["AI Agent\nAutoGPT/ReAct"]
+## 知识路径
 
-        H["计算机组成原理"] --> I["TinyML\nMIT 6.5940"]
-        C --> I
+```mermaid
+graph LR
+    A["线性代数 + 概率统计"] --> B["机器学习基础\nCS229/UCB CS189"]
+    B --> C["深度学习\nCS231n/CS224n"]
+    C --> D["强化学习\nCS285/Spinning Up"]
+    C --> E["大语言模型\nAttention/Transformer"]
+    E --> F["LLM 系统\nvLLM/TGI"]
+    D --> G["AI Agent\nAutoGPT/ReAct"]
 
-        classDef core fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
-        classDef supp fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
-        class A,B,C,D,E,F,G core
-        class H,I supp
-    ```
+    H["计算机组成原理"] --> I["TinyML\nMIT 6.5940"]
+    C --> I
 
-    **本站相关课程：**
+    classDef core fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
+    classDef supp fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
+    class A,B,C,D,E,F,G core
+    class H,I supp
+```
 
-    - [机器学习（Stanford CS229）](../课程资源/人工智能/机器学习/CS229.md)
-    - [深度学习（CS231n）](../课程资源/人工智能/深度学习/CS231.md) · [CS224n](../课程资源/人工智能/深度学习/CS224n.md)
-    - [强化学习（UCB CS285）](../课程资源/人工智能/深度学习/CS285.md)
-    - [TinyML（MIT 6.5940）](../课程资源/人工智能/机器学习系统/EML.md)
-    - [大语言模型系统（CMU 11-868）](../课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md)
+**本站相关课程：**
 
-    ## 入门三步走
+- [机器学习（Stanford CS229）](../课程资源/人工智能/机器学习/CS229.md)
+- [深度学习（CS231n）](../课程资源/人工智能/深度学习/CS231.md) · [CS224n](../课程资源/人工智能/深度学习/CS224n.md)
+- [强化学习（UCB CS285）](../课程资源/人工智能/深度学习/CS285.md)
+- [TinyML（MIT 6.5940）](../课程资源/人工智能/机器学习系统/EML.md)
+- [大语言模型系统（CMU 11-868）](../课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md)
 
-    **第一步：补齐算法基础**  
-    如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
+## 入门三步走
 
-    **第二步：理解系统约束**  
-    阅读 [Efficient ML](https://efficientml.ai/)（Song Han MIT 6.5940 课程主页），特别是关于量化和剪枝的讲义。你的硬件背景会让你在这一步比纯软件背景的同学理解得更深。
+**第一步：补齐算法基础**  
+如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
 
-    **第三步：选一个具体问题**  
-    RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 3 篇你感兴趣方向的最近 NeurIPS/ICML 论文，感受问题的粒度和评价指标，再决定深入哪个子方向。
+**第二步：理解系统约束**  
+阅读 [Efficient ML](https://efficientml.ai/)（Song Han MIT 6.5940 课程主页），特别是关于量化和剪枝的讲义。你的硬件背景会让你在这一步比纯软件背景的同学理解得更深。
+
+**第三步：选一个具体问题**  
+RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 3 篇你感兴趣方向的最近 NeurIPS/ICML 论文，感受问题的粒度和评价指标，再决定深入哪个子方向。
