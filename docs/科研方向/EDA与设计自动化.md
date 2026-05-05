@@ -42,6 +42,9 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 | [罗国杰](http://ceca.pku.edu.cn/en/people_/faculty_/guojie_luo/) | 北京大学计算机学院 | CECA 实验室 | 物理设计自动化、FPGA 布局布线、可扩展算法 |
 | [李萌（Meng Li）](https://mengli.me/) | 北京大学集成电路学院 | 个人主页 | EDA 与硬件软件协同设计、高效安全 AI 加速 |
 | [郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/) | 上海交通大学密西根学院 | iCAS Lab | AI 辅助 EDA、低功耗设计、FPGA 加速器 |
+| [喻文健](http://numbda.cs.tsinghua.edu.cn/~yuwj/) | 清华大学计算机系（IEEE Fellow 2025） | Numbda Lab | EDA 算法、电磁场求解器、IC 互连参数提取、3D IC 热仿真，多次 ASP-DAC/DATE 最佳论文 |
+| [叶佐昌](https://www.sic.tsinghua.edu.cn/en/info/1085/1414.htm) | 清华大学集成电路学院 | 个人主页 | VLSI CAD 数值算法、电磁仿真、模拟/混合信号电路仿真（前 Cadence Research Labs 研究员） |
+| [王彦](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm) | 清华大学集成电路学院 | 个人主页 | 器件建模与 EDA（电路-器件协同仿真）、宽禁带半导体（SiC/GaN/金刚石）器件设计 |
 
 **国际**
 
