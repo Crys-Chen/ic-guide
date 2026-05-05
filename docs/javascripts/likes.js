@@ -1,9 +1,12 @@
 // Firebase shared like system for professor tables
 // Config placeholder — fill in after creating your Firebase project
 const FIREBASE_CONFIG = {
-  apiKey: "REPLACE_WITH_YOUR_API_KEY",
-  authDomain: "REPLACE_WITH_YOUR_AUTH_DOMAIN",
-  projectId: "REPLACE_WITH_YOUR_PROJECT_ID",
+  apiKey: "AIzaSyARlXinXe1KBx4IkNOq6QRzW3sLyGZSP9k",
+  authDomain: "fudanme.firebaseapp.com",
+  projectId: "fudanme",
+  storageBucket: "fudanme.firebasestorage.app",
+  messagingSenderId: "1092867516373",
+  appId: "1:1092867516373:web:6e8a36814fd6954f61bf5c"
 };
 
 const COLLECTION = "prof_likes";
