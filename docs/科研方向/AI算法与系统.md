@@ -1,6 +1,4 @@
 ---
-hide:
-  - navigation
 ---
 # AI 算法与系统
 
@@ -76,7 +74,22 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
 ## 相关课题组
 
+### 境内
 
+<div class="grid cards prof-collapse" markdown>
+
+-   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
+
+    生成模型 · 贝叶斯深度学习 · 扩散模型理论
+
+-   **[唐杰](https://keg.cs.tsinghua.edu.cn/jietang/)** <span class="badge-tsinghua">清华</span>
+
+    知识图谱 · 大语言模型 · AI 社会系统
+
+</div>
+<button class="prof-show-all">显示全部 ↓</button>
+
+### 境外
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -112,14 +125,6 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     LLM 推理系统（vLLM/Ray）· 分布式 AI 基础设施
 
--   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
-
-    生成模型 · 贝叶斯深度学习 · 扩散模型理论
-
--   **[唐杰](https://keg.cs.tsinghua.edu.cn/jietang/)** <span class="badge-tsinghua">清华</span>
-
-    知识图谱 · 大语言模型 · AI 社会系统
-
 -   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
 
     可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
@@ -130,3 +135,4 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+

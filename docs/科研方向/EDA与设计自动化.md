@@ -1,6 +1,4 @@
 ---
-hide:
-  - navigation
 ---
 # EDA 与设计自动化
 
@@ -86,7 +84,7 @@ graph LR
 
 ## 相关课题组
 
-
+### 境内
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -134,6 +132,13 @@ graph LR
 
     AI 辅助 EDA · 低功耗设计 · FPGA 加速器
 
+</div>
+<button class="prof-show-all">显示全部 ↓</button>
+
+### 境外
+
+<div class="grid cards prof-collapse" markdown>
+
 -   **[谢知遥（Zhiyao Xie）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
 
     AI 辅助 EDA · LLM for RTL 生成 · 时序分析
@@ -168,3 +173,4 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+

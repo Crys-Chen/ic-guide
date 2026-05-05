@@ -1,6 +1,4 @@
 ---
-hide:
-  - navigation
 ---
 # 可重构计算与 FPGA
 
@@ -75,7 +73,7 @@ graph LR
 
 ## 相关课题组
 
-
+### 境内
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -102,6 +100,13 @@ graph LR
 -   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span>
 
     模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
+
+</div>
+<button class="prof-show-all">显示全部 ↓</button>
+
+### 境外
+
+<div class="grid cards prof-collapse" markdown>
 
 -   **[张薇（Wei Zhang）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
 
@@ -141,3 +146,4 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
