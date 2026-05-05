@@ -179,6 +179,7 @@ plugins:
             硬件安全: Hardware Security
             可重构计算与FPGA: Reconfigurable Computing and FPGA
             模拟与混合信号集成电路: Analog and Mixed-Signal IC
+            量子计算与量子芯片: Quantum Computing and Quantum Chips
   - search:
       lang:
         - zh
@@ -224,6 +225,7 @@ nav:
     - 硬件安全: "科研方向/硬件安全.md"
     - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
     - 模拟与混合信号集成电路: "科研方向/模拟与混合信号集成电路.md"
+    - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
   - 课程资源:
     - 数学:
       - 导言: "课程资源/数学/index.md"
