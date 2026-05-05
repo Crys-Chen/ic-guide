@@ -1,0 +1,122 @@
+/* ═══════════════════════════════════════════════════════════
+   ECE 自学指南 — 视觉增强
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── 顶部导航 Tab ──────────────────────────────────────── */
+.md-tabs {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+.md-tabs__link {
+  font-weight: 500;
+  letter-spacing: .02em;
+  transition: opacity .2s;
+}
+
+/* ─── 表格 ──────────────────────────────────────────────── */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+/* 表头 */
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+/* 斑马纹 */
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, .025);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, .03);
+}
+
+/* 悬停高亮 */
+.md-typeset table:not([class]) tbody tr {
+  transition: background .15s ease;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(57, 73, 171, .08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(179, 157, 219, .12);
+}
+
+/* ─── 标题左侧色条 ──────────────────────────────────────── */
+.md-typeset h2 {
+  padding-left: .7em;
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+.md-typeset h3 {
+  padding-left: .55em;
+  border-left: 3px solid var(--md-accent-fg-color);
+}
+
+/* ─── Admonition 圆角 + 阴影 ────────────────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .07);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  border-radius: 8px 8px 0 0;
+}
+
+/* ─── 代码块圆角 ─────────────────────────────────────────── */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+}
+
+/* ─── 搜索框胶囊形 ──────────────────────────────────────── */
+.md-search__form {
+  border-radius: 24px;
+}
+
+/* ─── 链接动效 ───────────────────────────────────────────── */
+.md-typeset a {
+  transition: color .15s ease;
+}
+
+/* ─── 返回顶部按钮 ──────────────────────────────────────── */
+.md-top {
+  border-radius: 24px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+/* ─── 页脚柔和分隔线 ────────────────────────────────────── */
+.md-footer {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ─── 目录跟随高亮更明显 ────────────────────────────────── */
+.md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* ─── 侧边栏当前节标题 ──────────────────────────────────── */
+.md-nav--secondary .md-nav__title {
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+/* ─── 图片圆角（可选） ──────────────────────────────────── */
+.md-typeset img:not([class]) {
+  border-radius: 6px;
+}

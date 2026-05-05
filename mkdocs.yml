@@ -23,23 +23,28 @@ theme:
     - header.autohide
     - navigation.tracking
     - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
     - search.highlight
     - search.share
     - search.suggest
     - content.code.annotate
+    - content.tooltips
+    - toc.follow
 
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light blue
-      accent: deep purple
+      primary: indigo
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: deep purple
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -165,6 +170,7 @@ plugins:
             具身智能: Embodied Intelligence
             硬件安全: Hardware Security
             可重构计算与FPGA: Reconfigurable Computing and FPGA
+            模拟与混合信号集成电路: Analog and Mixed-Signal IC
   - search:
       lang:
         - zh
@@ -175,6 +181,7 @@ plugins:
   - open-in-new-tab:
 
 extra_css:
+  - stylesheets/extra.css
   - stylesheets/likes.css
 
 extra_javascript:
@@ -207,6 +214,7 @@ nav:
     - 具身智能: "科研方向/具身智能.md"
     - 硬件安全: "科研方向/硬件安全.md"
     - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
+    - 模拟与混合信号集成电路: "科研方向/模拟与混合信号集成电路.md"
   - 课程资源:
     - 数学:
       - 导言: "课程资源/数学/index.md"
