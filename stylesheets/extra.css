@@ -248,3 +248,140 @@
   opacity: .55;
   margin-top: .4em;
 }
+
+/* ─── 首页 Hero 轮播 ─────────────────────────────────────── */
+.hero-carousel {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1.5em 0 2.5em;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .14);
+}
+
+.hero-track {
+  display: grid;
+}
+
+.hero-slide {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 5rem 3rem;
+  opacity: 0;
+  transition: opacity .5s ease;
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-slide-content {
+  text-align: center;
+  color: #fff;
+  max-width: 560px;
+}
+
+.hero-icon {
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: .5rem;
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: .35rem 0 .65rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+  letter-spacing: .01em;
+}
+
+.hero-desc {
+  font-size: .92rem;
+  opacity: .92;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: .4em 1.5em;
+  background: rgba(255, 255, 255, .2);
+  border: 1.5px solid rgba(255, 255, 255, .75);
+  border-radius: 20px;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: .88rem;
+  text-decoration: none !important;
+  transition: background .2s ease, transform .15s ease;
+  backdrop-filter: blur(3px);
+}
+
+.hero-cta:hover {
+  background: rgba(255, 255, 255, .32);
+  transform: translateY(-2px);
+}
+
+.hero-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, .18);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, .32);
+}
+
+.hero-prev { left: 12px; }
+.hero-next { right: 12px; }
+
+.hero-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .45);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background .2s, transform .2s;
+}
+
+.hero-dot.active {
+  background: #fff;
+  transform: scale(1.25);
+}
+
+@media (max-width: 600px) {
+  .hero-slide { padding: 1.8rem 3.5rem 2.8rem; }
+  .hero-title { font-size: 1.35rem; }
+  .hero-desc  { font-size: .82rem; }
+  .hero-icon  { font-size: 2.2rem; }
+  .hero-btn   { width: 34px; height: 34px; font-size: 1.2rem; }
+}
