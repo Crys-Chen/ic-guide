@@ -608,19 +608,11 @@
   transform: scaleX(1.012) translateX(2px);
 }
 
-/* ─── 移动端导航抽屉优化 ──────────────────────────────────── */
+/* ─── 移动端导航抽屉：条目字号和行高 ────────────────────── */
 @media screen and (max-width: 76.25em) {
-  /* 抽屉内导航条目字号和行高 */
   .md-nav--primary .md-nav__link {
     font-size: .95rem;
     padding-top: .55rem;
     padding-bottom: .55rem;
-  }
-
-  /* active/hover 颜色统一（移动端也要强制覆盖） */
-  .md-nav__link--active,
-  .md-nav__link:hover,
-  .md-nav__link:focus {
-    color: var(--md-primary-fg-color) !important;
   }
 }
