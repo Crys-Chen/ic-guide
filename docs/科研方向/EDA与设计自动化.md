@@ -31,6 +31,27 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 | **高校** | UCSD（Andrew Kahng）、UT Austin、UCLA | 北大、清华、复旦、东南大学 |
 | **顶会** | DAC、ICCAD、DATE、ASP-DAC | — |
 
+## 值得关注的课题组
+
+**国内**
+
+| 姓名 | 单位 | 主页 | 研究方向 |
+|------|------|------|----------|
+| [曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm) | 复旦大学微电子学院 | ASIC 国家重点实验室 | 模拟电路 EDA、ML 辅助 IC 设计自动化 |
+| [梁云（Eric Liang）](https://ericlyun.github.io/) | 北京大学集成电路学院 | 个人主页 | EDA、FPGA HLS、硬件软件协同设计 |
+| [罗国杰](http://ceca.pku.edu.cn/en/people_/faculty_/guojie_luo/) | 北京大学计算机学院 | CECA 实验室 | 物理设计自动化、FPGA 布局布线、可扩展算法 |
+| [李萌（Meng Li）](https://mengli.me/) | 北京大学集成电路学院 | 个人主页 | EDA 与硬件软件协同设计、高效安全 AI 加速 |
+| [郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/) | 上海交通大学密西根学院 | iCAS Lab | AI 辅助 EDA、低功耗设计、FPGA 加速器 |
+
+**国际**
+
+| 姓名 | 单位 | 主页 | 研究方向 |
+|------|------|------|----------|
+| [Andrew Kahng](https://vlsicad.ucsd.edu/~abk/) | UCSD CSE/ECE | VLSI CAD Lab | 物理设计、布局布线；DARPA OpenROAD 开源 EDA 项目 PI |
+| [Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong) | UCLA CS | VAST Lab | FPGA 设计自动化、HLS、领域专用计算；美国工程院院士 |
+| [David Z. Pan](https://users.ece.utexas.edu/~dpan/) | UT Austin ECE | SLD Group | EDA、AI/IC 协同优化、DFM、模拟/RF 设计自动化 |
+| [Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini) | Stanford CS | Scaling Intelligence Lab | ML 驱动芯片布局（AlphaChip，*Nature* 2021） |
+
 ## 知识路径
 
 ```mermaid
