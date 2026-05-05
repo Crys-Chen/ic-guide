@@ -241,19 +241,25 @@ nav:
         - 大学物理B(复旦): "课程资源/物理/大学物理/PHYS120013-14.md"
       - 量子力学:
         - 量子力学(复旦): "课程资源/物理/量子力学/MICR130015.md"
+        - MIT 8.04 Quantum Physics I: "课程资源/物理/量子力学/MIT8.04.md"
       - 固体物理:
         - 固体物理(复旦): "课程资源/物理/固体物理/MICR130013.md"
+        - MIT 8.231 Physics of Solids I: "课程资源/物理/固体物理/MIT8.231.md"
       - 半导体物理:
         - 半导体物理(复旦): "课程资源/物理/半导体物理/MICR130005.md"
+        - Purdue ECE 606 Solid State Devices: "课程资源/物理/半导体物理/purdue_ece606.md"
       - 其他:
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
     - 器件与工艺:
       - 集成电路工艺:
         - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
+        - "MIT 6.152J: Micro/Nano Processing": "课程资源/器件与工艺/集成电路工艺/MIT6.152J.md"
       - 半导体器件:
         - 半导体器件原理(复旦): "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md"
+        - "MIT 6.012: Microelectronic Devices": "课程资源/器件与工艺/半导体器件/MIT6.012.md"
       - 先进工艺技术:
         - 先进集成电路工艺技术(复旦): "课程资源/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
+        - 先进工艺技术学习资源汇总: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
     - 电路:
       - 导言: "课程资源/电路/index.md"
       - 速通:
@@ -270,15 +276,20 @@ nav:
       - 数字:
         - 数字逻辑基础:
           - 数字逻辑基础(复旦): "课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md"
+          - "MIT 6.004: Computation Structures": "课程资源/电路/数字/数字逻辑基础/MIT6.004.md"
         - FPGA:
           - FPGA数字系统设计(复旦): "课程资源/电路/数字/FPGA/MICR130024.md"
+          - "FPGA 设计学习资源汇总": "课程资源/电路/数字/FPGA/fpga_courses.md"
         - 数字集成电路:
           - 数字集成电路设计原理(复旦): "课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
+          - "NPTEL VLSI Design": "课程资源/电路/数字/数字集成电路/VLSI_design.md"
       - 模拟:
         - 模拟电子线路:
           - 模拟电子线路(复旦): "课程资源/电路/模拟/模拟电子线路/MICR130002.md"
+          - "Razavi Electronics 1 & 2 (UCLA)": "课程资源/电路/模拟/模拟电子线路/razavi_electronics.md"
         - 模拟集成电路:
           - 模拟集成电路(复旦): "课程资源/电路/模拟/模拟集成电路/MICR130030.md"
+          - "Razavi Design of Analog CMOS IC (UCLA)": "课程资源/电路/模拟/模拟集成电路/razavi.md"
         - 电路分析基础:
           - 电路基础(Bilibili): "课程资源/电路/模拟/电路分析基础/tingyi.md"
         - 高频电子线路:
@@ -294,10 +305,13 @@ nav:
           - "UCB EE120: Signals and Systems": "课程资源/电路/信号处理/信号与系统/EE120.md"
         - 数字信号处理:
           - 数字信号处理(复旦): "课程资源/电路/信号处理/数字信号处理/INFO130010.md"
+          - "MIT 离散时间信号处理 (Oppenheim)": "课程资源/电路/信号处理/数字信号处理/MIT_DSP.md"
         - MATLAB:
           - MATLAB(复旦): "课程资源/电路/信号处理/MATLAB/MICR130022.md"
+          - MATLAB 学习资源: "课程资源/电路/信号处理/MATLAB/mathworks_matlab.md"
         - 数模模数转换器:
           - 数模模数转换器(复旦): "课程资源/电路/信号处理/数模模数转换器/INFO130270.md"
+          - ADC/DAC 设计学习资源汇总: "课程资源/电路/信号处理/数模模数转换器/stanford_adc.md"
       - EDA工具:
         - EDA工具(复旦): "课程资源/电路/EDA/MICR130035.md"
         - 数字EDA:
@@ -306,6 +320,7 @@ nav:
           - "Cadence Virtuoso 入门": "课程资源/电路/EDA/cadence.md"
       - ASIC:
         - ASIC设计(复旦): "课程资源/电路/ASIC/INFO130094.md"
+        - "UIUC VLSI CAD (Coursera)": "课程资源/电路/ASIC/UIUC_VLSI_CAD.md"
       - 嵌入式SoC:
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
     - 算法编程:
