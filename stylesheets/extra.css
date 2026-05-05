@@ -120,3 +120,23 @@
 .md-typeset img:not([class]) {
   border-radius: 6px;
 }
+
+/* ─── Markmap 容器 ──────────────────────────────────────── */
+.markmap {
+  min-height: 420px;
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+/* ─── Mermaid 图水平滚动 ─────────────────────────────────── */
+.md-typeset .mermaid {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.md-typeset .mermaid svg {
+  max-width: none;
+}
