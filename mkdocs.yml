@@ -248,6 +248,7 @@ nav:
       - 半导体物理:
         - 半导体物理(复旦): "课程资源/物理/半导体物理/MICR130005.md"
         - Purdue ECE 606 Solid State Devices: "课程资源/物理/半导体物理/purdue_ece606.md"
+        - 西安电子科技大学：半导体物理(柴常春): "课程资源/物理/半导体物理/xidian_semiconductor.md"
       - 其他:
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
     - 器件与工艺:
@@ -277,6 +278,7 @@ nav:
         - 数字逻辑基础:
           - 数字逻辑基础(复旦): "课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md"
           - "MIT 6.004: Computation Structures": "课程资源/电路/数字/数字逻辑基础/MIT6.004.md"
+          - "Neso Academy: Digital Electronics": "课程资源/电路/数字/数字逻辑基础/neso_digital.md"
         - FPGA:
           - FPGA数字系统设计(复旦): "课程资源/电路/数字/FPGA/MICR130024.md"
           - "FPGA 设计学习资源汇总": "课程资源/电路/数字/FPGA/fpga_courses.md"
@@ -287,9 +289,11 @@ nav:
         - 模拟电子线路:
           - 模拟电子线路(复旦): "课程资源/电路/模拟/模拟电子线路/MICR130002.md"
           - "Razavi Electronics 1 & 2 (UCLA)": "课程资源/电路/模拟/模拟电子线路/razavi_electronics.md"
+          - 清华大学：模拟电子技术基础(华成英): "课程资源/电路/模拟/模拟电子线路/qinghua_analog.md"
         - 模拟集成电路:
           - 模拟集成电路(复旦): "课程资源/电路/模拟/模拟集成电路/MICR130030.md"
           - "Razavi Design of Analog CMOS IC (UCLA)": "课程资源/电路/模拟/模拟集成电路/razavi.md"
+          - 西安交通大学：模拟CMOS集成电路(张鸿): "课程资源/电路/模拟/模拟集成电路/xjtu_analog_ic.md"
         - 电路分析基础:
           - 电路基础(Bilibili): "课程资源/电路/模拟/电路分析基础/tingyi.md"
         - 高频电子线路:

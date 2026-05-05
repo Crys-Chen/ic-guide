@@ -29,7 +29,7 @@ Behzad Razavi 是模拟与射频集成电路设计领域最具影响力的学者
 
 - Razavi Electronics 1（45 讲全，中文环境首选）：<https://www.bilibili.com/video/BV1it411f7wQ/>
 - Razavi Electronics 2（46 讲全，中英字幕）：<https://www.bilibili.com/video/BV1Qz4y127o8/>
-- 清华大学 模拟电子技术基础（华成英，189 讲，对应童诗白教材体系）：<https://www.bilibili.com/video/BV1Vp411f71S/>
+- 清华大学 模拟电子技术基础（华成英，189 讲）：详见独立页面 [清华大学：模拟电子技术基础（华成英）](qinghua_analog.md)
 
 ## 前置学习建议
 

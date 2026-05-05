@@ -31,7 +31,7 @@ Behzad Razavi 的 UCLA ECE 215A 是全球公认的模拟集成电路方向标准
 
 - Razavi Electronics 2（Cascode、差分对、频率响应，46 讲，中英字幕，直接对应本课前半段）：<https://www.bilibili.com/video/BV1Qz4y127o8/>
 - Razavi 模拟 CMOS 集成电路设计（B 站搜索"Razavi 模拟集成电路"获取最新转载）：<https://www.bilibili.com/video/BV1rJ411G7wr/>
-- 西安交通大学 张鸿老师《模拟 CMOS 集成电路》（拉扎维教材配套，B 站）：<https://www.bilibili.com/video/BV1E54y187et/>
+- 西安交通大学 张鸿《模拟 CMOS 集成电路》（中文精讲，拉扎维教材配套）：详见独立页面 [西安交通大学：模拟CMOS集成电路设计（张鸿）](xjtu_analog_ic.md)
 
 ## 前置学习建议
 
