@@ -1,96 +1,23 @@
-<figure markdown>
-  ![Image title](./images/title.png){ width="600" }
-</figure>
-
 <div class="hero-carousel" id="hero-carousel">
-
-  <div class="hero-track">
-
-    <div class="hero-slide active" style="background: linear-gradient(135deg, #3949AB 0%, #5C6BC0 100%)">
-      <div class="hero-slide-content">
-        <div class="hero-icon">🔬</div>
-        <div class="hero-title">科研方向巡礼</div>
-        <div class="hero-desc">14 个前沿方向 · 从器件工艺到量子芯片 · 找到属于你的研究坐标</div>
-        <a class="hero-cta" href="科研方向/">开始探索 →</a>
-      </div>
-    </div>
-
-    <div class="hero-slide" style="background: linear-gradient(135deg, #00796B 0%, #26A69A 100%)">
-      <div class="hero-slide-content">
-        <div class="hero-icon">📚</div>
-        <div class="hero-title">课程资源</div>
-        <div class="hero-desc">200+ 门精选课程 · 数学 · 物理 · 器件 · 电路 · 编程 · AI 全覆盖</div>
-        <a class="hero-cta" href="课程资源/数学/">浏览课程 →</a>
-      </div>
-    </div>
-
-    <div class="hero-slide" style="background: linear-gradient(135deg, #7B1FA2 0%, #AB47BC 100%)">
-      <div class="hero-slide-content">
-        <div class="hero-icon">🗺️</div>
-        <div class="hero-title">知识谱系</div>
-        <div class="hero-desc">跨学科知识地图 · 看清方向依赖与连接路径 · 少走弯路</div>
-        <a class="hero-cta" href="知识谱系/">查看地图 →</a>
-      </div>
-    </div>
-
-    <div class="hero-slide" style="background: linear-gradient(135deg, #E65100 0%, #FF7043 100%)">
-      <div class="hero-slide-content">
-        <div class="hero-icon">🛠️</div>
-        <div class="hero-title">工程工具</div>
-        <div class="hero-desc">Git · Linux · LaTeX · Docker · Vim · 开发必备工具链一站速通</div>
-        <a class="hero-cta" href="课程资源/必学工具/Git/">工具速通 →</a>
-      </div>
-    </div>
-
-    <div class="hero-slide" style="background: linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)">
-      <div class="hero-slide-content">
-        <div class="hero-icon">🧭</div>
-        <div class="hero-title">学习规划</div>
-        <div class="hero-desc">从大一到保研 · 一份仅供参考的 ECE 成长路线图</div>
-        <a class="hero-cta" href="CS学习规划/">看看规划 →</a>
-      </div>
-    </div>
-
-  </div>
-
-  <button class="hero-btn hero-prev" aria-label="上一张">&#8249;</button>
-  <button class="hero-btn hero-next" aria-label="下一张">&#8250;</button>
-
-  <div class="hero-dots">
-    <button class="hero-dot active" data-i="0" aria-label="第 1 张"></button>
-    <button class="hero-dot" data-i="1" aria-label="第 2 张"></button>
-    <button class="hero-dot" data-i="2" aria-label="第 3 张"></button>
-    <button class="hero-dot" data-i="3" aria-label="第 4 张"></button>
-    <button class="hero-dot" data-i="4" aria-label="第 5 张"></button>
-  </div>
-
+<div class="hero-track">
+<div class="hero-slide active" style="background:linear-gradient(135deg,#3949AB 0%,#5C6BC0 100%)"><div class="hero-slide-content"><div class="hero-icon">🔬</div><div class="hero-title">科研方向巡礼</div><div class="hero-desc">14 个前沿方向 · 从器件工艺到量子芯片 · 找到属于你的研究坐标</div><a class="hero-cta" href="科研方向/">开始探索 →</a></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#00796B 0%,#26A69A 100%)"><div class="hero-slide-content"><div class="hero-icon">📚</div><div class="hero-title">课程资源</div><div class="hero-desc">200+ 门精选课程 · 数学 · 物理 · 器件 · 电路 · 编程 · AI 全覆盖</div><a class="hero-cta" href="课程资源/数学/">浏览课程 →</a></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#7B1FA2 0%,#AB47BC 100%)"><div class="hero-slide-content"><div class="hero-icon">🗺️</div><div class="hero-title">知识谱系</div><div class="hero-desc">跨学科知识地图 · 看清方向依赖与连接路径 · 少走弯路</div><a class="hero-cta" href="知识谱系/">查看地图 →</a></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#E65100 0%,#FF7043 100%)"><div class="hero-slide-content"><div class="hero-icon">🛠️</div><div class="hero-title">工程工具</div><div class="hero-desc">Git · Linux · LaTeX · Docker · Vim · 开发必备工具链一站速通</div><a class="hero-cta" href="课程资源/必学工具/Git/">工具速通 →</a></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#1565C0 0%,#42A5F5 100%)"><div class="hero-slide-content"><div class="hero-icon">🧭</div><div class="hero-title">学习规划</div><div class="hero-desc">从大一到保研 · 一份仅供参考的 ECE 成长路线图</div><a class="hero-cta" href="CS学习规划/">看看规划 →</a></div></div>
 </div>
-
+<button class="hero-btn hero-prev" aria-label="上一张">&#8249;</button>
+<button class="hero-btn hero-next" aria-label="下一张">&#8250;</button>
+<div class="hero-dots">
+<button class="hero-dot active" data-i="0"></button>
+<button class="hero-dot" data-i="1"></button>
+<button class="hero-dot" data-i="2"></button>
+<button class="hero-dot" data-i="3"></button>
+<button class="hero-dot" data-i="4"></button>
+</div>
+</div>
 <script>
-(function () {
-  var c = document.getElementById('hero-carousel');
-  if (!c) return;
-  var slides = c.querySelectorAll('.hero-slide');
-  var dots   = c.querySelectorAll('.hero-dot');
-  var cur = 0, timer;
-  function go(n) {
-    slides[cur].classList.remove('active');
-    dots[cur].classList.remove('active');
-    cur = ((n % slides.length) + slides.length) % slides.length;
-    slides[cur].classList.add('active');
-    dots[cur].classList.add('active');
-  }
-  function start() { timer = setInterval(function () { go(cur + 1); }, 4200); }
-  function stop()  { clearInterval(timer); }
-  c.querySelector('.hero-prev').onclick = function () { stop(); go(cur - 1); start(); };
-  c.querySelector('.hero-next').onclick = function () { stop(); go(cur + 1); start(); };
-  dots.forEach(function (d) {
-    d.onclick = function () { stop(); go(+this.dataset.i); start(); };
-  });
-  c.addEventListener('mouseenter', stop);
-  c.addEventListener('mouseleave', start);
-  start();
-})();
+(function(){var c=document.getElementById('hero-carousel');if(!c)return;var slides=c.querySelectorAll('.hero-slide'),dots=c.querySelectorAll('.hero-dot'),cur=0,timer;function go(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=((n%slides.length)+slides.length)%slides.length;slides[cur].classList.add('active');dots[cur].classList.add('active');}function start(){timer=setInterval(function(){go(cur+1);},4200);}function stop(){clearInterval(timer);}c.querySelector('.hero-prev').onclick=function(){stop();go(cur-1);start();};c.querySelector('.hero-next').onclick=function(){stop();go(cur+1);start();};dots.forEach(function(d){d.onclick=function(){stop();go(+this.dataset.i);start();};});c.addEventListener('mouseenter',stop);c.addEventListener('mouseleave',start);start();})();
 </script>
 
 ## 前言
