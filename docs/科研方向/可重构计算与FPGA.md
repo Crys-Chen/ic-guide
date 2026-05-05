@@ -32,97 +32,98 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 | **高校** | U Toronto（VTR/VPR）、UCLA、Cornell、UIUC | 清华、北大、复旦、国防科大 |
 | **顶会** | FPGA、FCCM、FPL、DAC、ASPLOS、ISLPED | — |
 
-## 相关课题组
+??? info "相关课题组"
 
-<div class="grid cards" markdown>
 
--   **[魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
+    <div class="grid cards" markdown>
 
-    可重构计算架构 · 软件定义芯片 · VLSI 设计方法学
+    -   **[魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
 
--   **[刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm)** <span class="badge-tsinghua">清华</span>
+        可重构计算架构 · 软件定义芯片 · VLSI 设计方法学
 
-    软件定义芯片架构 · 密码处理器 · 可重构计算系统
+    -   **[刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm)** <span class="badge-tsinghua">清华</span>
 
--   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
+        软件定义芯片架构 · 密码处理器 · 可重构计算系统
 
-    FPGA HLS 编译优化 · 硬件软件协同设计 · 神经网络加速
+    -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
--   **[王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm)** <span class="badge-fudan">复旦</span>
+        FPGA HLS 编译优化 · 硬件软件协同设计 · 神经网络加速
 
-    FPGA 结构研究 · 抗辐射 FPGA · 安全可编程计算
+    -   **[王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm)** <span class="badge-fudan">复旦</span>
 
--   **[王堃](https://sme.fudan.edu.cn/60/2f/c31155a352303/page.htm)** <span class="badge-fudan">复旦</span>
+        FPGA 结构研究 · 抗辐射 FPGA · 安全可编程计算
 
-    FPGA 编译器设计 · 电路 EDA · 硬件-软件协同设计
+    -   **[王堃](https://sme.fudan.edu.cn/60/2f/c31155a352303/page.htm)** <span class="badge-fudan">复旦</span>
 
--   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span>
+        FPGA 编译器设计 · 电路 EDA · 硬件-软件协同设计
 
-    模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
+    -   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span>
 
--   **[张薇（Wei Zhang）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
+        模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
 
-    FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
+    -   **[张薇（Wei Zhang）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
 
--   **[何国曦（Hayden Kwok-Hay So）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
+        FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
 
-    异构可重构计算 · FPGA Overlay · 事件驱动视觉处理
+    -   **[何国曦（Hayden Kwok-Hay So）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
 
--   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
+        异构可重构计算 · FPGA Overlay · 事件驱动视觉处理
 
-    FPGA 架构与 CAD · VPR/VTR 开源工具 · 布局布线算法
+    -   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
 
--   **[Jason Anderson](https://www.ece.utoronto.ca/people/anderson-j-h/)** <span class="badge-intl">U Toronto</span>
+        FPGA 架构与 CAD · VPR/VTR 开源工具 · 布局布线算法
 
-    FPGA 架构设计 · HLS · FPGA 物理设计自动化
+    -   **[Jason Anderson](https://www.ece.utoronto.ca/people/anderson-j-h/)** <span class="badge-intl">U Toronto</span>
 
--   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
+        FPGA 架构设计 · HLS · FPGA 物理设计自动化
 
-    FPGA HLS · ML for EDA · 神经网络 FPGA 加速
+    -   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
--   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
+        FPGA HLS · ML for EDA · 神经网络 FPGA 加速
 
-    FPGA 设计自动化 · HLS · 领域专用计算
+    -   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
 
--   **[Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
+        FPGA 设计自动化 · HLS · 领域专用计算
 
-    高层次综合 HLS · FPGA 加速器自动生成 · 硬件-算法协同优化
+    -   **[Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
 
-</div>
+        高层次综合 HLS · FPGA 加速器自动生成 · 硬件-算法协同优化
 
-## 知识路径
+    </div>
 
-```mermaid
-graph LR
-    A["数字逻辑基础\nLUT·触发器·时序分析"] --> B["HDL / Verilog\n硬件描述与仿真"]
-    B --> C["FPGA 开发工具\nVivado·Quartus·约束文件"]
-    C --> D["数字IC设计原理\n时序收敛·功耗优化"]
-    D --> E["FPGA 加速研究\nHLS·布局布线·神经网络映射"]
+    ## 知识路径
 
-    F["算法基础\nC/C++·数据结构"] --> G["高层次综合\nHLS·Pragma优化"]
-    G --> E
+    ```mermaid
+    graph LR
+        A["数字逻辑基础\nLUT·触发器·时序分析"] --> B["HDL / Verilog\n硬件描述与仿真"]
+        B --> C["FPGA 开发工具\nVivado·Quartus·约束文件"]
+        C --> D["数字IC设计原理\n时序收敛·功耗优化"]
+        D --> E["FPGA 加速研究\nHLS·布局布线·神经网络映射"]
 
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,D,E core
-    class F,G supp
-```
+        F["算法基础\nC/C++·数据结构"] --> G["高层次综合\nHLS·Pragma优化"]
+        G --> E
 
-**本站相关课程：**
+        classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
+        classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
+        class A,B,C,D,E core
+        class F,G supp
+    ```
 
-- [数字逻辑基础（复旦）](../课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md)
-- [Verilog HDL · HDLBits](../课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md) · [UCB EECS151](../课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md)
-- [FPGA 数字系统设计（复旦）](../课程资源/电路/数字/FPGA/MICR130024.md)
-- [数字集成电路设计原理（复旦）](../课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md)
-- [EDA 工具（复旦）](../课程资源/电路/EDA/MICR130035.md) · [Vivado 入门](../课程资源/电路/EDA/vivado.md)
+    **本站相关课程：**
 
-## 入门三步走
+    - [数字逻辑基础（复旦）](../课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md)
+    - [Verilog HDL · HDLBits](../课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md) · [UCB EECS151](../课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md)
+    - [FPGA 数字系统设计（复旦）](../课程资源/电路/数字/FPGA/MICR130024.md)
+    - [数字集成电路设计原理（复旦）](../课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md)
+    - [EDA 工具（复旦）](../课程资源/电路/EDA/MICR130035.md) · [Vivado 入门](../课程资源/电路/EDA/vivado.md)
 
-**第一步：上手一块真实 FPGA**  
-跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
+    ## 入门三步走
 
-**第二步：理解布局布线的难点**  
-阅读 Betz & Rose, *VPR: A New Packing, Placement and Routing Tool for FPGA Research* (1997) 原始论文（6 页），以及 VTR 项目的文档（github.com/verilog-to-routing/vtr-verilog-to-routing），了解 FPGA P&R 为什么难、学术界如何定量评估新算法。
+    **第一步：上手一块真实 FPGA**  
+    跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
 
-**第三步：跟进 HLS 与 AI 加速前沿**  
-阅读 Chen et al., *FPGA-optimized Hardware Acceleration for Deep Neural Networks* (FPGA 2019)，或浏览 FPGA 顶会（fpga.org）近两年论文列表，感受当前研究的粒度：不是"能不能跑神经网络"，而是"如何在给定 DSP/LUT 预算下把吞吐量再提 2 倍"。
+    **第二步：理解布局布线的难点**  
+    阅读 Betz & Rose, *VPR: A New Packing, Placement and Routing Tool for FPGA Research* (1997) 原始论文（6 页），以及 VTR 项目的文档（github.com/verilog-to-routing/vtr-verilog-to-routing），了解 FPGA P&R 为什么难、学术界如何定量评估新算法。
+
+    **第三步：跟进 HLS 与 AI 加速前沿**  
+    阅读 Chen et al., *FPGA-optimized Hardware Acceleration for Deep Neural Networks* (FPGA 2019)，或浏览 FPGA 顶会（fpga.org）近两年论文列表，感受当前研究的粒度：不是"能不能跑神经网络"，而是"如何在给定 DSP/LUT 预算下把吞吐量再提 2 倍"。

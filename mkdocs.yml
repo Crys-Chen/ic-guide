@@ -62,6 +62,7 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - admonition
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -174,6 +175,9 @@ plugins:
             KiCad PCB 设计: KiCad PCB Design
             Gem5 体系结构仿真: Gem5 Architecture Simulation
             GPGPU-Sim GPU 仿真: GPGPU-Sim GPU Simulation
+            Vivado 数字EDA: Vivado Digital EDA
+            Cadence Virtuoso 模拟EDA: Cadence Virtuoso Analog EDA
+            ModelSim HDL仿真: ModelSim HDL Simulation
             计算芯片与处理器架构: Compute Chips and Processor Architecture
             存储器与存算一体: Memory and Compute-in-Memory
             EDA与设计自动化: EDA and Design Automation
@@ -508,6 +512,9 @@ nav:
           - MATLAB 与科学计算: "课程资源/必学工具/科学计算.md"
           - LTspice 电路仿真: "课程资源/必学工具/LTspice.md"
           - KiCad PCB 设计: "课程资源/必学工具/KiCad.md"
+          - Vivado 数字EDA: "课程资源/电路/EDA/vivado.md"
+          - Cadence Virtuoso 模拟EDA: "课程资源/电路/EDA/cadence.md"
+          - ModelSim HDL仿真: "课程资源/必学工具/ModelSim.md"
           - Gem5 体系结构仿真: "课程资源/必学工具/Gem5.md"
           - GPGPU-Sim GPU 仿真: "课程资源/必学工具/GPGPUSIM.md"
       - 构建与开发:
