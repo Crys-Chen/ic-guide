@@ -37,9 +37,9 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
     <div class="grid cards" markdown>
 
-    -   **[魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
+    -   **[尹首一](https://www.sic.tsinghua.edu.cn/info/1040/1567.htm) & [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
 
-        可重构计算架构 · 软件定义芯片 · VLSI 设计方法学
+        软件定义芯片 · 可重构计算架构 · 神经网络加速器（Thinker）· VLSI 设计方法学
 
     -   **[刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm)** <span class="badge-tsinghua">清华</span>
 
@@ -88,6 +88,14 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
     -   **[Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
 
         高层次综合 HLS · FPGA 加速器自动生成 · 硬件-算法协同优化
+
+    -   **[Mohamed Abdelfattah](https://www.abdelfattah-lab.com/)** <span class="badge-intl">Cornell</span>
+
+        FPGA 架构与 LLM 加速 · 神经网络 FPGA 映射 · HLS 自动化
+
+    -   **[Cong Hao](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span>
+
+        FPGA 神经网络加速 · ML for EDA · 高效 DNN 硬件映射
 
     </div>
 

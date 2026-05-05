@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 <div class="hero-carousel" id="hero-carousel">
 <div class="hero-track">
 <div class="hero-slide active" style="background:linear-gradient(135deg,#3949AB 0%,#5C6BC0 100%)"><div class="hero-slide-content"><div class="hero-icon">🔬</div><div class="hero-title">科研方向巡礼</div><div class="hero-desc">14 个前沿方向 · 从器件工艺到量子芯片 · 找到属于你的研究坐标</div><a class="hero-cta" href="科研方向/">开始探索 →</a></div></div>

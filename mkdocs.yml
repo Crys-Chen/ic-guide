@@ -36,7 +36,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: custom
       accent: teal
       toggle:
         icon: material/weather-sunny
@@ -192,6 +192,7 @@ plugins:
             可重构计算与FPGA: Reconfigurable Computing and FPGA
             模拟与混合信号集成电路: Analog and Mixed-Signal IC
             量子计算与量子芯片: Quantum Computing and Quantum Chips
+            AI 算法与系统: AI Algorithms and Systems
   - search:
       separator: '[\s\-\.\!\?\,\;\:\（）【】「」、。，！？；：\(\)]+|(?<=[一-鿿])(?=[一-鿿])'
       lang:
@@ -239,6 +240,7 @@ nav:
     - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
     - 模拟与混合信号集成电路: "科研方向/模拟与混合信号集成电路.md"
     - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
+    - AI 算法与系统: "科研方向/AI算法与系统.md"
   - 课程资源:
     - 数学:
       - 导言: "课程资源/数学/index.md"

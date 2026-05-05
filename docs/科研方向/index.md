@@ -8,12 +8,12 @@
 
 ---
 
-## 十四个方向
+## 十五个方向
 
 按照知识依赖的层次，这些方向大致分布在四个层面：
 
 <div class="dm-wrap">
-<div class="dm-row dm-cross"><span class="dm-lbl">🌐 交叉应用层</span><span class="dm-chips"><a class="dm-chip" href="具身智能.md">具身智能</a><a class="dm-chip" href="量子计算与量子芯片.md">量子计算与量子芯片</a></span></div>
+<div class="dm-row dm-cross"><span class="dm-lbl">🌐 交叉应用层</span><span class="dm-chips"><a class="dm-chip" href="具身智能.md">具身智能</a><a class="dm-chip" href="量子计算与量子芯片.md">量子计算与量子芯片</a><a class="dm-chip" href="AI算法与系统.md">AI 算法与系统</a></span></div>
 <div class="dm-conn dm-dotted">⋯ ⋯ &nbsp;跨领域应用&nbsp; ⋯ ⋯</div>
 <div class="dm-row dm-arch"><span class="dm-lbl">⚙️ 架构/系统层</span><span class="dm-chips"><a class="dm-chip" href="计算芯片与处理器架构.md">计算芯片与处理器架构</a><a class="dm-chip" href="EDA与设计自动化.md">EDA与设计自动化</a><a class="dm-chip" href="硬件安全.md">硬件安全</a><a class="dm-chip" href="可重构计算与FPGA.md">可重构计算与FPGA</a></span></div>
 <div class="dm-conn">↑</div>
@@ -165,6 +165,13 @@ AI / 大模型 → 计算芯片架构、存算一体、EDA
     ---
 
     用量子叠加与纠缠超越经典算力极限：超导量子比特、量子纠错、低温控制电路
+
+
+-   :material-brain:{ .lg .middle } **[AI 算法与系统](AI算法与系统.md)**
+
+    ---
+
+    硬件背景同学转算法的路线图：强化学习、LLM、AI Agent、TinyML
 
 
 </div>
