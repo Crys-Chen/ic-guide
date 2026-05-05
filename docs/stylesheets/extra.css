@@ -5,11 +5,18 @@
    ECE 自学指南 — 视觉增强
    ═══════════════════════════════════════════════════════════ */
 
-/* ─── 主题色：复旦深蓝 #032168 ──────────────────────────── */
+/* ─── 主题色：复旦深蓝 #032168，accent 也统一为同色系 ─────── */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:       #032168;
   --md-primary-fg-color--light:#1a48a8;
   --md-primary-fg-color--dark: #021550;
+  --md-accent-fg-color:        #1a48a8;
+  --md-accent-fg-color--transparent: rgba(26, 72, 168, .1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color:        #8AABDE;
+  --md-accent-fg-color--transparent: rgba(138, 171, 222, .1);
 }
 
 /* ─── 顶部导航 Tab ──────────────────────────────────────── */
