@@ -212,6 +212,40 @@
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
+/* ─── 课题组折叠：前 10 可见，其余点击展开 ──────────────── */
+.prof-collapse > ul > li:nth-child(n+11) {
+  display: none;
+}
+
+.prof-collapse.show-all > ul > li:nth-child(n+11) {
+  display: list-item;
+}
+
+/* 当卡片数 ≤10 时，自动隐藏按钮（:has 现代浏览器支持） */
+.prof-collapse:not(:has(> ul > li:nth-child(11))) + .prof-show-all {
+  display: none !important;
+}
+
+.prof-show-all {
+  display: block;
+  margin: .6em auto 1.8em;
+  padding: .38em 1.8em;
+  background: none;
+  border: 1.5px solid var(--md-primary-fg-color);
+  border-radius: 20px;
+  color: var(--md-primary-fg-color);
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+  letter-spacing: .02em;
+}
+
+.prof-show-all:hover {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+
 /* ══════════════════════════════════════════════════════════
    左侧导航：树状缩进线（A）+ 悬停滑入 / 当前页渐变（C）
    ══════════════════════════════════════════════════════════ */
