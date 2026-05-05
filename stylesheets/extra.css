@@ -2,6 +2,13 @@
    ECE 自学指南 — 视觉增强
    ═══════════════════════════════════════════════════════════ */
 
+/* ─── 主题色：复旦深蓝 #032168 ──────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:       #032168;
+  --md-primary-fg-color--light:#1a48a8;
+  --md-primary-fg-color--dark: #021550;
+}
+
 /* ─── 顶部导航 Tab ──────────────────────────────────────── */
 .md-tabs {
   box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
@@ -44,7 +51,7 @@
 }
 
 .md-typeset table:not([class]) tbody tr:hover {
-  background: rgba(57, 73, 171, .08);
+  background: rgba(3, 33, 104, .08);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
@@ -129,6 +136,13 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
   overflow: hidden;
   margin: 1em 0;
+  display: block;
+  width: 100%;
+}
+
+.markmap > svg {
+  display: block;
+  width: 100% !important;
 }
 
 /* ─── Mermaid 图水平滚动 ─────────────────────────────────── */
@@ -156,14 +170,14 @@
   vertical-align: middle;
   margin-left: .35em;
 }
-.badge-fudan    { background: rgba(57,73,171,.13);  color: #3949AB; }
+.badge-fudan    { background: rgba(3,33,104,.13);   color: #032168; }
 .badge-tsinghua { background: rgba(106,13,173,.12); color: #7B1FA2; }
 .badge-pku      { background: rgba(198,40,40,.12);  color: #C62828; }
 .badge-hk       { background: rgba(0,121,107,.12);  color: #00796B; }
 .badge-other    { background: rgba(230,81,0,.12);   color: #E65100; }
 .badge-intl     { background: rgba(69,90,100,.13);  color: #455A64; }
 
-[data-md-color-scheme="slate"] .badge-fudan    { background: rgba(121,134,203,.2); color: #9FA8DA; }
+[data-md-color-scheme="slate"] .badge-fudan    { background: rgba(3,33,104,.28);   color: #8AABDE; }
 [data-md-color-scheme="slate"] .badge-tsinghua { background: rgba(206,147,216,.2); color: #CE93D8; }
 [data-md-color-scheme="slate"] .badge-pku      { background: rgba(239,154,154,.2); color: #EF9A9A; }
 [data-md-color-scheme="slate"] .badge-hk       { background: rgba(128,203,196,.2); color: #80CBC4; }
@@ -185,7 +199,7 @@
 }
 
 .grid.cards li .like-btn:hover {
-  background: rgba(57, 73, 171, .07);
+  background: rgba(3, 33, 104, .07);
 }
 
 .grid.cards li .like-btn.liked {
@@ -222,7 +236,7 @@
 /* ─── C: 悬停滑入 ───────────────────────────────────────── */
 .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
   transform: translateX(3px);
-  background: rgba(57, 73, 171, .06);
+  background: rgba(3, 33, 104, .06);
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
@@ -231,7 +245,7 @@
 
 /* ─── C: 当前页渐变高亮（覆盖原有纯左边框） ───────────────── */
 .md-nav--primary .md-nav__link--active {
-  background: linear-gradient(90deg, rgba(57, 73, 171, .13) 0%, transparent 80%);
+  background: linear-gradient(90deg, rgba(3, 33, 104, .13) 0%, transparent 80%);
   border-radius: 4px;
 }
 

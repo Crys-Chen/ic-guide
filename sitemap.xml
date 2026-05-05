@@ -50,6 +50,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/"/>
     </url>
     <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    </url>
+    <url>
         <loc>https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
         <lastmod>2026-05-05</lastmod>
         <changefreq>daily</changefreq>
@@ -1581,6 +1588,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/"/>
+    </url>
+    <url>
+        <loc>https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
     </url>
     <url>
         <loc>https://crys-chen.github.io/Fudan-ME/en/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
