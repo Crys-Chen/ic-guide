@@ -616,3 +616,14 @@
     padding-bottom: .55rem;
   }
 }
+
+/* ─── 侧边栏滚动条：覆盖 Material 的 accent 色 ──────────── */
+@supports selector(::-webkit-scrollbar) {
+  .md-sidebar ::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 33, 104, .22);
+  }
+
+  .md-sidebar ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(3, 33, 104, .45);
+  }
+}
