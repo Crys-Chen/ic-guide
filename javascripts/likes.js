@@ -70,8 +70,54 @@ function renderButton(btn, count, liked) {
   btn.title = liked ? "取消感兴趣" : "感兴趣";
 }
 
+// Inject like buttons into professor grid cards (new card format)
+function injectLikeButtonsCards() {
+  document.querySelectorAll(".grid.cards li").forEach((card) => {
+    if (card.querySelector(".like-btn")) return;
+    const nameEl = card.querySelector("strong");
+    if (!nameEl) return;
+    const nameText = nameEl.textContent.trim();
+    if (!nameText) return;
+
+    const docId = makeDocId(nameText);
+    const likedSet = getLikedSet();
+    const liked = likedSet.has(docId);
+
+    const btn = document.createElement("button");
+    btn.className = "like-btn" + (liked ? " liked" : "");
+    btn.setAttribute("data-doc", docId);
+    renderButton(btn, "…", liked);
+
+    db.collection(COLLECTION).doc(docId).get().then((snap) => {
+      const count = snap.exists ? (snap.data().count || 0) : 0;
+      renderButton(btn, count, getLikedSet().has(docId));
+    }).catch(() => renderButton(btn, "?", getLikedSet().has(docId)));
+
+    btn.addEventListener("click", () => {
+      const currentLiked = getLikedSet().has(docId);
+      const delta = currentLiked ? -1 : 1;
+      const s = getLikedSet();
+      if (currentLiked) s.delete(docId); else s.add(docId);
+      saveLikedSet(s);
+      const cur = parseInt(btn.querySelector("span")?.textContent) || 0;
+      renderButton(btn, Math.max(0, cur + delta), !currentLiked);
+      db.collection(COLLECTION).doc(docId).set(
+        { count: firebase.firestore.FieldValue.increment(delta), name: nameText },
+        { merge: true }
+      ).catch(() => {
+        const s2 = getLikedSet();
+        if (!currentLiked) s2.delete(docId); else s2.add(docId);
+        saveLikedSet(s2);
+        renderButton(btn, cur, currentLiked);
+      });
+    });
+
+    card.appendChild(btn);
+  });
+}
+
 function injectLikeButtons() {
-  // Find all professor tables: tables whose header row contains "姓名"
+  // Legacy: professor tables with "姓名" header (kept for compatibility)
   const tables = document.querySelectorAll("table");
   tables.forEach((table) => {
     const headers = table.querySelectorAll("th");
@@ -153,6 +199,7 @@ function setup() {
   loadFirebase(() => {
     initFirebase();
     injectLikeButtons();
+    injectLikeButtonsCards();
   });
 }
 
