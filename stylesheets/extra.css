@@ -573,19 +573,23 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   左侧导航栏：加宽 + 淡蓝底色（仅桌面端）
+   左侧导航栏（仅桌面端）
    ══════════════════════════════════════════════════════════ */
 
+/* 隐藏侧边栏顶部重复的 section 标题（与 tabs 重复） */
+.md-nav--lifted > .md-nav__title {
+  display: none;
+}
+
 @media screen and (min-width: 76.25em) {
-  /* 侧边栏宽度：略小于 Material 默认 12.1rem */
+  /* 侧边栏缩窄，给正文留更多空间 */
   .md-sidebar--primary {
-    width: 11.6rem;
+    width: 10.4rem;
     background-color: #f5f7fb;
   }
 
-  /* 同步收窄内容区可见宽度 */
   [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
-    padding-right: calc(100% - 11.0rem) !important;
+    padding-right: calc(100% - 9.8rem) !important;
   }
 
   [data-md-color-scheme="slate"] .md-sidebar--primary {
@@ -594,14 +598,14 @@
 
   /* 导航字号 + 行高 */
   .md-sidebar--primary .md-nav {
-    font-size: .82rem;
+    font-size: .78rem;
     line-height: 1.5;
   }
 
-  /* 每个导航条目加高，点击区域更舒适 */
+  /* 每个导航条目高度 */
   .md-sidebar--primary .md-nav__link {
-    padding-top: .36rem;
-    padding-bottom: .36rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
   }
 }
 
