@@ -69,7 +69,7 @@
 
 .md-typeset h3 {
   padding-left: .55em;
-  border-left: 3px solid var(--md-accent-fg-color);
+  border-left: 3px solid var(--md-primary-fg-color);
 }
 
 /* ─── Admonition 圆角 + 阴影 ────────────────────────────── */
@@ -518,37 +518,44 @@
    左侧导航栏：加宽 + 淡蓝底色
    ══════════════════════════════════════════════════════════ */
 
-/* 覆盖 sidebar 宽度（桌面端，sticky 布局） */
-@media screen and (min-width: 76.25em) {
-  .md-sidebar--primary {
-    width: 14.4rem;
-  }
-}
-
-/*
- * Material 在 @supports ::-webkit-scrollbar 里把内容宽度锁死在 11.5rem：
- *   padding-right: calc(100% - 11.5rem)
- * 侧边栏宽 14.4rem 时需同步调整为 calc(100% - 13.8rem)，
- * 否则背景变宽但导航文字区域不变。
- */
-@supports selector(::-webkit-scrollbar) {
-  @media screen and (min-width: 76.25em) {
-    [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
-      padding-right: calc(100% - 13.8rem);
-    }
-  }
-}
-
+/* 侧边栏加宽：覆盖 Material 硬编码的 12.1rem */
 .md-sidebar--primary {
+  width: 14.4rem !important;
   background-color: #f5f7fb;
+}
+
+/* 同步扩展内容区可见宽度（否则背景变宽但文字区域仍锁死在 11.5rem） */
+[dir=ltr] .md-sidebar--primary .md-sidebar__inner {
+  padding-right: calc(100% - 13.8rem) !important;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary {
   background-color: rgba(15, 25, 60, .35);
 }
 
-/* ─── 标题锚链接悬停颜色统一为主色 ──────────────────────── */
+/* 导航字号：Material 默认 .7rem 太小，提升到 .82rem */
+.md-sidebar--primary .md-nav {
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+/* ─── 标题悬停：颜色统一为主色 + 轻微放大 ───────────────── */
+
+/* Material 用 :hover > .headerlink 触发颜色变化，需覆盖父级和自身两条 */
+.md-typeset :is(h1, h2, h3, h4):hover > .headerlink,
 .md-typeset :is(h1, h2, h3, h4) .headerlink:hover,
 .md-typeset :is(h1, h2, h3, h4) .headerlink:focus {
-  color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* 悬停轻微放大，从左侧原点展开 */
+.md-typeset h2,
+.md-typeset h3 {
+  transition: transform .18s ease;
+  transform-origin: 0 50%;
+}
+
+.md-typeset h2:hover,
+.md-typeset h3:hover {
+  transform: scaleX(1.012) translateX(2px);
 }

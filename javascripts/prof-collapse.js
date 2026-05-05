@@ -2,33 +2,39 @@
 (function () {
   const VISIBLE = 10;
 
+  function findBtn(grid) {
+    // MkDocs may wrap the button in a <p>, so walk siblings and check inside
+    let el = grid.nextElementSibling;
+    while (el) {
+      if (el.classList.contains("prof-show-all")) return el;
+      const inner = el.querySelector(".prof-show-all");
+      if (inner) return inner;
+      el = el.nextElementSibling;
+    }
+    return null;
+  }
+
   function initGrid(grid) {
     if (grid.dataset.collapseInit) return;
     grid.dataset.collapseInit = "1";
 
-    // Material renders grid cards as <ul><li>... inside the div
     const ul = grid.querySelector("ul");
     if (!ul) return;
 
     const items = Array.from(ul.querySelectorAll(":scope > li"));
+    const btn = findBtn(grid);
+
     if (items.length <= VISIBLE) {
-      // Hide the show-all button when ≤10 cards
-      const btn = grid.nextElementSibling;
-      if (btn && btn.classList.contains("prof-show-all")) {
-        btn.style.display = "none";
-      }
+      if (btn) btn.style.display = "none";
       return;
     }
 
     // Hide items beyond VISIBLE
     items.slice(VISIBLE).forEach((li) => (li.style.display = "none"));
 
-    const btn = grid.nextElementSibling;
-    if (!btn || !btn.classList.contains("prof-show-all")) return;
+    if (!btn) return;
 
     const total = items.length;
-    const hidden = total - VISIBLE;
-
     btn.textContent = `显示全部（${total} 个）↓`;
     btn.style.display = "";
 
@@ -38,9 +44,7 @@
       items.slice(VISIBLE).forEach((li) => {
         li.style.display = expanded ? "" : "none";
       });
-      btn.textContent = expanded
-        ? "收起 ↑"
-        : `显示全部（${total} 个）↓`;
+      btn.textContent = expanded ? "收起 ↑" : `显示全部（${total} 个）↓`;
     };
   }
 
@@ -48,11 +52,9 @@
     document.querySelectorAll(".prof-collapse").forEach(initGrid);
   }
 
-  // MkDocs Material SPA support
   if (typeof document$ !== "undefined") {
     document$.subscribe(function () {
-      // Small delay to let Material finish rendering the grid
-      setTimeout(setup, 50);
+      setTimeout(setup, 80);
     });
   } else {
     document.addEventListener("DOMContentLoaded", setup);
