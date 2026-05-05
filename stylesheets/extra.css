@@ -117,7 +117,13 @@
 /* ─── 目录跟随高亮更明显 ────────────────────────────────── */
 .md-nav__link--active {
   font-weight: 600;
-  color: var(--md-accent-fg-color) !important;
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* 所有导航链接悬停/激活色统一为 primary，覆盖 Material 的 accent */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  color: var(--md-primary-fg-color);
 }
 
 /* ─── 侧边栏当前节标题 ──────────────────────────────────── */
@@ -621,10 +627,16 @@
     background-color: rgba(15, 25, 60, .35);
   }
 
-  /* 导航字号：Material 默认 .7rem 太小，提升到 .82rem */
+  /* 导航字号 + 行高 */
   .md-sidebar--primary .md-nav {
     font-size: .82rem;
-    line-height: 1.4;
+    line-height: 1.5;
+  }
+
+  /* 每个导航条目加高，点击区域更舒适 */
+  .md-sidebar--primary .md-nav__link {
+    padding-top: .36rem;
+    padding-bottom: .36rem;
   }
 }
 
