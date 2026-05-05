@@ -171,6 +171,7 @@ plugins:
             数字信号处理: Digital Signal Processing
             MATLAB: MATLAB
             ASIC: ASIC Design
+            学习地图: Learning Map
             科研方向: Research Directions
             通用工具: General Tools
             EE 专用工具: EE Tools
@@ -227,7 +228,6 @@ extra:
 
 nav:
   - 前言: "index.md"
-  - 知识谱系: "知识谱系.md"
   - 科研方向:
     - 导言: "科研方向/index.md"
     - 计算芯片与处理器架构: "科研方向/计算芯片与处理器架构.md"
@@ -245,7 +245,8 @@ nav:
     - 模拟与混合信号集成电路: "科研方向/模拟与混合信号集成电路.md"
     - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
     - AI 算法与系统: "科研方向/AI算法与系统.md"
-  - 课程资源:
+  - 学习地图:
+    - 导言: "知识谱系.md"
     - 数学:
       - 导言: "课程资源/数学/index.md"
       - 数学基础:
