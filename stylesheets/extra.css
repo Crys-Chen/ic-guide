@@ -259,15 +259,20 @@
 }
 
 .hero-track {
-  display: grid;
+  position: relative;
+  height: 250px;
 }
 
 .hero-slide {
-  grid-area: 1 / 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem 5rem 3rem;
+  padding: 2rem 5rem 3rem;
   opacity: 0;
   transition: opacity .5s ease;
   pointer-events: none;
@@ -285,13 +290,13 @@
 }
 
 .hero-icon {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 1;
   margin-bottom: .5rem;
 }
 
 .hero-title {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 700;
   margin: .35rem 0 .65rem;
   text-shadow: 0 1px 4px rgba(0, 0, 0, .25);
@@ -299,10 +304,10 @@
 }
 
 .hero-desc {
-  font-size: .92rem;
+  font-size: .9rem;
   opacity: .92;
   line-height: 1.6;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .hero-cta {
@@ -354,7 +359,7 @@
 
 .hero-dots {
   position: absolute;
-  bottom: 14px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -379,9 +384,10 @@
 }
 
 @media (max-width: 600px) {
-  .hero-slide { padding: 1.8rem 3.5rem 2.8rem; }
-  .hero-title { font-size: 1.35rem; }
-  .hero-desc  { font-size: .82rem; }
-  .hero-icon  { font-size: 2.2rem; }
-  .hero-btn   { width: 34px; height: 34px; font-size: 1.2rem; }
+  .hero-track  { height: 210px; }
+  .hero-slide  { padding: 1.5rem 3.5rem 2.8rem; }
+  .hero-title  { font-size: 1.25rem; }
+  .hero-desc   { font-size: .8rem; margin-bottom: .9rem; }
+  .hero-icon   { font-size: 2rem; }
+  .hero-btn    { width: 32px; height: 32px; font-size: 1.1rem; }
 }
