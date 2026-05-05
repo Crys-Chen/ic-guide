@@ -34,20 +34,18 @@ theme:
     - toc.follow
 
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: slate
+      primary: custom
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: 切换为日间模式
+    - scheme: default
       primary: custom
       accent: indigo
       toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: indigo
-      toggle:
         icon: material/weather-night
-        name: Switch to light mode
+        name: 切换为夜间模式
 
   font:
     text: Noto Sans SC
