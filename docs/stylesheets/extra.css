@@ -648,6 +648,40 @@
     padding-top: .55rem;
     padding-bottom: .55rem;
   }
+
+  /* 移动端：二级+ nav 标题 = 返回上一级按钮 */
+  /* 给它加实色底 + 蓝色字 + 明显间距，防止与下方条目透视重叠 */
+  .md-nav--primary .md-nav .md-nav__title {
+    display: flex !important;
+    align-items: center;
+    background: var(--md-default-bg-color) !important;
+    color: #032168 !important;
+    font-weight: 700 !important;
+    font-size: .88rem !important;
+    padding: .75rem 1rem .75rem .8rem !important;
+    border-bottom: 1px solid rgba(3,33,104,.10) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    cursor: pointer;
+  }
+  /* 返回箭头用 Material 内置的 ::before 即可，但加粗蓝色 */
+  .md-nav--primary .md-nav .md-nav__title::before {
+    color: #032168 !important;
+    font-weight: 900 !important;
+  }
+}
+
+/* ─── 桌面端：修复 navigation.indexes 导致 nav 标题与首项重叠 ── */
+@media screen and (min-width: 76.25em) {
+  /* section 内嵌 nav 的标题（sticky 顶部）必须有实色背景，否则透视重叠 */
+  .md-sidebar--primary .md-nav .md-nav__title {
+    display: none !important;
+  }
+  /* 确保 lifted 模式下所有 title 都隐藏 */
+  .md-nav--lifted .md-nav__title {
+    display: none !important;
+  }
 }
 
 /* ─── 侧边栏滚动条：覆盖 Material 的 accent 色 ──────────── */
