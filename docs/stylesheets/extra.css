@@ -1283,19 +1283,13 @@
   height: calc(100vh - 96px); /* header 48px + tabs 48px */
 }
 
-/* scale cards by --rg-card-sc set from JS */
+/* scale card BOX by --rg-card-sc; font stays fixed for readability */
 .rg-fullscreen .rg-card-inner {
   width: calc(130px * var(--rg-card-sc, 1));
   min-height: calc(50px * var(--rg-card-sc, 1));
   border-radius: calc(10px * var(--rg-card-sc, 1));
   padding: calc(.5rem * var(--rg-card-sc, 1)) calc(.6rem * var(--rg-card-sc, 1)) calc(.5rem * var(--rg-card-sc, 1)) calc(.75rem * var(--rg-card-sc, 1));
 }
-
-.rg-fullscreen .rg-card-name  { font-size: calc(.68rem * var(--rg-card-sc, 1)); }
-.rg-fullscreen .rg-card-tag   { font-size: calc(.57rem * var(--rg-card-sc, 1)); }
-.rg-fullscreen .rg-ring-label { font-size: calc(.6rem  * var(--rg-card-sc, 1)); }
-.rg-fullscreen .rg-center-title { font-size: calc(1.2rem * var(--rg-card-sc, 1)); }
-.rg-fullscreen .rg-center-sub   { font-size: calc(.78rem * var(--rg-card-sc, 1)); }
 
 .rg-fullscreen .rg-card.rg-active .rg-card-inner {
   width: calc(162px * var(--rg-card-sc, 1)) !important;
@@ -1395,7 +1389,7 @@
 }
 
 .rg-card-name {
-  font-size: .68rem;
+  font-size: .8rem;
   font-weight: 600;
   line-height: 1.35;
   font-family: "Inter", "Noto Sans SC", sans-serif;
@@ -1405,7 +1399,7 @@
 }
 
 .rg-card-tag {
-  font-size: .57rem;
+  font-size: .67rem;
   line-height: 1.35;
   opacity: 0;
   max-height: 0;
