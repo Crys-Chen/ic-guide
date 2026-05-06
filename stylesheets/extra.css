@@ -1024,10 +1024,10 @@
   font-family: "Inter","Noto Sans SC",sans-serif;
 }
 .df-lhl {
-  font-size: 5.2rem !important;
-  font-weight: 900 !important;
-  letter-spacing: -.055em !important;
-  line-height: .92 !important;
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.04em !important;
+  line-height: 1.0 !important;
   color: #0A0706 !important;
   margin: 0 0 1.5rem !important;
   border: none !important; padding: 0 !important;
@@ -1069,7 +1069,7 @@
 .df-lbg-btn:hover { background: rgba(10,7,6,.04); border-color: rgba(10,7,6,.38); }
 
 @media (max-width: 760px) {
-  .df-lhl { font-size: 3.5rem !important; }
+  .df-lhl { font-size: 2.6rem !important; }
   .df-linner { padding: 3.5rem 1.4rem 2.5rem; }
   .df-dark { margin: -1.5rem -1.5rem 0; }
   .df-title { font-size: 2.4rem !important; }
