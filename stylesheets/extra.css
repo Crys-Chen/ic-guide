@@ -999,38 +999,41 @@
 }
 .df-lbg {
   position: absolute; inset: 0;
-  background: #F9FAFB;
+  background:
+    radial-gradient(ellipse 90% 80% at 60% 50%, rgba(3,33,104,.06) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 60% at 0% 100%, rgba(3,33,104,.04) 0%, transparent 55%),
+    #F6F7FB;
 }
 .df-linner {
   position: relative; z-index: 1;
-  padding: 5.5rem 3.2rem 5rem;
+  padding: 5rem 3.2rem 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .df-lmark {
   font-size: .67rem;
-  font-weight: 500;
-  letter-spacing: .12em;
+  font-weight: 600;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(3,33,104,.48);
-  margin-bottom: 1.8rem;
+  color: rgba(3,33,104,.55);
+  margin-bottom: 1.5rem;
   font-family: "Inter","Noto Sans SC",sans-serif;
 }
 .df-lhl {
-  font-size: 2.6rem !important;
-  font-weight: 600 !important;
-  letter-spacing: -.025em !important;
-  line-height: 1.18 !important;
-  color: #111827 !important;
-  margin: 0 0 1.6rem !important;
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.04em !important;
+  line-height: 1.08 !important;
+  color: #032168 !important;
+  margin: 0 0 1.5rem !important;
   border: none !important; padding: 0 !important;
   font-family: "Noto Sans SC",sans-serif !important;
 }
 .df-ldeck {
   font-size: .91rem;
-  color: rgba(17,24,39,.50);
-  line-height: 1.90;
+  color: rgba(3,33,104,.48);
+  line-height: 1.88;
   margin: 0;
   max-width: 400px;
   font-family: "Noto Sans SC",sans-serif;
