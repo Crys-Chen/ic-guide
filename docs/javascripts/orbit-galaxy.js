@@ -115,7 +115,7 @@
         'width:' + rw + 'px', 'height:' + rh + 'px',
         'transform:translate(-50%,-50%)',
         'border-radius:50%',
-        'border:1px solid rgba(' + ring.rgb + ',' + (isDark() ? '0.18' : '0.12') + ')',
+        'border:1.5px solid rgba(' + ring.rgb + ',' + (isDark() ? '0.30' : '0.22') + ')',
         'pointer-events:none', 'box-sizing:border-box',
       ].join(';');
       ringsEl.appendChild(el);
@@ -219,7 +219,7 @@
   function measure() {
     var rect = stage.getBoundingClientRect();
     stageW = rect.width  || 1000;
-    stageH = rect.height || stageW;
+    stageH = rect.height || 700;
   }
 
   function onResize() {
@@ -260,6 +260,9 @@
     drawRings();
     buildCards();
     positionCards();
+
+    var backToTop = document.querySelector('.md-top');
+    if (backToTop) backToTop.style.display = 'none';
 
     new MutationObserver(function (muts) {
       muts.forEach(function (m) {

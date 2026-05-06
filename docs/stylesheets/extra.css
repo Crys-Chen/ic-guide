@@ -1134,22 +1134,28 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1.2rem 2rem 1.8rem;
-  gap: .5rem;
+  gap: 0;
   background: transparent;
   border-left: 1px solid rgba(3,33,104,.08);
 }
+/* 三块合并为一个矩形，外层用 wrapper 围住 */
+.df-lnav-inner {
+  border: 1px solid rgba(3,33,104,.14);
+  border-radius: 4px;
+  overflow: hidden;
+}
 .df-lnc {
   display: block;
-  padding: 1rem 1rem 1.1rem;
-  border: 1px solid rgba(3,33,104,.12);
-  border-radius: 3px;
+  padding: 1rem 1.1rem 1.05rem;
+  border: none;
+  border-bottom: 1px solid rgba(3,33,104,.10);
   text-decoration: none !important;
   color: inherit !important;
-  transition: border-color .2s, background .2s;
+  transition: background .2s;
 }
+.df-lnc:last-child { border-bottom: none; }
 .df-lnc:hover {
-  border-color: rgba(3,33,104,.30);
-  background: rgba(3,33,104,.025);
+  background: rgba(3,33,104,.03);
 }
 .df-lnc-n {
   display: block;
@@ -1350,7 +1356,7 @@
 .rg-root.rg-fullscreen .rg-stage {
   max-width: 100%;
   aspect-ratio: unset;
-  height: calc(100vh - 96px); /* header 48px + tabs 48px */
+  height: calc(100vh - 132px); /* header ~84px + tabs ~48px */
 }
 
 /* fullscreen: fixed card size, no viewport scaling */

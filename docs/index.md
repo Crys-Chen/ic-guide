@@ -32,9 +32,11 @@ hide:
 </div>
 </div>
 <nav class="df-lnav">
+<div class="df-lnav-inner">
 <a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-n">01</span><span class="df-lnc-t">工程工具</span><span class="df-lnc-sub">Git · Linux · Docker</span></a>
 <a href="https://github.com/Crys-Chen/Fudan-ME" class="df-lnc" target="_blank" rel="noopener"><span class="df-lnc-n">02</span><span class="df-lnc-t">参与建设</span><span class="df-lnc-sub">GitHub 开源共建</span></a>
 <a href="#" class="df-lnc"><span class="df-lnc-n">03</span><span class="df-lnc-t">课堂笔记</span><span class="df-lnc-sub">学习记录与分享</span></a>
+</div>
 </nav>
 </div>
 </div>
