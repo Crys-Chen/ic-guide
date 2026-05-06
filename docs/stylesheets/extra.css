@@ -1433,7 +1433,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 240px;
+  width: 150px;
   min-height: 44px;
   padding: .55rem .75rem .55rem .85rem;
   border-radius: 8px;
@@ -1461,7 +1461,7 @@
   line-height: 1.35;
   font-family: "Inter", "Noto Sans SC", sans-serif;
   color: var(--md-default-fg-color);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .rg-card-tag {
@@ -1486,7 +1486,7 @@
 }
 
 .rg-card.rg-active .rg-card-name {
-  white-space: normal;
+  white-space: normal; /* already default, kept for clarity */
 }
 
 .rg-card.rg-active .rg-card-tag {

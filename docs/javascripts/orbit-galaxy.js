@@ -80,8 +80,11 @@
   var reducedMotion = false;
 
   /* ── Scale helpers ─────────────────────────────────────────── */
-  /* scaleY: cap at 0.80 so outer ring (r=560) stays within stage */
-  function getScaleY() { return Math.min(stageH / 1000, 0.80); }
+  /* scaleY: ensure outer ring cards (r=465 ± 24px half-height) fit within stage */
+  function getScaleY() {
+    var maxFit = (stageH - 52) / (2 * 465);
+    return Math.min(stageH / 1000, maxFit, 0.80);
+  }
   /* scaleX: cap at 1.13 so outer ring card doesn't overflow 1440px width */
   function getScaleX() { return Math.min(stageW / 1000, getScaleY() * 1.6, 1.13); }
   function getScale()  { return getScaleY(); }
