@@ -34,18 +34,18 @@ theme:
     - toc.follow
 
   palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换为夜间模式
     - scheme: slate
       primary: custom
       accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: 切换为日间模式
-    - scheme: default
-      primary: custom
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换为夜间模式
 
   font:
     text: Noto Sans SC
@@ -252,6 +252,7 @@ nav:
           - 数学分析B(复旦-谢锡麟): "课程资源/数学/数学基础/数学分析/MATH120016-17-1.md"
           - 数学分析B(复旦-陈纪修): "课程资源/数学/数学基础/数学分析/MATH120016-17-2.md"
           - "MIT18.01/18.02: Calculus": "课程资源/数学/数学基础/数学分析/MITmaths.md"
+          - 补充资源: "课程资源/数学/数学基础/数学分析/补充资源.md"
         - 线性代数:
           - 线性代数(复旦): "课程资源/数学/数学基础/线性代数/COMP120004.md"
           - "MIT18.06: Linear Algebra": "课程资源/数学/数学基础/线性代数/MITLA.md"
@@ -276,8 +277,10 @@ nav:
           - "UCB CS126": "课程资源/数学/数学进阶/离散数学/CS126.md"
         - 数值分析:
           - "MIT18.330": "课程资源/数学/数学进阶/数值分析/numerical.md"
+          - 补充资源: "课程资源/数学/数学进阶/数值分析/补充资源.md"
         - 凸优化:
           - "Standford EE364A": "课程资源/数学/数学进阶/凸优化/convex.md"
+          - 补充资源: "课程资源/数学/数学进阶/凸优化/补充资源.md"
         - 复变函数:
           - Bilibili: "课程资源/数学/数学进阶/复变函数/bilibili.md"
     - 物理:
@@ -300,13 +303,17 @@ nav:
       - 集成电路工艺:
         - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
         - "MIT 6.152J: Micro/Nano Processing": "课程资源/器件与工艺/集成电路工艺/MIT6.152J.md"
+        - 补充资源: "课程资源/器件与工艺/集成电路工艺/补充资源.md"
       - 半导体器件:
         - 半导体器件原理(复旦): "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md"
+        - 半导体器件原理补充资源: "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/补充资源.md"
         - "MIT 6.012: Microelectronic Devices": "课程资源/器件与工艺/半导体器件/MIT6.012.md"
+        - MIT6.012补充资源: "课程资源/器件与工艺/半导体器件/补充资源.md"
       - 先进工艺技术:
         - 先进集成电路工艺技术(复旦): "课程资源/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
         - "Stanford EE311: Advanced IC Design": "课程资源/器件与工艺/先进集成电路工艺技术_FDU/stanford_ee311.md"
         - 先进工艺技术学习资源导航: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
+        - 补充资源: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/补充资源.md"
     - 电路:
       - 导言: "课程资源/电路/index.md"
       - 速通:
@@ -361,6 +368,7 @@ nav:
           - 数字信号处理(复旦): "课程资源/电路/信号处理/数字信号处理/INFO130010.md"
           - "MIT 离散时间信号处理 (Oppenheim)": "课程资源/电路/信号处理/数字信号处理/MIT_DSP.md"
           - "Coursera DSP (EPFL)": "课程资源/电路/信号处理/数字信号处理/epfl_dsp.md"
+          - 补充资源: "课程资源/电路/信号处理/数字信号处理/补充资源.md"
         - MATLAB:
           - MATLAB(复旦): "课程资源/电路/信号处理/MATLAB/MICR130022.md"
           - "MathWorks MATLAB Onramp": "课程资源/电路/信号处理/MATLAB/mathworks_matlab.md"
@@ -377,6 +385,7 @@ nav:
       - ASIC:
         - ASIC设计(复旦): "课程资源/电路/ASIC/INFO130094.md"
         - "UIUC VLSI CAD (Coursera)": "课程资源/电路/ASIC/UIUC_VLSI_CAD.md"
+        - 补充资源: "课程资源/电路/ASIC/补充资源.md"
       - 嵌入式SoC:
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
     - 算法编程:
@@ -479,11 +488,13 @@ nav:
         - "Coursera: Machine Learning": "课程资源/人工智能/机器学习/ML.md"
         - "Stanford CS229": "课程资源/人工智能/机器学习/CS229.md"
         - "UCB CS189": "课程资源/人工智能/机器学习/CS189.md"
+        - 补充资源: "课程资源/人工智能/机器学习/补充资源.md"
       - 机器学习系统:
         - 智能计算系统: "课程资源/人工智能/机器学习系统/AICS.md"
         - "CMU 10-414/714: Deep Learning Systems": "课程资源/人工智能/机器学习系统/CMU10-414.md"
         - "MIT6.5940: TinyML and Efficient Deep Learning": "课程资源/人工智能/机器学习系统/EML.md"
         - "Machine Learning Compilation": "课程资源/人工智能/机器学习系统/MLC.md"
+        - 补充资源: "课程资源/人工智能/机器学习系统/补充资源.md"
       - 深度学习:
         - "Coursera: Deep Learning": "课程资源/人工智能/深度学习/CS230.md"
         - "国立台湾大学: 李宏毅机器学习": "课程资源/人工智能/深度学习/LHY.md"
@@ -492,6 +503,7 @@ nav:
         - "Stanford CS224n": "课程资源/人工智能/深度学习/CS224n.md"
         - "Stanford CS224w": "课程资源/人工智能/深度学习/CS224w.md"
         - "UCB CS285": "课程资源/人工智能/深度学习/CS285.md"
+        - 补充资源: "课程资源/人工智能/深度学习/补充资源.md"
       - 深度生成模型:
         - 学习路线图: "课程资源/人工智能/深度生成模型/roadmap.md"
         - "MIT 6.S184": "课程资源/人工智能/深度生成模型/MIT6.S184.md"
