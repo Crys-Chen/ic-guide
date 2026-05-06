@@ -11,6 +11,13 @@
     var below = document.querySelector('.df-below');
     if (!hero || !below) return;
 
+    // 移动端不做 fixed 效果，直接显示正文
+    if (window.innerWidth < 768) {
+      below.style.opacity       = '1';
+      below.style.pointerEvents = '';
+      return;
+    }
+
     var header = document.querySelector('.md-header');
     var tabs   = document.querySelector('.md-tabs');
     var topOff = (header ? header.offsetHeight : 0)
