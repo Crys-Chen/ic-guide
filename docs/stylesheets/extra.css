@@ -1167,8 +1167,11 @@
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
-  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: 1rem 1.4rem 1.4rem; flex-direction: row; flex-wrap: wrap; gap: .5rem; }
-  .df-lnc { flex: 1; min-width: 140px; }
+  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .8rem 1.4rem 1.2rem; flex-direction: column; gap: 0; }
+  .df-lnav-inner { display: flex; flex-direction: row; border-left: none; border-top: 1px solid rgba(3,33,104,.14); }
+  .df-lnc { flex: 1; min-width: 0; border-bottom: none !important; border-right: 1px solid rgba(3,33,104,.10); }
+  .df-lnc:last-child { border-right: none; }
+  .df-below { opacity: 1 !important; pointer-events: auto !important; }
 }
 
 
@@ -1183,6 +1186,10 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
+}
+/* 移动端直接显示正文，不做 fixed-hero 效果 */
+@media (max-width: 767px) {
+  .df-below { opacity: 1 !important; pointer-events: auto !important; }
 }
 
 /* ════════════════════════════════════════════════════════
