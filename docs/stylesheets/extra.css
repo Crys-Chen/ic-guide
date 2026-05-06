@@ -1386,33 +1386,37 @@
 }
 
 .rg-center-pulse {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(3,33,104,.12) 0%, transparent 70%);
-  animation: rg-pulse 3s ease-in-out infinite;
-  margin: 0 auto .3rem;
+  background: radial-gradient(circle, rgba(0,63,136,.14) 0%, rgba(0,63,136,.04) 60%, transparent 80%);
+  border: 1.5px solid rgba(0,63,136,.18);
+  box-shadow: 0 0 0 8px rgba(0,63,136,.04), 0 0 0 16px rgba(0,63,136,.02);
+  animation: rg-pulse 4s ease-in-out infinite;
+  margin: 0 auto .5rem;
 }
 
 @keyframes rg-pulse {
-  0%   { transform: scale(1);   opacity: .6; }
-  50%  { transform: scale(1.3); opacity: .2; }
-  100% { transform: scale(1);   opacity: .6; }
+  0%   { transform: scale(1);    opacity: .8; }
+  50%  { transform: scale(1.15); opacity: .4; }
+  100% { transform: scale(1);    opacity: .8; }
 }
 
 .rg-center-title {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 700;
   font-family: "Inter", "Noto Sans SC", sans-serif;
   line-height: 1.3;
   color: var(--md-default-fg-color);
+  letter-spacing: .02em;
 }
 
 .rg-center-sub {
-  font-size: .7rem;
-  opacity: .5;
-  margin-top: .2rem;
+  font-size: .72rem;
+  opacity: .45;
+  margin-top: .3rem;
   font-family: "Inter", "Noto Sans SC", sans-serif;
+  letter-spacing: .08em;
 }
 
 /* ── Card outer (positioned by JS) ─────────────────────── */
@@ -1437,8 +1441,8 @@
   gap: .18rem;
   background: var(--rg-bg);
   border: 1px solid var(--rg-border);
-  border-left: 3px solid var(--rg-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--rg-color);
+  box-shadow: 0 3px 14px rgba(0,63,136,0.10), 0 1px 4px rgba(0,0,0,0.07);
   transform: translate(-50%, -50%) scale(1);
   transition:
     transform .25s cubic-bezier(.34,1.56,.64,1),
