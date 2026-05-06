@@ -1140,8 +1140,7 @@
 }
 /* 三块合并为一个矩形，外层用 wrapper 围住 */
 .df-lnav-inner {
-  border: 1px solid rgba(3,33,104,.14);
-  border-radius: 4px;
+  border-left: 1px solid rgba(3,33,104,.14);
   overflow: hidden;
 }
 .df-lnc {
