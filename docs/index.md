@@ -21,6 +21,7 @@ hide:
 <!-- ══════════════ DAY MODE HERO (default only) ══════════════ -->
 <div class="df-light">
 <div class="df-lbg"></div>
+<div class="df-lwrap">
 <div class="df-linner">
 <div class="df-lmark">ECE 自学指南 · 复旦大学</div>
 <h1 class="df-lhl">让知识<br><span class="df-lred">回归连续</span></h1>
@@ -36,6 +37,7 @@ hide:
 <a href="知识谱系/" class="df-lnc"><span class="df-lnc-icon">🗺️</span><span class="df-lnc-body"><span class="df-lnc-t">知识谱系</span><span class="df-lnc-d">跨学科知识地图，明确路径与先修关系</span></span></a>
 <a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-icon">🛠️</span><span class="df-lnc-body"><span class="df-lnc-t">工程工具</span><span class="df-lnc-d">Git · Linux · LaTeX · Docker 速通</span></span></a>
 </nav>
+</div>
 </div>
 
 <!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->
