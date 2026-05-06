@@ -1140,30 +1140,24 @@
 }
 .df-lnc {
   display: flex;
-  align-items: flex-start;
-  gap: .7rem;
-  padding: .9rem .4rem .9rem .9rem;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem .4rem .85rem .9rem;
   border-left: 2px solid transparent;
   text-decoration: none !important;
   transition: border-color .18s;
+  white-space: nowrap;
 }
 .df-lnc:hover { border-left-color: #032168; }
-.df-lnc-icon { font-size: 1rem; line-height: 1.4; flex-shrink: 0; opacity: .7; }
-.df-lnc-body { display: flex; flex-direction: column; gap: .15rem; }
+.df-lnc-icon { font-size: .95rem; flex-shrink: 0; opacity: .65; }
 .df-lnc-t {
-  font-size: .82rem;
+  font-size: .85rem;
   font-weight: 600;
-  color: rgba(10,7,6,.78);
+  color: rgba(10,7,6,.75);
   font-family: "Noto Sans SC",sans-serif;
   transition: color .18s;
 }
 .df-lnc:hover .df-lnc-t { color: #032168; }
-.df-lnc-d {
-  font-size: .69rem;
-  color: rgba(10,7,6,.38);
-  line-height: 1.5;
-  font-family: "Noto Sans SC",sans-serif;
-}
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
