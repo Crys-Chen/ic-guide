@@ -1,4 +1,6 @@
 (function () {
+  var FADE = 0.2; // hero 在前 20% 高度内完成淡变（更快）
+
   function init() {
     var light = document.querySelector('.df-light');
     var dark  = document.querySelector('.df-dark');
@@ -9,7 +11,6 @@
     var below = document.querySelector('.df-below');
     if (!hero || !below) return;
 
-    // 测量 header + tabs 的高度，hero 从它们下方开始
     var header = document.querySelector('.md-header');
     var tabs   = document.querySelector('.md-tabs');
     var topOff = (header ? header.offsetHeight : 0)
@@ -17,7 +18,7 @@
 
     var heroH = hero.offsetHeight;
 
-    // 将 hero 变为固定覆盖层，不随页面滚动
+    // 将 hero 固定在屏幕上，不随页面滚动
     Object.assign(hero.style, {
       position:   'fixed',
       top:        topOff + 'px',
@@ -27,18 +28,19 @@
       marginLeft: '0',
       marginTop:  '0',
       zIndex:     '9',
-      transition: 'opacity 0.2s ease',
+      transition: 'opacity 0.15s ease',
     });
 
-    // 正文初始隐藏，藏在 hero 后面
+    // 顶部补偿：淡变完成时正好能看到第一行，再加 2rem 呼吸空间
+    var fadeScrollDist = Math.round(heroH * FADE);
+    below.style.paddingTop    = (fadeScrollDist + 32) + 'px';
     below.style.opacity       = '0';
     below.style.pointerEvents = 'none';
-    below.style.transition    = 'opacity 0.2s ease';
+    below.style.transition    = 'opacity 0.15s ease';
 
     function tick() {
       var s = window.scrollY;
-      // 在前 40% 的 hero 高度内完成交叉淡变
-      var t = Math.min(1, Math.max(0, s / (heroH * 0.4)));
+      var t = Math.min(1, Math.max(0, s / fadeScrollDist));
       hero.style.opacity        = String(1 - t);
       below.style.opacity       = String(t);
       below.style.pointerEvents = t > 0.1 ? '' : 'none';
@@ -49,7 +51,6 @@
     tick();
   }
 
-  // MkDocs Material SPA 导航兼容
   if (typeof document$ !== 'undefined') {
     document$.subscribe(init);
   } else {

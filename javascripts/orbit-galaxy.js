@@ -269,6 +269,10 @@
     var backToTop = document.querySelector('.md-top');
     if (backToTop) backToTop.style.display = 'none';
 
+    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    lastTs = null;
+    rafId = requestAnimationFrame(tick);
+
     new MutationObserver(function (muts) {
       muts.forEach(function (m) {
         if (m.attributeName === 'data-md-color-scheme') refreshCardVars();
