@@ -1030,7 +1030,10 @@
    ════════════════════════════════════════════════════════ */
 .df-light {
   position: relative;
-  margin: -1.5rem -1.5rem 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: -1.5rem;
+  margin-bottom: 0;
   overflow: hidden;
 }
 .df-lwrap {
@@ -1040,6 +1043,7 @@
   flex-direction: row;
   align-items: stretch;
   max-width: 980px;
+  margin: 0 auto;
   min-height: 420px;
 }
 .df-lbg {
