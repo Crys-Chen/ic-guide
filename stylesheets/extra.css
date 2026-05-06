@@ -991,11 +991,9 @@
    ════════════════════════════════════════════════════════ */
 .df-light {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 300px;
+  display: block;
   margin: -1.5rem -1.5rem 0;
   overflow: hidden;
-  align-items: stretch;
 }
 .df-lbg {
   position: absolute; inset: 0;
@@ -1007,10 +1005,11 @@
 }
 .df-linner {
   position: relative; z-index: 1;
-  padding: 5.5rem 4rem 5.5rem;
+  padding: 5rem 4rem 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 720px;
 }
 .df-lmark {
   font-size: .64rem;
@@ -1119,6 +1118,46 @@
   .df-lnav { border-left: none; border-top: 1px solid rgba(3,33,104,.09); flex-direction: row; flex-wrap: wrap; }
   .df-lnc { flex: 1; min-width: 140px; border-bottom: none; border-right: 1px solid rgba(3,33,104,.07); }
   .df-lnc:last-child { border-right: none; }
+}
+
+
+/* ── Day mode nav cards (below hero, 2×2 grid) ─────────── */
+[data-md-color-scheme="slate"] .df-daycards { display: none !important; }
+.df-daycards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .75rem;
+  margin: 2.2rem 0 3.5rem;
+}
+.df-dc {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding: 1.3rem 1.3rem 1.2rem;
+  background: #fff;
+  border: 1px solid rgba(3,33,104,.09);
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: background .18s, border-color .18s, transform .18s;
+}
+.df-dc:hover {
+  background: rgba(3,33,104,.03);
+  border-color: rgba(3,33,104,.20);
+  transform: translateY(-2px);
+}
+.df-dc-icon { font-size: 1.4rem; margin-bottom: .2rem; }
+.df-dc h3 {
+  font-size: .88rem !important;
+  font-weight: 600 !important;
+  color: #111827 !important;
+  margin: 0 !important; padding: 0 !important; border: none !important;
+  font-family: "Noto Sans SC",sans-serif !important;
+}
+.df-dc:hover h3 { color: #032168 !important; }
+.df-dc p {
+  font-size: .74rem !important;
+  color: rgba(17,24,39,.44) !important;
+  margin: 0 !important; line-height: 1.5 !important;
 }
 
 /* ════════════════════════════════════════════════════════
