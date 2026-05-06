@@ -1421,7 +1421,8 @@
   gap: .22rem;
   background: var(--rg-bg);
   border: 1px solid var(--rg-border);
-  border-left: 3px solid var(--rg-color);
+  border-left: 4px solid var(--rg-color);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.09);
   transform: translate(-50%, -50%) scale(1);
   transition:
     transform .28s cubic-bezier(.34,1.56,.64,1),
@@ -1429,8 +1430,6 @@
     opacity .2s,
     background .2s,
     width .25s;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   box-sizing: border-box;
 }
 
@@ -1466,10 +1465,10 @@
 .rg-card.rg-active .rg-card-inner {
   width: 280px !important;
   transform: translate(-50%, -50%) scale(1.06) !important;
-  box-shadow: 0 8px 32px var(--rg-glow) !important;
+  box-shadow: 0 6px 28px var(--rg-glow), 0 2px 8px rgba(0,0,0,0.12) !important;
   background: var(--rg-bg-hover) !important;
   border-color: transparent !important;
-  border-left-color: rgba(255,255,255,0.50) !important;
+  border-left-color: rgba(255,255,255,0.55) !important;
 }
 
 .rg-card.rg-active .rg-card-name {
