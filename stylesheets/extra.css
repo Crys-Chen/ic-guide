@@ -40,8 +40,9 @@
   font-weight: 700;
   font-size: .85rem;
   letter-spacing: .03em;
-  transition: opacity .2s;
-  padding: 0 1.2rem;
+  padding: .28em 1rem;
+  border-radius: 6px;
+  transition: background .18s, color .18s;
 }
 
 /* ─── 表格 ──────────────────────────────────────────────── */
@@ -855,8 +856,11 @@
   box-shadow: none !important;
 }
 [data-md-color-scheme="default"] .md-tabs__link { color: rgba(6,9,26,.58) !important; }
-[data-md-color-scheme="default"] .md-tabs__link--active,
-[data-md-color-scheme="default"] .md-tabs__link:hover { color: #032168 !important; }
+[data-md-color-scheme="default"] .md-tabs__link--active { color: #032168 !important; }
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  background: #032168 !important;
+  color: #fff !important;
+}
 
 /* ═══════════════════════════════════════════════════════
    DESIGN-FINAL: Dual-mode homepage
@@ -1238,8 +1242,11 @@
   box-shadow: none !important;
 }
 [data-md-color-scheme="default"] .md-tabs__link { color: rgba(10,7,6,.55) !important; }
-[data-md-color-scheme="default"] .md-tabs__link--active,
-[data-md-color-scheme="default"] .md-tabs__link:hover { color: #032168 !important; }
+[data-md-color-scheme="default"] .md-tabs__link--active { color: #032168 !important; }
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  background: #032168 !important;
+  color: #fff !important;
+}
 
 /* ════════════════════════════════════════════════════════
    HEADER — NIGHT MODE  (slate inherits dark bg from scheme)
@@ -1249,8 +1256,11 @@
   --md-accent-fg-color:        #6672F5;
   --md-accent-fg-color--transparent: rgba(102,114,245,.12);
 }
-[data-md-color-scheme="slate"] .md-tabs__link--active,
-[data-md-color-scheme="slate"] .md-tabs__link:hover { color: #A78BFA !important; }
+[data-md-color-scheme="slate"] .md-tabs__link--active { color: #A78BFA !important; }
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  background: rgba(167,139,250,.15) !important;
+  color: #A78BFA !important;
+}
 
 /* ════════════════════════════════════════════════════════
    ORBIT GALAXY — 微电子科研版图
