@@ -2,25 +2,27 @@
 hide:
   - navigation
 ---
-<div class="hero-carousel" id="hero-carousel">
-<div class="hero-track">
-<div class="hero-slide active" style="background:linear-gradient(135deg,#3949AB 0%,#5C6BC0 100%)"><div class="hero-slide-content"><div class="hero-icon">🔬</div><div class="hero-title">科研方向巡礼</div><div class="hero-desc">15 个前沿方向 · 从器件工艺到量子芯片 · 找到属于你的研究坐标</div><a class="hero-cta" href="科研方向/">开始探索 →</a></div></div>
-<div class="hero-slide" style="background:linear-gradient(135deg,#00796B 0%,#26A69A 100%)"><div class="hero-slide-content"><div class="hero-icon">📚</div><div class="hero-title">课程资源</div><div class="hero-desc">200+ 门精选课程 · 数学 · 物理 · 器件 · 电路 · 编程 · AI 全覆盖</div><a class="hero-cta" href="课程资源/数学/">浏览课程 →</a></div></div>
-<div class="hero-slide" style="background:linear-gradient(135deg,#7B1FA2 0%,#AB47BC 100%)"><div class="hero-slide-content"><div class="hero-icon">🗺️</div><div class="hero-title">知识谱系</div><div class="hero-desc">跨学科知识地图 · 看清方向依赖与连接路径 · 少走弯路</div><a class="hero-cta" href="知识谱系/">查看地图 →</a></div></div>
-<div class="hero-slide" style="background:linear-gradient(135deg,#E65100 0%,#FF7043 100%)"><div class="hero-slide-content"><div class="hero-icon">🛠️</div><div class="hero-title">工程工具</div><div class="hero-desc">Git · Linux · LaTeX · Docker · Vim · 开发必备工具链一站速通</div><a class="hero-cta" href="课程资源/必学工具/Git/">工具速通 →</a></div></div>
+<div class="d5-hero">
+<div class="d5-aurora">
+<div class="d5-o1"></div><div class="d5-o2"></div><div class="d5-o3"></div><div class="d5-o4"></div>
 </div>
-<button class="hero-btn hero-prev" aria-label="上一张">&#8249;</button>
-<button class="hero-btn hero-next" aria-label="下一张">&#8250;</button>
-<div class="hero-dots">
-<button class="hero-dot active" data-i="0"></button>
-<button class="hero-dot" data-i="1"></button>
-<button class="hero-dot" data-i="2"></button>
-<button class="hero-dot" data-i="3"></button>
+<div class="d5-inner">
+<div class="d5-pill">✦ ECE 自学指南 · 复旦大学</div>
+<h1 class="d5-title"><span class="d5-g1">探索</span> <span class="d5-g2">电子工程</span><br>的知识宇宙</h1>
+<p class="d5-sub">15 个前沿科研方向 · 200+ 门精选课程 · 完整知识谱系 · 顶尖高校课题组</p>
+<div class="d5-btns">
+<a href="科研方向/" class="d5-bp">开始探索 →</a>
+<a href="知识谱系/" class="d5-bg">知识谱系</a>
 </div>
 </div>
-<script>
-(function(){var c=document.getElementById('hero-carousel');if(!c)return;var slides=c.querySelectorAll('.hero-slide'),dots=c.querySelectorAll('.hero-dot'),cur=0,timer;function go(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=((n%slides.length)+slides.length)%slides.length;slides[cur].classList.add('active');dots[cur].classList.add('active');}function start(){timer=setInterval(function(){go(cur+1);},4200);}function stop(){clearInterval(timer);}c.querySelector('.hero-prev').onclick=function(){stop();go(cur-1);start();};c.querySelector('.hero-next').onclick=function(){stop();go(cur+1);start();};dots.forEach(function(d){d.onclick=function(){stop();go(+this.dataset.i);start();};});c.addEventListener('mouseenter',stop);c.addEventListener('mouseleave',start);start();})();
-</script>
+</div>
+
+<div class="d5-cards">
+<a href="科研方向/" class="d5-card d5-c1"><div class="d5-hover-bg"></div><div class="d5-cc"><span class="d5-ci">🔬</span><h3>科研方向</h3><p>15 个前沿方向，器件·电路·架构·应用</p></div></a>
+<a href="课程资源/数学/" class="d5-card d5-c2"><div class="d5-hover-bg"></div><div class="d5-cc"><span class="d5-ci">📚</span><h3>课程资源</h3><p>200+ 精选课程，数学到 AI 全覆盖</p></div></a>
+<a href="知识谱系/" class="d5-card d5-c3"><div class="d5-hover-bg"></div><div class="d5-cc"><span class="d5-ci">🗺️</span><h3>知识谱系</h3><p>跨学科地图，理清路径与依赖关系</p></div></a>
+<a href="课程资源/必学工具/Git/" class="d5-card d5-c4"><div class="d5-hover-bg"></div><div class="d5-cc"><span class="d5-ci">🛠️</span><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></div></a>
+</div>
 
 ## 前言
 
