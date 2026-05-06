@@ -30,14 +30,12 @@ hide:
 <a href="知识谱系/" class="df-lbg-btn">知识谱系</a>
 </div>
 </div>
-</div>
-
-<!-- ══════════════ DAY MODE NAV CARDS (default only) ══════════════ -->
-<div class="df-daycards">
-<a href="科研方向/" class="df-dc"><div class="df-dc-icon">🔬</div><h3>科研方向</h3><p>15 个前沿方向，器件·电路·架构·应用</p></a>
-<a href="课程资源/数学/" class="df-dc"><div class="df-dc-icon">📚</div><h3>课程资源</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
-<a href="知识谱系/" class="df-dc"><div class="df-dc-icon">🗺️</div><h3>知识谱系</h3><p>跨学科知识地图，明确路径与先修关系</p></a>
-<a href="课程资源/必学工具/Git/" class="df-dc"><div class="df-dc-icon">🛠️</div><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></a>
+<nav class="df-lnav">
+<a href="科研方向/" class="df-lnc"><span class="df-lnc-icon">🔬</span><span class="df-lnc-body"><span class="df-lnc-t">科研方向</span><span class="df-lnc-d">15 个前沿方向，器件·电路·架构·应用</span></span></a>
+<a href="课程资源/数学/" class="df-lnc"><span class="df-lnc-icon">📚</span><span class="df-lnc-body"><span class="df-lnc-t">课程资源</span><span class="df-lnc-d">200+ 精选课程，国内外顶级高校收录</span></span></a>
+<a href="知识谱系/" class="df-lnc"><span class="df-lnc-icon">🗺️</span><span class="df-lnc-body"><span class="df-lnc-t">知识谱系</span><span class="df-lnc-d">跨学科知识地图，明确路径与先修关系</span></span></a>
+<a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-icon">🛠️</span><span class="df-lnc-body"><span class="df-lnc-t">工程工具</span><span class="df-lnc-d">Git · Linux · LaTeX · Docker 速通</span></span></a>
+</nav>
 </div>
 
 <!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->
