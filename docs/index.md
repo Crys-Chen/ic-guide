@@ -22,16 +22,18 @@ hide:
 <div class="df-lbg"></div>
 <div class="df-linner">
 <div class="df-lmark">ECE 自学指南 · 复旦大学</div>
-<h1 class="df-lhl">让知识<br><span class="df-lred">回归连续</span></h1>
-<p class="df-ldeck">从器件工艺到量子芯片——复旦大学微电子专业自学指南，覆盖 15 个前沿科研方向与 200 余门精选课程。</p>
-<div class="df-lbtns">
-<a href="科研方向/" class="df-lbp">探索科研方向 →</a>
-<a href="知识谱系/" class="df-lbg-btn">知识谱系</a>
+<h1 class="df-lhl">让知识<br>回归连续</h1>
+<p class="df-ldeck">这里是一份关于微电子 / ECE 方向的自学资源整理。内容来自公开资料，不完美，但持续更新。希望能帮你少走一些弯路。</p>
 </div>
+<div class="df-lnav">
+<a href="科研方向/" class="df-lnc"><span class="df-lnc-t">科研方向</span><span class="df-lnc-d">15 个前沿方向，器件·电路·架构·应用</span></a>
+<a href="课程资源/数学/" class="df-lnc"><span class="df-lnc-t">课程资源</span><span class="df-lnc-d">200+ 精选课程，国内外顶级高校收录</span></a>
+<a href="知识谱系/" class="df-lnc"><span class="df-lnc-t">知识谱系</span><span class="df-lnc-d">跨学科知识地图，明确路径与先修关系</span></a>
+<a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-t">工程工具</span><span class="df-lnc-d">Git · Linux · LaTeX · Docker 速通</span></a>
 </div>
 </div>
 
-<!-- ══════════════ SHARED NAV CARDS ══════════════ -->
+<!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->
 <div class="df-cards">
 <a href="科研方向/" class="df-card"><div class="df-ct"><span class="df-ci">🔬</span><span class="df-ca">→</span></div><h3>科研方向</h3><p>15 个前沿方向，器件·电路·架构·应用</p></a>
 <a href="课程资源/数学/" class="df-card"><div class="df-ct"><span class="df-ci">📚</span><span class="df-ca">→</span></div><h3>课程资源</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
