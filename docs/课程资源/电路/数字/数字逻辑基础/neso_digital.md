@@ -20,9 +20,3 @@ B 站有完整搬运版并附有中英双语字幕，国内学习体验极佳。
 - 课程视频（B 站搬运，中英字幕）：<https://www.bilibili.com/video/BV1AE411o7fP/>
 - Neso Academy 官网：<https://www.nesoacademy.org/>
 - 配套练习：频道主页提供 PDF 笔记及章节测验
-
-## 前置学习建议
-
-1. 无特殊前置要求，高中数学即可入门
-2. 建议先完成前 30 集（逻辑门 → 布尔化简 → 组合逻辑）再进入 [MIT 6.004](MIT6.004.md) 的流水线与存储器章节
-3. 配合 [HDLBits](../../../硬件描述语言(HDL)/Verilog/HDLBits.md) 练习 Verilog 实现，将数字逻辑理论转化为硬件描述能力

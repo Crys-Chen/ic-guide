@@ -42,16 +42,3 @@ UIUC VLSI CAD 系列由 Rob A. Rutenbar 教授主讲，是 Coursera 上少数完
 ### Synopsys / Cadence 高校授权
 
 - 说明：复旦微电子学院通常提供 Synopsys Design Compiler、Cadence Genus / Innovus 等工具的校园网授权，建议在学习 UIUC 课程的同时使用校内工具进行实际综合与布局布线练习，形成理论与实践的闭环
-
-## B 站配套资源
-
-- 数字 IC 设计全流程讲解（RTL 到版图）：B 站搜索"ASIC 设计流程 Verilog"或"数字 IC 设计 从 RTL 到版图"
-- 国内高校 ASIC/VLSI 课程录像：B 站搜索"超大规模集成电路"或"VLSI 设计 后端"
-- OpenLane 实战教程（中文）：B 站搜索"OpenLane SKY130"或"开源 ASIC 流程"
-
-## 前置学习建议
-
-1. 数字逻辑基础（布尔代数、组合逻辑、时序逻辑、有限状态机）——参见 [MIT 6.004](../../数字/数字逻辑基础/MIT6.004.md) 或复旦对应课程
-2. Verilog RTL 编程（可综合 Verilog 代码风格、仿真）——参见本站 HDL 目录下 Verilog 相关资源
-3. 建议先动手用 Yosys 对一个简单 Verilog 模块做综合，感受工具输出后，再进入 UIUC 课程的逻辑综合章节，理解会深得多
-4. NPTEL Digital VLSI Design 或 [NPTEL VLSI Design（IIT）](../../数字/数字集成电路/VLSI_design.md) 可作为 ASIC 电路级知识的补充

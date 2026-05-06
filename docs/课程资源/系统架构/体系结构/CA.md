@@ -15,15 +15,9 @@
 
 编程实践采取 Verilog 设计和模拟类 MIPS 流水线处理器的寄存器传输（RT）实现，以此加强对理论课程的理解。因此前几个实验会有 verilog 的 CPU 流水线编程。同时还将使用C语言开发一个周期精确的处理器模拟器，并使用该模拟器探索处理器设计选项。
 
-
 ## 课程资源
 
 - 课程网站：[2020 Fall](https://safari.ethz.ch/architecture/fall2022/doku.php?id=start), [2022 Fall](https://safari.ethz.ch/architecture/fall2022/doku.php?id=start)
 - 课程视频：官方视频详见课程网站。B站有个[2020年版本搬运](https://www.bilibili.com/video/BV1Vf4y1i7YG/?vd_source=77d47fcb2bac41ab4ad02f265b3273cf)。
 - 课程教材：无指定教材，每个 lecture 都有大量文献可供阅读
 - 课程作业：5 个 Project ，大多与内存和cache相关，具体内容见[课程网站的lab界面](https://safari.ethz.ch/architecture/fall2022/doku.php?id=labs)
-
-## 资源汇总
-国内有高校引入了这门课，因此有需要的同学可以搜索到一些资源。
-
-

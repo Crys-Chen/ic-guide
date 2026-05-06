@@ -20,7 +20,3 @@
 - 课程视频：[2024fall](https://www.youtube.com/playlist?list=PL80kAHvQbh-qGtNc54A6KW4i4bkTPjiRF), [2023fall](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB)
 - 课程教材：无
 - 课程作业：共5个实验，具体要求见课程网站
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/MIT6.5940_TinyML - GitHub](https://github.com/PKUFlyingPig/MIT6.5940_TinyML) 中。

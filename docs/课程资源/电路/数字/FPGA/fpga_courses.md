@@ -70,12 +70,3 @@ FPGA 设计是复旦微电子学院数字方向最核心的工程实践技能，
 - 简介：多所国内高校（电子科大、西安交大等）的 FPGA 相关课程在 B 站有完整录像，内容与复旦 MICR130024 高度重叠，适合配合复旦课程同步学习。
 
 ---
-
-## 推荐学习路径
-
-1. 先完成 [HDLBits](../../../硬件描述语言(HDL)/Verilog/HDLBits.md)，熟练掌握 Verilog 语法
-2. 阅读 Nandland 教程，完成基础 FPGA 外设模块（UART、FIFO）的实现练习
-3. 参照 AMD 大学计划教材完成 Vivado 工具流入门，跑通 LED 闪烁、VGA 输出等基础项目
-4. 跟随 [UCB EECS151](../../../硬件描述语言(HDL)/Verilog/EECS151.md) 的 FPGA Lab，完成更复杂的数字系统综合实验
-5. 按需选择 Coursera 科罗拉多大学专项课程，系统提升 FPGA 嵌入式系统设计能力
-6. 结合复旦 MICR130024 课程要求，在 Xilinx 开发板上完成课程 Project

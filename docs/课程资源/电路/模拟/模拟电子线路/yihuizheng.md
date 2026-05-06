@@ -16,9 +16,3 @@
 
 - 课程视频（B 站，4K 修复版，约 52 讲）：<https://www.bilibili.com/video/BV1Gt411b7Zq/>
 - 课程教材：《模拟电子线路》谢嘉奎 主编（高等教育出版社）；亦可配合《Fundamentals of Microelectronics》Razavi 使用
-
-## 前置学习建议
-
-1. 电路分析基础（KVL/KCL、叠加原理、戴维南/诺顿等效、交流相量法）
-2. 大学物理电磁学（PN 结基础）
-3. 学完本课程后，可衔接 [Razavi Electronics 1 & 2](razavi_electronics.md) 进一步强化 MOSFET 视角与模拟 IC 设计基础

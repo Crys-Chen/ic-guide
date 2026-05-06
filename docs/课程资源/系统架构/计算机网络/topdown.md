@@ -16,7 +16,3 @@
 - 课程视频：<https://gaia.cs.umass.edu/kurose_ross/lectures.php>
 - 课程教材：Computer Networking: A Top-Down Approach
 - 课程作业：<https://gaia.cs.umass.edu/kurose_ross/wireshark.php>
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/Computer-Network-A-Top-Down-Approach - GitHub](https://github.com/PKUFlyingPig/Computer-Network-A-Top-Down-Approach) 中。

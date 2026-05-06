@@ -18,8 +18,3 @@
 - 课程视频：<https://www.handsonsecurity.net/video.html>
 - 课程教材：<https://www.handsonsecurity.net/index.html>
 - 课程作业：四十多个安全领域的lab，实验环境可由课程提供的定制虚拟机和 docker [快速搭建](https://seedsecuritylabs.org/labsetup.html)，并且提供详细的原理讲解、实验指导。以 [缓冲区溢出实验](https://seedsecuritylabs.org/Labs_20.04/Software/Buffer_Overflow_Setuid/) 为例，该实验属于 [软件安全主题](https://seedsecuritylabs.org/Labs_20.04/Software/) ，这里是它的 [实验指导](https://seedsecuritylabs.org/Labs_20.04/Files/Buffer_Overflow_Setuid/Buffer_Overflow_Setuid.pdf) ，这里是它对应的 [教材内容](https://www.handsonsecurity.net/files/chapters/buffer_overflow_c.pdf)  
-
-## 资源汇总
-
-@LaPhilosophie 在学习这门课中用到的所有资源和作业实现都汇总在  [LaPhilosophie/seedlab - GitHub](https://github.com/LaPhilosophie/seedlab) 中。
-

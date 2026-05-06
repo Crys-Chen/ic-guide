@@ -31,7 +31,3 @@
 - 课程视频：详见课程网站
 - 课程教材：<https://algs4.cs.princeton.edu/home/>
 - 课程作业：10个Project，具体要求详见课程网站
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/Princeton-Algorithm - GitHub](https://github.com/PKUFlyingPig/Princeton-Algorithm) 中。

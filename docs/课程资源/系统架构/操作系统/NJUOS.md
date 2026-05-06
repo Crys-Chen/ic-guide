@@ -24,7 +24,3 @@
 - 课程视频：<https://space.bilibili.com/202224425/channel/collectiondetail?sid=192498>
 - 课程教材：<http://pages.cs.wisc.edu/~remzi/OSTEP/>
 - 课程作业：<https://jyywiki.cn/OS/2022/index.html>
-
-## 资源汇总
-
-按蒋老师的要求，我的作业实现没有开源。

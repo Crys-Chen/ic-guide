@@ -31,9 +31,3 @@ CS61B 和 CS61C 在本书中均有收录。
 - [课程教材电子书](https://github.com/CC-bit/UCB-CS61A-Textbook/)
 - [课程教材中文翻译](https://composingprograms.netlify.app/)
 - 课程作业: [fall2024](https://github.com/InsideEmpire/CS61A-Assignments)
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/CS61A - GitHub](https://github.com/PKUFlyingPig/CS61A) 中。
-
-@InsideEmpire 在学习这门课中用到的所有资源和作业实现都汇总在 [InsideEmpire/CS61A - GitHub](https://github.com/InsideEmpire/CS61A-PathwayToSuccess/)

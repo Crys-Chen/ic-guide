@@ -23,7 +23,3 @@
 - 课程视频：同上
 - 课程教材：同上
 - 课程作业：同上
-
-## 资源汇总
-
-@haidongji 在学习这门课中的作业实现都汇总在 [Duke Coursera Intro C](https://code.haidongji.com/Duke_Coursera_Intro_C/) 中。因为时间关系，我最后一课最后一周的几个作业到目前还没有完成。

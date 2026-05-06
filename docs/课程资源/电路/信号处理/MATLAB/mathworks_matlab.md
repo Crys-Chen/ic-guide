@@ -40,16 +40,3 @@ MathWorks 官方提供完全免费的在线入门课程（MATLAB Onramp），无
 
 - 课程教材（入门）：《MATLAB 编程基础》（MathWorks 官方文档，在线免费）：<https://www.mathworks.com/help/matlab/>
 - 课程教材（信号处理方向）：《Signal Processing First》James McClellan、Ronald Schafer & Mark Yoder（Pearson）
-
-## B 站配套资源
-
-- MATLAB 零基础入门教程（中文系统讲解）：B 站搜索"MATLAB 入门教程"或"MATLAB 从零开始"
-- MATLAB 信号处理实战：B 站搜索"MATLAB 信号处理"或"MATLAB DSP 实战"
-- MATLAB Simulink 入门：B 站搜索"Simulink 入门"或"MATLAB Simulink 教程"
-- 推荐搜索关键词："MATLAB 刘天麒"、"MATLAB 入门实战" 可找到质量较高的中文系列教程
-
-## 前置学习建议
-
-1. 无强制前置——MATLAB Onramp 从零开始，高中数学水平即可完成
-2. 若目标是信号处理方向，建议在学习信号与系统（傅里叶变换、卷积）之后，回过头使用 MATLAB 复现课程中的滤波器与谱分析例子，效果显著
-3. 微电子方向重点掌握：矩阵运算、FFT 调用（`fft`/`ifft`）、滤波器设计工具箱（`fdatool`/`filterDesigner`）、绘图与数据可视化

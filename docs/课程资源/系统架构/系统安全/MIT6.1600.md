@@ -16,7 +16,3 @@ MIT 的计算机系统安全本科生课程，共分为 authentication, transpor
 - 课程视频：参见课程网站
 - 课程教材：没有指定教材，每节课有 notes
 - 课程作业：一共6个实验，难度适中
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/MIT6.1600 - GitHub](https://github.com/PKUFlyingPig/MIT6.1600) 中。

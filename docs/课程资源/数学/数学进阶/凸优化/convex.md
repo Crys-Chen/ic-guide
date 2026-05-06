@@ -18,7 +18,3 @@
 - 课程视频：<https://www.bilibili.com/video/BV1aD4y1Q7aW>
 - 课程教材：[Convex Optimization](https://stanford.edu/~boyd/cvxbook/)
 - 课程作业：9 个 Python 编程作业
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/Standford_CVX101 - GitHub](https://github.com/PKUFlyingPig/Standford_CVX101) 中。

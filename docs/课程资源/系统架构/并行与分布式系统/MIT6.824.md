@@ -21,9 +21,3 @@
 - 课程视频中文翻译：<https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/>
 - 课程教材：无，以阅读论文为主
 - 课程作业：4 个非常虐的 Project，具体要求参见课程网站
-
-## 资源汇总
-
-@PKUFlyingPig 在学习这门课中用到的所有资源和作业实现都汇总在 [PKUFlyingPig/MIT6.824 - GitHub](https://github.com/PKUFlyingPig/MIT6.824) 中。
-
-@[OneSizeFitsQuorum](https://github.com/OneSizeFitsQuorum) 的 [Lab 文档](https://github.com/OneSizeFitsQuorum/MIT6.824-2021) 较为清晰地介绍了实现 lab 1-4 和 challenge 1-2 时需要考虑的许多细节，在遇到瓶颈期时可以阅读一下~~

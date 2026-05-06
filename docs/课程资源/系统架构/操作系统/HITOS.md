@@ -23,7 +23,3 @@
 - 课程教材一：[《Linux 内核完全注释》](https://book.douban.com/subject/1231236//)
 - 课程教材二：[《操作系统原理、实现与实践》](https://book.douban.com/subject/30391722/)
 - 课程作业：<https://www.lanqiao.cn/courses/115>
-
-## 资源汇总
-
-@NaChen95 在学习这门课中的八个实验作业的原理分析和实现都汇总在 [NaChen95 / Linux0.11](https://github.com/NaChen95/Linux0.11) 中。

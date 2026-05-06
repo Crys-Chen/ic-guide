@@ -25,7 +25,3 @@
 - 课程视频：[bilibili](https://www.bilibili.com/video/BV12Q4y1S73g)
 - 参考资料：[课程PPT](https://www.aliyundrive.com/s/YGuzfDCzw4n/folder/61824d985307bbf3920044b4afd48abb633441f6)
 - 课程作业：共四次作业，可见官方BBS小程序或非官方的Repo：[GAMES103 HW](https://github.com/indevn/GAMES103/tree/main/HW)
-
-## 资源汇总
-
-@indevn 在学习这门课中用到的所有资源和作业要求都汇总在 [GAMES103 Unoffical](https://github.com/indevn/GAMES103) 中。对于作业的具体实现，在知乎上有很多相关文章进行了细致讲解可以参考。
