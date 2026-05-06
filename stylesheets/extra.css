@@ -578,11 +578,14 @@
    左侧导航栏（仅桌面端）
    ══════════════════════════════════════════════════════════ */
 
-/* 隐藏侧边栏顶部重复的 section 标题（与 tabs 重复） */
-.md-nav--lifted > .md-nav__title,
-.md-nav--lifted .md-nav__title,
-.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
-  display: none !important;
+/* 桌面端：隐藏侧边栏顶部重复的 section 标题（与 tabs 重复）
+   移动端保留，使其作为返回上一级的按钮 */
+@media screen and (min-width: 76.25em) {
+  .md-nav--lifted > .md-nav__title,
+  .md-nav--lifted .md-nav__title,
+  .md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
+    display: none !important;
+  }
 }
 
 /* 桌面端：主导航里所有 nav__title 均隐藏（section 名称已在 tabs 显示） */
@@ -1332,6 +1335,7 @@
 .rg-root {
   margin: 2.5rem 0 !important;
   position: relative;
+  isolation: isolate; /* 隔离内部 z-index，防止星图浮在导航抽屉上 */
 }
 
 .rg-stage {
@@ -1539,7 +1543,7 @@
   display: flex;
   flex-direction: column;
   gap: .55rem;
-  z-index: 100;
+  z-index: 3; /* 低于 MkDocs 导航抽屉 (~4)，高于正文内容 */
 }
 
 .rg-dir-btn {
