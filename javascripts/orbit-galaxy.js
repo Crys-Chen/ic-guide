@@ -28,38 +28,38 @@
   /* ── Ring + card data ──────────────────────────────────────── */
   var RINGS = [
     {
-      r: 120, speed: 0.028, color: '#F97316', rgb: '249,115,22', label: '器件层',
+      r: 200, speed: 0, color: '#F97316', rgb: '249,115,22', label: '器件层',
       cards: [
-        { name: '先进制程\n与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成',    emoji: '⚛️' },
-        { name: '功率半导体\n与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件', emoji: '⚡' },
-        { name: '硅光子与\n光电集成',      tag: '光调制器 · 片上波导',       url: '硅光子与光电集成',      emoji: '💡' },
+        { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成'    },
+        { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件' },
+        { name: '硅光子与光电集成',      tag: '光调制器 · 片上波导',       url: '硅光子与光电集成'      },
       ]
     },
     {
-      r: 235, speed: 0.016, color: '#16A34A', rgb: '22,163,74', label: '电路层',
+      r: 310, speed: 0, color: '#16A34A', rgb: '22,163,74', label: '电路层',
       cards: [
-        { name: '射频与\n毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波',          emoji: '📡' },
-        { name: '存储器与\n存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体',      emoji: '💾' },
-        { name: '神经形态\n计算',         tag: '忆阻器 · 脉冲神经网络',    url: '神经形态计算',          emoji: '🧠' },
-        { name: '生物电子与\n脑机接口',   tag: '神经信号 · 植入式ASIC',    url: '生物电子与脑机接口',    emoji: '🫀' },
-        { name: '模拟与混合\n信号集成',   tag: 'ADC · DAC · PLL',          url: '模拟与混合信号集成电路', emoji: '〰️' },
+        { name: '射频与毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波'          },
+        { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体'      },
+        { name: '神经形态计算',         tag: '忆阻器 · 脉冲神经网络',    url: '神经形态计算'          },
+        { name: '生物电子与脑机接口',   tag: '神经信号 · 植入式ASIC',    url: '生物电子与脑机接口'    },
+        { name: '模拟与混合信号集成',   tag: 'ADC · DAC · PLL',          url: '模拟与混合信号集成电路' },
       ]
     },
     {
-      r: 340, speed: 0.010, color: '#D97706', rgb: '217,119,6', label: '架构层',
+      r: 400, speed: 0, color: '#D97706', rgb: '217,119,6', label: '架构层',
       cards: [
-        { name: '计算芯片与\n处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构',  emoji: '💻' },
-        { name: 'EDA与\n设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化',       emoji: '⚙️' },
-        { name: '硬件安全',               tag: '侧信道 · 木马 · PUF',       url: '硬件安全',              emoji: '🔒' },
-        { name: '可重构计算\n与FPGA',     tag: '灵活性 × 专用性能',         url: '可重构计算与FPGA',      emoji: '🧩' },
+        { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构'  },
+        { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化'       },
+        { name: '硬件安全',             tag: '侧信道 · 木马 · PUF',       url: '硬件安全'              },
+        { name: '可重构计算与FPGA',     tag: '灵活性 × 专用性能',         url: '可重构计算与FPGA'      },
       ]
     },
     {
-      r: 435, speed: 0.006, color: '#3B82F6', rgb: '59,130,246', label: '交叉层',
+      r: 460, speed: 0, color: '#3B82F6', rgb: '59,130,246', label: '交叉层',
       cards: [
-        { name: '具身智能',               tag: '机器人 · 感知 · 规划',      url: '具身智能',              emoji: '🤖' },
-        { name: '量子计算与\n量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片',    emoji: '🔬' },
-        { name: 'AI算法\n与系统',         tag: 'LLM · TinyML · AI Agent',   url: 'AI算法与系统',          emoji: '✨' },
+        { name: '具身智能',             tag: '机器人 · 感知 · 规划',      url: '具身智能'              },
+        { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片'    },
+        { name: 'AI算法与系统',         tag: 'LLM · TinyML · AI Agent',   url: 'AI算法与系统'          },
       ]
     }
   ];
@@ -76,10 +76,11 @@
   var reducedMotion = false;
 
   /* ── Scale helpers ─────────────────────────────────────────── */
-  function getScaleX() { return stageW / 1000; }
-  function getScaleY() { return stageH / 1000; }
-  /* card-size scale: vertical axis, floored so text stays readable */
-  function getScale() { return Math.max(getScaleY(), 0.88); }
+  /* Cap scaleY at 0.90 so cards don't overflow tall viewports   */
+  function getScaleY() { return Math.min(stageH / 1000, 0.90); }
+  /* Cap scaleX: max 1.35 and max aspect ratio 1.6 vs scaleY     */
+  function getScaleX() { return Math.min(stageW / 1000, getScaleY() * 1.6, 1.35); }
+  function getScale()  { return getScaleY(); }
 
   function isDark() {
     return document.body.getAttribute('data-md-color-scheme') === 'slate';
@@ -128,8 +129,6 @@
       ringsEl.appendChild(lbl);
     });
 
-    /* propagate card size scale */
-    if (stage) stage.style.setProperty('--rg-card-sc', getScale().toFixed(3));
   }
 
   /* ── Card position (elliptical: separate x/y radii) ────────── */
@@ -263,10 +262,6 @@
         if (m.attributeName === 'data-md-color-scheme') refreshCardVars();
       });
     }).observe(document.body, { attributes: true });
-
-    if (rafId) cancelAnimationFrame(rafId);
-    lastTs = null;
-    rafId = requestAnimationFrame(tick);
 
     window.removeEventListener('resize', onResize);
     window.addEventListener('resize', onResize);

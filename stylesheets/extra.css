@@ -1296,17 +1296,7 @@
   height: calc(100vh - 96px); /* header 48px + tabs 48px */
 }
 
-/* scale card BOX by --rg-card-sc; font stays fixed for readability */
-.rg-fullscreen .rg-card-inner {
-  width: calc(130px * var(--rg-card-sc, 1));
-  min-height: calc(50px * var(--rg-card-sc, 1));
-  border-radius: calc(10px * var(--rg-card-sc, 1));
-  padding: calc(.5rem * var(--rg-card-sc, 1)) calc(.6rem * var(--rg-card-sc, 1)) calc(.5rem * var(--rg-card-sc, 1)) calc(.75rem * var(--rg-card-sc, 1));
-}
-
-.rg-fullscreen .rg-card.rg-active .rg-card-inner {
-  width: calc(162px * var(--rg-card-sc, 1)) !important;
-}
+/* fullscreen: fixed card size, no viewport scaling */
 
 /* ── Layer helpers ──────────────────────────────────────── */
 .rg-rings,
@@ -1376,9 +1366,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 130px;
-  min-height: 50px;
-  padding: .5rem .6rem .5rem .75rem;
+  width: 180px;
+  min-height: 58px;
+  padding: .6rem .7rem .6rem .85rem;
   border-radius: 10px;
   text-align: left;
   gap: .2rem;
@@ -1402,7 +1392,7 @@
 }
 
 .rg-card-name {
-  font-size: .8rem;
+  font-size: .88rem;
   font-weight: 600;
   line-height: 1.35;
   font-family: "Inter", "Noto Sans SC", sans-serif;
@@ -1412,7 +1402,7 @@
 }
 
 .rg-card-tag {
-  font-size: .67rem;
+  font-size: .72rem;
   line-height: 1.35;
   opacity: 0;
   max-height: 0;
@@ -1428,8 +1418,8 @@
 }
 
 .rg-card.rg-active .rg-card-inner {
-  width: 162px !important;
-  transform: translate(-50%, -50%) scale(1.12) !important;
+  width: 220px !important;
+  transform: translate(-50%, -50%) scale(1.08) !important;
   box-shadow: 0 6px 28px var(--rg-glow) !important;
   background: var(--rg-bg-hover) !important;
   border-color: transparent !important;
