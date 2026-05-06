@@ -1404,12 +1404,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 180px;
-  min-height: 58px;
-  padding: .6rem .7rem .6rem .85rem;
+  width: 260px;
+  min-height: 66px;
+  padding: .65rem .75rem .65rem .9rem;
   border-radius: 10px;
   text-align: left;
-  gap: .2rem;
+  gap: .22rem;
   background: var(--rg-bg);
   border: 1px solid var(--rg-border);
   border-left: 3px solid var(--rg-color);
@@ -1430,24 +1430,23 @@
 }
 
 .rg-card-name {
-  font-size: .88rem;
+  font-size: .96rem;
   font-weight: 600;
   line-height: 1.35;
   font-family: "Inter", "Noto Sans SC", sans-serif;
   color: var(--md-default-fg-color);
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  white-space: nowrap;
 }
 
 .rg-card-tag {
-  font-size: .72rem;
+  font-size: .75rem;
   line-height: 1.35;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity .2s, max-height .25s;
+  opacity: .55;
   display: block;
   color: var(--md-default-fg-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ── Hover: active card ─────────────────────────────────── */
@@ -1456,22 +1455,23 @@
 }
 
 .rg-card.rg-active .rg-card-inner {
-  width: 220px !important;
-  transform: translate(-50%, -50%) scale(1.08) !important;
-  box-shadow: 0 6px 28px var(--rg-glow) !important;
+  width: 280px !important;
+  transform: translate(-50%, -50%) scale(1.06) !important;
+  box-shadow: 0 8px 32px var(--rg-glow) !important;
   background: var(--rg-bg-hover) !important;
   border-color: transparent !important;
-  border-left-color: rgba(255,255,255,0.40) !important;
+  border-left-color: rgba(255,255,255,0.50) !important;
 }
 
 .rg-card.rg-active .rg-card-name {
   color: rgba(255,255,255,0.95) !important;
+  white-space: normal;
 }
 
 .rg-card.rg-active .rg-card-tag {
-  opacity: .82;
-  max-height: 5rem;
-  color: rgba(255,255,255,0.78) !important;
+  opacity: .85;
+  color: rgba(255,255,255,0.80) !important;
+  white-space: normal;
 }
 
 /* ── Dim other cards on hover ───────────────────────────── */
