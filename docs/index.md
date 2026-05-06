@@ -28,14 +28,13 @@ hide:
 <p class="df-ldeck">从器件工艺到量子芯片——复旦大学微电子专业自学指南，覆盖 15 个前沿科研方向与 200 余门精选课程。</p>
 <div class="df-lbtns">
 <a href="科研方向/" class="df-lbp">探索科研方向 →</a>
-<a href="知识谱系/" class="df-lbg-btn">知识谱系</a>
+<a href="学习地图/" class="df-lbg-btn">学习地图</a>
 </div>
 </div>
 <nav class="df-lnav">
-<a href="科研方向/" class="df-lnc"><span class="df-lnc-n">01</span><span class="df-lnc-t">科研方向</span><span class="df-lnc-arr">→</span></a>
-<a href="课程资源/数学/" class="df-lnc"><span class="df-lnc-n">02</span><span class="df-lnc-t">课程资源</span><span class="df-lnc-arr">→</span></a>
-<a href="知识谱系/" class="df-lnc"><span class="df-lnc-n">03</span><span class="df-lnc-t">知识谱系</span><span class="df-lnc-arr">→</span></a>
-<a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-n">04</span><span class="df-lnc-t">工程工具</span><span class="df-lnc-arr">→</span></a>
+<a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-n">01</span><span class="df-lnc-t">工程工具</span><span class="df-lnc-arr">→</span></a>
+<a href="https://github.com/Crys-Chen/Fudan-ME" class="df-lnc" target="_blank" rel="noopener"><span class="df-lnc-n">02</span><span class="df-lnc-t">参与建设</span><span class="df-lnc-arr">→</span></a>
+<a href="#" class="df-lnc"><span class="df-lnc-n">03</span><span class="df-lnc-t">课堂笔记</span><span class="df-lnc-arr">→</span></a>
 </nav>
 </div>
 </div>

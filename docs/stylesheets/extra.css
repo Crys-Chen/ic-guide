@@ -1140,9 +1140,9 @@
 }
 .df-lnc {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: .75rem;
-  padding: 1.1rem 0;
+  padding: 1.8rem 0;
   border-bottom: 1px solid rgba(3,33,104,.08);
   text-decoration: none !important;
   transition: color .18s;
@@ -1152,22 +1152,22 @@
   font-size: .58rem;
   font-weight: 700;
   letter-spacing: .08em;
-  color: rgba(3,33,104,.30);
+  color: rgba(3,33,104,.28);
   flex-shrink: 0;
   font-family: "Inter","Noto Sans SC",sans-serif;
 }
 .df-lnc-t {
   flex: 1;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: -.015em;
+  letter-spacing: -.02em;
   color: #0A0706;
   font-family: "Noto Sans SC",sans-serif;
   transition: color .18s;
 }
 .df-lnc-arr {
-  font-size: .78rem;
-  color: rgba(3,33,104,.25);
+  font-size: .8rem;
+  color: rgba(3,33,104,.22);
   transition: color .18s, transform .18s;
   flex-shrink: 0;
 }
