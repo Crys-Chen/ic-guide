@@ -1169,8 +1169,10 @@
   .df-lwrap { flex-direction: column; min-height: unset; }
   .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .8rem 1.4rem 1.2rem; flex-direction: column; gap: 0; }
   .df-lnav-inner { display: flex; flex-direction: row; border-left: none; border-top: 1px solid rgba(3,33,104,.14); }
-  .df-lnc { flex: 1; min-width: 0; border-bottom: none !important; border-right: 1px solid rgba(3,33,104,.10); }
+  .df-lnc { flex: 1; min-width: 0; padding: .75rem .6rem; border-bottom: none !important; border-right: 1px solid rgba(3,33,104,.10); }
   .df-lnc:last-child { border-right: none; }
+  .df-lnc-t   { font-size: .95rem !important; white-space: normal !important; }
+  .df-lnc-sub { font-size: .62rem !important; white-space: normal !important; word-break: break-all; }
   .df-below { opacity: 1 !important; pointer-events: auto !important; }
 }
 
