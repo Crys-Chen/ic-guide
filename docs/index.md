@@ -13,7 +13,7 @@ hide:
 <p class="df-desc">从器件工艺到量子芯片，15 个前沿科研方向，200+ 门精选课程</p>
 <div class="df-ctas">
 <a href="科研方向/" class="df-btn">探索科研方向 →</a>
-<a href="知识谱系/" class="df-ghost">知识谱系</a>
+<a href="学习地图/" class="df-ghost">学习地图</a>
 </div>
 </div>
 </div>
@@ -45,9 +45,11 @@ hide:
 <div class="df-cards">
 <a href="科研方向/" class="df-card"><div class="df-ct"><span class="df-ci">🔬</span><span class="df-ca">→</span></div><h3>科研方向</h3><p>15 个前沿方向，器件·电路·架构·应用</p></a>
 <a href="课程资源/数学/" class="df-card"><div class="df-ct"><span class="df-ci">📚</span><span class="df-ca">→</span></div><h3>课程资源</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
-<a href="知识谱系/" class="df-card"><div class="df-ct"><span class="df-ci">🗺️</span><span class="df-ca">→</span></div><h3>知识谱系</h3><p>跨学科知识地图，明确路径与依赖</p></a>
+<a href="学习地图/" class="df-card"><div class="df-ct"><span class="df-ci">🗺️</span><span class="df-ca">→</span></div><h3>学习地图</h3><p>跨学科知识地图，明确路径与依赖</p></a>
 <a href="课程资源/必学工具/Git/" class="df-card"><div class="df-ct"><span class="df-ci">🛠️</span><span class="df-ca">→</span></div><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></a>
 </div>
+
+<div class="df-below" markdown>
 
 ## 前言
 
@@ -100,3 +102,5 @@ graph TB
 ### 从ME到ECE
 
 由于本仓库继承自[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)，其原有关于CS的资源基本保留，因此叫"IC/ME自学指南"并不合适。思量再三，决定叫"ECE自学指南"。ECE全称是Electrical Computer Engineering，指电子与计算机工程，是一门软硬兼修的专业。计算机（Computer Science, CS）的同学，如若想做架构和系统研究，没有硬件知识也是寸步难行。因此，本仓库也面向有志于从事架构研究的CS同学，为其提供硬件相关的自学资源，也欢迎CS的同学参与贡献。
+
+</div>

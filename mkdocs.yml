@@ -215,6 +215,7 @@ extra_javascript:
   - javascripts/likes.js
   - javascripts/prof-collapse.js
   - javascripts/orbit-galaxy.js
+  - javascripts/hero-scroll.js
   - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
 
 extra:
