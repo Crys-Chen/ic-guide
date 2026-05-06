@@ -29,19 +29,13 @@ hide:
 <div class="df-lbg"></div>
 <div class="df-linner">
 <div class="df-lmark">ECE 自学指南 · 复旦大学</div>
-<h1 class="df-lhl">让知识<br><span class="df-lred">回归连续</span></h1>
-<p class="df-ldeck">从器件工艺到量子芯片——复旦大学微电子专业自学指南，覆盖 15 个前沿科研方向与 200 余门精选课程。</p>
-<div class="df-lbtns">
-<a href="科研方向/" class="df-lbp">探索科研方向 →</a>
-<a href="知识谱系/" class="df-lbg-btn">知识谱系</a>
+<h1 class="df-lhl">让知识<br>回归连续</h1>
+<p class="df-ldeck">这里整理了复旦微电子 / ECE 方向的学习资源——15 个科研方向导引、200 余门精选课程、完整知识谱系。内容来自公开资料，持续更新，免费取用。</p>
+<div class="df-llinks">
+<a href="科研方向/">科研方向</a>
+<a href="知识谱系/">知识谱系</a>
+<a href="课程资源/数学/">课程资源</a>
 </div>
-</div>
-<div class="df-lstats">
-<div class="df-lstat"><span>15</span>科研方向</div>
-<div class="df-lrule"></div>
-<div class="df-lstat"><span>200+</span>精选课程</div>
-<div class="df-lrule"></div>
-<div class="df-lstat"><span>100+</span>顶级课题组</div>
 </div>
 </div>
 
