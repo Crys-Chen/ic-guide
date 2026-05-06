@@ -24,8 +24,3 @@ MIT 6.003 是信号与系统领域最权威的教学资源之一，与 Alan V. O
 - 课程视频（B 站·中英字幕）：<https://www.bilibili.com/video/BV1tf4y1m7Wf/>
 - 课程教材：《Signals and Systems》Alan V. Oppenheim & Alan S. Willsky，第 2 版
 - 课程作业：OCW 提供完整习题集及参考答案、历年期中/期末考试
-
-## 进阶参考
-
-- UCB EE120 Signals and Systems（理论更严谨，延伸至二维傅里叶与压缩感知）
-- MIT 6.011 Signals, Systems and Inference（6.003 的延续，结合统计推断）：<https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/>

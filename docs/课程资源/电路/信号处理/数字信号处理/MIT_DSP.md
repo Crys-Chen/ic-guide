@@ -18,7 +18,4 @@ MIT 数字信号处理课程由 Alan V. Oppenheim 主讲，其配套教材《Dis
 
 - 课程网站（OCW · 6.341，含讲义/习题/考试）：<https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/>
 - 课程视频（OCW · RES.6-007，Oppenheim 原版录像）：<https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/>
-- Coursera DSP（EPFL · Paolo Prandoni，现代英语授课）：<https://www.coursera.org/learn/dsp>
-- NPTEL 数字信号处理（IIT）：<https://nptel.ac.in/>（搜索"Digital Signal Processing"）
-- 中国大学 MOOC（搜索"数字信号处理"，推荐北邮、东南大学版本）：<https://www.icourse163.org/>
 - 课程教材：《Discrete-Time Signal Processing》Alan V. Oppenheim & Ronald W. Schafer，第 3 版（Prentice Hall）

@@ -307,7 +307,8 @@ nav:
         - "MIT 6.012: Microelectronic Devices": "课程资源/器件与工艺/半导体器件/MIT6.012.md"
       - 先进工艺技术:
         - 先进集成电路工艺技术(复旦): "课程资源/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
-        - 先进工艺技术学习资源汇总: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
+        - "Stanford EE311: Advanced IC Design": "课程资源/器件与工艺/先进集成电路工艺技术_FDU/stanford_ee311.md"
+        - 先进工艺技术学习资源导航: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
     - 电路:
       - 导言: "课程资源/电路/index.md"
       - 速通:
@@ -328,7 +329,8 @@ nav:
           - "Neso Academy: Digital Electronics": "课程资源/电路/数字/数字逻辑基础/neso_digital.md"
         - FPGA:
           - FPGA数字系统设计(复旦): "课程资源/电路/数字/FPGA/MICR130024.md"
-          - "FPGA 设计学习资源汇总": "课程资源/电路/数字/FPGA/fpga_courses.md"
+          - "Coursera: FPGA Design for Embedded Systems": "课程资源/电路/数字/FPGA/coursera_fpga.md"
+          - "FPGA 学习资源导航": "课程资源/电路/数字/FPGA/fpga_courses.md"
         - 数字集成电路:
           - 数字集成电路设计原理(复旦): "课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
           - "NPTEL VLSI Design": "课程资源/电路/数字/数字集成电路/VLSI_design.md"
@@ -355,16 +357,19 @@ nav:
         - 信号与系统:
           - 信号与系统(复旦): "课程资源/电路/信号处理/信号与系统/MICR130004.md"
           - "MIT 6.003: Signals and Systems": "课程资源/电路/信号处理/信号与系统/MIT6.003.md"
+          - "MIT 6.011: Signals, Systems and Inference": "课程资源/电路/信号处理/信号与系统/MIT6.011.md"
           - "UCB EE120: Signals and Systems": "课程资源/电路/信号处理/信号与系统/EE120.md"
         - 数字信号处理:
           - 数字信号处理(复旦): "课程资源/电路/信号处理/数字信号处理/INFO130010.md"
           - "MIT 离散时间信号处理 (Oppenheim)": "课程资源/电路/信号处理/数字信号处理/MIT_DSP.md"
+          - "Coursera DSP (EPFL)": "课程资源/电路/信号处理/数字信号处理/epfl_dsp.md"
         - MATLAB:
           - MATLAB(复旦): "课程资源/电路/信号处理/MATLAB/MICR130022.md"
-          - MATLAB 学习资源: "课程资源/电路/信号处理/MATLAB/mathworks_matlab.md"
+          - "MathWorks MATLAB Onramp": "课程资源/电路/信号处理/MATLAB/mathworks_matlab.md"
+          - "Coursera MATLAB (Vanderbilt)": "课程资源/电路/信号处理/MATLAB/vanderbilt_matlab.md"
         - 数模模数转换器:
           - 数模模数转换器(复旦): "课程资源/电路/信号处理/数模模数转换器/INFO130270.md"
-          - ADC/DAC 设计学习资源汇总: "课程资源/电路/信号处理/数模模数转换器/stanford_adc.md"
+          - "Stanford: Boris Murmann ADC 设计教程": "课程资源/电路/信号处理/数模模数转换器/stanford_adc.md"
       - EDA工具:
         - EDA工具(复旦): "课程资源/电路/EDA/MICR130035.md"
         - 数字EDA:
@@ -492,7 +497,11 @@ nav:
       - 深度生成模型:
         - 学习路线图: "课程资源/人工智能/深度生成模型/roadmap.md"
         - "MIT 6.S184": "课程资源/人工智能/深度生成模型/MIT6.S184.md"
+        - "MIT 6.S978: Deep Generative Models": "课程资源/人工智能/深度生成模型/MIT6.S978.md"
+        - "UCB CS294-158: Deep Unsupervised Learning": "课程资源/人工智能/深度生成模型/CS294-158.md"
+        - "CMU 10423: Generative AI": "课程资源/人工智能/深度生成模型/CMU10423.md"
         - 大语言模型:
+          - "Stanford CS336: Language Modeling from Scratch": "课程资源/人工智能/深度生成模型/大语言模型/CS336.md"
           - "CMU 11-868: Large Language Model Systems": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md"
           - "CMU 11-667: LLM Methods and Applications": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-667.md"
           - "CMU 11-711: Advanced NLP": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-711.md"
