@@ -1133,51 +1133,56 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1rem 0 2.5rem;
-  gap: .2rem;
+  padding: 2rem 1.5rem 2rem 2rem;
+  gap: .55rem;
   background: transparent;
   border-left: 1px solid rgba(3,33,104,.08);
 }
 .df-lnc {
   display: flex;
-  align-items: center;
-  gap: .75rem;
-  padding: 1.8rem 0;
-  border-bottom: 1px solid rgba(3,33,104,.08);
+  flex-direction: column;
+  gap: .28rem;
+  padding: 1.1rem 1.2rem 1.2rem;
+  border: 1px solid rgba(3,33,104,.12);
+  border-radius: 3px;
   text-decoration: none !important;
-  transition: color .18s;
+  transition: border-color .2s, background .2s;
 }
-.df-lnc:last-child { border-bottom: none; }
+.df-lnc:hover {
+  border-color: rgba(3,33,104,.30);
+  background: rgba(3,33,104,.025);
+}
 .df-lnc-n {
-  font-size: .58rem;
+  font-size: .7rem;
   font-weight: 700;
-  letter-spacing: .08em;
-  color: rgba(3,33,104,.28);
-  flex-shrink: 0;
+  letter-spacing: .10em;
+  color: rgba(3,33,104,.42);
   font-family: "Inter","Noto Sans SC",sans-serif;
 }
 .df-lnc-t {
-  flex: 1;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -.02em;
+  line-height: 1.2;
   color: #0A0706;
   font-family: "Noto Sans SC",sans-serif;
   transition: color .18s;
 }
-.df-lnc-arr {
-  font-size: .8rem;
-  color: rgba(3,33,104,.22);
-  transition: color .18s, transform .18s;
-  flex-shrink: 0;
+.df-lnc-sub {
+  font-size: .72rem;
+  color: rgba(10,7,6,.38);
+  font-family: "Noto Sans SC",sans-serif;
+  margin-top: .12rem;
+  line-height: 1.4;
+  transition: color .18s;
 }
-.df-lnc:hover .df-lnc-t { color: #032168; }
-.df-lnc:hover .df-lnc-arr { color: #032168; transform: translateX(3px); }
+.df-lnc:hover .df-lnc-t   { color: #032168; }
+.df-lnc:hover .df-lnc-sub { color: rgba(3,33,104,.52); }
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
-  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: 1.2rem 2rem; flex-direction: row; flex-wrap: wrap; gap: 0; }
-  .df-lnc { flex: 1; min-width: 140px; padding: .6rem .8rem; border-left: none; border-bottom: 1px solid rgba(3,33,104,.07); }
+  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: 1rem 1.4rem 1.4rem; flex-direction: row; flex-wrap: wrap; gap: .5rem; }
+  .df-lnc { flex: 1; min-width: 140px; }
 }
 
 
