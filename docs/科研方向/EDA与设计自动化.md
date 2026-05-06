@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+  - navigation
 ---
 # EDA 与设计自动化
 

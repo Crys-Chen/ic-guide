@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+  - navigation
 ---
 # AI 算法与系统
 

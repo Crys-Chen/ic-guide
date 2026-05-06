@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+  - navigation
 ---
 # 可重构计算与 FPGA
 
