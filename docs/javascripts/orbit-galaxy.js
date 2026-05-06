@@ -1,12 +1,12 @@
 /**
- * orbit-galaxy.js — 微电子科研版图 orbit visualization + direction-page nav
- * Vanilla JS, MkDocs Material SPA compatible
+ * orbit-galaxy.js — 微电子科研版图 cluster visualization + direction-page nav
+ * 4 star zones: 器件与工艺 / 模拟·射频·生物 / 数字系统与设计 / 智能与前沿计算
  */
 
 (function () {
   'use strict';
 
-  /* ── Direction data (shared by galaxy + dir-nav) ────────────── */
+  /* ── Direction data (for random nav) ────────────────────────── */
   var DIRS = [
     { name: '先进制程与异构集成',    slug: '先进制程与异构集成' },
     { name: '功率半导体与宽禁带器件', slug: '功率半导体与宽禁带器件' },
@@ -25,76 +25,83 @@
     { name: 'AI算法与系统',          slug: 'AI算法与系统' },
   ];
 
-  /* ── Ring + card data ──────────────────────────────────────── */
-  /* Per-ring angular offsets (radians)
-     R0:0°  R1:36°  R2:15°  R3:60°
-     Verified: all cross-ring card pairs have Δy>50px OR |Δx|>110px (no visual overlap) */
-  var RING_OFFSETS = [0, 0.628, 0.262, 1.047];
-
-  var RINGS = [
+  /* ── 4 cluster zones ──────────────────────────────────────────
+     cx/cy: zone center as fraction of stageW/stageH
+     r:     orbit radius at getScale()=1 (reference 1100×900 stage)
+     Cards count: 器件3 / 模拟3 / 数字5(largest) / 智能4
+  ── ──────────────────────────────────────────────────────────── */
+  var CLUSTERS = [
     {
-      r: 240, speed: 0.006, color: '#003F88', rgb: '0,63,136', label: '器件层',
+      name: '器件与工艺',
+      cx: 0.25, cy: 0.26,
+      r: 120, speed: 0.008,
+      rgb: '0,63,136',
       cards: [
-        { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成'    },
-        { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件' },
-        { name: '硅光子与光电集成',      tag: '光调制器 · 片上波导',       url: '硅光子与光电集成'      },
+        { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',  url: '先进制程与异构集成' },
+        { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',      url: '功率半导体与宽禁带器件' },
+        { name: '硅光子与光电集成',      tag: '光调制器 · 片上波导',     url: '硅光子与光电集成' },
       ]
     },
     {
-      r: 310, speed: 0.006, color: '#003F88', rgb: '0,63,136', label: '电路层',
+      name: '模拟·射频·生物',
+      cx: 0.75, cy: 0.26,
+      r: 120, speed: 0.007,
+      rgb: '0,63,136',
       cards: [
-        { name: '射频与毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波'          },
-        { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体'      },
-        { name: '神经形态计算',         tag: '忆阻器 · 脉冲神经网络',    url: '神经形态计算'          },
-        { name: '生物电子与脑机接口',   tag: '神经信号 · 植入式ASIC',    url: '生物电子与脑机接口'    },
-        { name: '模拟与混合信号集成',   tag: 'ADC · DAC · PLL',          url: '模拟与混合信号集成电路' },
+        { name: '射频与毫米波',          tag: 'LNA · PA · 毫米波雷达',  url: '射频与毫米波' },
+        { name: '模拟与混合信号集成电路', tag: 'ADC · DAC · PLL',        url: '模拟与混合信号集成电路' },
+        { name: '生物电子与脑机接口',    tag: '神经信号 · 植入式ASIC',  url: '生物电子与脑机接口' },
       ]
     },
     {
-      r: 395, speed: 0.006, color: '#003F88', rgb: '0,63,136', label: '架构层',
+      name: '数字系统与设计',
+      cx: 0.27, cy: 0.76,
+      r: 170, speed: 0.006,
+      rgb: '0,63,136',
       cards: [
-        { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构'  },
-        { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化'       },
-        { name: '硬件安全',             tag: '侧信道 · 木马 · PUF',       url: '硬件安全'              },
-        { name: '可重构计算与FPGA',     tag: '灵活性 × 专用性能',         url: '可重构计算与FPGA'      },
+        { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',       url: '计算芯片与处理器架构' },
+        { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体' },
+        { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',    url: 'EDA与设计自动化' },
+        { name: '硬件安全',             tag: '侧信道 · 木马 · PUF',      url: '硬件安全' },
+        { name: '可重构计算与FPGA',     tag: '灵活性 × 专用性能',       url: '可重构计算与FPGA' },
       ]
     },
     {
-      r: 465, speed: 0.006, color: '#003F88', rgb: '0,63,136', label: '交叉层',
+      name: '智能与前沿计算',
+      cx: 0.75, cy: 0.75,
+      r: 148, speed: 0.005,
+      rgb: '0,63,136',
       cards: [
-        { name: '具身智能',             tag: '机器人 · 感知 · 规划',      url: '具身智能'              },
-        { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片'    },
-        { name: 'AI算法与系统',         tag: 'LLM · TinyML · AI Agent',   url: 'AI算法与系统'          },
+        { name: 'AI算法与系统',         tag: 'LLM · TinyML · AI Agent', url: 'AI算法与系统' },
+        { name: '神经形态计算',         tag: '忆阻器 · 脉冲神经网络',   url: '神经形态计算' },
+        { name: '具身智能',             tag: '机器人 · 感知 · 规划',     url: '具身智能' },
+        { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',  url: '量子计算与量子芯片' },
       ]
     }
   ];
 
   /* ── Galaxy state ───────────────────────────────────────────── */
   var stage, ringsEl, cardsLayer;
-  var stageW = 1000, stageH = 1000;
+  var stageW = 1100, stageH = 700;
   var cardEls = [];
   var rafId = null;
   var lastTs = null;
   var paused = false;
   var resizeTimer = null;
-  var ringAngles = RINGS.map(function () { return 0; });
+  /* staggered starting angles for visual variety */
+  var clusterAngles = [0, 1.0, 0.5, 1.5];
   var reducedMotion = false;
 
-  /* ── Scale helpers ─────────────────────────────────────────── */
-  /* scaleY: ensure outer ring cards (r=465 ± 24px half-height) fit within stage */
-  function getScaleY() {
-    var maxFit = (stageH - 56) / (2 * 465);
-    return Math.min(stageH / 1000, maxFit, 0.80);
+  /* ── Scale helper ───────────────────────────────────────────── */
+  function getScale() {
+    return Math.min(stageW / 1100, stageH / 900, 0.85);
   }
-  /* scaleX: cap at 1.13 so outer ring card doesn't overflow 1440px width */
-  function getScaleX() { return Math.min(stageW / 1000, getScaleY() * 1.6, 1.13); }
-  function getScale()  { return getScaleY(); }
 
   function isDark() {
     return document.body.getAttribute('data-md-color-scheme') === 'slate';
   }
 
-  function ringVars(rgb) {
+  function cardVars(rgb) {
     var dark = isDark();
     return {
       '--rg-color':  'rgb(' + rgb + ')',
@@ -104,49 +111,78 @@
     };
   }
 
-  /* ── Draw decorative orbit rings (elliptical) ──────────────── */
-  function drawRings() {
+  /* ── Draw zone circles + center dots + labels ───────────────── */
+  function drawZones() {
     if (!ringsEl) return;
     ringsEl.innerHTML = '';
-    var sx = getScaleX();
-    var sy = getScaleY();
-    RINGS.forEach(function (ring) {
-      var rw = ring.r * sx * 2;
-      var rh = ring.r * sy * 2;
-      var el = document.createElement('div');
-      el.style.cssText = [
-        'position:absolute', 'left:50%', 'top:50%',
-        'width:' + rw + 'px', 'height:' + rh + 'px',
-        'transform:translate(-50%,-50%)',
-        'border-radius:50%',
-        'border:1.5px solid rgba(' + ring.rgb + ',' + (isDark() ? '0.30' : '0.22') + ')',
+    var sc = getScale();
+    var alpha = isDark() ? 0.07 : 0.04;
+    var ringAlpha = isDark() ? 0.28 : 0.18;
+
+    CLUSTERS.forEach(function (cl) {
+      var cx = stageW * cl.cx;
+      var cy = stageH * cl.cy;
+      var r  = cl.r * sc;
+
+      /* faint radial glow behind zone */
+      var bg = document.createElement('div');
+      bg.style.cssText = [
+        'position:absolute', 'left:' + cx + 'px', 'top:' + cy + 'px',
+        'width:' + ((r + 50) * 2) + 'px', 'height:' + ((r + 50) * 2) + 'px',
+        'transform:translate(-50%,-50%)', 'border-radius:50%',
+        'background:radial-gradient(circle,rgba(' + cl.rgb + ',' + alpha + ') 0%,transparent 70%)',
+        'pointer-events:none',
+      ].join(';');
+      ringsEl.appendChild(bg);
+
+      /* orbit ring */
+      var ring = document.createElement('div');
+      ring.style.cssText = [
+        'position:absolute', 'left:' + cx + 'px', 'top:' + cy + 'px',
+        'width:' + (r * 2) + 'px', 'height:' + (r * 2) + 'px',
+        'transform:translate(-50%,-50%)', 'border-radius:50%',
+        'border:1.5px solid rgba(' + cl.rgb + ',' + ringAlpha + ')',
         'pointer-events:none', 'box-sizing:border-box',
       ].join(';');
-      ringsEl.appendChild(el);
+      ringsEl.appendChild(ring);
 
+      /* zone center dot */
+      var dot = document.createElement('div');
+      dot.style.cssText = [
+        'position:absolute', 'left:' + cx + 'px', 'top:' + cy + 'px',
+        'width:7px', 'height:7px',
+        'transform:translate(-50%,-50%)', 'border-radius:50%',
+        'background:rgb(' + cl.rgb + ')', 'opacity:0.55',
+        'pointer-events:none',
+      ].join(';');
+      ringsEl.appendChild(dot);
+
+      /* zone label — centered above orbit ring */
       var lbl = document.createElement('div');
       lbl.className = 'rg-ring-label';
-      lbl.textContent = ring.label;
-      /* place label at 0° (right side) just outside the ring */
+      lbl.textContent = cl.name;
       lbl.style.cssText = [
-        'left:' + (stageW * 0.5 + ring.r * sx + 6) + 'px',
-        'top:' + (stageH * 0.5) + 'px',
-        'transform:translateY(-50%)',
-        'color:rgb(' + ring.rgb + ')',
+        'left:' + cx + 'px',
+        'top:' + (cy - r - 22) + 'px',
+        'transform:translateX(-50%)',
+        'color:rgb(' + cl.rgb + ')',
+        'font-size:.68rem',
+        'font-weight:700',
+        'opacity:0.78',
+        'white-space:nowrap',
       ].join(';');
       ringsEl.appendChild(lbl);
     });
-
   }
 
-  /* ── Card position (elliptical: separate x/y radii) ────────── */
-  function cardPos(ri, ci, n) {
-    var rx = RINGS[ri].r * getScaleX();
-    var ry = RINGS[ri].r * getScaleY();
-    var theta = ringAngles[ri] + (2 * Math.PI * ci / n) + RING_OFFSETS[ri];
+  /* ── Card position within cluster ──────────────────────────── */
+  function cardPos(idx, n, ci) {
+    var cl = CLUSTERS[ci];
+    var r  = cl.r * getScale();
+    var theta = clusterAngles[ci] + (2 * Math.PI * idx / n);
     return {
-      x: stageW * 0.5 + rx * Math.cos(theta),
-      y: stageH * 0.5 + ry * Math.sin(theta),
+      x: stageW * cl.cx + r * Math.cos(theta),
+      y: stageH * cl.cy + r * Math.sin(theta),
     };
   }
 
@@ -156,22 +192,21 @@
     cardsLayer.innerHTML = '';
     cardEls = [];
 
-    RINGS.forEach(function (ring, ri) {
-      ring.cards.forEach(function (card, ci) {
+    CLUSTERS.forEach(function (cl, ci) {
+      cl.cards.forEach(function (card) {
         var a = document.createElement('a');
         a.className = 'rg-card';
-        a.style.zIndex = String(3 + ri);
-        /* resolve URL relative to the index page */
+        a.style.zIndex = String(3 + ci);
         var base = window.location.pathname.replace(/\/[^/]*$/, '/');
         a.href = base + encodeURIComponent(card.url) + '/';
 
-        var vars = ringVars(ring.rgb);
+        var vars = cardVars(cl.rgb);
         Object.keys(vars).forEach(function (k) { a.style.setProperty(k, vars[k]); });
 
         var inner = document.createElement('div');
         inner.className = 'rg-card-inner';
         inner.innerHTML =
-          '<span class="rg-card-name">' + card.name.replace(/\n/g, '') + '</span>' +
+          '<span class="rg-card-name">' + card.name + '</span>' +
           '<span class="rg-card-tag">' + card.tag + '</span>';
 
         a.appendChild(inner);
@@ -199,9 +234,9 @@
   /* ── Position all cards ─────────────────────────────────────── */
   function positionCards() {
     var flat = 0;
-    RINGS.forEach(function (ring, ri) {
-      ring.cards.forEach(function (_, ci) {
-        var pos = cardPos(ri, ci, ring.cards.length);
+    CLUSTERS.forEach(function (cl, ci) {
+      cl.cards.forEach(function (_, idx) {
+        var pos = cardPos(idx, cl.cards.length, ci);
         cardEls[flat].style.left = pos.x + 'px';
         cardEls[flat].style.top  = pos.y + 'px';
         flat++;
@@ -215,7 +250,7 @@
     if (!paused && !reducedMotion) {
       var dt = lastTs !== null ? Math.min((ts - lastTs) / 1000, 0.1) : 0;
       lastTs = ts;
-      RINGS.forEach(function (ring, ri) { ringAngles[ri] += ring.speed * dt; });
+      CLUSTERS.forEach(function (cl, ci) { clusterAngles[ci] += cl.speed * dt; });
     }
     positionCards();
   }
@@ -223,29 +258,29 @@
   /* ── Measure + resize ───────────────────────────────────────── */
   function measure() {
     var rect = stage.getBoundingClientRect();
-    stageW = rect.width  || 1000;
+    stageW = rect.width  || 1100;
     stageH = rect.height || 700;
   }
 
   function onResize() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
-      measure(); drawRings(); positionCards();
+      measure(); drawZones(); positionCards();
     }, 100);
   }
 
   function refreshCardVars() {
     var flat = 0;
-    RINGS.forEach(function (ring) {
-      ring.cards.forEach(function () {
+    CLUSTERS.forEach(function (cl) {
+      cl.cards.forEach(function () {
         if (cardEls[flat]) {
-          var vars = ringVars(ring.rgb);
+          var vars = cardVars(cl.rgb);
           Object.keys(vars).forEach(function (k) { cardEls[flat].style.setProperty(k, vars[k]); });
         }
         flat++;
       });
     });
-    drawRings();
+    drawZones();
   }
 
   /* ── Galaxy setup ───────────────────────────────────────────── */
@@ -258,7 +293,7 @@
     cardsLayer = document.getElementById('rg-cards-layer');
     if (!stage || !ringsEl || !cardsLayer) return;
 
-    /* 动态计算全屏 stage 高度（替代硬编码 132px） */
+    /* dynamic fullscreen height */
     if (root.classList.contains('rg-fullscreen')) {
       var hdr  = document.querySelector('.md-header');
       var tabs = document.querySelector('.md-tabs');
@@ -267,10 +302,10 @@
     }
 
     reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    ringAngles = RINGS.map(function () { return 0; });
+    clusterAngles = [0, 1.0, 0.5, 1.5];
 
     measure();
-    drawRings();
+    drawZones();
     buildCards();
     positionCards();
 
@@ -302,7 +337,6 @@
   }
 
   function galaxyUrl() {
-    /* go up one level from current direction page */
     var path = window.location.pathname;
     return path.replace(/\/[^/]+\/?$/, '/');
   }
@@ -310,7 +344,6 @@
   function randomDirUrl() {
     try {
       var decoded = decodeURIComponent(window.location.pathname);
-      /* extract current slug from path segment */
       var m = decoded.match(/\/科研方向\/([^/]+)\/?$/);
       var current = m ? m[1] : '';
       var pool = DIRS.filter(function (d) { return d.slug !== current; });
@@ -322,7 +355,7 @@
 
   function setupDirNav() {
     if (!isDirectionPage()) return;
-    if (document.getElementById('rg-dir-nav')) return; /* already injected */
+    if (document.getElementById('rg-dir-nav')) return;
 
     var nav = document.createElement('div');
     nav.id = 'rg-dir-nav';
@@ -356,7 +389,6 @@
   if (typeof document$ !== 'undefined') {
     document$.subscribe(function () {
       if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
-      /* clean up old nav */
       var old = document.getElementById('rg-dir-nav');
       if (old) old.remove();
       setTimeout(init, 80);
