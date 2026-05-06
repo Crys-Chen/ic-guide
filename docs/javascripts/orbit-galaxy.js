@@ -82,7 +82,7 @@
   /* ── Scale helpers ─────────────────────────────────────────── */
   /* scaleY: ensure outer ring cards (r=465 ± 24px half-height) fit within stage */
   function getScaleY() {
-    var maxFit = (stageH - 52) / (2 * 465);
+    var maxFit = (stageH - 56) / (2 * 465);
     return Math.min(stageH / 1000, maxFit, 0.80);
   }
   /* scaleX: cap at 1.13 so outer ring card doesn't overflow 1440px width */
