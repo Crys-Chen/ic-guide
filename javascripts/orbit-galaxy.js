@@ -76,9 +76,10 @@
   var reducedMotion = false;
 
   /* ── Scale helpers ─────────────────────────────────────────── */
-  function getScale() {
-    return Math.min(stageW, stageH) / 1000;
-  }
+  function getScaleX() { return stageW / 1000; }
+  function getScaleY() { return stageH / 1000; }
+  /* card-size scale: vertical axis, floored so text stays readable */
+  function getScale() { return Math.max(getScaleY(), 0.88); }
 
   function isDark() {
     return document.body.getAttribute('data-md-color-scheme') === 'slate';
@@ -95,17 +96,19 @@
     };
   }
 
-  /* ── Draw decorative orbit rings ───────────────────────────── */
+  /* ── Draw decorative orbit rings (elliptical) ──────────────── */
   function drawRings() {
     if (!ringsEl) return;
     ringsEl.innerHTML = '';
-    var sc = getScale();
+    var sx = getScaleX();
+    var sy = getScaleY();
     RINGS.forEach(function (ring) {
-      var d = ring.r * 2 * sc;
+      var rw = ring.r * sx * 2;
+      var rh = ring.r * sy * 2;
       var el = document.createElement('div');
       el.style.cssText = [
         'position:absolute', 'left:50%', 'top:50%',
-        'width:' + d + 'px', 'height:' + d + 'px',
+        'width:' + rw + 'px', 'height:' + rh + 'px',
         'transform:translate(-50%,-50%)',
         'border-radius:50%',
         'border:1px solid rgba(' + ring.rgb + ',' + (isDark() ? '0.18' : '0.12') + ')',
@@ -118,25 +121,25 @@
       lbl.textContent = ring.label;
       lbl.style.cssText = [
         'left:' + (stageW * 0.5) + 'px',
-        'top:' + (stageH * 0.5 - ring.r * sc - 12) + 'px',
+        'top:' + (stageH * 0.5 - ring.r * sy - 12) + 'px',
         'transform:translateX(-50%)',
         'color:rgb(' + ring.rgb + ')',
       ].join(';');
       ringsEl.appendChild(lbl);
     });
 
-    /* propagate card scale */
+    /* propagate card size scale */
     if (stage) stage.style.setProperty('--rg-card-sc', getScale().toFixed(3));
   }
 
-  /* ── Card position ─────────────────────────────────────────── */
+  /* ── Card position (elliptical: separate x/y radii) ────────── */
   function cardPos(ri, ci, n) {
-    var sc = getScale();
-    var r = RINGS[ri].r * sc;
+    var rx = RINGS[ri].r * getScaleX();
+    var ry = RINGS[ri].r * getScaleY();
     var theta = ringAngles[ri] + (2 * Math.PI * ci / n) + ri * 1.1;
     return {
-      x: stageW * 0.5 + r * Math.cos(theta),
-      y: stageH * 0.5 + r * Math.sin(theta),
+      x: stageW * 0.5 + rx * Math.cos(theta),
+      y: stageH * 0.5 + ry * Math.sin(theta),
     };
   }
 
