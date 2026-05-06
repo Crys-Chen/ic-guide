@@ -1133,19 +1133,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 1.5rem 2rem 2rem;
-  gap: .55rem;
+  padding: 2rem 1.2rem 2rem 1.8rem;
+  gap: .5rem;
   background: transparent;
   border-left: 1px solid rgba(3,33,104,.08);
 }
 .df-lnc {
-  display: flex;
-  flex-direction: column;
-  gap: .28rem;
-  padding: 1.1rem 1.2rem 1.2rem;
+  display: block;
+  padding: 1rem 1rem 1.1rem;
   border: 1px solid rgba(3,33,104,.12);
   border-radius: 3px;
   text-decoration: none !important;
+  color: inherit !important;
   transition: border-color .2s, background .2s;
 }
 .df-lnc:hover {
@@ -1153,31 +1152,37 @@
   background: rgba(3,33,104,.025);
 }
 .df-lnc-n {
-  font-size: .7rem;
+  display: block;
+  font-size: .68rem;
   font-weight: 700;
   letter-spacing: .10em;
-  color: rgba(3,33,104,.42);
+  color: rgba(3,33,104,.42) !important;
   font-family: "Inter","Noto Sans SC",sans-serif;
+  margin-bottom: .28rem;
 }
 .df-lnc-t {
-  font-size: 1.2rem;
+  display: block;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -.02em;
   line-height: 1.2;
-  color: #0A0706;
+  color: #0A0706 !important;
   font-family: "Noto Sans SC",sans-serif;
+  white-space: nowrap;
+  margin-bottom: .22rem;
   transition: color .18s;
 }
 .df-lnc-sub {
-  font-size: .72rem;
-  color: rgba(10,7,6,.38);
+  display: block;
+  font-size: .7rem;
+  color: rgba(10,7,6,.38) !important;
   font-family: "Noto Sans SC",sans-serif;
-  margin-top: .12rem;
+  white-space: nowrap;
   line-height: 1.4;
   transition: color .18s;
 }
-.df-lnc:hover .df-lnc-t   { color: #032168; }
-.df-lnc:hover .df-lnc-sub { color: rgba(3,33,104,.52); }
+.df-lnc:hover .df-lnc-t   { color: #032168 !important; }
+.df-lnc:hover .df-lnc-sub { color: rgba(3,33,104,.52) !important; }
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
