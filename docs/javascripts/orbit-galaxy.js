@@ -88,10 +88,10 @@
     var dark = isDark();
     return {
       '--rg-color':    'rgb(' + rgb + ')',
-      '--rg-bg':       'rgba(' + rgb + ',' + (dark ? '0.16' : '0.10') + ')',
-      '--rg-bg-hover': 'rgba(' + rgb + ',' + (dark ? '0.26' : '0.18') + ')',
-      '--rg-border':   'rgba(' + rgb + ',' + (dark ? '0.42' : '0.30') + ')',
-      '--rg-glow':     'rgba(' + rgb + ',' + (dark ? '0.55' : '0.40') + ')',
+      '--rg-bg':       dark ? 'rgba(12,16,34,0.80)' : 'rgba(248,250,253,0.92)',
+      '--rg-bg-hover': 'rgba(' + rgb + ',0.88)',
+      '--rg-border':   dark ? 'rgba(255,255,255,0.09)' : 'rgba(20,30,60,0.10)',
+      '--rg-glow':     'rgba(' + rgb + ',0.40)',
     };
   }
 
@@ -108,7 +108,7 @@
         'width:' + d + 'px', 'height:' + d + 'px',
         'transform:translate(-50%,-50%)',
         'border-radius:50%',
-        'border:1px dashed rgba(' + ring.rgb + ',' + (isDark() ? '0.30' : '0.22') + ')',
+        'border:1px solid rgba(' + ring.rgb + ',' + (isDark() ? '0.18' : '0.12') + ')',
         'pointer-events:none', 'box-sizing:border-box',
       ].join(';');
       ringsEl.appendChild(el);
@@ -160,8 +160,7 @@
         var inner = document.createElement('div');
         inner.className = 'rg-card-inner';
         inner.innerHTML =
-          '<span class="rg-card-icon">' + card.emoji + '</span>' +
-          '<span class="rg-card-name">' + card.name.replace(/\n/g, '<br>') + '</span>' +
+          '<span class="rg-card-name">' + card.name.replace(/\n/g, '') + '</span>' +
           '<span class="rg-card-tag">' + card.tag + '</span>';
 
         a.appendChild(inner);
