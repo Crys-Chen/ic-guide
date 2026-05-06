@@ -1211,3 +1211,187 @@
 }
 [data-md-color-scheme="slate"] .md-tabs__link--active,
 [data-md-color-scheme="slate"] .md-tabs__link:hover { color: #A78BFA !important; }
+
+/* ════════════════════════════════════════════════════════
+   ORBIT GALAXY — 微电子科研版图
+   ════════════════════════════════════════════════════════ */
+
+/* ── Container ─────────────────────────────────────────── */
+.rg-root {
+  margin: 2.5rem 0 !important;
+  position: relative;
+}
+
+.rg-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 780px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* ── Layer helpers ──────────────────────────────────────── */
+.rg-rings,
+.rg-cards-layer {
+  position: absolute !important;
+  inset: 0;
+  pointer-events: none;
+}
+
+.rg-cards-layer {
+  pointer-events: auto !important;
+}
+
+/* ── Center orb ─────────────────────────────────────────── */
+.rg-center {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.rg-center-pulse {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(3,33,104,.12) 0%, transparent 70%);
+  animation: rg-pulse 3s ease-in-out infinite;
+  margin: 0 auto .3rem;
+}
+
+@keyframes rg-pulse {
+  0%   { transform: scale(1);   opacity: .6; }
+  50%  { transform: scale(1.3); opacity: .2; }
+  100% { transform: scale(1);   opacity: .6; }
+}
+
+.rg-center-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
+  line-height: 1.3;
+  color: var(--md-default-fg-color);
+}
+
+.rg-center-sub {
+  font-size: .7rem;
+  opacity: .5;
+  margin-top: .2rem;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
+}
+
+/* ── Card outer (positioned by JS) ─────────────────────── */
+.rg-card {
+  position: absolute !important;
+  text-decoration: none !important;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* ── Card inner (visual, CSS transitions here) ──────────── */
+.rg-card-inner {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  min-height: 56px;
+  padding: .45rem .5rem;
+  border-radius: 14px;
+  text-align: center;
+  gap: .18rem;
+  background: var(--rg-bg);
+  border: 1.5px solid var(--rg-border);
+  transform: translate(-50%, -50%) scale(1);
+  transition:
+    transform .28s cubic-bezier(.34,1.56,.64,1),
+    box-shadow .25s,
+    opacity .2s,
+    background .2s,
+    width .25s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-sizing: border-box;
+}
+
+.rg-card-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+  display: block;
+}
+
+.rg-card-name {
+  font-size: .62rem;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
+  color: var(--rg-color);
+}
+
+.rg-card-tag {
+  font-size: .56rem;
+  line-height: 1.35;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity .2s, max-height .25s;
+  display: block;
+  color: var(--rg-color);
+}
+
+/* ── Hover: active card ─────────────────────────────────── */
+.rg-card.rg-active {
+  z-index: 10 !important;
+}
+
+.rg-card.rg-active .rg-card-inner {
+  width: 130px !important;
+  transform: translate(-50%, -50%) scale(1.32) !important;
+  box-shadow: 0 6px 28px var(--rg-glow) !important;
+  background: var(--rg-bg-hover) !important;
+  border-color: var(--rg-color) !important;
+}
+
+.rg-card.rg-active .rg-card-tag {
+  opacity: .78;
+  max-height: 5rem;
+}
+
+/* ── Dim other cards on hover ───────────────────────────── */
+.rg-card.rg-dim .rg-card-inner {
+  opacity: .3 !important;
+}
+
+/* ── Ring label ─────────────────────────────────────────── */
+.rg-ring-label {
+  position: absolute !important;
+  font-size: .55rem;
+  opacity: .45;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
+}
+
+/* ── Dark mode tweaks ───────────────────────────────────── */
+[data-md-color-scheme="slate"] .rg-center-pulse {
+  background: radial-gradient(circle, rgba(102,114,245,.18) 0%, transparent 70%);
+}
+
+[data-md-color-scheme="slate"] .rg-card.rg-dim .rg-card-inner {
+  opacity: .22 !important;
+}
+
+/* ── Mobile fallback: hide orbit, show fallback ─────────── */
+@media (max-width: 620px) {
+  .rg-stage {
+    display: none !important;
+  }
+  .rg-fallback {
+    display: block !important;
+  }
+}
