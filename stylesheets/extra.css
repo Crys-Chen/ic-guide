@@ -991,7 +991,8 @@
    ════════════════════════════════════════════════════════ */
 .df-light {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 270px;
   margin: -1.5rem -1.5rem 0;
   overflow: hidden;
 }
@@ -1073,92 +1074,53 @@
 }
 
 
-/* Day mode: right nav column replaces horizontal cards */
+/* Day mode: right nav column — editorial, unified with hero */
 [data-md-color-scheme="default"] .df-cards { display: none !important; }
 
 .df-lnav {
   position: relative; z-index: 1;
-  border-left: 1px solid rgba(3,33,104,.10);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(3,33,104,.022);
-  gap: 0;
+  padding: 0 3rem 0 2.2rem;
+  gap: .2rem;
+  background: transparent;
+  border-left: 1px solid rgba(3,33,104,.08);
 }
 .df-lnc {
   display: flex;
   align-items: flex-start;
-  gap: .85rem;
-  padding: 1.3rem 1.5rem;
-  border-bottom: 1px solid rgba(3,33,104,.07);
+  gap: .7rem;
+  padding: .9rem .4rem .9rem .9rem;
+  border-left: 2px solid transparent;
   text-decoration: none !important;
-  transition: background .15s;
+  transition: border-color .18s;
 }
-.df-lnc:last-child { border-bottom: none; }
-.df-lnc:hover { background: rgba(3,33,104,.05); }
-.df-lnc-icon { font-size: 1.1rem; line-height: 1; margin-top: .1rem; flex-shrink: 0; }
-.df-lnc-body { display: flex; flex-direction: column; gap: .18rem; }
+.df-lnc:hover { border-left-color: #032168; }
+.df-lnc-icon { font-size: 1rem; line-height: 1.4; flex-shrink: 0; opacity: .7; }
+.df-lnc-body { display: flex; flex-direction: column; gap: .15rem; }
 .df-lnc-t {
-  font-size: .84rem;
+  font-size: .82rem;
   font-weight: 600;
-  color: #111827;
+  color: rgba(10,7,6,.78);
   font-family: "Noto Sans SC",sans-serif;
-  transition: color .15s;
+  transition: color .18s;
 }
 .df-lnc:hover .df-lnc-t { color: #032168; }
 .df-lnc-d {
-  font-size: .70rem;
-  color: rgba(17,24,39,.42);
+  font-size: .69rem;
+  color: rgba(10,7,6,.38);
   line-height: 1.5;
   font-family: "Noto Sans SC",sans-serif;
 }
 
 @media (max-width: 860px) {
   .df-light { grid-template-columns: 1fr; }
-  .df-lnav { border-left: none; border-top: 1px solid rgba(3,33,104,.09); flex-direction: row; flex-wrap: wrap; }
-  .df-lnc { flex: 1; min-width: 140px; border-bottom: none; border-right: 1px solid rgba(3,33,104,.07); }
-  .df-lnc:last-child { border-right: none; }
+  .df-lnav { border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: 1.5rem 2rem; flex-direction: row; flex-wrap: wrap; gap: 0; }
+  .df-lnc { flex: 1; min-width: 140px; padding: .6rem .8rem; border-left: none; border-bottom: 1px solid rgba(3,33,104,.07); }
 }
 
 
-/* ── Day mode nav cards (below hero, 2×2 grid) ─────────── */
-[data-md-color-scheme="slate"] .df-daycards { display: none !important; }
-.df-daycards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: .75rem;
-  margin: 2.2rem 0 3.5rem;
-}
-.df-dc {
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-  padding: 1.3rem 1.3rem 1.2rem;
-  background: #fff;
-  border: 1px solid rgba(3,33,104,.09);
-  border-radius: 10px;
-  text-decoration: none !important;
-  transition: background .18s, border-color .18s, transform .18s;
-}
-.df-dc:hover {
-  background: rgba(3,33,104,.03);
-  border-color: rgba(3,33,104,.20);
-  transform: translateY(-2px);
-}
-.df-dc-icon { font-size: 1.4rem; margin-bottom: .2rem; }
-.df-dc h3 {
-  font-size: .88rem !important;
-  font-weight: 600 !important;
-  color: #111827 !important;
-  margin: 0 !important; padding: 0 !important; border: none !important;
-  font-family: "Noto Sans SC",sans-serif !important;
-}
-.df-dc:hover h3 { color: #032168 !important; }
-.df-dc p {
-  font-size: .74rem !important;
-  color: rgba(17,24,39,.44) !important;
-  margin: 0 !important; line-height: 1.5 !important;
-}
 
 /* ════════════════════════════════════════════════════════
    SHARED NAV CARDS
