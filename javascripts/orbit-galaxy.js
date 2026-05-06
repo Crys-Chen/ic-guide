@@ -28,7 +28,7 @@
   /* ── Ring + card data ──────────────────────────────────────── */
   var RINGS = [
     {
-      r: 200, speed: 0, color: '#F97316', rgb: '249,115,22', label: '器件层',
+      r: 350, speed: 0, color: '#F97316', rgb: '249,115,22', label: '器件层',
       cards: [
         { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成'    },
         { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件' },
@@ -36,7 +36,7 @@
       ]
     },
     {
-      r: 310, speed: 0, color: '#16A34A', rgb: '22,163,74', label: '电路层',
+      r: 430, speed: 0, color: '#16A34A', rgb: '22,163,74', label: '电路层',
       cards: [
         { name: '射频与毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波'          },
         { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体'      },
@@ -46,7 +46,7 @@
       ]
     },
     {
-      r: 400, speed: 0, color: '#D97706', rgb: '217,119,6', label: '架构层',
+      r: 500, speed: 0, color: '#D97706', rgb: '217,119,6', label: '架构层',
       cards: [
         { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构'  },
         { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化'       },
@@ -55,7 +55,7 @@
       ]
     },
     {
-      r: 460, speed: 0, color: '#3B82F6', rgb: '59,130,246', label: '交叉层',
+      r: 560, speed: 0, color: '#3B82F6', rgb: '59,130,246', label: '交叉层',
       cards: [
         { name: '具身智能',             tag: '机器人 · 感知 · 规划',      url: '具身智能'              },
         { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片'    },
@@ -76,10 +76,10 @@
   var reducedMotion = false;
 
   /* ── Scale helpers ─────────────────────────────────────────── */
-  /* Cap scaleY at 0.90 so cards don't overflow tall viewports   */
-  function getScaleY() { return Math.min(stageH / 1000, 0.90); }
-  /* Cap scaleX: max 1.35 and max aspect ratio 1.6 vs scaleY     */
-  function getScaleX() { return Math.min(stageW / 1000, getScaleY() * 1.6, 1.35); }
+  /* scaleY: cap at 0.80 so outer ring (r=560) stays within stage */
+  function getScaleY() { return Math.min(stageH / 1000, 0.80); }
+  /* scaleX: cap at 1.13 so outer ring card doesn't overflow 1440px width */
+  function getScaleX() { return Math.min(stageW / 1000, getScaleY() * 1.6, 1.13); }
   function getScale()  { return getScaleY(); }
 
   function isDark() {
