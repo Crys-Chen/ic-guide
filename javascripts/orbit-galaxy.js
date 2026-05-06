@@ -26,9 +26,12 @@
   ];
 
   /* ── Ring + card data ──────────────────────────────────────── */
+  /* Per-ring angular offsets (radians) chosen to minimise inter-ring proximity */
+  var RING_OFFSETS = [0, 1.1, 2.2, 2.985];
+
   var RINGS = [
     {
-      r: 350, speed: 0, color: '#F97316', rgb: '249,115,22', label: '器件层',
+      r: 350, speed: 0, color: '#B45309', rgb: '180,83,9', label: '器件层',
       cards: [
         { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成'    },
         { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件' },
@@ -36,7 +39,7 @@
       ]
     },
     {
-      r: 430, speed: 0, color: '#16A34A', rgb: '22,163,74', label: '电路层',
+      r: 430, speed: 0, color: '#065F46', rgb: '6,95,70', label: '电路层',
       cards: [
         { name: '射频与毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波'          },
         { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体'      },
@@ -46,7 +49,7 @@
       ]
     },
     {
-      r: 500, speed: 0, color: '#D97706', rgb: '217,119,6', label: '架构层',
+      r: 500, speed: 0, color: '#1E3A8A', rgb: '30,58,138', label: '架构层',
       cards: [
         { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构'  },
         { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化'       },
@@ -55,7 +58,7 @@
       ]
     },
     {
-      r: 560, speed: 0, color: '#3B82F6', rgb: '59,130,246', label: '交叉层',
+      r: 560, speed: 0, color: '#5B21B6', rgb: '91,33,182', label: '交叉层',
       cards: [
         { name: '具身智能',             tag: '机器人 · 感知 · 规划',      url: '具身智能'              },
         { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片'    },
@@ -90,10 +93,10 @@
     var dark = isDark();
     return {
       '--rg-color':    'rgb(' + rgb + ')',
-      '--rg-bg':       dark ? 'rgba(12,16,34,0.80)' : 'rgba(248,250,253,0.92)',
-      '--rg-bg-hover': 'rgba(' + rgb + ',0.88)',
-      '--rg-border':   dark ? 'rgba(255,255,255,0.09)' : 'rgba(20,30,60,0.10)',
-      '--rg-glow':     'rgba(' + rgb + ',0.40)',
+      '--rg-bg':       dark ? 'rgba(20,24,40,0.97)' : 'rgba(255,255,255,0.97)',
+      '--rg-bg-hover': 'rgba(' + rgb + ',0.92)',
+      '--rg-border':   dark ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.08)',
+      '--rg-glow':     'rgba(' + rgb + ',0.35)',
     };
   }
 
@@ -135,7 +138,7 @@
   function cardPos(ri, ci, n) {
     var rx = RINGS[ri].r * getScaleX();
     var ry = RINGS[ri].r * getScaleY();
-    var theta = ringAngles[ri] + (2 * Math.PI * ci / n) + ri * 1.1;
+    var theta = ringAngles[ri] + (2 * Math.PI * ci / n) + RING_OFFSETS[ri];
     return {
       x: stageW * 0.5 + rx * Math.cos(theta),
       y: stageH * 0.5 + ry * Math.sin(theta),
@@ -152,6 +155,7 @@
       ring.cards.forEach(function (card, ci) {
         var a = document.createElement('a');
         a.className = 'rg-card';
+        a.style.zIndex = String(3 + ri);
         /* resolve URL relative to the index page */
         var base = window.location.pathname.replace(/\/[^/]*$/, '/');
         a.href = base + encodeURIComponent(card.url) + '/';
