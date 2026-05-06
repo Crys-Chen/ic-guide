@@ -26,12 +26,13 @@
   ];
 
   /* ── Ring + card data ──────────────────────────────────────── */
-  /* Per-ring angular offsets (radians) chosen to minimise inter-ring proximity */
-  var RING_OFFSETS = [0, 1.1, 2.2, 2.985];
+  /* Per-ring angular offsets (radians) — derived to keep inter-ring card separation ≥ 9° */
+  /* R0:0°  R1:36°  R2:45°  R3:120° — verified no axis-aligned overlap at 1440×810 */
+  var RING_OFFSETS = [0, 0.628, 0.785, 2.094];
 
   var RINGS = [
     {
-      r: 350, speed: 0, color: '#B45309', rgb: '180,83,9', label: '器件层',
+      r: 240, speed: 0, color: '#003F88', rgb: '0,63,136', label: '器件层',
       cards: [
         { name: '先进制程与异构集成',    tag: 'FinFET · GAA · Chiplet',    url: '先进制程与异构集成'    },
         { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',        url: '功率半导体与宽禁带器件' },
@@ -39,7 +40,7 @@
       ]
     },
     {
-      r: 430, speed: 0, color: '#065F46', rgb: '6,95,70', label: '电路层',
+      r: 310, speed: 0, color: '#003F88', rgb: '0,63,136', label: '电路层',
       cards: [
         { name: '射频与毫米波',         tag: 'LNA · PA · 毫米波雷达',    url: '射频与毫米波'          },
         { name: '存储器与存算一体',     tag: 'SRAM · DRAM · PIM',        url: '存储器与存算一体'      },
@@ -49,7 +50,7 @@
       ]
     },
     {
-      r: 500, speed: 0, color: '#1E3A8A', rgb: '30,58,138', label: '架构层',
+      r: 395, speed: 0, color: '#003F88', rgb: '0,63,136', label: '架构层',
       cards: [
         { name: '计算芯片与处理器架构', tag: 'GPU · TPU · RISC-V',        url: '计算芯片与处理器架构'  },
         { name: 'EDA与设计自动化',      tag: '布局布线 · ML for EDA',     url: 'EDA与设计自动化'       },
@@ -58,7 +59,7 @@
       ]
     },
     {
-      r: 560, speed: 0, color: '#5B21B6', rgb: '91,33,182', label: '交叉层',
+      r: 465, speed: 0, color: '#003F88', rgb: '0,63,136', label: '交叉层',
       cards: [
         { name: '具身智能',             tag: '机器人 · 感知 · 规划',      url: '具身智能'              },
         { name: '量子计算与量子芯片',   tag: '量子比特 · 纠错 · 低温',    url: '量子计算与量子芯片'    },
@@ -92,11 +93,10 @@
   function ringVars(rgb) {
     var dark = isDark();
     return {
-      '--rg-color':    'rgb(' + rgb + ')',
-      '--rg-bg':       dark ? 'rgba(20,24,40,0.97)' : 'rgba(255,255,255,0.97)',
-      '--rg-bg-hover': 'rgba(' + rgb + ',0.92)',
-      '--rg-border':   dark ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.08)',
-      '--rg-glow':     'rgba(' + rgb + ',0.35)',
+      '--rg-color':  'rgb(' + rgb + ')',
+      '--rg-bg':     dark ? '#1e2330' : '#ffffff',
+      '--rg-border': dark ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.09)',
+      '--rg-glow':   'rgba(' + rgb + ',0.30)',
     };
   }
 
