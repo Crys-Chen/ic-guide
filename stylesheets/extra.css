@@ -1000,30 +1000,6 @@
 }
 .df-ghost:hover { background: rgba(255,255,255,.10); }
 
-/* Stats bar (night) */
-.df-statbar {
-  display: flex;
-  justify-content: center;
-  padding: 1.8rem 0;
-  margin: 0 0 3rem;
-  border-top: 1px solid rgba(255,255,255,.06);
-  border-bottom: 1px solid rgba(255,255,255,.06);
-}
-.df-si { text-align: center; padding: 0 2.6rem; border-right: 1px solid rgba(255,255,255,.06); }
-.df-si:last-child { border-right: none; }
-.df-si b {
-  display: block;
-  font-size: 2.2rem; font-weight: 700;
-  color: #6672F5;
-  letter-spacing: -.05em; line-height: 1;
-  font-family: "Inter",sans-serif;
-}
-.df-si span {
-  font-size: .67rem;
-  color: rgba(226,226,232,.38);
-  letter-spacing: .04em;
-  display: block; margin-top: .3rem;
-}
 
 /* ════════════════════════════════════════════════════════
    DAY MODE HERO  (default) — Redesigned
@@ -1042,7 +1018,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
   min-height: 420px;
 }
@@ -1057,7 +1033,7 @@
 .df-linner {
   flex: 1 1 0%;
   min-width: 0;
-  padding: 5rem 4rem 4.5rem;
+  padding: 4rem 1.5rem 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1196,6 +1172,13 @@
 }
 
 
+
+/* ─── 首页正文区：初始隐藏，由 hero-scroll.js 渐入 ──────── */
+.df-below {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
 
 /* ════════════════════════════════════════════════════════
    SHARED NAV CARDS
