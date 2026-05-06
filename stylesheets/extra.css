@@ -1129,35 +1129,50 @@
 [data-md-color-scheme="default"] .df-cards { display: none !important; }
 
 .df-lnav {
-  flex: 0 0 280px;
+  flex: 0 0 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2.5rem 0 2rem;
+  padding: 0 1rem 0 2.5rem;
   gap: .2rem;
   background: transparent;
   border-left: 1px solid rgba(3,33,104,.08);
 }
 .df-lnc {
   display: flex;
-  align-items: center;
-  gap: .65rem;
-  padding: .85rem .4rem .85rem .9rem;
-  border-left: 2px solid transparent;
+  align-items: baseline;
+  gap: .75rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(3,33,104,.08);
   text-decoration: none !important;
-  transition: border-color .18s;
-  white-space: nowrap;
+  transition: color .18s;
 }
-.df-lnc:hover { border-left-color: #032168; }
-.df-lnc-icon { font-size: .95rem; flex-shrink: 0; opacity: .65; }
+.df-lnc:last-child { border-bottom: none; }
+.df-lnc-n {
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: rgba(3,33,104,.30);
+  flex-shrink: 0;
+  font-family: "Inter","Noto Sans SC",sans-serif;
+}
 .df-lnc-t {
-  font-size: .85rem;
-  font-weight: 600;
-  color: rgba(10,7,6,.75);
+  flex: 1;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  color: #0A0706;
   font-family: "Noto Sans SC",sans-serif;
   transition: color .18s;
 }
+.df-lnc-arr {
+  font-size: .78rem;
+  color: rgba(3,33,104,.25);
+  transition: color .18s, transform .18s;
+  flex-shrink: 0;
+}
 .df-lnc:hover .df-lnc-t { color: #032168; }
+.df-lnc:hover .df-lnc-arr { color: #032168; transform: translateX(3px); }
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
