@@ -182,21 +182,28 @@ plugins:
             Vivado 数字EDA: Vivado Digital EDA
             Cadence Virtuoso 模拟EDA: Cadence Virtuoso Analog EDA
             ModelSim HDL仿真: ModelSim HDL Simulation
-            计算芯片与处理器架构: Compute Chips and Processor Architecture
-            存储器与存算一体: Memory and Compute-in-Memory
-            EDA与设计自动化: EDA and Design Automation
-            射频与毫米波: RF and Millimeter-Wave
+            器件与制造: Devices and Fabrication
+            半导体器件与先进工艺: Semiconductor Devices and Advanced Process
             功率半导体与宽禁带器件: Power Semiconductors and WBG Devices
-            先进制程与异构集成: Advanced Process and Heterogeneous Integration
-            硅光子与光电集成: Silicon Photonics and Optoelectronics
-            神经形态计算: Neuromorphic Computing
+            光电子与硅光集成: Photonics and Silicon Photonics
+            MEMS与微纳传感器: MEMS and Micro/Nano Sensors
+            先进封装与异构集成: Advanced Packaging and Heterogeneous Integration
+            电路设计: Circuit Design
+            模拟与混合信号IC: Analog and Mixed-Signal IC
+            射频与毫米波IC: RF and Millimeter-Wave IC
             生物电子与脑机接口: Bioelectronics and Brain-Computer Interface
-            具身智能: Embodied Intelligence
-            硬件安全: Hardware Security
+            计算: Computing
+            处理器架构与编译系统: Processor Architecture and Compiler Systems
             可重构计算与FPGA: Reconfigurable Computing and FPGA
-            模拟与混合信号集成电路: Analog and Mixed-Signal IC
+            存算一体与近存计算: Compute-in-Memory and Near-Memory Computing
+            类脑芯片: Neuromorphic Chips
+            设计基础设施: Design Infrastructure
+            EDA与设计自动化: EDA and Design Automation
+            硬件安全与可信计算: Hardware Security and Trusted Computing
+            交叉延伸方向: Cross-Disciplinary Directions
+            AI算法与系统: AI Algorithms and Systems
+            具身智能: Embodied Intelligence
             量子计算与量子芯片: Quantum Computing and Quantum Chips
-            AI 算法与系统: AI Algorithms and Systems
   - search:
       separator: '[\s​\-\.\!\?\,\;\:\（）【】「」、。，！？；：\(\)]+'
       lang:
@@ -230,21 +237,28 @@ nav:
   - 前言: "index.md"
   - 科研方向:
     - 导言: "科研方向/index.md"
-    - 计算芯片与处理器架构: "科研方向/计算芯片与处理器架构.md"
-    - 存储器与存算一体: "科研方向/存储器与存算一体.md"
-    - EDA与设计自动化: "科研方向/EDA与设计自动化.md"
-    - 射频与毫米波: "科研方向/射频与毫米波.md"
-    - 功率半导体与宽禁带器件: "科研方向/功率半导体与宽禁带器件.md"
-    - 先进制程与异构集成: "科研方向/先进制程与异构集成.md"
-    - 硅光子与光电集成: "科研方向/硅光子与光电集成.md"
-    - 神经形态计算: "科研方向/神经形态计算.md"
-    - 生物电子与脑机接口: "科研方向/生物电子与脑机接口.md"
-    - 具身智能: "科研方向/具身智能.md"
-    - 硬件安全: "科研方向/硬件安全.md"
-    - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
-    - 模拟与混合信号集成电路: "科研方向/模拟与混合信号集成电路.md"
-    - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
-    - AI 算法与系统: "科研方向/AI算法与系统.md"
+    - 器件与制造:
+      - 半导体器件与先进工艺: "科研方向/半导体器件与先进工艺.md"
+      - 功率半导体与宽禁带器件: "科研方向/功率半导体与宽禁带器件.md"
+      - 光电子与硅光集成: "科研方向/光电子与硅光集成.md"
+      - MEMS与微纳传感器: "科研方向/MEMS与微纳传感器.md"
+      - 先进封装与异构集成: "科研方向/先进封装与异构集成.md"
+    - 电路设计:
+      - 模拟与混合信号IC: "科研方向/模拟与混合信号IC.md"
+      - 射频与毫米波IC: "科研方向/射频与毫米波IC.md"
+      - 生物电子与脑机接口: "科研方向/生物电子与脑机接口.md"
+    - 计算:
+      - 处理器架构与编译系统: "科研方向/处理器架构与编译系统.md"
+      - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
+      - 存算一体与近存计算: "科研方向/存算一体与近存计算.md"
+    - 设计基础设施:
+      - EDA与设计自动化: "科研方向/EDA与设计自动化.md"
+      - 硬件安全与可信计算: "科研方向/硬件安全与可信计算.md"
+    - 交叉延伸方向:
+      - AI算法与系统: "科研方向/AI算法与系统.md"
+      - 具身智能: "科研方向/具身智能.md"
+      - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
+      - 类脑芯片: "科研方向/类脑芯片.md"
   - 学习地图:
     - 导言: "知识谱系.md"
     - 数学:
