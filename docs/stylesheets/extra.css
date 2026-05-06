@@ -865,9 +865,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 /* ── Scheme-based show/hide ─────────────────────────── */
-[data-md-color-scheme="default"] .df-dark,
-[data-md-color-scheme="default"] .df-statbar { display: none !important; }
-[data-md-color-scheme="slate"]   .df-light   { display: none !important; }
+[data-md-color-scheme="default"] .df-dark  { display: none !important; }
+[data-md-color-scheme="slate"]   .df-light { display: none !important; }
 
 /* ════════════════════════════════════════════════════════
    NIGHT MODE HERO  (slate)
@@ -992,73 +991,88 @@
    ════════════════════════════════════════════════════════ */
 .df-light {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 0;
   margin: -1.5rem -1.5rem 0;
   overflow: hidden;
+  min-height: 400px;
+  align-items: stretch;
 }
 .df-lbg {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 0% 0%, rgba(3,33,104,.04) 0%, transparent 60%),
-    #F8F9FC;
+    radial-gradient(ellipse 110% 70% at -5% 0%, rgba(198,40,40,.055) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 60% at 105% 100%, rgba(198,40,40,.03) 0%, transparent 50%),
+    #FDFCFA;
+  z-index: 0;
 }
 .df-linner {
   position: relative; z-index: 1;
-  padding: 4.5rem 2.8rem 4rem;
-  max-width: 700px;
+  padding: 4.8rem 3.5rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .df-lmark {
-  font-size: .68rem;
-  font-weight: 500;
-  letter-spacing: .13em;
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: rgba(3,33,104,.55);
-  margin-bottom: 1.6rem;
+  color: #C62828;
+  margin-bottom: 1.4rem;
   font-family: "Inter","Noto Sans SC",sans-serif;
 }
 .df-lhl {
-  font-size: 2.85rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -.03em !important;
-  line-height: 1.15 !important;
-  color: #101828 !important;
-  margin: 0 0 1.4rem !important;
+  font-size: 5.2rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -.055em !important;
+  line-height: .92 !important;
+  color: #0A0706 !important;
+  margin: 0 0 1.5rem !important;
   border: none !important; padding: 0 !important;
   font-family: "Noto Sans SC",sans-serif !important;
 }
+.df-lred { color: #C62828; }
 .df-ldeck {
-  font-size: .92rem;
-  color: rgba(16,24,40,.52);
-  line-height: 1.85;
-  margin: 0 0 2rem;
-  max-width: 520px;
-  font-family: "Noto Sans SC",sans-serif;
-}
-.df-llinks {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.df-llinks a {
   font-size: .88rem;
-  font-weight: 500;
-  color: #032168 !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(3,33,104,.28);
-  padding-bottom: 2px;
-  transition: border-color .2s, opacity .2s;
+  color: rgba(10,7,6,.52);
+  line-height: 1.80;
+  margin: 0 0 2.1rem;
+  max-width: 500px;
   font-family: "Noto Sans SC",sans-serif;
 }
-.df-llinks a::after { content: ' →'; }
-.df-llinks a:hover { border-color: #032168; opacity: .75; }
+.df-lbtns { display: flex; gap: .7rem; flex-wrap: wrap; }
+.df-lbp {
+  background: #C62828;
+  color: #fff !important;
+  padding: .58em 1.9em;
+  font-weight: 700; font-size: .87rem;
+  text-decoration: none !important;
+  letter-spacing: .02em;
+  transition: background .2s, transform .15s;
+  font-family: "Noto Sans SC",sans-serif;
+  border-radius: 4px;
+}
+.df-lbp:hover { background: #A81D1D; transform: translateY(-1px); }
+.df-lbg-btn {
+  background: transparent;
+  color: #0A0706 !important;
+  padding: .58em 1.55em;
+  font-weight: 500; font-size: .87rem;
+  text-decoration: none !important;
+  border: 1.5px solid rgba(10,7,6,.22);
+  transition: background .2s, border-color .2s;
+  font-family: "Noto Sans SC",sans-serif;
+  border-radius: 4px;
+}
+.df-lbg-btn:hover { background: rgba(10,7,6,.04); border-color: rgba(10,7,6,.38); }
 
 @media (max-width: 760px) {
-  .df-lhl { font-size: 2.1rem !important; }
-  .df-linner { padding: 3rem 1.4rem 2.5rem; }
+  .df-lhl { font-size: 3.5rem !important; }
+  .df-linner { padding: 3.5rem 1.4rem 2.5rem; }
   .df-dark { margin: -1.5rem -1.5rem 0; }
   .df-title { font-size: 2.4rem !important; }
-  .df-statbar { flex-wrap: wrap; gap: .8rem; }
-  .df-si { border: none; }
 }
 
 /* ════════════════════════════════════════════════════════
@@ -1104,25 +1118,26 @@
 [data-md-color-scheme="default"] .df-card {
   background: #fff;
   border: 1px solid rgba(0,0,0,.08);
-  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
 }
 [data-md-color-scheme="default"] .df-card:hover {
-  background: rgba(3,33,104,.025);
-  border-color: rgba(3,33,104,.18);
+  background: #fff;
+  border-color: rgba(198,40,40,.35);
+  border-left: 3px solid #C62828;
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(3,33,104,.07);
+  box-shadow: 0 4px 16px rgba(198,40,40,.08);
 }
 [data-md-color-scheme="default"] .df-card h3 {
-  color: #101828 !important;
+  color: #0A0706 !important;
 }
 [data-md-color-scheme="default"] .df-card p {
-  color: rgba(16,24,40,.48) !important;
+  color: rgba(10,7,6,.48) !important;
 }
 [data-md-color-scheme="default"] .df-ca {
-  color: rgba(16,24,40,.20);
+  color: rgba(10,7,6,.20);
 }
 [data-md-color-scheme="default"] .df-card:hover .df-ca {
-  color: #032168;
+  color: #C62828;
 }
 .df-ct {
   display: flex; align-items: center;
@@ -1150,31 +1165,31 @@
    HEADER — DAY MODE
    ════════════════════════════════════════════════════════ */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:       #032168;
-  --md-primary-fg-color--light:#1a48a8;
-  --md-primary-fg-color--dark: #021550;
-  --md-accent-fg-color:        #032168;
-  --md-accent-fg-color--transparent: rgba(3,33,104,.10);
+  --md-primary-fg-color:       #0A0706;
+  --md-primary-fg-color--light:#3a2a28;
+  --md-primary-fg-color--dark: #000;
+  --md-accent-fg-color:        #C62828;
+  --md-accent-fg-color--transparent: rgba(198,40,40,.12);
 }
 [data-md-color-scheme="default"] .md-header {
-  --md-primary-bg-color: #101828;
-  background: rgba(248,249,252,.97) !important;
-  border-bottom: 1px solid rgba(3,33,104,.14) !important;
-  box-shadow: 0 1px 0 rgba(3,33,104,.06) !important;
+  --md-primary-bg-color: #0A0706;
+  background: rgba(253,252,250,.97) !important;
+  border-bottom: 2px solid #C62828 !important;
+  box-shadow: none !important;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
 [data-md-color-scheme="default"] .md-header .md-header__button,
-[data-md-color-scheme="default"] .md-header .md-header__title { color: #101828 !important; }
+[data-md-color-scheme="default"] .md-header .md-header__title { color: #0A0706 !important; }
 [data-md-color-scheme="default"] .md-tabs {
-  --md-primary-bg-color: #101828;
-  background: rgba(248,249,252,.99) !important;
-  border-bottom: 1px solid rgba(3,33,104,.08) !important;
+  --md-primary-bg-color: #0A0706;
+  background: rgba(253,252,250,.99) !important;
+  border-bottom: 1px solid rgba(0,0,0,.08) !important;
   box-shadow: none !important;
 }
-[data-md-color-scheme="default"] .md-tabs__link { color: rgba(16,24,40,.52) !important; }
+[data-md-color-scheme="default"] .md-tabs__link { color: rgba(10,7,6,.55) !important; }
 [data-md-color-scheme="default"] .md-tabs__link--active,
-[data-md-color-scheme="default"] .md-tabs__link:hover { color: #032168 !important; }
+[data-md-color-scheme="default"] .md-tabs__link:hover { color: #C62828 !important; }
 
 /* ════════════════════════════════════════════════════════
    HEADER — NIGHT MODE  (slate inherits dark bg from scheme)
