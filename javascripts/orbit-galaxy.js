@@ -26,9 +26,10 @@
   ];
 
   /* ── Ring + card data ──────────────────────────────────────── */
-  /* Per-ring angular offsets (radians) — derived to keep inter-ring card separation ≥ 9° */
-  /* R0:0°  R1:36°  R2:45°  R3:120° — verified no axis-aligned overlap at 1440×810 */
-  var RING_OFFSETS = [0, 0.628, 0.785, 2.094];
+  /* Per-ring angular offsets (radians)
+     R0:0°  R1:36°  R2:15°  R3:60°
+     Verified: all cross-ring card pairs have Δy>50px OR |Δx|>110px (no visual overlap) */
+  var RING_OFFSETS = [0, 0.628, 0.262, 1.047];
 
   var RINGS = [
     {
