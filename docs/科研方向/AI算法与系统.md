@@ -197,6 +197,10 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
 
+-   **[李飞飞（Fei-Fei Li）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span>
+
+    计算机视觉 · ImageNet · 以人为本 AI（HAI）· 视觉-语言基础模型
+
 -   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
 
     强化学习理论 · 教育与医疗 RL · 样本效率
@@ -208,6 +212,10 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 -   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
+
+-   **[陈丹琦（Danqi Chen）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span>
+
+    大语言模型 · 稠密检索（DPR）· 上下文学习 · 高效 NLP 系统
 
 -   **[Kai Chen（陈凯）](https://cse.hkust.edu.hk/~kaichen/)** <span class="badge-hk">港科大</span>
 
