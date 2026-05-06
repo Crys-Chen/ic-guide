@@ -12,6 +12,7 @@
   --md-primary-fg-color--dark: #021550;
   --md-accent-fg-color:        #1a48a8;
   --md-accent-fg-color--transparent: rgba(26, 72, 168, .1);
+  --md-default-bg-color:       #FDFCFA;
 }
 
 [data-md-color-scheme="slate"] {
@@ -1219,11 +1220,9 @@
 }
 [data-md-color-scheme="default"] .md-header {
   --md-primary-bg-color: #0A0706;
-  background: rgba(253,252,250,.97) !important;
+  background: #FDFCFA !important;
   border-bottom: 2px solid #032168 !important;
   box-shadow: none !important;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
 }
 [data-md-color-scheme="default"] .md-header .md-header__button,
 [data-md-color-scheme="default"] .md-header .md-header__title { color: #0A0706 !important; }
