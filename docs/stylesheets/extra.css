@@ -1343,7 +1343,7 @@
 .rg-root.rg-fullscreen .rg-stage {
   max-width: 100%;
   aspect-ratio: unset;
-  height: calc(100vh - 132px); /* header ~84px + tabs ~48px */
+  /* height set dynamically by orbit-galaxy.js */
 }
 
 /* fullscreen: fixed card size, no viewport scaling */
@@ -1505,13 +1505,18 @@
   opacity: .22 !important;
 }
 
-/* ── Mobile fallback: hide orbit, show fallback ─────────── */
+/* ── Mobile: smaller cards, fallback hidden ─────────────── */
 @media (max-width: 620px) {
-  .rg-stage {
-    display: none !important;
+  .rg-card-inner {
+    width: 90px;
+    min-height: 36px;
+    padding: .35rem .5rem .35rem .6rem;
   }
-  .rg-fallback {
-    display: block !important;
+  .rg-card-name {
+    font-size: .72rem;
+  }
+  .rg-ring-label {
+    display: none;
   }
 }
 

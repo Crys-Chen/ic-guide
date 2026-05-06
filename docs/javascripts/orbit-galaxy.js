@@ -258,6 +258,14 @@
     cardsLayer = document.getElementById('rg-cards-layer');
     if (!stage || !ringsEl || !cardsLayer) return;
 
+    /* 动态计算全屏 stage 高度（替代硬编码 132px） */
+    if (root.classList.contains('rg-fullscreen')) {
+      var hdr  = document.querySelector('.md-header');
+      var tabs = document.querySelector('.md-tabs');
+      var off  = (hdr ? hdr.offsetHeight : 0) + (tabs ? tabs.offsetHeight : 0);
+      stage.style.height = (window.innerHeight - off) + 'px';
+    }
+
     reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     ringAngles = RINGS.map(function () { return 0; });
 
