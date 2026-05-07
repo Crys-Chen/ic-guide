@@ -2,15 +2,47 @@
 hide:
   - navigation
 ---
-# 可重构计算与 FPGA
-
-## 一句话定义
-
 在软件的灵活性和专用硬件的性能之间寻找最优平衡——FPGA 既是芯片设计的验证平台，也是数据中心和边缘计算的可编程加速器，而可重构计算研究的是如何让这套机制更高效、更智能。
 
 ## 这个方向在研究什么
 
 芯片世界里有一个持续存在的矛盾：通用处理器（CPU/GPU）可以运行任意代码，但对特定任务来说效率低下；专用芯片（ASIC）能在该任务上达到极致性能，但流片一次需要数月和数百万美元，而且功能固定、无法修改。FPGA（Field-Programmable Gate Array，现场可编程门阵列）是这两者之间的选项——它是一块出厂后可以反复"重新编程"的硬件，通过配置内部的逻辑单元和连线，让同一块芯片今天跑图像处理、明天跑加密算法、后天跑神经网络推理。
+
+<svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
+  <!-- Background panel -->
+  <rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Triangle vertices (centered around x=430):
+       CPU: top-left  (200, 50)
+       ASIC: top-right (660, 50)
+       FPGA: bottom   (430, 185) -->
+
+  <!-- Triangle edges (dotted) -->
+  <line x1="200" y1="55" x2="660" y2="55" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
+  <line x1="200" y1="55" x2="430" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
+  <line x1="660" y1="55" x2="430" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
+
+  <!-- CPU corner (blue) -->
+  <rect x="100" y="26" width="130" height="56" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="165" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8" font-family="sans-serif">CPU</text>
+  <text x="165" y="64" text-anchor="middle" font-size="10.5" fill="#3B82F6" font-family="sans-serif">最灵活 / 最低效</text>
+
+  <!-- ASIC corner (green) -->
+  <rect x="630" y="26" width="130" height="56" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="695" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534" font-family="sans-serif">ASIC</text>
+  <text x="695" y="64" text-anchor="middle" font-size="10.5" fill="#16A34A" font-family="sans-serif">最高效 / 不可修改</text>
+
+  <!-- FPGA corner (amber) -->
+  <rect x="348" y="158" width="164" height="50" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="430" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E" font-family="sans-serif">FPGA</text>
+  <text x="430" y="196" text-anchor="middle" font-size="10.5" fill="#D97706" font-family="sans-serif">可重构 / 中间地带</text>
+
+  <!-- Center label: FPGA 研究空间 -->
+  <text x="430" y="100" text-anchor="middle" font-size="12" fill="#64748B" font-family="sans-serif" font-style="italic">FPGA 研究空间</text>
+
+  <!-- Sub-labels below -->
+  <text x="430" y="118" text-anchor="middle" font-size="10.5" fill="#94A3B8" font-family="sans-serif">数据中心加速 · AI推理 · 原型验证</text>
+</svg>
 
 FPGA 的内部结构是一张由可编程逻辑单元（CLB/LUT）和可编程连线（routing fabric）织成的网格。一个典型的高端 FPGA（如 Xilinx Ultrascale+）有数百万个查找表（LUT），加上硬化的 DSP 模块、BRAM、串行收发器和 HBM 内存接口，整个芯片就像一张等待配置的空白画布。配置这张画布的过程和芯片设计很像——工程师用 Verilog/VHDL 描述电路，经过综合、布局、布线生成比特流文件，下载进 FPGA 即可运行。这让 FPGA 成为新芯片架构研究的首选原型平台：一个在仿真器里验证了三个月的处理器设计，可以在两周内在 FPGA 上跑起来，以接近真实芯片的速度做端到端系统测试。
 
@@ -20,6 +52,16 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 在应用层面，数据中心是 FPGA 最重要的新战场。Microsoft 的 Project Catapult 把 FPGA 部署在服务器机架内，用于加速 Bing 搜索的网页排名算法，后来扩展到 Azure 的网络功能加速（SmartNIC）。AWS EC2 F1 实例让用户可以租用云端 FPGA 资源。Intel 收购 Altera 后，把 FPGA 和 Xeon CPU 集成在同一封装里（FPGA as co-processor）。AI 推理是另一个重要场景：相比 GPU，FPGA 的优势在于低延迟（毫秒以下）、低功耗和灵活的精度支持（4-bit 甚至 2-bit 量化），这让它在边缘推理场景——自动驾驶、工业视觉、无线基站处理——占据独特地位。研究者面临的核心问题是：如何让神经网络的各层算子高效映射到 FPGA 的 DSP 和 LUT 上，同时最大化数据局部性、最小化片外内存访问。
 
+## 适合什么样的人
+
+这个方向最适合喜欢"动手"的人——写完代码就想下板验证，而不是停在仿真层面。FPGA 的魅力在于迭代快：一个架构改动，几小时内就能在真实硬件上看到结果，这种即时反馈对于喜欢快速实验的同学来说极有吸引力。
+
+如果你在数字电路或计组课上做过 FPGA 实验，并且觉得"跑通了还想再优化一下时序"，这个方向几乎是为你量身定制的。你不需要从头造一块新芯片，而是在一块可重复使用的硬件上把研究想法落地，研究成本远低于 ASIC 流片。
+
+背景上，数字电路、Verilog/VHDL 是硬性基础，懂 C/C++ 的同学可以直接切入 HLS 方向；如果你还有算法优化的兴趣（组合优化、强化学习），布局布线研究会让你觉得非常有意思——P&R 本质是一个极度现实、工程约束明确的 NP 难优化问题。顶会（FPGA、FCCM）发表周期相对集中，一年内能完成从想法到发表的完整循环，节奏相比体系结构顶会更快。
+
+国内在 FPGA 方向有真实产业需求：复旦微电子、安路科技、高云半导体都在做自主 FPGA 芯片，清华、复旦有相关课题组直接与产业合作，这意味着学术研究成果有相对清晰的落地路径。
+
 ## 核心研究问题
 
 - **布局布线（Place-and-Route）**：FPGA 的 P&R 是 NP 难问题，如何用机器学习或新启发式算法加速并提升质量？
@@ -28,12 +70,11 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 - **可重构架构设计**：FPGA 本身的架构如何演进——LUT 粒度、DSP 结构、片上网络设计如何适配 AI 时代的工作负载？
 - **运行时可重构**：FPGA 的部分重构（Partial Reconfiguration）如何支持动态调度多个加速器，实现真正的运行时灵活性？
 
-## 代表性机构与企业
+## 代表性机构
 
 | | 国际 | 国内 |
 |--|------|------|
 | **企业** | AMD/Xilinx、Intel/Altera、Lattice、Achronix | 复旦微电子（FMC）、安路科技、高云半导体 |
-| **高校** | U Toronto（VTR/VPR）、UCLA、Cornell、UIUC | 清华、北大、复旦、国防科大 |
 | **顶会** | FPGA、FCCM、FPL、DAC、ASPLOS、ISLPED | — |
 
 ## 知识路径
@@ -54,15 +95,18 @@ graph LR
     class F,G supp
 ```
 
-**本站相关课程：**
+图中节点对应以下知识板块（按需选修）：
 
-- [数字逻辑基础（复旦）](../课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md)
-- [Verilog HDL · HDLBits](../课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md) · [UCB EECS151](../课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md)
-- [FPGA 数字系统设计（复旦）](../课程资源/电路/数字/FPGA/MICR130024.md)
-- [数字集成电路设计原理（复旦）](../课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md)
-- [EDA 工具（复旦）](../课程资源/电路/EDA/MICR130035.md) · [Vivado 入门](../课程资源/电路/EDA/vivado.md)
+- [系统架构（体系结构·编译原理）](../课程资源/系统架构/index.md)
+- [电路（数字方向）](../课程资源/电路/index.md)
+- [算法编程（数据结构·算法）](../课程资源/算法编程/index.md)
+- [人工智能（机器学习系统）](../课程资源/人工智能/index.md)（EDA AI方向）
 
 ## 入门三步走
+
+**典型研究长什么样**
+
+一篇 FPGA 方向的论文通常这样展开：作者选定一个具体应用场景（如 Transformer 推理或图神经网络加速），分析其在 FPGA 上的计算瓶颈（带宽受限？DSP 利用率低？），提出新的算子映射策略或 HLS pragma 搜索方法，在 Xilinx Alveo 或 Zynq 开发板上实现并测量实际板级性能，最终以吞吐量/功耗/延迟的 Pareto 曲线与 GPU 基线对比。HLS 优化方向的论文则通常关注 pragma 搜索空间，用机器学习模型预测不同配置的性能，大幅减少需要实际编译的次数。
 
 **第一步：上手一块真实 FPGA**  
 跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
@@ -148,4 +192,3 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
-

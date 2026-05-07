@@ -2,9 +2,6 @@
 hide:
   - navigation
 ---
-# 模拟与混合信号IC
-
-## 一句话定义
 
 设计让模拟世界与数字世界高速转换的"接口芯片"——ADC、DAC、PLL、SerDes 是每块现代 SoC 都不可或缺的混合信号基础模块。
 
@@ -12,15 +9,95 @@ hide:
 
 现代 SoC 是两个世界并存的芯片：数字内核用 0/1 计算，而芯片与外界的交互——声音、图像、射频信号、高速串行总线——都是模拟量。连接这两个世界的，是混合信号集成电路。一块旗舰手机内部的 PMIC（电源管理芯片）、音频 Codec、图像传感器读出电路、USB/PCIe SerDes PHY，每一个都是独立的混合信号子系统，也是芯片设计中技术难度最高、对设计师物理直觉要求最强的一类电路。
 
-**模数转换器（ADC）**是混合信号设计的皇冠明珠。ADC 把随时间连续变化的模拟电压，以固定速率采样并量化为数字码字。衡量 ADC 的两大指标——采样速率（Samples/s）和分辨率（ENOB，有效位数）——存在根本性的权衡：想要更高速率，就要缩短每次比较时间；想要更高精度，就要让电路对热噪声和器件失配更不敏感，两者都以更多功耗为代价。Walden FoM（能效品质因数）散点图几十年来一直是衡量 ADC 技术进步的标尺，整个领域的努力都指向把这条线向左下方推。
+<svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;">
+  <!-- Background -->
+  <rect width="860" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
 
-主流 ADC 架构有三类：**流水线 ADC（Pipeline）**适合中高速中高精度应用，曾主导通信基带采样；**逐次逼近 ADC（SAR ADC）**依靠二分搜索逻辑，在低功耗场景极为高效，随着数字工艺缩放优势增大，已成为物联网和生物医疗芯片的主流；**增量求和 ADC（ΔΣ）**通过把量化噪声"推到"高频再用数字滤波器滤掉，可在音频频段实现 100 dB 以上动态范围，是音频 Codec 的首选。近年最活跃的研究方向是**时间交织 ADC（TIADC）**——把多个并行 ADC 的采样相位错开以倍增速率，关键挑战是通道间增益、偏置、时序失配引起的混叠，数字后校准算法是研究热点。
+  <!-- Analog World Zone -->
+  <rect x="10" y="10" width="170" height="180" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="95" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">模拟世界</text>
+  <!-- Sine wave left -->
+  <path d="M 25 90 Q 40 60 55 90 Q 70 120 85 90 Q 100 60 115 90 Q 130 120 145 90 Q 155 72 165 90" stroke="#3B82F6" stroke-width="2" fill="none"/>
+  <text x="95" y="125" text-anchor="middle" font-size="9.5" fill="#1D4ED8">温度 · 声音 · 射频</text>
+  <text x="95" y="140" text-anchor="middle" font-size="9.5" fill="#1D4ED8">图像 · 传感器信号</text>
 
-**锁相环（PLL）**是每块数字芯片的心脏。CPU 的工作频率来自 PLL 对参考时钟的倍频；5G 基带里合成不同载波频率的本振信号来自小数分频 PLL；高速 SerDes 里用于从数据流中恢复时钟的 CDR（Clock Data Recovery）本质也是一种 PLL。PLL 的核心矛盾是**相位噪声与功耗**：相位噪声描述时钟信号在频域的"不纯净程度"，直接影响数字电路的时序裕量和射频系统的误码率，而压制相位噪声的代价通常是更大的偏置电流和更复杂的滤波网络。近年 ISSCC 上频繁出现的**数字辅助 PLL（DPLL）**和**注入锁定振荡器（ILO）**代表了提升能效的两种思路：DPLL 把传统模拟环路滤波器替换为数字 TDC + 数字滤波，充分利用工艺缩放红利；ILO 用信号直接注入锁定振荡器，以极低功耗换取特定相噪性能。
+  <!-- Arrow: Analog -> ADC -->
+  <line x1="180" y1="100" x2="210" y2="100" stroke="#64748B" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ADC box -->
+  <rect x="212" y="70" width="100" height="60" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="262" y="97" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">ADC</text>
+  <text x="262" y="113" text-anchor="middle" font-size="9.5" fill="#166534">模拟→数字</text>
+  <text x="262" y="126" text-anchor="middle" font-size="9" fill="#166534">SAR · ΔΣ · Pipeline</text>
+
+  <!-- Arrow: ADC -> DSP -->
+  <line x1="312" y1="100" x2="345" y2="100" stroke="#64748B" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Digital Processing box -->
+  <rect x="347" y="65" width="120" height="70" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="407" y="91" text-anchor="middle" font-size="12" font-weight="bold" fill="#6D28D9">数字处理</text>
+  <text x="407" y="107" text-anchor="middle" font-size="9.5" fill="#5B21B6">CPU / DSP / AI Core</text>
+  <text x="407" y="121" text-anchor="middle" font-size="9" fill="#5B21B6">0/1 逻辑域</text>
+
+  <!-- Arrow: DSP -> DAC -->
+  <line x1="467" y1="100" x2="500" y2="100" stroke="#64748B" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- DAC box -->
+  <rect x="502" y="70" width="100" height="60" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="552" y="97" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">DAC</text>
+  <text x="552" y="113" text-anchor="middle" font-size="9.5" fill="#166534">数字→模拟</text>
+  <text x="552" y="126" text-anchor="middle" font-size="9" fill="#166534">音频 · 射频发射</text>
+
+  <!-- Arrow: DAC -> Output -->
+  <line x1="602" y1="100" x2="635" y2="100" stroke="#64748B" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Output Analog Zone -->
+  <rect x="637" y="10" width="213" height="180" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="743" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">物理世界输出</text>
+  <path d="M 650 90 Q 665 60 680 90 Q 695 120 710 90 Q 725 60 740 90 Q 755 120 770 90 Q 785 60 800 90 Q 810 72 820 90" stroke="#3B82F6" stroke-width="2" fill="none"/>
+  <text x="743" y="125" text-anchor="middle" font-size="9.5" fill="#1D4ED8">扬声器 · 发射天线</text>
+  <text x="743" y="140" text-anchor="middle" font-size="9.5" fill="#1D4ED8">驱动电机 · 显示屏</text>
+
+  <!-- PLL circle below center -->
+  <ellipse cx="340" cy="175" rx="42" ry="17" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="340" y="179" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">PLL / VCO</text>
+
+  <!-- SerDes box below right -->
+  <rect x="440" y="158" width="80" height="34" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="480" y="177" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">SerDes</text>
+
+  <!-- PLL upward arrow to center -->
+  <line x1="340" y1="158" x2="380" y2="135" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrAmber)"/>
+  <line x1="480" y1="158" x2="440" y2="135" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrAmber)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
+    </marker>
+    <marker id="arrAmber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#D97706"/>
+    </marker>
+  </defs>
+</svg>
+
+**ADC（模数转换器）**是混合信号设计的皇冠明珠。ADC 把随时间连续变化的模拟电压，以固定速率采样并量化为数字码字。衡量 ADC 的两大指标——采样速率（Samples/s）和分辨率（ENOB，有效位数）——存在根本性的权衡：想要更高速率，就要缩短每次比较时间；想要更高精度，就要让电路对热噪声和器件失配更不敏感，两者都以更多功耗为代价。Walden FoM（能效品质因数）散点图几十年来一直是衡量 ADC 技术进步的标尺，整个领域的努力都指向把这条线向左下方推。
+
+主流 ADC 架构有三类：**流水线 ADC（Pipeline）**适合中高速中高精度应用，曾主导通信基带采样；**逐次逼近 ADC（SAR ADC）**依靠二分搜索逻辑，在低功耗场景极为高效，随着数字工艺缩放优势增大，已成为物联网和生物医疗芯片的主流；**增量求和 ADC（ΔΣ）**通过把量化噪声"推到"高频再用数字滤波器滤掉，可在音频频段实现 100 dB 以上动态范围，是音频 Codec 的首选。近年最活跃的研究方向是时间交织 ADC（TIADC）——把多个并行 ADC 的采样相位错开以倍增速率，关键挑战是通道间增益、偏置、时序失配引起的混叠，数字后校准算法是研究热点。
+
+**锁相环（PLL）**是每块数字芯片的心脏。CPU 的工作频率来自 PLL 对参考时钟的倍频；5G 基带里合成不同载波频率的本振信号来自小数分频 PLL；高速 SerDes 里用于从数据流中恢复时钟的 CDR（Clock Data Recovery）本质也是一种 PLL。PLL 的核心矛盾是相位噪声与功耗：相位噪声描述时钟信号在频域的"不纯净程度"，直接影响数字电路的时序裕量和射频系统的误码率，而压制相位噪声的代价通常是更大的偏置电流和更复杂的滤波网络。近年 ISSCC 上频繁出现的数字辅助 PLL（DPLL）和注入锁定振荡器（ILO）代表了提升能效的两种思路：DPLL 把传统模拟环路滤波器替换为数字 TDC + 数字滤波，充分利用工艺缩放红利；ILO 用信号直接注入锁定振荡器，以极低功耗换取特定相噪性能。
 
 **SerDes（Serializer/Deserializer）**是数据中心互联、PCIe/UCIe 等高速接口的核心电路。一个 224 Gbps PAM4 SerDes PHY 在数毫米见方的硅片上完成发送均衡（FFE）、接收端连续时间均衡（CTLE）与判决反馈均衡（DFE）、时钟恢复（CDR），以及信号完整性补偿——要在几十 dB 信道损耗加高频反射的恶劣环境下实现接近无误码传输。SerDes 速率每隔几年翻倍（56→112→224 Gbps），驱动着工艺与电路技术同步创新，是 ISSCC Wireline Session 长期最热门的战场。
 
-**CMOS 图像传感器读出电路（CIS Readout）**处于光学与模拟电路的交叉点：每个像素的光生电荷被源跟随器读出后，经列级 ADC（通常是单斜率或 SAR）量化，关键挑战是像素重置噪声（kTC noise）的相关双采样（CDS）消除、列级 ADC 匹配和速度，以及功耗与帧率的权衡。智能手机旗舰里的图像传感器（索尼 IMX、三星 ISOCELL）正是这个研究领域的工业前沿。
+**CMOS 图像传感器读出电路（CIS Readout）**处于光学与模拟电路的交叉点：每个像素的光生电荷被源跟随器读出后，经列级 ADC（通常是单斜率或 SAR）量化，关键挑战是像素重置噪声（kTC noise）的相关双采样（CDS）消除、列级 ADC 匹配和速度，以及功耗与帧率的权衡。
+
+## 适合什么样的人
+
+这个方向适合对"电路物理直觉"有强烈兴趣的人——你需要从波形、噪声和失配的角度思考世界，而不仅仅是用数字电路的逻辑来推理。如果你在学模拟电子线路时觉得"搭运放、看波形、分析相位裕量"这件事本身很有趣，而不是痛苦地套公式，这个方向大概率适合你。
+
+日常工作的核心是仿真驱动的设计迭代：在 Cadence Virtuoso 里搭晶体管级电路，用 Spectre 或 SpectreRF 仿真瞬态、AC、噪声和 Monte Carlo（工艺角+失配），分析结果，调参数，再仿真。流片前需要完成版图（Layout），之后在芯片测试台上用示波器、频谱仪和信号发生器测量真实芯片性能——这是全周期工作，从纸上到硅片需要数月到一年的耐心。
+
+你需要对噪声理论（热噪声、闪烁噪声、相位噪声）和线性系统分析（传递函数、稳定性、相位裕量）有扎实掌握，同时具备从 S 参数、ENOB、FoM 这些指标上快速判断电路设计好坏的感觉。如果你喜欢数字验证流程（写 RTL、跑 EDA 工具链）远多于对着运放波形思考，这个方向可能并不是最舒适的选择。该方向对动手能力要求高，但"动手"主要体现在仿真精细度和芯片测试，而非大量编程或机器学习实验。
 
 ## 核心研究问题
 
@@ -30,12 +107,11 @@ hide:
 - **图像传感器噪声**：更小像素、更高帧率下如何持续压低读出噪声，支撑夜景摄影和科学成像？
 - **数字辅助模拟**：ML 辅助的电路校准（失配补偿、非线性校正）能否大幅缩短模拟电路的设计迭代周期？
 
-## 代表性机构与企业
+## 代表性机构
 
 | | 国际 | 国内 |
 |--|------|------|
 | **企业** | Texas Instruments、Analog Devices、Broadcom（SerDes）、Marvell | 韦尔半导体（图像传感器）、澜起科技、思瑞浦、上海贝岭 |
-| **高校** | Stanford（Murmann）、UCSD（Galton）、UIUC（Hanumolu）、Michigan（Flynn） | 复旦、东南大学、清华、浙大 |
 | **顶会** | ISSCC、VLSI Symposium、ESSCIRC、CICC、A-SSCC | — |
 
 ## 知识路径
@@ -54,14 +130,15 @@ graph LR
     class E supp
 ```
 
-**本站相关课程：**
+图中节点对应以下知识板块（按需选修）：
 
-- [模拟电子线路（复旦）](../课程资源/电路/模拟/模拟电子线路/MICR130002.md) · [Razavi Electronics 1&2（UCLA）](../课程资源/电路/模拟/模拟电子线路/razavi_electronics.md)
-- [模拟集成电路设计原理（复旦）](../课程资源/电路/模拟/模拟集成电路/MICR130030.md) · [Razavi CMOS IC Design（UCLA）](../课程资源/电路/模拟/模拟集成电路/razavi.md)
-- [数模模数转换器（复旦）](../课程资源/电路/信号处理/数模模数转换器/INFO130270.md) · [ADC/DAC 学习资源汇总](../课程资源/电路/信号处理/数模模数转换器/stanford_adc.md)
-- [信号与系统（复旦）](../课程资源/电路/信号处理/信号与系统/MICR130004.md)
+- [电路（模拟方向）](../课程资源/电路/index.md)
+- [器件与工艺](../课程资源/器件与工艺/index.md)
+- [系统架构（信号与系统）](../课程资源/系统架构/index.md)
 
 ## 入门三步走
+
+**典型研究长什么样**　一篇 ISSCC 混合信号方向的顶会论文通常围绕一颗流片芯片展开：提出新型 ADC 架构或电路技术，在硅片上测量 ENOB、采样速率、功耗，计算 Walden FoM 或 Schreier FoM，放在 Murmann ADC Survey 散点图上对比历年最优成果。论文的价值不在于仿真，而在于实测结果（measured results）——流片是这个方向几乎绕不开的门槛，读博期间通常需要完成 1-2 次完整的 IC 设计→版图→流片→测试循环。
 
 **第一步：打牢模拟 IC 基础**  
 学习 Razavi《Design of Analog CMOS Integrated Circuits》前 11 章（差分对到运放稳定性分析），这是所有数据转换器和 PLL 设计的共同语言。本站的 Razavi CMOS IC Design 课程页有配套视频资源。
@@ -187,4 +264,3 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
-

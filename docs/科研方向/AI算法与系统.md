@@ -2,10 +2,6 @@
 hide:
   - navigation
 ---
-# AI 算法与系统
-
-## 一句话定义
-
 研究让机器"更聪明"的算法与系统基础——强化学习、大语言模型、AI Agent，以及让这些算法在真实系统上高效运行的软硬件基础设施。
 
 ## 这个方向在研究什么
@@ -14,11 +10,71 @@ hide:
 
 微电子出身的学生往往具备一个独特优势：你比纯软件背景的人更了解计算的物理约束——内存带宽是多少、一次矩阵乘法到底消耗多少能量、量化误差从哪里来。这种"懂底层"的直觉在今天的 AI 研究里非常稀缺，因为当前最前沿的 AI 系统问题，往往不是算法理论的问题，而是算法与系统之间如何高效协作的问题。
 
+<svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
+  <!-- Background panel -->
+  <rect x="6" y="8" width="848" height="184" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Column 1: 算法层 (purple) -->
+  <rect x="30" y="28" width="220" height="140" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="140" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#5B21B6" font-family="sans-serif">算法层</text>
+  <text x="140" y="72" text-anchor="middle" font-size="11" fill="#7C3AED" font-family="sans-serif">LLM / RL / Vision</text>
+  <text x="140" y="90" text-anchor="middle" font-size="10.5" fill="#6D28D9" font-family="sans-serif">Transformer · PPO · DINO</text>
+  <text x="140" y="108" text-anchor="middle" font-size="10" fill="#8B5CF6" font-family="sans-serif">研究目标：更好的智能</text>
+
+  <!-- Column 2: 系统层 (blue) -->
+  <rect x="310" y="28" width="220" height="140" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="420" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8" font-family="sans-serif">系统层</text>
+  <text x="420" y="72" text-anchor="middle" font-size="11" fill="#3B82F6" font-family="sans-serif">vLLM / TVM / PyTorch</text>
+  <text x="420" y="90" text-anchor="middle" font-size="10.5" fill="#2563EB" font-family="sans-serif">分布式训练 · 推理框架</text>
+  <text x="420" y="108" text-anchor="middle" font-size="10" fill="#3B82F6" font-family="sans-serif">研究目标：更快的运行</text>
+
+  <!-- Column 3: 硬件层 (green) -->
+  <rect x="590" y="28" width="220" height="140" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="700" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534" font-family="sans-serif">硬件层</text>
+  <text x="700" y="72" text-anchor="middle" font-size="11" fill="#16A34A" font-family="sans-serif">GPU / NPU / 边缘芯片</text>
+  <text x="700" y="90" text-anchor="middle" font-size="10.5" fill="#15803D" font-family="sans-serif">A100 · 昇腾 · 树莓派</text>
+  <text x="700" y="108" text-anchor="middle" font-size="10" fill="#16A34A" font-family="sans-serif">研究目标：更省的算力</text>
+
+  <!-- Arrows between columns -->
+  <!-- 算法→系统 -->
+  <line x1="250" y1="90" x2="304" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
+  <polygon points="304,86 316,90 304,94" fill="#94A3B8"/>
+  <text x="281" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
+
+  <!-- 系统→算法 (back arrow) -->
+  <line x1="310" y1="112" x2="256" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
+  <polygon points="256,108 244,112 256,116" fill="#94A3B8"/>
+  <text x="281" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
+
+  <!-- 系统→硬件 -->
+  <line x1="530" y1="90" x2="584" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
+  <polygon points="584,86 596,90 584,94" fill="#94A3B8"/>
+  <text x="561" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
+
+  <!-- 硬件→系统 (back arrow) -->
+  <line x1="590" y1="112" x2="536" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
+  <polygon points="536,108 524,112 536,116" fill="#94A3B8"/>
+  <text x="561" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
+
+  <!-- Glowing intersection label (amber) at center -->
+  <rect x="345" y="148" width="150" height="32" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/>
+  <text x="420" y="162" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E" font-family="sans-serif">硬件-算法协同</text>
+  <text x="420" y="176" text-anchor="middle" font-size="9" fill="#D97706" font-family="sans-serif">EE 背景的机会空间</text>
+</svg>
+
 **大语言模型（LLM）**是当前 AI 最密集的研究焦点。GPT/LLaMA 等模型的核心是 Transformer 架构，其注意力机制的计算复杂度随序列长度平方增长——这意味着长文本推理不仅消耗算力，更受内存带宽瓶颈制约。研究者在多个层面同时攻克这一问题：算法层面有 Flash Attention（内存访问感知的注意力实现）、量化（INT4/INT8 权重压缩）、稀疏化（只激活部分参数）；系统层面有连续批处理（PagedAttention/vLLM）、流水线并行、张量并行等分布式推理框架；硬件层面就回到了你熟悉的计算芯片和存算一体方向。
 
 **强化学习（RL）**和**AI Agent**是另一条快速发展的主线。经典 RL（PPO、SAC 等算法）通过让智能体与环境交互、以累积奖励为优化目标，学会复杂的决策策略。DeepMind 的 AlphaGo/AlphaFold 和 OpenAI 的 RLHF 都是这个框架的产物。近年来，Agent 研究把 LLM 的语言理解能力与 RL 的行动决策能力结合，形成能够使用工具、规划多步骤任务的系统。具身智能（Embodied AI）则进一步把 Agent 放进机器人体里，让它在物理世界中行动——这也是 AI 与 ECE 交叉最密集的前沿之一。
 
 **TinyML 与高效推理**是硬件背景同学切入 AI 算法研究最自然的入口。核心问题是：如何让大模型在资源受限的设备上（手机、MCU、传感器）实时运行？主要手段包括：剪枝（去掉对精度贡献小的参数）、量化（用低精度表示浮点数）、知识蒸馏（让小模型学习大模型的行为）、神经架构搜索（NAS，自动设计适合目标硬件的网络结构）。MIT Song Han 组的 AWQ、SpAtten 等工作是这个方向的代表成果，这些工作往往同时发 AI 顶会（NeurIPS/ICML）和硬件顶会（ISCA/ISSCC）。
+
+## 适合什么样的人
+
+这个方向是一个"桥梁"方向——专为有 EE/微电子背景、想向 AI 研究延伸的同学而设。你不需要抛弃原有的硬件直觉，恰恰相反，这里最有价值的研究往往来自"既懂算法又懂芯片"的人。
+
+入场的前提条件是：你需要对 Python 和机器学习工作流感到自在。PyTorch 是这个方向的通用语言，不熟悉的话需要优先补上。和处理器架构不同，这里的实验主要在 GPU 上用 Python 跑，发论文的速度快得多——NeurIPS/ICML 截止日期一年有几次，一个好想法从实现到投稿可以在三四个月内完成，这和 ISCA 的节奏完全不同。
+
+如果你对 AI 感兴趣但不确定从哪里切入，TinyML 是最自然的起点：量化和剪枝的问题，你的硬件背景会让你比纯软件同学理解得更深，而且这类工作可以同时被 AI 顶会和硬件顶会接收，选题灵活度高。如果你更想做系统侧（vLLM 类的推理框架优化），计算机系统的基础（操作系统、并行计算）是必要储备。如果你对 RL 和 Agent 感兴趣，要做好心理准备：这条路的基础数学要求更高，且研究风格更接近 CS 理论，和 EE 背景的距离稍远一些。
 
 ## 核心研究问题
 
@@ -27,12 +83,11 @@ hide:
 - **Agent 可靠性**：基于 LLM 的 Agent 在多步骤任务中容易累积错误，如何设计可验证、可纠错的 Agent 框架？
 - **硬件-算法协同**：量化和剪枝改变了模型的计算模式，如何让硬件加速器感知这些变化并最大化利用？
 
-## 代表性机构与企业
+## 代表性机构
 
 | | 国际 | 国内 |
 |--|------|------|
 | **企业** | OpenAI、Google DeepMind、Meta AI、Anthropic | 智谱AI、月之暗面、百度、阿里通义 |
-| **高校** | MIT、CMU、Stanford、UCB、UIUC | 清华、北大、浙大、上交 |
 | **顶会** | NeurIPS、ICML、ICLR、CVPR、EMNLP、MLSys | — |
 
 ## 知识路径
@@ -55,15 +110,17 @@ graph LR
     class H,I supp
 ```
 
-**本站相关课程：**
+图中节点对应以下知识板块（按需选修）：
 
-- [机器学习（Stanford CS229）](../课程资源/人工智能/机器学习/CS229.md)
-- [深度学习（CS231n）](../课程资源/人工智能/深度学习/CS231.md) · [CS224n](../课程资源/人工智能/深度学习/CS224n.md)
-- [强化学习（UCB CS285）](../课程资源/人工智能/深度学习/CS285.md)
-- [TinyML（MIT 6.5940）](../课程资源/人工智能/机器学习系统/EML.md)
-- [大语言模型系统（CMU 11-868）](../课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md)
+- [人工智能（全板块）](../课程资源/人工智能/index.md)
+- [系统架构（计算机系统基础）](../课程资源/系统架构/index.md)
+- [算法编程](../课程资源/算法编程/index.md)
 
 ## 入门三步走
+
+**典型研究长什么样**
+
+一篇 TinyML / 高效推理方向的论文通常是这样的：作者发现某个模型（如 LLaMA-7B）在边缘设备上因内存带宽不足而推理速度慢，提出一种新的量化或稀疏化方法，在 PyTorch 中实现并在 GPU/NPU 上测量实际推理延迟和精度损失，最终与 FP16 基线和其他量化方法对比，报告精度-效率 Pareto 曲线。系统侧（vLLM 类）的论文则通常关注批处理调度或内存管理，实验部分会测量不同负载下的吞吐量和 P99 延迟。RL/Agent 方向的论文实验设计差异更大，但通常需要在标准基准（Atari/MuJoCo/MMLU）上有系统性的消融实验。
 
 **第一步：补齐算法基础**  
 如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
@@ -233,4 +290,3 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
-
