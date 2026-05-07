@@ -143,12 +143,12 @@
     sectorSvgEl.setAttribute('width', stageW);
     sectorSvgEl.setAttribute('height', stageH);
     sectorSvgEl.style.cssText = 'position:absolute;left:0;top:0;pointer-events:none;overflow:visible;';
-    var lineColor = isDark() ? 'rgba(180,200,255,0.18)' : 'rgba(0,63,136,0.14)';
+    var lineColor = isDark() ? 'rgba(180,200,255,0.45)' : 'rgba(0,63,136,0.38)';
     SECTORS.forEach(function () {
       var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
       line.setAttribute('stroke', lineColor);
-      line.setAttribute('stroke-width', '1');
-      line.setAttribute('stroke-dasharray', '5 4');
+      line.setAttribute('stroke-width', '1.5');
+      line.setAttribute('stroke-dasharray', '6 3');
       sectorSvgEl.appendChild(line);
       sectorLineEls.push(line);
     });
@@ -160,10 +160,11 @@
       lbl.className = 'rg-ring-label';
       lbl.textContent = sec.name;
       lbl.style.color = 'rgb(' + sec.rgb + ')';
-      lbl.style.fontSize = '.68rem';
+      lbl.style.fontSize = '.76rem';
       lbl.style.fontWeight = '700';
-      lbl.style.opacity = '0.72';
+      lbl.style.opacity = '0.88';
       lbl.style.textAlign = 'center';
+      lbl.style.letterSpacing = '.02em';
       ringsEl.appendChild(lbl);
       sectorLabelEls.push(lbl);
     });
@@ -178,8 +179,9 @@
     var cx = stageW * 0.5, cy = stageH * 0.5;
     var outerRx = RING_RADII[3] * sx * 1.05;
     var outerRy = RING_RADII[3] * sy * 1.05;
-    var labelRx  = RING_RADII[3] * sx * 1.14;
-    var labelRy  = RING_RADII[3] * sy * 1.14;
+    /* clamp label radius so labels never go off-screen on narrow/short viewports */
+    var labelRx = Math.min(RING_RADII[3] * sx * 1.13, stageW * 0.46);
+    var labelRy = Math.min(RING_RADII[3] * sy * 1.13, stageH * 0.44);
 
     SECTORS.forEach(function (sec, i) {
       /* divider line at sector START angle */

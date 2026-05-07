@@ -10,8 +10,6 @@ hide:
     <div class="rg-cards-layer" id="rg-cards-layer"></div>
     <div class="rg-center">
       <div class="rg-center-pulse"></div>
-      <div class="rg-center-title">微电子<br>科研版图</div>
-      <div class="rg-center-sub">17 个方向</div>
     </div>
   </div>
   <div class="rg-fallback" style="display:none">
