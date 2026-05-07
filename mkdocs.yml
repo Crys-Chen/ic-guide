@@ -211,7 +211,9 @@ plugins:
         - en
   - git-revision-date:
   - minify:
-      minify_html: true
+      minify_html: false
+      minify_css: true
+      minify_js: true
   - open-in-new-tab:
 
 extra_css:
