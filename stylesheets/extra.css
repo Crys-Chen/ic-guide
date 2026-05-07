@@ -578,14 +578,12 @@
    左侧导航栏（仅桌面端）
    ══════════════════════════════════════════════════════════ */
 
-/* 桌面端：隐藏侧边栏顶部重复的 section 标题（与 tabs 重复）
-   移动端保留，使其作为返回上一级的按钮 */
-@media screen and (min-width: 76.25em) {
-  .md-nav--lifted > .md-nav__title,
-  .md-nav--lifted .md-nav__title,
-  .md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
-    display: none !important;
-  }
+/* 隐藏侧边栏顶部重复的 section 标题（与 tabs 重复）
+   md-nav--lifted 的 title 在移动端也需隐藏，否则出现在列表中间 */
+.md-nav--lifted > .md-nav__title,
+.md-nav--lifted .md-nav__title,
+.md-sidebar--primary .md-nav[data-md-level="1"] > .md-nav__title {
+  display: none !important;
 }
 
 /* 桌面端：主导航里所有 nav__title 均隐藏（section 名称已在 tabs 显示） */
@@ -652,9 +650,8 @@
     padding-bottom: .55rem;
   }
 
-  /* 移动端：二级+ nav 标题 = 返回上一级按钮 */
-  /* 给它加实色底 + 蓝色字 + 明显间距，防止与下方条目透视重叠 */
-  .md-nav--primary .md-nav .md-nav__title {
+  /* 移动端：二级 nav 标题（← 返回）— 排除 md-nav--lifted（会出现在列表中间） */
+  .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title {
     display: flex !important;
     align-items: center;
     background: var(--md-default-bg-color) !important;
@@ -663,13 +660,9 @@
     font-size: .88rem !important;
     padding: .75rem 1rem .75rem .8rem !important;
     border-bottom: 1px solid rgba(3,33,104,.10) !important;
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 10 !important;
     cursor: pointer;
   }
-  /* 返回箭头用 Material 内置的 ::before 即可，但加粗蓝色 */
-  .md-nav--primary .md-nav .md-nav__title::before {
+  .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title::before {
     color: #032168 !important;
     font-weight: 900 !important;
   }
