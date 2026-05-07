@@ -1487,8 +1487,9 @@
 }
 
 .rg-card.rg-active .rg-card-inner {
-  transform: translate(-50%, -50%) scale(1.12) !important;
-  box-shadow: 0 8px 28px rgba(0,63,136,0.18), 0 2px 8px rgba(0,0,0,0.10) !important;
+  transform: translate(-50%, -50%) scale(1.52) !important;
+  width: 148px !important;
+  box-shadow: 0 10px 36px rgba(0,63,136,0.22), 0 3px 10px rgba(0,0,0,0.12) !important;
 }
 
 .rg-card.rg-active .rg-card-name {
