@@ -316,6 +316,7 @@ nav:
       - 其他:
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
     - 器件与工艺:
+      - 导言: "课程资源/器件与工艺/index.md"
       - 集成电路工艺:
         - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
         - "MIT 6.152J: Micro/Nano Processing": "课程资源/器件与工艺/集成电路工艺/MIT6.152J.md"
@@ -405,6 +406,7 @@ nav:
       - 嵌入式SoC:
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
     - 算法编程:
+      - 导言: "课程资源/算法编程/index.md"
       - 编程入门:
         - MIT-Missing-Semester: "课程资源/算法编程/编程入门/MIT-Missing-Semester.md"
         - "Sysadmin DeCal": "课程资源/算法编程/编程入门/DeCal.md"
@@ -436,6 +438,7 @@ nav:
         - PKU 软件分析: "课程资源/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
         - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
     - 系统架构:
+      - 导言: "课程资源/系统架构/index.md"
       - 计算机系统基础:
         - 计算机组成原理(复旦): "课程资源/系统架构/速通/MICR130038.md"
         - "CMU 15-213: CSAPP": "课程资源/系统架构/速通/CSAPP.md"
@@ -496,6 +499,7 @@ nav:
         - "University of Helsinki: Full Stack open": "课程资源/前端/Web开发/fullstackopen.md"
         - "CS571 Building UI": "课程资源/前端/Web开发/CS571.md"
     - 人工智能:
+      - 导言: "课程资源/人工智能/index.md"
       - 速通:
         - "Neural Networks: Zero to Hero": "课程资源/人工智能/速通/Neural Networks：Zero to Hero.md"
         - "Harvard CS50 AI": "课程资源/人工智能/速通/CS50.md"
