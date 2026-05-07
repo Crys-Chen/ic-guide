@@ -391,21 +391,27 @@
   }
 
   /* ── Mobile back button (bottom-left, all pages) ───────────── */
+  function parentUrl() {
+    // Strip trailing slash, remove last path segment, restore trailing slash
+    var path = window.location.pathname.replace(/\/$/, '');
+    return path.substring(0, path.lastIndexOf('/') + 1) || '/';
+  }
+
   function setupMobileBack() {
     var old = document.getElementById('rg-mobile-back');
     if (old) old.remove();
     if (window.innerWidth >= 768) return;
 
+    // Hide on root/homepage (only one depth segment, no meaningful parent)
+    var segments = window.location.pathname.replace(/^\/|\/$/g, '').split('/').filter(Boolean);
+    if (segments.length <= 1) return;
+
     var btn = document.createElement('a');
     btn.id = 'rg-mobile-back';
     btn.className = 'rg-mobile-back';
-    btn.href = 'javascript:void(0)';
-    btn.setAttribute('aria-label', '返回');
+    btn.href = parentUrl();
+    btn.setAttribute('aria-label', '返回上一级');
     btn.innerHTML = '&#8592;'; // ←
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.history.back();
-    });
     document.body.appendChild(btn);
   }
 
