@@ -1487,18 +1487,24 @@
 }
 
 .rg-card.rg-active .rg-card-inner {
-  transform: translate(-50%, -50%) scale(1.52) !important;
-  width: 148px !important;
+  transform: translate(-50%, -50%) scale(1.08) !important;
+  width: 172px !important;
+  min-height: 48px !important;
   box-shadow: 0 10px 36px rgba(0,63,136,0.22), 0 3px 10px rgba(0,0,0,0.12) !important;
 }
 
 .rg-card.rg-active .rg-card-name {
-  white-space: normal; /* already default, kept for clarity */
+  white-space: normal !important;
+  word-break: keep-all !important;
 }
 
 .rg-card.rg-active .rg-card-tag {
   opacity: .60 !important;
-  max-height: 24px !important;
+  max-height: 20px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  width: 100% !important;
 }
 
 /* ── Dim other cards on hover ───────────────────────────── */
