@@ -10694,51 +10694,51 @@
 <p>用量子叠加与纠缠在物理硬件上实现超越经典计算机极限的信息处理。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>量子计算的核心动机来自一个物理事实：某些问题在经典计算机上天然难解——分子模拟、大整数分解、组合优化——不是因为算法不够好，而是因为所需的状态空间随系统规模指数增长，任何经典比特都无法高效表示。量子比特（qubit）与经典比特的根本区别在于叠加与纠缠：一个 n 量子比特的系统可以同时处于 2ⁿ 个状态的叠加之中，两个量子比特可以纠缠到一起使得对其中一个的测量立即确定另一个的状态，无论相距多远。Shor 的因式分解算法和 Grover 的搜索算法早在 1990 年代就证明了这种能力原则上可转化为计算优势，但把它变成真实芯片却花了将近三十年。量子计算不是"更快的经典计算机"，而是一种需要全新物理、全新工程体系的计算范式，这正是微电子学院的学生最有机会切入的地方。</p>
-<p><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
     <marker id="qc-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
     </marker>
-  </defs></p>
-<!-- Panel 1: 经典比特 -->
-<p><rect x="10" y="10" width="240" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  </defs>
+  <!-- Panel 1: 经典比特 -->
+  <rect x="10" y="10" width="240" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="130" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">① 经典比特</text>
-  <!-- Switch OFF (0) --></p>
-<p><rect x="50" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- Switch OFF (0) -->
+  <rect x="50" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
   <text x="85" y="80" text-anchor="middle" font-size="22" font-weight="bold" fill="#1D4ED8">0</text>
   <text x="85" y="100" text-anchor="middle" font-size="10" fill="#3B82F6">OFF</text>
-  <!-- Switch ON (1) --></p>
-<p><rect x="140" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- Switch ON (1) -->
+  <rect x="140" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
   <text x="175" y="80" text-anchor="middle" font-size="22" font-weight="bold" fill="#1D4ED8">1</text>
   <text x="175" y="100" text-anchor="middle" font-size="10" fill="#3B82F6">ON</text>
-  <!-- OR label --></p>
-<p><text x="130" y="90" text-anchor="middle" font-size="11" fill="#64748B">或</text>
+  <!-- OR label -->
+  <text x="130" y="90" text-anchor="middle" font-size="11" fill="#64748B">或</text>
   <text x="130" y="145" text-anchor="middle" font-size="10" fill="#64748B">确定性：每次只能是</text>
   <text x="130" y="162" text-anchor="middle" font-size="10" fill="#64748B">0 或 1 之一</text>
-  <text x="130" y="195" text-anchor="middle" font-size="10" fill="#64748B">n位 = 2ⁿ 种状态之一</text></p>
-<!-- Arrow -->
-<p><line x1="250" y1="110" x2="290" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/></p>
-<!-- Panel 2: 量子比特 -->
-<p><rect x="292" y="10" width="270" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="130" y="195" text-anchor="middle" font-size="10" fill="#64748B">n位 = 2ⁿ 种状态之一</text>
+  <!-- Arrow -->
+  <line x1="250" y1="110" x2="290" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/>
+  <!-- Panel 2: 量子比特 -->
+  <rect x="292" y="10" width="270" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="427" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">② 量子比特</text>
-  <!-- Bloch sphere (simple: circle + arrow) --></p>
-<p><circle cx="427" cy="110" r="55" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
-  <!-- Equator ellipse (hint of 3D) --></p>
-<p><ellipse cx="427" cy="110" rx="55" ry="14" fill="none" stroke="#7C3AED" stroke-width="1" stroke-dasharray="4,3"/>
-  <!-- Vertical axis --></p>
-<p><line x1="427" y1="55" x2="427" y2="165" stroke="#7C3AED" stroke-width="1" stroke-dasharray="3,3"/>
-  <!-- |0⟩ and |1⟩ poles --></p>
-<p><text x="427" y="50" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">|0⟩</text>
+  <!-- Bloch sphere (simple: circle + arrow) -->
+  <circle cx="427" cy="110" r="55" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <!-- Equator ellipse (hint of 3D) -->
+  <ellipse cx="427" cy="110" rx="55" ry="14" fill="none" stroke="#7C3AED" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Vertical axis -->
+  <line x1="427" y1="55" x2="427" y2="165" stroke="#7C3AED" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- |0⟩ and |1⟩ poles -->
+  <text x="427" y="50" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">|0⟩</text>
   <text x="427" y="178" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">|1⟩</text>
-  <!-- State arrow (superposition) --></p>
-<p><line x1="427" y1="110" x2="468" y2="78" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#qc-arrow)"/>
+  <!-- State arrow (superposition) -->
+  <line x1="427" y1="110" x2="468" y2="78" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#qc-arrow)"/>
   <circle cx="427" cy="110" r="3" fill="#7C3AED"/>
   <text x="478" y="74" font-size="10" fill="#6D28D9">|ψ⟩</text>
-  <text x="427" y="195" text-anchor="middle" font-size="10" fill="#64748B">叠加态 | n量子比特 = 2ⁿ个状态同时</text></p>
-<!-- Arrow -->
-<p><line x1="562" y1="110" x2="598" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/></p>
-<!-- Panel 3: 应用场景 -->
-<p><rect x="600" y="10" width="250" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="427" y="195" text-anchor="middle" font-size="10" fill="#64748B">叠加态 | n量子比特 = 2ⁿ个状态同时</text>
+  <!-- Arrow -->
+  <line x1="562" y1="110" x2="598" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/>
+  <!-- Panel 3: 应用场景 -->
+  <rect x="600" y="10" width="250" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="725" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">③ 量子擅长的问题</text>
   <rect x="625" y="50" width="200" height="38" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
   <text x="725" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">分子模拟</text>
@@ -10750,7 +10750,8 @@
   <text x="725" y="164" text-anchor="middle" font-size="11" font-weight="600" fill="#6D28D9">组合优化</text>
   <text x="725" y="179" text-anchor="middle" font-size="9" fill="#5B21B6">QAOA·物流·金融</text>
   <text x="725" y="200" text-anchor="middle" font-size="9" fill="#64748B">经典计算机难以高效处理</text>
-</svg></p>
+</svg></div>
+
 <p>技术路线的多样性是这个方向最鲜明的特征。<strong>超导量子比特</strong>是目前产业界投入最大的路线：把铝或铌制成的约瑟夫森结冷却到接近绝对零度（约 20 mK），利用非线性 LC 谐振制造人工"原子"，用微波脉冲读写量子态。超导路线的优势是制造工艺与现有半导体产线高度兼容、操作速度快（纳秒量级的门操作）；缺点是必须在极低温下工作，与室温电子控制系统的接口是巨大的工程挑战，且相干时间（qubit 保持量子态的时间）仍然有限，目前最好水平约数百微秒。<strong>离子阱</strong>用激光把带电离子悬浮在电磁势阱中，用离子自身充当量子比特：相干时间极长（可达分钟量级），保真度是所有路线中最高的；缺点是操作速度慢（毫秒量级），系统规模扩展困难。<strong>光量子</strong>用光子的偏振或路径编码量子信息，天然不需要制冷，适合量子通信和特定算法；但确定性光子-光子相互作用极难实现，通用计算仍是难题。<strong>硅基半导体量子点</strong>利用单个电子自旋编码量子比特，与现代 CMOS 工艺高度兼容，理论上可以直接在硅晶圆上制造数百万量子比特，Intel 的 Tunnel Falls 芯片就走这条路；挑战在于自旋相干时间对材料纯度极为敏感，且量子点间距离近，串扰控制困难。</p>
 <p>量子芯片和经典芯片并不是简单的替代关系，而是深度耦合的。一块 100 量子比特的超导芯片，需要同等数量的微波脉冲控制线和读取线，全部从 20 mK 冷端引出到室温控制系统——这就是"低温电子学"的挑战。每条控制线都引入热量，数百条线就足以让稀释制冷机失效，所以学术界和工业界都在研究"量子-经典协处理器"：把部分控制逻辑（如模数转换、数字滤波、反馈控制）直接集成在 4 K 或更低温度的 CMOS 芯片上，大幅减少室温与冷端之间的互连数量。这需要专门针对极低温特性优化的 CMOS 设计（标准 CMOS 在 4 K 下迁移率、阈值电压都会漂移），是微电子与量子交叉最紧密的工程问题之一。此外，量子纠错码（如表面码）要求用数十甚至数百个物理量子比特编码一个逻辑量子比特，使得容错量子计算机的物理比特需求骤升到数百万量级，这对芯片制造、互连密度、控制系统的集成提出了与经典先进制程同等量级的工程挑战。</p>
 <p>国内外产业格局方面，IBM Quantum 的超导路线已公开了明确的工程路线图：2024 年发布 Heron（133 量子比特），2025 年推出 Nighthawk（120 量子比特、更高连通性），目标是 2029 年实现搭载约 200 个逻辑量子比特的容错系统。Google Quantum AI 2019 年用 53 量子比特的 Sycamore 宣称"量子优越性"，2023 年发布 72 量子比特的 Willow 并实现实时纠错。国内方面，中科大潘建伟/朱晓波团队的"祖冲之三号"（105 量子比特超导芯片，2025 年）在量子随机采样任务上比最快超算快 15 个数量级；本源量子（Origin Quantum，合肥，郭国平创立）是国内首家量子计算商用公司，已交付工程化量子计算机，并自主研发了量子芯片生产线；国盾量子聚焦量子通信与密钥分发，已在沪杭等城市落地商用量子网络。</p>

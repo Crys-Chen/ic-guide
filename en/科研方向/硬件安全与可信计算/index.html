@@ -10694,40 +10694,40 @@
 <p>从芯片和硬件层面研究如何攻击计算系统，以及如何在设计阶段构建防御——这是网络安全中最底层、最难防御的战场。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>软件安全研究了几十年，有了漏洞可以打补丁，有了 CVE 可以发版修复。但硬件层面的漏洞属于另一种性质：它来自芯片的物理设计和制造过程，一旦出厂就无法修改，影响的是所有运行在这块芯片上的软件，不管软件本身写得多么安全。2018 年曝光的 Spectre 漏洞是这类问题的极端案例。处理器为了提高性能引入了"投机执行"机制——CPU 会预测程序接下来可能执行哪条分支，提前算好结果，如果预测对了就直接用，如果错了就撤销。关键在于，撤销操作虽然清理了寄存器状态，但没有清理缓存的痕迹。攻击者可以构造特殊程序，诱导处理器投机执行一段本无权访问的内存读取，再通过测量不同内存地址的缓存访问时序推断出那段内存里的内容——包括其他进程的数据、操作系统内核的密钥。这个漏洞影响了几乎所有 2000 年后制造的 Intel、AMD、ARM 处理器，打补丁的方式是禁用部分投机执行，性能代价是 5-30%。漏洞本身来自性能优化的设计决策，没有"正确版本"可以升级到，这正是硬件安全和软件安全最本质的差别。</p>
-<p><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
     <marker id="hw-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
     </marker>
   </defs>
-  <!-- Panel 1: 芯片正常运行 --></p>
-<p><rect x="20" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Panel 1: 芯片正常运行 -->
+  <rect x="20" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="135" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">① 芯片正常运行</text>
   <rect x="55" y="58" width="160" height="90" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
   <text x="135" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">AES 加密运算</text>
   <text x="135" y="100" text-anchor="middle" font-size="20" fill="#1D4ED8">🔒</text>
   <text x="135" y="124" text-anchor="middle" font-size="11" fill="#1E40AF">密钥安全存储</text>
   <text x="135" y="142" text-anchor="middle" font-size="11" fill="#1E40AF">在芯片内部</text>
-  <text x="135" y="185" text-anchor="middle" font-size="11" fill="#64748B">正常功能：加密输出</text></p>
-<!-- Arrow 1→2 -->
-<p><line x1="250" y1="110" x2="298" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/></p>
-<!-- Panel 2: 攻击者测量 -->
-<p><rect x="300" y="20" width="260" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="135" y="185" text-anchor="middle" font-size="11" fill="#64748B">正常功能：加密输出</text>
+  <!-- Arrow 1→2 -->
+  <line x1="250" y1="110" x2="298" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/>
+  <!-- Panel 2: 攻击者测量 -->
+  <rect x="300" y="20" width="260" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="430" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">② 攻击者测量</text>
   <rect x="330" y="58" width="140" height="80" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
   <text x="400" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">AES 加密运算</text>
   <text x="400" y="100" text-anchor="middle" font-size="20" fill="#1D4ED8">🔒</text>
   <text x="400" y="120" text-anchor="middle" font-size="11" fill="#1E40AF">芯片运行中</text>
-  <!-- Red probe wire --></p>
-<p><line x1="400" y1="138" x2="400" y2="158" stroke="#EF4444" stroke-width="2.5"/>
+  <!-- Red probe wire -->
+  <line x1="400" y1="138" x2="400" y2="158" stroke="#EF4444" stroke-width="2.5"/>
   <circle cx="400" cy="138" r="4" fill="#EF4444"/>
-  <!-- Oscilloscope waves --></p>
-<p><polyline points="420,170 430,155 440,175 450,155 460,170 470,158 480,168 490,158 500,165 510,155 520,165 530,158 540,168" fill="none" stroke="#EF4444" stroke-width="1.5"/>
-  <text x="430" y="198" text-anchor="middle" font-size="11" fill="#DC2626">功耗 / 电磁 / 时序测量</text></p>
-<!-- Arrow 2→3 -->
-<p><line x1="560" y1="110" x2="608" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/></p>
-<!-- Panel 3: 密钥泄露 -->
-<p><rect x="610" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Oscilloscope waves -->
+  <polyline points="420,170 430,155 440,175 450,155 460,170 470,158 480,168 490,158 500,165 510,155 520,165 530,158 540,168" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="430" y="198" text-anchor="middle" font-size="11" fill="#DC2626">功耗 / 电磁 / 时序测量</text>
+  <!-- Arrow 2→3 -->
+  <line x1="560" y1="110" x2="608" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/>
+  <!-- Panel 3: 密钥泄露 -->
+  <rect x="610" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="725" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">③ 密钥泄露</text>
   <rect x="645" y="58" width="160" height="80" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
   <text x="725" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#DC2626">密钥暴露</text>
@@ -10735,7 +10735,8 @@
   <text x="725" y="120" text-anchor="middle" font-size="11" fill="#B91C1C">无需密码数学漏洞</text>
   <text x="725" y="160" text-anchor="middle" font-size="11" fill="#64748B">密钥恢复</text>
   <text x="725" y="178" text-anchor="middle" font-size="11" fill="#64748B">无需暴力破解</text>
-</svg></p>
+</svg></div>
+
 <p>侧信道攻击（Side-Channel Attacks）是这个方向里研究历史最长、成果最丰富的子领域。攻击的基本思路是：任何实现了密码算法的物理电路，在运行时都会产生可以被测量的物理信号——功耗随时钟周期的波动、电磁辐射的强度、加密操作的执行时间——这些信号泄漏了关于密钥的信息。早在 1998 年，Paul Kocher 就展示了通过测量智能卡的功耗曲线来恢复 DES 密钥，无需任何密码数学漏洞，只需要一台示波器和几千次测量。研究者在这个基础上发展出了功耗分析（SPA/DPA）、电磁分析（EMA）、时序攻击等一系列技术，攻击对象从智能卡扩展到 FPGA、嵌入式处理器、甚至 AI 芯片——研究者已经展示了通过测量 NPU 运行时的功耗来还原神经网络模型权重。防御方法包括在电路层引入随机化（掩码技术）、硬件层面的功耗均衡、以及让实现时序与数据无关的"恒时"（constant-time）编程方法。</p>
 <p>硬件木马（Hardware Trojans）针对的是芯片供应链的安全。现代芯片的设计往往外包给第三方 IP 核提供商，制造交给台积电、三星等代工厂——这条链路上的任何一个环节，都可能被恶意行为者在芯片里植入隐藏电路。这个隐藏电路大多数时候保持沉默，只在特定触发条件下（比如特定的输入序列、特定的日期）激活，完成窃取密钥、伪造计算结果或关闭系统的操作。检测硬件木马极为困难：芯片内部的晶体管数量以亿计，木马只需要占其中极小的比例；功能仿真无法发现它，因为木马在正常条件下不会触发；物理检测需要用电子显微镜逐层扫描芯片，成本极高。研究者开发了侧信道指纹识别、机器学习辅助的版图异常检测、以及在 RTL 阶段的形式化验证方法来应对这个问题，但完全可靠的检测方法至今仍未出现，这也是这个方向对于国家安全如此重要的原因。</p>
 <p>物理不可克隆函数（PUF）是防御端的一个有趣研究方向。芯片制造过程中存在不可避免的随机工艺偏差：同一设计的两块芯片，微观尺度上没有任何两块完全相同。PUF 利用这种随机性来生成芯片的"生物指纹"——对相同的输入激励，每块芯片产生独特且可重现的响应，用于身份认证。PUF 的优势在于这个"指纹"无法被复制（因为制造偏差是随机的），也不需要存储在任何可被读取的内存里（因为它由物理特性决定）。研究挑战在于提高 PUF 的稳定性（同一块芯片在温度变化后响应应保持一致）和抵抗机器学习建模攻击（攻击者通过大量激励-响应对训练出一个 PUF 的数学模型）。ARM TrustZone 和 RISC-V PMP 等可信执行环境（TEE）的设计是另一个活跃方向，目标是在硬件层面创造一个即使操作系统被攻破也无法侵入的安全区域。</p>

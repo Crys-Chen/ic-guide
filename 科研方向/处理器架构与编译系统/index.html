@@ -10696,11 +10696,11 @@
 <p>处理器的工作原理在教科书里描述起来很简单：取指、译码、执行、写回，周而复始。但真正的挑战不在于"能不能做计算"，而在于"在物理约束下怎样让这台机器更快、更省电"。过去三十年，答案一直是"缩小晶体管、提高频率"——制程从微米到纳米，时钟从 MHz 到 GHz，性能翻倍几乎不需要架构上的创新。这条路大约在 2005 年走到了一个转折点：时钟频率停在了 4GHz 附近，因为再往上功耗密度就超过散热极限。于是研究重心转移了——同样数量的晶体管，怎样用架构设计让它们协作得更高效，成了核心问题。</p>
 <p>这个领域里一个最根本的挑战叫"内存墙"（Memory Wall）。处理器的运算速度以每秒数百 TFLOPS 甚至 PFLOPS 计，但主内存的带宽往往只有几百 GB/s，二者相差几十倍。结果是：芯片大量时间不是在计算，而是在等数据从内存传来。训练一个大语言模型时，GPU 的实际有效利用率有时低于 30%，其余时间全在等参数搬运。为了应对这个问题，研究者设计各种数据流架构，让数据在芯片内部的寄存器和小型 SRAM 里尽量"就近复用"，减少对片外内存的访问次数。不同的数据流设计——行固定、权重固定、输出固定——对不同类型的神经网络层有各自的优劣，这是加速器设计里的核心权衡。</p>
 <p>AI 的崛起带来了另一个分支：领域专用架构（DSA）。通用 CPU 设计的目标是能执行任意程序，因此它的电路里充满了分支预测器、乱序执行引擎等为通用计算准备的复杂机制。但这些机制在做矩阵乘法（神经网络推理的核心操作）时几乎完全用不上，大量晶体管只是在空转。Google 的 TPU 第一代（2016）就是把上述冗余全部去掉、专门做矩阵乘法的产物——它的核心是一个脉动阵列（systolic array），数据像波浪一样在乘法器间流动，完全不需要为每次运算单独发指令。结果是在同等功耗下，TPU 的神经网络推理吞吐量是当时服务器级 GPU 的 15-30 倍。这个思路引发了整个行业的专用芯片浪潮：苹果 Neural Engine、华为昇腾、特斯拉 FSD 芯片，背后逻辑都一样——把算法固定下来，让硬件跟算法完美匹配。</p>
-<p><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
-  <!-- Background panel --></p>
-<p><rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/></p>
-<!-- Left side: compute stack (layer cake) -->
-<p><g transform="translate(60,20)">
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
+  <!-- Background panel -->
+  <rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Left side: compute stack (layer cake) -->
+  <g transform="translate(60,20)">
     <!-- Stack label -->
     <text x="130" y="18" text-anchor="middle" font-size="11" fill="#64748B" font-family="sans-serif">计算栈（纵向）</text>
     <!-- Layer 1: 应用/模型 (purple) -->
@@ -10715,33 +10715,34 @@
     <!-- Layer 4: 物理硬件 (green) -->
     <rect x="30" y="156" width="200" height="38" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
     <text x="130" y="175" text-anchor="middle" font-size="13" fill="#166534" font-weight="bold" font-family="sans-serif">物理硬件  晶体管 / SRAM</text>
-  </g></p>
-<!-- Arrow: general → specialized -->
-<p><g transform="translate(340,80)">
+  </g>
+  <!-- Arrow: general → specialized -->
+  <g transform="translate(340,80)">
     <text x="90" y="0" text-anchor="middle" font-size="12" fill="#94A3B8" font-family="sans-serif">领域专用化方向</text>
     <line x1="10" y1="14" x2="168" y2="14" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6,3"/>
     <polygon points="168,10 180,14 168,18" fill="#94A3B8"/>
-  </g></p>
-<!-- Left chip: General CPU (wide, lots of idle space) -->
-<p><g transform="translate(330,110)">
+  </g>
+  <!-- Left chip: General CPU (wide, lots of idle space) -->
+  <g transform="translate(330,110)">
     <rect x="0" y="0" width="90" height="72" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
     <text x="45" y="16" text-anchor="middle" font-size="11" fill="#1D4ED8" font-weight="bold" font-family="sans-serif">通用 CPU</text>
     <!-- idle area hatch -->
     <rect x="8" y="22" width="74" height="42" rx="3" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" stroke-dasharray="4,3"/>
     <text x="45" y="38" text-anchor="middle" font-size="9.5" fill="#60A5FA" font-family="sans-serif">大量电路</text>
     <text x="45" y="52" text-anchor="middle" font-size="9.5" fill="#60A5FA" font-family="sans-serif">空转</text>
-  </g></p>
-<!-- Right chip: Specialized DSA (narrow, perfectly sized) -->
-<p><g transform="translate(460,118)">
+  </g>
+  <!-- Right chip: Specialized DSA (narrow, perfectly sized) -->
+  <g transform="translate(460,118)">
     <rect x="0" y="0" width="72" height="56" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
     <text x="36" y="16" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold" font-family="sans-serif">专用 DSA</text>
     <rect x="8" y="22" width="56" height="26" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1"/>
     <text x="36" y="39" text-anchor="middle" font-size="9" fill="#166534" font-family="sans-serif">完全匹配</text>
-  </g></p>
-<!-- Labels below chips -->
-<p><text x="375" y="200" text-anchor="middle" font-size="10" fill="#64748B" font-family="sans-serif">通用处理器</text>
+  </g>
+  <!-- Labels below chips -->
+  <text x="375" y="200" text-anchor="middle" font-size="10" fill="#64748B" font-family="sans-serif">通用处理器</text>
   <text x="496" y="200" text-anchor="middle" font-size="10" fill="#64748B" font-family="sans-serif">电路与任务完全匹配</text>
-</svg></p>
+</svg></div>
+
 <p>研究者日常工作的核心是"设计-验证-分析"的循环。用 Verilog 或 Chisel 写硬件描述代码，在仿真器里验证逻辑正确，用 EDA 工具做综合和时序分析，在 FPGA 上跑原型评估性能，最终通过分析内存访问模式、执行效率、功耗分解来定位瓶颈并迭代。学术组的论文通常不需要真的流片，而是通过 RTL 仿真 + 工艺库估算，给出面积、频率、功耗等指标的量化对比。这个方向要求同时懂算法（知道 Transformer attention 的计算瓶颈在哪）和电路（知道如何在硬件上高效实现），是 EE 和 CS 交叉最密集的子领域之一。</p>
 <p>架构研究者离不开编译器。一块加速器芯片固化了计算的物理形态，但如果没有编译器把 PyTorch 模型或 C 程序翻译成芯片实际能执行的指令序列，它只是一块昂贵的硅片。LLVM 是当今最主要的编译器基础设施，几乎所有主流 CPU 和 GPU 的编译链都建立在它之上；MLIR（Multi-Level Intermediate Representation）是 Google 专为 AI 编译器设计的可扩展框架，允许研究者在不同抽象层（张量运算 → 循环 → 硬件指令）之间灵活转化；TVM 则是面向深度学习推理的端到端编译器，能把 ONNX 格式的神经网络自动优化并部署到 CPU、GPU、加速器等各类硬件上。这套"算法→编译器→硬件"的完整栈被 ASPLOS（体系结构与编程语言和操作系统的交叉会议）所深度覆盖，构成现代计算系统研究最活跃的发表阵地之一。编译器与架构的研究问题深度交织：AutoTVM 的算子调优、多面体变换（polyhedral model）的循环优化、算子融合与内存规划，都需要研究者同时理解编译器内部和硬件微架构，两个方向的人在 ASPLOS 上共享同一套问题集合。</p>
 <h2 id="_2">适合什么样的人</h2>

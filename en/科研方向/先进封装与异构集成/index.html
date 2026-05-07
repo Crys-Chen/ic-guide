@@ -10694,49 +10694,50 @@
 <p>把来自不同工厂、不同工艺的多块芯片高密度整合在同一封装内——先进封装是摩尔定律减速后，芯片系统继续提升性能的核心路径。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>传统 SoC 设计的逻辑是：把所有功能集成在一块用最先进工艺制造的单一芯片上。这个路径在 28nm 以上工艺节点时代运作良好，但进入 7nm、5nm 之后，芯片面积越大、良率越低，制造成本呈超线性增长。一块边长 2cm 的 CPU Die，在 5nm 工艺下的良率可能只有 30%——也就是说 70% 的制造成本全部打了水漂。</p>
-<p><svg viewBox="0 0 880 220" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+<div><svg viewBox="0 0 880 220" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
   <defs>
     <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
     </marker>
   </defs>
-  <!-- Panel 1: 传统单片 SoC --></p>
-<p><rect x="10" y="10" width="390" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Panel 1: 传统单片 SoC -->
+  <rect x="10" y="10" width="390" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="205" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">传统单片 SoC</text>
-  <!-- Large die --></p>
-<p><rect x="65" y="50" width="280" height="110" rx="6" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+  <!-- Large die -->
+  <rect x="65" y="50" width="280" height="110" rx="6" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
   <text x="205" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#1E40AF">单块大芯片</text>
   <text x="205" y="118" text-anchor="middle" font-size="11" fill="#3B82F6">所有功能集成一块芯片</text>
-  <!-- Warning notes --></p>
-<p><text x="205" y="175" text-anchor="middle" font-size="11" fill="#EF4444">良率随面积下降</text>
-  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#EF4444">一种工艺难以最优化所有模块</text></p>
-<!-- Arrow -->
-<p><line x1="405" y1="110" x2="440" y2="110" stroke="#64748B" stroke-width="2" marker-end="url(#arr2)"/>
-  <text x="422" y="105" text-anchor="middle" font-size="10" fill="#64748B">拆分</text></p>
-<!-- Panel 2: Chiplet 异构集成 -->
-<p><rect x="445" y="10" width="425" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Warning notes -->
+  <text x="205" y="175" text-anchor="middle" font-size="11" fill="#EF4444">良率随面积下降</text>
+  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#EF4444">一种工艺难以最优化所有模块</text>
+  <!-- Arrow -->
+  <line x1="405" y1="110" x2="440" y2="110" stroke="#64748B" stroke-width="2" marker-end="url(#arr2)"/>
+  <text x="422" y="105" text-anchor="middle" font-size="10" fill="#64748B">拆分</text>
+  <!-- Panel 2: Chiplet 异构集成 -->
+  <rect x="445" y="10" width="425" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="657" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">Chiplet 异构集成</text>
-  <!-- Interposer/substrate --></p>
-<p><rect x="470" y="148" width="375" height="30" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- Interposer/substrate -->
+  <rect x="470" y="148" width="375" height="30" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
   <text x="657" y="167" text-anchor="middle" font-size="11" fill="#475569">硅转接板 / 有机基板</text>
-  <!-- CPU die --></p>
-<p><rect x="480" y="82" width="110" height="66" rx="5" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+  <!-- CPU die -->
+  <rect x="480" y="82" width="110" height="66" rx="5" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
   <text x="535" y="113" text-anchor="middle" font-size="12" font-weight="600" fill="#1E40AF">CPU</text>
   <text x="535" y="128" text-anchor="middle" font-size="9" fill="#3B82F6">5nm</text>
-  <!-- Memory die --></p>
-<p><rect x="602" y="82" width="110" height="66" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <!-- Memory die -->
+  <rect x="602" y="82" width="110" height="66" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
   <text x="657" y="113" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Memory</text>
   <text x="657" y="128" text-anchor="middle" font-size="9" fill="#16A34A">HBM工艺</text>
-  <!-- I/O die --></p>
-<p><rect x="724" y="82" width="110" height="66" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <!-- I/O die -->
+  <rect x="724" y="82" width="110" height="66" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
   <text x="779" y="113" text-anchor="middle" font-size="12" font-weight="600" fill="#92400E">I/O</text>
   <text x="779" y="128" text-anchor="middle" font-size="9" fill="#D97706">22nm</text>
-  <!-- Connection lines --></p>
-<p><line x1="590" y1="115" x2="602" y2="115" stroke="#64748B" stroke-width="1.5"/>
+  <!-- Connection lines -->
+  <line x1="590" y1="115" x2="602" y2="115" stroke="#64748B" stroke-width="1.5"/>
   <line x1="712" y1="115" x2="724" y2="115" stroke="#64748B" stroke-width="1.5"/>
-  <!-- Notes --></p>
-<p><text x="657" y="192" text-anchor="middle" font-size="10" fill="#166534">各模块用最优工艺 · 小 Die 良率高 · AMD EPYC / Apple M 系列</text>
-</svg></p>
+  <!-- Notes -->
+  <text x="657" y="192" text-anchor="middle" font-size="10" fill="#166534">各模块用最优工艺 · 小 Die 良率高 · AMD EPYC / Apple M 系列</text>
+</svg></div>
+
 <p>Chiplet（芯粒）架构提供了一条出路：把一块大芯片拆成若干功能模块，分别用最适合的工艺在不同晶圆厂制造，再通过封装技术整合在一起。CPU 计算核心用最先进的 5nm，I/O 控制器用成熟的 22nm，HBM 存储用专用 DRAM 工艺——不同模块各走最优路径，整体成本和性能均可超越单一芯片方案。AMD 的 EPYC 处理器、Apple M 系列芯片都是这套思路的代表性产品。</p>
 <p>连接这些芯片小芯片的互联技术是先进封装研究的核心。2.5D 集成把多个 Die 并排放在同一块高密度的硅转接板（Silicon Interposer）上，通过数以万计的微凸块（microbump）在不到 10 微米间距内实现高带宽互联——台积电的 CoWoS 平台就是这条路线的代表。3D 集成则把多个 Die 垂直堆叠，通过硅通孔（TSV, Through-Silicon Via）传递信号，极大缩短了 Die 间的互联距离，是 HBM（高带宽内存）实现超高存储带宽的核心工艺。更进一步的 3D IC（如台积电 SoIC、Intel Foveros）把 Die 直接键合，键合间距可以缩小到微米甚至亚微米，带宽密度和能效都远超微凸块方案。</p>
 <p>这个方向面临的核心工程挑战是散热和信号完整性。多个 Die 紧密堆叠后，芯片的功率密度可以超过 1000 W/cm²——这个热密度远超传统单芯片方案，甚至超过了喷气发动机燃烧室的热流密度。如何把热量从最热的底层 Die 导出，同时不损坏周围的薄膜结构和微凸块，是热管理研究的核心问题。信号完整性则关注高密度互联下的串扰、反射和电源分配问题：当微凸块间距缩小到 10 微米以下，相邻信号线之间的电磁耦合变得不可忽视，同时极短的互联时序对电源分配网络的阻抗提出了苛刻要求。EDA 工具的进步是实现量产的另一个关键——如何对复杂的多 Die 系统做联合时序分析、热仿真、信号完整性分析，是当前设计自动化研究的热点。</p>

@@ -10694,7 +10694,7 @@
 <p>在硅芯片上集成光学元件，用光子而非电子传输数据——解决 AI 数据中心互联带宽危机，并向光计算方向演进。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>在长距离通信上，光纤早就赢了：一根光纤的传输容量可以达到每秒数十太比特，而铜缆在超过几十米后信号就开始衰减，需要中继放大。但在短距离——比如数据中心机架内部的芯片间互联——电信号仍然主导，因为在几厘米到几米的范围内，铜缆足够便宜和可靠。这个格局在 AI 集群时代开始松动。一个训练 GPT-4 级别模型的集群有数万块 GPU，它们之间的数据吞吐量极为惊人，而铜缆在高速传输时功耗巨大（信号完整性问题导致需要大量均衡和放大电路），并且超过几米就很难做到百 Gbps 的速率。用光代替铜，在带宽、功耗、距离三个维度上都有优势，这是硅光子近年来最迫切的工业需求来源。</p>
-<p><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;">
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;">
   <defs>
     <marker id="arrowCopper" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#3B82F6"/>
@@ -10705,83 +10705,84 @@
     <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#7C3AED"/>
     </marker>
-  </defs></p>
-<!-- Background -->
-<p><rect width="860" height="220" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/></p>
-<!-- Panel 1: Copper Interconnect -->
-<p><rect x="10" y="10" width="260" height="200" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="140" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">① 铜互联（传统）</text></p>
-<!-- Copper wire (thick) -->
-<p><rect x="30" y="70" width="220" height="28" rx="4" fill="#93C5FD" stroke="#3B82F6" stroke-width="2"/>
-  <text x="140" y="89" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E3A8A">铜导线</text></p>
-<!-- Jagged loss lines -->
-<p><polyline points="55,65 65,55 75,65 85,55 95,65 105,55 115,65 125,55 135,65 145,55 155,65 165,55 175,65 185,55 195,65 205,55 215,65 225,55 235,65" stroke="#EF4444" stroke-width="1.5" fill="none"/>
-  <text x="140" y="52" text-anchor="middle" font-size="8.5" fill="#DC2626">衰减损耗（需要均衡放大）</text></p>
-<!-- Labels -->
-<p><text x="140" y="120" text-anchor="middle" font-size="10" fill="#1D4ED8">高功耗 | 距离受限</text>
+  </defs>
+  <!-- Background -->
+  <rect width="860" height="220" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Panel 1: Copper Interconnect -->
+  <rect x="10" y="10" width="260" height="200" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="140" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">① 铜互联（传统）</text>
+  <!-- Copper wire (thick) -->
+  <rect x="30" y="70" width="220" height="28" rx="4" fill="#93C5FD" stroke="#3B82F6" stroke-width="2"/>
+  <text x="140" y="89" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E3A8A">铜导线</text>
+  <!-- Jagged loss lines -->
+  <polyline points="55,65 65,55 75,65 85,55 95,65 105,55 115,65 125,55 135,65 145,55 155,65 165,55 175,65 185,55 195,65 205,55 215,65 225,55 235,65" stroke="#EF4444" stroke-width="1.5" fill="none"/>
+  <text x="140" y="52" text-anchor="middle" font-size="8.5" fill="#DC2626">衰减损耗（需要均衡放大）</text>
+  <!-- Labels -->
+  <text x="140" y="120" text-anchor="middle" font-size="10" fill="#1D4ED8">高功耗 | 距离受限</text>
   <text x="140" y="136" text-anchor="middle" font-size="10" fill="#1D4ED8">数据中心互联瓶颈</text>
   <text x="140" y="155" text-anchor="middle" font-size="9.5" fill="#374151">超 10m → 信号完整性恶化</text>
   <text x="140" y="170" text-anchor="middle" font-size="9.5" fill="#374151">100 Gbps+ → 功耗激增</text>
-  <text x="140" y="188" text-anchor="middle" font-size="9" fill="#6B7280">传统铜电缆 / PCB 走线</text></p>
-<!-- Panel 2: Silicon Photonics -->
-<p><rect x="295" y="10" width="270" height="200" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="430" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">② 硅光子（SiPh）</text></p>
-<!-- Silicon die outline -->
-<p><rect x="315" y="50" width="230" height="100" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
-  <text x="430" y="68" text-anchor="middle" font-size="9.5" fill="#78350F">Silicon Die（CMOS 工艺兼容）</text></p>
-<!-- Photon path inside chip -->
-<!-- Laser -->
-<p><rect x="325" y="78" width="44" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
-  <text x="347" y="97" text-anchor="middle" font-size="9" font-weight="bold" fill="#78350F">激光</text></p>
-<!-- Arrow laser → modulator -->
-<p><line x1="369" y1="93" x2="388" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/></p>
-<!-- Modulator -->
-<p><rect x="390" y="78" width="52" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
-  <text x="416" y="97" text-anchor="middle" font-size="9" font-weight="bold" fill="#78350F">调制器</text></p>
-<!-- Arrow modulator → waveguide -->
-<p><line x1="442" y1="93" x2="461" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/></p>
-<!-- Waveguide (thin line) -->
-<p><line x1="463" y1="93" x2="490" y2="93" stroke="#D97706" stroke-width="3"/>
-  <text x="477" y="83" text-anchor="middle" font-size="8" fill="#92400E">波导</text></p>
-<!-- Arrow waveguide → detector -->
-<p><line x1="490" y1="93" x2="505" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/></p>
-<!-- Detector -->
-<p><rect x="507" y="78" width="28" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
-  <text x="521" y="97" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#78350F">PD</text></p>
-<p><text x="430" y="125" text-anchor="middle" font-size="9" fill="#78350F">激光 → 调制器 → 波导 → 探测器</text></p>
-<!-- Labels -->
-<p><text x="430" y="170" text-anchor="middle" font-size="10" fill="#92400E">低功耗 | 高带宽 | 长距离</text>
+  <text x="140" y="188" text-anchor="middle" font-size="9" fill="#6B7280">传统铜电缆 / PCB 走线</text>
+  <!-- Panel 2: Silicon Photonics -->
+  <rect x="295" y="10" width="270" height="200" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="430" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">② 硅光子（SiPh）</text>
+  <!-- Silicon die outline -->
+  <rect x="315" y="50" width="230" height="100" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+  <text x="430" y="68" text-anchor="middle" font-size="9.5" fill="#78350F">Silicon Die（CMOS 工艺兼容）</text>
+  <!-- Photon path inside chip -->
+  <!-- Laser -->
+  <rect x="325" y="78" width="44" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+  <text x="347" y="97" text-anchor="middle" font-size="9" font-weight="bold" fill="#78350F">激光</text>
+  <!-- Arrow laser → modulator -->
+  <line x1="369" y1="93" x2="388" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/>
+  <!-- Modulator -->
+  <rect x="390" y="78" width="52" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+  <text x="416" y="97" text-anchor="middle" font-size="9" font-weight="bold" fill="#78350F">调制器</text>
+  <!-- Arrow modulator → waveguide -->
+  <line x1="442" y1="93" x2="461" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/>
+  <!-- Waveguide (thin line) -->
+  <line x1="463" y1="93" x2="490" y2="93" stroke="#D97706" stroke-width="3"/>
+  <text x="477" y="83" text-anchor="middle" font-size="8" fill="#92400E">波导</text>
+  <!-- Arrow waveguide → detector -->
+  <line x1="490" y1="93" x2="505" y2="93" stroke="#D97706" stroke-width="2" marker-end="url(#arrowPhoton)"/>
+  <!-- Detector -->
+  <rect x="507" y="78" width="28" height="30" rx="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+  <text x="521" y="97" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#78350F">PD</text>
+  <text x="430" y="125" text-anchor="middle" font-size="9" fill="#78350F">激光 → 调制器 → 波导 → 探测器</text>
+  <!-- Labels -->
+  <text x="430" y="170" text-anchor="middle" font-size="10" fill="#92400E">低功耗 | 高带宽 | 长距离</text>
   <text x="430" y="186" text-anchor="middle" font-size="10" fill="#92400E">CMOS 工艺兼容 | 可规模量产</text>
-  <text x="430" y="200" text-anchor="middle" font-size="9" fill="#6B7280">Intel / Ayar Labs / 光迅科技</text></p>
-<!-- Panel 3: Optical Computing -->
-<p><rect x="590" y="10" width="260" height="200" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="720" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#5B21B6">③ 光计算（前沿）</text></p>
-<!-- MZI schematic: input split, two arms, recombine -->
-<!-- Input -->
-<p><line x1="605" y1="95" x2="630" y2="95" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrowPurple)"/>
-  <text x="617" y="88" text-anchor="middle" font-size="8.5" fill="#5B21B6">光输入</text></p>
-<!-- Splitter -->
-<p><circle cx="635" cy="95" r="5" fill="#7C3AED"/></p>
-<!-- Top arm -->
-<p><path d="M 640 95 Q 665 65 700 65 Q 735 65 760 95" stroke="#7C3AED" stroke-width="2" fill="none"/>
-  <!-- Phase shifter top arm --></p>
-<p><rect x="672" y="57" width="34" height="16" rx="3" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1"/>
-  <text x="689" y="69" text-anchor="middle" font-size="8" fill="#4C1D95">φ₁</text></p>
-<!-- Bottom arm -->
-<p><path d="M 640 95 Q 665 125 700 125 Q 735 125 760 95" stroke="#7C3AED" stroke-width="2" fill="none"/>
-  <!-- Phase shifter bottom arm --></p>
-<p><rect x="672" y="117" width="34" height="16" rx="3" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1"/>
-  <text x="689" y="129" text-anchor="middle" font-size="8" fill="#4C1D95">φ₂</text></p>
-<!-- Combiner -->
-<p><circle cx="762" cy="95" r="5" fill="#7C3AED"/></p>
-<!-- Output -->
-<p><line x1="767" y1="95" x2="795" y2="95" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrowPurple)"/>
-  <text x="790" y="88" text-anchor="middle" font-size="8.5" fill="#5B21B6">输出</text></p>
-<p><text x="720" y="153" text-anchor="middle" font-size="9.5" fill="#5B21B6">光子干涉 = 矩阵乘法</text>
+  <text x="430" y="200" text-anchor="middle" font-size="9" fill="#6B7280">Intel / Ayar Labs / 光迅科技</text>
+  <!-- Panel 3: Optical Computing -->
+  <rect x="590" y="10" width="260" height="200" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="720" y="32" text-anchor="middle" font-size="12" font-weight="bold" fill="#5B21B6">③ 光计算（前沿）</text>
+  <!-- MZI schematic: input split, two arms, recombine -->
+  <!-- Input -->
+  <line x1="605" y1="95" x2="630" y2="95" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="617" y="88" text-anchor="middle" font-size="8.5" fill="#5B21B6">光输入</text>
+  <!-- Splitter -->
+  <circle cx="635" cy="95" r="5" fill="#7C3AED"/>
+  <!-- Top arm -->
+  <path d="M 640 95 Q 665 65 700 65 Q 735 65 760 95" stroke="#7C3AED" stroke-width="2" fill="none"/>
+  <!-- Phase shifter top arm -->
+  <rect x="672" y="57" width="34" height="16" rx="3" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1"/>
+  <text x="689" y="69" text-anchor="middle" font-size="8" fill="#4C1D95">φ₁</text>
+  <!-- Bottom arm -->
+  <path d="M 640 95 Q 665 125 700 125 Q 735 125 760 95" stroke="#7C3AED" stroke-width="2" fill="none"/>
+  <!-- Phase shifter bottom arm -->
+  <rect x="672" y="117" width="34" height="16" rx="3" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1"/>
+  <text x="689" y="129" text-anchor="middle" font-size="8" fill="#4C1D95">φ₂</text>
+  <!-- Combiner -->
+  <circle cx="762" cy="95" r="5" fill="#7C3AED"/>
+  <!-- Output -->
+  <line x1="767" y1="95" x2="795" y2="95" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="790" y="88" text-anchor="middle" font-size="8.5" fill="#5B21B6">输出</text>
+  <text x="720" y="153" text-anchor="middle" font-size="9.5" fill="#5B21B6">光子干涉 = 矩阵乘法</text>
   <text x="720" y="168" text-anchor="middle" font-size="10" fill="#7C3AED">能效潜力极高</text>
   <text x="720" y="183" text-anchor="middle" font-size="10" fill="#7C3AED">精度挑战待解</text>
   <text x="720" y="200" text-anchor="middle" font-size="9" fill="#6B7280">MIT / Lightmatter / 清华太极</text>
-</svg></p>
+</svg></div>
+
 <p>"硅光子"的核心思路是：用已经高度成熟的 CMOS 半导体工艺，在硅芯片上制造出能操控光的元件——波导（引导光传播的细管道）、调制器（把电信号转成光强或相位的变化）、光电探测器（把光信号还原成电信号）。这样就可以用流片厂成熟的产线来生产光学元件，而不需要专门的光学工厂，成本大幅降低。问题在于，硅是间接带隙材料，无法高效发光，所以硅光子芯片本身无法产生激光，光源必须另外解决——要么外接激光器耦合进芯片，要么在硅上键合 III-V 族材料（砷化镓、磷化铟）来集成激光器。后者极为困难，因为这两种材料的晶格常数不匹配，键合界面的缺陷密度很高，这是硅光子领域长期悬而未决的核心工艺难题之一。</p>
 <p>光调制器是另一个关键器件。硅基马赫-曾德调制器（MZM）通过施加电压改变硅的折射率，进而改变光的相位，从而实现对光信号的调制。但硅的电光系数（Pockels 效应）很弱，要达到足够的相移需要几毫米长的相移段，芯片面积大；相比之下，铌酸锂（LiNbO₃）的电光系数强得多，可以在几十微米的长度内完成同样的调制，带宽也更高，这就是为什么"薄膜铌酸锂"（TFLN）近年成为光子集成研究的热点材料，哈佛、MIT、国内浙大等多个团队在追这个方向。</p>
 <p>光计算是更远处的前沿，也是争议最多的一个设想。神经网络推理的核心是矩阵乘法，而矩阵乘法可以用光学干涉仪来模拟：把光信号分成若干路，每路经过不同的相移和分束，干涉叠加后的输出就对应矩阵乘法的结果。光子以光速传播，且不同路之间基本不产生热量，理论上能效远超电子计算。MIT 2017 年在 <em>Nature Photonics</em> 上展示了用硅光子芯片实现小型神经网络推理的实验，Lightmatter 等公司在 2023 年展示了能跑实际 AI 模型的光子芯片原型。但真正的挑战是精度控制——光路中的温度漂移、制造偏差会引起相位误差，而神经网络对精度的要求并不宽松。这个方向现在究竟是"即将颠覆算力格局"还是"长期只能做演示"，业界还没有定论，但正因为不确定，才有大量研究空间。</p>
