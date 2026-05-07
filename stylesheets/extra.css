@@ -644,10 +644,18 @@
 
 /* ─── 移动端导航抽屉：条目字号和行高 ────────────────────── */
 @media screen and (max-width: 76.25em) {
+  /* navigation.tabs 会让非激活 section 变灰，统一覆盖 */
   .md-nav--primary .md-nav__link {
-    font-size: .95rem;
+    font-size: .95rem !important;
     padding-top: .55rem;
     padding-bottom: .55rem;
+    color: var(--md-typeset-color) !important;
+    opacity: 1 !important;
+  }
+  /* 激活项保留主色高亮 */
+  .md-nav--primary .md-nav__link--active {
+    color: var(--md-primary-fg-color) !important;
+    font-weight: 700;
   }
 
   /* 移动端：二级 nav 标题（← 返回）— 排除 md-nav--lifted（会出现在列表中间） */
