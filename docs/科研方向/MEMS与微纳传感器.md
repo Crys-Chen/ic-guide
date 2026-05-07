@@ -8,83 +8,66 @@ hide:
 
 微机电系统（MEMS, Micro-Electro-Mechanical Systems）的核心思路是：用已经高度成熟的半导体平面工艺——光刻、薄膜沉积、各向异性刻蚀——在硅片上雕刻出微米到毫米尺度的三维机械结构，让它们能感受物理世界的各种信号（加速度、压力、温度、气体浓度、声波），并转化为电信号输出。这套思路让传感器的批量制造成本降至极低：一片 8 英寸晶圆可以同时生产数千个加速度计，这正是今天每部智能手机里都有三轴加速度计、陀螺仪和气压计，而成本却只有几分钱的原因。
 
-<svg viewBox="0 0 880 220" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+<div><svg viewBox="0 0 880 220" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
   <defs>
     <marker id="arr3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#1E40AF"/>
     </marker>
   </defs>
-
   <!-- Panel 1: MEMS 加速度计 弹簧-质量系统 -->
   <rect x="10" y="10" width="420" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="220" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">MEMS 加速度计（弹簧-质量系统）</text>
-
   <!-- Left anchor -->
   <rect x="30" y="88" width="30" height="44" rx="3" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
   <text x="45" y="114" text-anchor="middle" font-size="9" fill="#F8FAFC">锚</text>
-
   <!-- Left spring (zigzag) -->
   <polyline points="60,110 70,96 80,124 90,96 100,124 110,96 120,110" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round"/>
-
   <!-- Central mass -->
   <rect x="120" y="72" width="160" height="76" rx="5" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
   <text x="200" y="110" text-anchor="middle" font-size="12" font-weight="600" fill="#1E40AF">质量块</text>
   <text x="200" y="126" text-anchor="middle" font-size="10" fill="#3B82F6">mass</text>
-
   <!-- Right spring (zigzag) -->
   <polyline points="280,110 290,96 300,124 310,96 320,124 330,96 340,110" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round"/>
-
   <!-- Right anchor -->
   <rect x="340" y="88" width="30" height="44" rx="3" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
   <text x="355" y="114" text-anchor="middle" font-size="9" fill="#F8FAFC">锚</text>
-
   <!-- Top sense electrode -->
   <rect x="148" y="52" width="104" height="16" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
   <text x="200" y="63" text-anchor="middle" font-size="9" fill="#166534">固定感应极板</text>
-
   <!-- Bottom sense electrode -->
   <rect x="148" y="152" width="104" height="16" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
   <text x="200" y="163" text-anchor="middle" font-size="9" fill="#166534">固定感应极板</text>
-
   <!-- External force arrow -->
   <line x1="15" y1="110" x2="55" y2="110" stroke="#1E40AF" stroke-width="2" marker-end="url(#arr3)"/>
   <text x="12" y="103" font-size="10" fill="#1E40AF">外力 a</text>
-
   <!-- Caption -->
   <text x="220" y="184" text-anchor="middle" font-size="10" fill="#475569">质量块在外力下位移 → 改变电容 → 测量加速度</text>
   <text x="220" y="198" text-anchor="middle" font-size="10" fill="#94A3B8">手机 IMU · 汽车 ABS · 无人机飞控</text>
-
   <!-- Panel 2: CMUT 超声换能器 -->
   <rect x="450" y="10" width="420" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="660" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">CMUT 超声换能器</text>
-
   <!-- Bottom electrode (substrate) -->
   <rect x="510" y="140" width="300" height="22" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
   <text x="660" y="154" text-anchor="middle" font-size="10" fill="#475569">底部电极（衬底）</text>
-
   <!-- Gap cavity -->
   <rect x="510" y="118" width="300" height="22" rx="2" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" stroke-dasharray="4,2"/>
   <text x="660" y="132" text-anchor="middle" font-size="9" fill="#93C5FD">气隙（gap）</text>
-
   <!-- Membrane (deflected) -->
   <path d="M510,118 Q570,100 660,96 Q750,100 810,118" fill="none" stroke="#D97706" stroke-width="3"/>
   <text x="660" y="92" text-anchor="middle" font-size="10" fill="#92400E">振动薄膜（deflected）</text>
-
   <!-- Voltage label -->
   <text x="480" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#7C3AED">V</text>
   <line x1="488" y1="118" x2="510" y2="118" stroke="#7C3AED" stroke-width="1.5"/>
   <line x1="488" y1="140" x2="510" y2="140" stroke="#7C3AED" stroke-width="1.5"/>
-
   <!-- Ultrasound waves -->
   <path d="M620,70 Q640,55 660,50 Q680,55 700,70" fill="none" stroke="#16A34A" stroke-width="1.5"/>
   <path d="M610,58 Q635,38 660,32 Q685,38 710,58" fill="none" stroke="#16A34A" stroke-width="1.5" opacity="0.7"/>
   <path d="M600,46 Q630,22 660,15 Q690,22 720,46" fill="none" stroke="#16A34A" stroke-width="1.5" opacity="0.4"/>
   <text x="660" y="80" text-anchor="middle" font-size="9" fill="#166534">超声波辐射</text>
-
   <!-- Caption -->
   <text x="660" y="178" text-anchor="middle" font-size="10" fill="#475569">施加交流电压 → 薄膜振动 → 发射/接收超声</text>
   <text x="660" y="195" text-anchor="middle" font-size="10" fill="#94A3B8">超声指纹识别 · 便携医疗成像</text>
-</svg>
+</svg></div>
 
 每一部现代智能手机里，至少有五个 MEMS 器件在工作。加速度计感知手机的空间方向，让画面随握持方式自动旋转；陀螺仪测量角速度，让 AR 应用和防抖摄影成为可能；气压传感器辅助 GPS 室内定位；MEMS 麦克风把声波转为电信号；屏下超声波指纹识别则是最新的一员——CMUT 阵列以超声频率振动的薄膜感知手指皮肤反射图案来验证身份。这五种器件，物理原理各不相同，但都建立在同一套半导体工艺平台上批量制造，成本低到每颗几分钱。
 

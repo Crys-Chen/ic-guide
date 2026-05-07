@@ -10,57 +10,49 @@ hide:
 
 这个认识在随后十年被反复验证并放大。Transformer 架构（2017）之所以成为 LLM 的基础，不只因为注意力机制在理论上更好，还因为它的矩阵乘法可以在 GPU 上高度并行运行，这是 RNN 做不到的。当 OpenAI 用 GPT-3（1750 亿参数）证明"规模扩展就会更智能"时，随之而来的是另一个发现：当模型大到一定程度，如何高效地运行它，就和设计它一样困难——甚至更困难。一块 A100 GPU 内存只有 80 GB，装不下一个 GPT-3，需要把它拆开、分摊到几十块乃至几千块 GPU 上协同运行。模型并行、流水线并行、张量并行的切法，直接决定模型能否训练收敛，这是算法与系统之间真正的研究问题。
 
-<svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
+<div><svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
   <!-- Background panel -->
   <rect x="6" y="8" width="848" height="184" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-
   <!-- Column 1: 算法层 (purple) -->
   <rect x="30" y="28" width="220" height="140" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
   <text x="140" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#5B21B6" font-family="sans-serif">算法层</text>
   <text x="140" y="72" text-anchor="middle" font-size="11" fill="#7C3AED" font-family="sans-serif">LLM / RL / Vision</text>
   <text x="140" y="90" text-anchor="middle" font-size="10.5" fill="#6D28D9" font-family="sans-serif">Transformer · PPO · DINO</text>
   <text x="140" y="108" text-anchor="middle" font-size="10" fill="#8B5CF6" font-family="sans-serif">研究目标：更好的智能</text>
-
   <!-- Column 2: 系统层 (blue) -->
   <rect x="310" y="28" width="220" height="140" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
   <text x="420" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8" font-family="sans-serif">系统层</text>
   <text x="420" y="72" text-anchor="middle" font-size="11" fill="#3B82F6" font-family="sans-serif">vLLM / TVM / PyTorch</text>
   <text x="420" y="90" text-anchor="middle" font-size="10.5" fill="#2563EB" font-family="sans-serif">分布式训练 · 推理框架</text>
   <text x="420" y="108" text-anchor="middle" font-size="10" fill="#3B82F6" font-family="sans-serif">研究目标：更快的运行</text>
-
   <!-- Column 3: 硬件层 (green) -->
   <rect x="590" y="28" width="220" height="140" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
   <text x="700" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534" font-family="sans-serif">硬件层</text>
   <text x="700" y="72" text-anchor="middle" font-size="11" fill="#16A34A" font-family="sans-serif">GPU / NPU / 边缘芯片</text>
   <text x="700" y="90" text-anchor="middle" font-size="10.5" fill="#15803D" font-family="sans-serif">A100 · 昇腾 · 树莓派</text>
   <text x="700" y="108" text-anchor="middle" font-size="10" fill="#16A34A" font-family="sans-serif">研究目标：更省的算力</text>
-
   <!-- Arrows between columns -->
   <!-- 算法→系统 -->
   <line x1="250" y1="90" x2="304" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
   <polygon points="304,86 316,90 304,94" fill="#94A3B8"/>
   <text x="281" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
-
   <!-- 系统→算法 (back arrow) -->
   <line x1="310" y1="112" x2="256" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
   <polygon points="256,108 244,112 256,116" fill="#94A3B8"/>
   <text x="281" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
-
   <!-- 系统→硬件 -->
   <line x1="530" y1="90" x2="584" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
   <polygon points="584,86 596,90 584,94" fill="#94A3B8"/>
   <text x="561" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
-
   <!-- 硬件→系统 (back arrow) -->
   <line x1="590" y1="112" x2="536" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
   <polygon points="536,108 524,112 536,116" fill="#94A3B8"/>
   <text x="561" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
-
   <!-- Glowing intersection label (amber) at center -->
   <rect x="345" y="148" width="150" height="32" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/>
   <text x="420" y="162" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E" font-family="sans-serif">硬件-算法协同</text>
   <text x="420" y="176" text-anchor="middle" font-size="9" fill="#D97706" font-family="sans-serif">EE 背景的机会空间</text>
-</svg>
+</svg></div>
 
 Flash Attention（2022）是一个典型的"系统工作改变算法能力"案例：注意力机制本来的内存访问模式对 GPU 不友好，Dao 等人重新排列计算顺序让数据在 GPU 片上 SRAM 里复用，在不改变计算结果的前提下把推理速度提升了 3 倍、内存占用降低了 5 倍——这直接改变了 LLM 可行上下文长度的上限，从几千 token 推向数万 token。vLLM 解决的是另一个问题：多用户同时请求 LLM 推理时，KV Cache 分配如何做到高效——借鉴操作系统"虚拟内存"的思路消除 GPU 内存碎片，吞吐量提升 24 倍。这些工作发在 OSDI、MLSys 等系统顶会，同时也被 NeurIPS 接收，代表了这个领域"最有趣的问题住在接缝处"的特点。
 
