@@ -1036,11 +1036,7 @@
   min-height: 420px;
 }
 .df-lbg {
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 110% 70% at -5% 0%, rgba(3,33,104,.055) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 60% at 105% 100%, rgba(3,33,104,.03) 0%, transparent 50%);
-  z-index: 0;
+  display: none;
 }
 .df-linner {
   flex: 1 1 0%;
