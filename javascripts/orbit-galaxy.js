@@ -390,10 +390,30 @@
     document.body.appendChild(nav);
   }
 
+  /* ── Mobile back button (bottom-left, all pages) ───────────── */
+  function setupMobileBack() {
+    var old = document.getElementById('rg-mobile-back');
+    if (old) old.remove();
+    if (window.innerWidth >= 768) return;
+
+    var btn = document.createElement('a');
+    btn.id = 'rg-mobile-back';
+    btn.className = 'rg-mobile-back';
+    btn.href = 'javascript:void(0)';
+    btn.setAttribute('aria-label', '返回');
+    btn.innerHTML = '&#8592;'; // ←
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.history.back();
+    });
+    document.body.appendChild(btn);
+  }
+
   /* ── Bootstrap ──────────────────────────────────────────────── */
   function init() {
     setupGalaxy();
     setupDirNav();
+    setupMobileBack();
   }
 
   if (typeof document$ !== 'undefined') {
