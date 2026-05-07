@@ -10693,58 +10693,165 @@
 
 <p>设计让计算机"算得更快、更省电"的核心硬件与软件栈——从通用 CPU 到神经网络加速器，再到将算法高效映射到硬件的编译器，三者构成一条完整的纵向研究方向。</p>
 <h2 id="_1">这个方向在研究什么</h2>
-<p>处理器的工作原理在教科书里描述起来很简单：取指、译码、执行、写回，周而复始。但真正的挑战不在于"能不能做计算"，而在于"在物理约束下怎样让这台机器更快、更省电"。过去三十年，答案一直是"缩小晶体管、提高频率"——制程从微米到纳米，时钟从 MHz 到 GHz，性能翻倍几乎不需要架构上的创新。这条路大约在 2005 年走到了一个转折点：时钟频率停在了 4GHz 附近，因为再往上功耗密度就超过散热极限。于是研究重心转移了——同样数量的晶体管，怎样用架构设计让它们协作得更高效，成了核心问题。</p>
-<p>这个领域里一个最根本的挑战叫"内存墙"（Memory Wall）。处理器的运算速度以每秒数百 TFLOPS 甚至 PFLOPS 计，但主内存的带宽往往只有几百 GB/s，二者相差几十倍。结果是：芯片大量时间不是在计算，而是在等数据从内存传来。训练一个大语言模型时，GPU 的实际有效利用率有时低于 30%，其余时间全在等参数搬运。为了应对这个问题，研究者设计各种数据流架构，让数据在芯片内部的寄存器和小型 SRAM 里尽量"就近复用"，减少对片外内存的访问次数。不同的数据流设计——行固定、权重固定、输出固定——对不同类型的神经网络层有各自的优劣，这是加速器设计里的核心权衡。</p>
-<p>AI 的崛起带来了另一个分支：领域专用架构（DSA）。通用 CPU 设计的目标是能执行任意程序，因此它的电路里充满了分支预测器、乱序执行引擎等为通用计算准备的复杂机制。但这些机制在做矩阵乘法（神经网络推理的核心操作）时几乎完全用不上，大量晶体管只是在空转。Google 的 TPU 第一代（2016）就是把上述冗余全部去掉、专门做矩阵乘法的产物——它的核心是一个脉动阵列（systolic array），数据像波浪一样在乘法器间流动，完全不需要为每次运算单独发指令。结果是在同等功耗下，TPU 的神经网络推理吞吐量是当时服务器级 GPU 的 15-30 倍。这个思路引发了整个行业的专用芯片浪潮：苹果 Neural Engine、华为昇腾、特斯拉 FSD 芯片，背后逻辑都一样——把算法固定下来，让硬件跟算法完美匹配。</p>
-<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
-  <!-- Background panel -->
-  <rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Left side: compute stack (layer cake) -->
-  <g transform="translate(60,20)">
-    <!-- Stack label -->
-    <text x="130" y="18" text-anchor="middle" font-size="11" fill="#64748B" font-family="sans-serif">计算栈（纵向）</text>
-    <!-- Layer 1: 应用/模型 (purple) -->
-    <rect x="30" y="24" width="200" height="38" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
-    <text x="130" y="47" text-anchor="middle" font-size="13" fill="#5B21B6" font-weight="bold" font-family="sans-serif">应用 / 模型</text>
-    <!-- Layer 2: 编译器 (amber) -->
-    <rect x="30" y="68" width="200" height="38" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-    <text x="130" y="87" text-anchor="middle" font-size="13" fill="#92400E" font-weight="bold" font-family="sans-serif">编译器  LLVM / MLIR / TVM</text>
-    <!-- Layer 3: 处理器架构 (blue) -->
-    <rect x="30" y="112" width="200" height="38" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-    <text x="130" y="131" text-anchor="middle" font-size="13" fill="#1D4ED8" font-weight="bold" font-family="sans-serif">处理器架构  CPU / GPU / DSA</text>
-    <!-- Layer 4: 物理硬件 (green) -->
-    <rect x="30" y="156" width="200" height="38" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-    <text x="130" y="175" text-anchor="middle" font-size="13" fill="#166534" font-weight="bold" font-family="sans-serif">物理硬件  晶体管 / SRAM</text>
-  </g>
-  <!-- Arrow: general → specialized -->
-  <g transform="translate(340,80)">
-    <text x="90" y="0" text-anchor="middle" font-size="12" fill="#94A3B8" font-family="sans-serif">领域专用化方向</text>
-    <line x1="10" y1="14" x2="168" y2="14" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6,3"/>
-    <polygon points="168,10 180,14 168,18" fill="#94A3B8"/>
-  </g>
-  <!-- Left chip: General CPU (wide, lots of idle space) -->
-  <g transform="translate(330,110)">
-    <rect x="0" y="0" width="90" height="72" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
-    <text x="45" y="16" text-anchor="middle" font-size="11" fill="#1D4ED8" font-weight="bold" font-family="sans-serif">通用 CPU</text>
-    <!-- idle area hatch -->
-    <rect x="8" y="22" width="74" height="42" rx="3" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" stroke-dasharray="4,3"/>
-    <text x="45" y="38" text-anchor="middle" font-size="9.5" fill="#60A5FA" font-family="sans-serif">大量电路</text>
-    <text x="45" y="52" text-anchor="middle" font-size="9.5" fill="#60A5FA" font-family="sans-serif">空转</text>
-  </g>
-  <!-- Right chip: Specialized DSA (narrow, perfectly sized) -->
-  <g transform="translate(460,118)">
-    <rect x="0" y="0" width="72" height="56" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-    <text x="36" y="16" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold" font-family="sans-serif">专用 DSA</text>
-    <rect x="8" y="22" width="56" height="26" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1"/>
-    <text x="36" y="39" text-anchor="middle" font-size="9" fill="#166534" font-family="sans-serif">完全匹配</text>
-  </g>
-  <!-- Labels below chips -->
-  <text x="375" y="200" text-anchor="middle" font-size="10" fill="#64748B" font-family="sans-serif">通用处理器</text>
-  <text x="496" y="200" text-anchor="middle" font-size="10" fill="#64748B" font-family="sans-serif">电路与任务完全匹配</text>
+<p>2004 年，Intel 的 Pentium 4 Prescott 处理器频率达到 3.8 GHz，散热功耗高达 115 瓦——某些评测媒体真的把它当成炉子来煎鸡蛋。那是"提频率换性能"这条路的终点：晶体管开关越快，动态功耗就越高；漏电流随温度指数级上涨，芯片开始自我加热失控。从那以后，工程师必须接受一个现实：同等制程下多放一倍的晶体管，性能不会自动翻倍。你必须用架构设计来挣每一点性能。</p>
+<p>CPU 的设计哲学是"让一件事情尽快完成"——为延迟而生。芯片内部大半面积不是执行单元，而是服务于"快"的控制机构：乱序执行引擎把原本串行的指令重排并行运行；分支预测器在 if-else 分叉前猜测哪条路会被走到，提前加载指令，猜错了再撤销；几十 MB 的 L3 缓存把最近用过的数据留在片内，避免去慢速 DRAM 取。这些机制让单条指令的延迟低至几个时钟周期——但在一块顶级服务器 CPU 的 Die 上，真正做乘法的执行单元只占很小一角，其余面积全在支撑这套复杂的控制逻辑。</p>
+<p>GPU 的设计哲学截然相反——为吞吐而生。渲染一帧图像时，屏幕上每个像素的颜色计算完全独立，天然并行。NVIDIA H100 有 16,896 个 CUDA 核心，每个核心不需要分支预测器，不需要乱序引擎，只需要执行最简单的浮点运算——但同时执行近两万个。当一批线程在等内存数据时，GPU 调度器立刻切换到另一批线程，让计算单元始终不空转。2012 年，AlexNet 在两块 GTX 580 上训练，比当时最好的 CPU 实现快了 40 倍。这不只是速度差异，而是揭示了神经网络的计算本质：大规模的、高度规律的矩阵乘法，没有数据相关的分支跳转，和 GPU 的并行结构天然匹配。</p>
+<p>但当模型从 AlexNet 的 6000 万参数膨胀到 GPT-3 的 1750 亿参数，新的瓶颈出现了：不是计算，是搬运数据。H100 的峰值算力是 2000 TFLOPS，但显存带宽只有 3.35 TB/s——一次 GPT-3 前向推理需要把数百 GB 的权重从显存搬进计算单元，芯片大量时间不是在算，而是在等。Google 的 TPU（2016）用脉动阵列（systolic array）回答了这个问题：矩阵的每行数据从左侧流入，权重固定在各自的乘法-累加单元上，计算结果向右传递，参数只需加载一次就能被反复复用。整块芯片的电路只做一件事——矩阵乘法——但这件事做到了极致，在神经网络推理上的能效比同代 GPU 高 30-80 倍。代价是：它几乎不能做别的。</p>
+<div><svg viewBox="0 0 860 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <rect x="8" y="8" width="844" height="244" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- ── CPU column ── -->
+  <text x="148" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">CPU</text>
+  <text x="148" y="47" text-anchor="middle" font-size="10" fill="#64748B">少数复杂核 · 为延迟而生</text>
+  <!-- 4 big cores -->
+  <rect x="36" y="56" width="100" height="52" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="86" y="75" text-anchor="middle" font-size="9" fill="#1E40AF">OOO执行引擎</text>
+  <text x="86" y="88" text-anchor="middle" font-size="9" fill="#1E40AF">分支预测器</text>
+  <text x="86" y="101" text-anchor="middle" font-size="9" fill="#1E40AF">L1/L2 Cache</text>
+  <rect x="160" y="56" width="100" height="52" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="210" y="75" text-anchor="middle" font-size="9" fill="#1E40AF">OOO执行引擎</text>
+  <text x="210" y="88" text-anchor="middle" font-size="9" fill="#1E40AF">分支预测器</text>
+  <text x="210" y="101" text-anchor="middle" font-size="9" fill="#1E40AF">L1/L2 Cache</text>
+  <rect x="36" y="116" width="100" height="52" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="86" y="135" text-anchor="middle" font-size="9" fill="#1E40AF">OOO执行引擎</text>
+  <text x="86" y="148" text-anchor="middle" font-size="9" fill="#1E40AF">分支预测器</text>
+  <text x="86" y="161" text-anchor="middle" font-size="9" fill="#1E40AF">L1/L2 Cache</text>
+  <rect x="160" y="116" width="100" height="52" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="210" y="135" text-anchor="middle" font-size="9" fill="#1E40AF">OOO执行引擎</text>
+  <text x="210" y="148" text-anchor="middle" font-size="9" fill="#1E40AF">分支预测器</text>
+  <text x="210" y="161" text-anchor="middle" font-size="9" fill="#1E40AF">L1/L2 Cache</text>
+  <!-- L3 shared cache bar -->
+  <rect x="36" y="177" width="224" height="22" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1"/>
+  <text x="148" y="193" text-anchor="middle" font-size="10" fill="#1D4ED8">共享 L3 Cache（数十 MB）</text>
+  <text x="148" y="228" text-anchor="middle" font-size="11" fill="#1D4ED8" font-weight="600">4–64 核心</text>
+  <text x="148" y="244" text-anchor="middle" font-size="9" fill="#64748B">任意程序，低延迟</text>
+  <!-- divider -->
+  <line x1="295" y1="20" x2="295" y2="248" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- ── GPU column ── -->
+  <text x="438" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">GPU</text>
+  <text x="438" y="47" text-anchor="middle" font-size="10" fill="#64748B">海量简单核 · 为吞吐而生</text>
+  <!-- 5×6 grid of small cores -->
+  <rect x="305" y="56" width="266" height="145" rx="6" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="438" y="73" text-anchor="middle" font-size="9" fill="#6D28D9">流式多处理器（SM）× 132</text>
+  <!-- grid dots: 8 cols × 5 rows -->
+  <rect x="316" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="340" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="364" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="388" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="412" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="436" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="460" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="484" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="508" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="532" y="79" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="316" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="340" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="364" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="388" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="412" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="436" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="460" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="484" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="508" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="532" y="99" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="316" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="340" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="364" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="388" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="412" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="436" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="460" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="484" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="508" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="532" y="119" width="18" height="14" rx="2" fill="#C4B5FD"/>
+  <rect x="316" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="340" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="364" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="388" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="412" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="436" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="460" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="484" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="508" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="532" y="139" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="316" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="340" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="364" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="388" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="412" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="436" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="460" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="484" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="508" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <rect x="532" y="159" width="18" height="14" rx="2" fill="#A78BFA"/>
+  <text x="438" y="228" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="600">~17,000 核心</text>
+  <text x="438" y="244" text-anchor="middle" font-size="9" fill="#64748B">并行规则计算，隐藏延迟</text>
+  <!-- divider -->
+  <line x1="582" y1="20" x2="582" y2="248" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- ── TPU/DSA column ── -->
+  <text x="722" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#15803D">TPU / DSA</text>
+  <text x="722" y="47" text-anchor="middle" font-size="10" fill="#64748B">脉动阵列 · 为矩阵乘而生</text>
+  <!-- systolic array: 5×5 MAC units with flow arrows -->
+  <!-- data flows right →, partial sums flow down ↓ -->
+  <!-- row 1 -->
+  <rect x="600" y="60" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="614" y="75" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="642" y="60" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="656" y="75" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="684" y="60" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="698" y="75" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="726" y="60" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="740" y="75" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="768" y="60" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="782" y="75" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <!-- row 2 -->
+  <rect x="600" y="94" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="614" y="109" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="642" y="94" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="656" y="109" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="684" y="94" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="698" y="109" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="726" y="94" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="740" y="109" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="768" y="94" width="28" height="22" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="782" y="109" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <!-- row 3 -->
+  <rect x="600" y="128" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="614" y="143" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="642" y="128" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="656" y="143" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="684" y="128" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="698" y="143" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="726" y="128" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="740" y="143" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="768" y="128" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="782" y="143" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <!-- row 4 -->
+  <rect x="600" y="162" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="614" y="177" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="642" y="162" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="656" y="177" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="684" y="162" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="698" y="177" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="726" y="162" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="740" y="177" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <rect x="768" y="162" width="28" height="22" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="782" y="177" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
+  <!-- data flow arrow: → left side -->
+  <text x="592" y="73" text-anchor="end" font-size="9" fill="#15803D">输入→</text>
+  <text x="592" y="107" text-anchor="end" font-size="9" fill="#15803D">输入→</text>
+  <text x="592" y="141" text-anchor="end" font-size="9" fill="#15803D">输入→</text>
+  <text x="592" y="175" text-anchor="end" font-size="9" fill="#15803D">输入→</text>
+  <!-- partial sum arrow: ↓ bottom -->
+  <text x="614" y="196" text-anchor="middle" font-size="9" fill="#15803D">↓</text>
+  <text x="656" y="196" text-anchor="middle" font-size="9" fill="#15803D">↓</text>
+  <text x="698" y="196" text-anchor="middle" font-size="9" fill="#15803D">↓</text>
+  <text x="740" y="196" text-anchor="middle" font-size="9" fill="#15803D">↓</text>
+  <text x="782" y="196" text-anchor="middle" font-size="9" fill="#15803D">↓</text>
+  <text x="722" y="228" text-anchor="middle" font-size="11" fill="#15803D" font-weight="600">256×256 MAC</text>
+  <text x="722" y="244" text-anchor="middle" font-size="9" fill="#64748B">只做矩阵乘，能效极高</text>
 </svg></div>
 
-<p>研究者日常工作的核心是"设计-验证-分析"的循环。用 Verilog 或 Chisel 写硬件描述代码，在仿真器里验证逻辑正确，用 EDA 工具做综合和时序分析，在 FPGA 上跑原型评估性能，最终通过分析内存访问模式、执行效率、功耗分解来定位瓶颈并迭代。学术组的论文通常不需要真的流片，而是通过 RTL 仿真 + 工艺库估算，给出面积、频率、功耗等指标的量化对比。这个方向要求同时懂算法（知道 Transformer attention 的计算瓶颈在哪）和电路（知道如何在硬件上高效实现），是 EE 和 CS 交叉最密集的子领域之一。</p>
-<p>架构研究者离不开编译器。一块加速器芯片固化了计算的物理形态，但如果没有编译器把 PyTorch 模型或 C 程序翻译成芯片实际能执行的指令序列，它只是一块昂贵的硅片。LLVM 是当今最主要的编译器基础设施，几乎所有主流 CPU 和 GPU 的编译链都建立在它之上；MLIR（Multi-Level Intermediate Representation）是 Google 专为 AI 编译器设计的可扩展框架，允许研究者在不同抽象层（张量运算 → 循环 → 硬件指令）之间灵活转化；TVM 则是面向深度学习推理的端到端编译器，能把 ONNX 格式的神经网络自动优化并部署到 CPU、GPU、加速器等各类硬件上。这套"算法→编译器→硬件"的完整栈被 ASPLOS（体系结构与编程语言和操作系统的交叉会议）所深度覆盖，构成现代计算系统研究最活跃的发表阵地之一。编译器与架构的研究问题深度交织：AutoTVM 的算子调优、多面体变换（polyhedral model）的循环优化、算子融合与内存规划，都需要研究者同时理解编译器内部和硬件微架构，两个方向的人在 ASPLOS 上共享同一套问题集合。</p>
+<p>这就带来了现代架构研究最棘手的问题：你现在有 CPU、GPU、TPU、Apple Neural Engine、华为昇腾、寒武纪 MLU——每种芯片内部的计算单元、内存层次、指令集都不一样，你的 PyTorch 模型怎么在它们上面都跑？答案是编译器。LLVM 提供一套"通用中间层"，所有芯片厂商把自己的硬件规格写成后端，所有编程语言把语法翻译成前端，中间层负责优化和衔接；MLIR 把这个想法扩展到张量运算层次，允许在"矩阵乘法"和"硬件指令"之间多个抽象层灵活变换；TVM 在此基础上加入自动调优——用搜索算法在数百万种可能的循环分块和内存布局方案里，找出针对特定硬件的最优配置。架构和编译器的研究问题深度交织：你设计了一块新芯片，必须同时设计编译器才能让别人用得上；你发现了一种新的编译优化，可能需要微架构提供硬件支持才能真正生效。研究者日常工作的核心是"RTL设计—仿真验证—编译器支持"的循环，ASPLOS 这个顶会名字里同时带着 Architecture、Programming Languages 和 Operating Systems，不是偶然。</p>
 <h2 id="_2">适合什么样的人</h2>
 <p>这个方向最适合那些对"计算机为什么能快"这个问题感到真正好奇的人——不满足于"因为时钟频率高"这种答案，而是想弄清楚每一条指令从发出到执行中间经历了什么，每一块电路为什么要那样设计。</p>
 <p>如果你学 Verilog 或 Chisel 的时候会忍不住想"这段代码综合出来的电路长什么样"，而不只是把它当作描述语言用，这个方向非常适合你。同样，如果你读 Transformer 的论文时第一反应是"这个 attention 的矩阵乘法要消耗多少带宽"而不只是"精度怎么样"，你已经有了这个方向研究者需要的直觉。</p>
