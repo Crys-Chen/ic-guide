@@ -43,6 +43,7 @@
   background-color: var(--md-default-bg-color);
   border-bottom: 2px solid #032168;
   box-shadow: none;
+  padding-bottom: .5rem;
 }
 
 .md-tabs__list {
@@ -52,10 +53,10 @@
 
 .md-tabs__link {
   font-weight: 700;
-  font-size: .85rem;
+  font-size: .95rem;
   letter-spacing: .03em;
-  padding: .55em 1.6rem;
-  border-radius: 8px;
+  padding: .75em 2.2rem;
+  border-radius: 10px;
   transition: background .18s, color .18s;
 }
 
