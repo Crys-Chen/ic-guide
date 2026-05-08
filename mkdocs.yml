@@ -205,7 +205,7 @@ plugins:
             具身智能: Embodied Intelligence
             量子计算与量子芯片: Quantum Computing and Quantum Chips
   - search:
-      separator: "(?<=[一-鿿])(?=[一-鿿])|(?<=[一-鿿])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[一-鿿])|[\s​\-\!\.\,\;\:（）【】「」、。，！？；：\(\)]+"
+      separator: '(?<=[一-鿿])(?=[一-鿿])|(?<=[一-鿿])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[一-鿿])|[\s​\-\!\.\,\;\:（）【】「」、。，！？；：\(\)]+'
   - git-revision-date:
   - minify:
       minify_html: false
