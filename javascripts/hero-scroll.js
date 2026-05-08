@@ -34,7 +34,7 @@
       width:      '100%',
       marginLeft: '0',
       marginTop:  '0',
-      zIndex:     '9',
+      zIndex:     '1',
       transition: 'opacity 0.15s ease',
     });
 
