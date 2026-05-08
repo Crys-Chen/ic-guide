@@ -20,15 +20,29 @@
   --md-accent-fg-color--transparent: rgba(138, 171, 222, .1);
 }
 
-/* ─── 顶部 Header 加高 ──────────────────────────────────── */
+/* ─── 顶部 Header：统一背景色，与正文对齐 ───────────────── */
+[data-md-color-scheme="default"] .md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-typeset-color);
+  box-shadow: none;
+  border-bottom: 1px solid rgba(3,33,104,.10);
+}
+[data-md-color-scheme="default"] .md-header__button,
+[data-md-color-scheme="default"] .md-header__title,
+[data-md-color-scheme="default"] .md-search__icon {
+  color: var(--md-typeset-color) !important;
+}
+
 .md-header__inner {
   padding-top: .6rem;
   padding-bottom: .6rem;
 }
 
-/* ─── Tabs 行：铺满全宽 + 字号加大 + 加粗 ──────────────── */
-.md-tabs {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+/* ─── Tabs 行：铺满全宽 + 统一背景 ─────────────────────── */
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: var(--md-default-bg-color);
+  border-bottom: 2px solid #032168;
+  box-shadow: none;
 }
 
 .md-tabs__list {
@@ -40,9 +54,22 @@
   font-weight: 700;
   font-size: .85rem;
   letter-spacing: .03em;
-  padding: .28em 1rem;
-  border-radius: 6px;
+  padding: .55em 1.6rem;
+  border-radius: 8px;
   transition: background .18s, color .18s;
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: rgba(3,33,104,.55) !important;
+}
+[data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-scheme="default"] .md-tabs__link:focus {
+  background: rgba(3,33,104,.07);
+  color: #032168 !important;
+}
+[data-md-color-scheme="default"] .md-tabs__link--active {
+  color: #032168 !important;
+  background: rgba(3,33,104,.08);
 }
 
 /* ─── 表格 ──────────────────────────────────────────────── */
