@@ -43,7 +43,9 @@
   background-color: var(--md-default-bg-color);
   border-bottom: 2px solid #032168;
   box-shadow: none;
-  padding-bottom: .5rem;
+  height: auto !important;
+  padding-top: .3rem;
+  padding-bottom: .45rem;
 }
 
 .md-tabs__list {
