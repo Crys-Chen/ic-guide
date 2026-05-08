@@ -44,13 +44,19 @@
   border-bottom: 2px solid #032168;
   box-shadow: none;
   height: auto !important;
+  overflow: visible !important;
   padding-top: .3rem;
   padding-bottom: .45rem;
+}
+[data-md-color-scheme="default"] .md-tabs__inner {
+  overflow: visible !important;
 }
 
 .md-tabs__list {
   justify-content: space-evenly;
   width: 100%;
+  overflow: visible !important;
+  height: auto !important;
 }
 
 .md-tabs__link {
