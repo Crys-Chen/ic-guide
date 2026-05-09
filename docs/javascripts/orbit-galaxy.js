@@ -178,21 +178,26 @@
     if (!sectorSvgEl || sectorLineEls.length === 0) return;
     var sx = getScaleX(), sy = getScaleY();
     var cx = stageW * 0.5, cy = stageH * 0.5;
-    var outerRx = RING_RADII[3] * sx * 1.05;
-    var outerRy = RING_RADII[3] * sy * 1.05;
-    /* clamp label radius so labels never go off-screen on narrow/short viewports */
-    var labelRx = Math.min(RING_RADII[3] * sx * 1.13, stageW * 0.46);
-    var labelRy = Math.min(RING_RADII[3] * sy * 1.13, stageH * 0.44);
+    /* Divider lines: only in the outer buffer band, never cross card area. */
+    var innerRx = RING_RADII[3] * sx * 1.04;
+    var innerRy = RING_RADII[3] * sy * 1.04;
+    var outerRx = RING_RADII[3] * sx * 1.16;
+    var outerRy = RING_RADII[3] * sy * 1.16;
+    /* Labels: clamp to keep text fully on screen (reserve ~50px for label width
+       on each side). High z-index in CSS keeps them above cards/dividers. */
+    var labelRx = Math.min(RING_RADII[3] * sx * 1.22, stageW * 0.5 - 50);
+    var labelRy = Math.min(RING_RADII[3] * sy * 1.22, stageH * 0.5 - 16);
 
     SECTORS.forEach(function (sec, i) {
-      /* divider line at sector START angle */
+      /* divider line at sector START angle (outer band only) */
       var lineAngle = sec.start + globalAngle;
-      sectorLineEls[i].setAttribute('x1', cx);
-      sectorLineEls[i].setAttribute('y1', cy);
-      sectorLineEls[i].setAttribute('x2', cx + outerRx * Math.cos(lineAngle));
-      sectorLineEls[i].setAttribute('y2', cy + outerRy * Math.sin(lineAngle));
+      var ca = Math.cos(lineAngle), sn = Math.sin(lineAngle);
+      sectorLineEls[i].setAttribute('x1', cx + innerRx * ca);
+      sectorLineEls[i].setAttribute('y1', cy + innerRy * sn);
+      sectorLineEls[i].setAttribute('x2', cx + outerRx * ca);
+      sectorLineEls[i].setAttribute('y2', cy + outerRy * sn);
 
-      /* label at sector MID angle, outside outermost ring */
+      /* label at sector MID angle */
       var midAngle = (sec.start + sec.end) / 2 + globalAngle;
       sectorLabelEls[i].style.left = (cx + labelRx * Math.cos(midAngle)) + 'px';
       sectorLabelEls[i].style.top  = (cy + labelRy * Math.sin(midAngle)) + 'px';

@@ -1523,11 +1523,13 @@
 /* ── Ring label ─────────────────────────────────────────── */
 .rg-ring-label {
   position: absolute !important;
-  font-size: .55rem;
-  opacity: .45;
+  font-size: .72rem;
+  font-weight: 600;
+  opacity: .85;
   pointer-events: none;
   white-space: nowrap;
   font-family: "Inter", "Noto Sans SC", sans-serif;
+  z-index: 20;
 }
 
 /* ── Dark mode tweaks ───────────────────────────────────── */
