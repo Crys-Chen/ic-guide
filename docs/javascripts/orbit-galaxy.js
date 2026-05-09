@@ -49,35 +49,36 @@
   /* ── Card definitions with explicit (ring, angle) ───────────── */
   /* Layout solved via constraint search:
        - Each card box ≥12px clear of every radial divider line
-       - Ring-3 cards stay ≥10° from sector midpoint angles, where the
-         section labels live (otherwise outer cards eclipse the label)
-       - No two cards overlap at any rotation (verified across viewports)
-       - All 4 rings used (distribution 2/4/4/7) for visual depth */
+       - Ring-3 cards stay ≥14° from sector midpoint angles, ring-2 ≥4°
+         (sector labels are ~80px wide ≈ 12° arc at ring 3 — cards must
+         clear the entire label footprint, not just its center point)
+       - No two cards overlap at any rotation (8px inter-card gap)
+       - All 4 rings used (distribution 3/3/5/6) for visual depth */
   var ALL_CARDS = (function () {
     function deg(d) { return d * DEG; }
     return [
       /* ── 器件与制造 — sector 0, 5 cards (-54°..54°) ── */
       { name: '半导体器件与先进工艺',  tag: 'EUV · FinFET · GAA · 2D材料', url: '半导体器件与先进工艺',  ring: 0, angle: deg(  0) },
-      { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',          url: '功率半导体与宽禁带器件', ring: 1, angle: deg(-27) },
-      { name: '光电子与硅光集成',      tag: '硅光调制器 · 光子神经网络',    url: '光电子与硅光集成',      ring: 2, angle: deg(  0) },
-      { name: 'MEMS与微纳传感器',      tag: '惯性传感 · CMUT · 气体传感',   url: 'MEMS与微纳传感器',      ring: 3, angle: deg(-15) },
-      { name: '先进封装与异构集成',    tag: 'Chiplet · TSV · CoWoS',        url: '先进封装与异构集成',    ring: 2, angle: deg( 22) },
+      { name: '功率半导体与宽禁带器件', tag: 'SiC · GaN · 逆变器',          url: '功率半导体与宽禁带器件', ring: 1, angle: deg(-28) },
+      { name: '光电子与硅光集成',      tag: '硅光调制器 · 光子神经网络',    url: '光电子与硅光集成',      ring: 2, angle: deg( -4) },
+      { name: 'MEMS与微纳传感器',      tag: '惯性传感 · CMUT · 气体传感',   url: 'MEMS与微纳传感器',      ring: 3, angle: deg( 14) },
+      { name: '先进封装与异构集成',    tag: 'Chiplet · TSV · CoWoS',        url: '先进封装与异构集成',    ring: 2, angle: deg( 30) },
       /* ── 电路设计 — sector 1, 3 cards (54°..118°) ── */
-      { name: '射频与毫米波IC',        tag: 'LNA · PA · 毫米波雷达',        url: '射频与毫米波IC',        ring: 1, angle: deg( 87) },
-      { name: '模拟与混合信号IC',      tag: 'ADC · DAC · PLL',              url: '模拟与混合信号IC',      ring: 3, angle: deg( 96) },
-      { name: '生物电子与脑机接口',    tag: '神经信号 · 植入式ASIC',        url: '生物电子与脑机接口',    ring: 3, angle: deg( 76) },
+      { name: '射频与毫米波IC',        tag: 'LNA · PA · 毫米波雷达',        url: '射频与毫米波IC',        ring: 2, angle: deg( 82) },
+      { name: '模拟与混合信号IC',      tag: 'ADC · DAC · PLL',              url: '模拟与混合信号IC',      ring: 0, angle: deg( 87) },
+      { name: '生物电子与脑机接口',    tag: '神经信号 · 植入式ASIC',        url: '生物电子与脑机接口',    ring: 3, angle: deg(100) },
       /* ── 计算 — sector 2, 3 cards (118°..182°) ── */
-      { name: '处理器架构与编译系统',  tag: 'GPU · TPU · LLVM · MLIR',      url: '处理器架构与编译系统',  ring: 1, angle: deg(147) },
-      { name: '存算一体与近存计算',    tag: 'SRAM-CIM · PIM · HBM',         url: '存算一体与近存计算',    ring: 2, angle: deg(166) },
-      { name: '可重构计算与FPGA',      tag: '灵活性 × 专用性能',            url: '可重构计算与FPGA',      ring: 3, angle: deg(140) },
+      { name: '处理器架构与编译系统',  tag: 'GPU · TPU · LLVM · MLIR',      url: '处理器架构与编译系统',  ring: 1, angle: deg(146) },
+      { name: '存算一体与近存计算',    tag: 'SRAM-CIM · PIM · HBM',         url: '存算一体与近存计算',    ring: 2, angle: deg(167) },
+      { name: '可重构计算与FPGA',      tag: '灵活性 × 专用性能',            url: '可重构计算与FPGA',      ring: 3, angle: deg(136) },
       /* ── 设计基础设施 — sector 3, 2 cards (182°..226°) ── */
-      { name: 'EDA与设计自动化',       tag: '布局布线 · ML for EDA',        url: 'EDA与设计自动化',       ring: 1, angle: deg(207) },
-      { name: '硬件安全与可信计算',    tag: '侧信道 · 木马 · PUF',          url: '硬件安全与可信计算',    ring: 3, angle: deg(214) },
+      { name: 'EDA与设计自动化',       tag: '布局布线 · ML for EDA',        url: 'EDA与设计自动化',       ring: 1, angle: deg(208) },
+      { name: '硬件安全与可信计算',    tag: '侧信道 · 木马 · PUF',          url: '硬件安全与可信计算',    ring: 3, angle: deg(218) },
       /* ── 交叉延伸方向 — sector 4, 4 cards (226°..306°) ── */
       { name: 'AI算法与系统',          tag: 'LLM · TinyML · AI Agent',      url: 'AI算法与系统',          ring: 0, angle: deg(267) },
-      { name: '类脑芯片',              tag: '忆阻器 · SNN · 脉冲神经网络',  url: '类脑芯片',              ring: 2, angle: deg(267) },
+      { name: '类脑芯片',              tag: '忆阻器 · SNN · 脉冲神经网络',  url: '类脑芯片',              ring: 2, angle: deg(270) },
       { name: '具身智能',              tag: '机器人 · 感知 · 规划',         url: '具身智能',              ring: 3, angle: deg(252) },
-      { name: '量子计算与量子芯片',    tag: '量子比特 · 纠错 · 低温',       url: '量子计算与量子芯片',    ring: 3, angle: deg(282) },
+      { name: '量子计算与量子芯片',    tag: '量子比特 · 纠错 · 低温',       url: '量子计算与量子芯片',    ring: 3, angle: deg(286) },
     ];
   })();
 
