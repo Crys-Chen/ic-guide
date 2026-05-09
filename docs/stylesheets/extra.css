@@ -41,7 +41,7 @@
 /* ─── Tabs 行：铺满全宽 + 统一背景 ─────────────────────── */
 [data-md-color-scheme="default"] .md-tabs {
   background: #ffffff !important;
-  border-bottom: 2px solid #032168 !important;
+  border-bottom: 1px solid #032168 !important;
   box-shadow: none !important;
   height: auto !important;
 }
@@ -61,7 +61,7 @@
   padding: .4rem 2.2rem .25rem !important;
   display: flex !important;
   align-items: center !important;
-  border-radius: 10px;
+  border-radius: 6px 6px 0 0;
   transition: background .18s, color .18s;
 }
 
@@ -1322,7 +1322,7 @@
 [data-md-color-scheme="default"] .md-tabs {
   --md-primary-bg-color: #0A0706;
   background: #ffffff !important;
-  border-bottom: 2px solid #032168 !important;
+  border-bottom: 1px solid #032168 !important;
   box-shadow: none !important;
 }
 [data-md-color-scheme="default"] .md-tabs__link { color: rgba(10,7,6,.55) !important; }
