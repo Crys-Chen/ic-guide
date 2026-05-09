@@ -1468,6 +1468,7 @@
     box-shadow .22s,
     opacity .18s;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .rg-card-icon {
@@ -1486,6 +1487,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word;
+  width: 100%;
 }
 
 /* Hover subtitle removed entirely — names are self-explanatory. */
@@ -1503,11 +1505,13 @@
   width: 172px !important;
   min-height: 48px !important;
   box-shadow: 0 10px 36px rgba(0,63,136,0.22), 0 3px 10px rgba(0,0,0,0.12) !important;
+  overflow: hidden !important;
 }
 
+/* Active state inherits base name rules (line-clamp:2 + break-word).
+   Do NOT use word-break: keep-all here — long CJK names (≥9 chars)
+   would refuse to wrap and overflow the 172px box horizontally. */
 .rg-card.rg-active .rg-card-name {
-  white-space: normal !important;
-  word-break: keep-all !important;
   -webkit-line-clamp: 2 !important;
 }
 
