@@ -40,26 +40,25 @@
 
 /* ─── Tabs 行：铺满全宽 + 统一背景 ─────────────────────── */
 [data-md-color-scheme="default"] .md-tabs {
-  background-color: var(--md-default-bg-color);
-  border-bottom: 2px solid #032168;
-  box-shadow: none;
-  height: 3.4rem !important;
+  background: #ffffff !important;
+  border-bottom: 2px solid #032168 !important;
+  box-shadow: none !important;
+  height: auto !important;
 }
-.md-tabs__inner { height: 100% !important; }
+.md-tabs__inner { height: auto !important; }
 .md-tabs__list {
   justify-content: space-evenly;
   width: 100%;
-  height: 100% !important;
-  align-items: stretch !important;
+  height: auto !important;
 }
-.md-tabs__item  { height: 100% !important; }
+.md-tabs__item  { height: auto !important; }
 
 .md-tabs__link {
   font-weight: 700;
   font-size: .95rem;
   letter-spacing: .03em;
-  height: 100% !important;
-  padding: 0 2.2rem !important;
+  height: auto !important;
+  padding: .4rem 2.2rem .25rem !important;
   display: flex !important;
   align-items: center !important;
   border-radius: 10px;
@@ -921,27 +920,7 @@
   .d4-item { gap: 1rem; }
 }
 
-/* ── D4 修复：header 文字可见性 */
-[data-md-color-scheme="default"] .md-header {
-  --md-primary-bg-color: #06091A;
-  background: #fff !important;
-  border-bottom: 2px solid #032168 !important;
-  box-shadow: none !important;
-}
-[data-md-color-scheme="default"] .md-header .md-header__button,
-[data-md-color-scheme="default"] .md-header .md-header__title { color: #06091A !important; }
-[data-md-color-scheme="default"] .md-tabs {
-  --md-primary-bg-color: #06091A;
-  background: #fff !important;
-  border-bottom: 1px solid rgba(0,0,0,.10) !important;
-  box-shadow: none !important;
-}
-[data-md-color-scheme="default"] .md-tabs__link { color: rgba(6,9,26,.58) !important; }
-[data-md-color-scheme="default"] .md-tabs__link--active { color: #032168 !important; }
-[data-md-color-scheme="default"] .md-tabs__link:hover {
-  background: #032168 !important;
-  color: #fff !important;
-}
+/* ── D4 stale overrides removed — consolidated into top and bottom blocks */
 
 /* ═══════════════════════════════════════════════════════
    DESIGN-FINAL: Dual-mode homepage
@@ -1334,7 +1313,7 @@
 }
 [data-md-color-scheme="default"] .md-header {
   --md-primary-bg-color: #0A0706;
-  background: #FDFCFA !important;
+  background: #ffffff !important;
   border-bottom: 2px solid #032168 !important;
   box-shadow: none !important;
 }
@@ -1342,8 +1321,8 @@
 [data-md-color-scheme="default"] .md-header .md-header__title { color: #0A0706 !important; }
 [data-md-color-scheme="default"] .md-tabs {
   --md-primary-bg-color: #0A0706;
-  background: rgba(253,252,250,.99) !important;
-  border-bottom: 1px solid rgba(0,0,0,.08) !important;
+  background: #ffffff !important;
+  border-bottom: 2px solid #032168 !important;
   box-shadow: none !important;
 }
 [data-md-color-scheme="default"] .md-tabs__link { color: rgba(10,7,6,.55) !important; }
