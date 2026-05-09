@@ -1452,7 +1452,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 130px;
+  width: 140px;
   min-height: 44px;
   padding: .45rem .65rem .45rem .75rem;
   border-radius: 8px;
@@ -1481,17 +1481,16 @@
   font-family: "Inter", "Noto Sans SC", sans-serif;
   color: var(--md-default-fg-color);
   white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
 }
 
+/* Hover subtitle removed entirely — names are self-explanatory. */
 .rg-card-tag {
-  font-size: .72rem;
-  line-height: 1.35;
-  color: var(--md-default-fg-color);
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: opacity .2s, max-height .2s;
+  display: none !important;
 }
 
 /* ── Hover: active card ─────────────────────────────────── */
@@ -1509,15 +1508,7 @@
 .rg-card.rg-active .rg-card-name {
   white-space: normal !important;
   word-break: keep-all !important;
-}
-
-.rg-card.rg-active .rg-card-tag {
-  opacity: .60 !important;
-  max-height: 20px !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  width: 100% !important;
+  -webkit-line-clamp: 2 !important;
 }
 
 /* ── Dim other cards on hover ───────────────────────────── */
@@ -1544,10 +1535,22 @@
   opacity: .22 !important;
 }
 
+/* ── Tablet / narrow desktop: shrink cards to keep ellipse fit ── */
+@media (min-width: 621px) and (max-width: 1000px) {
+  .rg-card-inner {
+    width: 110px;
+    min-height: 40px;
+    padding: .4rem .55rem .4rem .65rem;
+  }
+  .rg-card-name {
+    font-size: .78rem;
+  }
+}
+
 /* ── Mobile: smaller cards, fallback hidden ─────────────── */
 @media (max-width: 620px) {
   .rg-card-inner {
-    width: 90px;
+    width: 105px;
     min-height: 36px;
     padding: .35rem .5rem .35rem .6rem;
   }
