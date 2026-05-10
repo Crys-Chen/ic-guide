@@ -202,7 +202,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     高效深度学习 · LLM 量化与压缩（AWQ/SpAtten）· TinyML · 硬件感知 NAS
 
--   **[Vivienne Sze](https://eems.mit.edu/)** <span class="badge-intl">MIT</span> <span class="prof-w"></span>
+-   **[Vivienne Sze（施）](https://eems.mit.edu/)** <span class="badge-intl">MIT</span> <span class="prof-w"></span>
 
     硬件高效深度学习 · 神经网络加速器设计 · 边缘视觉计算
 
@@ -246,7 +246,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     元学习 · 高效学习适应 · 机器人强化学习
 
--   **[Percy Liang](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
+-   **[Percy Liang（梁）](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
 
     基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
 
