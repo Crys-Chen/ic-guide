@@ -209,11 +209,17 @@ plugins:
             具身智能: Embodied Intelligence
             量子计算与量子芯片: Quantum Computing and Quantum Chips
   - search:
+      # 显式只用 en stemmer——避免 Material 对 zh 自动加载 TinySegmenter
+      # (一个日语分词器,对中文 query 切分错误)。中文匹配完全靠 separator
+      # + scripts/inject_ngrams.py 注入的 n-gram tokens。
+      lang:
+        - en
       # CJK-to-CJK 不切分(原文整段中文为一个长 token),只在中/英切换、
-      # 标点、零宽空格(​)处切分。中文短语搜索由 hooks.py 注入的 n-gram
-      # token 承担:每页所有 2~4 字 n-gram 用零宽空格连接追加进 doc.text,
-      # 可被 lunr 作为独立 token 索引。
-      separator: '(?<=[一-鿿])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[一-鿿])|[\s​\-\!\.\,\;\:（）【】「」、。，！？；：\(\)]+'
+      # 标点、零宽空格(​)、HTML 标签字符(< > = " ')处切分。中文短语
+      # 搜索由 inject_ngrams.py 注入的 n-gram token 承担:每页所有 2~4
+      # 字 n-gram 包在 <span style="display:none"> 中以 ZWSP 分隔追加进
+      # doc.text。客户端 excerpt 用 innerHTML 渲染,span 整体不可见。
+      separator: '(?<=[一-鿿])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[一-鿿])|[\s​\-\!\.\,\;\:（）【】「」、。，！？；：\(\)<>="'']+'
   - git-revision-date:
   - minify:
       minify_html: false

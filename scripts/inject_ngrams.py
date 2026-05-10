@@ -38,6 +38,13 @@ def patch(idx_path: str) -> int:
         return 1
     with open(idx_path, encoding='utf-8') as f:
         data = json.load(f)
+    # Force lunr to use only English tokenizer/stemmer; the default zh
+    # path loads TinySegmenter (a Japanese tokenizer that mis-segments
+    # Chinese queries like "存算一体" into single chars). With only 'en',
+    # query tokenization follows our configured separator and our injected
+    # n-grams become the authoritative match path.
+    cfg = data.setdefault('config', {})
+    cfg['lang'] = ['en']
     total = 0
     docs = data.get('docs', [])
     for doc in docs:
@@ -45,11 +52,16 @@ def patch(idx_path: str) -> int:
         for field in ('text', 'title'):
             grams |= extract_ngrams(doc.get(field, ''))
         if grams:
-            doc['text'] = doc.get('text', '') + _ZWSP + _ZWSP.join(sorted(grams))
+            # Each n-gram in its own hidden <span> so any excerpt slice
+            # containing one always has the matching </span> nearby —
+            # avoids unclosed spans hiding subsequent excerpt content.
+            payload = ''.join(f'<span style="display:none">{g}</span>'
+                              for g in sorted(grams))
+            doc['text'] = doc.get('text', '') + payload
             total += len(grams)
     with open(idx_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
-    print(f'[inject_ngrams] {idx_path}: {total} n-grams across {len(docs)} docs')
+    print(f'[inject_ngrams] {idx_path}: {total} n-grams across {len(docs)} docs (lang=en only)')
     return 0
 
 
