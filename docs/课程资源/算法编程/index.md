@@ -9,11 +9,12 @@ graph LR
     A["编程入门<br/>Python · C/C++ · Rust"] --> B["数据结构与算法<br/>CS61B · 6.006 · Algo"]
     B --> C["编程语言设计与分析<br/>CS242 · NJU/PKU 软件分析"]
     A --> D["软件工程<br/>MIT 6.031 · CS169"]
+    B --> E["计算机图形学<br/>GAMES101 · CMU 15-462"]
 
     classDef foundation fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef advanced fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
     class A foundation
-    class B,C,D advanced
+    class B,C,D,E advanced
 ```
 
 ---
@@ -26,12 +27,16 @@ graph LR
 
 **[软件工程](软件工程/)** — 测试驱动开发、规约、模块化；写工业级代码的核心训练,做 EDA 工具开发或大型仿真器研究都受益。
 
+**[计算机图形学](计算机图形学/)** — GAMES101/202/103、Stanford CS148、CMU 15-462；图形管线、光线追踪、物理仿真;做 GPU 架构、AI 视觉、具身智能仿真器都直接相关。
+
 ## 对科研方向的作用
 
 | 对应科研方向 | 推荐子板块 | 为什么 |
 |---|---|---|
 | [EDA 与设计自动化](../../科研方向/EDA与设计自动化.md) | 数据结构与算法 + 软件工程 | EDA 本质是图算法 + 大型 C++ 工程,Yosys/OpenROAD 都是百万行级代码 |
-| [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md) | 编程语言设计与分析 | LLVM/MLIR/TVM 内核就是程序分析与变换 |
+| [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md) | 编程语言设计与分析 + 计算机图形学 | LLVM/MLIR/TVM 是程序分析;图形学帮助理解 GPU 工作负载 |
 | [硬件安全与可信计算](../../科研方向/硬件安全与可信计算.md) | 编程语言设计与分析 | 侧信道分析与形式验证依赖类型系统、抽象解释 |
-| [AI 算法与系统](../../科研方向/AI算法与系统.md) | 编程入门 (Python) + 数据结构 | PyTorch/JAX 生态全部 Python,ML 系统优化用图分析 |
+| [AI 算法与系统](../../科研方向/AI算法与系统.md) | 编程入门 (Python) + 数据结构 + 计算机图形学 | PyTorch 生态全部 Python;NeRF/3D Gaussian 是 AI × 图形交叉 |
+| [具身智能](../../科研方向/具身智能.md) | 计算机图形学 (物理仿真) | Isaac Sim、MuJoCo 等机器人仿真器内核就是图形学 |
 | 任何方向 | 编程入门 + 软件工程 | 写得清楚的代码是合作和可复现性的基础——所有方向都需要 |
+

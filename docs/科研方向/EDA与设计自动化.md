@@ -148,7 +148,7 @@ graph LR
 
     VLSI CAD 数值算法 · 电磁仿真 · 模拟/混合信号电路仿真
 
--   **[王彦](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm)** <span class="badge-tsinghua">清华</span>
+-   **[王彦](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm)** <span class="badge-tsinghua">清华</span> <span class="prof-w"></span>
 
     器件建模与 EDA · 电路-器件协同仿真 · 宽禁带半导体器件
 
@@ -188,7 +188,7 @@ graph LR
 
     模拟电路设计自动化 · 寄生参数提取 · 可制造性设计（DFM）
 
--   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span>
+-   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
 
     EDA 电路仿真 · 稀疏矩阵并行求解 · 面向科学计算的软硬件协同
 

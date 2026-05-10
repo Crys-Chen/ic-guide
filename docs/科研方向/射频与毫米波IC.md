@@ -211,7 +211,7 @@ graph LR
 
     高性能模拟/混合信号 IC · 射频收发机 · 高速接口芯片
 
--   **[汤章文](http://rfic.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
+-   **[唐长文](http://rfic.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
 
     毫米波 CMOS 收发机 · 相控阵芯片 · 5G/6G 射频前端
 

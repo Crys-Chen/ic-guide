@@ -32,13 +32,13 @@ graph LR
 
 | 对应科研方向 | 为什么 |
 |---|---|
-| [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md) | GPU 是图形学的硬件载体——研究 GPU 架构必须懂 graphics pipeline、shader、纹理采样 |
-| [AI 算法与系统](../../科研方向/AI算法与系统.md) | NeRF、3D Gaussian Splatting、扩散模型生成图像/视频——计算机视觉与图形学的交叉是 AI 的前沿 |
-| [具身智能](../../科研方向/具身智能.md) | 机器人仿真平台(Isaac Sim、MuJoCo、Gazebo)的核心是物理引擎 + 渲染;GAMES103 的物理仿真直接相关 |
-| [可重构计算与FPGA](../../科研方向/可重构计算与FPGA.md) | 实时光线追踪硬件加速器(NVIDIA RT Core、AMD Ray Accelerator)是 FPGA 研究的热点 |
+| [处理器架构与编译系统](../../../科研方向/处理器架构与编译系统.md) | GPU 是图形学的硬件载体——研究 GPU 架构必须懂 graphics pipeline、shader、纹理采样 |
+| [AI 算法与系统](../../../科研方向/AI算法与系统.md) | NeRF、3D Gaussian Splatting、扩散模型生成图像/视频——计算机视觉与图形学的交叉是 AI 的前沿 |
+| [具身智能](../../../科研方向/具身智能.md) | 机器人仿真平台(Isaac Sim、MuJoCo、Gazebo)的核心是物理引擎 + 渲染;GAMES103 的物理仿真直接相关 |
+| [可重构计算与FPGA](../../../科研方向/可重构计算与FPGA.md) | 实时光线追踪硬件加速器(NVIDIA RT Core、AMD Ray Accelerator)是 FPGA 研究的热点 |
 
 ## 对硬件研究者的特别提示
 
 - 如果你不打算做 GPU/CV 研究,**GAMES101 + 一两个简单作业**就足够建立"图形管线"心智模型;不必通学整个序列
-- 想深入 GPU 架构(对应 [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md)),建议:GAMES101 → CMU 15-462 → 自己搭一个软光栅化 demo
-- 想做 NeRF/3D Gaussian 等 AI × 图形交叉,补完 [深度学习](../人工智能/深度学习/index.md) 后再接 GAMES101 / CV 方向论文
+- 想深入 GPU 架构(对应 [处理器架构与编译系统](../../../科研方向/处理器架构与编译系统.md)),建议:GAMES101 → CMU 15-462 → 自己搭一个软光栅化 demo
+- 想做 NeRF/3D Gaussian 等 AI × 图形交叉,补完 [深度学习](../../人工智能/深度学习/index.md) 后再接 GAMES101 / CV 方向论文
