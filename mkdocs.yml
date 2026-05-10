@@ -316,6 +316,7 @@ nav:
       - 导言: "课程资源/物理/index.md"
       - 大学物理:
         - 大学物理B(复旦): "课程资源/物理/大学物理/PHYS120013-14.md"
+        - "MIT 8.01/8.02: Classical Mechanics & Electromagnetism": "课程资源/物理/大学物理/MIT8.01-8.02.md"
       - 量子力学:
         - 量子力学(复旦): "课程资源/物理/量子力学/MICR130015.md"
         - MIT 8.04 Quantum Physics I: "课程资源/物理/量子力学/MIT8.04.md"
@@ -418,6 +419,7 @@ nav:
         - 补充资源: "课程资源/电路/ASIC/补充资源.md"
       - 嵌入式SoC:
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
+        - "Cornell ECE 4760: Designing with Microcontrollers": "课程资源/电路/嵌入式SoC/cornell_ece4760.md"
     - 算法编程:
       - 导言: "课程资源/算法编程/index.md"
       - 编程入门:
