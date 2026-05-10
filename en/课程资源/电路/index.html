@@ -10288,7 +10288,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      本科
+      知识谱系
     </span>
   </a>
   
@@ -10297,17 +10297,17 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      全局
+      板块介绍
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="全局">
+    <nav class="md-nav" aria-label="板块介绍">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      设计
+      数字电路
     </span>
   </a>
   
@@ -10316,16 +10316,34 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      器件与工艺
+      模拟电路
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#eda" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      EDA
+      信号处理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统集成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      速通路径
     </span>
   </a>
   
@@ -10337,9 +10355,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      芯片生产流程
+      对科研方向的作用
     </span>
   </a>
   
@@ -10363,234 +10381,123 @@
   
 
 
-<h1 id="_1">知识谱系</h1>
-<h2 id="_2">本科</h2>
-<p>（以复旦大学微电子专业的培养方案为参考）</p>
+<h1 id="_1">电路</h1>
+<p>电路是 IC 设计的核心板块——几乎所有<a href="../../科研方向/">科研方向</a>在某种程度上都依赖它。从数字逻辑到模拟集成电路，从信号处理到 ASIC/SoC 集成，这里覆盖了从课程理论到流片工程的完整训练链。</p>
+<h2 id="_2">知识谱系</h2>
+<p>以复旦微电子培养方案为参考整理。<strong>器件与工艺</strong>是它的物理前置，<strong>EDA 工具</strong>是它的工程支撑。</p>
 <pre class="mermaid"><code>graph TB
-    %% 1. 定义所有模块和节点
-    subgraph A[器件与工艺]
-        A0[半导体物理] --&gt; A1[半导体器件] --&gt; A2[集成电路工艺原理]
+    subgraph A["前置（详见 器件与工艺 板块）"]
+        A0[半导体物理] --&gt; A1[半导体器件] --&gt; A2[集成电路工艺]
     end
 
     subgraph B1[数字电路]
         direction TB
-        B1_1[数电]
-        subgraph B1_2[工具1：硬件描述语言 HDL]
+        B1_1[数字逻辑基础]
+        subgraph B1_2[HDL]
             B1_2_1[Verilog]
-            B1_2_2[HLS]
-            B1_2_3[Chisel]
+            B1_2_2[Chisel]
+            B1_2_3[HLS]
         end
-        subgraph B1_3[工具2：数字EDA]
-            B1_3_1[Vivado]
-            B1_3_2[Quartus]
-        end
+        B1_3[数字 EDA&lt;br/&gt;Vivado/Quartus]
         B1_5[数字集成电路设计原理]
-        B1_4[FPGA结构原理和应用]
+        B1_4[FPGA 系统设计]
     end
 
     subgraph B2[模拟电路]
         direction TB
-        B2_0[电路基础]
-        B2_1[模电]
-        B2_2[模拟集成电路设计原理]
-        B2_3[高频电路]
-        B2_4[射频电路]
-        subgraph B2_5[工具：模拟EDA]
-            B2_5_1[Cadence]
-            B2_5_2[Synopsys]
-        end
+        B2_0[电路分析基础]
+        B2_1[模拟电子线路]
+        B2_2[模拟集成电路设计]
+        B2_3[高频电子线路]
+        B2_4[射频集成电路]
+        B2_5[模拟 EDA&lt;br/&gt;Cadence/Synopsys]
     end
 
     subgraph B3[信号处理]
         direction TB
         B3_0[信号与系统]
-        B3_3[工具：Matlab]
-        B3_1[数字信号处理 DSP]
-        B3_2[数模/模数转换器 AD/DA]
+        B3_3[MATLAB]
+        B3_1[数字信号处理]
+        B3_2[ADC / DAC]
     end
 
-    subgraph C[系统集成与应用]
-        C2[嵌入式SoC]
-        C3[专用集成电路ASIC]
-        D[EDA开发]
+    subgraph C[系统集成]
+        C2[嵌入式 SoC]
+        C3[ASIC 设计]
+        D[EDA 开发]
     end
 
-
-
-    %% 2. 定义内部连接关系 (完全保持原样)
-    B1_1 --&gt; B1_2
-    B1_2_1 --&gt; B1_2_2
-    B1_2_1 --&gt; B1_2_3
-    B1_2 --&gt; B1_4
-    B1_3 --&gt; B1_4
-    B1_2 --&gt; B1_3
-
-    B2_0 --&gt; B2_1 --&gt; B2_2 --&gt; B2_3 --&gt; B2_4
-    B2_5 --&gt; B2_2
-
-    C2 &lt;--互有重叠--&gt; C3
-
-    %% 3. 定义外部连接关系 (完全保持原样)
     A1 --&gt; B1
     A1 --&gt; B2
-    B3_0 --&gt; B3_1
-
+    B1_1 --&gt; B1_2
+    B1_1 --&gt; B1_5
+    B1_2 --&gt; B1_5
+    B1_2 --&gt; B1_3
+    B1_3 --&gt; B1_4
+    B1_5 --&gt; B1_4
+    B2_0 --&gt; B2_1 --&gt; B2_2 --&gt; B2_3 --&gt; B2_4
+    B2_5 --&gt; B2_2
+    B3_0 --&gt; B3_1 --&gt; B3_2
+    B3_3 --&gt; B3_1
     B1 -.-&gt; B3_2
     B2 -.-&gt; B3_2
-    B3_1 --&gt; B3_2
-    B1_1 --&gt; B1_5
-    B1_5 --&gt; B1_4
-
     B1 --&gt; C
     B2 --&gt; C
     B3 --&gt; C
+    C2 &lt;--&gt; C3
 
-    B3_3 --&gt; B3_2
-    B3_3 --&gt; B3_1
-
-
-    %% 4. 使用不可见链接强制布局顺序，解决遮挡问题
-    B1 ~~~ B2 ~~~ B3 ~~~ C
-
-    %% 5. 定义样式 (完全保持原样)
-    classDef device fill:#F0F0F0,stroke:#333,stroke-width:2px;
-    classDef digital fill:#FFFBEB,stroke:#333,stroke-width:2px;
-    classDef analog fill:#E6FFEC,stroke:#333,stroke-width:2px;
-    classDef signal fill:#FFF7FF,stroke:#333,stroke-width:2px;
-    classDef system fill:#E6F4FF,stroke:#333,stroke-width:2px;
-
+    classDef device fill:#FDE8D8,stroke:#C0530A,stroke-width:1.5px
+    classDef digital fill:#FFFBEB,stroke:#B7791F,stroke-width:1.5px
+    classDef analog fill:#E6FFEC,stroke:#276749,stroke-width:1.5px
+    classDef signal fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
+    classDef system fill:#F3E8FF,stroke:#553C9A,stroke-width:1.5px
     class A device
     class B1 digital
     class B2 analog
     class B3 signal
     class C system</code></pre>
-<p>可以看出，这份以复旦微电本科为参考的知识谱系有两个特点：</p>
+<p>可以看出这份谱系有两个特点：</p>
 <ul>
-<li>主要以设计为主，设计方向是复旦微电的强项，略有侧重不足为奇。</li>
-<li>每个方向都走马观花地过了一遍，重在打基础，为日后的发展充实工具箱。</li>
+<li><strong>以设计为主</strong>——设计方向是复旦微电的强项，略有侧重不足为奇</li>
+<li><strong>每个方向走马观花地过一遍</strong>——重在打基础，为日后科研方向充实工具箱</li>
 </ul>
-<h2 id="_3">全局</h2>
-<h3 id="_4">设计</h3>
-<pre class="mermaid"><code>graph TD
-
-    subgraph Base[基础]
-
-    end
-
-</code></pre>
-<h3 id="_5">器件与工艺</h3>
-<pre class="mermaid"><code>graph TB
-    A[To be continued...]</code></pre>
-<h3 id="eda">EDA</h3>
-<pre class="mermaid"><code>graph TB
-    A[To be continued...]</code></pre>
-<h2 id="_6">芯片生产流程</h2>
-<pre class="mermaid"><code>graph TD
-    subgraph A["IC设计(由EDA工具贯穿)"]
-        direction TB
-        subgraph A1["前端设计(逻辑设计)"]
-            A1_1[系统规格定义] --&gt; A1_2[架构设计]
-            A1_2 --&gt; A1_3["RTL编码&lt;br&gt;(Verilog/VHDL)"]
-            A1_3 -- 并行进行 --&gt; A1_4[功能仿真与验证]
-            A1_3 --&gt; A1_5[逻辑综合]
-            A1_5 -- 生成门级网表 --&gt; A1_6["静态时序分析&lt;br&gt;(STA)"]
-            A1_5 --&gt; A1_7["可测性设计&lt;br&gt;(DFT)"]
-        end
-
-        subgraph A2["后端设计&lt;br&gt;(物理设计)"]
-            A2_1["布局规划&lt;br&gt;(Floorplan)"] --&gt; A2_2["时钟树综合&lt;br&gt;(CTS)"]
-            A2_2 --&gt; A2_3["布局布线&lt;br&gt;(P&amp;R)"]
-            A2_3 --&gt; A2_4["物理验证&lt;br&gt;(DRC/LVS)"]
-        end
-
-        A1 --&gt; A2
-    end
-
-    subgraph B["制造与测试"]
-        direction TB
-        B1["掩膜版制作&lt;br&gt;(Mask)"] --&gt; B2["晶圆制造&lt;br&gt;(Fab)"]
-        B2 -- 产出晶圆 --&gt; B3["晶圆测试&lt;br&gt;(CP)"]
-        B3 --&gt; B4[切割与封装]
-        B4 -- 产出芯片成品 --&gt; B5["最终测试&lt;br&gt;(FT)"]
-        B5 --&gt; B6[产品出货]
-    end
-
-    A2 -- "Tape-out (GDSII图纸)" --&gt; B1
-    A1_7 -.-&gt; B5
-
-    classDef design fill:#FFFBEB,stroke:#333,stroke-width:2px;
-    classDef fab fill:#E6FFEC,stroke:#333,stroke-width:2px;
-    class A design
-    class B fab</code></pre>
-<h1 id="_7">介绍</h1>
-<h2 id="devices-process">器件与工艺 (Devices &amp; Process)</h2>
+<blockquote>
+<p>完整的"芯片生产流程图"(IC 设计 → Tape-out → Fab → 封测)请见站点级的<a href="../../%E7%9F%A5%E8%AF%86%E8%B0%B1%E7%B3%BB/">学习地图 / 知识谱系</a>。</p>
+</blockquote>
+<h2 id="_3">板块介绍</h2>
+<h3 id="_4">数字电路</h3>
 <ul>
-<li><strong>半导体物理 (Semiconductor Physics)</strong>
-  这是所有现代电子学的理论基石。它研究半导体材料（如硅）内部电子和空穴的运动规律，以及P-N结的形成和特性，为理解晶体管的工作原理提供物理基础。</li>
-<li><strong>半导体器件 (Semiconductor Devices)</strong>
-  在半导体物理之上，研究由半导体材料制成的基本电子元件。主要包括二极管、双极结型晶体管（BJT）和金属-氧化物-半导体场效应晶体管（MOSFET）。这些是构成所有集成电路（芯片）的最基本积木。</li>
-<li><strong>集成电路工艺原理 (IC Process Principles)</strong>
-  研究如何将亿万个半导体器件（主要是MOSFET）制造到一小片硅晶圆上的技术和流程。主要包括光刻、蚀刻、薄膜沉积、离子注入等一系列复杂的微纳加工技术。</li>
+<li><strong><a href="数字/数字逻辑基础/">数字逻辑基础</a></strong> — 逻辑门、组合/时序电路、有限状态机；CPU 与 FPGA 的最底层基础</li>
+<li><strong><a href="硬件描述语言(HDL)/">硬件描述语言</a></strong> — Verilog（事实标准）、Chisel（参数化更强）、HLS（用 C++ 描述算法）；让你能像写代码一样"描述"硬件</li>
+<li><strong><a href="EDA/">数字 EDA</a></strong> — Vivado / Quartus；FPGA 综合、布局布线、时序分析的工具</li>
+<li><strong><a href="数字/数字集成电路/">数字集成电路</a></strong> — 在 CMOS 工艺层面实现数字逻辑，关心晶体管级延时/功耗/面积</li>
+<li><strong><a href="数字/FPGA/">FPGA</a></strong> — 半定制可编程芯片；既是数字电路最常见的实战平台，也是研究方向</li>
 </ul>
-<hr />
-<h2 id="digital-circuits">数字电路 (Digital Circuits)</h2>
+<h3 id="_5">模拟电路</h3>
 <ul>
-<li><strong>数电 (Digital Electronics)</strong>
-  研究处理离散二进制信号（0和1）的电路。内容包括逻辑门（与、或、非）、组合逻辑电路（如加法器）和时序逻辑电路（如触发器、寄存器）。这是所有数字系统，包括CPU和FPGA的基础。</li>
-<li><strong>数字集成电路设计原理 (Digital Integrated Circuit Design Principles)</strong></li>
+<li><strong><a href="模拟/电路分析基础/">电路分析基础</a></strong> — 欧姆/基尔霍夫定律，RLC 网络</li>
+<li><strong><a href="模拟/模拟电子线路/">模拟电子线路</a></strong> — 用晶体管搭放大器/滤波器/振荡器</li>
+<li><strong><a href="模拟/模拟集成电路/">模拟集成电路</a></strong> — 在硅片上实现高性能模拟模块（运放、比较器、PLL）</li>
+<li><strong><a href="模拟/高频电子线路/">高频电子线路</a></strong> — 寄生效应、传输线、S 参数；进入 GHz 频段的工具</li>
+<li><strong><a href="模拟/射频集成电路/">射频集成电路</a></strong> — LNA、PA、混频器、VCO；无线通信的核心</li>
+<li><strong><a href="EDA/cadence/">模拟 EDA</a></strong> — Cadence Virtuoso（工业标准）、Synopsys HSPICE（金标仿真）</li>
 </ul>
-<p>研究如何将数字逻辑电路（数电）在芯片（CMOS工艺）层面进行物理实现。重点关注如何从晶体管级别构建逻辑门，并分析其速度（延时）、功耗和面积。这是连接逻辑设计与物理实现的桥梁，是数字芯片后端设计的基础。
-- <strong>硬件描述语言 HDL (Hardware Description Language)</strong></p>
+<h3 id="_6">信号处理</h3>
 <ul>
-<li><strong>Verilog</strong>: 最主流的硬件描述语言之一，语法类似C语言。工程师用它来像写代码一样“描述”数字电路的结构和功能，这份“代码”就是电路的设计蓝图。</li>
-<li><strong>HLS (High-Level Synthesis - 高层次综合)</strong>: 一种更高级的设计方法，允许工程师使用C/C++/SystemC等高级语言来描述算法，然后由工具自动将其转换为Verilog等HDL代码。主要用于快速实现复杂的算法硬件加速器。</li>
-<li><strong>Chisel</strong>: 一种基于Scala语言的新兴硬件构建语言，相比Verilog能提供更强大的抽象和参数化设计能力，能够更高效地生成复杂的硬件设计。</li>
-<li><strong>数字EDA (Digital EDA)</strong></li>
-<li><strong>Vivado</strong>: 由Xilinx（现AMD）公司开发的EDA套件，专门用于其自家FPGA芯片的设计、综合、布局布线和编程。</li>
-<li><strong>Quartus</strong>: 由Altera（现Intel）公司开发的EDA套件，功能与Vivado类似，专门用于其自家FPGA芯片的设计流程。</li>
-<li><strong>FPGA (Field-Programmable Gate Array - 现场可编程门阵列)</strong>
-  一种半定制芯片。它内部充满了可由用户重复配置的逻辑单元和连线。用户可以通过烧录HDL代码生成的配置文件，在FPGA上实现任意想要的数字电路功能，因此被称为“硬件领域的万能芯片”，常用于产品原型验证和中小批量生产。</li>
+<li><strong><a href="信号处理/信号与系统/">信号与系统</a></strong> — 傅里叶/拉普拉斯/Z 变换；通信和信号处理的数学基础</li>
+<li><strong><a href="信号处理/MATLAB/">MATLAB</a></strong> — 信号处理算法的快速原型工具</li>
+<li><strong><a href="信号处理/数字信号处理/">数字信号处理 (DSP)</a></strong> — 数字滤波、变换、识别；从手机降噪到通信编码</li>
+<li><strong><a href="信号处理/数模模数转换器/">ADC / DAC</a></strong> — 连接模拟世界与数字世界的桥梁，是混合信号 IC 的核心</li>
 </ul>
-<hr />
-<h2 id="analog-circuits">模拟电路 (Analog Circuits)</h2>
+<h3 id="_7">系统集成</h3>
 <ul>
-<li><strong>电路基础 (Circuit Fundamentals)</strong>
-  学习电子电路的入门课程，主要研究由电阻、电容、电感等无源器件组成的电路网络，掌握欧姆定律、基尔霍夫定律等基本分析方法。</li>
-<li><strong>模电 (Analog Electronics)</strong>
-  研究处理连续变化的模拟信号的电路。主要内容包括使用晶体管等有源器件搭建放大器、滤波器、振荡器等基本电路单元。</li>
-<li><strong>模拟集成电路设计原理 (Analog Integrated Circuits)</strong>
-  将模拟电路（模电）的理论应用在芯片设计上。它研究如何在硅片上设计和实现高性能的模拟电路模块，如运算放大器、比较器等。</li>
-<li><strong>高频电路 (High-Frequency Circuits)</strong>
-  当电路工作频率升高时，元器件和导线会表现出与低频下完全不同的特性（如寄生效应）。本课程研究这些高频效应以及相应的分析工具，如传输线理论、S参数、史密斯圆图等。</li>
-<li><strong>射频电路 (Radio-Frequency Circuits)</strong>
-  高频电路在无线通信领域的专门应用。它专注于设计用于发射和接收无线电磁波的电路，如低噪声放大器（LNA）、功率放大器（PA）、混频器、振荡器等，是所有无线设备（手机、Wi-Fi）的核心。</li>
-<li><strong>模拟EDA (Analog EDA)</strong></li>
-<li><strong>Cadence</strong>: 全球领先的EDA公司，其Virtuoso平台和Spectre仿真器是模拟集成电路设计领域事实上的工业标准。</li>
-<li><strong>Synopsys</strong>: 另一家EDA巨头，其HSPICE仿真器被誉为模拟电路仿真的“黄金标准”，用于最高精度的sign-off验证。</li>
+<li><strong><a href="嵌入式SoC/">嵌入式 SoC</a></strong> — 把 CPU/内存/外设/加速器集成到一颗芯片上</li>
+<li><strong><a href="ASIC/">ASIC 设计</a></strong> — 为特定应用量身定制的芯片，性能/功耗的极致优化</li>
+<li><strong>EDA 开发</strong> — 开发 EDA 工具本身的高度交叉方向，详见<a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">科研方向 / EDA 与设计自动化</a></li>
 </ul>
-<hr />
-<h2 id="signal-processing">信号处理 (Signal Processing)</h2>
-<ul>
-<li><strong>信号与系统 (Signals and Systems)</strong>
-  研究信号的数学表示和系统对其响应的课程，是通信和信号处理领域的数学基础。核心工具包括傅里叶变换、拉普拉斯变换和Z变换。</li>
-<li><strong>数字信号处理 DSP (Digital Signal Processing)</strong>
-  研究如何用计算机或专用硬件对数字化后的信号进行运算和处理，以实现滤波、变换、增强、识别等目的。例如手机通话中的降噪、音频的均衡器（EQ）等都属于DSP范畴。</li>
-<li><strong>数模/模数转换器 AD/DA (ADC/DAC)</strong>
-  连接真实模拟世界与数字处理世界的桥梁。ADC（Analog-to-Digital Converter）负责将来自传感器等模拟信号转换为数字信号；DAC（Digital-to-Analog Converter）则负责将处理完的数字信号转换回模拟信号以驱动扬声器等设备。</li>
-</ul>
-<hr />
-<h2 id="system-integration-applications">系统集成与应用 (System Integration &amp; Applications)</h2>
-<ul>
-<li><strong>嵌入式SoC (Embedded System on a Chip)</strong>
-  “片上系统”，指将一个完整的计算机系统（包含CPU处理器、内存、各种接口、甚至DSP和AI加速单元）集成到单一芯片上。它通常被“嵌入”到特定设备中执行专门任务，例如智能手机的主处理器、路由器的控制芯片等。</li>
-<li><strong>ASIC (Application-Specific Integrated Circuit - 专用集成电路)</strong>
-  为某种特定应用而“量身定制”的芯片。一旦设计制造完成，其功能便永久固化。与通用芯片相比，ASIC在性能、功耗和成本上为特定应用做了极致优化。我们日常使用的大部分高性能SoC，如手机处理器，都是以ASIC的形式存在的。</li>
-<li><strong>EDA开发 (EDA Development)</strong></li>
-</ul>
-<p>指开发用于设计芯片的软件工具（EDA）本身。这是一个高度交叉的领域，需要深厚的计算机科学（算法、数据结构、软件工程）和电子工程（数字/模拟电路）知识。EDA开发者创造的工具，被芯片设计工程师用于开发实际的芯片产品。</p>
-<hr />
-<h2 id="_8">对科研方向的作用</h2>
-<p>电路是 IC 设计研究的核心板块——几乎所有<a href="../../科研方向/">科研方向</a>在某种程度上都依赖它。下面是每个子分支与具体科研方向的映射:</p>
+<h3 id="_8">速通路径</h3>
+<p>不打算深入电路设计但又想理解硬件原理的同学，建议看<a href="入门速成/">入门速成</a>板块——EE16A&amp;B、UCB EE120、MIT 6.007 是把电路 + 信号系统压缩成一学期的高质量"通识"课。</p>
+<h2 id="_9">对科研方向的作用</h2>
 <table>
 <thead>
 <tr>
@@ -10609,15 +10516,15 @@
 </tr>
 <tr>
 <td>信号与系统 + DSP + ADC/DAC</td>
-<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a>(数据转换器子方向)、<a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%94%9F%E7%89%A9%E7%94%B5%E5%AD%90%E4%B8%8E%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/">生物电子与脑机接口</a></td>
+<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a>（数据转换器子方向）、<a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%94%9F%E7%89%A9%E7%94%B5%E5%AD%90%E4%B8%8E%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/">生物电子与脑机接口</a></td>
 </tr>
 <tr>
 <td>FPGA + ASIC</td>
-<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a>、所有数字 IC 设计方向的实战平台</td>
+<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a>；所有数字 IC 设计方向的实战平台</td>
 </tr>
 <tr>
 <td>EDA 工具</td>
-<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a>、做研究时所有"流片"环节都要用</td>
+<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a>；做研究时"流片"环节都要用</td>
 </tr>
 <tr>
 <td>嵌入式 SoC</td>
@@ -10626,7 +10533,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>这一板块<strong>最贴近 IC 工程师的日常</strong>:写 RTL、跑仿真、看波形、查时序——这些技能是从课程到工业界最直接的过渡。建议至少把"数字电路 + 一门 HDL + 一个 EDA 工具"完整链条走完,即使你最终选择软件方向。</p>
+<p>这一板块<strong>最贴近 IC 工程师的日常</strong>：写 RTL、跑仿真、看波形、查时序——这些技能是从课程到工业界最直接的过渡。建议至少把"<strong>数字逻辑 → 一门 HDL → 一个 EDA 工具</strong>"完整链条走完，即使你最终选择软件方向。</p>
 </blockquote>
 
 
