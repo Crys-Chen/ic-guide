@@ -276,6 +276,29 @@
 [data-md-color-scheme="slate"] .badge-other    { background: rgba(255,183,77,.2);  color: #FFB74D; }
 [data-md-color-scheme="slate"] .badge-intl     { background: rgba(176,190,197,.2); color: #B0BEC5; }
 
+/* ─── 教授卡片左侧色条：男蓝 / 女红 / 混合左半红右半蓝 ────── */
+/* 复旦红 #BB0028 与复旦深蓝 #1A48A8 配对（饱和度近、明度近，
+   既能区分又不喧宾夺主）。
+   marker 使用 inline span：<span class="prof-w"></span> 表示女教授；
+   <span class="prof-mixed"></span> 表示双教授卡（女+男合卡）。
+   不加 marker 默认按男教授处理，色条为复旦深蓝。 */
+.md-typeset .grid.cards > ul > li {
+  border-left: 4px solid #1A48A8;
+  padding-left: .85rem;
+}
+.md-typeset .grid.cards > ul > li:has(.prof-w) {
+  border-left-color: #BB0028;
+}
+.md-typeset .grid.cards > ul > li:has(.prof-mixed) {
+  border-left: none;
+  background-image: linear-gradient(to bottom, #BB0028 50%, #1A48A8 50%);
+  background-size: 4px 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: .85rem;
+}
+.prof-w, .prof-mixed { display: none; }
+
 /* 教授卡片内点赞按钮 */
 .grid.cards li .like-btn {
   display: inline-block;
