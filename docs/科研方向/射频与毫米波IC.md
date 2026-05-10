@@ -199,7 +199,7 @@ graph LR
 
     GaN 功率与射频器件 · 高功率密度毫米波前端
 
--   **[闫娜](https://sme.fudan.edu.cn/60/61/c31157a352353/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[闫娜](https://sme.fudan.edu.cn/60/61/c31157a352353/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     高能效射频芯片 · 6G 可重构 RF · 毫米波雷达
 

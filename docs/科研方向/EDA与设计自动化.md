@@ -172,7 +172,7 @@ graph LR
 
     IC 布局算法 · VLSI 物理设计优化
 
--   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     模拟电路 EDA · ML 辅助 IC 设计自动化 · 高速互连分析
 
@@ -231,7 +231,7 @@ graph LR
 
     EDA · AI/IC 协同优化 · 模拟/RF 设计自动化
 
--   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span>
+-   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
     ML 驱动芯片布局 · AlphaChip
 
@@ -239,7 +239,7 @@ graph LR
 
     互连建模与时序仿真 · IC 设计方法学 · 电力系统优化
 
--   **[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)** <span class="badge-intl">UT Austin</span>
+-   **[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)** <span class="badge-intl">UT Austin</span> <span class="prof-w"></span>
 
     能效与可靠性感知计算 · 硬件感知机器学习 · 嵌入式系统
 

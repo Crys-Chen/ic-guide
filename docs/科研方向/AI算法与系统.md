@@ -143,7 +143,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     神经网络量化 · 高效机器学习 · 随机优化算法
 
--   **[曹婷](https://air.tsinghua.edu.cn/en/info/1046/1941.htm)** <span class="badge-tsinghua">清华 AIR</span>
+-   **[曹婷](https://air.tsinghua.edu.cn/en/info/1046/1941.htm)** <span class="badge-tsinghua">清华 AIR</span> <span class="prof-w"></span>
 
     边缘 AI · 神经网络推理系统 · AI 加速器 · 基础模型算法
 
@@ -202,7 +202,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     高效深度学习 · LLM 量化与压缩（AWQ/SpAtten）· TinyML · 硬件感知 NAS
 
--   **[Vivienne Sze](https://eems.mit.edu/)** <span class="badge-intl">MIT</span>
+-   **[Vivienne Sze](https://eems.mit.edu/)** <span class="badge-intl">MIT</span> <span class="prof-w"></span>
 
     硬件高效深度学习 · 神经网络加速器设计 · 边缘视觉计算
 
@@ -242,7 +242,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
 
--   **[Chelsea Finn](https://ai.stanford.edu/~cbfinn/)** <span class="badge-intl">Stanford</span>
+-   **[Chelsea Finn](https://ai.stanford.edu/~cbfinn/)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
     元学习 · 高效学习适应 · 机器人强化学习
 
@@ -250,11 +250,11 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
 
--   **[Fei-Fei Li（李飞飞）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span>
+-   **[Fei-Fei Li（李飞飞）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
     计算机视觉 · ImageNet · 以人为本 AI（HAI）· 视觉-语言基础模型
 
--   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span>
+-   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
     强化学习理论 · 教育与医疗 RL · 样本效率
 
@@ -266,7 +266,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
 
--   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span>
+-   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span> <span class="prof-w"></span>
 
     大语言模型 · 稠密检索（DPR）· 上下文学习 · 高效 NLP 系统
 
@@ -286,7 +286,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     LLM Agent · ReAct / Tree-of-Thoughts · SWE-bench / SWE-agent
 
--   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span>
+-   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span> <span class="prof-w"></span>
 
     高效 LLM 推理 · 上下文稀疏性（Deja Vu） · 单卡推理（FlexGen）
 

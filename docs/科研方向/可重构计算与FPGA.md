@@ -128,7 +128,7 @@ graph LR
 
     FPGA HLS 编译优化 · 硬件软件协同设计 · 神经网络加速
 
--   **[王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     FPGA 结构研究 · 抗辐射 FPGA · 安全可编程计算
 
@@ -136,7 +136,7 @@ graph LR
 
     FPGA 编译器设计 · 电路 EDA · 硬件-软件协同设计
 
--   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
 
@@ -155,7 +155,7 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[Wei Zhang（张薇）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
+-   **[Wei Zhang（张薇）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span> <span class="prof-w"></span>
 
     FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
 
@@ -187,15 +187,15 @@ graph LR
 
     FPGA 架构与 LLM 加速 · 神经网络 FPGA 映射 · HLS 自动化
 
--   **[Cong Hao](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span>
+-   **[Cong Hao](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span> <span class="prof-w"></span>
 
     FPGA 神经网络加速 · ML for EDA · 高效 DNN 硬件映射
 
--   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span>
+-   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
 
     定制化体系结构 · HLS 与 FPGA · AMD Versal ACAP 异构加速
 
--   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span>
+-   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span> <span class="prof-w"></span>
 
     动态调度 HLS（Dynamatic） · 数据流电路综合 · 编译器-硬件协同
 
