@@ -184,6 +184,18 @@ graph LR
 
     AI 辅助 EDA · 低功耗设计 · FPGA 加速器
 
+-   **[严昌浩](https://icmne.fudan.edu.cn/2d/4e/c48925a732494/page.htm)** <span class="badge-fudan">复旦</span>
+
+    模拟电路设计自动化 · 寄生参数提取 · 可制造性设计（DFM）
+
+-   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span>
+
+    EDA 电路仿真 · 稀疏矩阵并行求解 · 面向科学计算的软硬件协同
+
+-   **[纪志罡](https://icisee.sjtu.edu.cn/jiaoshiml/jizhigang.html)** <span class="badge-other">交大</span>
+
+    电路/器件协同可靠性设计 · 新型范式计算 · 硬件安全 EDA
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -191,19 +203,19 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[谢知遥（Zhiyao Xie）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
+-   **[Zhiyao Xie（谢知遥）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
 
     AI 辅助 EDA · LLM for RTL 生成 · 时序分析
 
--   **[余蓓（Bei Yu）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">CUHK</span>
+-   **[Bei Yu（余备）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">CUHK</span>
 
     ML + EDA · 光刻热点检测 · 布局布线优化
 
--   **[何宗毅（Tsung-Yi Ho）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/)** <span class="badge-hk">CUHK</span>
+-   **[Tsung-Yi Ho（何宗易）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/)** <span class="badge-hk">CUHK</span>
 
     3D IC/先进封装 EDA · Chiplet 设计自动化
 
--   **[徐强（Qiang Xu）](https://www.cse.cuhk.edu.hk/~qxu/)** <span class="badge-hk">CUHK</span>
+-   **[Qiang Xu（徐强）](https://www.cse.cuhk.edu.hk/~qxu/)** <span class="badge-hk">CUHK</span>
 
     EDA 测试与验证 · 硬件安全 · 近似计算
 
@@ -222,6 +234,18 @@ graph LR
 -   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span>
 
     ML 驱动芯片布局 · AlphaChip
+
+-   **[Larry Pileggi](https://users.ece.cmu.edu/~pileggi/)** <span class="badge-intl">CMU</span>
+
+    互连建模与时序仿真 · IC 设计方法学 · 电力系统优化
+
+-   **[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)** <span class="badge-intl">UT Austin</span>
+
+    能效与可靠性感知计算 · 硬件感知机器学习 · 嵌入式系统
+
+-   **[Deming Chen](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
+
+    高层次综合（HLS） · FPGA 重构计算 · ML 硬件加速自动化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

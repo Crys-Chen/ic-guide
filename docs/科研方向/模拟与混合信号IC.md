@@ -180,6 +180,18 @@ graph LR
 
     混合信号 IC · SAR ADC 架构 · 高速接口电路
 
+-   **[李福乐](https://www.sic.tsinghua.edu.cn/info/1014/1812.htm)** <span class="badge-tsinghua">清华</span>
+
+    高速高精度流水线 ADC · 电流舵 DAC · 数模混合 IC
+
+-   **[沈林晓](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/slx/index.htm)** <span class="badge-pku">北大</span>
+
+    高速 SAR ADC · 噪声整形流水线 ADC · 智能传感器读出芯片
+
+-   **[唐希源](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/txy/index.htm)** <span class="badge-pku">北大</span>
+
+    增量噪声整形 ADC · 电容数字转换器（CDC） · 浮动反相放大器
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -195,7 +207,7 @@ graph LR
 
     模拟滤波器 · AD/DA · 无线模拟前端 IP
 
--   **[麦沛然（Pui-In Mak）](https://ime.um.edu.mo/people/pimak/)** <span class="badge-hk">澳门大学</span>
+-   **[Pui-In Mak（麦沛然）](https://ime.um.edu.mo/people/pimak/)** <span class="badge-hk">澳门大学</span>
 
     射频与模拟电路 · 微流控芯片 · 无线传感 IC
 
@@ -203,13 +215,9 @@ graph LR
 
     高速低功耗数据转换器 · 混合信号 IC · 射频接口电路
 
--   **[Wing-Hung Ki（纪荣杰）](https://ece.hkust.edu.hk/eeki)** <span class="badge-hk">港科大</span>
+-   **[Wing-Hung Ki（暨永雄）](https://ece.hkust.edu.hk/eeki)** <span class="badge-hk">港科大</span>
 
     开关电源/PMIC · 开关电容功率转换器 · 电源管理 IC
-
--   **[卢煜（Yan Lu）](https://www.ee.cuhk.edu.hk/~yanlu/)** <span class="badge-hk">港中大</span>
-
-    开关电容 DC-DC 转换器 · 混合信号电源管理 IC · ISSCC 最佳论文
 
 -   **[Boris Murmann](https://murmann-group.org/)** <span class="badge-intl">U Hawaii</span>
 

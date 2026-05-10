@@ -223,6 +223,14 @@ graph LR
 
     微波光子集成电路 · 太赫兹器件 · 高速无线通信芯片
 
+-   **[马顺利](https://sme.fudan.edu.cn/60/13/c31134a352275/page.htm)** <span class="badge-fudan">复旦</span>
+
+    毫米波/太赫兹相控阵雷达芯片 · 5G/6G 毫米波收发机 · FMCW/ADPLL
+
+-   **[洪伟](https://mmw.seu.edu.cn/2020/0928/c30531a348210/page.htm)** <span class="badge-other">东南大学</span>
+
+    毫米波集成天线与系统 · 大规模相控阵 · 毫米波/太赫兹理论与器件
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -230,11 +238,11 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[俞捷（C. Patrick Yue）](https://ece.hkust.edu.hk/eepatrick)** <span class="badge-hk">港科大</span>
+-   **[C. Patrick Yue（俞捷）](https://ece.hkust.edu.hk/eepatrick)** <span class="badge-hk">港科大</span>
 
     毫米波通信与感知电路 · 光无线物理层 · 高速有线 SoC
 
--   **[杨延松（Yansong Yang）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
+-   **[Yansong Yang（杨岩松）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
 
     压电 MEMS 谐振器与滤波器 · 5G/mmWave 射频前端
 

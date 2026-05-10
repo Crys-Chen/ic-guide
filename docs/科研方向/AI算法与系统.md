@@ -187,6 +187,10 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     深度学习专用处理器 · 神经网络指令集（寒武纪）· 存算协同架构
 
+-   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
+
+    LLM Agent · 代码生成（Spider/SWE） · 计算机使用智能体（OSWorld）
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -246,7 +250,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     基础模型评测（HELM）· LLM 可靠性与鲁棒性 · AI 系统基础设施
 
--   **[李飞飞（Fei-Fei Li）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span>
+-   **[Fei-Fei Li（李飞飞）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span>
 
     计算机视觉 · ImageNet · 以人为本 AI（HAI）· 视觉-语言基础模型
 
@@ -262,7 +266,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
 
--   **[陈丹琦（Danqi Chen）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span>
+-   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span>
 
     大语言模型 · 稠密检索（DPR）· 上下文学习 · 高效 NLP 系统
 
@@ -274,9 +278,21 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     模型压缩与量化 · 高效深度学习 · 联邦学习
 
--   **[Xiaowen Chu（储晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大（广州）</span>
+-   **[Xiaowen Chu（褚晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大（广州）</span>
 
     ML 系统 · GPU 计算 · LLM 稀疏推理
+
+-   **[Karthik Narasimhan](https://karthikncode.github.io/)** <span class="badge-intl">Princeton</span>
+
+    LLM Agent · ReAct / Tree-of-Thoughts · SWE-bench / SWE-agent
+
+-   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span>
+
+    高效 LLM 推理 · 上下文稀疏性（Deja Vu） · 单卡推理（FlexGen）
+
+-   **[Yuandong Tian（田渊栋）](https://yuandong-tian.com/)** <span class="badge-intl">Meta FAIR</span>
+
+    LLM 推理与规划 · 强化学习 · ML-guided 优化 · 表征学习理论
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

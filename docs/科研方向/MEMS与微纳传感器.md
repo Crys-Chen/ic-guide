@@ -177,6 +177,14 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     压电 MEMS（PMUT）超声传感器 · CMOS-MEMS 集成 · 超声指纹识别
 
+-   **[刘景全](https://icisee.sjtu.edu.cn/jiaoshiml/782.html)** <span class="badge-other">交大</span>
+
+    MEMS 脑机接口器件与微系统 · 极端环境 MEMS 智能传感器 · 微纳加工与集成
+
+-   **[谢金](https://person.zju.edu.cn/xiejin)** <span class="badge-other">浙大</span>
+
+    MEMS 设计与加工 · 微传感器与执行器 · 振动与声学测量
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -184,15 +192,15 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[李贻昆（Yi-Kuen Lee）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
+-   **[Yi-Kuen Lee（李贻昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
 
     CMOS MEMS 传感器（AIoT 应用） · 微纳流控生物医疗 MEMS
 
--   **[田志楠（Norman Tien）](https://www.eee.hku.hk/people/nctien/)** <span class="badge-hk">港大</span>
+-   **[Norman Tien（田之楠）](https://www.eee.hku.hk/people/nctien/)** <span class="badge-hk">港大</span>
 
     MEMS 微纳制造（通信/医疗/环境监测）· Taikoo Chair Professor of Microsystems Technology
 
--   **[廖维新（Wei-Hsin Liao）](https://www4.mae.cuhk.edu.hk/peoples/liao-wei-hsin/)** <span class="badge-hk">港中大</span>
+-   **[Wei-Hsin Liao（廖维新）](https://www4.mae.cuhk.edu.hk/peoples/liao-wei-hsin/)** <span class="badge-hk">港中大</span>
 
     MEMS 智能材料 · 压电/磁致伸缩执行器 · 振动能量回收 · ASME Da Vinci Award
 

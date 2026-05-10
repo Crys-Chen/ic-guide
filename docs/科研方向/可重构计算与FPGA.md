@@ -140,6 +140,14 @@ graph LR
 
     模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
 
+-   **[戴国浩](https://nicsefc.ee.tsinghua.edu.cn/people/GuohaoDai)** <span class="badge-other">上海交大</span>
+
+    稀疏计算软硬件协同 · LLM 推理加速器（FlightLLM） · FPGA/GPU 异构
+
+-   **[娄鑫](https://sist.shanghaitech.edu.cn/louxin/main.htm)** <span class="badge-other">上科大</span>
+
+    数字 VLSI 设计 · 可重构滤波器与 DSP · 三维视觉/渲染芯片
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -147,11 +155,11 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[张薇（Wei Zhang）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
+-   **[Wei Zhang（张薇）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span>
 
     FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
 
--   **[何国曦（Hayden Kwok-Hay So）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
+-   **[Hayden Kwok-Hay So（苏国曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
 
     异构可重构计算 · FPGA Overlay · 事件驱动视觉处理
 
@@ -171,7 +179,7 @@ graph LR
 
     FPGA 设计自动化 · HLS · 领域专用计算
 
--   **[Zhiru Zhang（张志如）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
+-   **[Zhiru Zhang（张志汝）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
 
     高层次综合 HLS · FPGA 加速器自动生成 · 硬件-算法协同优化
 
@@ -182,6 +190,18 @@ graph LR
 -   **[Cong Hao](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span>
 
     FPGA 神经网络加速 · ML for EDA · 高效 DNN 硬件映射
+
+-   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span>
+
+    定制化体系结构 · HLS 与 FPGA · AMD Versal ACAP 异构加速
+
+-   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span>
+
+    动态调度 HLS（Dynamatic） · 数据流电路综合 · 编译器-硬件协同
+
+-   **[Andre DeHon](https://www.seas.upenn.edu/faculty-directory/andre-dehon/)** <span class="badge-intl">U Penn</span>
+
+    空间计算与可重构架构 · FPGA 互连 · 硬件安全
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
