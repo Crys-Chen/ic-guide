@@ -281,6 +281,7 @@ nav:
     - 数学:
       - 导言: "课程资源/数学/index.md"
       - 数学基础:
+        - 课程资源/数学/数学基础/index.md
         - 数学分析:
           - 数学分析B(复旦-谢锡麟): "课程资源/数学/数学基础/数学分析/MATH120016-17-1.md"
           - 数学分析B(复旦-陈纪修): "课程资源/数学/数学基础/数学分析/MATH120016-17-2.md"
@@ -290,6 +291,7 @@ nav:
           - 线性代数(复旦): "课程资源/数学/数学基础/线性代数/COMP120004.md"
           - "MIT18.06: Linear Algebra": "课程资源/数学/数学基础/线性代数/MITLA.md"
       - 数学进阶:
+        - 课程资源/数学/数学进阶/index.md
         - 入门速成:
           - 工程数学及概率方法(复旦): "课程资源/数学/数学进阶/入门速成/MICR130008.md"
           - "UCB CS70": "课程资源/数学/数学进阶/入门速成/CS70.md"
@@ -319,15 +321,19 @@ nav:
     - 物理:
       - 导言: "课程资源/物理/index.md"
       - 大学物理:
+        - 课程资源/物理/大学物理/index.md
         - 大学物理B(复旦): "课程资源/物理/大学物理/PHYS120013-14.md"
         - "MIT 8.01/8.02: Classical Mechanics & Electromagnetism": "课程资源/物理/大学物理/MIT8.01-8.02.md"
       - 量子力学:
+        - 课程资源/物理/量子力学/index.md
         - 量子力学(复旦): "课程资源/物理/量子力学/MICR130015.md"
         - MIT 8.04 Quantum Physics I: "课程资源/物理/量子力学/MIT8.04.md"
       - 固体物理:
+        - 课程资源/物理/固体物理/index.md
         - 固体物理(复旦): "课程资源/物理/固体物理/MICR130013.md"
         - MIT 8.231 Physics of Solids I: "课程资源/物理/固体物理/MIT8.231.md"
       - 半导体物理:
+        - 课程资源/物理/半导体物理/index.md
         - 半导体物理(复旦): "课程资源/物理/半导体物理/MICR130005.md"
         - Purdue ECE 606 Solid State Devices: "课程资源/物理/半导体物理/purdue_ece606.md"
         - 西安电子科技大学：半导体物理(柴常春): "课程资源/物理/半导体物理/xidian_semiconductor.md"
@@ -339,19 +345,23 @@ nav:
         - 浙大 戴道锌:硅基光电子学基础导论: "课程资源/物理/光学/ZJU_dai_silicon_photonics.md"
         - 北大 周治平:光电子学: "课程资源/物理/光学/PKU_zhou_optoelectronics.md"
       - 其他:
+        - 课程资源/物理/其他/index.md
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
     - 器件与工艺:
       - 导言: "课程资源/器件与工艺/index.md"
       - 集成电路工艺:
+        - 课程资源/器件与工艺/集成电路工艺/index.md
         - 集成电路工艺原理(复旦): "课程资源/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
         - "MIT 6.152J: Micro/Nano Processing": "课程资源/器件与工艺/集成电路工艺/MIT6.152J.md"
         - 补充资源: "课程资源/器件与工艺/集成电路工艺/补充资源.md"
       - 半导体器件:
+        - 课程资源/器件与工艺/半导体器件/index.md
         - 半导体器件原理(复旦): "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md"
         - 半导体器件原理补充资源: "课程资源/器件与工艺/半导体器件/半导体器件原理_FDU/补充资源.md"
         - "MIT 6.012: Microelectronic Devices": "课程资源/器件与工艺/半导体器件/MIT6.012.md"
         - MIT6.012补充资源: "课程资源/器件与工艺/半导体器件/补充资源.md"
       - 先进工艺技术:
+        - 课程资源/器件与工艺/先进集成电路工艺技术_FDU/index.md
         - 先进集成电路工艺技术(复旦): "课程资源/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
         - "Stanford EE311: Advanced IC Design": "课程资源/器件与工艺/先进集成电路工艺技术_FDU/stanford_ee311.md"
         - 先进工艺技术学习资源导航: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
@@ -359,10 +369,12 @@ nav:
     - 电路:
       - 导言: "课程资源/电路/index.md"
       - 入门速成:
+        - 课程资源/电路/入门速成/index.md
         - "EE16A&B: Designing Information Devices and Systems": "课程资源/电路/入门速成/EE16.md"
         - "UCB EE120: Signal and Systems": "课程资源/电路/入门速成/signal.md"
         - "MIT 6.007 Signals and Systems": "课程资源/电路/入门速成/Signals_and_Systems_AVO.md"
       - 硬件描述语言(HDL):
+        - 课程资源/电路/硬件描述语言(HDL)/index.md
         - Verilog:
           - "HDLBits: Verilog Practice": "课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md"
           - "Nandland: Learn FPGA & Verilog": "课程资源/电路/硬件描述语言(HDL)/Verilog/nandland.md"
@@ -370,6 +382,7 @@ nav:
         - Chisel:
           - Chisel Bootcamp: "课程资源/电路/硬件描述语言(HDL)/Chisel/chisel-bootcamp.md"
       - 数字:
+        - 课程资源/电路/数字/index.md
         - 数字逻辑基础:
           - 数字逻辑基础(复旦): "课程资源/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md"
           - "MIT 6.004: Computation Structures": "课程资源/电路/数字/数字逻辑基础/MIT6.004.md"
@@ -382,6 +395,7 @@ nav:
           - 数字集成电路设计原理(复旦): "课程资源/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
           - "NPTEL VLSI Design": "课程资源/电路/数字/数字集成电路/VLSI_design.md"
       - 模拟:
+        - 课程资源/电路/模拟/index.md
         - 模拟电子线路:
           - 模拟电子线路(复旦): "课程资源/电路/模拟/模拟电子线路/MICR130002.md"
           - "Razavi Electronics 1 & 2 (UCLA)": "课程资源/电路/模拟/模拟电子线路/razavi_electronics.md"
@@ -401,6 +415,7 @@ nav:
           - "Razavi RF Microelectronics (UCLA EE164)": "课程资源/电路/模拟/射频集成电路/razavi_rf.md"
           - "UCB EE142: IC for Communications": "课程资源/电路/模拟/射频集成电路/EE142.md"
       - 信号处理:
+        - 课程资源/电路/信号处理/index.md
         - 信号与系统:
           - 信号与系统(复旦): "课程资源/电路/信号处理/信号与系统/MICR130004.md"
           - "MIT 6.003: Signals and Systems": "课程资源/电路/信号处理/信号与系统/MIT6.003.md"
@@ -419,21 +434,25 @@ nav:
           - 数模模数转换器(复旦): "课程资源/电路/信号处理/数模模数转换器/INFO130270.md"
           - "Stanford: Boris Murmann ADC 设计教程": "课程资源/电路/信号处理/数模模数转换器/stanford_adc.md"
       - EDA工具:
+        - 课程资源/电路/EDA/index.md
         - EDA工具(复旦): "课程资源/电路/EDA/MICR130035.md"
         - 数字EDA:
           - "Vivado 入门": "课程资源/电路/EDA/vivado.md"
         - 模拟EDA:
           - "Cadence Virtuoso 入门": "课程资源/电路/EDA/cadence.md"
       - ASIC:
+        - 课程资源/电路/ASIC/index.md
         - ASIC设计(复旦): "课程资源/电路/ASIC/INFO130094.md"
         - "UIUC VLSI CAD (Coursera)": "课程资源/电路/ASIC/UIUC_VLSI_CAD.md"
         - 补充资源: "课程资源/电路/ASIC/补充资源.md"
       - 嵌入式SoC:
+        - 课程资源/电路/嵌入式SoC/index.md
         - 嵌入式处理器与芯片系统设计(Bilibili): "课程资源/电路/嵌入式SoC/junhan.md"
         - "Cornell ECE 4760: Designing with Microcontrollers": "课程资源/电路/嵌入式SoC/cornell_ece4760.md"
     - 算法编程:
       - 导言: "课程资源/算法编程/index.md"
       - 编程入门:
+        - 课程资源/算法编程/编程入门/index.md
         - MIT-Missing-Semester: "课程资源/算法编程/编程入门/MIT-Missing-Semester.md"
         - "Sysadmin DeCal": "课程资源/算法编程/编程入门/DeCal.md"
         - Python 语言:
@@ -452,6 +471,7 @@ nav:
           - "KAIST CS220": "课程资源/算法编程/编程入门/Rust/cs220.md"
           - "KAIST CS431": "课程资源/算法编程/编程入门/Rust/cs431.md"
       - 数据结构与算法:
+        - 课程资源/算法编程/数据结构与算法/index.md
         - 数据结构与算法(复旦): "课程资源/算法编程/数据结构与算法/MICR130009.md"
         - "UCB CS61B": "课程资源/算法编程/数据结构与算法/CS61B.md"
         - "Coursera: Algorithms I & II": "课程资源/算法编程/数据结构与算法/Algo.md"
@@ -459,11 +479,13 @@ nav:
         - "MIT 6.046": "课程资源/算法编程/数据结构与算法/6.046.md"
         - "UCB CS170": "课程资源/算法编程/数据结构与算法/CS170.md"
       - 编程语言设计与分析:
+        - 课程资源/算法编程/编程语言设计与分析/index.md
         - "Stanford CS242": "课程资源/算法编程/编程语言设计与分析/CS242.md"
         - NJU 软件分析: "课程资源/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md"
         - PKU 软件分析: "课程资源/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
         - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
       - 软件工程:
+        - 课程资源/算法编程/软件工程/index.md
         - "MIT 6.031": "课程资源/算法编程/软件工程/6031.md"
         - "UCB CS169": "课程资源/算法编程/软件工程/CS169.md"
         - "CMU 17-803": "课程资源/算法编程/软件工程/17803.md"
@@ -478,23 +500,28 @@ nav:
     - 系统架构:
       - 导言: "课程资源/系统架构/index.md"
       - 计算机系统基础:
+        - 课程资源/系统架构/入门速成/index.md
         - 计算机组成原理(复旦): "课程资源/系统架构/入门速成/MICR130038.md"
         - "CMU 15-213: CSAPP": "课程资源/系统架构/入门速成/CSAPP.md"
         - "Stanford CS110": "课程资源/系统架构/入门速成/CS110.md"
       - 体系结构:
+        - 课程资源/系统架构/体系结构/index.md
         - "Coursera: Nand2Tetris": "课程资源/系统架构/体系结构/N2T.md"
         - "UCB CS61C": "课程资源/系统架构/体系结构/CS61C.md"
         - "ETHz: Digital Design and Computer Architecture": "课程资源/系统架构/体系结构/DDCA.md"
         - "ETHz: Computer Architecture": "课程资源/系统架构/体系结构/CA.md"
       - 操作系统:
+        - 课程资源/系统架构/操作系统/index.md
         - "MIT 6.S081": "课程资源/系统架构/操作系统/MIT6.S081.md"
         - "UCB CS162": "课程资源/系统架构/操作系统/CS162.md"
         - "NJU OS": "课程资源/系统架构/操作系统/NJUOS.md"
         - "HIT OS": "课程资源/系统架构/操作系统/HITOS.md"
       - 并行与分布式系统:
+        - 课程资源/系统架构/并行与分布式系统/index.md
         - "CMU 15-418/Stanford CS149": "课程资源/系统架构/并行与分布式系统/CS149.md"
         - "MIT 6.824": "课程资源/系统架构/并行与分布式系统/MIT6.824.md"
       - 计算机系统安全:
+        - 课程资源/系统架构/系统安全/index.md
         - "UCB CS161": "课程资源/系统架构/系统安全/CS161.md"
         - "MIT 6.1600": "课程资源/系统架构/系统安全/MIT6.1600.md"
         - "MIT 6.858": "课程资源/系统架构/系统安全/MIT6.858.md"
@@ -502,17 +529,20 @@ nav:
         - "ASU CSE466": "课程资源/系统架构/系统安全/CSE466.md"
         - "SU SEED Labs": "课程资源/系统架构/系统安全/SEEDLabs.md"
       - 计算机网络:
+        - 课程资源/系统架构/计算机网络/index.md
         - "UCB CS168": "课程资源/系统架构/计算机网络/CS168.md"
         - "Stanford CS144": "课程资源/系统架构/计算机网络/CS144.md"
         - "USTC Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown_ustc.md"
         - "Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown.md"
       - 数据库系统:
+        - 课程资源/系统架构/数据库系统/index.md
         - "UCB CS186": "课程资源/系统架构/数据库系统/CS186.md"
         - "CMU 15-445": "课程资源/系统架构/数据库系统/15445.md"
         - "Caltech CS122": "课程资源/系统架构/数据库系统/CS122.md"
         - "Stanford CS346": "课程资源/系统架构/数据库系统/CS346.md"
         - "CMU 15-799": "课程资源/系统架构/数据库系统/15799.md"
       - 编译原理:
+        - 课程资源/系统架构/编译原理/index.md
         - "PKU 编译原理实践": "课程资源/系统架构/编译原理/PKU-Compilers.md"
         - "Stanford CS143": "课程资源/系统架构/编译原理/CS143.md"
         - "NJU 编译原理": "课程资源/系统架构/编译原理/NJU-Compilers.md"
@@ -522,22 +552,26 @@ nav:
     - 人工智能:
       - 导言: "课程资源/人工智能/index.md"
       - 入门速成:
+        - 课程资源/人工智能/入门速成/index.md
         - "Neural Networks: Zero to Hero": "课程资源/人工智能/入门速成/Neural Networks：Zero to Hero.md"
         - "Harvard CS50 AI": "课程资源/人工智能/入门速成/CS50.md"
         - "UCB CS188": "课程资源/人工智能/入门速成/CS188.md"
       - 机器学习:
+        - 课程资源/人工智能/机器学习/index.md
         - "Coursera: Machine Learning": "课程资源/人工智能/机器学习/ML.md"
         - "Stanford CS229": "课程资源/人工智能/机器学习/CS229.md"
         - "UCB CS189": "课程资源/人工智能/机器学习/CS189.md"
         - "UCB Data100": "课程资源/人工智能/机器学习/Data100.md"
         - 补充资源: "课程资源/人工智能/机器学习/补充资源.md"
       - AI系统:
+        - 课程资源/人工智能/AI系统/index.md
         - 智能计算系统: "课程资源/人工智能/AI系统/AICS.md"
         - "CMU 10-414/714: Deep Learning Systems": "课程资源/人工智能/AI系统/CMU10-414.md"
         - "MIT6.5940: TinyML and Efficient Deep Learning": "课程资源/人工智能/AI系统/EML.md"
         - "Machine Learning Compilation": "课程资源/人工智能/AI系统/MLC.md"
         - 补充资源: "课程资源/人工智能/AI系统/补充资源.md"
       - 深度学习:
+        - 课程资源/人工智能/深度学习/index.md
         - "Coursera: Deep Learning": "课程资源/人工智能/深度学习/CS230.md"
         - "国立台湾大学: 李宏毅机器学习": "课程资源/人工智能/深度学习/LHY.md"
         - "UMich EECS 498-007: Deep Learning for Computer Vision": "课程资源/人工智能/深度学习/EECS498-007.md"
@@ -547,6 +581,7 @@ nav:
         - "UCB CS285": "课程资源/人工智能/深度学习/CS285.md"
         - 补充资源: "课程资源/人工智能/深度学习/补充资源.md"
       - 深度生成模型:
+        - 课程资源/人工智能/深度生成模型/index.md
         - 学习路线图: "课程资源/人工智能/深度生成模型/roadmap.md"
         - "MIT 6.S184": "课程资源/人工智能/深度生成模型/MIT6.S184.md"
         - "MIT 6.S978: Deep Generative Models": "课程资源/人工智能/深度生成模型/MIT6.S978.md"
@@ -558,6 +593,7 @@ nav:
           - "CMU 11-667: LLM Methods and Applications": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-667.md"
           - "CMU 11-711: Advanced NLP": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-711.md"
       - 机器学习理论:
+        - 课程资源/人工智能/机器学习理论/index.md
         - 学习路线图: "课程资源/人工智能/机器学习理论/roadmap.md"
         - "CMU 10-708: Probabilistic Graphical Models": "课程资源/人工智能/机器学习理论/CMU10-708.md"
         - "Columbia STAT 8201": "课程资源/人工智能/机器学习理论/STAT8201.md"
