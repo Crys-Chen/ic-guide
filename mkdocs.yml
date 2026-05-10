@@ -147,6 +147,8 @@ plugins:
             前端: Frontend
             导言: Introduction
             速通: Quick Start
+            入门速成: Quick Start
+            机器学习理论: Machine Learning Theory
             嵌入式SoC: Embedded SoC
             集成电路工艺: IC Fabrication
             数字: Digital Circuits
@@ -287,10 +289,10 @@ nav:
           - 线性代数(复旦): "课程资源/数学/数学基础/线性代数/COMP120004.md"
           - "MIT18.06: Linear Algebra": "课程资源/数学/数学基础/线性代数/MITLA.md"
       - 数学进阶:
-        - 速通:
-          - 工程数学及概率方法(复旦): "课程资源/数学/数学进阶/速通/MICR130008.md"
-          - "UCB CS70": "课程资源/数学/数学进阶/速通/CS70.md"
-          - "MIT 6.042J": "课程资源/数学/数学进阶/速通/6.042J.md"
+        - 入门速成:
+          - 工程数学及概率方法(复旦): "课程资源/数学/数学进阶/入门速成/MICR130008.md"
+          - "UCB CS70": "课程资源/数学/数学进阶/入门速成/CS70.md"
+          - "MIT 6.042J": "课程资源/数学/数学进阶/入门速成/6.042J.md"
         - 矩阵分析:
           - "MIT18.065": "课程资源/数学/数学进阶/矩阵分析/MIT18.065.md"
           - 严质彬(哈工大): "课程资源/数学/数学进阶/矩阵分析/HIT.md"
@@ -348,10 +350,10 @@ nav:
         - 补充资源: "课程资源/器件与工艺/先进集成电路工艺技术_FDU/补充资源.md"
     - 电路:
       - 导言: "课程资源/电路/index.md"
-      - 速通:
-        - "EE16A&B: Designing Information Devices and Systems": "课程资源/电路/速通/EE16.md"
-        - "UCB EE120: Signal and Systems": "课程资源/电路/速通/signal.md"
-        - "MIT 6.007 Signals and Systems": "课程资源/电路/速通/Signals_and_Systems_AVO.md"
+      - 入门速成:
+        - "EE16A&B: Designing Information Devices and Systems": "课程资源/电路/入门速成/EE16.md"
+        - "UCB EE120: Signal and Systems": "课程资源/电路/入门速成/signal.md"
+        - "MIT 6.007 Signals and Systems": "课程资源/电路/入门速成/Signals_and_Systems_AVO.md"
       - 硬件描述语言(HDL):
         - Verilog:
           - "HDLBits: Verilog Practice": "课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md"
@@ -453,12 +455,16 @@ nav:
         - NJU 软件分析: "课程资源/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md"
         - PKU 软件分析: "课程资源/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
         - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
+      - 软件工程:
+        - "MIT 6.031": "课程资源/算法编程/软件工程/6031.md"
+        - "UCB CS169": "课程资源/算法编程/软件工程/CS169.md"
+        - "CMU 17-803": "课程资源/算法编程/软件工程/17803.md"
     - 系统架构:
       - 导言: "课程资源/系统架构/index.md"
       - 计算机系统基础:
-        - 计算机组成原理(复旦): "课程资源/系统架构/速通/MICR130038.md"
-        - "CMU 15-213: CSAPP": "课程资源/系统架构/速通/CSAPP.md"
-        - "Stanford CS110": "课程资源/系统架构/速通/CS110.md"
+        - 计算机组成原理(复旦): "课程资源/系统架构/入门速成/MICR130038.md"
+        - "CMU 15-213: CSAPP": "课程资源/系统架构/入门速成/CSAPP.md"
+        - "Stanford CS110": "课程资源/系统架构/入门速成/CS110.md"
       - 体系结构:
         - "Coursera: Nand2Tetris": "课程资源/系统架构/体系结构/N2T.md"
         - "UCB CS61C": "课程资源/系统架构/体系结构/CS61C.md"
@@ -497,33 +503,24 @@ nav:
         - "KAIST CS420": "课程资源/系统架构/编译原理/CS420.md"
         - "USTC 编译原理与技术": "课程资源/系统架构/编译原理/USTC-Compilers.md"
         - "SJTU 编译原理": "课程资源/系统架构/编译原理/SJTU-Compilers.md"
-    - 前端:
-      - 计算机图形学:
-        - GAMES101: "课程资源/前端/计算机图形学/GAMES101.md"
-        - GAMES202: "课程资源/前端/计算机图形学/GAMES202.md"
-        - GAMES103: "课程资源/前端/计算机图形学/GAMES103.md"
-        - "Stanford CS148": "课程资源/前端/计算机图形学/CS148.md"
-        - "CMU 15-462": "课程资源/前端/计算机图形学/15462.md"
-        - "USTC CG": "课程资源/前端/计算机图形学/USTC ComputerGraphics.md"
-      - 软件工程:
-        - "MIT 6.031": "课程资源/前端/软件工程/6031.md"
-        - "UCB CS169": "课程资源/前端/软件工程/CS169.md"
-        - "CMU 17-803": "课程资源/前端/软件工程/17803.md"
-      - Web开发:
-        - "MIT web development course": "课程资源/前端/Web开发/mitweb.md"
-        - "Stanford CS142": "课程资源/前端/Web开发/CS142.md"
-        - "University of Helsinki: Full Stack open": "课程资源/前端/Web开发/fullstackopen.md"
-        - "CS571 Building UI": "课程资源/前端/Web开发/CS571.md"
+    - 计算机图形学:
+      - GAMES101: "课程资源/计算机图形学/GAMES101.md"
+      - GAMES202: "课程资源/计算机图形学/GAMES202.md"
+      - GAMES103: "课程资源/计算机图形学/GAMES103.md"
+      - "Stanford CS148": "课程资源/计算机图形学/CS148.md"
+      - "CMU 15-462": "课程资源/计算机图形学/15462.md"
+      - "USTC CG": "课程资源/计算机图形学/USTC ComputerGraphics.md"
     - 人工智能:
       - 导言: "课程资源/人工智能/index.md"
-      - 速通:
-        - "Neural Networks: Zero to Hero": "课程资源/人工智能/速通/Neural Networks：Zero to Hero.md"
-        - "Harvard CS50 AI": "课程资源/人工智能/速通/CS50.md"
-        - "UCB CS188": "课程资源/人工智能/速通/CS188.md"
+      - 入门速成:
+        - "Neural Networks: Zero to Hero": "课程资源/人工智能/入门速成/Neural Networks：Zero to Hero.md"
+        - "Harvard CS50 AI": "课程资源/人工智能/入门速成/CS50.md"
+        - "UCB CS188": "课程资源/人工智能/入门速成/CS188.md"
       - 机器学习:
         - "Coursera: Machine Learning": "课程资源/人工智能/机器学习/ML.md"
         - "Stanford CS229": "课程资源/人工智能/机器学习/CS229.md"
         - "UCB CS189": "课程资源/人工智能/机器学习/CS189.md"
+        - "UCB Data100": "课程资源/人工智能/机器学习/Data100.md"
         - 补充资源: "课程资源/人工智能/机器学习/补充资源.md"
       - AI系统:
         - 智能计算系统: "课程资源/人工智能/AI系统/AICS.md"
@@ -551,14 +548,12 @@ nav:
           - "CMU 11-868: Large Language Model Systems": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-868.md"
           - "CMU 11-667: LLM Methods and Applications": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-667.md"
           - "CMU 11-711: Advanced NLP": "课程资源/人工智能/深度生成模型/大语言模型/CMU11-711.md"
-      - 机器学习进阶:
-        - 学习路线图: "课程资源/人工智能/机器学习进阶/roadmap.md"
-        - "CMU 10-708: Probabilistic Graphical Models": "课程资源/人工智能/机器学习进阶/CMU10-708.md"
-        - "Columbia STAT 8201": "课程资源/人工智能/机器学习进阶/STAT8201.md"
-        - "U Toronto STA 4273": "课程资源/人工智能/机器学习进阶/STA4273.md"
-        - "Stanford CS229M": "课程资源/人工智能/机器学习进阶/CS229M.md"
-      - 数据科学:
-        - "UCB Data100": "课程资源/人工智能/数据科学/Data100.md"
+      - 机器学习理论:
+        - 学习路线图: "课程资源/人工智能/机器学习理论/roadmap.md"
+        - "CMU 10-708: Probabilistic Graphical Models": "课程资源/人工智能/机器学习理论/CMU10-708.md"
+        - "Columbia STAT 8201": "课程资源/人工智能/机器学习理论/STAT8201.md"
+        - "U Toronto STA 4273": "课程资源/人工智能/机器学习理论/STA4273.md"
+        - "Stanford CS229M": "课程资源/人工智能/机器学习理论/CS229M.md"
   - 工程工具:
       - 通用工具:
           - 翻墙: "课程资源/必学工具/翻墙.md"

@@ -307,7 +307,7 @@ Berkeley 作为著名开源数据库 postgres 的发源地也不遑多让，[UCB
 
 ### 数据科学
 
-其实数据科学和机器学习与深度学习有着很紧密的联系，但可能更侧重于实践。Berkeley 的 [UCB Data100: Principles and Techniques of Data Science](数据科学/Data100.md) 通过丰富的编程练习让你在实践中掌握各类数据分析工具和算法，并带领你体验从海量的数据集中提取出想要的结果，并对未来的数据或用户的行为做出相应的预测。但这只是一门基础课，如果想学习工业级别的数据挖掘与分析技术，可以尝试 Stanford 的大数据挖掘课程 [CS246: Mining Massive Data Sets](https://web.stanford.edu/class/cs246/)。
+其实数据科学和机器学习与深度学习有着很紧密的联系，但可能更侧重于实践。Berkeley 的 [UCB Data100: Principles and Techniques of Data Science](机器学习/Data100.md) 通过丰富的编程练习让你在实践中掌握各类数据分析工具和算法，并带领你体验从海量的数据集中提取出想要的结果，并对未来的数据或用户的行为做出相应的预测。但这只是一门基础课，如果想学习工业级别的数据挖掘与分析技术，可以尝试 Stanford 的大数据挖掘课程 [CS246: Mining Massive Data Sets](https://web.stanford.edu/class/cs246/)。
 
 ### 人工智能
 
@@ -320,7 +320,7 @@ Berkeley 作为著名开源数据库 postgres 的发源地也不遑多让，[UCB
 
 但上过这门课只能让你从宏观上对机器学习这一领域有一定了解，如果想真正理解那些“神奇”算法背后的数学原理甚至从事相关领域的科研工作，那么还需要一门更“数学”的课程，例如 [Stanford CS229: Machine Learning](机器学习/CS229.md) 或者 [UCB CS189: Introduction to Machine Learning](机器学习/CS189.md)。
 
-当然，如果你之后致力于从事机器学习理论相关的科学研究，那么可以参考 [Yao Fu](https://franxyao.github.io/) 分享的[进阶学习路线](./机器学习进阶/roadmap.md)学习一些更深入的研究生难度的课程。
+当然，如果你之后致力于从事机器学习理论相关的科学研究，那么可以参考 [Yao Fu](https://franxyao.github.io/) 分享的[进阶学习路线](./机器学习理论/roadmap.md)学习一些更深入的研究生难度的课程。
 
 ### 深度学习
 
