@@ -127,6 +127,7 @@ plugins:
             人工智能: Artificial Intelligence
             机器学习: Machine Learning
             机器学习系统: Machine Learning Systems
+            AI系统: AI Systems
             智能计算系统: Intelligent Computing Systems
             深度学习: Deep Learning
             "国立台湾大学: 李宏毅机器学习": NTU Machine Learning
@@ -524,12 +525,12 @@ nav:
         - "Stanford CS229": "课程资源/人工智能/机器学习/CS229.md"
         - "UCB CS189": "课程资源/人工智能/机器学习/CS189.md"
         - 补充资源: "课程资源/人工智能/机器学习/补充资源.md"
-      - 机器学习系统:
-        - 智能计算系统: "课程资源/人工智能/机器学习系统/AICS.md"
-        - "CMU 10-414/714: Deep Learning Systems": "课程资源/人工智能/机器学习系统/CMU10-414.md"
-        - "MIT6.5940: TinyML and Efficient Deep Learning": "课程资源/人工智能/机器学习系统/EML.md"
-        - "Machine Learning Compilation": "课程资源/人工智能/机器学习系统/MLC.md"
-        - 补充资源: "课程资源/人工智能/机器学习系统/补充资源.md"
+      - AI系统:
+        - 智能计算系统: "课程资源/人工智能/AI系统/AICS.md"
+        - "CMU 10-414/714: Deep Learning Systems": "课程资源/人工智能/AI系统/CMU10-414.md"
+        - "MIT6.5940: TinyML and Efficient Deep Learning": "课程资源/人工智能/AI系统/EML.md"
+        - "Machine Learning Compilation": "课程资源/人工智能/AI系统/MLC.md"
+        - 补充资源: "课程资源/人工智能/AI系统/补充资源.md"
       - 深度学习:
         - "Coursera: Deep Learning": "课程资源/人工智能/深度学习/CS230.md"
         - "国立台湾大学: 李宏毅机器学习": "课程资源/人工智能/深度学习/LHY.md"
