@@ -381,25 +381,26 @@
 }
 
 /* ─── 科研方向层次图（移动端 fallback） ────────────────────
-   统一复旦深蓝主色调。各 sector 用同一色系不同明度区分,
-   底层(器件)→ 应用层(交叉)用渐变营造层次感,匹配站点风格。 */
+   统一白底 + 柔和阴影,5 个 sector 用 border-left 同色家族不同明度
+   区分,既克制又层次清晰。 */
 .dm-wrap { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0 2rem; }
 .dm-row {
-  display: flex; align-items: center; gap: .8rem;
-  padding: .9rem 1.1rem; border-radius: 10px;
+  display: flex; align-items: center; gap: .9rem;
+  padding: .95rem 1.1rem; border-radius: 10px;
   flex-wrap: wrap;
+  background: #ffffff;
   border-left: 5px solid #032168;
-  box-shadow: 0 1px 3px rgba(3, 33, 104, .04);
+  box-shadow: 0 1px 4px rgba(3, 33, 104, .07), 0 0 0 1px rgba(3, 33, 104, .04);
 }
-/* 5 sector 同蓝色家族 5 档明度,深→浅对应底层物理 → 应用前沿 */
-.dm-device  { background: #B8CDE8; border-left-color: #032168; }   /* 底层最深 */
-.dm-circuit { background: #CFDDED; border-left-color: #1A48A8; }
-.dm-arch    { background: #DEE7F2; border-left-color: #3B5FCF; }
-.dm-infra   { background: #E9EFF7; border-left-color: #5970D8; }
-.dm-cross   { background: #F2F5FB; border-left-color: #6B7FE0; }   /* 顶层最浅 */
+/* sector 区分:仅 border-left 颜色,同蓝色家族 5 档明度 */
+.dm-device  { border-left-color: #032168; }   /* 器件 — 最深 (Fudan Deep) */
+.dm-circuit { border-left-color: #1A48A8; }
+.dm-arch    { border-left-color: #3B5FCF; }
+.dm-infra   { border-left-color: #5970D8; }
+.dm-cross   { border-left-color: #6B7FE0; }   /* 交叉 — 最浅 */
 
 .dm-lbl {
-  font-weight: 700; font-size: .9rem;
+  font-weight: 700; font-size: .92rem;
   min-width: 7.5em; white-space: nowrap;
   color: #032168;
   letter-spacing: .02em;
@@ -407,13 +408,13 @@
 .dm-chips { display: flex; flex-wrap: wrap; gap: .45rem; }
 .dm-chip {
   border-radius: 6px;
-  padding: .3em .85em;
+  padding: .32em .9em;
   font-size: .8rem;
   font-weight: 500;
   text-decoration: none !important;
-  background: rgba(255, 255, 255, .65);  /* 半透明白底,透出 row 蓝色 */
+  background: rgba(3, 33, 104, .055);
   color: #032168 !important;
-  border: 1px solid rgba(3, 33, 104, .22);
+  border: 1px solid rgba(3, 33, 104, .15);
   transition: background .15s, border-color .15s, transform .12s, box-shadow .15s;
 }
 .dm-chip:hover {
@@ -432,30 +433,31 @@
   user-select: none;
 }
 
-/* Dark mode: 深底浅蓝 */
+/* Dark mode */
 [data-md-color-scheme="slate"] .dm-row {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+  background: rgba(255, 255, 255, .035);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .35), 0 0 0 1px rgba(184, 210, 242, .08);
 }
-[data-md-color-scheme="slate"] .dm-device  { background: rgba(3, 33, 104, .42);   border-left-color: #B8D2F2; }
-[data-md-color-scheme="slate"] .dm-circuit { background: rgba(26, 72, 168, .32);  border-left-color: #A5C4EE; }
-[data-md-color-scheme="slate"] .dm-arch    { background: rgba(59, 95, 207, .24);  border-left-color: #93B7E8; }
-[data-md-color-scheme="slate"] .dm-infra   { background: rgba(89, 112, 216, .18); border-left-color: #8DAEE3; }
-[data-md-color-scheme="slate"] .dm-cross   { background: rgba(107, 127, 224, .12); border-left-color: #8AABDE; }
+[data-md-color-scheme="slate"] .dm-device  { border-left-color: #B8D2F2; }
+[data-md-color-scheme="slate"] .dm-circuit { border-left-color: #A5C4EE; }
+[data-md-color-scheme="slate"] .dm-arch    { border-left-color: #93B7E8; }
+[data-md-color-scheme="slate"] .dm-infra   { border-left-color: #8DAEE3; }
+[data-md-color-scheme="slate"] .dm-cross   { border-left-color: #8AABDE; }
 [data-md-color-scheme="slate"] .dm-lbl { color: #B8D2F2; }
 [data-md-color-scheme="slate"] .dm-chip {
-  background: rgba(255, 255, 255, .04);
+  background: rgba(184, 210, 242, .08);
   color: #B8D2F2 !important;
-  border-color: rgba(184, 210, 242, .35);
+  border-color: rgba(184, 210, 242, .25);
 }
 [data-md-color-scheme="slate"] .dm-chip:hover {
   background: #B8D2F2;
   color: #032168 !important;
   border-color: #B8D2F2;
 }
-[data-md-color-scheme="slate"] .dm-conn { color: rgba(184, 210, 242, .35); }
+[data-md-color-scheme="slate"] .dm-conn { color: rgba(184, 210, 242, .3); }
 
 @media (max-width: 600px) {
-  .dm-lbl { min-width: 100%; margin-bottom: .35rem; font-size: .88rem; }
+  .dm-lbl { min-width: 100%; margin-bottom: .35rem; font-size: .9rem; }
   .dm-conn { padding: .25rem 0; }
 }
 
