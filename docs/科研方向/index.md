@@ -12,7 +12,7 @@ hide:
       <div class="rg-center-pulse"></div>
     </div>
   </div>
-  <div class="rg-fallback">
+  <div class="rg-fallback" style="display:none">
 <div class="dm-wrap">
 <div class="dm-row dm-cross"><span class="dm-lbl">交叉延伸方向</span><span class="dm-chips"><a class="dm-chip" href="AI算法与系统/">AI算法与系统</a><a class="dm-chip" href="具身智能/">具身智能</a><a class="dm-chip" href="量子计算与量子芯片/">量子计算与量子芯片</a><a class="dm-chip" href="类脑芯片/">类脑芯片</a></span></div>
 <div class="dm-conn dm-dotted">⋯ ⋯ &nbsp;跨领域应用&nbsp; ⋯ ⋯</div>

@@ -1555,8 +1555,9 @@
   }
 }
 
-/* ── Fallback list: hidden by default; only shown on mobile ─ */
-.rg-fallback { display: none; }
+/* ── Fallback list: inline display:none on the markup is the
+   primary hide on desktop (works even before this CSS loads).
+   Mobile media query below overrides with !important. ─────── */
 
 /* ── Mobile (<768): swap orbit for fallback list ─────────── */
 /* The galaxy needs >=600px to fit 17 cards on 4 rings without
@@ -1571,7 +1572,7 @@
   }
   .rg-root.rg-fullscreen .rg-stage,
   .rg-root .rg-center { display: none !important; }
-  .rg-fallback { display: block; }
+  .rg-fallback { display: block !important; }
   .rg-fallback .dm-wrap { margin: 0; }
 }
 
