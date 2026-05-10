@@ -391,11 +391,12 @@
   border-left: 5px solid #032168;
   box-shadow: 0 1px 3px rgba(3, 33, 104, .04);
 }
-/* 5 sector 同蓝色家族,从底层(器件)→应用层(交叉)明度递增 */
-.dm-device  { background: #DBE5F2; border-left-color: #032168; }   /* 最深 */
-.dm-circuit { background: #E2EAF5; border-left-color: #1A48A8; }
-.dm-arch    { background: #E9EFF7; border-left-color: #3B5FCF; }
-.dm-cross   { background: #EFF3FA; border-left-color: #6B7FE0; }   /* 最浅 */
+/* 5 sector 同蓝色家族 5 档明度,深→浅对应底层物理 → 应用前沿 */
+.dm-device  { background: #B8CDE8; border-left-color: #032168; }   /* 底层最深 */
+.dm-circuit { background: #CFDDED; border-left-color: #1A48A8; }
+.dm-arch    { background: #DEE7F2; border-left-color: #3B5FCF; }
+.dm-infra   { background: #E9EFF7; border-left-color: #5970D8; }
+.dm-cross   { background: #F2F5FB; border-left-color: #6B7FE0; }   /* 顶层最浅 */
 
 .dm-lbl {
   font-weight: 700; font-size: .9rem;
@@ -435,10 +436,11 @@
 [data-md-color-scheme="slate"] .dm-row {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
 }
-[data-md-color-scheme="slate"] .dm-device  { background: rgba(3, 33, 104, .35);  border-left-color: #B8D2F2; }
-[data-md-color-scheme="slate"] .dm-circuit { background: rgba(26, 72, 168, .28); border-left-color: #A5C4EE; }
-[data-md-color-scheme="slate"] .dm-arch    { background: rgba(59, 95, 207, .22); border-left-color: #93B7E8; }
-[data-md-color-scheme="slate"] .dm-cross   { background: rgba(107, 127, 224, .18); border-left-color: #8AABDE; }
+[data-md-color-scheme="slate"] .dm-device  { background: rgba(3, 33, 104, .42);   border-left-color: #B8D2F2; }
+[data-md-color-scheme="slate"] .dm-circuit { background: rgba(26, 72, 168, .32);  border-left-color: #A5C4EE; }
+[data-md-color-scheme="slate"] .dm-arch    { background: rgba(59, 95, 207, .24);  border-left-color: #93B7E8; }
+[data-md-color-scheme="slate"] .dm-infra   { background: rgba(89, 112, 216, .18); border-left-color: #8DAEE3; }
+[data-md-color-scheme="slate"] .dm-cross   { background: rgba(107, 127, 224, .12); border-left-color: #8AABDE; }
 [data-md-color-scheme="slate"] .dm-lbl { color: #B8D2F2; }
 [data-md-color-scheme="slate"] .dm-chip {
   background: rgba(255, 255, 255, .04);
