@@ -21,4 +21,14 @@ jobs:
           python-version: 3.x
 
       - run: pip3 install -U -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      # Build site/ (mkdocs-static-i18n's multi-pass build leaves the
+      # search_index.json without our CJK n-grams).
+      - run: mkdocs build
+      # Patch search_index.json AFTER the build is fully done so the
+      # n-gram injection survives all i18n passes.
+      - run: python3 scripts/inject_ngrams.py site
+      # Push site/ to gh-pages branch.
+      - run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          ghp-import -n -p -f site

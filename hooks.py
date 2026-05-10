@@ -1,48 +1,47 @@
 """
-MkDocs 钩子：构建完成后，向 search_index.json 注入中文字符 n-gram，
-实现无词典的精确中文短语搜索。
+MkDocs hook: inject CJK n-grams into search_index.json so short Chinese
+phrase queries (e.g. "光计算") match exactly.
 
-原理：
-  文档含"光计算" → 提取 n-gram：光计、计算、光计算 → 追加进 docs[].text
-  用户搜"光计算" → 浏览器端分词器把它作为整体 token → 精确命中 → 找到文章
-  无需词典，任意中文词组均适用。
+NOTE: when mkdocs-static-i18n runs multi-pass build (zh + en),
+the final search_index.json gets rewritten AFTER on_post_build fires,
+which strips our injection. The authoritative injection happens via
+scripts/inject_ngrams.py invoked after `mkdocs build` in CI/local.
+
+This hook is kept as a fallback for plain `mkdocs serve` workflows
+(no i18n second pass), where it does still take effect.
 """
 
 import json
 import os
 import re
 
-# 连续中文字符序列（≥2字）
 _CJK = re.compile(r'[一-鿿㐀-䶿]{2,}')
+_ZWSP = '​'
 
 
 def _extract_ngrams(text: str, min_n: int = 2, max_n: int = 4) -> set[str]:
-    """提取文本中所有 CJK 序列的 n-gram（n ∈ [min_n, max_n]）。"""
+    """Strip ZWSP (jieba word boundaries), then extract every CJK n-gram."""
+    text = text.replace(_ZWSP, '')
     grams: set[str] = set()
     for m in _CJK.finditer(text):
         s = m.group()
         for n in range(min_n, min(max_n + 1, len(s) + 1)):
             for i in range(len(s) - n + 1):
-                grams.add(s[i : i + n])
+                grams.add(s[i:i + n])
     return grams
 
 
 def on_post_build(config, **kwargs):
-    """在生成的 search_index.json 里为每个 doc 追加 CJK n-gram。"""
     idx_path = os.path.join(config["site_dir"], "search", "search_index.json")
     if not os.path.exists(idx_path):
         return
-
     with open(idx_path, encoding="utf-8") as f:
         data = json.load(f)
-
     for doc in data.get("docs", []):
         grams = set()
         for field in ("text", "title"):
             grams |= _extract_ngrams(doc.get(field, ""))
         if grams:
-            # 用 ​（已在 separator 中）分隔，确保每个 n-gram 被当作独立 token
-            doc["text"] = doc.get("text", "") + "​" + "​".join(sorted(grams))
-
+            doc["text"] = doc.get("text", "") + _ZWSP + _ZWSP.join(sorted(grams))
     with open(idx_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
