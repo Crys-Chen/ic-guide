@@ -504,6 +504,7 @@ nav:
         - "USTC 编译原理与技术": "课程资源/系统架构/编译原理/USTC-Compilers.md"
         - "SJTU 编译原理": "课程资源/系统架构/编译原理/SJTU-Compilers.md"
     - 计算机图形学:
+      - 课程资源/计算机图形学/index.md
       - GAMES101: "课程资源/计算机图形学/GAMES101.md"
       - GAMES202: "课程资源/计算机图形学/GAMES202.md"
       - GAMES103: "课程资源/计算机图形学/GAMES103.md"
@@ -555,6 +556,7 @@ nav:
         - "U Toronto STA 4273": "课程资源/人工智能/机器学习理论/STA4273.md"
         - "Stanford CS229M": "课程资源/人工智能/机器学习理论/CS229M.md"
   - 工程工具:
+      - 课程资源/必学工具/index.md
       - 通用工具:
           - 翻墙: "课程资源/必学工具/翻墙.md"
           - Git: "课程资源/必学工具/Git.md"
