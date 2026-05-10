@@ -189,12 +189,12 @@
     var outerRx = RING_RADII[3] * sx * 1.06;
     var outerRy = RING_RADII[3] * sy * 1.06;
     /* Labels sit outside the dividers, with z-index above cards.
-       Floors: labels must be at least 90px outside ring 3 horizontally
-       (card half-width 70 + label half-width 50 - 30 angular slack) and
-       40px vertically (card half-height 25 + label half-height 11 +
-       buffer). The floor wins on narrow viewports, even if labels
-       slightly overflow the stage edge. */
-    var labelRx = Math.max(RING_RADII[3] * sx + 90,
+       Floors: labels must be at least 130px outside ring 3 horizontally
+       (card half-width 70 + worst-case label half-width 60) and 40px
+       vertically (card half-height 25 + label half-height 11 + buffer).
+       The floor wins on narrow viewports, even if labels slightly
+       overflow the stage edge. */
+    var labelRx = Math.max(RING_RADII[3] * sx + 130,
                            Math.min(RING_RADII[3] * sx * 1.20, stageW * 0.5 - 50));
     var labelRy = Math.max(RING_RADII[3] * sy + 40,
                            Math.min(RING_RADII[3] * sy * 1.20, stageH * 0.5 - 4));

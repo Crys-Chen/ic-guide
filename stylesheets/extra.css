@@ -1523,13 +1523,15 @@
 /* ── Ring label ─────────────────────────────────────────── */
 .rg-ring-label {
   position: absolute !important;
-  font-size: .72rem;
+  font-size: 11px;        /* fixed px, not rem — keeps width predictable */
   font-weight: 600;
   opacity: .85;
   pointer-events: none;
   white-space: nowrap;
   font-family: "Inter", "Noto Sans SC", sans-serif;
   z-index: 20;
+  max-width: 110px;       /* "设计基础设施" 6 chars × 12 + slack */
+  text-align: center;
 }
 
 /* ── Dark mode tweaks ───────────────────────────────────── */
