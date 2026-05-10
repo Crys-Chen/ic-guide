@@ -207,7 +207,7 @@ graph LR
 
     模拟滤波器 · AD/DA · 无线模拟前端 IP
 
--   **[Pui-In Mak（麦沛然）](https://ime.um.edu.mo/people/pimak/)** <span class="badge-hk">澳门大学</span>
+-   **[Pui-In Mak（麥沛然）](https://ime.um.edu.mo/people/pimak/)** <span class="badge-hk">澳门大学</span>
 
     射频与模拟电路 · 微流控芯片 · 无线传感 IC
 

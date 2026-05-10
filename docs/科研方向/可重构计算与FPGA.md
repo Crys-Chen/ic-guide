@@ -159,7 +159,7 @@ graph LR
 
     FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
 
--   **[Hayden Kwok-Hay So（苏国曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
+-   **[Hayden Kwok-Hay So（蘇國曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
 
     异构可重构计算 · FPGA Overlay · 事件驱动视觉处理
 

@@ -192,7 +192,7 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[Yi-Kuen Lee（李贻昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
+-   **[Yi-Kuen Lee（李貽昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
 
     CMOS MEMS 传感器（AIoT 应用） · 微纳流控生物医疗 MEMS
 
@@ -200,7 +200,7 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     MEMS 微纳制造（通信/医疗/环境监测）· Taikoo Chair Professor of Microsystems Technology
 
--   **[Wei-Hsin Liao（廖维新）](https://www4.mae.cuhk.edu.hk/peoples/liao-wei-hsin/)** <span class="badge-hk">港中大</span>
+-   **[Wei-Hsin Liao（廖維新）](https://www4.mae.cuhk.edu.hk/peoples/liao-wei-hsin/)** <span class="badge-hk">港中大</span>
 
     MEMS 智能材料 · 压电/磁致伸缩执行器 · 振动能量回收 · ASME Da Vinci Award
 
