@@ -1,5 +1,7 @@
 # The Information Theory, Pattern Recognition, and Neural Networks
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%95%B0%E5%AD%A6%E8%BF%9B%E9%98%B6/The_Information_Theory_Pattern_Recognition_and_Neural_Networks/)。*
+
 ## 课程简介
 
 - 所属大学：Cambridge

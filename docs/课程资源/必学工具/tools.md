@@ -1,5 +1,7 @@
 # 实用工具箱
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/tools/)。*
+
 ## 下载工具
 
 - [Sci-Hub](https://sci-hub.se/): Elbakyan 女神向你挥手，旨在打破知识壁垒的革命性网站。

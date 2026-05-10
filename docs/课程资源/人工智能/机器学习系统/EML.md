@@ -1,5 +1,7 @@
 # MIT6.5940: TinyML and Efficient Deep Learning Computing
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F/EML/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

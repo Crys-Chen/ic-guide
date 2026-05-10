@@ -1,5 +1,7 @@
 # Emacs
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/Emacs/)。*
+
 ## 为什么学习 Emacs
 
 Emacs 是一个与 Vim 齐名的强大编辑器，事实上 Emacs 几乎具有 Vim 的所有好处，例如：

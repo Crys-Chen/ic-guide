@@ -1,5 +1,7 @@
 # University of Helsinki: Full Stack open 2022
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/Web%E5%BC%80%E5%8F%91/fullstackopen/)。*
+
 ## 课程简介
 
 - 所属大学：University of Helsinki

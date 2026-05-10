@@ -1,5 +1,7 @@
 # MIT6.1600: Foundations of Computer Security
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/MIT6.1600/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

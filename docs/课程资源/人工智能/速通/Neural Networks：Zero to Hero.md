@@ -1,5 +1,7 @@
 # 神经网络：从零到英雄  
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Neural%20Networks%EF%BC%9AZero%20to%20Hero/)。*
+
 ## 课程简介  
 
 - **讲师：** Andrej Karpathy  

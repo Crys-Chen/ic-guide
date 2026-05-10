@@ -1,5 +1,7 @@
 # Vim
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/Vim/)。*
+
 ## 为什么学习 Vim
 
 在我看来 Vim 编辑器有如下的好处：

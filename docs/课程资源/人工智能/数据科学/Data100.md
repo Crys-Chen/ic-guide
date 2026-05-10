@@ -1,5 +1,7 @@
 # UCB Data100: Principles and Techniques of Data Science
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/Data100/)。*
+
 ## 课程简介
 
 - 所属大学：UC Berkeley

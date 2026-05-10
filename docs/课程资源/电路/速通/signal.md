@@ -1,5 +1,7 @@
 # UCB EE120: Signal and Systems
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%94%B5%E5%AD%90%E5%9F%BA%E7%A1%80/signal/)。*
+
 ## 课程简介
 
 - 所属大学：UC Berkeley

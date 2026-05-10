@@ -1,5 +1,7 @@
 # MIT Calculus Course
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/MITmaths/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

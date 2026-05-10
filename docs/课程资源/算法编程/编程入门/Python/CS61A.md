@@ -1,5 +1,7 @@
 # CS61A: Structure and Interpretation of Computer Programs
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)。*
+
 ## 课程简介
 
 - 所属大学：UC Berkeley

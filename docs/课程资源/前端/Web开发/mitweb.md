@@ -1,5 +1,7 @@
 # MIT Web Development Crash Course
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/Web%E5%BC%80%E5%8F%91/mitweb/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

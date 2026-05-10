@@ -1,5 +1,7 @@
 # MIT 6.007 Signals and Systems
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%94%B5%E5%AD%90%E5%9F%BA%E7%A1%80/Signals_and_Systems_AVO/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

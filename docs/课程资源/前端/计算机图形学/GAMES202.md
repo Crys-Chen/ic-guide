@@ -1,5 +1,7 @@
 # GAMES202
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/GAMES202/)。*
+
 ## 课程简介
 
 - 所属大学：UCSB

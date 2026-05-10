@@ -1,5 +1,7 @@
 # 机器学习进阶学习路线
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%B7%B1%E5%BA%A6%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B/roadmap/)。*
+
 此路线图适用于已经学过了基础机器学习 (ML, NLP, CV, RL) 的同学 (高年级本科生或低年级研究生)，已经发表过至少一篇顶会论文 (NeurIPS, ICML, ICLR, ACL, EMNLP, NAACL, CVPR, ICCV) 想要走机器学习科研路线的选手。
 
 此路线的目标是为读懂与发表机器学习顶会论文打下理论基础，特别是 Probabilistic Methods 这个 track 下的文章。

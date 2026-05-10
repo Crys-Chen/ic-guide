@@ -1,5 +1,7 @@
 # USTC: Principles and Techniques of Compiler
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/USTC-Compilers/)。*
+
 ## 课程简介
 
 - 所属大学：中国科学技术大学

@@ -1,5 +1,7 @@
 # MIT6.100L: Introduction to CS and Programming using Python
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/MIT6.100L/)。*
+
 ## 课程简介
 
 - 所属大学：MIT

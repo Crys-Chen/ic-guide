@@ -1,5 +1,7 @@
 # MIT6.S184: Generative AI with Stochastic Differential Equations
 
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%B7%B1%E5%BA%A6%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B/MIT6.S184/)。*
+
 ## 课程简介
 
 - 所属大学：MIT
