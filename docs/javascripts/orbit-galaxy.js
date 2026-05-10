@@ -66,12 +66,12 @@
       { name: '模拟与混合信号IC',      tag: 'ADC · DAC · PLL',              url: '模拟与混合信号IC',      ring: 3, angle: deg(100) },
       { name: '生物电子与脑机接口',    tag: '神经信号 · 植入式ASIC',        url: '生物电子与脑机接口',    ring: 0, angle: deg( 87) },
       /* ── 计算 — sector 2, 3 cards (118°..182°) ── */
-      { name: '处理器架构与编译系统',  tag: 'GPU · TPU · LLVM · MLIR',      url: '处理器架构与编译系统',  ring: 3, angle: deg(143) },
+      { name: '处理器架构与编译系统',  tag: 'GPU · TPU · LLVM · MLIR',      url: '处理器架构与编译系统',  ring: 3, angle: deg(141) },
       { name: '存算一体与近存计算',    tag: 'SRAM-CIM · PIM · HBM',         url: '存算一体与近存计算',    ring: 1, angle: deg(146) },
       { name: '可重构计算与FPGA',      tag: '灵活性 × 专用性能',            url: '可重构计算与FPGA',      ring: 2, angle: deg(170) },
       /* ── 设计基础设施 — sector 3, 2 cards (182°..226°) ── */
       { name: 'EDA与设计自动化',       tag: '布局布线 · ML for EDA',        url: 'EDA与设计自动化',       ring: 1, angle: deg(208) },
-      { name: '硬件安全与可信计算',    tag: '侧信道 · 木马 · PUF',          url: '硬件安全与可信计算',    ring: 3, angle: deg(210) },
+      { name: '硬件安全与可信计算',    tag: '侧信道 · 木马 · PUF',          url: '硬件安全与可信计算',    ring: 3, angle: deg(213) },
       /* ── 交叉延伸方向 — sector 4, 4 cards (226°..306°) ── */
       { name: 'AI算法与系统',          tag: 'LLM · TinyML · AI Agent',      url: 'AI算法与系统',          ring: 0, angle: deg(267) },
       { name: '类脑芯片',              tag: '忆阻器 · SNN · 脉冲神经网络',  url: '类脑芯片',              ring: 2, angle: deg(267) },
@@ -189,13 +189,14 @@
     var outerRx = RING_RADII[3] * sx * 1.06;
     var outerRy = RING_RADII[3] * sy * 1.06;
     /* Labels sit outside the dividers, with z-index above cards.
-       Floor: labels must be at least 30px outside ring 3 (vs card half-height
-       plus label half-height plus buffer) so they never overlap ring-3 cards.
-       Ceiling: stay on screen (or close to it) — but the floor wins on
-       narrow viewports, even if labels slightly overflow the stage edge. */
-    var labelRx = Math.max(RING_RADII[3] * sx + 60,
+       Floors: labels must be at least 90px outside ring 3 horizontally
+       (card half-width 70 + label half-width 50 - 30 angular slack) and
+       40px vertically (card half-height 25 + label half-height 11 +
+       buffer). The floor wins on narrow viewports, even if labels
+       slightly overflow the stage edge. */
+    var labelRx = Math.max(RING_RADII[3] * sx + 90,
                            Math.min(RING_RADII[3] * sx * 1.20, stageW * 0.5 - 50));
-    var labelRy = Math.max(RING_RADII[3] * sy + 30,
+    var labelRy = Math.max(RING_RADII[3] * sy + 40,
                            Math.min(RING_RADII[3] * sy * 1.20, stageH * 0.5 - 4));
 
     SECTORS.forEach(function (sec, i) {
@@ -299,6 +300,11 @@
   function onResize() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
+      if (window.innerWidth < 768) {
+        if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+        return;
+      }
+      if (!stage) { setupGalaxy(); return; }
       measure(); drawRings(); positionCards();
     }, 100);
   }
@@ -315,6 +321,20 @@
   function setupGalaxy() {
     var root = document.getElementById('rg-root');
     if (!root) return;
+
+    /* Register resize listener on every entry (covers SPA route
+       changes and mobile<->desktop crossings). */
+    window.removeEventListener('resize', onResize);
+    window.addEventListener('resize', onResize);
+
+    /* Mobile: skip orbit entirely. CSS shows .rg-fallback list
+       below 768px — running rAF / sizing the stage here would
+       just burn CPU on a hidden element. */
+    if (window.innerWidth < 768) {
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      stage = null; /* signal to onResize that re-init is needed */
+      return;
+    }
 
     stage      = document.getElementById('rg-stage');
     ringsEl    = document.getElementById('rg-rings');
@@ -349,9 +369,6 @@
         if (m.attributeName === 'data-md-color-scheme') refreshCardVars();
       });
     }).observe(document.body, { attributes: true });
-
-    window.removeEventListener('resize', onResize);
-    window.addEventListener('resize', onResize);
   }
 
   /* ════════════════════════════════════════════════════════════
