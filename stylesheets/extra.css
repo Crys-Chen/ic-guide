@@ -381,16 +381,15 @@
 }
 
 /* ─── 科研方向层次图（移动端 fallback） ────────────────────
-   统一白底 + 柔和阴影,5 个 sector 用 border-left 同色家族不同明度
-   区分,既克制又层次清晰。 */
+   统一浅蓝底 + 实心深蓝 chip(白字),强对比、有质感、不花哨。
+   sector 区分仅靠 border-left 颜色(同蓝色家族 5 档明度)。 */
 .dm-wrap { display: flex; flex-direction: column; gap: 0; margin: 1.5rem 0 2rem; }
 .dm-row {
   display: flex; align-items: center; gap: .9rem;
-  padding: .95rem 1.1rem; border-radius: 10px;
+  padding: 1rem 1.15rem; border-radius: 10px;
   flex-wrap: wrap;
-  background: #ffffff;
+  background: #ECF1FA;
   border-left: 5px solid #032168;
-  box-shadow: 0 1px 4px rgba(3, 33, 104, .07), 0 0 0 1px rgba(3, 33, 104, .04);
 }
 /* sector 区分:仅 border-left 颜色,同蓝色家族 5 档明度 */
 .dm-device  { border-left-color: #032168; }   /* 器件 — 最深 (Fudan Deep) */
@@ -405,38 +404,36 @@
   color: #032168;
   letter-spacing: .02em;
 }
-.dm-chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.dm-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .dm-chip {
   border-radius: 6px;
-  padding: .32em .9em;
+  padding: .35em .9em;
   font-size: .8rem;
   font-weight: 500;
   text-decoration: none !important;
-  background: rgba(3, 33, 104, .055);
-  color: #032168 !important;
-  border: 1px solid rgba(3, 33, 104, .15);
-  transition: background .15s, border-color .15s, transform .12s, box-shadow .15s;
-}
-.dm-chip:hover {
   background: #032168;
   color: #ffffff !important;
-  border-color: #032168;
+  border: 1px solid #032168;
+  transition: background .15s, transform .12s, box-shadow .15s;
+}
+.dm-chip:hover {
+  background: #1A48A8;
+  border-color: #1A48A8;
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(3, 33, 104, .25);
+  box-shadow: 0 4px 12px rgba(3, 33, 104, .3);
 }
 .dm-conn {
   text-align: center;
-  color: rgba(3, 33, 104, .35);
-  font-size: 1rem;
+  color: rgba(3, 33, 104, .4);
+  font-size: 1.05rem;
   font-weight: 700;
-  padding: .35rem 0;
+  padding: .4rem 0;
   user-select: none;
 }
 
 /* Dark mode */
 [data-md-color-scheme="slate"] .dm-row {
-  background: rgba(255, 255, 255, .035);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .35), 0 0 0 1px rgba(184, 210, 242, .08);
+  background: rgba(138, 171, 222, .1);
 }
 [data-md-color-scheme="slate"] .dm-device  { border-left-color: #B8D2F2; }
 [data-md-color-scheme="slate"] .dm-circuit { border-left-color: #A5C4EE; }
@@ -445,20 +442,19 @@
 [data-md-color-scheme="slate"] .dm-cross   { border-left-color: #8AABDE; }
 [data-md-color-scheme="slate"] .dm-lbl { color: #B8D2F2; }
 [data-md-color-scheme="slate"] .dm-chip {
-  background: rgba(184, 210, 242, .08);
-  color: #B8D2F2 !important;
-  border-color: rgba(184, 210, 242, .25);
-}
-[data-md-color-scheme="slate"] .dm-chip:hover {
   background: #B8D2F2;
   color: #032168 !important;
   border-color: #B8D2F2;
 }
-[data-md-color-scheme="slate"] .dm-conn { color: rgba(184, 210, 242, .3); }
+[data-md-color-scheme="slate"] .dm-chip:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+[data-md-color-scheme="slate"] .dm-conn { color: rgba(184, 210, 242, .35); }
 
 @media (max-width: 600px) {
   .dm-lbl { min-width: 100%; margin-bottom: .35rem; font-size: .9rem; }
-  .dm-conn { padding: .25rem 0; }
+  .dm-conn { padding: .3rem 0; }
 }
 
 /* ─── 首页 Hero 轮播 ─────────────────────────────────────── */
