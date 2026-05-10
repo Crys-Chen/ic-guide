@@ -1553,19 +1553,24 @@
   }
 }
 
-/* ── Mobile: smaller cards, fallback hidden ─────────────── */
-@media (max-width: 620px) {
-  .rg-card-inner {
-    width: 105px;
-    min-height: 36px;
-    padding: .35rem .5rem .35rem .6rem;
+/* ── Fallback list: hidden by default; only shown on mobile ─ */
+.rg-fallback { display: none; }
+
+/* ── Mobile (<768): swap orbit for fallback list ─────────── */
+/* The galaxy needs >=600px to fit 17 cards on 4 rings without
+   overlap. On phones we render the existing .rg-fallback chip
+   list — same destinations, no overflow. orbit-galaxy.js
+   short-circuits in setupGalaxy() at the same breakpoint so the
+   rAF loop and stage sizing never run. */
+@media (max-width: 767px) {
+  .rg-root.rg-fullscreen {
+    margin: 1rem 0 !important;
+    width: auto;
   }
-  .rg-card-name {
-    font-size: .72rem;
-  }
-  .rg-ring-label {
-    display: none;
-  }
+  .rg-root.rg-fullscreen .rg-stage,
+  .rg-root .rg-center { display: none !important; }
+  .rg-fallback { display: block; }
+  .rg-fallback .dm-wrap { margin: 0; }
 }
 
 /* ════════════════════════════════════════════════════════
