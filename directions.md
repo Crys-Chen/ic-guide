@@ -28,7 +28,7 @@ Chiplet 架构、Interposer 设计、热/信号完整性分析，有独立的方
 
 ---
 
-## 二、电路设计（3）
+## 二、模拟与射频电路（3）
 
 **6. 模拟与混合信号 IC**
 ISSCC · CICC · VLSI-C · JSSC
@@ -44,7 +44,7 @@ BioCAS · ISSCC-bio sessions · TBCAS · EMBC
 
 ---
 
-## 三、计算（3）
+## 三、计算架构（3）
 
 **9. 处理器架构与编译系统**
 ISCA · MICRO · HPCA · ASPLOS · CGO · PLDI
@@ -60,7 +60,7 @@ FPGA · FCCM · FPL · FPT
 
 ---
 
-## 四、设计基础设施（2）
+## 四、设计工具与安全（2）
 
 **12. EDA 与设计自动化**
 DAC · ICCAD · DATE · ASP-DAC · TCAD
@@ -72,7 +72,7 @@ HOST · CHES · TCHES · CCS/USENIX 硬件 session
 
 ---
 
-## 五、交叉延伸方向（4）
+## 五、交叉前沿（4）
 
 > 以下方向的核心社区不在集成电路领域内，但它们是 IC 背景学生常见的转向出口或新兴交叉领域。保留此类别是为学生提供有支撑的过渡路径，同时坦诚标记其社区归属。
 
