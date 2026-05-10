@@ -210,7 +210,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     AI 编译器（TVM/Apache MXNet）· LLM 全平台部署（MLC-LLM）· ML 系统全栈
 
--   **[Zhihao Jia](https://www.cs.cmu.edu/~zhihaoj2/)** <span class="badge-intl">CMU</span>
+-   **[Zhihao Jia（贾志豪）](https://www.cs.cmu.edu/~zhihaoj2/)** <span class="badge-intl">CMU</span>
 
     ML 编译器 · 分布式 DL 并行化 · LLM 推理（FlexFlow/SpecInfer）
 
@@ -262,7 +262,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     TinyML · 边缘 AI 系统 · MLPerf 基准测试 · 移动设备推理
 
--   **[Deming Chen](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
+-   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
     LLM 加速器设计 · ML for EDA · FPGA 推理加速
 
@@ -274,7 +274,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     机器学习系统 · 分布式训练网络 · AI 集群调度
 
--   **[James Kwok](https://www.cse.ust.hk/~jamesk/)** <span class="badge-hk">港科大</span>
+-   **[James Tin Yau Kwok（郭天佑）](https://www.cse.ust.hk/~jamesk/)** <span class="badge-hk">港科大</span>
 
     模型压缩与量化 · 高效深度学习 · 联邦学习
 

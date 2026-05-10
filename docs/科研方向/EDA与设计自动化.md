@@ -227,7 +227,7 @@ graph LR
 
     FPGA 设计自动化 · HLS · 领域专用计算
 
--   **[David Z. Pan](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
+-   **[David Z. Pan（潘志刚）](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
 
     EDA · AI/IC 协同优化 · 模拟/RF 设计自动化
 
@@ -243,7 +243,7 @@ graph LR
 
     能效与可靠性感知计算 · 硬件感知机器学习 · 嵌入式系统
 
--   **[Deming Chen](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
+-   **[Deming Chen（陈德铭）](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
 
     高层次综合（HLS） · FPGA 重构计算 · ML 硬件加速自动化
 

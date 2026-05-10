@@ -211,7 +211,7 @@ graph LR
 
     射频与模拟电路 · 微流控芯片 · 无线传感 IC
 
--   **[Howard Cam Luong](https://ece.hkust.edu.hk/eeluong)** <span class="badge-hk">港科大</span>
+-   **[Howard Cam Luong（梁錦和）](https://ece.hkust.edu.hk/eeluong)** <span class="badge-hk">港科大</span>
 
     高速低功耗数据转换器 · 混合信号 IC · 射频接口电路
 
