@@ -18,16 +18,17 @@ graph LR
     B --> C["固体物理<br/>晶格 · 能带 · 输运"]
     C --> D["半导体物理<br/>载流子 · PN 结物理"]
     A --> E["电磁场与电磁波<br/>(交叉至射频/天线)"]
+    A --> F["光学<br/>波动光学 · 集成光子学"]
 
     classDef base fill:#FEF3F2,stroke:#DC2626,stroke-width:2px
     classDef advanced fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
     classDef next fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     class A base
-    class B,C,D advanced
+    class B,C,D,F advanced
     class E next
 ```
 
-主链 **大物 → 量子 → 固体 → 半物** 是器件/工艺方向的硬核前置。**电磁场理论**(国内通常单独开课)是射频/天线/光电子方向的另一条主线。
+主链 **大物 → 量子 → 固体 → 半物** 是器件/工艺方向的硬核前置。**电磁场理论**(国内通常单独开课)是射频/天线/光电子方向的另一条主线。**光学**(尤其集成光子学)是硅光、光互连、光计算方向的物理基础。
 
 ---
 
@@ -38,6 +39,8 @@ graph LR
 **[固体物理](固体物理/)** — 晶格振动、电子能带、声子；衔接量子力学与半导体物理的桥梁。
 
 **[半导体物理](半导体物理/)** — 载流子统计、PN 结、欧姆接触；所有半导体器件设计的物理基础。
+
+**[光学](光学/)** — 波动光学、光电子器件、集成光子学;面向硅光集成、光互连、光计算方向的精选课程链。
 
 **[其他](其他/)** — 物理实验、特殊主题。
 

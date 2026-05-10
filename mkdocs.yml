@@ -140,6 +140,7 @@ plugins:
             课程资源: Course Resources
             数学: Mathematics
             物理: Physics
+            光学: Optics
             器件与工艺: Devices and Fabrication
             电路: Circuits
             算法编程: Algorithm and Programming
@@ -330,6 +331,13 @@ nav:
         - 半导体物理(复旦): "课程资源/物理/半导体物理/MICR130005.md"
         - Purdue ECE 606 Solid State Devices: "课程资源/物理/半导体物理/purdue_ece606.md"
         - 西安电子科技大学：半导体物理(柴常春): "课程资源/物理/半导体物理/xidian_semiconductor.md"
+      - 光学:
+        - 导言: "课程资源/物理/光学/index.md"
+        - "MIT 8.03: Vibrations and Waves": "课程资源/物理/光学/MIT8.03.md"
+        - "MITx: Fundamentals of Integrated Photonics": "课程资源/物理/光学/MITx_integrated_photonics.md"
+        - "MIT 3.46: Photonic Materials and Devices": "课程资源/物理/光学/MIT3.46.md"
+        - 浙大 戴道锌:硅基光电子学基础导论: "课程资源/物理/光学/ZJU_dai_silicon_photonics.md"
+        - 北大 周治平:光电子学: "课程资源/物理/光学/PKU_zhou_optoelectronics.md"
       - 其他:
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
     - 器件与工艺:
