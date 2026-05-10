@@ -1,8 +1,14 @@
 ---
+title: 科研方向
 hide:
   - navigation
   - toc
 ---
+
+<style>
+  /* Hide auto-generated H1 on this galaxy page only */
+  .md-content__inner > h1:first-child { display: none !important; }
+</style>
 
 <div id="rg-root" class="rg-root rg-fullscreen">
   <div class="rg-stage" id="rg-stage">
