@@ -411,16 +411,18 @@
   font-size: .8rem;
   font-weight: 500;
   text-decoration: none !important;
-  background: #032168;
-  color: #ffffff !important;
-  border: 1px solid #032168;
-  transition: background .15s, transform .12s, box-shadow .15s;
+  background: #ffffff;
+  color: #032168 !important;
+  border: 1px solid rgba(3, 33, 104, .22);
+  box-shadow: 0 1px 2px rgba(3, 33, 104, .05);
+  transition: background .15s, border-color .15s, transform .12s, box-shadow .15s;
 }
 .dm-chip:hover {
-  background: #1A48A8;
-  border-color: #1A48A8;
+  background: #032168;
+  color: #ffffff !important;
+  border-color: #032168;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(3, 33, 104, .3);
+  box-shadow: 0 4px 12px rgba(3, 33, 104, .28);
 }
 .dm-conn {
   text-align: center;
@@ -442,13 +444,15 @@
 [data-md-color-scheme="slate"] .dm-cross   { border-left-color: #8AABDE; }
 [data-md-color-scheme="slate"] .dm-lbl { color: #B8D2F2; }
 [data-md-color-scheme="slate"] .dm-chip {
+  background: rgba(184, 210, 242, .12);
+  color: #B8D2F2 !important;
+  border-color: rgba(184, 210, 242, .3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+[data-md-color-scheme="slate"] .dm-chip:hover {
   background: #B8D2F2;
   color: #032168 !important;
   border-color: #B8D2F2;
-}
-[data-md-color-scheme="slate"] .dm-chip:hover {
-  background: #ffffff;
-  border-color: #ffffff;
 }
 [data-md-color-scheme="slate"] .dm-conn { color: rgba(184, 210, 242, .35); }
 
