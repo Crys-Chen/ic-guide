@@ -177,8 +177,6 @@ plugins:
             ASIC: ASIC Design
             学习地图: Learning Map
             专题社区: Specialty Communities
-            一生一芯(OSCC): OSCC (One Student One Chip)
-            "Embodied-AI-Guide(具身智能)": "Embodied-AI-Guide"
             科研方向: Research Directions
             通用工具: General Tools
             EE 专用工具: EE Tools
@@ -637,9 +635,6 @@ nav:
           - CMake: "课程资源/必学工具/CMake.md"
           - Scoop: "课程资源/必学工具/Scoop.md"
           - Emacs: "课程资源/必学工具/Emacs.md"
-  - 专题社区:
-      - 专题社区/index.md
-      - 一生一芯(OSCC): "专题社区/一生一芯.md"
-      - "Embodied-AI-Guide(具身智能)": "专题社区/具身智能.md"
+  - 专题社区: "专题社区/index.md"
   - 参与建设: "参与建设.md"
   - 后记: "后记.md"

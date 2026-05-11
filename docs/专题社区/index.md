@@ -11,9 +11,7 @@ hide:
 
 <div class="grid cards community-cards" markdown>
 
--   :material-chip: __[一生一芯 (OSCC)](一生一芯.md)__
-
-    ---
+-   :material-chip: __[一生一芯 (OSCC)](https://ysyx.oscc.cc/){target="_blank"}__
 
     中科院计算所发起的 RISC-V 处理器**流片**训练计划。带你从 RTL 设计、流水线实现到 tape-out 完成一颗自己的 CPU。
 
@@ -23,11 +21,7 @@ hide:
 
     > 对应方向: [处理器架构与编译系统](../科研方向/处理器架构与编译系统.md)、[可重构计算与FPGA](../科研方向/可重构计算与FPGA.md)
 
-    [:octicons-arrow-right-24: 进入专题](一生一芯.md){ .md-button .md-button--primary }
-
--   :material-robot: __[Embodied-AI-Guide(具身智能)](具身智能.md)__
-
-    ---
+-   :material-robot: __[Embodied-AI-Guide(具身智能)](https://github.com/tianxingchen/Embodied-AI-Guide){target="_blank"}__
 
     Tianxing Chen + Lumina Embodied AI Community 维护的**具身智能综合知识库**(GitHub 13.5k stars),覆盖 VLA、SLAM、控制、仿真器、硬件 等 7 大板块。
 
@@ -36,8 +30,6 @@ hide:
     **特色:** 中文圈具身智能信息密度最高的资源
 
     > 对应方向: [具身智能](../科研方向/具身智能.md)
-
-    [:octicons-arrow-right-24: 进入专题](具身智能.md){ .md-button .md-button--primary }
 
 </div>
 
