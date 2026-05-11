@@ -1751,103 +1751,202 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   专题社区 — 大卡片样式
+   专题社区 — 大卡片样式(单列 + 顶部彩色 header bar)
    ══════════════════════════════════════════════════════════ */
 .md-typeset .grid.cards.community-cards > ul {
-  gap: 1.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  gap: 1.8rem;
+  grid-template-columns: 1fr;       /* 强制单列,一卡一行 */
   margin: 2rem 0;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li {
-  padding: 2rem 1.8rem;
-  border-radius: 14px;
-  border: 1px solid rgba(3, 33, 104, .15);
-  border-left: 5px solid #032168;
-  background: linear-gradient(135deg, #ffffff 0%, #F5F8FC 100%);
-  box-shadow: 0 4px 14px rgba(3, 33, 104, .08), 0 1px 3px rgba(0, 0, 0, .04);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  padding: 0;                       /* 去掉默认 padding,让 header bar 顶到边缘 */
+  border-radius: 16px;
+  border: 1px solid rgba(3, 33, 104, .12);
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(3, 33, 104, .08), 0 1px 3px rgba(0, 0, 0, .04);
+  transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(3, 33, 104, .15), 0 4px 8px rgba(0, 0, 0, .08);
-  border-color: rgba(3, 33, 104, .35);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(3, 33, 104, .18), 0 6px 12px rgba(0, 0, 0, .08);
 }
 
-/* 大卡片标题:更大字号 + 深蓝 + 间距 */
+/* 顶部彩色 header bar — 每卡不同主题色 */
+.md-typeset .grid.cards.community-cards > ul > li::before {
+  content: "";
+  display: block;
+  height: 84px;
+  background: linear-gradient(135deg, #032168 0%, #1A48A8 60%, #3B5FCF 100%);
+  position: relative;
+}
+/* 装饰图案 — 半透明圆点 */
+.md-typeset .grid.cards.community-cards > ul > li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 84px;
+  background:
+    radial-gradient(circle at 20% 40%, rgba(255,255,255,.18) 0, transparent 22px),
+    radial-gradient(circle at 60% 80%, rgba(255,255,255,.12) 0, transparent 30px),
+    radial-gradient(circle at 90% 20%, rgba(255,255,255,.15) 0, transparent 18px);
+  pointer-events: none;
+}
+/* 第二张卡(具身智能)用不同主题色 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2)::before {
+  background: linear-gradient(135deg, #15803D 0%, #16A34A 50%, #22C55E 100%);
+}
+
+/* 标题:覆盖在 header bar 上 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 0;
+  font-size: 1.7rem;
   font-weight: 700;
-  color: #032168;
-  margin-bottom: .6rem;
+  color: #ffffff;
   letter-spacing: .01em;
+  z-index: 2;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
-  color: #032168 !important;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
-/* icon 放大 */
+/* icon 放大 + 白色 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child .twemoji,
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child svg {
-  width: 1.6rem;
-  height: 1.6rem;
-  vertical-align: -.25em;
-  margin-right: .35rem;
-  fill: #1A48A8;
+  width: 2.2rem;
+  height: 2.2rem;
+  vertical-align: -.4em;
+  margin-right: .6rem;
+  fill: #ffffff;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
 }
 
-/* 分隔线视觉 */
+/* 卡片正文区(从 header bar 下方开始) */
 .md-typeset .grid.cards.community-cards > ul > li hr {
-  border: none;
-  border-top: 1px solid rgba(3, 33, 104, .14);
-  margin: .85rem 0;
+  display: none;       /* 隐藏 hr,因为 header bar 已经是分隔 */
 }
 
-/* 引用块(对应方向) */
-.md-typeset .grid.cards.community-cards > ul > li blockquote {
-  font-size: .82rem;
-  margin: 1rem 0 .9rem;
-  padding: .55rem .85rem;
-  background: rgba(3, 33, 104, .04);
-  border-left: 3px solid rgba(3, 33, 104, .35);
-  border-radius: 0 6px 6px 0;
-  color: #1A48A8;
+.md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
+.md-typeset .grid.cards.community-cards > ul > li > ul,
+.md-typeset .grid.cards.community-cards > ul > li > blockquote,
+.md-typeset .grid.cards.community-cards > ul > li > a.md-button {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-/* 按钮样式微调 */
-.md-typeset .grid.cards.community-cards > ul > li .md-button {
-  margin-top: .5rem;
-  width: 100%;
-  text-align: center;
+.md-typeset .grid.cards.community-cards > ul > li > p:nth-child(2) {
+  margin-top: calc(84px + 1.4rem);    /* 跳过 header bar */
 }
 
-/* 加大段落字号让卡片显得更"大" */
+/* 内容字号:大方但不浮夸 */
 .md-typeset .grid.cards.community-cards > ul > li p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--md-default-fg-color);
+}
+
+/* 引用块(对应方向):橙黄色调,提示性强 */
+.md-typeset .grid.cards.community-cards > ul > li blockquote {
+  font-size: .88rem;
+  margin: 1.2rem 2rem;
+  padding: .7rem 1rem;
+  background: linear-gradient(90deg, rgba(3, 33, 104, .06), transparent);
+  border-left: 4px solid #1A48A8;
+  border-radius: 0 8px 8px 0;
+  color: #032168;
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) blockquote {
+  background: linear-gradient(90deg, rgba(22, 163, 74, .08), transparent);
+  border-left-color: #16A34A;
+  color: #15803D;
+}
+
+/* CTA 按钮:大、显眼 */
+.md-typeset .grid.cards.community-cards > ul > li .md-button {
+  display: inline-block;
+  width: auto;
+  margin: 1rem 2rem 1.8rem;
+  padding: .65rem 1.6rem;
+  border-radius: 8px;
   font-size: .95rem;
-  line-height: 1.65;
+  font-weight: 600;
+  background: #032168;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 3px 10px rgba(3, 33, 104, .25);
+  transition: background .15s, transform .12s, box-shadow .15s;
+}
+.md-typeset .grid.cards.community-cards > ul > li .md-button:hover {
+  background: #1A48A8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(3, 33, 104, .35);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) .md-button {
+  background: #16A34A;
+  box-shadow: 0 3px 10px rgba(22, 163, 74, .25);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) .md-button:hover {
+  background: #15803D;
+  box-shadow: 0 6px 16px rgba(22, 163, 74, .35);
+}
+
+/* 加粗关键字符的强调 */
+.md-typeset .grid.cards.community-cards > ul > li strong {
+  color: #032168;
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) strong {
+  color: #15803D;
 }
 
 /* Dark mode */
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li {
-  background: linear-gradient(135deg, rgba(255,255,255,.04) 0%, rgba(138,171,222,.06) 100%);
+  background: #1e2330;
   border-color: rgba(138, 171, 222, .15);
-  border-left-color: #8AABDE;
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:hover {
-  border-color: rgba(138, 171, 222, .4);
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  color: #B8D2F2;
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
-  color: #B8D2F2 !important;
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li blockquote {
-  background: rgba(138, 171, 222, .08);
-  border-left-color: rgba(138, 171, 222, .4);
+  background: linear-gradient(90deg, rgba(138, 171, 222, .12), transparent);
+  border-left-color: #8AABDE;
   color: #B8D2F2;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:nth-child(2) blockquote {
+  background: linear-gradient(90deg, rgba(74, 222, 128, .12), transparent);
+  border-left-color: #4ADE80;
+  color: #86EFAC;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li strong {
+  color: #8AABDE;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:nth-child(2) strong {
+  color: #4ADE80;
+}
+
+/* 小屏:padding 收紧 */
+@media (max-width: 640px) {
+  .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+    font-size: 1.35rem;
+    padding: 0 1.2rem;
+  }
+  .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
+  .md-typeset .grid.cards.community-cards > ul > li > blockquote {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .md-typeset .grid.cards.community-cards > ul > li .md-button {
+    margin: 1rem 1.2rem 1.5rem;
+  }
 }
