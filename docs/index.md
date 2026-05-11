@@ -33,7 +33,7 @@ hide:
 </div>
 <nav class="df-lnav">
 <div class="df-lnav-inner">
-<a href="课程资源/必学工具/Git/" class="df-lnc"><span class="df-lnc-n">01</span><span class="df-lnc-t">工程工具</span><span class="df-lnc-sub">Git · Linux · Docker</span></a>
+<a href="工程工具/Git/" class="df-lnc"><span class="df-lnc-n">01</span><span class="df-lnc-t">工程工具</span><span class="df-lnc-sub">Git · Linux · Docker</span></a>
 <a href="https://github.com/Crys-Chen/Fudan-ME" class="df-lnc" target="_blank" rel="noopener"><span class="df-lnc-n">02</span><span class="df-lnc-t">参与建设</span><span class="df-lnc-sub">GitHub 开源共建</span></a>
 <a href="#" class="df-lnc"><span class="df-lnc-n">03</span><span class="df-lnc-t">课堂笔记</span><span class="df-lnc-sub">学习记录与分享</span></a>
 </div>
@@ -44,9 +44,9 @@ hide:
 <!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->
 <div class="df-cards">
 <a href="科研方向/" class="df-card"><div class="df-ct"><span class="df-ci">🔬</span><span class="df-ca">→</span></div><h3>科研方向</h3><p>15 个前沿方向，器件·电路·架构·应用</p></a>
-<a href="课程资源/数学/" class="df-card"><div class="df-ct"><span class="df-ci">📚</span><span class="df-ca">→</span></div><h3>课程资源</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
+<a href="学习地图/数学/" class="df-card"><div class="df-ct"><span class="df-ci">📚</span><span class="df-ca">→</span></div><h3>学习地图</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
 <a href="学习地图/" class="df-card"><div class="df-ct"><span class="df-ci">🗺️</span><span class="df-ca">→</span></div><h3>学习地图</h3><p>跨学科知识地图，明确路径与依赖</p></a>
-<a href="课程资源/必学工具/Git/" class="df-card"><div class="df-ct"><span class="df-ci">🛠️</span><span class="df-ca">→</span></div><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></a>
+<a href="工程工具/Git/" class="df-card"><div class="df-ct"><span class="df-ci">🛠️</span><span class="df-ca">→</span></div><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></a>
 </div>
 
 <div class="df-below" markdown>
