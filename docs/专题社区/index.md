@@ -1,6 +1,7 @@
 ---
 title: 专题社区
 hide:
+  - navigation
   - toc
 ---
 
@@ -8,23 +9,43 @@ hide:
 
 **专题社区**收录那些**面向特定方向、由社区/组织持续维护、带完整"从入门到产出"路径**的综合学习生态——它们不是单一课程,也不是科研方向的"是什么"概述,而是**一套带你动手做出真实产出物的项目体系**。
 
-## 当前收录
+<div class="grid cards community-cards" markdown>
 
-### [一生一芯(OSCC)](一生一芯.md)
+-   :material-chip: __[一生一芯 (OSCC)](一生一芯.md)__
 
-中科院计算所发起的处理器设计训练计划,带本科/研究生**从 RTL 设计到流片**完成一颗 RISC-V CPU。已运行数届,流片成功数百颗芯片。
+    ---
 
-> 对应方向: [处理器架构与编译系统](../科研方向/处理器架构与编译系统.md)、[可重构计算与FPGA](../科研方向/可重构计算与FPGA.md)
+    中科院计算所发起的 RISC-V 处理器**流片**训练计划。带你从 RTL 设计、流水线实现到 tape-out 完成一颗自己的 CPU。
 
-### [Embodied-AI-Guide(具身智能)](具身智能.md)
+    **历届:** 数千名学生参与,数百颗芯片流片
+    **门槛:** 数字电路 + C 语言基础
+    **产出:** 一颗实际芯片 + 工业界认可度极高
 
-Tianxing Chen + Lumina Embodied AI Community 维护的具身智能综合知识库(GitHub 13.5k stars),覆盖 VLA / SLAM / 控制 / 仿真器 / 硬件 等 7 大板块。
+    > 对应方向: [处理器架构与编译系统](../科研方向/处理器架构与编译系统.md)、[可重构计算与FPGA](../科研方向/可重构计算与FPGA.md)
 
-> 对应方向: [具身智能](../科研方向/具身智能.md)
+    [:octicons-arrow-right-24: 进入专题](一生一芯.md){ .md-button .md-button--primary }
+
+-   :material-robot: __[Embodied-AI-Guide(具身智能)](具身智能.md)__
+
+    ---
+
+    Tianxing Chen + Lumina Embodied AI Community 维护的**具身智能综合知识库**(GitHub 13.5k stars),覆盖 VLA、SLAM、控制、仿真器、硬件 等 7 大板块。
+
+    **维护:** Lumina 社区 + 高校研究者持续 PR
+    **内容:** 论文清单 + 课程链接 + 工业 benchmark
+    **特色:** 中文圈具身智能信息密度最高的资源
+
+    > 对应方向: [具身智能](../科研方向/具身智能.md)
+
+    [:octicons-arrow-right-24: 进入专题](具身智能.md){ .md-button .md-button--primary }
+
+</div>
+
+---
 
 ## 与其他板块的区别
 
-| | 定位 |
+|  | 定位 |
 |---|---|
 | [科研方向](../科研方向/) | "**这个方向在研究什么**"——读完知道选不选 |
 | [学习地图](../知识谱系.md) | "**怎么系统学课程**"——课程资源按学科分类 |

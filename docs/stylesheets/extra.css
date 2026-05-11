@@ -1749,3 +1749,105 @@
     color: #A78BFA !important;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   专题社区 — 大卡片样式
+   ══════════════════════════════════════════════════════════ */
+.md-typeset .grid.cards.community-cards > ul {
+  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  margin: 2rem 0;
+}
+
+.md-typeset .grid.cards.community-cards > ul > li {
+  padding: 2rem 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(3, 33, 104, .15);
+  border-left: 5px solid #032168;
+  background: linear-gradient(135deg, #ffffff 0%, #F5F8FC 100%);
+  box-shadow: 0 4px 14px rgba(3, 33, 104, .08), 0 1px 3px rgba(0, 0, 0, .04);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  position: relative;
+}
+
+.md-typeset .grid.cards.community-cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(3, 33, 104, .15), 0 4px 8px rgba(0, 0, 0, .08);
+  border-color: rgba(3, 33, 104, .35);
+}
+
+/* 大卡片标题:更大字号 + 深蓝 + 间距 */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #032168;
+  margin-bottom: .6rem;
+  letter-spacing: .01em;
+}
+
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
+  color: #032168 !important;
+  text-decoration: none;
+}
+
+/* icon 放大 */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child .twemoji,
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: -.25em;
+  margin-right: .35rem;
+  fill: #1A48A8;
+}
+
+/* 分隔线视觉 */
+.md-typeset .grid.cards.community-cards > ul > li hr {
+  border: none;
+  border-top: 1px solid rgba(3, 33, 104, .14);
+  margin: .85rem 0;
+}
+
+/* 引用块(对应方向) */
+.md-typeset .grid.cards.community-cards > ul > li blockquote {
+  font-size: .82rem;
+  margin: 1rem 0 .9rem;
+  padding: .55rem .85rem;
+  background: rgba(3, 33, 104, .04);
+  border-left: 3px solid rgba(3, 33, 104, .35);
+  border-radius: 0 6px 6px 0;
+  color: #1A48A8;
+}
+
+/* 按钮样式微调 */
+.md-typeset .grid.cards.community-cards > ul > li .md-button {
+  margin-top: .5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* 加大段落字号让卡片显得更"大" */
+.md-typeset .grid.cards.community-cards > ul > li p {
+  font-size: .95rem;
+  line-height: 1.65;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li {
+  background: linear-gradient(135deg, rgba(255,255,255,.04) 0%, rgba(138,171,222,.06) 100%);
+  border-color: rgba(138, 171, 222, .15);
+  border-left-color: #8AABDE;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:hover {
+  border-color: rgba(138, 171, 222, .4);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+  color: #B8D2F2;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
+  color: #B8D2F2 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li blockquote {
+  background: rgba(138, 171, 222, .08);
+  border-left-color: rgba(138, 171, 222, .4);
+  color: #B8D2F2;
+}
