@@ -2060,3 +2060,11 @@
 [data-md-color-scheme="slate"] .md-search-result__teaser mark {
   color: #FF6B8A;
 }
+
+/* ─── 首页右栏 4 项时的微调（保持与左栏 hero 高度协调）─── */
+.df-lnav-inner .df-lnc {
+  padding: .82rem 1.1rem .82rem;  /* 原 1rem 1.1rem 1.05rem，4 项时略压缩 */
+}
+.df-lnav-inner .df-lnc-t {
+  font-size: 1.02rem;  /* 略减小 */
+}
