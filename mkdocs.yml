@@ -485,17 +485,25 @@ nav:
         - MIT-Missing-Semester: "课程资源/算法编程/编程入门/MIT-Missing-Semester.md"
         - "Sysadmin DeCal": "课程资源/算法编程/编程入门/DeCal.md"
         - Python 语言:
+          - 北理工嵩天:Python程序设计: "课程资源/算法编程/编程入门/Python/BIT_songtian.md"
+          - 北大陈斌:数据结构与算法Python版: "课程资源/算法编程/编程入门/Python/PKU_chenbin_python.md"
           - "UCB CS61A": "课程资源/算法编程/编程入门/Python/CS61A.md"
           - "CS50P": "课程资源/算法编程/编程入门/Python/CS50P.md"
           - "MIT6.100L": "课程资源/算法编程/编程入门/Python/MIT6.100L.md"
         - C 语言:
+          - 浙大翁恺:C语言程序设计: "课程资源/算法编程/编程入门/C/ZJU_wengkai.md"
+          - 北大郭炜:程序设计与算法(一)C: "课程资源/算法编程/编程入门/C/PKU_guowei_C.md"
           - "Harvard CS50": "课程资源/算法编程/编程入门/C/CS50.md"
           - "Duke Introductory C Programming": "课程资源/算法编程/编程入门/C/Duke-Coursera-Intro-C.md"
         - C++ 语言:
+          - 北大郭炜:程序设计与算法(三)C++: "课程资源/算法编程/编程入门/cpp/PKU_guowei_cpp.md"
+          - 侯捷:C++面向对象高级开发: "课程资源/算法编程/编程入门/cpp/houjie_cpp.md"
           - "AUT AP1400-2: Advanced Programming": "课程资源/算法编程/编程入门/cpp/AUT1400.md"
           - "Stanford CS106L": "课程资源/算法编程/编程入门/cpp/CS106L.md"
           - "Stanford CS106B/X": "课程资源/算法编程/编程入门/cpp/CS106B_CS106X.md"
         - Rust 语言:
+          - 杨旭:Rust入门教程: "课程资源/算法编程/编程入门/Rust/yangxu_rust.md"
+          - 令狐壹冲:Rust编程教程: "课程资源/算法编程/编程入门/Rust/linghu_rust.md"
           - "Stanford CS110L": "课程资源/算法编程/编程入门/Rust/CS110L.md"
           - "KAIST CS220": "课程资源/算法编程/编程入门/Rust/cs220.md"
           - "KAIST CS431": "课程资源/算法编程/编程入门/Rust/cs431.md"
@@ -515,11 +523,15 @@ nav:
         - "Cambridge: Semantics of Programming Languages": "课程资源/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
       - 软件工程:
         - 课程资源/算法编程/软件工程/index.md
+        - 国防科大:软件工程: "课程资源/算法编程/软件工程/NUDT_software_eng.md"
+        - 北大孙艳春:软件工程: "课程资源/算法编程/软件工程/PKU_sun_software_eng.md"
         - "MIT 6.031": "课程资源/算法编程/软件工程/6031.md"
         - "UCB CS169": "课程资源/算法编程/软件工程/CS169.md"
         - "CMU 17-803": "课程资源/算法编程/软件工程/17803.md"
       - 计算机图形学:
         - 导言: "课程资源/算法编程/计算机图形学/index.md"
+        - 清华胡事民:计算机图形学基础: "课程资源/算法编程/计算机图形学/THU_hushimin_CG.md"
+        - 中科大刘利刚:计算机图形学2020: "课程资源/算法编程/计算机图形学/USTC_liu_CG.md"
         - GAMES101: "课程资源/算法编程/计算机图形学/GAMES101.md"
         - GAMES202: "课程资源/算法编程/计算机图形学/GAMES202.md"
         - GAMES103: "课程资源/算法编程/计算机图形学/GAMES103.md"
