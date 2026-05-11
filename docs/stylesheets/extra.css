@@ -2042,3 +2042,21 @@
   }
 }
 
+
+/* ─── 搜索结果关键词高亮：复旦红下划线 ──────────────────── */
+/* Material 默认给匹配关键词加 <mark> 标签（黄底高亮），改为
+   下划线 + 复旦红，更克制、更和站点主题色一致。 */
+.md-search-result mark,
+.md-search-result__teaser mark {
+  color: #BB0028;
+  background: transparent;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+[data-md-color-scheme="slate"] .md-search-result mark,
+[data-md-color-scheme="slate"] .md-search-result__teaser mark {
+  color: #FF6B8A;
+}
