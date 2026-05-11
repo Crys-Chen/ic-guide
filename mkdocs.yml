@@ -137,6 +137,7 @@ plugins:
             机器学习进阶: Advanced Machine Learning
             学习路线图: Roadmap
             后记: Postscript
+            参与建设: Contributing
             课程资源: Course Resources
             数学: Mathematics
             物理: Physics
@@ -626,4 +627,5 @@ nav:
           - CMake: "课程资源/必学工具/CMake.md"
           - Scoop: "课程资源/必学工具/Scoop.md"
           - Emacs: "课程资源/必学工具/Emacs.md"
+  - 参与建设: "参与建设.md"
   - 后记: "后记.md"
