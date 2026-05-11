@@ -1755,7 +1755,7 @@
    ══════════════════════════════════════════════════════════ */
 /* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽) */
 .md-content__inner:has(.community-cards) {
-  max-width: 1080px;
+  max-width: 880px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -1841,6 +1841,29 @@
   line-height: 1.35;
   position: relative;
   overflow: hidden;
+}
+
+/* 双保险:每卡 header bar 渐变 hardcode 一份(防止变量级联出问题) */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(1) > p:first-child {
+  background: linear-gradient(135deg, #032168 0%, #1A48A8 60%, #3B5FCF 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) > p:first-child {
+  background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 60%, #A78BFA 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(3) > p:first-child {
+  background: linear-gradient(135deg, #0E7490 0%, #0891B2 60%, #06B6D4 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(4) > p:first-child {
+  background: linear-gradient(135deg, #92400E 0%, #C2410C 60%, #EA580C 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(5) > p:first-child {
+  background: linear-gradient(135deg, #15803D 0%, #16A34A 60%, #22C55E 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(6) > p:first-child {
+  background: linear-gradient(135deg, #9D174D 0%, #BE185D 60%, #DB2777 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(7) > p:first-child {
+  background: linear-gradient(135deg, #A16207 0%, #CA8A04 60%, #EAB308 100%);
 }
 /* 装饰圆点 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child::after {
