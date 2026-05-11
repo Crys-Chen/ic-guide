@@ -1751,16 +1751,17 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   专题社区 — 大卡片样式(单列 + 顶部彩色 header bar)
+   专题社区 — 大卡片(单列,整卡可点跳外链)
    ══════════════════════════════════════════════════════════ */
 .md-typeset .grid.cards.community-cards > ul {
+  display: grid !important;
+  grid-template-columns: 1fr !important;   /* 强制单列 */
   gap: 1.8rem;
-  grid-template-columns: 1fr;       /* 强制单列,一卡一行 */
   margin: 2rem 0;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li {
-  padding: 0;                       /* 去掉默认 padding,让 header bar 顶到边缘 */
+  padding: 0;
   border-radius: 16px;
   border: 1px solid rgba(3, 33, 104, .12);
   background: #ffffff;
@@ -1768,6 +1769,7 @@
   transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;                       /* 视觉提示整卡可点 */
 }
 
 .md-typeset .grid.cards.community-cards > ul > li:hover {
@@ -1775,92 +1777,90 @@
   box-shadow: 0 20px 40px rgba(3, 33, 104, .18), 0 6px 12px rgba(0, 0, 0, .08);
 }
 
-/* 顶部彩色 header bar — 每卡不同主题色 */
-.md-typeset .grid.cards.community-cards > ul > li::before {
-  content: "";
-  display: block;
-  height: 84px;
+/* 标题段本身 = 顶部彩色 header bar(流式布局,长标题自然换行) */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+  margin: 0;
+  padding: 1.4rem 2rem;
   background: linear-gradient(135deg, #032168 0%, #1A48A8 60%, #3B5FCF 100%);
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 1.35;
   position: relative;
+  overflow: hidden;
 }
-/* 装饰图案 — 半透明圆点 */
-.md-typeset .grid.cards.community-cards > ul > li::after {
+/* 装饰圆点 */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 84px;
+  top: 0; right: 0; bottom: 0;
+  width: 220px;
   background:
     radial-gradient(circle at 20% 40%, rgba(255,255,255,.18) 0, transparent 22px),
     radial-gradient(circle at 60% 80%, rgba(255,255,255,.12) 0, transparent 30px),
     radial-gradient(circle at 90% 20%, rgba(255,255,255,.15) 0, transparent 18px);
   pointer-events: none;
 }
-/* 第二张卡(具身智能)用不同主题色 */
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2)::before {
+/* 第二张卡 — 墨绿 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) > p:first-child {
   background: linear-gradient(135deg, #15803D 0%, #16A34A 50%, #22C55E 100%);
-}
-
-/* 标题:覆盖在 header bar 上 */
-.md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 84px;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  margin: 0;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: .01em;
-  z-index: 2;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
   color: #ffffff !important;
   text-decoration: none;
+  position: static;                      /* 让其 ::before 相对 li 定位 */
+}
+/* 关键 — 把标题链接的可点击区扩展到整张卡 */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 /* icon 放大 + 白色 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child .twemoji,
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child svg {
-  width: 2.2rem;
-  height: 2.2rem;
-  vertical-align: -.4em;
-  margin-right: .6rem;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: -.35em;
+  margin-right: .55rem;
   fill: #ffffff;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
 }
 
-/* 卡片正文区(从 header bar 下方开始) */
+/* 隐藏 md hr — header bar 已经是分隔 */
 .md-typeset .grid.cards.community-cards > ul > li hr {
-  display: none;       /* 隐藏 hr,因为 header bar 已经是分隔 */
+  display: none;
 }
 
+/* 正文区:左右留白 2rem,从 header bar 下方开始 */
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
 .md-typeset .grid.cards.community-cards > ul > li > ul,
-.md-typeset .grid.cards.community-cards > ul > li > blockquote,
-.md-typeset .grid.cards.community-cards > ul > li > a.md-button {
+.md-typeset .grid.cards.community-cards > ul > li > blockquote {
   margin-left: 2rem;
   margin-right: 2rem;
+  position: relative;
+  z-index: 2;                            /* 在标题链接 ::before 之上 */
 }
-
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(2) {
-  margin-top: calc(84px + 1.4rem);    /* 跳过 header bar */
+  margin-top: 1.2rem;
+}
+.md-typeset .grid.cards.community-cards > ul > li > p:last-child,
+.md-typeset .grid.cards.community-cards > ul > li > blockquote:last-child {
+  margin-bottom: 1.6rem;
 }
 
-/* 内容字号:大方但不浮夸 */
+/* 内容字号 */
 .md-typeset .grid.cards.community-cards > ul > li p {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--md-default-fg-color);
 }
 
-/* 引用块(对应方向):橙黄色调,提示性强 */
+/* 引用块(对应方向)— 主题色 */
 .md-typeset .grid.cards.community-cards > ul > li blockquote {
   font-size: .88rem;
   margin: 1.2rem 2rem;
@@ -1875,37 +1875,18 @@
   border-left-color: #16A34A;
   color: #15803D;
 }
-
-/* CTA 按钮:大、显眼 */
-.md-typeset .grid.cards.community-cards > ul > li .md-button {
-  display: inline-block;
-  width: auto;
-  margin: 1rem 2rem 1.8rem;
-  padding: .65rem 1.6rem;
-  border-radius: 8px;
-  font-size: .95rem;
+/* blockquote 内部链接必须保留可点(在标题链接 ::before 之上) */
+.md-typeset .grid.cards.community-cards > ul > li blockquote a {
+  position: relative;
+  z-index: 3;
+  color: inherit;
   font-weight: 600;
-  background: #032168;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 3px 10px rgba(3, 33, 104, .25);
-  transition: background .15s, transform .12s, box-shadow .15s;
-}
-.md-typeset .grid.cards.community-cards > ul > li .md-button:hover {
-  background: #1A48A8;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(3, 33, 104, .35);
-}
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) .md-button {
-  background: #16A34A;
-  box-shadow: 0 3px 10px rgba(22, 163, 74, .25);
-}
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) .md-button:hover {
-  background: #15803D;
-  box-shadow: 0 6px 16px rgba(22, 163, 74, .35);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
-/* 加粗关键字符的强调 */
+/* 加粗强调 */
 .md-typeset .grid.cards.community-cards > ul > li strong {
   color: #032168;
 }
@@ -1935,18 +1916,15 @@
   color: #4ADE80;
 }
 
-/* 小屏:padding 收紧 */
+/* 小屏 */
 @media (max-width: 640px) {
   .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-    font-size: 1.35rem;
-    padding: 0 1.2rem;
+    font-size: 1.25rem;
+    padding: 1.1rem 1.2rem;
   }
   .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
   .md-typeset .grid.cards.community-cards > ul > li > blockquote {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
-  }
-  .md-typeset .grid.cards.community-cards > ul > li .md-button {
-    margin: 1rem 1.2rem 1.5rem;
   }
 }
