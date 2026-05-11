@@ -1751,18 +1751,61 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   专题社区 — 大卡片(单列,整卡可点跳外链)
+   专题社区 — 大卡片(单列,整卡可点跳外链,每卡一套主题色)
    ══════════════════════════════════════════════════════════ */
-/* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽,显得太宽) */
+/* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽) */
 .md-content__inner:has(.community-cards) {
   max-width: 1080px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
+/* 每张卡用 CSS 变量定义主题色 — 默认蓝(OSCC) */
+.md-typeset .grid.cards.community-cards > ul > li {
+  --c-deep:  #032168;
+  --c-mid:   #1A48A8;
+  --c-light: #3B5FCF;
+}
+/* 2 香山 — 深紫 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) {
+  --c-deep:  #5B21B6;
+  --c-mid:   #7C3AED;
+  --c-light: #A78BFA;
+}
+/* 3 iEDA — 青 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(3) {
+  --c-deep:  #0E7490;
+  --c-mid:   #0891B2;
+  --c-light: #06B6D4;
+}
+/* 4 PLCT — 琥珀/橙 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(4) {
+  --c-deep:  #92400E;
+  --c-mid:   #C2410C;
+  --c-light: #EA580C;
+}
+/* 5 Embodied — 墨绿 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(5) {
+  --c-deep:  #15803D;
+  --c-mid:   #16A34A;
+  --c-light: #22C55E;
+}
+/* 6 Datawhale — 玫红 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(6) {
+  --c-deep:  #9D174D;
+  --c-mid:   #BE185D;
+  --c-light: #DB2777;
+}
+/* 7 集创赛 — 金 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(7) {
+  --c-deep:  #A16207;
+  --c-mid:   #CA8A04;
+  --c-light: #EAB308;
+}
+
 .md-typeset .grid.cards.community-cards > ul {
   display: grid !important;
-  grid-template-columns: 1fr !important;   /* 强制单列 */
+  grid-template-columns: 1fr !important;
   gap: 1.8rem;
   margin: 2rem 0;
 }
@@ -1770,25 +1813,27 @@
 .md-typeset .grid.cards.community-cards > ul > li {
   padding: 0;
   border-radius: 16px;
-  border: 1px solid rgba(3, 33, 104, .12);
+  border: 1px solid color-mix(in srgb, var(--c-deep) 18%, transparent);
   background: #ffffff;
-  box-shadow: 0 6px 20px rgba(3, 33, 104, .08), 0 1px 3px rgba(0, 0, 0, .04);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--c-deep) 10%, transparent),
+              0 1px 3px rgba(0, 0, 0, .04);
   transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
   position: relative;
   overflow: hidden;
-  cursor: pointer;                       /* 视觉提示整卡可点 */
+  cursor: pointer;
 }
 
 .md-typeset .grid.cards.community-cards > ul > li:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(3, 33, 104, .18), 0 6px 12px rgba(0, 0, 0, .08);
+  box-shadow: 0 20px 40px color-mix(in srgb, var(--c-deep) 22%, transparent),
+              0 6px 12px rgba(0, 0, 0, .08);
 }
 
-/* 标题段本身 = 顶部彩色 header bar(流式布局,长标题自然换行) */
+/* 标题段本身 = 顶部彩色 header bar */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
   margin: 0;
   padding: 1.4rem 2rem;
-  background: linear-gradient(135deg, #032168 0%, #1A48A8 60%, #3B5FCF 100%);
+  background: linear-gradient(135deg, var(--c-deep) 0%, var(--c-mid) 60%, var(--c-light) 100%);
   color: #ffffff;
   font-size: 1.55rem;
   font-weight: 700;
@@ -1809,17 +1854,13 @@
     radial-gradient(circle at 90% 20%, rgba(255,255,255,.15) 0, transparent 18px);
   pointer-events: none;
 }
-/* 第二张卡 — 墨绿 */
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) > p:first-child {
-  background: linear-gradient(135deg, #15803D 0%, #16A34A 50%, #22C55E 100%);
-}
 
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child a {
   color: #ffffff !important;
   text-decoration: none;
-  position: static;                      /* 让其 ::before 相对 li 定位 */
+  position: static;
 }
-/* 关键 — 把标题链接的可点击区扩展到整张卡 */
+/* 整卡可点:标题链接 ::before 撑满 li */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child a::before {
   content: "";
   position: absolute;
@@ -1838,19 +1879,19 @@
   filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
 }
 
-/* 隐藏 md hr — header bar 已经是分隔 */
+/* 隐藏 md hr */
 .md-typeset .grid.cards.community-cards > ul > li hr {
   display: none;
 }
 
-/* 正文区:左右留白 2rem,从 header bar 下方开始 */
+/* 正文区:左右留白 2rem */
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
 .md-typeset .grid.cards.community-cards > ul > li > ul,
 .md-typeset .grid.cards.community-cards > ul > li > blockquote {
   margin-left: 2rem;
   margin-right: 2rem;
   position: relative;
-  z-index: 2;                            /* 在标题链接 ::before 之上 */
+  z-index: 2;
 }
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(2) {
   margin-top: 1.2rem;
@@ -1872,17 +1913,14 @@
   font-size: .88rem;
   margin: 1.2rem 2rem;
   padding: .7rem 1rem;
-  background: linear-gradient(90deg, rgba(3, 33, 104, .06), transparent);
-  border-left: 4px solid #1A48A8;
+  background: linear-gradient(90deg,
+              color-mix(in srgb, var(--c-mid) 8%, transparent),
+              transparent);
+  border-left: 4px solid var(--c-mid);
   border-radius: 0 8px 8px 0;
-  color: #032168;
+  color: var(--c-deep);
 }
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) blockquote {
-  background: linear-gradient(90deg, rgba(22, 163, 74, .08), transparent);
-  border-left-color: #16A34A;
-  color: #15803D;
-}
-/* blockquote 内部链接必须保留可点(在标题链接 ::before 之上) */
+/* blockquote 内部链接保留可点 */
 .md-typeset .grid.cards.community-cards > ul > li blockquote a {
   position: relative;
   z-index: 3;
@@ -1895,32 +1933,23 @@
 
 /* 加粗强调 */
 .md-typeset .grid.cards.community-cards > ul > li strong {
-  color: #032168;
-}
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(2) strong {
-  color: #15803D;
+  color: var(--c-deep);
 }
 
-/* Dark mode */
+/* Dark mode — 用 --c-light(浅色)替代 --c-deep 作前景色 */
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li {
   background: #1e2330;
-  border-color: rgba(138, 171, 222, .15);
+  border-color: color-mix(in srgb, var(--c-light) 25%, transparent);
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li blockquote {
-  background: linear-gradient(90deg, rgba(138, 171, 222, .12), transparent);
-  border-left-color: #8AABDE;
-  color: #B8D2F2;
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:nth-child(2) blockquote {
-  background: linear-gradient(90deg, rgba(74, 222, 128, .12), transparent);
-  border-left-color: #4ADE80;
-  color: #86EFAC;
+  background: linear-gradient(90deg,
+              color-mix(in srgb, var(--c-light) 12%, transparent),
+              transparent);
+  border-left-color: var(--c-light);
+  color: color-mix(in srgb, var(--c-light) 75%, white);
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li strong {
-  color: #8AABDE;
-}
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li:nth-child(2) strong {
-  color: #4ADE80;
+  color: color-mix(in srgb, var(--c-light) 75%, white);
 }
 
 /* 小屏 */
