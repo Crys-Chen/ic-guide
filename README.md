@@ -82,13 +82,140 @@ graph TB
 
 ## 如何成为贡献者
 
-一个人的力量终究是有限的，对于本站你若有想要补充的内容，欢迎各位提出 [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)。如果你想贡献一门新的课程，可以参考目前 repo 中的 [template](./template.md) 文件作为模版，并在 [mkdocs.yml](./mkdocs.yml) 文件中添加其navigation，当然你还可以在 [CS 学习规划](./docs/CS学习规划.md) 里的对应模块为其添加言简意赅的导语。如果你有想推荐的书籍，请参考 [好书推荐](https://raw.githubusercontent.com/Crys-Chen/Fudan-ME/master/docs/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90.md) 模块上方的注释按相应格式添加内容。
+一个人的力量终究是有限的，对于本站你若有想要补充的内容，欢迎各位提出 [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)。
+
+> 写作风格、内容尺度、价值取向等"软"性约束，详见站内 [参与建设](https://crys-chen.github.io/Fudan-ME/%E5%8F%82%E4%B8%8E%E5%BB%BA%E8%AE%BE/) 页。下面只讲"硬"性的——文件放哪、PR 怎么发。
+
+### 仓库结构速查
+
+```
+Fudan-ME/
+├── mkdocs.yml              # 站点配置 + nav + i18n nav_translations
+├── template.md             # 新课程页的模板（必读）
+├── docs/
+│   ├── index.md            # 首页
+│   ├── 知识谱系.md          # "学习地图"入口
+│   ├── 后记.md
+│   ├── 参与建设.md          # 贡献指南（软性约束）
+│   ├── 科研方向/            # 17 个方向页 + index.md（星图入口）
+│   │   ├── index.md
+│   │   ├── AI算法与系统.md
+│   │   ├── 半导体器件与先进工艺.md
+│   │   └── ...
+│   ├── 课程资源/            # 按学科分组的课程页
+│   │   ├── 数学/
+│   │   ├── 物理/
+│   │   ├── 器件与工艺/
+│   │   ├── 电路/
+│   │   ├── 算法编程/
+│   │   ├── 系统架构/
+│   │   ├── 人工智能/
+│   │   └── 必学工具/        # 工程工具教程都在这里
+│   ├── stylesheets/extra.css
+│   └── javascripts/        # orbit-galaxy.js / likes.js / prof-collapse.js / hero-scroll.js
+└── overrides/              # MkDocs Material 主题覆盖（hero 横幅、giscus 评论）
+```
+
+**两条铁律**：
+1. **新增任何 .md 文件，必须同步在 `mkdocs.yml` 的 `nav:` 段加一行链接**——否则页面不会出现在导航里。
+2. **若该 .md 需要英文版**，按 `*.en.md` 命名（同目录下），并在 `mkdocs.yml` 的 `plugins.i18n.languages[en].nav_translations` 加中→英菜单映射。
+
+### 一、改/补一门课程
+
+**举例**：你想给 MIT 6.S081 加一段过来人的体验，或新增一门 UCB CS162 的课程页。
+
+1. **找位置**：课程页按学科分组，路径模式是 `docs/课程资源/<学科>/<子分类>/<课程文件>.md`，例如
+   - `docs/课程资源/系统架构/操作系统/MIT6.S081.md`
+   - `docs/课程资源/数学/数学基础/线性代数/MITLA.md`
+2. **新增课程页**：复制 [`template.md`](./template.md) 到目标位置，按七字段填（课号 / 所属大学 / 先修 / 编程语言 / 难度 🌟 / 学时 / 课程资源链接）。
+3. **改已有课程页**：直接编辑文件即可。
+4. **更新 nav**：编辑 `mkdocs.yml` 找到对应学科的 `- 课程资源/<学科>/...` 段，加一行：
+   ```yaml
+   - "MIT 6.S081 操作系统": "课程资源/系统架构/操作系统/MIT6.S081.md"
+   ```
+5. **本地验证**：`pip install -r requirements.txt && mkdocs serve`，浏览器开 `http://127.0.0.1:8000` 检查渲染、链接、是否出现在导航里。
+
+### 二、改/补一个科研方向
+
+**举例**：你想在"硬件安全与可信计算"方向加一段关于侧信道防御的最新进展，或者新增一个方向（如"光子计算"）。
+
+1. **改已有方向**：编辑 `docs/科研方向/<方向名>.md`。方向页有固定七段骨架：
+   - 这个方向在研究什么 / 适合什么样的人 / 核心研究问题 / 代表性机构 / 知识路径 / 入门三步走 / 相关课题组
+   - 第 1 段"讲故事"是这个方向的灵魂，**别堆术语**，用具体案例
+2. **新增方向**：
+   - 新建 `docs/科研方向/<方向名>.md`，复制现有方向页（如 `AI算法与系统.md`）改
+   - 在 `mkdocs.yml` 的"科研方向"段相应大类下加一行
+   - 同步改 `docs/javascripts/orbit-galaxy.js` 里的 `ALL_CARDS`（17 张卡片的位置硬编码）和 `DIRS`（随机方向 nav 用），否则星图入口看不到新方向
+   - 同步改 `docs/科研方向/index.md` 的 `.rg-fallback` 列表（移动端备份导航）
+   - 同步改 `mkdocs.yml` 的 i18n nav_translations
+
+### 三、改/补教授
+
+**举例**：发现某教授链接 404 了；想加一位漏掉的清北复教授；某位港校教授中文名是简体应改繁体。
+
+教授条目都在 `docs/科研方向/<方向>.md` 的"相关课题组"段，按"境内 / 境外"分两组 `<div class="grid cards prof-collapse" markdown>`。
+
+**条目格式**（严格按此，不然 marker/CSS 不生效）：
+```markdown
+-   **[姓名](URL)** <span class="badge-XXX">学校</span>
+
+    子方向1 · 子方向2 · 子方向3
+```
+
+- **badge**：`badge-tsinghua` / `badge-pku` / `badge-fudan` / `badge-other`（其他国内）/ `badge-hk` / `badge-intl`
+- **女教授**：行末加 `<span class="prof-w"></span>`，CSS 自动给卡片改成复旦红边框
+- **双教授合卡**：行末加 `<span class="prof-mixed-fm"></span>`（女在前）或 `<span class="prof-mixed-mf"></span>`（男在前），产生半红半蓝边框
+- **海外华人**：`英文名（中文名）` 格式；粤语/威妥玛拼音的中文名用**繁体**（如 麥沛然、暨永雄、何宗易）；普通话拼音用简体
+- **顺序**：境内段按"清华 → 北大 → 复旦 → 其他国内 → 港校"，境外段按高校名/影响力
+- **不能编**：URL 必须能打开且确实是本人主页（不是同名不同人，不是学院/课题组主页）；子方向描述必须来自其主页/Scholar/课题组页可见内容
+
+### 四、改/补工程工具教程
+
+**举例**：写一篇 KiCad PCB 设计入门、Cadence Spectre 仿真常见报错排查。
+
+工具页都在 `docs/课程资源/必学工具/` 下，分三类（在 `mkdocs.yml` 里看得到）：
+- **通用工具**：Git / Vim / LaTeX / Docker / 翻墙等
+- **EE 专用工具**：MATLAB / LTspice / KiCad / Vivado / Cadence / Gem5 等
+- **构建与开发**：Docker / GitHub / VSCode 等
+
+1. 新建 `docs/课程资源/必学工具/<工具名>.md`
+2. **不要套课程模板**——工具教程不需要"七字段"。建议结构：
+   - 一段"为什么要学这个工具"
+   - 安装 / 配置（指明 OS、版本）
+   - 一个 hello-world 级的最小例子
+   - 你踩过的坑 / 常用快捷键 / 私房技巧（这部分最值钱）
+3. 在 `mkdocs.yml` "工程工具"段对应小类下加链接
+4. 同步 i18n nav_translations 加中→英映射
+
+### 标准 PR 流程
+
+无论上面哪类改动，最终都是同一套 GitHub 流程：
+
+```bash
+# 1. Fork & clone
+git clone https://github.com/<你的用户名>/Fudan-ME.git
+cd Fudan-ME
+
+# 2. 装依赖、本地预览
+pip install -r requirements.txt
+mkdocs serve  # 打开 http://127.0.0.1:8000
+
+# 3. 新建分支、改、提交
+git checkout -b feat/add-csapp-page
+# ...edit...
+git add docs/课程资源/系统架构/计算机系统基础/CSAPP.md mkdocs.yml
+git commit -m "feat: 补充 CMU 15213 CSAPP 课程页"
+
+# 4. push 到你的 fork、发 PR
+git push origin feat/add-csapp-page
+```
+
+PR 标题用一句话讲清楚改了什么（用 `feat:` / `fix:` / `docs:` 前缀更佳）。PR 描述里附上：（1）改了哪些文件；（2）本地预览截图（如果是新页面）。
 
 > [!CAUTION]
-> 注：请各位贡献者在上传课程资料时务必对其中个人信息做脱敏处理！！！
+> 上传课程资料前务必对个人信息做脱敏！姓名、学号、邮箱、聊天截图都要打码。
 
-
-同时由于个人水平有限，书中难免有笔误甚至概念错误之处，也请各位不吝赐教，在 issue 中提出来。
+如果你发现错误但不想/不会发 PR，[开一个 Issue](https://github.com/Crys-Chen/Fudan-ME/issues/new) 报告即可——一句话也行。
 
 ## Star History
 
