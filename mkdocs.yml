@@ -547,6 +547,8 @@ nav:
         - "Stanford CS110": "课程资源/系统架构/入门速成/CS110.md"
       - 体系结构:
         - 课程资源/系统架构/体系结构/index.md
+        - 清华:计算机组成原理: "课程资源/系统架构/体系结构/THU_computer_org.md"
+        - 国科大胡伟武:计算机体系结构(龙芯): "课程资源/系统架构/体系结构/UCAS_hu_archbase.md"
         - "Coursera: Nand2Tetris": "课程资源/系统架构/体系结构/N2T.md"
         - "UCB CS61C": "课程资源/系统架构/体系结构/CS61C.md"
         - "ETHz: Digital Design and Computer Architecture": "课程资源/系统架构/体系结构/DDCA.md"
@@ -559,10 +561,14 @@ nav:
         - "HIT OS": "课程资源/系统架构/操作系统/HITOS.md"
       - 并行与分布式系统:
         - 课程资源/系统架构/并行与分布式系统/index.md
+        - 中科大:并行计算: "课程资源/系统架构/并行与分布式系统/USTC_parallel.md"
+        - 高性能并行编程(parallel101): "课程资源/系统架构/并行与分布式系统/parallel101.md"
         - "CMU 15-418/Stanford CS149": "课程资源/系统架构/并行与分布式系统/CS149.md"
         - "MIT 6.824": "课程资源/系统架构/并行与分布式系统/MIT6.824.md"
       - 计算机系统安全:
         - 课程资源/系统架构/系统安全/index.md
+        - 哈工大李全龙:网络安全: "课程资源/系统架构/系统安全/HIT_security.md"
+        - 武大:密码学: "课程资源/系统架构/系统安全/WHU_crypto.md"
         - "UCB CS161": "课程资源/系统架构/系统安全/CS161.md"
         - "MIT 6.1600": "课程资源/系统架构/系统安全/MIT6.1600.md"
         - "MIT 6.858": "课程资源/系统架构/系统安全/MIT6.858.md"
@@ -571,12 +577,16 @@ nav:
         - "SU SEED Labs": "课程资源/系统架构/系统安全/SEEDLabs.md"
       - 计算机网络:
         - 课程资源/系统架构/计算机网络/index.md
+        - 哈工大李全龙:计算机网络: "课程资源/系统架构/计算机网络/HIT_network.md"
+        - 中科大郑烇:高级计算机网络: "课程资源/系统架构/计算机网络/USTC_zheng_advanced_net.md"
         - "UCB CS168": "课程资源/系统架构/计算机网络/CS168.md"
         - "Stanford CS144": "课程资源/系统架构/计算机网络/CS144.md"
         - "USTC Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown_ustc.md"
         - "Computer Networking: A Top-Down Approach": "课程资源/系统架构/计算机网络/topdown.md"
       - 数据库系统:
         - 课程资源/系统架构/数据库系统/index.md
+        - 哈工大战德臣:数据库系统: "课程资源/系统架构/数据库系统/HIT_zhan_database.md"
+        - 清华李国良:数据库管理系统: "课程资源/系统架构/数据库系统/THU_li_DBMS.md"
         - "UCB CS186": "课程资源/系统架构/数据库系统/CS186.md"
         - "CMU 15-445": "课程资源/系统架构/数据库系统/15445.md"
         - "Caltech CS122": "课程资源/系统架构/数据库系统/CS122.md"
