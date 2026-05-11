@@ -1611,7 +1611,7 @@
   white-space: nowrap;
   font-family: "Inter", "Noto Sans SC", sans-serif;
   z-index: 20;
-  max-width: 110px;       /* "设计基础设施" 6 chars × 12 + slack */
+  max-width: 110px;       /* "设计工具与安全" 7 chars × 12 + slack */
   text-align: center;
 }
 
@@ -2012,3 +2012,33 @@
     margin-right: 1.2rem;
   }
 }
+
+/* ============================================================
+   Header 右上自定义文本按钮 — 参与建设 / 后记
+   ============================================================ */
+.md-header .md-header-link {
+  display: inline-flex;
+  align-items: center;
+  padding: .4rem .7rem;
+  margin: 0 .05rem;
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--md-primary-bg-color, #fff);
+  text-decoration: none;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+.md-header .md-header-link:hover,
+.md-header .md-header-link:focus {
+  background: rgba(255, 255, 255, .14);
+  color: var(--md-primary-bg-color, #fff);
+  text-decoration: none;
+}
+/* 移动端窄屏隐藏，避免挤压标题 / 搜索框 */
+@media screen and (max-width: 600px) {
+  .md-header .md-header-link {
+    display: none;
+  }
+}
+
