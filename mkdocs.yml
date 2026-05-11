@@ -304,22 +304,34 @@ nav:
           - 严质彬(哈工大): "课程资源/数学/数学进阶/矩阵分析/HIT.md"
         - 高等代数:
           - 丘维声(北大): "课程资源/数学/数学进阶/高等代数/pku.md"
+          - "MIT 18.700: Linear Algebra": "课程资源/数学/数学进阶/高等代数/MIT18.700.md"
+          - "Berkeley Math 110: Linear Algebra": "课程资源/数学/数学进阶/高等代数/Berkeley_Math110.md"
         - 抽象代数:
+          - 南大孙智伟:近世代数: "课程资源/数学/数学进阶/抽象代数/NJU_sun_algebra.md"
+          - "MIT 18.701/702: Algebra (Artin)": "课程资源/数学/数学进阶/抽象代数/MIT18.701.md"
           - Harvard: "课程资源/数学/数学进阶/抽象代数/harvard.md"
         - 密码学:
+          - 北邮:现代密码学: "课程资源/数学/数学进阶/密码学/BUPT_crypto.md"
+          - "MIT 6.875: Foundations of Cryptography": "课程资源/数学/数学进阶/密码学/MIT6.875.md"
           - Standford: "课程资源/数学/数学进阶/密码学/StandfordCrypto.md"
         - 信息论:
           - 信息论基础: "课程资源/数学/数学进阶/信息论/information.md"
           - "信息论进阶(UCB CS126)": "课程资源/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
         - 离散数学:
+          - 北大屈婉玲:离散数学: "课程资源/数学/数学进阶/离散数学/PKU_discrete.md"
           - "UCB CS126": "课程资源/数学/数学进阶/离散数学/CS126.md"
         - 数值分析:
+          - 复旦吴宗敏:数值逼近: "课程资源/数学/数学进阶/数值分析/FDU_wu_numerical.md"
+          - 中科大:数值分析: "课程资源/数学/数学进阶/数值分析/USTC_numerical.md"
           - "MIT18.330": "课程资源/数学/数学进阶/数值分析/numerical.md"
           - 补充资源: "课程资源/数学/数学进阶/数值分析/补充资源.md"
         - 凸优化:
+          - 中科大凌青:最优化理论: "课程资源/数学/数学进阶/凸优化/USTC_ling_convex.md"
           - "Standford EE364A": "课程资源/数学/数学进阶/凸优化/convex.md"
           - 补充资源: "课程资源/数学/数学进阶/凸优化/补充资源.md"
         - 复变函数:
+          - 西安交大:复变函数: "课程资源/数学/数学进阶/复变函数/XJTU_complex.md"
+          - Princeton Stein 复分析: "课程资源/数学/数学进阶/复变函数/Princeton_Stein_complex.md"
           - Bilibili: "课程资源/数学/数学进阶/复变函数/bilibili.md"
     - 物理:
       - 导言: "课程资源/物理/index.md"
