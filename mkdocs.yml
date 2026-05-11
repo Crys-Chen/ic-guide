@@ -142,6 +142,7 @@ plugins:
             数学: Mathematics
             物理: Physics
             光学: Optics
+            传热学: Heat Transfer
             器件与工艺: Devices and Fabrication
             电路: Circuits
             算法编程: Algorithm and Programming
@@ -345,6 +346,12 @@ nav:
         - "MIT 3.46: Photonic Materials and Devices": "课程资源/物理/光学/MIT3.46.md"
         - 浙大 戴道锌:硅基光电子学基础导论: "课程资源/物理/光学/ZJU_dai_silicon_photonics.md"
         - 北大 周治平:光电子学: "课程资源/物理/光学/PKU_zhou_optoelectronics.md"
+      - 传热学:
+        - 导言: "课程资源/物理/传热学/index.md"
+        - "MIT 2.051: Introduction to Heat Transfer": "课程资源/物理/传热学/MIT2.051.md"
+        - "MIT 2.51: Intermediate Heat and Mass Transfer": "课程资源/物理/传热学/MIT2.51.md"
+        - 西安交大 陶文铨:传热学: "课程资源/物理/传热学/XJTU_taowq.md"
+        - 上海交大:传热学: "课程资源/物理/传热学/SJTU_heat_transfer.md"
       - 其他:
         - 课程资源/物理/其他/index.md
         - 基础物理实验(复旦): "课程资源/物理/其他/PHYS120015.md"
