@@ -1924,6 +1924,31 @@
   margin-bottom: 1.6rem;
 }
 
+/* 卡片内的事实列表 — 自定义子弹标记用主题色 */
+.md-typeset .grid.cards.community-cards > ul > li > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.md-typeset .grid.cards.community-cards > ul > li > ul > li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin: .35rem 0;
+  font-size: .95rem;
+  line-height: 1.65;
+}
+.md-typeset .grid.cards.community-cards > ul > li > ul > li::before {
+  content: "";
+  position: absolute;
+  left: .15rem;
+  top: .65em;
+  width: .45rem;
+  height: .45rem;
+  border-radius: 50%;
+  background: var(--c-mid);
+}
+
 /* 内容字号 */
 .md-typeset .grid.cards.community-cards > ul > li p {
   font-size: 1rem;
