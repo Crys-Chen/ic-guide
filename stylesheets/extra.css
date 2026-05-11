@@ -1753,6 +1753,13 @@
 /* ══════════════════════════════════════════════════════════
    专题社区 — 大卡片(单列,整卡可点跳外链)
    ══════════════════════════════════════════════════════════ */
+/* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽,显得太宽) */
+.md-content__inner:has(.community-cards) {
+  max-width: 1080px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .md-typeset .grid.cards.community-cards > ul {
   display: grid !important;
   grid-template-columns: 1fr !important;   /* 强制单列 */
