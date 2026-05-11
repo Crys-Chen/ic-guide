@@ -391,12 +391,16 @@ nav:
       - 导言: "课程资源/电路/index.md"
       - 入门速成:
         - 课程资源/电路/入门速成/index.md
+        - 清华于歆杰:电路原理: "课程资源/电路/入门速成/THU_yu_circuit.md"
+        - 上交郑益慧:模拟电子技术基础: "课程资源/电路/入门速成/SJTU_zheng_analog.md"
         - "EE16A&B: Designing Information Devices and Systems": "课程资源/电路/入门速成/EE16.md"
         - "UCB EE120: Signal and Systems": "课程资源/电路/入门速成/signal.md"
         - "MIT 6.007 Signals and Systems": "课程资源/电路/入门速成/Signals_and_Systems_AVO.md"
       - 硬件描述语言(HDL):
         - 课程资源/电路/硬件描述语言(HDL)/index.md
         - Verilog:
+          - 浙大:玩转数字系统设计: "课程资源/电路/硬件描述语言(HDL)/Verilog/ZJU_digital_system.md"
+          - 小梅哥:零基础学 FPGA: "课程资源/电路/硬件描述语言(HDL)/Verilog/xiaomeige_fpga.md"
           - "HDLBits: Verilog Practice": "课程资源/电路/硬件描述语言(HDL)/Verilog/HDLBits.md"
           - "Nandland: Learn FPGA & Verilog": "课程资源/电路/硬件描述语言(HDL)/Verilog/nandland.md"
           - "UCB EECS151/251A": "课程资源/电路/硬件描述语言(HDL)/Verilog/EECS151.md"
@@ -430,9 +434,13 @@ nav:
         - 电路分析基础:
           - 电路基础(Bilibili): "课程资源/电路/模拟/电路分析基础/tingyi.md"
         - 高频电子线路:
+          - 西电:高频电子线路: "课程资源/电路/模拟/高频电子线路/Xidian_high_freq.md"
+          - 川大刘长军:射频通信电路: "课程资源/电路/模拟/高频电子线路/SCU_RF_comm.md"
           - "EE613: High-Frequency Analog Circuit Design": "课程资源/电路/模拟/高频电子线路/EE613.md"
           - "MIT 6.776: High Speed Communication Circuits": "课程资源/电路/模拟/高频电子线路/MIT6.776.md"
         - 射频集成电路:
+          - 复旦殷韵:射频电路设计: "课程资源/电路/模拟/射频集成电路/FDU_yin_RFIC.md"
+          - 成电:射频集成电路: "课程资源/电路/模拟/射频集成电路/UESTC_RFIC.md"
           - "Razavi RF Microelectronics (UCLA EE164)": "课程资源/电路/模拟/射频集成电路/razavi_rf.md"
           - "UCB EE142: IC for Communications": "课程资源/电路/模拟/射频集成电路/EE142.md"
       - 信号处理:
