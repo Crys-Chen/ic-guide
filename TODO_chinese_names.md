@@ -33,7 +33,6 @@
 
   三、UI/技术
 
-  16. 17 个科研方向页全部缺英文版（.en.md 没建）。英文站访问者点"Research Directions"会 fallback 到中文，主导航第二大块在英文站等于空。
   17. 首页 hero 双套 DOM（day + night）用 display:none 切换——双倍 HTML payload，SEO 抓取两套混在一起。应该用 prefers-color-scheme media query 或 JS 切换，而不是两个 div 共存。
   18. 星图 rAF 持续旋转：浏览器留在科研方向 index 时一直跑动画。Tab 切到后台也不暂停（没听 visibilitychange）。
   19. 星图 fallback 5 个分区色阶由深到浅（#032168 → #6B7FE0）——视觉上暗示"重要性递减"，但 5 个 sector 是平级的，颜色暗示不必要。
