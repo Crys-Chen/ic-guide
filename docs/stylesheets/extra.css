@@ -1802,6 +1802,18 @@
   --c-mid:   #CA8A04;
   --c-light: #EAB308;
 }
+/* 8 CS自学指南 — 深红(北大) */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(8) {
+  --c-deep:  #7F1D1D;
+  --c-mid:   #B91C1C;
+  --c-light: #EF4444;
+}
+/* 9 上交生存手册 — 钢蓝 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(9) {
+  --c-deep:  #1E3A8A;
+  --c-mid:   #1D4ED8;
+  --c-light: #60A5FA;
+}
 
 .md-typeset .grid.cards.community-cards > ul {
   display: grid !important;
@@ -1864,6 +1876,12 @@
 }
 .md-typeset .grid.cards.community-cards > ul > li:nth-child(7) > p:first-child {
   background: linear-gradient(135deg, #A16207 0%, #CA8A04 60%, #EAB308 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(8) > p:first-child {
+  background: linear-gradient(135deg, #7F1D1D 0%, #B91C1C 60%, #EF4444 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(9) > p:first-child {
+  background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 60%, #60A5FA 100%);
 }
 /* 装饰圆点 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child::after {
