@@ -1189,7 +1189,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      分领域详图
+      跨领域依赖图
     </span>
   </a>
   
@@ -1197,6 +1197,15 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分领域详图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       芯片完整生产流程
     </span>
@@ -12339,7 +12348,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      分领域详图
+      跨领域依赖图
     </span>
   </a>
   
@@ -12347,6 +12356,15 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分领域详图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       芯片完整生产流程
     </span>
@@ -12433,8 +12451,49 @@ markmap:
 </script>
 </div>
 
+<h2 id="_3">跨领域依赖图</h2>
+<pre class="mermaid"><code>graph TB
+    subgraph BASE["基础层"]
+        MATH["数学\n数分 · 线代 · 工程数学"]
+        PHY["物理\n量子力学 · 固体 · 半导体"]
+        CS["编程\n程序设计 · 数据结构"]
+    end
+
+    subgraph MID["核心技术层"]
+        DEV["器件与工艺"]
+        DIG["数字电路"]
+        ANA["模拟电路"]
+        SIG["信号处理"]
+    end
+
+    subgraph SYS["系统层"]
+        ARCH["系统架构"]
+        EDA["EDA 工具链"]
+    end
+
+    subgraph APP["应用层"]
+        ASIC["ASIC · SoC"]
+        AI["AI 算法与系统"]
+    end
+
+    PHY --&gt; DEV
+    MATH --&gt; DIG
+    MATH --&gt; SIG
+    CS --&gt; ARCH
+    CS --&gt; AI
+
+    DEV -.-&gt;|PDK 供给| ANA
+    SIG --&gt; ANA
+    DIG --&gt; ARCH
+    DIG --&gt; EDA
+    ANA --&gt; EDA
+
+    ARCH --&gt; ASIC
+    ARCH --&gt; AI
+    EDA --&gt; ASIC
+    ASIC -.-&gt;|硬件平台| AI</code></pre>
 <hr />
-<h2 id="_3">分领域详图</h2>
+<h2 id="_4">分领域详图</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">器件与工艺</label><label for="__tabbed_1_2">数字 IC</label><label for="__tabbed_1_3">模拟 IC</label><label for="__tabbed_1_4">信号处理</label><label for="__tabbed_1_5">系统架构</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -12549,7 +12608,7 @@ markmap:
 </div>
 </div>
 <hr />
-<h2 id="_4">芯片完整生产流程</h2>
+<h2 id="_5">芯片完整生产流程</h2>
 <pre class="mermaid"><code>graph TD
     subgraph FE["🖊️ 前端设计（Frontend）"]
         direction TB
@@ -12609,7 +12668,7 @@ markmap:
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-11
+    2026-05-15
   </span>
 
     
