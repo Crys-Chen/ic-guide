@@ -72,7 +72,7 @@ function renderButton(btn, count, liked) {
 
 // Inject like buttons into professor grid cards (new card format)
 function injectLikeButtonsCards() {
-  document.querySelectorAll(".grid.cards li").forEach((card) => {
+  document.querySelectorAll(".grid.cards:not(.community-cards) li").forEach((card) => {
     if (card.querySelector(".like-btn")) return;
     const nameEl = card.querySelector("strong");
     if (!nameEl) return;
