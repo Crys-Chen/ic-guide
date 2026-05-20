@@ -661,7 +661,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      核心研究问题
+      适合什么样的人
     </span>
   </a>
   
@@ -670,7 +670,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      代表性机构
+      核心研究问题
     </span>
   </a>
   
@@ -679,7 +679,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      知识路径
+      代表性机构
     </span>
   </a>
   
@@ -688,7 +688,7 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      入门三步走
+      知识路径
     </span>
   </a>
   
@@ -696,6 +696,15 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      入门三步走
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       相关课题组
     </span>
@@ -705,7 +714,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       境内
     </span>
@@ -714,7 +723,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       境外
     </span>
@@ -12427,7 +12436,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      核心研究问题
+      适合什么样的人
     </span>
   </a>
   
@@ -12436,7 +12445,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      代表性机构
+      核心研究问题
     </span>
   </a>
   
@@ -12445,7 +12454,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      知识路径
+      代表性机构
     </span>
   </a>
   
@@ -12454,7 +12463,7 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      入门三步走
+      知识路径
     </span>
   </a>
   
@@ -12462,6 +12471,15 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      入门三步走
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       相关课题组
     </span>
@@ -12471,7 +12489,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       境内
     </span>
@@ -12480,7 +12498,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       境外
     </span>
@@ -12516,10 +12534,116 @@
 <p>把来自不同工厂、不同工艺的多块芯片高密度整合在同一封装内——先进封装是摩尔定律减速后，芯片系统继续提升性能的核心路径。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>2022 年，Apple 发布 M1 Ultra：把两块 M1 Max 通过一条叫 <strong>UltraFusion</strong> 的互联桥接在一起，2500 个连接点，芯片间带宽 2.5 TB/s，是 Thunderbolt 4 的十倍。插进 Mac Studio 的操作系统看不到两块硅片，只看到一块超大单芯片。这不是营销话术——这是<strong>先进封装</strong>正在重写的行业规则：与其追求在一块芯片上塞进一切，不如把多块芯片缝合成一个整体。</p>
-<p>为什么要先切开再拼？答案藏在一个制造悖论里。晶圆上的缺陷是随机散布的——想象在一块坑坑洼洼的地面上铺瓷砖：大瓷砖几乎必然压到某个坑，于是整块报废；换用小瓷砖，多数可以绕开坑洞，出材率大幅提升。芯片良率的逻辑完全一样：Die 越大，命中缺陷的概率越高，<strong>良率</strong>随面积近似指数下降——一块大面积 CPU Die 在 5nm 工艺下良率可能只有 30%，七成成本打了水漂。更棘手的是，不同功能模块本来就不该共用一种制程：逻辑核用 3nm 最合适，I/O 控制器 22nm 已经够用，DRAM 有专属工艺、根本上不了逻辑产线。<strong>Chiplet（芯粒）</strong>提供了出路——把大芯片按功能拆开，各用最合适的工艺分头制造，再通过封装高密度拼合。AMD <strong>EPYC</strong> 如此拼接计算核与 I/O Die，NVIDIA H100 如此将 GPU 与六块 HBM 整合：拆开之后，每块小 Die 良率更高，工艺各走最优路径。</p>
+<p>为什么芯片不能想做多大就做多大？关键是良率。一整片大芯片必须<strong>所有功能区同时合格</strong>才能用——左右两半各自良率 90%，乘下来整片只剩 90% × 90% = 81%；切四份还连成单 Die 就跌到 90%⁴ ≈ 66%，块越多越惨。怎么破解这道难题？工业界给出了两个对立的答案。</p>
+<p>一种是<strong>晶圆级集成</strong>：干脆整片不切。Cerebras 的 <strong>WSE-3</strong> 把整片 12 寸晶圆做成一颗芯片——4 万亿晶体管、90 万核不切不分，靠<strong>掩膜拼接（reticle stitching）</strong>让多次曝光的图案在边界对齐成连续电路，靠<strong>片内冗余架构</strong>（坏核绕过、备用核顶替）应对良率问题。代价是 23 千瓦功耗集中在一片硅上，需要专门的液冷和供电系统。这条路很激进，目前主要由 Cerebras 一家在推。</p>
+<p>另一种思路完全相反：<strong>Chiplet（芯粒）</strong>——拆得越小越好，每块独立流片、独立测试，坏的当场扔掉就是了，单块自身仍是 90%+ 良率，废品只是几小块的损失。这就是"打扫干净屋子再请客"——只把通过筛选的已知良品（<strong>KGD</strong>）拼进封装。拆开还有意外收获：每块各走最合适的工艺——逻辑核 N3、I/O 控制器 N7、DRAM 自有产线——不再被迫塞进同一种制程。AMD <strong>EPYC</strong> 如此拼接计算核与 I/O Die，NVIDIA H100 如此将 GPU 与六块 HBM 整合在一起。Chiplet 是当前工业主流，本节后续主要展开它。</p>
+<div><svg viewBox="0 0 1145 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1145px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <defs>
+    <pattern id="coreGrid3" x="5" y="10" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="12" height="12" rx="1" fill="#DDD6FE" stroke="#7C3AED" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Panel 1: Monolithic -->
+  <rect x="10" y="15" width="355" height="270" rx="10" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1.5"/>
+  <text x="187" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#92400E">整片大芯片</text>
+  <rect x="40" y="70" width="295" height="135" rx="6" fill="#FED7AA" stroke="#EA580C" stroke-width="2.5"/>
+  <line x1="187" y1="76" x2="187" y2="199" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="113" y="90" text-anchor="middle" font-size="11" fill="#9A3412" font-weight="700">90%</text>
+  <text x="261" y="90" text-anchor="middle" font-size="11" fill="#9A3412" font-weight="700">90%</text>
+  <text x="187" y="120" text-anchor="middle" font-size="14" fill="#7C2D12" font-weight="600">同一颗大 Die</text>
+  <text x="187" y="145" text-anchor="middle" font-size="12" fill="#7C2D12">所有功能模块统一 N3 工艺</text>
+  <circle cx="95" cy="100" r="6" fill="#DC2626"/>
+  <circle cx="280" cy="178" r="6" fill="#DC2626"/>
+  <circle cx="312" cy="92" r="16" fill="#DC2626" opacity="0.92"/>
+  <text x="312" y="101" text-anchor="middle" font-size="22" fill="white" font-weight="700">✗</text>
+  <text x="187" y="240" text-anchor="middle" font-size="11" fill="#7C2D12">任一处缺陷 → 整块报废</text>
+  <text x="187" y="268" text-anchor="middle" font-size="14" font-weight="700" fill="#9A3412">大面积单 Die · 良率低</text>
+
+  <!-- Panel 2: Chiplet -->
+  <rect x="395" y="15" width="355" height="270" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="572" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#14532D">Chiplet：批量生产 · 择优拼合</text>
+  <rect x="430" y="56" width="52" height="40" rx="3" fill="#BFDBFE" stroke="#93C5FD" stroke-width="1" opacity="0.45"/>
+  <circle cx="475" cy="64" r="6" fill="#DC2626"/>
+  <text x="475" y="68" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="418" y="68" width="52" height="40" rx="3" fill="#BFDBFE" stroke="#60A5FA" stroke-width="1" opacity="0.6"/>
+  <circle cx="463" cy="76" r="6" fill="#DC2626"/>
+  <text x="463" y="80" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="406" y="80" width="52" height="40" rx="3" fill="#BFDBFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="432" y="98" text-anchor="middle" font-size="10" fill="#1E40AF" font-weight="600">计算</text>
+  <text x="432" y="111" text-anchor="middle" font-size="9" fill="#1E40AF">N3</text>
+  <circle cx="450" cy="115" r="8" fill="#16A34A"/>
+  <text x="450" y="119" text-anchor="middle" font-size="11" fill="white" font-weight="700">✓</text>
+  <rect x="514" y="56" width="52" height="40" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1" opacity="0.45"/>
+  <circle cx="559" cy="64" r="6" fill="#DC2626"/>
+  <text x="559" y="68" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="502" y="68" width="52" height="40" rx="3" fill="#FEF3C7" stroke="#FBBF24" stroke-width="1" opacity="0.6"/>
+  <circle cx="547" cy="76" r="6" fill="#DC2626"/>
+  <text x="547" y="80" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="490" y="80" width="52" height="40" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="516" y="98" text-anchor="middle" font-size="10" fill="#92400E" font-weight="600">I/O</text>
+  <text x="516" y="111" text-anchor="middle" font-size="9" fill="#92400E">N7</text>
+  <circle cx="534" cy="115" r="8" fill="#16A34A"/>
+  <text x="534" y="119" text-anchor="middle" font-size="11" fill="white" font-weight="700">✓</text>
+  <rect x="598" y="56" width="52" height="40" rx="3" fill="#E9D5FF" stroke="#C4B5FD" stroke-width="1" opacity="0.45"/>
+  <circle cx="643" cy="64" r="6" fill="#DC2626"/>
+  <text x="643" y="68" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="586" y="68" width="52" height="40" rx="3" fill="#E9D5FF" stroke="#A78BFA" stroke-width="1" opacity="0.6"/>
+  <circle cx="631" cy="76" r="6" fill="#DC2626"/>
+  <text x="631" y="80" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="574" y="80" width="52" height="40" rx="3" fill="#E9D5FF" stroke="#7C3AED" stroke-width="2"/>
+  <text x="600" y="98" text-anchor="middle" font-size="10" fill="#581C87" font-weight="600">SRAM</text>
+  <text x="600" y="111" text-anchor="middle" font-size="9" fill="#581C87">N5</text>
+  <circle cx="618" cy="115" r="8" fill="#16A34A"/>
+  <text x="618" y="119" text-anchor="middle" font-size="11" fill="white" font-weight="700">✓</text>
+  <rect x="682" y="56" width="52" height="40" rx="3" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1" opacity="0.45"/>
+  <circle cx="727" cy="64" r="6" fill="#DC2626"/>
+  <text x="727" y="68" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="670" y="68" width="52" height="40" rx="3" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1" opacity="0.6"/>
+  <circle cx="715" cy="76" r="6" fill="#DC2626"/>
+  <text x="715" y="80" text-anchor="middle" font-size="9" fill="white" font-weight="700">✗</text>
+  <rect x="658" y="80" width="52" height="40" rx="3" fill="#E5E7EB" stroke="#4B5563" stroke-width="2"/>
+  <text x="684" y="98" text-anchor="middle" font-size="10" fill="#374151" font-weight="600">模拟</text>
+  <text x="684" y="111" text-anchor="middle" font-size="9" fill="#374151">N22</text>
+  <circle cx="702" cy="115" r="8" fill="#16A34A"/>
+  <text x="702" y="119" text-anchor="middle" font-size="11" fill="white" font-weight="700">✓</text>
+  <text x="572" y="148" text-anchor="middle" font-size="11" fill="#14532D" font-weight="600">↓ 各取良品 ↓</text>
+  <rect x="395" y="160" width="355" height="78" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="572" y="180" text-anchor="middle" font-size="11" fill="#166534" font-weight="600">封装体（先进封装拼合）</text>
+  <rect x="406" y="190" width="52" height="40" rx="3" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="432" y="208" text-anchor="middle" font-size="10" fill="#1E40AF" font-weight="600">计算</text>
+  <text x="432" y="221" text-anchor="middle" font-size="9" fill="#1E40AF">N3</text>
+  <rect x="490" y="190" width="52" height="40" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="516" y="208" text-anchor="middle" font-size="10" fill="#92400E" font-weight="600">I/O</text>
+  <text x="516" y="221" text-anchor="middle" font-size="9" fill="#92400E">N7</text>
+  <rect x="574" y="190" width="52" height="40" rx="3" fill="#E9D5FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="600" y="208" text-anchor="middle" font-size="10" fill="#581C87" font-weight="600">SRAM</text>
+  <text x="600" y="221" text-anchor="middle" font-size="9" fill="#581C87">N5</text>
+  <rect x="658" y="190" width="52" height="40" rx="3" fill="#E5E7EB" stroke="#4B5563" stroke-width="1.5"/>
+  <text x="684" y="208" text-anchor="middle" font-size="10" fill="#374151" font-weight="600">模拟</text>
+  <text x="684" y="221" text-anchor="middle" font-size="9" fill="#374151">N22</text>
+  <text x="572" y="260" text-anchor="middle" font-size="11" fill="#14532D">每种小 Die 单独筛选 · 各走最适工艺</text>
+  <text x="572" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#15803D">良率高 · 工艺各取所长</text>
+
+  <!-- Panel 3: Wafer-scale -->
+  <rect x="780" y="15" width="355" height="270" rx="10" fill="#FAF5FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="957" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#5B21B6">晶圆级（Wafer-Scale）</text>
+  <circle cx="957" cy="130" r="83" fill="url(#coreGrid3)" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="950" y="208" width="14" height="6" fill="#FAF5FF" stroke="#7C3AED" stroke-width="1"/>
+  <rect x="919" y="108" width="12" height="12" rx="1" fill="#FECACA" stroke="#DC2626" stroke-width="0.8"/>
+  <text x="925" y="118" text-anchor="middle" font-size="9" fill="#7F1D1D" font-weight="700">✗</text>
+  <rect x="967" y="156" width="12" height="12" rx="1" fill="#FECACA" stroke="#DC2626" stroke-width="0.8"/>
+  <text x="973" y="166" text-anchor="middle" font-size="9" fill="#7F1D1D" font-weight="700">✗</text>
+  <rect x="903" y="140" width="12" height="12" rx="1" fill="#FECACA" stroke="#DC2626" stroke-width="0.8"/>
+  <text x="909" y="150" text-anchor="middle" font-size="9" fill="#7F1D1D" font-weight="700">✗</text>
+  <text x="957" y="240" text-anchor="middle" font-size="11" fill="#5B21B6">整片晶圆不切不分 · 4 万亿晶体管</text>
+  <text x="957" y="260" text-anchor="middle" font-size="13" font-weight="700" fill="#6D28D9">坏核绕过 · 冗余架构吸收</text>
+  <text x="957" y="278" text-anchor="middle" font-size="11" fill="#5B21B6">代表：Cerebras WSE-3</text>
+</svg></div>
+
 <p>但拆开就产生了新的代价：<strong>芯片间的通信成本</strong>。信号在片内传输只需几皮秒，能耗极低；越出芯片边界、经过封装基板走线之后，延迟倍增，每比特传输能耗高出一个量级。这个代价让"分开制造"和"合并使用"之间出现了一道鸿沟——而<strong>先进封装</strong>的核心命题，就是想尽办法把这道鸿沟填平：让分离的芯片在物理上靠得更近，近到通信代价可以忽略不计。</p>
-<p>沿着"让芯片更近"这条思路，封装技术走出了一条密度阶梯——每上一级，Die 间的信号路径就缩短一截、带宽密度随之跃升：</p>
-<div><svg viewBox="0 0 855 295" style="width:100%;max-width:855px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+<p>沿着"让芯片更近"这条思路，封装技术演化出了一条清晰的路径——从平铺到堆叠，再到两者合体，集成复杂度逐级攀升：</p>
+<div><svg viewBox="0 0 1060 232" style="width:100%;max-width:1060px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
   <defs>
     <marker id="arrd" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
@@ -12529,95 +12653,115 @@
       <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
-  <!-- Density bar -->
-  <rect x="10" y="263" width="835" height="9" rx="4" fill="url(#dg)"/>
-  <text x="10" y="284" font-size="10" fill="#94A3B8">互联密度 低</text>
-  <text x="845" y="284" text-anchor="end" font-size="10" fill="#3B82F6">高 →</text>
+
+  <!-- Complexity bar -->
+  <rect x="10" y="200" width="1040" height="8" rx="4" fill="url(#dg)"/>
+  <text x="10" y="222" font-size="10" fill="#94A3B8">集成复杂度 低</text>
+  <text x="1050" y="222" text-anchor="end" font-size="10" fill="#3B82F6">高 →</text>
+
   <!-- Arrows -->
-  <line x1="198" y1="80" x2="211" y2="80" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
-  <line x1="403" y1="80" x2="416" y2="80" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
-  <line x1="608" y1="80" x2="621" y2="80" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
-  <!-- ═══ Col 1: 2D ═══ -->
-  <rect x="10" y="20" width="188" height="232" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="104" y="42" text-anchor="middle" font-size="12" font-weight="700" fill="#1E293B">2D</text>
-  <!-- Two dies side by side — same Y, different X -->
-  <rect x="20" y="54" width="72" height="40" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="56" y="79" text-anchor="middle" font-size="10" fill="#1E40AF">Die A</text>
-  <rect x="106" y="54" width="72" height="40" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="142" y="79" text-anchor="middle" font-size="10" fill="#166534">Die B</text>
-  <!-- Organic substrate -->
-  <rect x="10" y="102" width="188" height="22" fill="#E2E8F0"/>
-  <text x="104" y="117" text-anchor="middle" font-size="9" fill="#475569">有机封装基板</text>
-  <text x="104" y="172" text-anchor="middle" font-size="9" fill="#64748B">间距 ~100 µm</text>
-  <text x="104" y="188" text-anchor="middle" font-size="9" fill="#94A3B8">信号绕行基板走线</text>
-  <!-- ═══ Col 2: 2.5D ═══ -->
-  <rect x="215" y="20" width="188" height="232" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="309" y="42" text-anchor="middle" font-size="12" font-weight="700" fill="#1E293B">2.5D</text>
-  <!-- GPU Die and HBM side by side — same Y, different X -->
-  <rect x="225" y="54" width="72" height="40" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="261" y="78" text-anchor="middle" font-size="10" fill="#1E40AF">GPU Die</text>
-  <rect x="311" y="54" width="72" height="40" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="347" y="71" text-anchor="middle" font-size="9" fill="#166534">HBM</text>
-  <text x="347" y="84" text-anchor="middle" font-size="8" fill="#15803D">(TSV 堆叠)</text>
-  <!-- Silicon Interposer -->
-  <rect x="215" y="102" width="188" height="22" fill="#C7D2FE"/>
-  <text x="309" y="117" text-anchor="middle" font-size="9" fill="#3730A3">硅转接板 Interposer</text>
-  <!-- Organic substrate -->
-  <rect x="215" y="128" width="188" height="16" fill="#E2E8F0"/>
-  <text x="309" y="140" text-anchor="middle" font-size="8" fill="#475569">有机基板</text>
-  <text x="309" y="172" text-anchor="middle" font-size="9" fill="#64748B">间距 ~10 µm</text>
-  <text x="309" y="188" text-anchor="middle" font-size="9" fill="#94A3B8">CoWoS · NVIDIA H100</text>
-  <!-- ═══ Col 3: 3.5D ═══ -->
-  <rect x="420" y="20" width="188" height="232" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="514" y="42" text-anchor="middle" font-size="12" font-weight="700" fill="#14532D">3.5D</text>
-  <!-- F2F compute stack: two dies stacked vertically, face-to-face -->
-  <rect x="430" y="48" width="84" height="26" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="472" y="64" text-anchor="middle" font-size="8" fill="#1E40AF">计算 Die（上）</text>
-  <line x1="430" y1="74" x2="514" y2="74" stroke="#EF4444" stroke-width="1.2" stroke-dasharray="3,2"/>
-  <rect x="430" y="74" width="84" height="26" rx="3" fill="#93C5FD" stroke="#3B82F6" stroke-width="1.2"/>
-  <text x="472" y="90" text-anchor="middle" font-size="8" fill="#1E40AF">计算 Die（下）</text>
-  <!-- HBM block beside the F2F stack -->
-  <rect x="524" y="48" width="72" height="52" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="560" y="72" text-anchor="middle" font-size="9" fill="#166534">HBM</text>
-  <text x="560" y="85" text-anchor="middle" font-size="8" fill="#15803D">×12</text>
-  <!-- CoWoS-L -->
-  <rect x="420" y="108" width="188" height="22" fill="#BBF7D0"/>
-  <text x="514" y="123" text-anchor="middle" font-size="9" fill="#14532D">CoWoS-L 大尺寸转接板</text>
-  <!-- Organic substrate -->
-  <rect x="420" y="134" width="188" height="16" fill="#E2E8F0"/>
-  <text x="514" y="146" text-anchor="middle" font-size="8" fill="#475569">有机基板</text>
-  <text x="514" y="160" text-anchor="middle" font-size="8" fill="#EF4444">← F2F 键合界面</text>
-  <text x="514" y="178" text-anchor="middle" font-size="9" fill="#64748B">6000+ mm² · 12 HBM</text>
-  <text x="514" y="194" text-anchor="middle" font-size="9" fill="#15803D">Broadcom XDSiP</text>
-  <!-- ═══ Col 4: 3D IC ═══ -->
-  <rect x="625" y="20" width="220" height="232" rx="8" fill="#FFF7ED" stroke="#F59E0B" stroke-width="1.5"/>
-  <text x="735" y="42" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">3D IC（直接键合）</text>
-  <!-- Die A on top -->
-  <rect x="643" y="52" width="184" height="30" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="735" y="71" text-anchor="middle" font-size="10" fill="#1E40AF">Die A</text>
-  <!-- Cu-Cu direct bond interface -->
-  <line x1="643" y1="82" x2="827" y2="82" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <!-- Die B directly below — no gap, direct bonding -->
-  <rect x="643" y="82" width="184" height="30" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="735" y="101" text-anchor="middle" font-size="10" fill="#92400E">Die B</text>
-  <text x="735" y="124" text-anchor="middle" font-size="8" fill="#EF4444">← Cu-Cu 直接键合 →</text>
-  <!-- Substrate -->
-  <rect x="625" y="132" width="220" height="18" fill="#E2E8F0"/>
-  <text x="735" y="145" text-anchor="middle" font-size="9" fill="#475569">基板</text>
-  <text x="735" y="172" text-anchor="middle" font-size="9" fill="#B45309">间距 &lt;1 µm · 近片内密度</text>
-  <text x="735" y="188" text-anchor="middle" font-size="9" fill="#B45309">SoIC（台积电）· Foveros（Intel）</text>
+  <line x1="200" y1="70" x2="213" y2="70" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
+  <line x1="405" y1="70" x2="418" y2="70" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
+  <line x1="610" y1="70" x2="623" y2="70" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
+  <line x1="830" y1="70" x2="843" y2="70" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrd)"/>
+
+  <!-- Col 1: 2D -->
+  <rect x="10" y="15" width="190" height="175" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="105" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">2D</text>
+  <rect x="20" y="50" width="76" height="36" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="58" y="73" text-anchor="middle" font-size="10" fill="#1E40AF">Die A</text>
+  <rect x="108" y="50" width="76" height="36" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="146" y="73" text-anchor="middle" font-size="10" fill="#166534">Die B</text>
+  <rect x="10" y="92" width="190" height="22" fill="#E2E8F0"/>
+  <text x="105" y="107" text-anchor="middle" font-size="9" fill="#475569">有机封装基板</text>
+  <text x="105" y="148" text-anchor="middle" font-size="9" fill="#64748B">间距 ~100 µm</text>
+  <text x="105" y="166" text-anchor="middle" font-size="9" fill="#94A3B8">绕基板走线</text>
+
+  <!-- Col 2: 2.5D -->
+  <rect x="215" y="15" width="190" height="175" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="310" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">2.5D</text>
+  <rect x="225" y="50" width="76" height="36" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="263" y="73" text-anchor="middle" font-size="10" fill="#1E40AF">GPU</text>
+  <rect x="313" y="50" width="76" height="36" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="351" y="68" text-anchor="middle" font-size="9" fill="#166534">HBM</text>
+  <text x="351" y="80" text-anchor="middle" font-size="8" fill="#15803D">(TSV叠)</text>
+  <rect x="215" y="92" width="190" height="20" fill="#C7D2FE"/>
+  <text x="310" y="106" text-anchor="middle" font-size="9" fill="#3730A3">硅转接板 Interposer</text>
+  <rect x="215" y="116" width="190" height="14" fill="#E2E8F0"/>
+  <text x="310" y="127" text-anchor="middle" font-size="8" fill="#475569">有机基板</text>
+  <text x="310" y="148" text-anchor="middle" font-size="9" fill="#64748B">间距 ~10 µm</text>
+  <text x="310" y="166" text-anchor="middle" font-size="9" fill="#94A3B8">CoWoS · NVIDIA H100</text>
+
+  <!-- Col 3: 3D (TSV) -->
+  <rect x="420" y="15" width="190" height="175" rx="8" fill="#FEF7E7" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="515" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">3D（TSV）</text>
+  <rect x="435" y="48" width="160" height="24" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="515" y="64" text-anchor="middle" font-size="10" fill="#1E40AF">Die A（上）</text>
+  <line x1="455" y1="48" x2="455" y2="108" stroke="#475569" stroke-width="1" stroke-dasharray="2,1"/>
+  <line x1="495" y1="48" x2="495" y2="108" stroke="#475569" stroke-width="1" stroke-dasharray="2,1"/>
+  <line x1="535" y1="48" x2="535" y2="108" stroke="#475569" stroke-width="1" stroke-dasharray="2,1"/>
+  <line x1="575" y1="48" x2="575" y2="108" stroke="#475569" stroke-width="1" stroke-dasharray="2,1"/>
+  <circle cx="455" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="475" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="495" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="515" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="535" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="555" cy="78" r="2.5" fill="#6B7280"/>
+  <circle cx="575" cy="78" r="2.5" fill="#6B7280"/>
+  <rect x="435" y="84" width="160" height="24" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="515" y="100" text-anchor="middle" font-size="10" fill="#92400E">Die B（下）</text>
+  <rect x="420" y="115" width="190" height="18" fill="#E2E8F0"/>
+  <text x="515" y="128" text-anchor="middle" font-size="9" fill="#475569">基板</text>
+  <text x="515" y="148" text-anchor="middle" font-size="9" fill="#92400E">~10 µm · TSV+微凸点</text>
+  <text x="515" y="166" text-anchor="middle" font-size="9" fill="#B45309">HBM 内部 · Foveros (一代)</text>
+
+  <!-- Col 4: 3D IC (direct) -->
+  <rect x="625" y="15" width="205" height="175" rx="8" fill="#FFF7ED" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="727" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">3D IC（直接键合）</text>
+  <rect x="640" y="48" width="175" height="24" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="727" y="64" text-anchor="middle" font-size="10" fill="#1E40AF">Die A</text>
+  <line x1="640" y1="72" x2="815" y2="72" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="640" y="72" width="175" height="24" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="727" y="88" text-anchor="middle" font-size="10" fill="#92400E">Die B</text>
+  <text x="727" y="113" text-anchor="middle" font-size="8" fill="#EF4444">← Cu-Cu 直接键合 →</text>
+  <rect x="625" y="118" width="205" height="18" fill="#E2E8F0"/>
+  <text x="727" y="131" text-anchor="middle" font-size="9" fill="#475569">基板</text>
+  <text x="727" y="148" text-anchor="middle" font-size="9" fill="#B45309">&lt;1 µm · 近片内密度</text>
+  <text x="727" y="166" text-anchor="middle" font-size="9" fill="#B45309">SoIC · V-Cache · Foveros Direct</text>
+
+  <!-- Col 5: 3.5D -->
+  <rect x="845" y="15" width="205" height="175" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="947" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#14532D">3.5D</text>
+  <rect x="855" y="44" width="86" height="22" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="898" y="59" text-anchor="middle" font-size="8" fill="#1E40AF">计算 Die（上）</text>
+  <line x1="855" y1="66" x2="941" y2="66" stroke="#EF4444" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <rect x="855" y="66" width="86" height="22" rx="3" fill="#93C5FD" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="898" y="81" text-anchor="middle" font-size="8" fill="#1E40AF">计算 Die（下）</text>
+  <rect x="951" y="44" width="86" height="44" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="994" y="64" text-anchor="middle" font-size="9" fill="#166534">HBM</text>
+  <text x="994" y="78" text-anchor="middle" font-size="8" fill="#15803D">×12</text>
+  <rect x="845" y="94" width="205" height="20" fill="#BBF7D0"/>
+  <text x="947" y="108" text-anchor="middle" font-size="9" fill="#14532D">CoWoS-L 大尺寸转接板</text>
+  <rect x="845" y="118" width="205" height="14" fill="#E2E8F0"/>
+  <text x="947" y="129" text-anchor="middle" font-size="8" fill="#475569">有机基板</text>
+  <text x="947" y="148" text-anchor="middle" font-size="9" fill="#64748B">2.5D + 局部 3D · 6000+ mm²</text>
+  <text x="947" y="166" text-anchor="middle" font-size="9" fill="#15803D">Broadcom XDSiP</text>
 </svg></div>
 
-<p><strong>2D</strong> 最朴素：芯片并排放在有机封装基板上，信号绕行走线，典型间距百微米量级。<strong>2.5D</strong> 迈出关键一步：在 Die 下方铺一层高密度<strong>硅转接板（Silicon Interposer）</strong>，数万个微凸块在 10 微米间距内密集排布，NVIDIA H100 的 <strong>CoWoS</strong> 封装正是如此——GPU 与六块 HBM 并排坐在转接板上，HBM 内部通过<strong>硅通孔（TSV）</strong>将多层 DRAM 垂直叠起，带宽突破 3 TB/s。<strong>3.5D</strong> 是 2025 年后快速成熟的新阶：Broadcom 的 <strong>XDSiP</strong> 以 CoWoS-L 大尺寸转接板为 2.5D 基础，同时将多块计算 Die <strong>面对面（F2F）垂直键合</strong>叠放——水平集成与垂直堆叠并用，Die 间接口功耗降低 90%，整个封装体可容纳 6000+ mm² 硅片和 12 块 HBM；"3.5D"这个名字因此准确：2.5D 水平集成 + 局部 3D 垂直堆叠 = 3.5D。<strong>3D IC</strong> 走到极限：台积电 <strong>SoIC</strong>、Intel <strong>Foveros</strong> 将 Die 铜-铜直接键合，间距不到 1 微米，连接密度已接近片内互联，与单片芯片的边界正在消弭。</p>
+<p><strong>2D</strong> 最朴素：芯片并排放在有机封装基板上，信号绕行走线，典型间距百微米量级。<strong>2.5D</strong> 迈出关键一步：在 Die 下方铺一层高密度<strong>硅转接板（Silicon Interposer）</strong>，数万个微凸块在 10 微米间距内密集排布，NVIDIA H100 的 <strong>CoWoS</strong> 封装正是如此——GPU 与六块 HBM 并排坐在转接板上，HBM 内部通过<strong>硅通孔（TSV）</strong>将多层 DRAM 垂直叠起，带宽突破 3 TB/s；Intel 的 <strong>EMIB</strong>（嵌入式硅桥）是一个成本变体，不铺整张转接板，只在两块 Die 交界处嵌入一小片硅桥提供局部高密度连接。<strong>3D（TSV）</strong> 是 3D 集成的传统形态：在芯片中钻出贯穿硅通孔，让上下两层 Die 通过 TSV + 微凸点垂直堆叠——HBM 内部多层 DRAM 就是这么叠起来的，Intel 第一代 Foveros（用于 Lakefield）也走这条路线，间距仍在十微米量级。<strong>3D IC（直接键合）</strong> 把"近"推到极限：台积电 <strong>SoIC</strong>、AMD <strong>3D V-Cache</strong>、Intel <strong>Foveros Direct</strong> 改用铜-铜直接键合，无需凸点，间距压到不到 1 微米，连接密度已接近片内互联——上下两层芯片之间的边界正在消弭。当水平拼接和垂直堆叠各自成熟之后，自然的下一步就是把两者合体——<strong>3.5D</strong> 正是这一思路的产物：Broadcom 的 <strong>XDSiP</strong> 以 CoWoS-L 大尺寸转接板为水平底座，同时将多块计算 Die <strong>面对面（F2F）垂直键合</strong>叠放，整个封装体可容纳 6000+ mm² 硅片和 12 块 HBM，Die 间接口功耗降低 90%。"3.5D"这个名字因此准确：2.5D 的水平集成 + 3D 的垂直堆叠 = 3.5D。</p>
 <p>"让信号少走路"的逻辑，同样决定了芯片脚下<strong>基板</strong>的走向。信号从芯片出发，必须先穿过基板才能抵达另一端，基板的介电性质直接影响传输损耗。当前主流的 <strong>ABF 有机基板</strong>（味之素膜）在 2020-2021 年芯片短缺期间成为全球供应链瓶颈：先进制程的 Chiplet 对基板线宽和过孔密度的要求愈发苛刻，产能跟不上。Intel 力推<strong>玻璃基板</strong>作为下一代方案：介电损耗更低、线宽更细、热膨胀系数更接近硅（减少热循环中的界面应力），计划 2026 年引入量产。拦路虎是工艺：玻璃质脆，激光钻微孔时容易崩裂，如何在不开裂的前提下打出高密度通孔，是当前封装材料研究的核心难题。</p>
 <p>同样的"更近"逻辑，延伸到了服务器之间。AI 集群里，GPU 节点通过光纤互联，传统方案把<strong>光模块</strong>插在交换机端口——信号在外部模块和交换 ASIC 之间来回进行光电转换，每次转换都有<strong>插入损耗</strong>，白白烧掉能量。<strong>光电共封装（CPO，Co-Packaged Optics）</strong>把光引擎和交换 ASIC 直接封装在一起，光电转换在芯片旁边完成，传输距离极短、损耗极低——正是"让通信单元尽量近"在数据中心网络层面的体现。随着 AI 训练对跨机柜带宽的需求指数级上升，CPO 已成为下一代数据中心交换机的核心技术方向。</p>
 <p>如果说上面的路线都在解决"硅与硅之间"的通信代价，<strong>异质材料集成</strong>则在追问另一个方向：如果最擅长某项功能的材料根本不是硅，能不能把它拉进封装体内？硅擅长逻辑，但在射频放大、大功率开关、激光发射等场景远非最优——<strong>GaAs、GaN、InP</strong> 等 III-V 族半导体在这些领域远超硅。把它们与硅 CMOS 集成在同一封装内，让系统兼得各方之长；代价是复杂的工程约束：III-V 材料与硅<strong>热膨胀系数（CTE）严重失配</strong>，温度循环中的应力会撕裂界面；III-V 工艺中的砷、磷等元素对 CMOS 产线是污染源，工艺隔离需要精细设计。</p>
-<p>当"让一切尽量近"被推到极限，三道工程难关横亘不去：<strong>散热</strong>——3D 堆叠后功率密度超过 1000 W/cm²，远超喷气发动机燃烧室，如何在不拆封装的前提下把热量导走；<strong>已知良品（KGD）测试</strong>——坏 Die 混进封装才被发现，整个封装报废，必须在裸片阶段完成全功能筛查；<strong>标准化</strong>——不同公司的 Chiplet 要互联，就需要统一的物理接口，<strong>UCIe（Universal Chiplet Interconnect Express）</strong>由 Intel、台积电、AMD 联合制定，如何在保证互操作性的同时把接口面积和功耗压到最低，仍是开放的研究前沿。</p>
+<p>当"让一切尽量近"被推到极限，三道工程难关横亘不去：<strong>散热</strong>——3D 堆叠后功率密度超过 1000 W/cm²，远超喷气发动机燃烧室，如何在不拆封装的前提下把热量导走；<strong>已知良品（KGD）测试</strong>——坏 Die 混进封装才被发现，整个封装报废，必须在裸片阶段完成全功能筛查；<strong>标准化</strong>——不同公司的 Chiplet 要互联，就需要统一的物理接口。<strong>UCIe（Universal Chiplet Interconnect Express）</strong>由 Intel、台积电、AMD 联合制定，定义了 Die-to-Die 的物理层与协议层。它要解决的终极问题是：让一块封装体里来自 AMD 的计算核、三星的 HBM、台积电代工的 AI 加速器彼此直接通信，像同一块芯片内部一样——这件事今天还没有完全实现，而这正是这个方向最核心的开放研究前沿。</p>
 <h2 id="_2">适合什么样的人</h2>
 <p>这个方向横跨封装工艺、电磁仿真、热设计和 EDA 四个维度，是少有的真正多学科交叉方向。如果你的兴趣点在系统级工程——希望既能理解芯片如何制造，又能关心它们组合在一起时的性能瓶颈——这里会让你有大量施展空间。</p>
 <p>工艺侧的研究（TSV 制造、微凸块键合、热界面材料）仍然需要在洁净间里动手，但相比器件工艺，这里的工序数量更少，更多时间花在封装结构测量和可靠性测试上。仿真侧的工作（信号完整性、热仿真、EDA 自动化）基本在计算机上完成，熟悉 ANSYS HFSS/SIwave、COMSOL 或 Cadence 封装工具会是竞争力所在。EDA 方向的同学需要有更扎实的编程基础，能够处理大规模图算法和优化问题。</p>
 <p>这个方向有一个独特之处：它的产业应用极其明确，AI 加速器和数据中心芯片对先进封装的需求正处于爆发期，TSMC CoWoS 产能持续紧张就是最直观的证明。如果你希望所做的研究与产业前沿直接挂钩，并且不排斥工程性强、系统复杂度高的问题，这个方向值得认真考虑。不太适合的情况：如果你对底层器件物理有强烈兴趣，希望深入钻研单个晶体管的机制，先进封装的研究尺度（微米到毫米量级）和关注点（系统级集成）与那种兴趣并不匹配。</p>
-<h2 id="_3">核心研究问题</h2>
+<h2 id="_3">适合什么样的人</h2>
+<p>这个方向横跨封装工艺、电磁仿真、热设计和 EDA 四个维度，是少有的真正多学科交叉方向。如果你的兴趣点在系统级工程——希望既能理解芯片如何制造，又能关心它们组合在一起时的性能瓶颈——这里会让你有大量施展空间。</p>
+<p>工艺侧的研究（TSV 制造、微凸块键合、热界面材料）仍然需要在洁净间里动手，但相比器件工艺，这里的工序数量更少，更多时间花在封装结构测量和可靠性测试上。仿真侧的工作（信号完整性、热仿真、EDA 自动化）基本在计算机上完成，熟悉 ANSYS HFSS/SIwave、COMSOL 或 Cadence 封装工具会是竞争力所在。EDA 方向的同学需要有更扎实的编程基础，能够处理大规模图算法和优化问题。</p>
+<p>这个方向有一个独特之处：它的产业应用极其明确，AI 加速器和数据中心芯片对先进封装的需求正处于爆发期，TSMC CoWoS 产能持续紧张就是最直观的证明。如果你希望所做的研究与产业前沿直接挂钩，并且不排斥工程性强、系统复杂度高的问题，这个方向值得认真考虑。不太适合的情况：如果你对底层器件物理有强烈兴趣，希望深入钻研单个晶体管的机制，先进封装的研究尺度（微米到毫米量级）和关注点（系统级集成）与那种兴趣并不匹配。</p>
+<h2 id="_4">核心研究问题</h2>
 <ul>
 <li><strong>芯片间互联</strong>：Chiplet 之间的带宽密度和能效如何随封装技术的演进而提升？UCIe 等标准化接口如何兼顾通用性与极低开销？</li>
 <li><strong>热管理</strong>：3D 堆叠后的极高热密度如何通过微流道冷却、导热材料优化等手段控制在安全范围？</li>
@@ -12625,7 +12769,7 @@
 <li><strong>先进封装 EDA</strong>：多 Die 系统的联合时序、热、信号仿真如何实现高效自动化，支撑量产流程？</li>
 <li><strong>可靠性与测试</strong>：Chiplet 集成后的系统级故障如何进行有效的已知良品（KGD）测试和系统级诊断？</li>
 </ul>
-<h2 id="_4">代表性机构</h2>
+<h2 id="_5">代表性机构</h2>
 <table>
 <thead>
 <tr>
@@ -12647,7 +12791,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">知识路径</h2>
+<h2 id="_6">知识路径</h2>
 <pre class="mermaid"><code>graph LR
     A["半导体器件基础\n微凸块·TSV工艺"] --&gt; B["信号与系统\n电磁场基础"]
     B --&gt; C["信号完整性\n传输线·串扰分析"]
@@ -12663,7 +12807,7 @@
 <li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路</a>（模拟电路·高频电路·信号完整性方向）</li>
 <li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/">物理基础</a>（固体物理·热学基础）</li>
 </ul>
-<h2 id="_6">入门三步走</h2>
+<h2 id="_7">入门三步走</h2>
 <p><strong>典型研究长什么样</strong></p>
 <p>ECTC 顶会的典型封装论文有两种形态：工艺类论文展示一种新的键合方案（如混合键合间距从 10μm 缩到 3μm），关键图表是截面 SEM 图和电学/热学测试结果，核心指标是键合良率和接触电阻；EDA 类论文提出多 Die 系统的联合仿真或优化方法，关键指标是运行时间与精度的折中。大多数先进封装学术工作不需要流片完整 SoC，而是做工艺模块验证或仿真方法验证；结论格式通常是"方案 X 在指标 Y 上相比基线提升 Z 倍，并在测试载片上通过电测/热测验证"。</p>
 <p><strong>第一步：了解产业背景</strong><br />
@@ -12672,8 +12816,8 @@
 阅读 Lau, <em>Recent Advances and New Trends in Flip Chip Technology</em> (J. Electronic Packaging, 2016) 和 Iyer et al., <em>Heterogeneous integration insights</em> (IEEE Micro, 2020)，系统了解封装技术演进脉络和异构集成的工程挑战。</p>
 <p><strong>第三步：跟进前沿</strong><br />
 浏览 ECTC 2022-2024 的 3D/2.5D Integration 相关 Session，以及 ISSCC 2023-2024 中 HBM + 近存计算的 session，了解从封装器件到系统应用的完整链路。</p>
-<h2 id="_7">相关课题组</h2>
-<h3 id="_8">境内</h3>
+<h2 id="_8">相关课题组</h2>
+<h3 id="_9">境内</h3>
 <div class="grid cards prof-collapse">
 <ul>
 <li>
@@ -12707,7 +12851,7 @@
 </ul>
 </div>
 <p><button class="prof-show-all">显示全部 ↓</button></p>
-<h3 id="_9">境外</h3>
+<h3 id="_10">境外</h3>
 <div class="grid cards prof-collapse">
 <ul>
 <li>
@@ -12765,7 +12909,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-11
+    2026-05-20
   </span>
 
     
