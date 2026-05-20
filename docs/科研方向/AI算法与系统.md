@@ -6,57 +6,92 @@ hide:
 
 ## 这个方向在研究什么
 
-卷积神经网络（CNN）在 1989 年就被 LeCun 发明出来了，但 AlexNet 要等到 2012 年才出现。中间隔了二十三年，不是因为算法进步太慢，而是因为 GPU 和大规模数据集还没有到位。等到 Krizhevsky 把 LeNet 的基本思路放到双 GTX 580 GPU 上训练，在 ImageNet 的 120 万张图片上跑，错误率就比第二名低了将近 11 个百分点。这个结果告诉了整个行业一件事：这个领域的进步，不只是算法的进步，更是算法 × 硬件 × 数据的联合进步。
+2024 年 7 月，OpenAI 披露了一份内部 AGI 路线图，把 AI 的发展分成五级：
 
-这个认识在随后十年被反复验证并放大。Transformer 架构（2017）之所以成为 LLM 的基础，不只因为注意力机制在理论上更好，还因为它的矩阵乘法可以在 GPU 上高度并行运行，这是 RNN 做不到的。当 OpenAI 用 GPT-3（1750 亿参数）证明"规模扩展就会更智能"时，随之而来的是另一个发现：当模型大到一定程度，如何高效地运行它，就和设计它一样困难——甚至更困难。一块 A100 GPU 内存只有 80 GB，装不下一个 GPT-3，需要把它拆开、分摊到几十块乃至几千块 GPU 上协同运行。模型并行、流水线并行、张量并行的切法，直接决定模型能否训练收敛，这是算法与系统之间真正的研究问题。
+- **L1：对话型**(自然语言交互)
+- **L2：推理型**(解博士级问题)
+- **L3：行动型**(自主完成几小时到几天的多步任务)
+- **L4：创新型**(协助发明)
+- **L5：组织型**(替代整个组织)
 
-<div><svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
-  <!-- Background panel -->
-  <rect x="6" y="8" width="848" height="184" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Column 1: 算法层 (purple) -->
-  <rect x="30" y="28" width="220" height="140" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
-  <text x="140" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#5B21B6" font-family="sans-serif">算法层</text>
-  <text x="140" y="72" text-anchor="middle" font-size="11" fill="#7C3AED" font-family="sans-serif">LLM / RL / Vision</text>
-  <text x="140" y="90" text-anchor="middle" font-size="10.5" fill="#6D28D9" font-family="sans-serif">Transformer · PPO · DINO</text>
-  <text x="140" y="108" text-anchor="middle" font-size="10" fill="#8B5CF6" font-family="sans-serif">研究目标：更好的智能</text>
-  <!-- Column 2: 系统层 (blue) -->
-  <rect x="310" y="28" width="220" height="140" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
-  <text x="420" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8" font-family="sans-serif">系统层</text>
-  <text x="420" y="72" text-anchor="middle" font-size="11" fill="#3B82F6" font-family="sans-serif">vLLM / TVM / PyTorch</text>
-  <text x="420" y="90" text-anchor="middle" font-size="10.5" fill="#2563EB" font-family="sans-serif">分布式训练 · 推理框架</text>
-  <text x="420" y="108" text-anchor="middle" font-size="10" fill="#3B82F6" font-family="sans-serif">研究目标：更快的运行</text>
-  <!-- Column 3: 硬件层 (green) -->
-  <rect x="590" y="28" width="220" height="140" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-  <text x="700" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534" font-family="sans-serif">硬件层</text>
-  <text x="700" y="72" text-anchor="middle" font-size="11" fill="#16A34A" font-family="sans-serif">GPU / NPU / 边缘芯片</text>
-  <text x="700" y="90" text-anchor="middle" font-size="10.5" fill="#15803D" font-family="sans-serif">A100 · 昇腾 · 树莓派</text>
-  <text x="700" y="108" text-anchor="middle" font-size="10" fill="#16A34A" font-family="sans-serif">研究目标：更省的算力</text>
-  <!-- Arrows between columns -->
-  <!-- 算法→系统 -->
-  <line x1="250" y1="90" x2="304" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
-  <polygon points="304,86 316,90 304,94" fill="#94A3B8"/>
-  <text x="281" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
-  <!-- 系统→算法 (back arrow) -->
-  <line x1="310" y1="112" x2="256" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
-  <polygon points="256,108 244,112 256,116" fill="#94A3B8"/>
-  <text x="281" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
-  <!-- 系统→硬件 -->
-  <line x1="530" y1="90" x2="584" y2="90" stroke="#94A3B8" stroke-width="1.8"/>
-  <polygon points="584,86 596,90 584,94" fill="#94A3B8"/>
-  <text x="561" y="80" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">算法需求 ↓</text>
-  <!-- 硬件→系统 (back arrow) -->
-  <line x1="590" y1="112" x2="536" y2="112" stroke="#94A3B8" stroke-width="1.8"/>
-  <polygon points="536,108 524,112 536,116" fill="#94A3B8"/>
-  <text x="561" y="128" text-anchor="middle" font-size="9" fill="#64748B" font-family="sans-serif">硬件约束 ↑</text>
-  <!-- Glowing intersection label (amber) at center -->
-  <rect x="345" y="148" width="150" height="32" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/>
-  <text x="420" y="162" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E" font-family="sans-serif">硬件-算法协同</text>
-  <text x="420" y="176" text-anchor="middle" font-size="9" fill="#D97706" font-family="sans-serif">EE 背景的机会空间</text>
+如今，**L2 早已实现**——思维链(Chain-of-Thought)让模型在推理问题上大放异彩。**L3 也基本实现**——Claude Code、OpenAI Codex 已经能够自主完成多步编程任务。**L4 也在大力发展**——AI for Science 已经在蛋白质结构(AlphaFold)、新材料发现等方向取得突破。AI 的每一步发展都需要 **算法、系统、数据** 三方面协同突破，这就是本方向在研究的事情。
+
+<div><svg viewBox="0 0 880 305" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif">
+  <text x="440.0" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1E293B">OpenAI 2024 年 7 月披露的 AGI 5 级路线图</text>
+  <text x="440.0" y="46" text-anchor="middle" font-size="11" fill="#64748B">每跨一级,需要算法、系统、数据三方面同步突破</text>
+  <rect x="10.0" y="60" width="164.0" height="6" rx="2" fill="#3B82F6"/>
+  <rect x="10.0" y="66" width="164.0" height="224" rx="0" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.2"/>
+  <text x="92.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#1E40AF">L1</text>
+  <text x="92.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">对话型</text>
+  <text x="92.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Chatbots</text>
+  <line x1="24.0" y1="152" x2="160.0" y2="152" stroke="#1E40AF" stroke-width="0.6" opacity="0.4"/>
+  <text x="92.0" y="168" text-anchor="middle" font-size="10" fill="#475569">对话能力 / 自然语言交互</text>
+  <text x="92.0" y="197" text-anchor="middle" font-size="9" fill="#94A3B8">代表产品</text>
+  <text x="92.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#1E40AF">ChatGPT</text>
+  <text x="92.0" y="223" text-anchor="middle" font-size="10" font-weight="600" fill="#1E40AF">Claude</text>
+  <text x="92.0" y="235" text-anchor="middle" font-size="10" font-weight="600" fill="#1E40AF">Gemini</text>
+  <rect x="52.0" y="268" width="80" height="16" rx="3" fill="#1E40AF"/>
+  <text x="92.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">已稳定</text>
+  <rect x="184.0" y="60" width="164.0" height="6" rx="2" fill="#06B6D4"/>
+  <rect x="184.0" y="66" width="164.0" height="224" rx="0" fill="#CFFAFE" stroke="#0E7490" stroke-width="1.2"/>
+  <text x="266.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#0E7490">L2</text>
+  <text x="266.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">推理型</text>
+  <text x="266.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Reasoners</text>
+  <line x1="198.0" y1="152" x2="334.0" y2="152" stroke="#0E7490" stroke-width="0.6" opacity="0.4"/>
+  <text x="266.0" y="168" text-anchor="middle" font-size="10" fill="#475569">博士级问题求解</text>
+  <text x="266.0" y="197" text-anchor="middle" font-size="9" fill="#94A3B8">代表产品</text>
+  <text x="266.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#0E7490">o1 / o3</text>
+  <text x="266.0" y="223" text-anchor="middle" font-size="10" font-weight="600" fill="#0E7490">DeepSeek-R1</text>
+  <text x="266.0" y="235" text-anchor="middle" font-size="10" font-weight="600" fill="#0E7490">Claude thinking</text>
+  <rect x="226.0" y="268" width="80" height="16" rx="3" fill="#0E7490"/>
+  <text x="266.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">已实现 (2024)</text>
+  <rect x="358.0" y="60" width="164.0" height="6" rx="2" fill="#F59E0B"/>
+  <rect x="358.0" y="66" width="164.0" height="224" rx="0" fill="#FEF3C7" stroke="#B45309" stroke-width="1.2"/>
+  <text x="440.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#B45309">L3</text>
+  <text x="440.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">行动型</text>
+  <text x="440.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Agents</text>
+  <line x1="372.0" y1="152" x2="508.0" y2="152" stroke="#B45309" stroke-width="0.6" opacity="0.4"/>
+  <text x="440.0" y="168" text-anchor="middle" font-size="10" fill="#475569">自主完成长任务</text>
+  <text x="440.0" y="181" text-anchor="middle" font-size="10" fill="#475569">(数小时-数天)</text>
+  <text x="440.0" y="210" text-anchor="middle" font-size="9" fill="#94A3B8">代表产品</text>
+  <text x="440.0" y="224" text-anchor="middle" font-size="10" font-weight="600" fill="#B45309">Claude Code</text>
+  <text x="440.0" y="236" text-anchor="middle" font-size="10" font-weight="600" fill="#B45309">Devin</text>
+  <text x="440.0" y="248" text-anchor="middle" font-size="10" font-weight="600" fill="#B45309">ChatGPT Operator</text>
+  <rect x="400.0" y="268" width="80" height="16" rx="3" fill="#B45309"/>
+  <text x="440.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">加速中</text>
+  <rect x="532.0" y="60" width="164.0" height="6" rx="2" fill="#94A3B8"/>
+  <rect x="532.0" y="66" width="164.0" height="224" rx="0" fill="#F1F5F9" stroke="#64748B" stroke-width="1.2"/>
+  <text x="614.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#64748B">L4</text>
+  <text x="614.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">创新型</text>
+  <text x="614.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Innovators</text>
+  <line x1="546.0" y1="152" x2="682.0" y2="152" stroke="#64748B" stroke-width="0.6" opacity="0.4"/>
+  <text x="614.0" y="168" text-anchor="middle" font-size="10" fill="#475569">协助科学发明 / 提出新想法</text>
+  <text x="614.0" y="197" text-anchor="middle" font-size="9" fill="#94A3B8">代表产品</text>
+  <text x="614.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">—</text>
+  <rect x="574.0" y="268" width="80" height="16" rx="3" fill="#64748B"/>
+  <text x="614.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">远期</text>
+  <rect x="706.0" y="60" width="164.0" height="6" rx="2" fill="#94A3B8"/>
+  <rect x="706.0" y="66" width="164.0" height="224" rx="0" fill="#F1F5F9" stroke="#64748B" stroke-width="1.2"/>
+  <text x="788.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#64748B">L5</text>
+  <text x="788.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">组织型</text>
+  <text x="788.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Organizations</text>
+  <line x1="720.0" y1="152" x2="856.0" y2="152" stroke="#64748B" stroke-width="0.6" opacity="0.4"/>
+  <text x="788.0" y="168" text-anchor="middle" font-size="10" fill="#475569">替代整个组织运作</text>
+  <text x="788.0" y="197" text-anchor="middle" font-size="9" fill="#94A3B8">代表产品</text>
+  <text x="788.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">—</text>
+  <rect x="748.0" y="268" width="80" height="16" rx="3" fill="#64748B"/>
+  <text x="788.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">远期</text>
 </svg></div>
 
-Flash Attention（2022）是一个典型的"系统工作改变算法能力"案例：注意力机制本来的内存访问模式对 GPU 不友好，Dao 等人重新排列计算顺序让数据在 GPU 片上 SRAM 里复用，在不改变计算结果的前提下把推理速度提升了 3 倍、内存占用降低了 5 倍——这直接改变了 LLM 可行上下文长度的上限，从几千 token 推向数万 token。vLLM 解决的是另一个问题：多用户同时请求 LLM 推理时，KV Cache 分配如何做到高效——借鉴操作系统"虚拟内存"的思路消除 GPU 内存碎片，吞吐量提升 24 倍。这些工作发在 OSDI、MLSys 等系统顶会，同时也被 NeurIPS 接收，代表了这个领域"最有趣的问题住在接缝处"的特点。
+算法层的核心是：**在算力撞墙之前，怎么让模型继续变强**——三个方向并行推进。**一是更高效的 scaling**：Llama 3 的 405B 版本，Meta 动用 1.6 万张 H100 训了 54 天，纯堆参数已经撞墙；**MoE**(DeepSeek-V3，2024)把模型拆成多个"专家"、每次只激活其中一两个，让参数规模和计算成本解耦。**二是更聪明的训练**：强化学习成为核心——R1-Zero 范式只用一份很小的"冷启动"数据告诉模型推理格式，后面全靠 RL 让模型自己摸索，这是 L2 思维链能稳定落地的关键。**三是更广的输入**：**多模态**(GPT-4V、Sora) 让模型从纯文本走向能理解图像、视频。但 LLM 也不是唯一答案——图灵奖得主、深度学习三巨头之一 **Yann LeCun** 长期质疑 LLM 的 token 级预测学不到物理世界的规律；他主导的 **JEPA 系列** 让 AI 预测视频/图像中被遮部分的高层语义("这是个球，正在落地")，而不是像素本身。**Neuro-symbolic AI** 则把神经网络的模糊感知和符号系统的严格推理结合。
 
-TinyML 和高效推理把同样的问题推到了另一个极端：不是怎么在一千块 GPU 上运行大模型，而是怎么在几百毫瓦的手机 NPU 上运行它。剪枝（去掉贡献小的权重）、量化（从 32 位浮点压缩到 4 位整数）、知识蒸馏（让小模型学大模型的行为）是三种核心手段。MIT Song Han 组的 AWQ 量化和 SpAtten 稀疏注意力是代表成果——这类论文同时投递 NeurIPS 和 ISSCC 不是巧合，而是因为问题本来就同时属于算法和硬件两个领域，理解芯片物理约束的研究者在这里有独特的切入优势。强化学习（RLHF）则从另一个方向进入了 LLM 训练的核心：ChatGPT 之所以"懂得怎么回答"，不是靠更大的模型，而是靠让人类反馈信号引导模型对齐人类偏好——这是 RL 与语言模型系统的结合，也是近两年 AI 研究里生长最快的交叉地带之一。
+系统层面，**L3 agent** 把推理转化为对外部世界的多步操作：Claude Code 在终端写代码、跑测试、调试 bug；Devin 接到软件工程任务后能自主完成。**多 agent** 让多个角色协作：一个分解任务、一个执行、一个评估，**OpenClaw**(2026 年初开源，几周内 GitHub stars 破 20 万)是代表。模型训练好之后，如何低成本推理同样很重要。**Flash Attention** 用矩阵分块，让数据从 HBM 取出来后在片上尽可能多地运算，之后再存回 HBM，节省大量片外访存开销。**vLLM 的 PagedAttention** 则是借鉴了虚拟内存的分页系统，高效地管理模型回顾上下文所需要的 KV Cache。神经网络的权重值绝大多数集中在很小的区间，32 位浮点的精度大半浪费——把权重压到 8 位甚至 4 位整数，离散化得当时精度几乎不损，这就是 **量化**。
+
+数据层面，模型最终学到什么不靠架构、靠数据。GPT-4、Llama 3 量级的训练数据在 10-15 万亿 token，基本把开放互联网的高质量内容训了一遍。Sam Altman 和 Ilya Sutskever 都公开承认过：**互联网公开数据快用光了**。下一步走两条路。一条是**合成数据**：让强模型生成新数据训练后续模型，微软 Phi 系列已经验证这条路可行，Tesla 的 FSD 也用模拟器生成小孩冲马路、暴雨夜驾这类极端场景来训练自动驾驶。另一条是**专家精选数据**，比如科学论文、专业的推理过程标注。
+
+此外，**AI 的可解释性**(Interpretability) 和 **AI 安全** 同样重要——只有真正理解模型、给它可控的行为边界，才能放心把更多决策交给它。2026 年 2 月，Claude 错误地把伊朗的一所女子小学识别为军事目标，导致 156 条无辜生命遇难；同类风险还有越狱攻击、ChatGPT 写法律文书引用虚构判例被法庭处罚等。**AI 安全** 给模型一套可控的行为边界，比如 Anthropic 的 **宪法 AI**(Constitutional AI) 让模型按一组原则做生成时的自检；**可解释性** 则去搞清楚模型内部在做什么，比如 Anthropic 的稀疏自编码器(SAE)能在大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。
+
+如今**前沿模型的训练已经被大厂垄断**。表面原因是钱，单次训练 1 亿美元起。但更深的壁垒是**数据**和**数据中心**。开放互联网的数据是公共的，但 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类**高质量私有数据**只有大厂自己有，这才决定模型在真实任务上的上限。这也是为什么几乎所有 AI 在讲中文时都喜欢"稳稳地接住你"。中文语料贫乏单一，加上各家 AI 互相蒸馏，风格自然趋同。**万卡级 H100 集群**则是另一道门，涉及电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有被边缘化，反而和大厂形成了一种**对称依赖**。工业界做前沿大模型并把训练好的开源放出来，比如 Llama、DeepSeek 系列。学术界拿这些做后训练、推理优化、可解释性研究，Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作反过来又被大厂的推理引擎采用。**学术界的真正机会，不在和大厂比规模，而在那些能让所有模型用得更好的算法、系统与数据方法上。**
 
 ## 适合什么样的人
 
