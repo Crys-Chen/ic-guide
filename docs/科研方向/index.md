@@ -32,3 +32,9 @@ hide:
 </div>
   </div>
 </div>
+
+<div style="text-align:center; padding: 3rem 0 4rem; opacity: 0.7;">
+  <a href="全景叙事/" style="font-size: 1rem; letter-spacing: .08em; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px;">
+    全景叙事：计算如何成为可能 →
+  </a>
+</div>
