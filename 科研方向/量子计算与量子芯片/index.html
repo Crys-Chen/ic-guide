@@ -12575,370 +12575,333 @@
 </svg></div>
 
 <p>一个量子比特在被测量之前，同时处于 0 和 1 的叠加态——不是"不知道是哪个"，而是物理上真的两者兼具，用一个复数概率幅描述这种混合的程度。这不是哲学猜测，是过去几十年实验一再验证的事实，违反了所有经典直觉。多个量子比特纠缠在一起时更奇怪：它们的联合状态不能被拆解成各自的独立状态，n 个完全纠缠的量子比特可以同时持有 2ⁿ 个状态，这是量子计算指数优势的物理来源。但叠加和纠缠只是原材料，真正的计算发生在干涉上。量子门精心设计演化过程，让错误答案的概率幅相互抵消，让正确答案的概率幅不断叠加增强——就像 RF 电路里两列信号的相长和相消干涉，只不过作用在概率幅上。测量时，你几乎总能得到正确结果。这是所有量子算法的底层逻辑：不是穷举所有可能，而是操控干涉。</p>
-<div><svg viewBox="0 0 860 252" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
-    <marker id="qi-arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <marker id="a2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#94A3B8"/>
     </marker>
   </defs>
-  <!-- panels -->
-  <rect x="5" y="5" width="250" height="242" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="305" y="5" width="250" height="242" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="605" y="5" width="250" height="242" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- 3 panel backgrounds -->
+  <rect x="5"   y="5" width="250" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="305" y="5" width="250" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="605" y="5" width="250" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <!-- titles -->
-  <text x="130" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">① 初始叠加态</text>
-  <text x="430" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">② 量子门演化</text>
-  <text x="730" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">③ 测量结果</text>
-  <!-- arrows -->
-  <line x1="261" y1="126" x2="299" y2="126" stroke="#94A3B8" stroke-width="2" marker-end="url(#qi-arr)"/>
-  <line x1="561" y1="126" x2="599" y2="126" stroke="#94A3B8" stroke-width="2" marker-end="url(#qi-arr)"/>
+  <text x="130" y="25" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">① 初始叠加态</text>
+  <text x="430" y="25" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">② 量子门演化</text>
+  <text x="730" y="25" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">③ 测量结果</text>
   <!-- zero lines -->
-  <line x1="20" y1="168" x2="250" y2="168" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="320" y1="168" x2="550" y2="168" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="620" y1="168" x2="850" y2="168" stroke="#E2E8F0" stroke-width="1"/>
-  <!-- y-axis label -->
-  <text x="14" y="131" text-anchor="middle" font-size="8.5" fill="#94A3B8" transform="rotate(-90 14 131)">概率幅</text>
-  <!-- Panel 1: 6 equal bars at height 62 -->
-  <rect x="27" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <rect x="63" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <rect x="99" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <rect x="135" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <rect x="171" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <rect x="207" y="106" width="28" height="62" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
-  <text x="130" y="190" text-anchor="middle" font-size="9.5" fill="#64748B">所有答案概率幅相等</text>
-  <text x="130" y="206" text-anchor="middle" font-size="9" fill="#94A3B8">尚未进行计算</text>
-  <!-- Panel 2: variable bars (x_base=305, bars at 327,363,399,435,471,507) -->
-  <rect x="327" y="168" width="28" height="36" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
-  <rect x="363" y="152" width="28" height="16" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
-  <rect x="399" y="168" width="28" height="44" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
-  <rect x="435" y="90" width="28" height="78" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
-  <rect x="471" y="168" width="28" height="30" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
-  <rect x="507" y="156" width="28" height="12" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
-  <text x="449" y="85" text-anchor="middle" font-size="8.5" fill="#7C3AED">正确答案</text>
-  <line x1="449" y1="87" x2="449" y2="90" stroke="#7C3AED" stroke-width="1"/>
-  <text x="430" y="190" text-anchor="middle" font-size="9.5" fill="#64748B">错误答案相消（↓）· 正确答案叠加（↑）</text>
-  <text x="430" y="206" text-anchor="middle" font-size="9" fill="#94A3B8">作用在概率幅上</text>
-  <!-- Panel 3: one dominant bar (x_base=605, bars at 627,663,699,735,771,807) -->
-  <rect x="627" y="164" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
-  <rect x="663" y="164" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
-  <rect x="699" y="164" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
-  <rect x="735" y="74" width="28" height="94" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
-  <text x="749" y="70" text-anchor="middle" font-size="14" fill="#7C3AED">✓</text>
-  <rect x="771" y="164" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
-  <rect x="807" y="164" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
-  <text x="730" y="190" text-anchor="middle" font-size="9.5" fill="#64748B">几乎总能测到正确答案</text>
-  <text x="730" y="206" text-anchor="middle" font-size="9" fill="#94A3B8">一次测量即得结果</text>
+  <line x1="25"  y1="162" x2="250" y2="162" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="325" y1="162" x2="550" y2="162" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="625" y1="162" x2="850" y2="162" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- "概率幅 ↑" simple labels (no rotation) -->
+  <text x="28"  y="48" font-size="8" fill="#94A3B8">↑ 概率幅</text>
+  <text x="328" y="48" font-size="8" fill="#94A3B8">↑ 概率幅</text>
+  <text x="628" y="48" font-size="8" fill="#94A3B8">↑ 概率幅</text>
+  <!-- ── Panel 1: 6 equal purple bars (height 70) ── -->
+  <!-- bar_w=28, gap=8, start_x=30: positions 30,66,102,138,174,210 -->
+  <rect x="30"  y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <rect x="66"  y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <rect x="102" y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <rect x="138" y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <rect x="174" y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <rect x="210" y="92" width="28" height="70" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="130" y="182" text-anchor="middle" font-size="9.5" fill="#64748B">所有答案概率幅相等</text>
+  <text x="130" y="196" text-anchor="middle" font-size="8.5" fill="#94A3B8">尚未进行计算</text>
+  <!-- ── Panel 2: variable bars (x_base=305, same bar positions +300) ── -->
+  <!-- 330,366,402,438,474,510 -->
+  <!-- Down bars (red): 330 height 40, 402 height 48, 474 height 32 -->
+  <!-- Up bars (green small): 366 height 18, 510 height 12 -->
+  <!-- Correct bar (purple): 438 height 84 -->
+  <rect x="330" y="162" width="28" height="40" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <rect x="366" y="144" width="28" height="18" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <rect x="402" y="162" width="28" height="48" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <rect x="438" y="78"  width="28" height="84" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="474" y="162" width="28" height="32" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <rect x="510" y="150" width="28" height="12" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <!-- annotation above correct bar -->
+  <text x="452" y="73" text-anchor="middle" font-size="8.5" fill="#7C3AED">正确答案 ↑</text>
+  <text x="430" y="182" text-anchor="middle" font-size="9.5" fill="#64748B">错误答案相消（↓）· 正确答案叠加（↑）</text>
+  <text x="430" y="196" text-anchor="middle" font-size="8.5" fill="#94A3B8">干涉作用于概率幅</text>
+  <!-- ── Panel 3: 5 tiny + 1 dominant (x_base=605) ── -->
+  <!-- positions 630,666,702,738,774,810 -->
+  <rect x="630" y="158" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <rect x="666" y="158" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <rect x="702" y="158" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <rect x="738" y="68"  width="28" height="94" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="752" y="63" text-anchor="middle" font-size="15" fill="#7C3AED">✓</text>
+  <rect x="774" y="158" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <rect x="810" y="158" width="28" height="4" rx="1" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="730" y="182" text-anchor="middle" font-size="9.5" fill="#64748B">几乎总能测到正确答案</text>
+  <text x="730" y="196" text-anchor="middle" font-size="8.5" fill="#94A3B8">一次测量即得结果</text>
+  <!-- inter-panel arrows -->
+  <line x1="262" y1="120" x2="298" y2="120" stroke="#94A3B8" stroke-width="2" marker-end="url(#a2)"/>
+  <line x1="562" y1="120" x2="598" y2="120" stroke="#94A3B8" stroke-width="2" marker-end="url(#a2)"/>
 </svg></div>
 
 <p>把这三个原理变成真实器件，主流路线是超导量子比特。对学过模拟电路的学生，理解它的最快入口是 LC 谐振回路：普通 LC 谐振器有一系列均匀间距的能级，任何微波脉冲都会同时激励多个能级，无法对单独两个能级定向操控。把电感换成约瑟夫森结——两块超导体中间夹一层纳米厚绝缘层构成的非线性电感——非线性打破了均匀性，让最低两个能级的间距与其他能级不同，可以用特定频率的微波脉冲单独寻址这两个能级。这就是量子比特的物理基础：用这个人工"原子"的基态和激发态编码量子信息，不是电压的高低。</p>
-<div><svg viewBox="0 0 860 295" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 285" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
-    <marker id="lj-arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <marker id="a3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#94A3B8"/>
     </marker>
-    <marker id="lj-dbl" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto">
-      <path d="M8,0 L8,6 L0,3 z" fill="#94A3B8"/>
-    </marker>
   </defs>
-  <!-- panels -->
-  <rect x="5" y="5" width="250" height="285" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="307" y="5" width="250" height="285" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="609" y="5" width="250" height="285" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- 3 panels -->
+  <rect x="5"   y="5" width="250" height="275" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="307" y="5" width="250" height="275" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="609" y="5" width="250" height="275" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <!-- titles -->
   <text x="130" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">① 普通 LC 谐振器</text>
   <text x="432" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">② 接入约瑟夫森结</text>
   <text x="734" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">③ 量子比特</text>
-  <!-- arrows -->
-  <line x1="261" y1="148" x2="301" y2="148" stroke="#94A3B8" stroke-width="2" marker-end="url(#lj-arr)"/>
-  <text x="281" y="143" text-anchor="middle" font-size="8" fill="#94A3B8">换入JJ</text>
-  <line x1="563" y1="148" x2="603" y2="148" stroke="#94A3B8" stroke-width="2" marker-end="url(#lj-arr)"/>
-  <text x="583" y="143" text-anchor="middle" font-size="8" fill="#94A3B8">微波寻址</text>
+  <!-- inter-panel arrows -->
+  <line x1="261" y1="148" x2="301" y2="148" stroke="#94A3B8" stroke-width="2" marker-end="url(#a3)"/>
+  <text x="281" y="143" text-anchor="middle" font-size="7.5" fill="#94A3B8">换入 JJ</text>
+  <line x1="563" y1="148" x2="603" y2="148" stroke="#94A3B8" stroke-width="2" marker-end="url(#a3)"/>
+  <text x="583" y="143" text-anchor="middle" font-size="7.5" fill="#94A3B8">微波寻址</text>
 
-  <!-- === Panel 1 circuit: simple LC loop === -->
-  <!-- loop wires -->
-  <line x1="60" y1="50" x2="200" y2="50" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="60" y1="105" x2="200" y2="105" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="60" y1="50" x2="60" y2="62" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="60" y1="93" x2="60" y2="105" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="200" y1="50" x2="200" y2="63" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="200" y1="88" x2="200" y2="105" stroke="#3B82F6" stroke-width="1.8"/>
-  <!-- inductor: coil arcs -->
-  <path d="M60,62 a7,7 0 0,0 14,0 a7,7 0 0,0 14,0 a7,7 0 0,0 14,0 M60,62 L60,93 M102,62 L102,93" stroke="none" fill="none"/>
-  <path d="M60,93 a7,7 0 0,1 -7,-7 a7,7 0 0,1 14,0 a7,7 0 0,1 -7,7" stroke="none" fill="none"/>
-  <!-- simpler inductor: rounded rect with label -->
-  <rect x="46" y="62" width="28" height="31" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.8"/>
-  <text x="60" y="81" text-anchor="middle" font-size="11" fill="#1D4ED8" font-weight="600">L</text>
-  <text x="60" y="120" text-anchor="middle" font-size="8.5" fill="#64748B">线性电感</text>
-  <!-- capacitor: two plates -->
-  <line x1="193" y1="63" x2="207" y2="63" stroke="#3B82F6" stroke-width="2.5"/>
-  <line x1="193" y1="72" x2="207" y2="72" stroke="#3B82F6" stroke-width="2.5"/>
-  <line x1="200" y1="50" x2="200" y2="63" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="200" y1="72" x2="200" y2="105" stroke="#3B82F6" stroke-width="1.8"/>
-  <!-- fix cap wires (already drawn above) -->
-  <line x1="193" y1="80" x2="207" y2="80" stroke="#3B82F6" stroke-width="2.5"/>
-  <line x1="193" y1="89" x2="207" y2="89" stroke="#3B82F6" stroke-width="2.5"/>
-  <line x1="200" y1="63" x2="200" y2="80" stroke="#3B82F6" stroke-width="1.8"/>
-  <line x1="200" y1="89" x2="200" y2="105" stroke="#3B82F6" stroke-width="1.8"/>
-  <text x="215" y="81" font-size="10" fill="#1D4ED8" font-weight="600">C</text>
-  <!-- Panel 1 energy levels: uniform, 5 levels at y=130,160,190,220,250 -->
-  <line x1="40" y1="255" x2="220" y2="255" stroke="#334155" stroke-width="2"/>
-  <line x1="40" y1="225" x2="220" y2="225" stroke="#334155" stroke-width="2"/>
-  <line x1="40" y1="195" x2="220" y2="195" stroke="#334155" stroke-width="2"/>
-  <line x1="40" y1="165" x2="220" y2="165" stroke="#334155" stroke-width="2"/>
-  <line x1="40" y1="135" x2="220" y2="135" stroke="#334155" stroke-width="2"/>
-  <!-- gap annotations: double arrows at x=230 -->
-  <line x1="228" y1="226" x2="228" y2="254" stroke="#3B82F6" stroke-width="1.2" marker-start="url(#lj-dbl)" marker-end="url(#lj-arr)"/>
-  <line x1="228" y1="196" x2="228" y2="224" stroke="#3B82F6" stroke-width="1.2" marker-start="url(#lj-dbl)" marker-end="url(#lj-arr)"/>
-  <text x="238" y="244" font-size="10" fill="#3B82F6">Δ</text>
-  <text x="238" y="214" font-size="10" fill="#3B82F6">Δ</text>
-  <text x="130" y="278" text-anchor="middle" font-size="9" fill="#64748B">能级间距均匀 → 无法定向寻址</text>
+  <!-- ── Panel 1: circuit description box + uniform energy levels ── -->
+  <rect x="28" y="38" width="199" height="44" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="128" y="57" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">线性电感 L  +  电容 C</text>
+  <text x="128" y="74" text-anchor="middle" font-size="9" fill="#1D4ED8">构成 LC 谐振回路</text>
+  <!-- 4 energy levels, uniform gap=36px: y=245,209,173,137 -->
+  <line x1="35" y1="245" x2="215" y2="245" stroke="#334155" stroke-width="2"/>
+  <line x1="35" y1="209" x2="215" y2="209" stroke="#334155" stroke-width="2"/>
+  <line x1="35" y1="173" x2="215" y2="173" stroke="#334155" stroke-width="2"/>
+  <line x1="35" y1="137" x2="215" y2="137" stroke="#334155" stroke-width="2"/>
+  <!-- bracket annotation for gap 0→1 (y=209 to y=245) -->
+  <line x1="222" y1="210" x2="222" y2="244" stroke="#3B82F6" stroke-width="1.3"/>
+  <line x1="219" y1="210" x2="225" y2="210" stroke="#3B82F6" stroke-width="1.3"/>
+  <line x1="219" y1="244" x2="225" y2="244" stroke="#3B82F6" stroke-width="1.3"/>
+  <text x="230" y="231" font-size="10" fill="#3B82F6">Δ</text>
+  <!-- bracket annotation for gap 1→2 (y=173 to y=209) -->
+  <line x1="222" y1="174" x2="222" y2="208" stroke="#3B82F6" stroke-width="1.3"/>
+  <line x1="219" y1="174" x2="225" y2="174" stroke="#3B82F6" stroke-width="1.3"/>
+  <line x1="219" y1="208" x2="225" y2="208" stroke="#3B82F6" stroke-width="1.3"/>
+  <text x="230" y="195" font-size="10" fill="#3B82F6">Δ</text>
+  <text x="128" y="267" text-anchor="middle" font-size="9" fill="#64748B">能级均匀 → 微波无法定向寻址</text>
 
-  <!-- === Panel 2 circuit: JJ instead of L === -->
-  <line x1="362" y1="50" x2="502" y2="50" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="362" y1="105" x2="502" y2="105" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="362" y1="50" x2="362" y2="62" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="362" y1="93" x2="362" y2="105" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="502" y1="50" x2="502" y2="63" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="502" y1="88" x2="502" y2="105" stroke="#7C3AED" stroke-width="1.8"/>
-  <!-- JJ box with X -->
-  <rect x="348" y="62" width="28" height="31" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
-  <line x1="350" y1="64" x2="374" y2="91" stroke="#7C3AED" stroke-width="1.5"/>
-  <line x1="374" y1="64" x2="350" y2="91" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="362" y="120" text-anchor="middle" font-size="8.5" fill="#7C3AED" font-weight="600">JJ（非线性）</text>
-  <!-- capacitor same as panel 1, offset 302 -->
-  <line x1="495" y1="63" x2="509" y2="63" stroke="#7C3AED" stroke-width="2.5"/>
-  <line x1="495" y1="72" x2="509" y2="72" stroke="#7C3AED" stroke-width="2.5"/>
-  <line x1="502" y1="72" x2="502" y2="80" stroke="#7C3AED" stroke-width="1.8"/>
-  <line x1="495" y1="80" x2="509" y2="80" stroke="#7C3AED" stroke-width="2.5"/>
-  <line x1="495" y1="89" x2="509" y2="89" stroke="#7C3AED" stroke-width="2.5"/>
-  <line x1="502" y1="89" x2="502" y2="105" stroke="#7C3AED" stroke-width="1.8"/>
-  <text x="517" y="81" font-size="10" fill="#7C3AED" font-weight="600">C</text>
-  <!-- Panel 2 energy levels: non-uniform. Bottom gap=20 (vs 30 for rest) -->
-  <line x1="342" y1="255" x2="522" y2="255" stroke="#334155" stroke-width="2"/>
-  <line x1="342" y1="235" x2="522" y2="235" stroke="#7C3AED" stroke-width="2.5"/>
-  <line x1="342" y1="195" x2="522" y2="195" stroke="#334155" stroke-width="1.5"/>
-  <line x1="342" y1="165" x2="522" y2="165" stroke="#334155" stroke-width="1.5"/>
-  <line x1="342" y1="135" x2="522" y2="135" stroke="#334155" stroke-width="1.5"/>
-  <!-- gap annotations -->
-  <line x1="530" y1="236" x2="530" y2="254" stroke="#7C3AED" stroke-width="1.5" marker-start="url(#lj-dbl)" marker-end="url(#lj-arr)"/>
-  <text x="538" y="249" font-size="9" fill="#7C3AED" font-weight="600">Δ₀₁</text>
-  <line x1="530" y1="196" x2="530" y2="234" stroke="#94A3B8" stroke-width="1.2" marker-start="url(#lj-dbl)" marker-end="url(#lj-arr)"/>
-  <text x="538" y="218" font-size="9" fill="#94A3B8">Δ₁₂</text>
-  <text x="555" y="232" font-size="11" fill="#7C3AED" font-weight="600">≠</text>
-  <text x="432" y="278" text-anchor="middle" font-size="9" fill="#64748B">非线性打破均匀间距 → Δ₀₁ ≠ Δ₁₂</text>
+  <!-- ── Panel 2: JJ description + non-uniform energy levels ── -->
+  <rect x="330" y="38" width="199" height="44" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="430" y="57" text-anchor="middle" font-size="10" font-weight="600" fill="#7C3AED">约瑟夫森结（非线性电感）</text>
+  <text x="430" y="74" text-anchor="middle" font-size="9" fill="#7C3AED">打破均匀间距</text>
+  <!-- 4 levels: y=245, 225 (gap=20), 189 (gap=36), 153 (gap=36) -->
+  <line x1="337" y1="245" x2="517" y2="245" stroke="#334155" stroke-width="2"/>
+  <line x1="337" y1="225" x2="517" y2="225" stroke="#7C3AED" stroke-width="2.5"/>
+  <line x1="337" y1="189" x2="517" y2="189" stroke="#334155" stroke-width="1.8"/>
+  <line x1="337" y1="153" x2="517" y2="153" stroke="#334155" stroke-width="1.8"/>
+  <!-- bracket: gap 0→1 (y=225–245, gap=20, SMALLER) -->
+  <line x1="524" y1="226" x2="524" y2="244" stroke="#7C3AED" stroke-width="1.5"/>
+  <line x1="521" y1="226" x2="527" y2="226" stroke="#7C3AED" stroke-width="1.5"/>
+  <line x1="521" y1="244" x2="527" y2="244" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="532" y="239" font-size="9" font-weight="600" fill="#7C3AED">Δ₀₁</text>
+  <!-- bracket: gap 1→2 (y=189–225, gap=36, LARGER) -->
+  <line x1="524" y1="190" x2="524" y2="224" stroke="#94A3B8" stroke-width="1.3"/>
+  <line x1="521" y1="190" x2="527" y2="190" stroke="#94A3B8" stroke-width="1.3"/>
+  <line x1="521" y1="224" x2="527" y2="224" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="532" y="211" font-size="9" fill="#94A3B8">Δ₁₂</text>
+  <!-- ≠ symbol -->
+  <text x="548" y="230" font-size="13" font-weight="700" fill="#7C3AED">≠</text>
+  <text x="432" y="267" text-anchor="middle" font-size="9" fill="#64748B">Δ₀₁ ≠ Δ₁₂ → 可单独寻址最低两能级</text>
 
-  <!-- === Panel 3: qubit levels === -->
-  <!-- upper grayed levels -->
-  <line x1="644" y1="195" x2="824" y2="195" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="644" y1="165" x2="824" y2="165" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="644" y1="135" x2="824" y2="135" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- |0⟩ and |1⟩ levels: thick purple -->
-  <line x1="644" y1="255" x2="824" y2="255" stroke="#7C3AED" stroke-width="3"/>
-  <line x1="644" y1="235" x2="824" y2="235" stroke="#7C3AED" stroke-width="3"/>
-  <text x="634" y="259" text-anchor="end" font-size="11" fill="#7C3AED" font-weight="600">|0⟩</text>
-  <text x="634" y="239" text-anchor="end" font-size="11" fill="#7C3AED" font-weight="600">|1⟩</text>
-  <text x="830" y="159" font-size="9" fill="#CBD5E1">（不参与）</text>
-  <!-- microwave arrow between |0⟩ and |1⟩ -->
-  <line x1="734" y1="253" x2="734" y2="237" stroke="#D97706" stroke-width="2" marker-end="url(#lj-arr)"/>
-  <text x="748" y="247" font-size="9.5" fill="#D97706" font-weight="600">ω₀₁</text>
-  <text x="734" y="278" text-anchor="middle" font-size="9" fill="#64748B">特定微波频率单独寻址两能级</text>
-  <!-- circuit area: just label -->
-  <rect x="654" y="44" width="160" height="55" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="734" y="68" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="600">人工"原子"</text>
-  <text x="734" y="86" text-anchor="middle" font-size="9" fill="#7C3AED">基态 = |0⟩ · 激发态 = |1⟩</text>
+  <!-- ── Panel 3: qubit ── -->
+  <rect x="632" y="38" width="199" height="44" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="732" y="57" text-anchor="middle" font-size="10" font-weight="600" fill="#7C3AED">人工"原子"</text>
+  <text x="732" y="74" text-anchor="middle" font-size="9" fill="#7C3AED">基态 = |0⟩  激发态 = |1⟩</text>
+  <!-- upper levels: dashed gray -->
+  <line x1="639" y1="189" x2="819" y2="189" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="639" y1="153" x2="819" y2="153" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="734" y="186" text-anchor="middle" font-size="8.5" fill="#CBD5E1">不参与计算</text>
+  <!-- qubit levels: thick purple (same y as panel 2) -->
+  <line x1="639" y1="245" x2="819" y2="245" stroke="#7C3AED" stroke-width="3"/>
+  <line x1="639" y1="225" x2="819" y2="225" stroke="#7C3AED" stroke-width="3"/>
+  <text x="631" y="249" text-anchor="end" font-size="11" font-weight="700" fill="#7C3AED">|0⟩</text>
+  <text x="631" y="229" text-anchor="end" font-size="11" font-weight="700" fill="#7C3AED">|1⟩</text>
+  <!-- microwave arrow at center x=734 -->
+  <line x1="734" y1="243" x2="734" y2="227" stroke="#D97706" stroke-width="2.2" marker-end="url(#a3)"/>
+  <text x="748" y="239" font-size="10" font-weight="600" fill="#D97706">ω₀₁</text>
+  <text x="734" y="267" text-anchor="middle" font-size="9" fill="#64748B">特定频率微波单独操控 |0⟩ 和 |1⟩</text>
 </svg></div>
 
 <p>操控这个人工原子需要极冷的环境，道理和模拟电路里的热噪声一样直接。超导量子比特的能级间距折算成等效温度约在 0.1 至 1 K 之间，室温下 kT 热噪声比这个信号大几千倍，量子态会被持续翻转，叠加态根本无法维持。把系统冷到 20 mK，热噪声才降到能级间距以下，量子状态才能在不被扰动的情况下演化。即使在这个极端温度下，量子态的寿命也只有数百微秒——相当于谐振器 Q 值在噪声中迅速衰减，有效时间里能完成的门操作数量，决定了算法能走多深。</p>
-<div><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
-  <!-- panels -->
-  <rect x="5" y="5" width="380" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="475" y="5" width="380" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+<div><svg viewBox="0 0 860 235" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <!-- 2 panels -->
+  <rect x="5"   y="5" width="370" height="225" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="490" y="5" width="365" height="225" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <!-- titles -->
-  <text x="195" y="27" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">稀释制冷机温度层级</text>
-  <text x="665" y="27" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">kT 热噪声 vs 量子比特信号</text>
+  <text x="190" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">稀释制冷机温度层级</text>
+  <text x="672" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">kT 热噪声 vs 量子比特信号</text>
 
-  <!-- === Left: temperature ladder === -->
-  <!-- vertical rail -->
-  <line x1="80" y1="42" x2="80" y2="218" stroke="#CBD5E1" stroke-width="2"/>
-  <!-- temperature rows: y positions 50, 88, 126, 164, 202 -->
-  <!-- 300K -->
-  <circle cx="80" cy="52" r="6" fill="#EF4444"/>
-  <line x1="80" y1="52" x2="110" y2="52" stroke="#EF4444" stroke-width="1.5"/>
-  <text x="118" y="49" font-size="10" font-weight="600" fill="#EF4444">300 K</text>
-  <text x="118" y="62" font-size="9" fill="#64748B">室温</text>
-  <rect x="260" y="44" width="112" height="18" rx="3" fill="#FEE2E2"/>
-  <text x="316" y="57" text-anchor="middle" font-size="8.5" fill="#EF4444">kT = 25 meV</text>
-  <!-- 77K -->
-  <circle cx="80" cy="90" r="6" fill="#F97316"/>
-  <line x1="80" y1="90" x2="110" y2="90" stroke="#F97316" stroke-width="1.5"/>
-  <text x="118" y="87" font-size="10" font-weight="600" fill="#F97316">77 K</text>
-  <text x="118" y="100" font-size="9" fill="#64748B">液氮预冷</text>
-  <rect x="260" y="82" width="112" height="18" rx="3" fill="#FED7AA"/>
-  <text x="316" y="95" text-anchor="middle" font-size="8.5" fill="#F97316">kT = 6.6 meV</text>
-  <!-- 4K -->
-  <circle cx="80" cy="128" r="6" fill="#EAB308"/>
-  <line x1="80" y1="128" x2="110" y2="128" stroke="#EAB308" stroke-width="1.5"/>
-  <text x="118" y="125" font-size="10" font-weight="600" fill="#EAB308">4 K</text>
-  <text x="118" y="138" font-size="9" fill="#64748B">液氦 / 4K CMOS</text>
-  <rect x="260" y="120" width="112" height="18" rx="3" fill="#FEF9C3"/>
-  <text x="316" y="133" text-anchor="middle" font-size="8.5" fill="#EAB308">kT = 0.34 meV</text>
-  <!-- 100mK -->
-  <circle cx="80" cy="166" r="6" fill="#22C55E"/>
-  <line x1="80" y1="166" x2="110" y2="166" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="118" y="163" font-size="10" font-weight="600" fill="#22C55E">100 mK</text>
-  <text x="118" y="176" font-size="9" fill="#64748B">预冷级</text>
-  <rect x="260" y="158" width="112" height="18" rx="3" fill="#DCFCE7"/>
-  <text x="316" y="171" text-anchor="middle" font-size="8.5" fill="#16A34A">kT = 8.6 μeV</text>
-  <!-- 20mK -->
-  <circle cx="80" cy="208" r="7" fill="#3B82F6" stroke="#1D4ED8" stroke-width="1.5"/>
-  <line x1="80" y1="208" x2="110" y2="208" stroke="#3B82F6" stroke-width="2"/>
-  <text x="118" y="205" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
-  <text x="118" y="218" font-size="9" fill="#64748B">量子芯片工作温度</text>
-  <rect x="260" y="200" width="112" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
-  <text x="316" y="213" text-anchor="middle" font-size="8.5" fill="#1D4ED8" font-weight="600">kT = 1.7 μeV</text>
+  <!-- ── Left: temperature ladder ── -->
+  <!-- vertical rail x=75, y=38 to y=215 -->
+  <line x1="75" y1="38" x2="75" y2="215" stroke="#CBD5E1" stroke-width="2"/>
+  <!-- 5 nodes: y = 42, 80, 118, 156, 210 -->
+  <!-- 300 K -->
+  <circle cx="75" cy="45"  r="7" fill="#EF4444"/>
+  <line x1="75" y1="45"  x2="105" y2="45"  stroke="#EF4444" stroke-width="1.5"/>
+  <text x="112" y="43"  font-size="10" font-weight="700" fill="#EF4444">300 K</text>
+  <text x="112" y="56"  font-size="8.5" fill="#64748B">室温</text>
+  <rect x="240" y="37"  width="122" height="17" rx="3" fill="#FEE2E2"/>
+  <text x="301" y="49"  text-anchor="middle" font-size="8.5" fill="#EF4444">kT = 25 meV</text>
+  <!-- 77 K -->
+  <circle cx="75" cy="83"  r="6" fill="#F97316"/>
+  <line x1="75" y1="83"  x2="105" y2="83"  stroke="#F97316" stroke-width="1.5"/>
+  <text x="112" y="81"  font-size="10" font-weight="600" fill="#F97316">77 K</text>
+  <text x="112" y="93"  font-size="8.5" fill="#64748B">液氮预冷</text>
+  <rect x="240" y="75"  width="122" height="17" rx="3" fill="#FED7AA"/>
+  <text x="301" y="87"  text-anchor="middle" font-size="8.5" fill="#EA580C">kT = 6.6 meV</text>
+  <!-- 4 K -->
+  <circle cx="75" cy="121" r="6" fill="#EAB308"/>
+  <line x1="75" y1="121" x2="105" y2="121" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="112" y="119" font-size="10" font-weight="600" fill="#CA8A04">4 K</text>
+  <text x="112" y="131" font-size="8.5" fill="#64748B">液氦 / 4 K CMOS 层</text>
+  <rect x="240" y="113" width="122" height="17" rx="3" fill="#FEF9C3"/>
+  <text x="301" y="125" text-anchor="middle" font-size="8.5" fill="#CA8A04">kT = 0.34 meV</text>
+  <!-- 100 mK -->
+  <circle cx="75" cy="159" r="6" fill="#22C55E"/>
+  <line x1="75" y1="159" x2="105" y2="159" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="112" y="157" font-size="10" font-weight="600" fill="#16A34A">100 mK</text>
+  <text x="112" y="169" font-size="8.5" fill="#64748B">预冷级</text>
+  <rect x="240" y="151" width="122" height="17" rx="3" fill="#DCFCE7"/>
+  <text x="301" y="163" text-anchor="middle" font-size="8.5" fill="#16A34A">kT = 8.6 μeV</text>
+  <!-- 20 mK -->
+  <circle cx="75" cy="207" r="8" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="75" y1="207" x2="105" y2="207" stroke="#3B82F6" stroke-width="2"/>
+  <text x="112" y="205" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
+  <text x="112" y="218" font-size="8.5" fill="#64748B">量子芯片工作温度</text>
+  <rect x="240" y="199" width="122" height="17" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="301" y="211" text-anchor="middle" font-size="8.5" font-weight="600" fill="#1D4ED8">kT = 1.7 μeV</text>
 
-  <!-- === Right: noise comparison bars === -->
-  <!-- log-scale horizontal bars. Max bar = 300K = 310px. Others proportional on log scale. -->
-  <!-- log10(300)=2.48  log10(4)=0.60  log10(0.02)=-1.70  level≈0.1K→log10(0.1)=-1 -->
-  <!-- range: -1.85 to 2.48 → span=4.33. bar_max=310px -->
-  <!-- 300K: 310px  4K: (0.60+1.85)/4.33*310=171px  20mK: (−1.70+1.85)/4.33*310=11px  signal: (−1+1.85)/4.33*310=61px -->
-  <!-- bar y positions: 50, 90, 130, 175 -->
-  <!-- bar height=26px, left edge at x=490 -->
-  <!-- 300K bar -->
-  <text x="618" y="48" text-anchor="middle" font-size="9" fill="#EF4444">室温 300K  kT</text>
-  <rect x="490" y="52" width="310" height="24" rx="3" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.2"/>
-  <text x="806" y="68" font-size="8.5" fill="#EF4444">  25 meV</text>
-  <!-- 4K bar -->
-  <text x="576" y="90" text-anchor="middle" font-size="9" fill="#EAB308">4K  kT</text>
-  <rect x="490" y="94" width="171" height="24" rx="3" fill="#FEF9C3" stroke="#EAB308" stroke-width="1.2"/>
-  <text x="665" y="110" font-size="8.5" fill="#EAB308">  0.34 meV</text>
-  <!-- 20mK bar -->
-  <text x="496" y="132" text-anchor="middle" font-size="9" fill="#3B82F6">20mK</text>
-  <rect x="490" y="136" width="11" height="24" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="505" y="152" font-size="8.5" fill="#3B82F6">  1.7 μeV</text>
-  <!-- quantum level spacing: dotted line -->
-  <line x1="551" y1="170" x2="551" y2="208" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="553" y="184" font-size="8.5" fill="#7C3AED">量子比特能级间距</text>
-  <text x="553" y="197" font-size="8.5" fill="#7C3AED">（~0.1 K 等效）</text>
-  <!-- x-axis -->
-  <line x1="490" y1="165" x2="800" y2="165" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="490" y="215" font-size="8.5" fill="#94A3B8">← 对数刻度 →</text>
-  <!-- annotation: gap between room temp and signal -->
-  <line x1="552" y1="53" x2="552" y2="75" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="665" y="222" text-anchor="middle" font-size="9" fill="#64748B">室温热噪声比量子比特信号大约 1500 倍</text>
+  <!-- ── Right: 3 comparison cards ── -->
+  <!-- card dims: x=505, w=337, h=50, gap=10 -->
+  <!-- Card 1: 300K -->
+  <rect x="505" y="35" width="337" height="50" rx="7" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="530" y="56" font-size="15" font-weight="700" fill="#EF4444">300 K</text>
+  <text x="530" y="74" font-size="8.5" fill="#64748B">室温热噪声</text>
+  <text x="838" y="52" text-anchor="end" font-size="12" font-weight="600" fill="#EF4444">kT = 25 meV</text>
+  <text x="838" y="72" text-anchor="end" font-size="9" fill="#DC2626">≫ 量子比特信号（约 1500 倍）</text>
+  <!-- Card 2: 4K -->
+  <rect x="505" y="95" width="337" height="50" rx="7" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1.5"/>
+  <text x="530" y="116" font-size="15" font-weight="700" fill="#CA8A04">4 K</text>
+  <text x="530" y="134" font-size="8.5" fill="#64748B">液氦冷却</text>
+  <text x="838" y="112" text-anchor="end" font-size="12" font-weight="600" fill="#CA8A04">kT = 0.34 meV</text>
+  <text x="838" y="132" text-anchor="end" font-size="9" fill="#CA8A04">仍超过信号约 17 倍</text>
+  <!-- Card 3: 20mK (highlighted) -->
+  <rect x="505" y="155" width="337" height="50" rx="7" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="530" y="176" font-size="15" font-weight="700" fill="#1D4ED8">20 mK</text>
+  <text x="530" y="194" font-size="8.5" fill="#64748B">稀释制冷</text>
+  <text x="838" y="172" text-anchor="end" font-size="12" font-weight="600" fill="#1D4ED8">kT = 1.7 μeV</text>
+  <text x="838" y="190" text-anchor="end" font-size="10" font-weight="600" fill="#16A34A">≈ 量子比特信号  ✓</text>
+  <!-- reference note -->
+  <text x="672" y="220" text-anchor="middle" font-size="8.5" fill="#7C3AED">参考：量子比特能级间距 ≈ 0.1 K 等效 ≈ 8.6 μeV</text>
 </svg></div>
 
 <p>最好的超导量子比特，单次门操作的错误率也在千分之一左右。运行有价值的量子算法需要数千乃至数百万次操作，错误会累积到结果完全失效。量子纠错是唯一出路：用多个物理量子比特冗余编码一个逻辑量子比特，周期性检测并修正错误。代价是规模骤增——一个容错的逻辑量子比特需要数十到数百个物理比特，实用规模的容错量子计算机意味着数百万物理量子比特，对芯片制造密度和互连密度的挑战与经典先进制程处于同一量级。</p>
 <p>规模一膨胀，控制线就成为最紧迫的瓶颈。每个量子比特需要多条微波控制和读取线，全部从 20 mK 冷端引到室温控制系统，每条线携带热量，几百条线就足以让稀释制冷机过载。解决方向是把部分控制逻辑集成到 4 K 温区的 CMOS 芯片上，大幅减少室温与冷端的互连数量。麻烦在于标准 CMOS 在 4 K 下迁移率和阈值电压都会漂移，需要从头建立低温器件模型和电路设计方法——这是微电子背景学生最直接的切入口，也是目前最缺人的工程问题之一。</p>
-<div><svg viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 275" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
-    <marker id="ar5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <marker id="a5" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
     </marker>
-    <marker id="ar5g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <marker id="a5g" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#16A34A"/>
     </marker>
   </defs>
-  <!-- panels -->
-  <rect x="5" y="5" width="390" height="270" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="465" y="5" width="390" height="270" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- 2 panels -->
+  <rect x="5"   y="5" width="385" height="265" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="470" y="5" width="385" height="265" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <!-- titles -->
-  <text x="200" y="27" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">量子纠错：物理比特 → 逻辑比特</text>
-  <text x="660" y="27" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">控制架构：从 20 mK 到室温</text>
+  <text x="197" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">量子纠错：物理比特 → 逻辑比特</text>
+  <text x="662" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">控制架构：从 20 mK 到室温</text>
 
-  <!-- === Left: QEC grid === -->
-  <!-- 5x5 grid of physical qubits, logical qubit at center (2,2) -->
-  <!-- grid starts at x=35, y=45, spacing=58px -->
-  <!-- positions: x = 35+col*58, y = 45+row*58, col/row 0..4 -->
-  <!-- circles radius 22 -->
+  <!-- ── Left: 5×4 grid (20 physical qubits, center=logical) ── -->
+  <!-- col centers: 55,110,165,220,275 ; row centers: 65,115,165,215 ; r=24 -->
   <!-- row 0 -->
-  <circle cx="65" cy="75" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="65" y="80" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="123" cy="75" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="123" y="80" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="181" cy="75" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="181" y="80" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="239" cy="75" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="239" y="80" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="297" cy="75" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="297" y="80" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="55"  cy="65"  r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="55"  y="70"  text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="110" cy="65"  r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="110" y="70"  text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="165" cy="65"  r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="165" y="70"  text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="220" cy="65"  r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="70"  text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="275" cy="65"  r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="275" y="70"  text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
   <!-- row 1 -->
-  <circle cx="65" cy="133" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="65" y="138" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="123" cy="133" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="123" y="138" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="181" cy="133" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="181" y="138" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="239" cy="133" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="239" y="138" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="297" cy="133" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="297" y="138" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <!-- row 2: center is logical qubit -->
-  <circle cx="65" cy="191" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="65" y="196" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="123" cy="191" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="123" y="196" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <!-- LOGICAL QUBIT at center -->
-  <circle cx="181" cy="191" r="26" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
-  <text x="181" y="188" text-anchor="middle" font-size="10" fill="#7C3AED" font-weight="700">L</text>
-  <text x="181" y="200" text-anchor="middle" font-size="8" fill="#7C3AED">逻辑</text>
-  <circle cx="239" cy="191" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="239" y="196" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="297" cy="191" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="297" y="196" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="55"  cy="120" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="55"  y="125" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="110" cy="120" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="110" y="125" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="165" cy="120" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="165" y="125" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="220" cy="120" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="125" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="275" cy="120" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="275" y="125" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <!-- row 2: center (165,175) = logical qubit -->
+  <circle cx="55"  cy="175" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="55"  y="180" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="110" cy="175" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="110" y="180" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="165" cy="175" r="27" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="165" y="172" text-anchor="middle" font-size="10" font-weight="700" fill="#7C3AED">L</text>
+  <text x="165" y="185" text-anchor="middle" font-size="8" fill="#7C3AED">逻辑</text>
+  <circle cx="220" cy="175" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="180" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="275" cy="175" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="275" y="180" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
   <!-- row 3 -->
-  <circle cx="65" cy="249" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="65" y="254" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="123" cy="249" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="123" y="254" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="181" cy="249" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="181" y="254" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="239" cy="249" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="239" y="254" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <circle cx="297" cy="249" r="22" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="297" y="254" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
-  <!-- label -->
-  <text x="345" y="110" font-size="9.5" fill="#3B82F6">P</text>
-  <text x="355" y="110" font-size="9" fill="#64748B">= 物理比特</text>
-  <text x="345" y="128" font-size="10" fill="#7C3AED" font-weight="600">L</text>
-  <text x="355" y="128" font-size="9" fill="#64748B">= 逻辑比特</text>
-  <text x="200" y="271" text-anchor="middle" font-size="8.5" fill="#64748B">示意：~25 物理比特保护 1 个逻辑比特（实际需数十到数百）</text>
+  <circle cx="55"  cy="230" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="55"  y="235" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="110" cy="230" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="110" y="235" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="165" cy="230" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="165" y="235" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="220" cy="230" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="235" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <circle cx="275" cy="230" r="24" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="275" y="235" text-anchor="middle" font-size="10" fill="#3B82F6">P</text>
+  <!-- legend (bottom-right of left panel, within bounds x<390) -->
+  <circle cx="310" cy="110" r="9" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="310" y="114" text-anchor="middle" font-size="7.5" fill="#3B82F6">P</text>
+  <text x="323" y="114" font-size="8.5" fill="#64748B">物理比特</text>
+  <circle cx="310" cy="132" r="9" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="310" y="136" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7C3AED">L</text>
+  <text x="323" y="136" font-size="8.5" fill="#64748B">逻辑比特</text>
+  <text x="197" y="258" text-anchor="middle" font-size="8.5" fill="#64748B">示意：20 物理比特保护 1 个逻辑比特</text>
+  <text x="197" y="270" text-anchor="middle" font-size="8" fill="#94A3B8">实用容错量子计算机需数百万物理比特</text>
 
-  <!-- === Right: 3-layer architecture === -->
-  <!-- Layer 1: 300K room temp -->
-  <rect x="480" y="38" width="360" height="60" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.8"/>
-  <text x="660" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">室温  300 K</text>
-  <text x="660" y="80" text-anchor="middle" font-size="9" fill="#334155">经典控制系统  ·  AWG  ·  ADC  ·  FPGA</text>
-  <!-- Layer 2: 4K -->
-  <rect x="480" y="118" width="360" height="60" rx="6" fill="#FEF9C3" stroke="#D97706" stroke-width="1.8"/>
-  <text x="660" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">4 K 低温区</text>
-  <text x="660" y="160" text-anchor="middle" font-size="9" fill="#334155">低温 CMOS 控制芯片  ←  微电子切入口</text>
-  <!-- Layer 3: 20mK -->
-  <rect x="480" y="198" width="360" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.8"/>
-  <text x="660" y="222" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
-  <text x="660" y="240" text-anchor="middle" font-size="9" fill="#334155">量子芯片  ·  超导量子比特阵列</text>
-  <!-- control lines: 20mK -> 4K (many) -->
-  <line x1="540" y1="198" x2="540" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="570" y1="198" x2="570" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="600" y1="198" x2="600" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="630" y1="198" x2="630" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="660" y1="198" x2="660" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="690" y1="198" x2="690" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="720" y1="198" x2="720" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="750" y1="198" x2="750" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="780" y1="198" x2="780" y2="178" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="660" y="192" text-anchor="middle" font-size="8" fill="#94A3B8">↑ 控制线 &gt;100 条 ↑</text>
-  <!-- 4K -> 300K (few after integration) -->
-  <line x1="610" y1="118" x2="610" y2="98" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="660" y1="118" x2="660" y2="98" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="710" y1="118" x2="710" y2="98" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="660" y="112" text-anchor="middle" font-size="8" fill="#16A34A">↑ 集成后大幅减少 ↑</text>
-  <!-- reduction brace -->
-  <line x1="848" y1="100" x2="848" y2="176" stroke="#16A34A" stroke-width="1.5" marker-end="url(#ar5g)"/>
-  <line x1="848" y1="100" x2="843" y2="100" stroke="#16A34A" stroke-width="1.5"/>
-  <line x1="848" y1="176" x2="843" y2="176" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="851" y="142" font-size="8" fill="#16A34A">互连</text>
-  <text x="851" y="153" font-size="8" fill="#16A34A">减少</text>
+  <!-- ── Right: 3-layer architecture ── -->
+  <!-- layers: x=485, w=340, h=58, gap=16 -->
+  <!-- 300K: y=37 -->
+  <rect x="485" y="37"  width="340" height="58" rx="7" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.8"/>
+  <text x="655" y="62"  text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">室温  300 K</text>
+  <text x="655" y="82"  text-anchor="middle" font-size="9"  fill="#334155">经典控制系统  ·  AWG  ·  ADC  ·  FPGA</text>
+  <!-- 4K: y=111 -->
+  <rect x="485" y="111" width="340" height="58" rx="7" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1.8"/>
+  <text x="655" y="136" text-anchor="middle" font-size="11" font-weight="700" fill="#CA8A04">4 K  低温区</text>
+  <text x="655" y="156" text-anchor="middle" font-size="9"  fill="#334155">低温 CMOS 控制芯片  ←  微电子切入口</text>
+  <!-- 20mK: y=185 -->
+  <rect x="485" y="185" width="340" height="58" rx="7" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.8"/>
+  <text x="655" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
+  <text x="655" y="230" text-anchor="middle" font-size="9"  fill="#334155">量子芯片  ·  超导量子比特阵列</text>
+  <!-- control lines in gaps -->
+  <!-- gap1: y=95–111 (16px). Lines from 20mK top (185) to 4K bottom (169). Actually gap is y=169–185. -->
+  <!-- Draw lines from y=170 to y=184 (in the 16px gap between 4K bottom 169 and 20mK top 185) -->
+  <line x1="530" y1="170" x2="530" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="555" y1="170" x2="555" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="580" y1="170" x2="580" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="605" y1="170" x2="605" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="630" y1="170" x2="630" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="655" y1="170" x2="655" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="680" y1="170" x2="680" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="705" y1="170" x2="705" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="730" y1="170" x2="730" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="655" y="168" text-anchor="middle" font-size="8" fill="#94A3B8">↑ 控制线 &gt;100 条 ↑</text>
+  <!-- gap2: 4K bottom (169)–300K top? No: 300K ends at 95, 4K starts at 111. Gap = y=95–111 (16px) -->
+  <line x1="595" y1="96"  x2="595" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="655" y1="96"  x2="655" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="715" y1="96"  x2="715" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="655" y="108" text-anchor="middle" font-size="8" fill="#16A34A">↑ 4K集成后互连大幅减少 ↑</text>
 </svg></div>
 
 <p>等待容错量子计算机到来的这段时间里，NISQ 时代（含噪声中等规模量子）的研究是在现有噪声条件下找到有价值的应用。变分量子本征求解器（VQE）把量子电路当成参数化计算单元，由经典优化器在外层迭代，让量子硬件只承担最难的内层计算；量子近似优化算法（QAOA）用类似逻辑攻组合优化问题。这两类算法的编译和调度，在本质上是量子版的 EDA：如何把算法映射到特定量子硬件的拓扑约束上，如何最小化门的深度和错误积累，背景和经典逻辑综合高度重叠，只是约束条件换成了量子比特的连通图和保真度图谱。</p>
@@ -13165,7 +13128,7 @@ IBM 的 <a href="https://learning.quantum.ibm.com/"><em>Learning Quantum Computi
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-27
+    2026-05-28
   </span>
 
     
