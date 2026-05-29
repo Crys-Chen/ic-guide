@@ -12723,8 +12723,8 @@
   <text x="757" y="149" font-size="8.5" fill="#6D28D9">约瑟夫森结</text>
   <text x="757" y="161" font-size="8.5" fill="#6D28D9">（非线性电感）</text>
   <!-- Microwave arrow -->
-  <line x1="625" y1="50" x2="625" y2="74" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr-mw)"/>
-  <text x="625" y="45" text-anchor="middle" font-size="10" font-weight="600" fill="#D97706">微波脉冲</text>
+  <line x1="625" y1="64" x2="625" y2="75" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr-mw)"/>
+  <text x="625" y="60" text-anchor="middle" font-size="10" font-weight="600" fill="#D97706">微波脉冲</text>
   <!-- Loop label -->
   <text x="625" y="220" text-anchor="middle" font-size="9" fill="#7C3AED">C 与 JJ 并联，构成非线性谐振回路</text>
   <!-- State boxes -->
@@ -12900,7 +12900,7 @@
 
 <p>目前最好的超导量子比特，每做一次操作出错的概率也在千分之一左右。跑一个有价值的量子算法要做数百万次操作，错误一路累积，结果彻底失效。解决办法只有一个：<strong>量子纠错</strong>，用一批物理量子比特冗余地保护一个逻辑量子比特，定期检测并修正错误。代价是规模急剧膨胀：保护一个逻辑量子比特需要数十到数百个物理比特，造出实用的容错量子计算机意味着百万级的物理量子比特，对芯片制造密度和互连密度的要求已经和经典先进制程处于同一量级。</p>
 <p>规模一膨胀，控制线就成了最紧迫的瓶颈。每个量子比特需要好几条微波线来控制和读取，全部要从 20 mK 的冷端引到室温控制系统，每条线都往里传热，几百条线就足以把稀释制冷机压垮。解决思路是把一部分控制电路做在 4 K 温区的 CMOS 芯片上，大幅减少冷端和室温之间的连线数量。难点在于标准 CMOS 在 4 K 下迁移率和阈值电压都会漂移，现有的器件模型和设计方法全部失效，需要从头标定——这是微电子背景学生最直接的切入口。</p>
-<div><svg viewBox="0 0 860 275" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+<div><svg viewBox="0 0 860 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
   <defs>
     <marker id="a5" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
@@ -12910,8 +12910,8 @@
     </marker>
   </defs>
   <!-- 2 panels -->
-  <rect x="5"   y="5" width="385" height="265" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <rect x="470" y="5" width="385" height="265" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="5"   y="5" width="385" height="280" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="470" y="5" width="385" height="280" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <!-- titles -->
   <text x="197" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">量子纠错：物理比特 → 逻辑比特</text>
   <text x="662" y="26" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">控制架构：从 20 mK 到室温</text>
@@ -12979,32 +12979,33 @@
   <rect x="485" y="37"  width="340" height="58" rx="7" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.8"/>
   <text x="655" y="62"  text-anchor="middle" font-size="11" font-weight="700" fill="#EF4444">室温  300 K</text>
   <text x="655" y="82"  text-anchor="middle" font-size="9"  fill="#334155">经典控制系统  ·  AWG  ·  ADC  ·  FPGA</text>
-  <!-- 4K: y=111 -->
-  <rect x="485" y="111" width="340" height="58" rx="7" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1.8"/>
-  <text x="655" y="136" text-anchor="middle" font-size="11" font-weight="700" fill="#CA8A04">4 K  低温区</text>
-  <text x="655" y="156" text-anchor="middle" font-size="9"  fill="#334155">低温 CMOS 控制芯片  ←  微电子切入口</text>
-  <!-- 20mK: y=185 -->
-  <rect x="485" y="185" width="340" height="58" rx="7" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.8"/>
-  <text x="655" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
-  <text x="655" y="230" text-anchor="middle" font-size="9"  fill="#334155">量子芯片  ·  超导量子比特阵列</text>
+  <!-- 4K: y=123 -->
+  <rect x="485" y="123" width="340" height="58" rx="7" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1.8"/>
+  <text x="655" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#CA8A04">4 K  低温区</text>
+  <text x="655" y="168" text-anchor="middle" font-size="9"  fill="#334155">低温 CMOS 控制芯片  ←  微电子切入口</text>
+  <!-- 20mK: y=209 -->
+  <rect x="485" y="209" width="340" height="58" rx="7" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.8"/>
+  <text x="655" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8">20 mK</text>
+  <text x="655" y="254" text-anchor="middle" font-size="9"  fill="#334155">量子芯片  ·  超导量子比特阵列</text>
   <!-- control lines in gaps -->
   <!-- gap1: y=95–111 (16px). Lines from 20mK top (185) to 4K bottom (169). Actually gap is y=169–185. -->
   <!-- Draw lines from y=170 to y=184 (in the 16px gap between 4K bottom 169 and 20mK top 185) -->
-  <line x1="530" y1="170" x2="530" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="555" y1="170" x2="555" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="580" y1="170" x2="580" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="605" y1="170" x2="605" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="630" y1="170" x2="630" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="655" y1="170" x2="655" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="680" y1="170" x2="680" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="705" y1="170" x2="705" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="730" y1="170" x2="730" y2="184" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="655" y="168" text-anchor="middle" font-size="8" fill="#94A3B8">↑ 控制线 &gt;100 条 ↑</text>
-  <!-- gap2: 4K bottom (169)–300K top? No: 300K ends at 95, 4K starts at 111. Gap = y=95–111 (16px) -->
-  <line x1="595" y1="96"  x2="595" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="655" y1="96"  x2="655" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="715" y1="96"  x2="715" y2="110" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="655" y="108" text-anchor="middle" font-size="8" fill="#16A34A">↑ 4K集成后互连大幅减少 ↑</text>
+  <!-- gap between 4K (bottom=181) and 20mK (top=209): 28px -->
+  <line x1="530" y1="183" x2="530" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="555" y1="183" x2="555" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="580" y1="183" x2="580" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="605" y1="183" x2="605" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="630" y1="183" x2="630" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="655" y1="183" x2="655" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="680" y1="183" x2="680" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="705" y1="183" x2="705" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="730" y1="183" x2="730" y2="207" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="655" y="198" text-anchor="middle" font-size="8" fill="#94A3B8">↑ 控制线 &gt;100 条 ↑</text>
+  <!-- gap between 300K (bottom=95) and 4K (top=123): 28px -->
+  <line x1="595" y1="97"  x2="595" y2="121" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="655" y1="97"  x2="655" y2="121" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="715" y1="97"  x2="715" y2="121" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="655" y="113" text-anchor="middle" font-size="8" fill="#16A34A">↑ 4K集成后互连大幅减少 ↑</text>
 </svg></div>
 
 <p>容错量子计算机到来之前，研究者在现有噪声条件下寻找有价值的应用，思路是把量子芯片当协处理器，只承担最难的那部分计算，外层用经典计算机控制和优化。这类应用的编译和调度，本质上是量子版的 EDA：把算法映射到特定量子芯片的连接拓扑上，压缩操作次数、减少错误积累，和经典逻辑综合要解决的问题高度相似。超导不是唯一的技术路线：离子阱把离子悬浮在电磁场里当量子比特，出错率更低但操作速度慢几个数量级；硅量子点和 CMOS 工艺天然兼容，扩展路径最接近经典芯片，但对硅材料纯度极为敏感；光量子不需要制冷，适合量子通信，但让两个光子可靠地相互作用至今是未解难题。量子计算机不会取代经典处理器，而是作为协处理器承担特定类别的计算。最乐观的估计是 2035 年后才会出现第一批有实用价值的容错量子计算机，到那一天还有一大段工程路要走。</p>
@@ -13230,7 +13231,7 @@ IBM 的 <a href="https://learning.quantum.ibm.com/"><em>Learning Quantum Computi
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-28
+    2026-05-29
   </span>
 
     
