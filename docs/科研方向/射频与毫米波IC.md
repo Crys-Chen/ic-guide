@@ -266,6 +266,30 @@ graph LR
 
     毫米波集成天线与系统 · 大规模相控阵 · 毫米波/太赫兹理论与器件
 
+-   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
+
+    CMOS 射频收发机 · 毫米波通信与雷达 IC · 高速有线收发前端
+
+-   **[金晶](https://icisee.sjtu.edu.cn/jiaoshiml/jinjing.html)** <span class="badge-other">交大</span> <span class="prof-w"></span>
+
+    射频/混合信号 IC · 频率综合器（PLL） · 低功耗收发机与射频前端
+
+-   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
+
+    射频与模数混合信号 IC · 亚采样锁相环（Sub-Sampling PLL） · 无线通信芯片
+
+-   **[崔强](https://person.zju.edu.cn/qiangcui)** <span class="badge-other">浙大</span>
+
+    射频/毫米波/太赫兹器件电路与系统 · 高速接口与芯粒封装 · ML 辅助 IC 设计
+
+-   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
+
+    数字化射频 IC（Digital-RF） · 新型相控阵芯片 · 毫米波数字雷达 · ADPLL/数字 PA
+
+-   **[林福江](https://sme.ustc.edu.cn/2022/0601/c30996a556921/page.htm)** <span class="badge-other">中科大</span>
+
+    超低噪声毫米波射频前端 · GaN 第三代器件 MMIC · 射频器件建模
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

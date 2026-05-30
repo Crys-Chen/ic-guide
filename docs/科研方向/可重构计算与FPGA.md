@@ -73,7 +73,6 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 - [复旦微电子（FMSH）](https://www.fmsh.com/) · [实时股价](https://quote.eastmoney.com/sh688385.html)——国产 FPGA 龙头，28nm 工艺 FPGA
 - [安路科技 Anlogic](https://www.anlogic.com/) · [实时股价](https://quote.eastmoney.com/sh688107.html)——A 股首家专注 FPGA 的上市公司
-- [成都华微电子](https://www.csmsc.com/) · [实时股价](https://quote.eastmoney.com/sh688709.html)——特种 FPGA/CPLD
 - [高云半导体 Gowin](https://www.gowinsemi.com/)（未上市）——中低端 FPGA 与开发软件
 - [紫光同创 Pango](https://www.pangomicro.com/)（未上市，IPO 辅导中；母公司紫光国微 002049 已上市）——国产 FPGA 综合实力领军者
 
