@@ -196,6 +196,30 @@ graph LR
 
     电路/器件协同可靠性设计 · 新型范式计算 · 硬件安全 EDA
 
+-   **[蒋力](https://www.cs.sjtu.edu.cn/jiaoshiml/jiangli.html)** <span class="badge-other">交大</span>
+
+    芯片设计自动化 · ML 辅助硬件设计 · AI 加速器与存算架构
+
+-   **[卓成](https://person.zju.edu.cn/chengzhuo)** <span class="badge-other">浙大</span>
+
+    设计自动化 · 低功耗芯片设计 · AI 算法与硬件协同
+
+-   **[孙奇（Qi Sun）](https://qisunchn.top/)** <span class="badge-other">浙大</span>
+
+    ML for EDA · LLM 辅助设计与 DTCO · 设计空间探索
+
+-   **[陈松](https://faculty.ustc.edu.cn/chensong/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    高层次综合 · 物理设计自动化 · 片上网络与神经网络加速器
+
+-   **[钱超](http://www.lamda.nju.edu.cn/qianc/)** <span class="badge-other">南大</span>
+
+    演化计算与机器学习 · AI for EDA · 时序驱动芯片布局
+
+-   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
+
+    AI 算法辅助 EDA · 模拟/射频集成电路设计 · AI 芯片架构
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
