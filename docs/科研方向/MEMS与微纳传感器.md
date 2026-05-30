@@ -92,10 +92,47 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 ## 代表性机构
 
-| | 国际 | 国内 |
-|--|------|------|
-| **企业** | Bosch（惯性MEMS）、TDK（超声）、STMicroelectronics、Honeywell | 明皜传感、矽睿科技、赛微电子 |
-| **顶会** | Transducers · IEEE MEMS · Sensors · IEEE JMEMS | — |
+> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
+
+**国内**
+
+- [歌尔股份](https://www.goertek.com/) · [实时股价](https://quote.eastmoney.com/sz002241.html) — MEMS 麦克风全球市占第一、声学/光学传感器
+- [瑞声科技（AAC）](https://www.aactechnologies.com/) · [实时股价](https://quote.eastmoney.com/hk/02018.html) — 声学器件、MEMS 麦克风
+- [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) · [实时股价](https://quote.eastmoney.com/sz300456.html) — MEMS 晶圆代工龙头
+- [敏芯股份（MEMSensing）](https://www.memsensing.com/) · [实时股价](https://quote.eastmoney.com/sh688286.html) — MEMS 麦克风/压力/惯性传感器设计，"MEMS 第一股"
+- [矽睿科技（QST）](https://www.qstcorp.com/)（IMU/加速度计/磁传感器，科创板筹备中，未上市）
+- [明皜传感（MiraMEMS）](http://www.miramems.com/)（加速度计/陀螺仪，母公司苏州固锝控股）· [母公司股价](https://quote.eastmoney.com/sz002079.html)
+
+**国外**
+
+- [Bosch Sensortec](https://www.bosch-sensortec.com/)（惯性 MEMS 全球龙头，博世基金会控股，未上市）
+- [STMicroelectronics](https://www.st.com/) · [实时股价](https://finance.yahoo.com/quote/STM) — IMU/MEMS 传感器，智能手机市占领先
+- [TDK InvenSense](https://invensense.tdk.com/) · [实时股价](https://finance.yahoo.com/quote/6762.T) — 运动传感器、超声 MEMS
+- [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) · [实时股价](https://finance.yahoo.com/quote/QCOM) — 3D Sonic 超声指纹（PMUT）
+- [Honeywell](https://www.honeywell.com/) · [实时股价](https://finance.yahoo.com/quote/HON) — 工业/航空惯性与压力 MEMS
+
+### 科研院所
+
+**国内**
+
+- [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) — 传感技术全国重点实验室，硅微机械加工与微系统
+- [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) — MEMS 中试/代工平台与微纳加工
+- [中科院微电子研究所](https://www.ime.ac.cn/) — MEMS 工艺平台与传感器集成
+
+**国外**
+
+- [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) — 全球顶尖高校 MEMS 研究中心
+- [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) — 惯性传感器、晶圆级封装、神经接口
+- [imec](https://www.imec-int.com/en) — 硅基传感器与超声 MEMS 工艺
+- [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) — MEMS 工艺与微系统量产化（欧洲）
+
+## 顶会顶刊
+
+**顶会**：Transducers · IEEE MEMS · IEEE Sensors · Hilton Head Workshop · IEDM（器件级）
+
+**顶刊**：IEEE/ASME J. of MEMS (JMEMS) · IEEE Sensors Journal · Sensors and Actuators A/B · Microsystems & Nanoengineering · IEEE TED
 
 ## 知识路径
 
