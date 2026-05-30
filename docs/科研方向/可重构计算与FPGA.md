@@ -144,6 +144,26 @@ graph LR
 
     稀疏计算软硬件协同 · LLM 推理加速器（FlightLLM） · FPGA/GPU 异构
 
+-   **[张宸](https://chenzhangsjtu.github.io/)** <span class="badge-other">交大</span>
+
+    FPGA 深度学习加速器 · AI 处理器架构 · FPGA 可重构计算名人堂
+
+-   **[赵杰茹](https://zjru.github.io/)** <span class="badge-other">交大</span> <span class="prof-w"></span>
+
+    高层次综合 HLS（COMBA） · 可重构计算与 EDA · 软硬件协同 AI 加速
+
+-   **[王则可（Zeke Wang）](https://wangzeke.github.io/)** <span class="badge-other">浙大</span>
+
+    FPGA 加速器 · FPGA SmartNIC（FpgaNIC） · 超异构计算平台
+
+-   **[周学海](https://cs.ustc.edu.cn/2020/0827/c23235a460092/page.htm)** <span class="badge-other">中科大</span>
+
+    可重构系统 · 面向特定应用的硬件加速 · 异构多核体系结构
+
+-   **[王超](https://faculty.ustc.edu.cn/cswang/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    FPGA 可重构计算 · 智能处理器 · 深度学习加速系统
+
 -   **[娄鑫](https://sist.shanghaitech.edu.cn/louxin/main.htm)** <span class="badge-other">上科大</span>
 
     数字 VLSI 设计 · 可重构滤波器与 DSP · 三维视觉/渲染芯片
