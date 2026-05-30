@@ -216,9 +216,41 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     MEMS 脑机接口器件与微系统 · 极端环境 MEMS 智能传感器 · 微纳加工与集成
 
+-   **[丁桂甫](https://gpmems.sjtu.edu.cn/Web/Show/1014)** <span class="badge-other">交大</span>
+
+    非硅 MEMS 微纳加工 · MEMS 微执行器/微继电器 · 高密度 3D 集成制造
+
+-   **[杨卓青](https://faculty.sjtu.edu.cn/yangzhuoqing)** <span class="badge-other">交大</span>
+
+    MEMS 微纳传感器与执行器 · MEMS 惯性开关 · 柔性纤维传感器与电子皮肤
+
+-   **[张文明](https://me.sjtu.edu.cn/teacher_directory1/zhangwenming)** <span class="badge-other">交大</span>
+
+    微纳机电系统（M/NEMS）动力学 · 微机械谐振器 · 振动能量采集
+
 -   **[谢金](https://person.zju.edu.cn/xiejin)** <span class="badge-other">浙大</span>
 
     MEMS 设计与加工 · 微传感器与执行器 · 振动与声学测量
+
+-   **[罗吉魁（Jikui Luo）](https://person.zju.edu.cn/en/LuoJikui)** <span class="badge-other">浙大</span>
+
+    声表面波（SAW）/薄膜体声波（FBAR）谐振器 · 物理化学传感器 · 自供能无线微系统
+
+-   **[骆季奎](https://sensor.zju.edu.cn/zh/author/骆季奎/)** <span class="badge-other">浙大</span>
+
+    生物 MEMS · 微纳能量收集 · 无线无源与自供能传感系统
+
+-   **[左成杰](https://sme.ustc.edu.cn/2022/0601/c30996a556916/page.htm)** <span class="badge-other">中科大</span>
+
+    RF-MEMS · 压电（AlN）谐振器 · FBAR/SAW 滤波器 · MEMS-IC 协同集成
+
+-   **[许磊](http://leinao.ustc.edu.cn/2021/0430/c25925a483537/page.htm)** <span class="badge-other">中科大</span>
+
+    低功耗 MEMS 气体传感器 · MEMS 流量传感器 · 嗅觉芯片
+
+-   **[卢明辉](https://eng.nju.edu.cn/lmh/main.htm)** <span class="badge-other">南大</span>
+
+    MEMS 热线式矢量传声器 · 声质点振速/声矢量探测 · 声学超构材料
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
