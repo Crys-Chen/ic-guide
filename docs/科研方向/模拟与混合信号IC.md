@@ -94,10 +94,47 @@ hide:
 
 ## 代表性机构
 
-| | 国际 | 国内 |
-|--|------|------|
-| **企业** | Texas Instruments、Analog Devices、Broadcom（SerDes）、Marvell | 韦尔半导体（图像传感器）、澜起科技、思瑞浦、上海贝岭 |
-| **顶会** | ISSCC、VLSI Symposium、ESSCIRC、CICC、A-SSCC | — |
+> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
+
+**国内**
+
+- [韦尔股份 / 豪威集团](https://www.willsemi.com/) · [实时股价](https://quote.eastmoney.com/sh603501.html) — CMOS 图像传感器读出电路龙头
+- [澜起科技](https://www.montage-tech.com/) · [实时股价](https://quote.eastmoney.com/sh688008.html) — 内存接口 / 高速互连芯片
+- [思瑞浦](https://www.3peak.cn/) · [实时股价](https://quote.eastmoney.com/sh688536.html) — 信号链与电源管理模拟芯片
+- [圣邦股份](https://www.sg-micro.com/) · [实时股价](https://quote.eastmoney.com/sz300661.html) — 信号链 / 电源管理模拟 IC
+- [纳芯微](https://www.novosns.com/) · [实时股价](https://quote.eastmoney.com/sh688052.html) — 车规 / 工业模拟与混合信号、隔离与传感
+- [上海贝岭](https://www.belling.com.cn/) · [实时股价](https://quote.eastmoney.com/sh600171.html) — 数据转换器 · 电源管理 · 高速接口
+
+**国外**
+
+- [Texas Instruments（德州仪器）](https://www.ti.com/) · [实时股价](https://finance.yahoo.com/quote/TXN)
+- [Analog Devices（ADI）](https://www.analog.com/) · [实时股价](https://finance.yahoo.com/quote/ADI)
+- [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) · [实时股价](https://finance.yahoo.com/quote/AVGO)
+- [Marvell（数据中心高速互连）](https://www.marvell.com/) · [实时股价](https://finance.yahoo.com/quote/MRVL)
+
+### 科研院所
+
+**国内**
+
+- [中科院微电子所](https://www.ime.cas.cn/) — 数据转换器、高速接口与混合信号 IC 工艺与设计
+- [中科院上海微系统所](https://www.sim.cas.cn/) — 传感器读出电路与微系统集成
+- [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) — DDR5、高速 SerDes 等高端接口 IP
+- [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) — 先进工艺平台与模拟/混合信号 IP
+
+**国外**
+
+- [imec（比利时微电子研究中心）](https://www.imec-int.com/en) — 先进 CMOS 工艺下的数据转换器与高速 I/O 研究
+- [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) — 高速 SerDes、ADC 与混合信号系统
+- [Stanford SystemX Alliance](https://systemx.stanford.edu/) — 从器件到系统的混合信号集成研究
+- [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) — 模拟器件与精密测量
+
+## 顶会顶刊
+
+**顶会**：ISSCC · VLSI Symposium · CICC · ESSERC（原 ESSCIRC）· A-SSCC
+
+**顶刊**：JSSC（IEEE Journal of Solid-State Circuits）· TCAS-I/II（IEEE Trans. Circuits and Systems）· TVLSI（IEEE Trans. VLSI Systems）
 
 ## 知识路径
 

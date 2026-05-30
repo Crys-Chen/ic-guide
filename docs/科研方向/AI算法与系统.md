@@ -108,12 +108,54 @@ hide:
 - **Agent 可靠性**：基于 LLM 的 Agent 在多步骤任务中容易累积错误，如何设计可验证、可纠错的 Agent 框架？
 - **硬件-算法协同**：量化和剪枝改变了模型的计算模式，如何让硬件加速器感知这些变化并最大化利用？
 
-## 代表性机构
+## 代表性机构（就业去向）
 
-| | 国际 | 国内 |
-|--|------|------|
-| **企业** | OpenAI、Google DeepMind、Meta AI、Anthropic | 智谱AI、月之暗面、百度、阿里通义 |
-| **顶会** | NeurIPS、ICML、ICLR、CVPR、EMNLP、MLSys | — |
+这个方向的就业出口分两类：直接做模型的前沿实验室，和把模型工程化、规模化部署的平台。下面分企业和科研院所两栏，公司名后附官网与股价链接（未上市的标注「未上市」），方便判断行业景气与个人去向。股价数据请以链接实时页面为准。
+
+### 企业
+
+**国外**
+
+- [OpenAI](https://openai.com)（未上市，微软为主要股东，可参考 [微软 MSFT](https://www.google.com/finance/quote/MSFT:NASDAQ)）—— GPT 系列，闭源 API 平台路线
+- [Anthropic](https://www.anthropic.com)（未上市，亚马逊与谷歌投资）—— Claude 系列，MCP 智能体生态
+- [Google DeepMind](https://deepmind.google)（母公司 [Alphabet GOOGL](https://www.google.com/finance/quote/GOOGL:NASDAQ)）—— Gemini，自研 TPU
+- [Meta AI](https://ai.meta.com)（[Meta META](https://www.google.com/finance/quote/META:NASDAQ)）—— Llama 开放权重生态
+- [xAI](https://x.ai)（未上市，与 X 深度整合）—— Grok
+- [Mistral AI](https://mistral.ai)（未上市，欧洲代表）—— 开放权重 + La Plateforme
+- [NVIDIA](https://www.nvidia.com)（[NVDA](https://www.google.com/finance/quote/NVDA:NASDAQ)）—— 训练/推理算力底座与 CUDA 生态
+
+**国内**
+
+- [阿里巴巴 · 通义千问](https://tongyi.aliyun.com)（[9988.HK](https://www.google.com/finance/quote/9988:HKG)）
+- [字节跳动 · 豆包](https://www.doubao.com)（未上市）
+- [腾讯 · 混元](https://hunyuan.tencent.com)（[0700.HK](https://www.google.com/finance/quote/0700:HKG)）
+- [百度 · 文心](https://yiyan.baidu.com)（[9888.HK](https://www.google.com/finance/quote/9888:HKG)）
+- [智谱 Z.ai](https://www.zhipuai.cn)（[2513.HK](https://www.google.com/finance/quote/2513:HKG)，2026 年 1 月港交所上市，「全球大模型第一股」）
+- [MiniMax](https://www.minimaxi.com)（[0100.HK](https://www.google.com/finance/quote/0100:HKG)，2026 年 1 月港交所上市）
+- [深度求索 DeepSeek](https://www.deepseek.com)（未上市）
+- [月之暗面 Kimi](https://www.moonshot.cn)（未上市）
+
+### 科研院所
+
+**国外**
+
+- [MIT CSAIL](https://www.csail.mit.edu)
+- [Stanford HAI](https://hai.stanford.edu)
+- [Berkeley AI Research（BAIR）](https://bair.berkeley.edu)
+
+**国内**
+
+- [清华大学计算机系（KEG/THUNLP）](https://www.cs.tsinghua.edu.cn)
+- [北京大学计算机学院](https://cs.pku.edu.cn)
+- [中国科学院自动化研究所](http://www.ia.cas.cn)
+- [上海人工智能实验室（上海 AI Lab）](https://www.shlab.org.cn)
+
+## 顶会顶刊
+
+- **机器学习**：NeurIPS、ICML、ICLR
+- **计算机视觉**：CVPR、ICCV、ECCV
+- **自然语言处理**：ACL、EMNLP、NAACL
+- **机器学习系统**：MLSys、OSDI、SOSP（系统侧推理/训练优化）
 
 ## 知识路径
 

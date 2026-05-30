@@ -65,10 +65,45 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 ## 代表性机构
 
-| | 国际 | 国内 |
-|--|------|------|
-| **企业** | AMD/Xilinx、Intel/Altera、Lattice、Achronix | 复旦微电子（FMC）、安路科技、高云半导体 |
-| **顶会** | FPGA、FCCM、FPL、DAC、ASPLOS、ISLPED | — |
+> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
+
+**国内**
+
+- [复旦微电子（FMSH）](https://www.fmsh.com/) · [实时股价](https://quote.eastmoney.com/sh688385.html)——国产 FPGA 龙头，28nm 工艺 FPGA
+- [安路科技 Anlogic](https://www.anlogic.com/) · [实时股价](https://quote.eastmoney.com/sh688107.html)——A 股首家专注 FPGA 的上市公司
+- [成都华微电子](https://www.csmsc.com/) · [实时股价](https://quote.eastmoney.com/sh688709.html)——特种 FPGA/CPLD
+- [高云半导体 Gowin](https://www.gowinsemi.com/)（未上市）——中低端 FPGA 与开发软件
+- [紫光同创 Pango](https://www.pangomicro.com/)（未上市，IPO 辅导中；母公司紫光国微 002049 已上市）——国产 FPGA 综合实力领军者
+
+**国外**
+
+- [AMD（原 Xilinx）](https://www.amd.com/) · [实时股价](https://finance.yahoo.com/quote/AMD)——FPGA/自适应 SoC 全球龙头
+- [Altera](https://www.altera.com/)（已从 Intel 独立，Silver Lake 控股，未单独上市）——老牌 FPGA 厂商
+- [Lattice Semiconductor](https://www.latticesemi.com/) · [实时股价](https://finance.yahoo.com/quote/LSCC)——低功耗中小规模 FPGA
+- [Achronix](https://www.achronix.com/)（未上市）——高端独立 FPGA 与 eFPGA IP
+- [Microsoft](https://www.microsoft.com/)（Project Catapult 数据中心 FPGA） · [实时股价](https://finance.yahoo.com/quote/MSFT)
+
+### 科研院所
+
+**国内**
+
+- [中科院计算所](http://www.ict.ac.cn/) — 可重构计算与领域专用加速器
+- [之江实验室](https://www.zhejianglab.org/) — 智能计算与可重构异构加速平台
+- [鹏城实验室](https://www.pcl.ac.cn/) — 大规模算力与可重构加速基础设施
+
+**国外**
+
+- [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) — 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线）
+- [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) — 数据中心 FPGA 加速架构
+- [UCLA VAST 实验室](https://vast.cs.ucla.edu/) — HLS 与 FPGA 设计自动化
+
+## 顶会顶刊
+
+**顶会**：FPGA · FCCM · FPL · DAC · ICCAD · MICRO · ASPLOS
+
+**顶刊**：IEEE TCAD（计算机辅助设计）· IEEE TVLSI（超大规模集成系统）· ACM TRETS（可重构技术与系统）· IEEE TC（计算机汇刊）
 
 ## 知识路径
 

@@ -119,10 +119,45 @@ hide:
 
 ## 代表性机构
 
-| | 国际 | 国内 |
-|--|------|------|
-| **企业** | Qualcomm、Broadcom、MediaTek、Skyworks | 紫光展锐、翱捷科技、华为海思 |
-| **顶会** | ISSCC、RFIC Symposium、IMS、ESSCIRC | — |
+> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
+
+**国内**
+
+- [卓胜微](https://www.maxscend.com/) · [实时股价](https://quote.eastmoney.com/sz300782.html) — 射频开关 / LNA / 射频前端模组龙头
+- [唯捷创芯](https://www.vanchip.com/) · [实时股价](https://quote.eastmoney.com/sh688153.html) — 射频功率放大器（PA）模组
+- [翱捷科技（ASR）](https://www.asrmicro.com/) · [实时股价](https://quote.eastmoney.com/sh688220.html) — 蜂窝基带与射频前端、无线 SoC
+- [紫光展锐（UNISOC）](https://www.unisoc.com/)（未上市） — 5G 基带、射频收发与射频前端芯片
+- [华为海思（HiSilicon）](https://www.hisilicon.com/)（华为未上市） — 射频收发机与无线 SoC
+
+**国外**
+
+- [Qualcomm（高通）](https://www.qualcomm.com/) · [实时股价](https://finance.yahoo.com/quote/QCOM)
+- [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) · [实时股价](https://finance.yahoo.com/quote/AVGO)
+- [Skyworks Solutions](https://www.skyworksinc.com/) · [实时股价](https://finance.yahoo.com/quote/SWKS)
+- [Qorvo](https://www.qorvo.com/) · [实时股价](https://finance.yahoo.com/quote/QRVO)
+- [MediaTek（联发科）](https://www.mediatek.com/) · [实时股价](https://finance.yahoo.com/quote/2454.TW)
+
+### 科研院所
+
+**国内**
+
+- [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) — 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统
+- [中科院微电子所](https://www.ime.cas.cn/) — 毫米波/射频 CMOS 收发机与前端集成
+- [鹏城实验室](https://www.pcl.ac.cn/) — 宽带无线通信与高速射频系统
+
+**国外**
+
+- [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) — 毫米波 CMOS 收发机、5G/6G 无线系统
+- [imec（比利时微电子研究中心）](https://www.imec-int.com/en) — 毫米波相控阵、5G/6G 射频前端
+- [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) — III-V/GaN 毫米波与太赫兹 MMIC
+
+## 顶会顶刊
+
+**顶会**：ISSCC · RFIC Symposium · IMS（IEEE MTT-S Int'l Microwave Symposium）· ESSERC（原 ESSCIRC）· EuMW
+
+**顶刊**：JSSC（IEEE Journal of Solid-State Circuits）· T-MTT（IEEE Trans. Microwave Theory and Techniques）· TCAS-I/II（IEEE Trans. Circuits and Systems）· MWCL（IEEE Microwave and Wireless Components Letters）
 
 ## 知识路径
 
