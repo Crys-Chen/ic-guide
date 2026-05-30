@@ -255,6 +255,22 @@ graph LR
 
     AI 算法辅助 EDA · 模拟/射频集成电路设计 · AI 芯片架构
 
+-   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
+
+    ML for EDA · 组合优化求解器与逻辑综合 · 图学习驱动布局布线/时序预测
+
+-   **[郑飞君](https://person.zju.edu.cn/frank_zheng)** <span class="badge-other">浙大</span>
+
+    数模混合芯片 EDA · 设计制造一体化与零缺陷制造 · AI 辅助 EDA 算法
+
+-   **[王杰（Jie Wang）](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
+
+    AI for EDA · 芯片宏单元布局（LaMPlace/ChiPBench） · 强化学习与神经逻辑综合
+
+-   **[杜源（Yuan Du）](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
+
+    AI/LLM 辅助模拟电路设计 · 晶体管级电路与版图自动生成 · 高速接口 EDA
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
