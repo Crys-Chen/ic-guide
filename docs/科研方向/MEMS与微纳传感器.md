@@ -113,6 +113,9 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 - [STMicroelectronics](https://www.st.com/) · [实时股价](https://finance.yahoo.com/quote/STM) — IMU/MEMS 传感器，智能手机市占领先
 - [TDK InvenSense](https://invensense.tdk.com/) · [实时股价](https://finance.yahoo.com/quote/6762.T) — 运动传感器、超声 MEMS
 - [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) · [实时股价](https://finance.yahoo.com/quote/QCOM) — 3D Sonic 超声指纹（PMUT）
+- [Butterfly Network](https://www.butterflynetwork.com/) · [实时股价](https://finance.yahoo.com/quote/BFLY) — CMUT 超声片上化（Ultrasound-on-Chip）便携医学成像
+- [Qorvo](https://www.qorvo.com/) · [实时股价](https://finance.yahoo.com/quote/QRVO) — BAW/FBAR 射频 MEMS 声学滤波器
+- [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) · [实时股价](https://finance.yahoo.com/quote/MCHP) — 芯片级原子钟 CSAC（MEMS 原子气室）
 - [Honeywell](https://www.honeywell.com/) · [实时股价](https://finance.yahoo.com/quote/HON) — 工业/航空惯性与压力 MEMS
 
 ### 科研院所
@@ -128,6 +131,7 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 - [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) — 全球顶尖高校 MEMS 研究中心
 - [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) — 惯性传感器、晶圆级封装、神经接口
 - [imec](https://www.imec-int.com/en) — 硅基传感器与超声 MEMS 工艺
+- [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) — 芯片级原子钟发源地、NEMS 精密测量
 - [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) — MEMS 工艺与微系统量产化（欧洲）
 
 ## 顶会顶刊
