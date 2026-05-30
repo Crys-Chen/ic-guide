@@ -214,6 +214,18 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     AI 专用处理器与编译器 · 神经网络压缩 · 存内计算架构
 
+-   **[张伟楠](https://wnzhang.net/)** <span class="badge-other">交大</span>
+
+    强化学习 · 决策大模型 · AI Agent · 具身智能
+
+-   **[温颖](https://yingwen.io/)** <span class="badge-other">交大</span>
+
+    多智能体强化学习 · 智能体协作 · 大模型推理与博弈
+
+-   **[刘鹏飞](https://www.cs.sjtu.edu.cn/jiaoshiml/liupengfei.html)** <span class="badge-other">交大</span>
+
+    大模型复杂推理（o1 复现）· 预训练数据工程 · 生成式 AI（GAIR）
+
 -   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
 
     端云协同分布式 ML · 垂域基础模型 · AI 系统平台
@@ -221,6 +233,18 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 -   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院计算所</span>
 
     深度学习专用处理器 · 神经网络指令集（寒武纪）· 存算协同架构
+
+-   **[谢洪](https://faculty.ustc.edu.cn/xiehong1/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    样本高效强化学习 · 大模型强化微调 · 智能体 · 科学智能
+
+-   **[康奇宇](https://faculty.ustc.edu.cn/kangqiyu/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    大模型轻量化与高效推理 · 多模态大模型 · 物理信息神经网络
+
+-   **[高阳](https://cs.nju.edu.cn/gaoyang/)** <span class="badge-other">南大</span>
+
+    强化学习 · 多智能体学习 · 元学习 · 智能 Agent
 
 -   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
 
