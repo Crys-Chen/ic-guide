@@ -192,6 +192,54 @@ graph LR
 
     增量噪声整形 ADC · 电容数字转换器（CDC） · 浮动反相放大器
 
+-   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
+
+    模拟/射频/混合信号 IC · 高速 SerDes PHY · ADC/DAC（CARFIC 中心）
+
+-   **[金晶](https://icisee.sjtu.edu.cn/jiaoshiml/jinjing.html)** <span class="badge-other">交大</span> <span class="prof-w"></span>
+
+    频率综合器/PLL · 数据转换器 ADC/DAC · 射频/混合信号 IC
+
+-   **[陈铭易](https://icisee.sjtu.edu.cn/jiaoshiml/chenmingyi.html)** <span class="badge-other">交大</span>
+
+    精密传感接口芯片 · 超高分辨率 ΔΣ/Zoom ADC · 微能量采集与电源管理
+
+-   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
+
+    亚采样 PLL（Sub-Sampling PLL 发明人）· 射频/模数混合信号 IC · ISSCC 多篇
+
+-   **[谭志超](https://person.zju.edu.cn/zctan)** <span class="badge-other">浙大</span>
+
+    高精度 ADC · 超低功耗混合信号电路 · 传感器读出电路
+
+-   **[罗宇轩](https://person.zju.edu.cn/luoyx)** <span class="badge-other">浙大</span>
+
+    模拟/混合信号 IC（JSSC/ISSCC/VLSI）· 传感器/仪器仪表 ASIC
+
+-   **[赵梦恋](https://person.zju.edu.cn/zhaomenglian)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
+
+    数模混合 IC · 高精度低功耗数据转换芯片 · 电源管理 IC
+
+-   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
+
+    全数字锁相环 ADPLL · 超低相噪振荡器 · 数字化射频 IC
+
+-   **[程林](https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm)** <span class="badge-other">中科大</span>
+
+    电源管理 DC-DC · 模拟集成电路 · 生物电信号模拟前端 AFE（ISSCC/JSSC）
+
+-   **[赵雷](https://sme.ustc.edu.cn/2022/0601/c30996a556917/page.htm)** <span class="badge-other">中科大</span>
+
+    专用集成电路 ASIC · 高速高精度信号采集 ADC · 超高精度时间测量 TDC
+
+-   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
+
+    模拟集成电路设计 · 光通信模拟前端 AFE · AI 辅助模拟电路敏捷设计
+
+-   **[杜源](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
+
+    高速 SerDes/CDR · 光电高速 IO（2–224 Gbps）· AI 辅助高速接口电路
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
