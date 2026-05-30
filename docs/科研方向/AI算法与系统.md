@@ -124,6 +124,7 @@ hide:
 - [字节跳动 · 豆包](https://www.doubao.com)（未上市）
 - [深度求索 DeepSeek](https://www.deepseek.com)（DeepSeek-V3/R1，MoE 与 RL 训练，未上市）
 - [月之暗面 Kimi](https://www.moonshot.cn)（长上下文模型，未上市）
+- [Manus（蝴蝶效应）](https://manus.im)（通用 AI Agent，自主多步任务执行，未上市）
 
 **国外**
 
@@ -132,6 +133,10 @@ hide:
 - [Meta AI](https://ai.meta.com) · [实时股价](https://finance.yahoo.com/quote/META)（Llama 开放权重 · PyTorch · JEPA）
 - [OpenAI](https://openai.com)（GPT/o 系列，未上市）
 - [Anthropic](https://www.anthropic.com)（Claude 系列 · 宪法 AI · 可解释性，未上市）
+- [Cognition](https://cognition.ai)（Devin AI 软件工程师，L3 代码 Agent，未上市）
+- [Together AI](https://www.together.ai)（开源模型推理云 · FlashAttention/推理引擎，未上市）
+- [Scale AI](https://scale.com)（AI 训练数据与标注 · 合成数据，Meta 持股、未上市）
+- [World Labs](https://www.worldlabs.ai)（空间智能 · 世界模型 Marble，李飞飞创立、未上市）
 - [Mistral AI](https://mistral.ai)（欧洲开放权重代表，未上市）
 
 ### 科研院所

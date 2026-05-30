@@ -106,13 +106,18 @@ hide:
 - [圣邦股份](https://www.sg-micro.com/) · [实时股价](https://quote.eastmoney.com/sz300661.html) — 信号链 / 电源管理模拟 IC
 - [纳芯微](https://www.novosns.com/) · [实时股价](https://quote.eastmoney.com/sh688052.html) — 车规 / 工业模拟与混合信号、隔离与传感
 - [上海贝岭](https://www.belling.com.cn/) · [实时股价](https://quote.eastmoney.com/sh600171.html) — 数据转换器 · 电源管理 · 高速接口
+- [杰华特（JoulWatt）](https://www.joulwatt.com/) · [实时股价](https://quote.eastmoney.com/sh688141.html) — DC-DC / AC-DC 电源管理 · 多相控制器 · 电池管理
+- [晶丰明源](https://www.bpsemi.com/) · [实时股价](https://quote.eastmoney.com/sh688368.html) — 电源管理 / LED 驱动 / 高性能计算电源芯片
 
 **国外**
 
 - [Texas Instruments（德州仪器）](https://www.ti.com/) · [实时股价](https://finance.yahoo.com/quote/TXN)
 - [Analog Devices（ADI）](https://www.analog.com/) · [实时股价](https://finance.yahoo.com/quote/ADI)
+- [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) · [实时股价](https://finance.yahoo.com/quote/MPWR)
 - [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) · [实时股价](https://finance.yahoo.com/quote/AVGO)
 - [Marvell（数据中心高速互连）](https://www.marvell.com/) · [实时股价](https://finance.yahoo.com/quote/MRVL)
+- [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) · [实时股价](https://finance.yahoo.com/quote/CRDO)
+- [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) · [实时股价](https://finance.yahoo.com/quote/ALAB)
 
 ### 科研院所
 
