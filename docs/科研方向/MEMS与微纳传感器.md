@@ -104,6 +104,8 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 - [敏芯股份（MEMSensing）](https://www.memsensing.com/) · [实时股价](https://quote.eastmoney.com/sh688286.html) — MEMS 麦克风/压力/惯性传感器设计，"MEMS 第一股"
 - [矽睿科技（QST）](https://www.qstcorp.com/)（IMU/加速度计/磁传感器，科创板筹备中，未上市）
 - [明皜传感（MiraMEMS）](http://www.miramems.com/)（加速度计/陀螺仪，母公司苏州固锝控股）· [母公司股价](https://quote.eastmoney.com/sz002079.html)
+- [卓胜微（Maxscend）](https://www.maxscend.com/) · [实时股价](https://quote.eastmoney.com/sz300782.html) — RF 声学器件、SAW/BAW 滤波器（IPD/MEMS 工艺）
+- [天奥电子（Spaceon）](https://www.elecspn.com/) · [实时股价](https://quote.eastmoney.com/sz002935.html) — 时间频率器件、芯片级/小型原子钟
 
 **国外**
 
