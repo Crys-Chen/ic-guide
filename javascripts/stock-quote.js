@@ -1,112 +1,134 @@
 /* stock-quote.js —— 给方向页「代表性机构 > 企业」里的 <span class="sq" data-stock="市场:代码">
- * 注入实时股价数字（红涨绿跌）。数据源：东方财富 push2 JSONP（浏览器端跨域取数）。
- * 覆盖 A股(sh/sz/bj)、港股(hk)、美股(us，105/106/107 依次回退)。
- * 取不到（如个别非美海外股）时回退成一个「行情↗」小链接。
- * 与站内其它脚本一致，用 document$.subscribe + DOMContentLoaded 双绑定以适配 Material 的 SPA 路由。
+ * 注入实时股价数字（红涨绿跌）。数据源：腾讯财经 qt.gtimg.cn（返回 CORS: *，浏览器端直接 fetch）。
+ * 覆盖 A股(sh/sz/bj)、港股(hk)、美股(us，自动含 NASDAQ/NYSE)。一次批量取本页所有股票。
+ * 取不到（个别非美海外股，或接口异常）时回退成「行情↗」小链接。
+ * 与站内其它脚本一致：document$.subscribe + DOMContentLoaded 双绑定以适配 Material 的 SPA 路由。
  */
 (function () {
   "use strict";
 
-  var PUSH2 = "https://push2.eastmoney.com/api/qt/stock/get";
-  var cbSeq = 0;
+  var API = "https://qt.gtimg.cn/q=";
+  var CHUNK = 50;
 
-  // 市场 -> 候选 secid 前缀（美股交易所未知，依次试 NASDAQ/NYSE/AMEX）
-  function secids(market, code) {
-    switch (market) {
-      case "sh": return ["1." + code];
-      case "sz": return ["0." + code];
-      case "bj": return ["0." + code];
-      case "hk": return ["116." + code];
-      case "us": return ["105." + code, "106." + code, "107." + code];
-      default:   return [];
-    }
+  function tcCode(market, code) {
+    // 腾讯代码：sh/sz/bj/hk + 代码；美股 us + 大写 ticker（不分交易所）
+    if (market === "us") return "us" + code.toUpperCase();
+    return market + code; // sh688256 / sz300782 / hk00700 / bj...
   }
-
   function symbol(market) {
     if (market === "hk") return "HK$";
     if (market === "us") return "$";
-    return "¥"; // sh/sz/bj
+    return "¥";
   }
-
-  // 东方财富个股行情页（回退链接）
   function quoteUrl(market, code) {
     if (market === "hk") return "https://quote.eastmoney.com/hk/" + code + ".html";
-    if (market === "us") return "https://quote.eastmoney.com/us/" + code + ".html";
+    if (market === "us") return "https://quote.eastmoney.com/us/" + code.toUpperCase() + ".html";
     return "https://quote.eastmoney.com/" + market + code + ".html";
   }
 
-  function jsonp(secid, onData, onFail) {
-    var name = "__sq_cb_" + (cbSeq++);
-    var script = document.createElement("script");
-    var timer = setTimeout(function () { cleanup(); onFail(); }, 9000);
-    function cleanup() {
-      clearTimeout(timer);
-      try { delete window[name]; } catch (e) { window[name] = undefined; }
-      if (script.parentNode) script.parentNode.removeChild(script);
+  // 解析腾讯返回的一条 v_xxx="a~b~c~..." → {price, pct}
+  function parseBody(body) {
+    var p = body.split("~");
+    if (p.length < 5) return null;
+    var price = parseFloat(p[3]);
+    if (!isFinite(price)) return null;
+    var dt = -1;
+    for (var i = 0; i < p.length; i++) {
+      if (/^\d{4}[-/]\d{2}[-/]\d{2}/.test(p[i]) || /^\d{14}$/.test(p[i])) dt = i;
     }
-    window[name] = function (resp) {
-      cleanup();
-      if (resp && resp.data) onData(resp.data); else onFail();
-    };
-    script.onerror = function () { cleanup(); onFail(); };
-    script.src = PUSH2 + "?secid=" + encodeURIComponent(secid) +
-      "&fields=f43,f57,f58,f59,f60,f169,f170&cb=" + name;
-    document.head.appendChild(script);
+    var pct = (dt >= 0 && dt + 2 < p.length) ? parseFloat(p[dt + 2]) : NaN;
+    return { price: price, pct: isFinite(pct) ? pct : 0 };
   }
 
-  function render(el, market, data) {
-    var dec = (typeof data.f59 === "number") ? data.f59 : 2;
-    var price = data.f43 / Math.pow(10, dec);
-    var pct = data.f170 / 100;            // 涨跌幅(%)
-    if (!isFinite(price) || data.f43 === "-" || data.f43 == null) { fallback(el, market); return; }
-    var up = pct > 0, down = pct < 0;
-    var arrow = up ? "▲" : (down ? "▼" : "–");
+  function renderSpan(el, market, q) {
+    var up = q.pct > 0, down = q.pct < 0;
     el.classList.remove("sq-loading");
     el.classList.add("sq-ready");
-    el.classList.toggle("sq-up", up);     // 红涨
-    el.classList.toggle("sq-down", down); // 绿跌
-    el.textContent = symbol(market) + price.toFixed(2) + " " + arrow + Math.abs(pct).toFixed(2) + "%";
-    el.title = (data.f58 || "") + "  现价 " + symbol(market) + price.toFixed(2) +
-               "  涨跌 " + (pct >= 0 ? "+" : "") + pct.toFixed(2) + "%（数据：东方财富，点击看详情）";
+    el.classList.toggle("sq-up", up);
+    el.classList.toggle("sq-down", down);
+    el.textContent = symbol(market) + q.price.toFixed(2) + " " +
+      (up ? "▲" : (down ? "▼" : "–")) + Math.abs(q.pct).toFixed(2) + "%";
+    el.title = "现价 " + symbol(market) + q.price.toFixed(2) +
+      "  涨跌 " + (q.pct >= 0 ? "+" : "") + q.pct.toFixed(2) + "%（数据：腾讯财经，点击看详情）";
     el.style.cursor = "pointer";
   }
 
-  function fallback(el, market) {
-    var code = el.getAttribute("data-stock").split(":")[1] || "";
-    var url = el.getAttribute("data-href") || quoteUrl(market, code);
+  function fallbackSpan(el) {
+    var info = el._sq || {};
+    var url = info.url || "#";
     el.classList.remove("sq-loading");
     el.classList.add("sq-na");
     el.textContent = "行情↗";
     el.setAttribute("data-href", url);
   }
 
-  function load(el) {
-    if (el.dataset.sqDone) return;
-    el.dataset.sqDone = "1";
-    var raw = (el.getAttribute("data-stock") || "").trim();
-    var parts = raw.split(":");
-    var market = parts[0], code = parts[1];
-    if (!market || !code) { el.classList.add("sq-na"); el.textContent = ""; return; }
-    el.classList.add("sq-loading");
-    if (!el.textContent) el.textContent = "···";
-
-    var cands = secids(market, code), i = 0;
-    (function next() {
-      if (i >= cands.length) { fallback(el, market); return; }
-      jsonp(cands[i++], function (data) { render(el, market, data); }, next);
-    })();
-
-    // 点击跳转个股详情页
-    el.addEventListener("click", function () {
-      var url = el.getAttribute("data-href") || quoteUrl(market, code);
-      window.open(url, "_blank", "noopener");
-    });
+  function fetchChunk(codes, byCode) {
+    return fetch(API + codes.join(","), { credentials: "omit", referrerPolicy: "no-referrer" })
+      .then(function (r) { return r.arrayBuffer(); })
+      .then(function (buf) {
+        var text;
+        try { text = new TextDecoder("gbk").decode(buf); }
+        catch (e) { text = new TextDecoder().decode(buf); }
+        var re = /v_([A-Za-z0-9.]+)="([^"]*)"/g, m;
+        while ((m = re.exec(text))) {
+          var key = m[1].toLowerCase();
+          var arr = byCode[key];
+          if (!arr) continue;
+          var q = parseBody(m[2]);
+          for (var i = 0; i < arr.length; i++) {
+            if (q) renderSpan(arr[i].el, arr[i].market, q);
+            else fallbackSpan(arr[i].el);
+            arr[i].done = true;
+          }
+        }
+      });
   }
 
   function init() {
     var nodes = document.querySelectorAll("span.sq[data-stock]");
-    for (var i = 0; i < nodes.length; i++) load(nodes[i]);
-    // 非美海外股用 <a class="sq-na-link"> 直接给出，无需 JS
+    if (!nodes.length) return;
+    var byCode = {};   // 腾讯代码(小写) -> [{el, market, code, done}]
+    var items = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      if (el.dataset.sqDone) continue;
+      el.dataset.sqDone = "1";
+      var parts = (el.getAttribute("data-stock") || "").trim().split(":");
+      var market = parts[0], code = parts[1];
+      if (!market || !code) { el.textContent = ""; continue; }
+      var tc = tcCode(market, code);
+      el._sq = { market: market, code: code, url: quoteUrl(market, code) };
+      el.classList.add("sq-loading");
+      if (!el.textContent) el.textContent = "···";
+      el.addEventListener("click", function () {
+        window.open(this._sq.url, "_blank", "noopener");
+      });
+      var rec = { el: el, market: market, code: code, done: false };
+      (byCode[tc.toLowerCase()] = byCode[tc.toLowerCase()] || []).push(rec);
+      items.push({ tc: tc, rec: rec });
+    }
+    if (!items.length) return;
+
+    // 批量、分块请求
+    var codes = Object.keys(byCode).map(function (k) {
+      // 还原成腾讯查询用大小写：us 段需大写 ticker
+      var any = byCode[k][0];
+      return tcCode(any.market, any.code);
+    });
+    var chain = Promise.resolve();
+    for (var s = 0; s < codes.length; s += CHUNK) {
+      (function (slice) {
+        chain = chain.then(function () { return fetchChunk(slice, byCode); })
+          .catch(function () {/* 单块失败不影响其它块 */});
+      })(codes.slice(s, s + CHUNK));
+    }
+    // 所有请求结束后，未被填充的（接口没数据/异常）一律回退成链接
+    chain.then(function () {
+      for (var k in byCode) {
+        var arr = byCode[k];
+        for (var j = 0; j < arr.length; j++) if (!arr[j].done) fallbackSpan(arr[j].el);
+      }
+    });
   }
 
   if (window.document$ && typeof window.document$.subscribe === "function") {
