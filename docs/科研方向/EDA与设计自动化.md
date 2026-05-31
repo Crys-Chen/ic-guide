@@ -155,22 +155,6 @@ graph LR
 - [算法编程（数据结构·算法）](../学习地图/算法编程/index.md)
 - [人工智能（AI系统）](../学习地图/人工智能/index.md)（EDA AI方向）
 
-## 入门三步走
-
-**典型研究长什么样**
-
-一篇 EDA 方向的 AI for EDA 论文通常是这样的：作者选定流程中一个具体步骤（比如宏单元布局或布线拥塞预测），分析当前工具的局限（时间太长、结果质量不稳定），提出用强化学习或图神经网络替代或辅助该步骤的方法，在 OpenROAD 平台上实现并在多个真实设计（如 RISC-V 核、Ethernet MAC）上验证，最终汇报运行时间缩短比例和 PPA（功耗/性能/面积）改善量化结果。传统 EDA 算法论文则更偏向理论分析，会严格证明算法复杂度的上界，并给出与业界工具的对比。
-
-**第一步：理解工具在做什么**  
-亲手跑一遍 Vivado 或 Cadence 的完整设计流程（见本站 EDA 课程页），感受"RTL→综合→布局布线→时序分析"每一步的输入和输出。
-
-**第二步：了解算法原理**  
-阅读 Lavagno et al. 主编的 *Electronic Design Automation for IC Implementation, Circuit Design, and Process Technology*（有开放章节），或 UCSD Andrew Kahng 课程的公开讲义（DAC tutorial slides）。
-
-**第三步：跟进 AI for EDA 前沿**  
-- Mirhoseini et al., *A graph placement methodology for fast chip design* (Nature, 2021) — AlphaChip 原始论文  
-- 关注 OpenROAD 项目：<https://theopenroadproject.org/>，完整开源的数字后端流程，是学术研究的标准平台
-
 ## 相关课题组
 
 ### 境内

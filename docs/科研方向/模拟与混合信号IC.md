@@ -164,19 +164,6 @@ graph LR
 - [器件与工艺](../学习地图/器件与工艺/index.md)
 - [系统架构（信号与系统）](../学习地图/系统架构/index.md)
 
-## 入门三步走
-
-**典型研究长什么样**　一篇 ISSCC 混合信号方向的顶会论文通常围绕一颗流片芯片展开：提出新型 ADC 架构或电路技术，在硅片上测量 ENOB、采样速率、功耗，计算 Walden FoM 或 Schreier FoM，放在 Murmann ADC Survey 散点图上对比历年最优成果。论文的价值不在于仿真，而在于实测结果（measured results）——流片是这个方向几乎绕不开的门槛，读博期间通常需要完成 1-2 次完整的 IC 设计→版图→流片→测试循环。
-
-**第一步：打牢模拟 IC 基础**  
-学习 Razavi《Design of Analog CMOS Integrated Circuits》前 11 章（差分对到运放稳定性分析），这是所有数据转换器和 PLL 设计的共同语言。本站的 Razavi CMOS IC Design 课程页有配套视频资源。
-
-**第二步：专攻数据转换器**  
-浏览 Murmann ADC Survey（搜索"Murmann ADC Survey"可找到最新版本），在散点图上直观感受当前技术的"能效墙"在哪里；再跟随斯坦福 EE315B Data Converters 课程讲义（公开于 Stanford EE 网站），系统学习 SAR/Pipeline/ΔΣ 的理论推导和实用设计方法。
-
-**第三步：了解 PLL 与 SerDes 前沿**  
-阅读 Razavi《Design of CMOS Phase-Locked Loops》第 1-3 章建立 PLL 直觉；然后浏览 ISSCC 2024/2025 的 Wireline/Clock Session demo papers——224 Gbps SerDes、低相噪 DPLL 和 CDR 收敛算法是你会反复看到的主题。
-
 ## 相关课题组
 
 ### 境内

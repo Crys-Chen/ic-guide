@@ -136,21 +136,6 @@ graph LR
 - [算法编程（数据结构·算法）](../学习地图/算法编程/index.md)
 - [人工智能（AI系统）](../学习地图/人工智能/index.md)（EDA AI方向）
 
-## 入门三步走
-
-**典型研究长什么样**
-
-一篇 FPGA 方向的论文通常这样展开：作者选定一个具体应用场景（如 Transformer 推理或图神经网络加速），分析其在 FPGA 上的计算瓶颈（带宽受限？DSP 利用率低？），提出新的算子映射策略或 HLS pragma 搜索方法，在 Xilinx Alveo 或 Zynq 开发板上实现并测量实际板级性能，最终以吞吐量/功耗/延迟的 Pareto 曲线与 GPU 基线对比。HLS 优化方向的论文则通常关注 pragma 搜索空间，用机器学习模型预测不同配置的性能，大幅减少需要实际编译的次数。
-
-**第一步：上手一块真实 FPGA**  
-跟随 Xilinx/AMD 的 Vivado Getting Started 教程，或 UCB EECS151 的 FPGA Lab，在 Basys3 或 Nexys Video 开发板上跑通一个 UART 回环或简单 SoC。亲手经历"写代码→综合→布局布线→下板"的完整闭环，是理解这个方向一切问题的前提。
-
-**第二步：理解布局布线的难点**  
-阅读 Betz & Rose, *VPR: A New Packing, Placement and Routing Tool for FPGA Research* (1997) 原始论文（6 页），以及 VTR 项目的文档（github.com/verilog-to-routing/vtr-verilog-to-routing），了解 FPGA P&R 为什么难、学术界如何定量评估新算法。
-
-**第三步：跟进 HLS 与 AI 加速前沿**  
-阅读 Chen et al., *FPGA-optimized Hardware Acceleration for Deep Neural Networks* (FPGA 2019)，或浏览 FPGA 顶会（fpga.org）近两年论文列表，感受当前研究的粒度：不是"能不能跑神经网络"，而是"如何在给定 DSP/LUT 预算下把吞吐量再提 2 倍"。
-
 ## 相关课题组
 
 ### 境内

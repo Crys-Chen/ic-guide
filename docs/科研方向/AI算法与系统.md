@@ -193,21 +193,6 @@ graph LR
 - [系统架构（计算机系统基础）](../学习地图/系统架构/index.md)
 - [算法编程](../学习地图/算法编程/index.md)
 
-## 入门三步走
-
-**典型研究长什么样**
-
-一篇 TinyML / 高效推理方向的论文通常是这样的：作者发现某个模型（如 LLaMA-7B）在边缘设备上因内存带宽不足而推理速度慢，提出一种新的量化或稀疏化方法，在 PyTorch 中实现并在 GPU/NPU 上测量实际推理延迟和精度损失，最终与 FP16 基线和其他量化方法对比，报告精度-效率 Pareto 曲线。系统侧（vLLM 类）的论文则通常关注批处理调度或内存管理，实验部分会测量不同负载下的吞吐量和 P99 延迟。RL/Agent 方向的论文实验设计差异更大，但通常需要在标准基准（Atari/MuJoCo/MMLU）上有系统性的消融实验。
-
-**第一步：补齐算法基础**  
-如果你的 CS 背景薄弱，先跟完 Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) 系列（约 20 小时），手写 GPT-2，从零理解 Transformer 的每一行代码。这是目前最高质量的 LLM 入门路径。
-
-**第二步：理解系统约束**  
-阅读 [Efficient ML](https://efficientml.ai/)（Song Han MIT 6.5940 课程主页），特别是关于量化和剪枝的讲义。你的硬件背景会让你在这一步比纯软件背景的同学理解得更深。
-
-**第三步：选一个具体问题**  
-RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 3 篇你感兴趣方向的最近 NeurIPS/ICML 论文，感受问题的粒度和评价指标，再决定深入哪个子方向。
-
 ## 相关课题组
 
 ### 境内
