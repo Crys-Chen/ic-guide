@@ -216,19 +216,23 @@ graph LR
 
 ### 学术会议与期刊
 
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | FPGA | ACM/SIGDA 现场可编程门阵列国际研讨会 |
-| 顶会 | FCCM | IEEE 现场可编程定制计算机国际研讨会 |
-| 顶会 | FPL | 现场可编程逻辑与应用国际会议 |
-| 顶会 | DAC | 设计自动化大会 |
-| 顶会 | ICCAD | 国际计算机辅助设计大会 |
-| 顶会 | MICRO | IEEE/ACM 国际微体系结构研讨会 |
-| 顶会 | ASPLOS | 编程语言和操作系统的体系结构支持国际会议 |
-| 顶刊 | IEEE TCAD | 计算机辅助设计汇刊 |
-| 顶刊 | IEEE TVLSI | 超大规模集成系统汇刊 |
-| 顶刊 | ACM TRETS | 可重构技术与系统汇刊 |
-| 顶刊 | IEEE TC | 计算机汇刊 |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="ACM/SIGDA 现场可编程门阵列国际研讨会">FPGA</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 现场可编程定制计算机国际研讨会">FCCM</span>
+    <span class="dm-chip dm-chip--static" title="现场可编程逻辑与应用国际会议">FPL</span>
+    <span class="dm-chip dm-chip--static" title="设计自动化大会">DAC</span>
+    <span class="dm-chip dm-chip--static" title="国际计算机辅助设计大会">ICCAD</span>
+    <span class="dm-chip dm-chip--static" title="IEEE/ACM 国际微体系结构研讨会">MICRO</span>
+    <span class="dm-chip dm-chip--static" title="编程语言和操作系统的体系结构支持国际会议">ASPLOS</span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="计算机辅助设计汇刊">IEEE TCAD</span>
+    <span class="dm-chip dm-chip--static" title="超大规模集成系统汇刊">IEEE TVLSI</span>
+    <span class="dm-chip dm-chip--static" title="可重构技术与系统汇刊">ACM TRETS</span>
+    <span class="dm-chip dm-chip--static" title="计算机汇刊">IEEE TC</span>
+  </span></div>
+</div>
 
 ## 业界机构
 
@@ -236,28 +240,36 @@ graph LR
 
 ### 企业
 
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [复旦微电子（FMSH）](https://www.fmsh.com/) | <span class="sq" data-stock="sh:688385"></span> |
-| 国内 | [安路科技 Anlogic](https://www.anlogic.com/) | <span class="sq" data-stock="sh:688107"></span> |
-| 国内 | [高云半导体 Gowin](https://www.gowinsemi.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [京微齐力 Hercules](https://hercules-micro.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [紫光同创 Pango](https://www.pangomicro.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [AMD（原 Xilinx）](https://www.amd.com/) | <span class="sq" data-stock="us:AMD"></span> |
-| 国外 | [Altera](https://www.altera.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [Lattice Semiconductor](https://www.latticesemi.com/) | <span class="sq" data-stock="us:LSCC"></span> |
-| 国外 | [Achronix](https://www.achronix.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [QuickLogic](https://www.quicklogic.com/) | <span class="sq" data-stock="us:QUIK"></span> |
-| 国外 | [Microsoft](https://www.microsoft.com/) | <span class="sq" data-stock="us:MSFT"></span> |
-| 国外 | [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) | <span class="sq" data-stock="us:AMZN"></span> |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.fmsh.com/">复旦微电子（FMSH）</a><span class="sq" data-stock="sh:688385"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.anlogic.com/">安路科技 Anlogic</a><span class="sq" data-stock="sh:688107"></span></span>
+    <a class="dm-chip" href="https://www.gowinsemi.com/">高云半导体 Gowin</a>
+    <a class="dm-chip" href="https://hercules-micro.com/">京微齐力 Hercules</a>
+    <a class="dm-chip" href="https://www.pangomicro.com/">紫光同创 Pango</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.amd.com/">AMD（原 Xilinx）</a><span class="sq" data-stock="us:AMD"></span></span>
+    <a class="dm-chip" href="https://www.altera.com/">Altera</a>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.latticesemi.com/">Lattice Semiconductor</a><span class="sq" data-stock="us:LSCC"></span></span>
+    <a class="dm-chip" href="https://www.achronix.com/">Achronix</a>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.quicklogic.com/">QuickLogic</a><span class="sq" data-stock="us:QUIK"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.microsoft.com/">Microsoft</a><span class="sq" data-stock="us:MSFT"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://aws.amazon.com/ec2/instance-types/f1/">AWS（Amazon）</a><span class="sq" data-stock="us:AMZN"></span></span>
+  </span></div>
+</div>
 
 ### 科研院所
 
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
-| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
-| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
-| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
-| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <a class="dm-chip" href="http://www.ict.ac.cn/" title="可重构计算与领域专用加速器">中科院计算所</a>
+    <a class="dm-chip" href="https://www.zhejianglab.org/" title="智能计算与可重构异构加速平台">之江实验室</a>
+    <a class="dm-chip" href="https://www.pcl.ac.cn/" title="大规模算力与可重构加速基础设施">鹏城实验室</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://verilogtorouting.org/" title="开源 FPGA 架构与 CAD 研究平台（VPR 布局布线）">Verilog-to-Routing（VTR，多伦多大学主导）</a>
+    <a class="dm-chip" href="https://www.microsoft.com/en-us/research/project/project-catapult/" title="数据中心 FPGA 加速架构">Microsoft Research（Project Catapult）</a>
+    <a class="dm-chip" href="https://vast.cs.ucla.edu/" title="HLS 与 FPGA 设计自动化">UCLA VAST 实验室</a>
+  </span></div>
+</div>

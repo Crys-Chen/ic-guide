@@ -346,21 +346,25 @@ graph LR
 
 ### 学术会议与期刊
 
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | NeurIPS | 神经信息处理系统大会 |
-| 顶会 | ICML | 国际机器学习大会 |
-| 顶会 | ICLR | 国际学习表征会议 |
-| 顶会 | CVPR | IEEE 计算机视觉与模式识别会议 |
-| 顶会 | ICCV | 国际计算机视觉大会 |
-| 顶会 | ACL | 国际计算语言学协会年会 |
-| 顶会 | EMNLP | 自然语言处理经验方法会议 |
-| 顶会 | AAAI | 美国人工智能协会会议 |
-| 顶会 | MLSys | 机器学习与系统会议 |
-| 顶会 | OSDI | 操作系统设计与实现研讨会 |
-| 顶刊 | JMLR | 机器学习研究汇刊（机器学习） |
-| 顶刊 | TPAMI | IEEE 模式分析与机器智能汇刊 |
-| 顶刊 | Nature Machine Intelligence | 《自然·机器智能》 |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="神经信息处理系统大会">NeurIPS</span>
+    <span class="dm-chip dm-chip--static" title="国际机器学习大会">ICML</span>
+    <span class="dm-chip dm-chip--static" title="国际学习表征会议">ICLR</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 计算机视觉与模式识别会议">CVPR</span>
+    <span class="dm-chip dm-chip--static" title="国际计算机视觉大会">ICCV</span>
+    <span class="dm-chip dm-chip--static" title="国际计算语言学协会年会">ACL</span>
+    <span class="dm-chip dm-chip--static" title="自然语言处理经验方法会议">EMNLP</span>
+    <span class="dm-chip dm-chip--static" title="美国人工智能协会会议">AAAI</span>
+    <span class="dm-chip dm-chip--static" title="机器学习与系统会议">MLSys</span>
+    <span class="dm-chip dm-chip--static" title="操作系统设计与实现研讨会">OSDI</span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="机器学习研究汇刊（机器学习）">JMLR</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 模式分析与机器智能汇刊">TPAMI</span>
+    <span class="dm-chip dm-chip--static" title="《自然·机器智能》">Nature Machine Intelligence</span>
+  </span></div>
+</div>
 
 ## 业界机构
 
@@ -368,37 +372,45 @@ graph LR
 
 ### 企业
 
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [智谱 AI（Z.ai）](https://www.zhipuai.cn) | <span class="sq" data-stock="hk:02513"></span> |
-| 国内 | [MiniMax（稀宇科技）](https://www.minimaxi.com) | <span class="sq" data-stock="hk:00100"></span> |
-| 国内 | [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) | <span class="sq" data-stock="hk:09988"></span> |
-| 国内 | [腾讯 · 混元](https://hunyuan.tencent.com) | <span class="sq" data-stock="hk:00700"></span> |
-| 国内 | [百度 · 文心](https://yiyan.baidu.com) | <span class="sq" data-stock="hk:09888"></span> |
-| 国内 | [字节跳动 · 豆包](https://www.doubao.com) | <span class="sq-none">未上市</span> |
-| 国内 | [深度求索 DeepSeek](https://www.deepseek.com) | <span class="sq-none">未上市</span> |
-| 国内 | [月之暗面 Kimi](https://www.moonshot.cn) | <span class="sq-none">未上市</span> |
-| 国内 | [Manus（蝴蝶效应）](https://manus.im) | <span class="sq-none">未上市</span> |
-| 国外 | [NVIDIA](https://www.nvidia.com) | <span class="sq" data-stock="us:NVDA"></span> |
-| 国外 | [Google DeepMind](https://deepmind.google) | <span class="sq" data-stock="us:GOOGL"></span> |
-| 国外 | [Meta AI](https://ai.meta.com) | <span class="sq" data-stock="us:META"></span> |
-| 国外 | [OpenAI](https://openai.com) | <span class="sq-none">未上市</span> |
-| 国外 | [Anthropic](https://www.anthropic.com) | <span class="sq-none">未上市</span> |
-| 国外 | [Cognition](https://cognition.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Together AI](https://www.together.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Scale AI](https://scale.com) | <span class="sq-none">未上市</span> |
-| 国外 | [World Labs](https://www.worldlabs.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Mistral AI](https://mistral.ai) | <span class="sq-none">未上市</span> |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.zhipuai.cn">智谱 AI（Z.ai）</a><span class="sq" data-stock="hk:02513"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.minimaxi.com">MiniMax（稀宇科技）</a><span class="sq" data-stock="hk:00100"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://tongyi.aliyun.com">阿里巴巴 · 通义千问</a><span class="sq" data-stock="hk:09988"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://hunyuan.tencent.com">腾讯 · 混元</a><span class="sq" data-stock="hk:00700"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://yiyan.baidu.com">百度 · 文心</a><span class="sq" data-stock="hk:09888"></span></span>
+    <a class="dm-chip" href="https://www.doubao.com">字节跳动 · 豆包</a>
+    <a class="dm-chip" href="https://www.deepseek.com">深度求索 DeepSeek</a>
+    <a class="dm-chip" href="https://www.moonshot.cn">月之暗面 Kimi</a>
+    <a class="dm-chip" href="https://manus.im">Manus（蝴蝶效应）</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.nvidia.com">NVIDIA</a><span class="sq" data-stock="us:NVDA"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://deepmind.google">Google DeepMind</a><span class="sq" data-stock="us:GOOGL"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://ai.meta.com">Meta AI</a><span class="sq" data-stock="us:META"></span></span>
+    <a class="dm-chip" href="https://openai.com">OpenAI</a>
+    <a class="dm-chip" href="https://www.anthropic.com">Anthropic</a>
+    <a class="dm-chip" href="https://cognition.ai">Cognition</a>
+    <a class="dm-chip" href="https://www.together.ai">Together AI</a>
+    <a class="dm-chip" href="https://scale.com">Scale AI</a>
+    <a class="dm-chip" href="https://www.worldlabs.ai">World Labs</a>
+    <a class="dm-chip" href="https://mistral.ai">Mistral AI</a>
+  </span></div>
+</div>
 
 ### 科研院所
 
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
-| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
-| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
-| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
-| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
-| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
-| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
-| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.shlab.org.cn" title="&quot;书生&quot;大模型 · 多模态与通用人工智能">上海人工智能实验室</a>
+    <a class="dm-chip" href="https://www.baai.ac.cn" title="悟道大模型 · BGE 检索 · FlagEval 评测开源生态">北京智源人工智能研究院（BAAI）</a>
+    <a class="dm-chip" href="https://www.zhejianglab.org" title="智能计算 · AI for Science · 算力基础设施">之江实验室</a>
+    <a class="dm-chip" href="https://www.ia.cas.cn" title="多模态大模型（紫东太初）· 决策智能">中科院自动化研究所</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.csail.mit.edu" title="高效深度学习 · ML 系统 · AI 算法基础研究">MIT CSAIL</a>
+    <a class="dm-chip" href="https://hai.stanford.edu" title="基础模型评测（HELM）· 以人为本 AI · AI Index">Stanford HAI</a>
+    <a class="dm-chip" href="https://ai.meta.com/research/" title="开源大模型与基础研究 · PyTorch">Meta FAIR</a>
+    <a class="dm-chip" href="https://allenai.org" title="全开源大模型（OLMo）· AI for Science">Allen Institute for AI（Ai2）</a>
+  </span></div>
+</div>

@@ -450,7 +450,7 @@
 .dm-chip {
   border-radius: 6px;
   padding: .35em .9em;
-  font-size: .8rem;
+  font-size: .82rem;
   font-weight: 500;
   text-decoration: none !important;
   background: #ffffff;
@@ -501,6 +501,57 @@
 @media (max-width: 600px) {
   .dm-lbl { min-width: 100%; margin-bottom: .35rem; font-size: .9rem; }
   .dm-conn { padding: .3rem 0; }
+}
+
+/* ─── 方向页:会议/企业/院所 横排 chips（复用 .dm-* 组件）──── */
+.chip-block { margin: 1rem 0 1.8rem; gap: .6rem; }
+.chip-block .dm-row { padding: .8rem 1rem; }
+.chip-block .dm-lbl { min-width: 3.4em; }
+
+/* 纯信息 chip（会议全名 / 院所研究重点放在 title） — 不反转颜色，仅轻微抬升 */
+.dm-chip--static { cursor: default; }
+.dm-chip--static:hover {
+  background: #ffffff;
+  color: #032168 !important;
+  border-color: rgba(3, 33, 104, .35);
+  box-shadow: 0 2px 6px rgba(3, 33, 104, .12);
+}
+[data-md-color-scheme="slate"] .dm-chip--static:hover {
+  background: rgba(184, 210, 242, .12);
+  color: #B8D2F2 !important;
+  border-color: rgba(184, 210, 242, .45);
+}
+
+/* 复合 chip：公司名链接 + 实时股价徽标，两个点击区独立 */
+.dm-chip--stock {
+  display: inline-flex; align-items: center; gap: .5em;
+  cursor: default;
+}
+.dm-chip--stock:hover {
+  background: #ffffff;
+  color: #032168 !important;
+  border-color: rgba(3, 33, 104, .35);
+  transform: none;
+  box-shadow: 0 2px 6px rgba(3, 33, 104, .12);
+}
+.dm-chip--stock > a {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+.dm-chip--stock > a:hover { text-decoration: underline !important; }
+.dm-chip--stock > .sq {
+  font-size: .72rem;
+  padding-left: .5em;
+  border-left: 1px solid rgba(3, 33, 104, .18);
+}
+[data-md-color-scheme="slate"] .dm-chip--stock:hover {
+  background: rgba(184, 210, 242, .12);
+  color: #B8D2F2 !important;
+  border-color: rgba(184, 210, 242, .45);
+}
+[data-md-color-scheme="slate"] .dm-chip--stock > .sq {
+  border-left-color: rgba(184, 210, 242, .25);
 }
 
 /* ─── 首页 Hero 轮播 ─────────────────────────────────────── */

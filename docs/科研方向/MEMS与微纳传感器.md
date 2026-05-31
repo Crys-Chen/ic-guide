@@ -259,18 +259,22 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 ### 学术会议与期刊
 
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | Transducers | 国际固态传感器、执行器与微系统大会 |
-| 顶会 | IEEE MEMS | IEEE 国际微机电系统大会 |
-| 顶会 | IEEE Sensors | IEEE 国际传感器大会 |
-| 顶会 | Hilton Head Workshop | 希尔顿黑德固态传感器、执行器与微系统研讨会 |
-| 顶会 | IEDM | 国际电子器件大会（器件级） |
-| 顶刊 | JMEMS | IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊） |
-| 顶刊 | IEEE Sensors Journal | IEEE 传感器期刊 |
-| 顶刊 | Sensors and Actuators A/B | 传感器与执行器期刊 A/B 辑 |
-| 顶刊 | Microsystems & Nanoengineering | 微系统与纳米工程 |
-| 顶刊 | IEEE TED | IEEE Transactions on Electron Devices（电子器件汇刊） |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="国际固态传感器、执行器与微系统大会">Transducers</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 国际微机电系统大会">IEEE MEMS</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 国际传感器大会">IEEE Sensors</span>
+    <span class="dm-chip dm-chip--static" title="希尔顿黑德固态传感器、执行器与微系统研讨会">Hilton Head Workshop</span>
+    <span class="dm-chip dm-chip--static" title="国际电子器件大会（器件级）">IEDM</span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊）">JMEMS</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 传感器期刊">IEEE Sensors Journal</span>
+    <span class="dm-chip dm-chip--static" title="传感器与执行器期刊 A/B 辑">Sensors and Actuators A/B</span>
+    <span class="dm-chip dm-chip--static" title="微系统与纳米工程">Microsystems & Nanoengineering</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Transactions on Electron Devices（电子器件汇刊）">IEEE TED</span>
+  </span></div>
+</div>
 
 ## 业界机构
 
@@ -278,34 +282,42 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 ### 企业
 
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [歌尔股份](https://www.goertek.com/) | <span class="sq" data-stock="sz:002241"></span> |
-| 国内 | [瑞声科技（AAC）](https://www.aactechnologies.com/) | <span class="sq" data-stock="hk:02018"></span> |
-| 国内 | [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) | <span class="sq" data-stock="sz:300456"></span> |
-| 国内 | [敏芯股份（MEMSensing）](https://www.memsensing.com/) | <span class="sq" data-stock="sh:688286"></span> |
-| 国内 | [矽睿科技（QST）](https://www.qstcorp.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [明皜传感（MiraMEMS）](http://www.miramems.com/) | <span class="sq" data-stock="sz:002079"></span> |
-| 国内 | [卓胜微（Maxscend）](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
-| 国内 | [天奥电子（Spaceon）](https://www.elecspn.com/) | <span class="sq" data-stock="sz:002935"></span> |
-| 国外 | [Bosch Sensortec](https://www.bosch-sensortec.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [STMicroelectronics](https://www.st.com/) | <span class="sq" data-stock="us:STM"></span> |
-| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <span class="sq" data-stock="yf:6762.T"></span> |
-| 国外 | [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) | <span class="sq" data-stock="us:QCOM"></span> |
-| 国外 | [Butterfly Network](https://www.butterflynetwork.com/) | <span class="sq" data-stock="us:BFLY"></span> |
-| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
-| 国外 | [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) | <span class="sq" data-stock="us:MCHP"></span> |
-| 国外 | [Honeywell](https://www.honeywell.com/) | <span class="sq" data-stock="us:HON"></span> |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.goertek.com/">歌尔股份</a><span class="sq" data-stock="sz:002241"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.aactechnologies.com/">瑞声科技（AAC）</a><span class="sq" data-stock="hk:02018"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.smeiic.com/">赛微电子（Silex/赛莱克斯）</a><span class="sq" data-stock="sz:300456"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.memsensing.com/">敏芯股份（MEMSensing）</a><span class="sq" data-stock="sh:688286"></span></span>
+    <a class="dm-chip" href="https://www.qstcorp.com/">矽睿科技（QST）</a>
+    <span class="dm-chip dm-chip--stock"><a href="http://www.miramems.com/">明皜传感（MiraMEMS）</a><span class="sq" data-stock="sz:002079"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.maxscend.com/">卓胜微（Maxscend）</a><span class="sq" data-stock="sz:300782"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.elecspn.com/">天奥电子（Spaceon）</a><span class="sq" data-stock="sz:002935"></span></span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.bosch-sensortec.com/">Bosch Sensortec</a>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.st.com/">STMicroelectronics</a><span class="sq" data-stock="us:STM"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://invensense.tdk.com/">TDK InvenSense</a><span class="sq" data-stock="yf:6762.T"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.qualcomm.com/products/features/fingerprint-sensors">Qualcomm</a><span class="sq" data-stock="us:QCOM"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.butterflynetwork.com/">Butterfly Network</a><span class="sq" data-stock="us:BFLY"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.qorvo.com/">Qorvo</a><span class="sq" data-stock="us:QRVO"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks">Microchip</a><span class="sq" data-stock="us:MCHP"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.honeywell.com/">Honeywell</a><span class="sq" data-stock="us:HON"></span></span>
+  </span></div>
+</div>
 
 ### 科研院所
 
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
-| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
-| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
-| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
-| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
-| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
-| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
-| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.sim.cas.cn/" title="传感技术全国重点实验室，硅微机械加工与微系统">中科院上海微系统与信息技术研究所</a>
+    <a class="dm-chip" href="http://sinano.cas.cn/" title="MEMS 中试/代工平台与微纳加工">中科院苏州纳米技术与纳米仿生研究所</a>
+    <a class="dm-chip" href="https://www.ime.ac.cn/" title="MEMS 工艺平台与传感器集成">中科院微电子研究所</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://bsac.berkeley.edu/" title="全球顶尖高校 MEMS 研究中心">Berkeley Sensor & Actuator Center (BSAC)</a>
+    <a class="dm-chip" href="https://lnf.umich.edu/" title="惯性传感器、晶圆级封装、神经接口">Michigan 集成传感器中心（WIMS²/Lurie Nanofab）</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en" title="硅基传感器与超声 MEMS 工艺">imec</a>
+    <a class="dm-chip" href="https://www.nist.gov/pml/time-and-frequency-division" title="芯片级原子钟发源地、NEMS 精密测量">NIST 时间频率部</a>
+    <a class="dm-chip" href="https://www.isit.fraunhofer.de/" title="MEMS 工艺与微系统量产化（欧洲）">Fraunhofer ISIT</a>
+  </span></div>
+</div>

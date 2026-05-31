@@ -302,16 +302,20 @@ graph LR
 
 ### 学术会议与期刊
 
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | ISSCC | IEEE 国际固态电路会议 |
-| 顶会 | VLSI Symposium | IEEE VLSI 技术与电路研讨会 |
-| 顶会 | CICC | IEEE 定制集成电路会议 |
-| 顶会 | ESSERC（原 ESSCIRC） | 欧洲固态电子研究会议 |
-| 顶会 | A-SSCC | IEEE 亚洲固态电路会议 |
-| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
-| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
-| 顶刊 | TVLSI | IEEE Trans. VLSI Systems |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="IEEE 国际固态电路会议">ISSCC</span>
+    <span class="dm-chip dm-chip--static" title="IEEE VLSI 技术与电路研讨会">VLSI Symposium</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 定制集成电路会议">CICC</span>
+    <span class="dm-chip dm-chip--static" title="欧洲固态电子研究会议">ESSERC（原 ESSCIRC）</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 亚洲固态电路会议">A-SSCC</span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="IEEE Journal of Solid-State Circuits">JSSC</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Trans. Circuits and Systems">TCAS-I/II</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Trans. VLSI Systems">TVLSI</span>
+  </span></div>
+</div>
 
 ## 业界机构
 
@@ -319,33 +323,41 @@ graph LR
 
 ### 企业
 
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [韦尔股份 / 豪威集团](https://www.willsemi.com/) | <span class="sq" data-stock="sh:603501"></span> |
-| 国内 | [澜起科技](https://www.montage-tech.com/) | <span class="sq" data-stock="sh:688008"></span> |
-| 国内 | [思瑞浦](https://www.3peak.cn/) | <span class="sq" data-stock="sh:688536"></span> |
-| 国内 | [圣邦股份](https://www.sg-micro.com/) | <span class="sq" data-stock="sz:300661"></span> |
-| 国内 | [纳芯微](https://www.novosns.com/) | <span class="sq" data-stock="sh:688052"></span> |
-| 国内 | [上海贝岭](https://www.belling.com.cn/) | <span class="sq" data-stock="sh:600171"></span> |
-| 国内 | [杰华特（JoulWatt）](https://www.joulwatt.com/) | <span class="sq" data-stock="sh:688141"></span> |
-| 国内 | [晶丰明源](https://www.bpsemi.com/) | <span class="sq" data-stock="sh:688368"></span> |
-| 国外 | [Texas Instruments（德州仪器）](https://www.ti.com/) | <span class="sq" data-stock="us:TXN"></span> |
-| 国外 | [Analog Devices（ADI）](https://www.analog.com/) | <span class="sq" data-stock="us:ADI"></span> |
-| 国外 | [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) | <span class="sq" data-stock="us:MPWR"></span> |
-| 国外 | [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
-| 国外 | [Marvell（数据中心高速互连）](https://www.marvell.com/) | <span class="sq" data-stock="us:MRVL"></span> |
-| 国外 | [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) | <span class="sq" data-stock="us:CRDO"></span> |
-| 国外 | [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) | <span class="sq" data-stock="us:ALAB"></span> |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.willsemi.com/">韦尔股份 / 豪威集团</a><span class="sq" data-stock="sh:603501"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.montage-tech.com/">澜起科技</a><span class="sq" data-stock="sh:688008"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.3peak.cn/">思瑞浦</a><span class="sq" data-stock="sh:688536"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.sg-micro.com/">圣邦股份</a><span class="sq" data-stock="sz:300661"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.novosns.com/">纳芯微</a><span class="sq" data-stock="sh:688052"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.belling.com.cn/">上海贝岭</a><span class="sq" data-stock="sh:600171"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.joulwatt.com/">杰华特（JoulWatt）</a><span class="sq" data-stock="sh:688141"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.bpsemi.com/">晶丰明源</a><span class="sq" data-stock="sh:688368"></span></span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.ti.com/">Texas Instruments（德州仪器）</a><span class="sq" data-stock="us:TXN"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.analog.com/">Analog Devices（ADI）</a><span class="sq" data-stock="us:ADI"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.monolithicpower.com/">Monolithic Power Systems（MPS·电源管理）</a><span class="sq" data-stock="us:MPWR"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.broadcom.com/">Broadcom（SerDes / 高速接口）</a><span class="sq" data-stock="us:AVGO"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.marvell.com/">Marvell（数据中心高速互连）</a><span class="sq" data-stock="us:MRVL"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://credosemi.com/">Credo（224G SerDes / AEC 有源电缆）</a><span class="sq" data-stock="us:CRDO"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.asteralabs.com/">Astera Labs（PCIe/CXL Retimer · 互连）</a><span class="sq" data-stock="us:ALAB"></span></span>
+  </span></div>
+</div>
 
 ### 科研院所
 
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 数据转换器、高速接口与混合信号 IC 工艺与设计 |
-| 国内 | [中科院上海微系统所](https://www.sim.cas.cn/) | 传感器读出电路与微系统集成 |
-| 国内 | [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) | DDR5、高速 SerDes 等高端接口 IP |
-| 国内 | [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) | 先进工艺平台与模拟/混合信号 IP |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 先进 CMOS 工艺下的数据转换器与高速 I/O 研究 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 高速 SerDes、ADC 与混合信号系统 |
-| 国外 | [Stanford SystemX Alliance](https://systemx.stanford.edu/) | 从器件到系统的混合信号集成研究 |
-| 国外 | [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) | 模拟器件与精密测量 |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.ime.cas.cn/" title="数据转换器、高速接口与混合信号 IC 工艺与设计">中科院微电子所</a>
+    <a class="dm-chip" href="https://www.sim.cas.cn/" title="传感器读出电路与微系统集成">中科院上海微系统所</a>
+    <a class="dm-chip" href="https://www.pcl.ac.cn/" title="DDR5、高速 SerDes 等高端接口 IP">鹏城实验室·集成电路基础研究室</a>
+    <a class="dm-chip" href="https://www.icrd.com.cn/" title="先进工艺平台与模拟/混合信号 IP">上海集成电路研发中心（ICRD）</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://www.imec-int.com/en" title="先进 CMOS 工艺下的数据转换器与高速 I/O 研究">imec（比利时微电子研究中心）</a>
+    <a class="dm-chip" href="https://bwrc.berkeley.edu/" title="高速 SerDes、ADC 与混合信号系统">UC Berkeley 无线研究中心（BWRC）</a>
+    <a class="dm-chip" href="https://systemx.stanford.edu/" title="从器件到系统的混合信号集成研究">Stanford SystemX Alliance</a>
+    <a class="dm-chip" href="https://www.aist.go.jp/index_en.html" title="模拟器件与精密测量">AIST（日本产业技术综合研究所）</a>
+  </span></div>
+</div>

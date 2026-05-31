@@ -285,17 +285,21 @@ graph LR
 
 ### 学术会议与期刊
 
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | ISSCC | IEEE 国际固态电路会议 |
-| 顶会 | RFIC Symposium | IEEE 射频集成电路研讨会 |
-| 顶会 | IMS | IEEE MTT-S Int'l Microwave Symposium |
-| 顶会 | ESSERC | 欧洲固态电子电路会议（原 ESSCIRC） |
-| 顶会 | EuMW | 欧洲微波周（European Microwave Week） |
-| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
-| 顶刊 | T-MTT | IEEE Trans. Microwave Theory and Techniques |
-| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
-| 顶刊 | MWCL | IEEE Microwave and Wireless Components Letters |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="IEEE 国际固态电路会议">ISSCC</span>
+    <span class="dm-chip dm-chip--static" title="IEEE 射频集成电路研讨会">RFIC Symposium</span>
+    <span class="dm-chip dm-chip--static" title="IEEE MTT-S Int&#x27;l Microwave Symposium">IMS</span>
+    <span class="dm-chip dm-chip--static" title="欧洲固态电子电路会议（原 ESSCIRC）">ESSERC</span>
+    <span class="dm-chip dm-chip--static" title="欧洲微波周（European Microwave Week）">EuMW</span>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--static" title="IEEE Journal of Solid-State Circuits">JSSC</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Trans. Microwave Theory and Techniques">T-MTT</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Trans. Circuits and Systems">TCAS-I/II</span>
+    <span class="dm-chip dm-chip--static" title="IEEE Microwave and Wireless Components Letters">MWCL</span>
+  </span></div>
+</div>
 
 ## 业界机构
 
@@ -303,31 +307,39 @@ graph LR
 
 ### 企业
 
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [卓胜微](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
-| 国内 | [唯捷创芯](https://www.vanchip.com/) | <span class="sq" data-stock="sh:688153"></span> |
-| 国内 | [翱捷科技（ASR）](https://www.asrmicro.com/) | <span class="sq" data-stock="sh:688220"></span> |
-| 国内 | [三安光电（三安集成 GaN/GaAs 射频）](https://www.sanan-e.com/) | <span class="sq" data-stock="sh:600703"></span> |
-| 国内 | [加特兰微电子（Calterah）](https://www.calterah.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [紫光展锐（UNISOC）](https://www.unisoc.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [华为海思（HiSilicon）](https://www.hisilicon.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [Qualcomm（高通）](https://www.qualcomm.com/) | <span class="sq" data-stock="us:QCOM"></span> |
-| 国外 | [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
-| 国外 | [Skyworks Solutions](https://www.skyworksinc.com/) | <span class="sq" data-stock="us:SWKS"></span> |
-| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
-| 国外 | [MediaTek（联发科）](https://www.mediatek.com/) | <span class="sq" data-stock="yf:2454.TW"></span> |
-| 国外 | [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) | <span class="sq" data-stock="us:MTSI"></span> |
-| 国外 | [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) | <span class="sq" data-stock="us:NXPI"></span> |
-| 国外 | [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) | <span class="sq" data-stock="us:IFNNY"></span> |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.maxscend.com/">卓胜微</a><span class="sq" data-stock="sz:300782"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.vanchip.com/">唯捷创芯</a><span class="sq" data-stock="sh:688153"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.asrmicro.com/">翱捷科技（ASR）</a><span class="sq" data-stock="sh:688220"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.sanan-e.com/">三安光电（三安集成 GaN/GaAs 射频）</a><span class="sq" data-stock="sh:600703"></span></span>
+    <a class="dm-chip" href="https://www.calterah.com/">加特兰微电子（Calterah）</a>
+    <a class="dm-chip" href="https://www.unisoc.com/">紫光展锐（UNISOC）</a>
+    <a class="dm-chip" href="https://www.hisilicon.com/">华为海思（HiSilicon）</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <span class="dm-chip dm-chip--stock"><a href="https://www.qualcomm.com/">Qualcomm（高通）</a><span class="sq" data-stock="us:QCOM"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.broadcom.com/">Broadcom（无线连接 / 射频前端）</a><span class="sq" data-stock="us:AVGO"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.skyworksinc.com/">Skyworks Solutions</a><span class="sq" data-stock="us:SWKS"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.qorvo.com/">Qorvo</a><span class="sq" data-stock="us:QRVO"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.mediatek.com/">MediaTek（联发科）</a><span class="sq" data-stock="yf:2454.TW"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.macom.com/">MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）</a><span class="sq" data-stock="us:MTSI"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.nxp.com/">NXP（77 GHz 车载雷达收发机）</a><span class="sq" data-stock="us:NXPI"></span></span>
+    <span class="dm-chip dm-chip--stock"><a href="https://www.infineon.com/">Infineon（77/79 GHz 毫米波雷达 MMIC）</a><span class="sq" data-stock="us:IFNNY"></span></span>
+  </span></div>
+</div>
 
 ### 科研院所
 
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) | 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统 |
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 毫米波/射频 CMOS 收发机与前端集成 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 宽带无线通信与高速射频系统 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 毫米波 CMOS 收发机、5G/6G 无线系统 |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 毫米波相控阵、5G/6G 射频前端 |
-| 国外 | [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) | III-V/GaN 毫米波与太赫兹 MMIC |
+<div class="dm-wrap chip-block">
+  <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
+    <a class="dm-chip" href="https://mmw.seu.edu.cn/" title="毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统">东南大学毫米波全国重点实验室</a>
+    <a class="dm-chip" href="https://www.ime.cas.cn/" title="毫米波/射频 CMOS 收发机与前端集成">中科院微电子所</a>
+    <a class="dm-chip" href="https://www.pcl.ac.cn/" title="宽带无线通信与高速射频系统">鹏城实验室</a>
+  </span></div>
+  <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
+    <a class="dm-chip" href="https://bwrc.berkeley.edu/" title="毫米波 CMOS 收发机、5G/6G 无线系统">UC Berkeley 无线研究中心（BWRC）</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en" title="毫米波相控阵、5G/6G 射频前端">imec（比利时微电子研究中心）</a>
+    <a class="dm-chip" href="https://www.iaf.fraunhofer.de/en.html" title="III-V/GaN 毫米波与太赫兹 MMIC">Fraunhofer IAF（德国应用固体物理研究所）</a>
+  </span></div>
+</div>
