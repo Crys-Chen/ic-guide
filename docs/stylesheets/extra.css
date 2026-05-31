@@ -80,6 +80,8 @@
 
 /* ─── 表格 ──────────────────────────────────────────────── */
 .md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--md-default-fg-color--lightest);
@@ -92,6 +94,13 @@
   color: #fff;
   font-weight: 600;
   border-bottom: none;
+}
+
+/* 首列（地区 / 类型 等标签列）文字淡化，弱化重复标签的视觉权重 */
+.md-typeset table:not([class]) td:first-child {
+  color: var(--md-default-fg-color--light);
+  font-size: .92em;
+  white-space: nowrap;
 }
 
 /* 斑马纹 */
@@ -852,7 +861,7 @@
   color: #032168 !important;
 }
 [data-md-color-scheme="default"] .md-typeset table:not([class]) th {
-  background: #06091A !important;
+  background: #032168 !important;
 }
 [data-md-color-scheme="default"] .md-typeset a {
   color: #032168;

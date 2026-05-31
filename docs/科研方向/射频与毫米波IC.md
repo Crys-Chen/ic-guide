@@ -136,7 +136,7 @@ hide:
 | 国外 | [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
 | 国外 | [Skyworks Solutions](https://www.skyworksinc.com/) | <span class="sq" data-stock="us:SWKS"></span> |
 | 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
-| 国外 | [MediaTek（联发科）](https://www.mediatek.com/) | <a class="sq-na-link" href="https://finance.yahoo.com/quote/2454.TW" target="_blank" rel="noopener">行情↗</a> |
+| 国外 | [MediaTek（联发科）](https://www.mediatek.com/) | <span class="sq" data-stock="yf:2454.TW"></span> |
 | 国外 | [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) | <span class="sq" data-stock="us:MTSI"></span> |
 | 国外 | [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) | <span class="sq" data-stock="us:NXPI"></span> |
 | 国外 | [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) | <span class="sq" data-stock="us:IFNNY"></span> |

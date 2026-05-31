@@ -108,7 +108,7 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 | 国内 | [天奥电子（Spaceon）](https://www.elecspn.com/) | <span class="sq" data-stock="sz:002935"></span> |
 | 国外 | [Bosch Sensortec](https://www.bosch-sensortec.com/) | <span class="sq-none">未上市</span> |
 | 国外 | [STMicroelectronics](https://www.st.com/) | <span class="sq" data-stock="us:STM"></span> |
-| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <a class="sq-na-link" href="https://finance.yahoo.com/quote/6762.T" target="_blank" rel="noopener">行情↗</a> |
+| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <span class="sq" data-stock="yf:6762.T"></span> |
 | 国外 | [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) | <span class="sq" data-stock="us:QCOM"></span> |
 | 国外 | [Butterfly Network](https://www.butterflynetwork.com/) | <span class="sq" data-stock="us:BFLY"></span> |
 | 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |

@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - main
+  # 每小时刷新一次海外股 quotes.json（顺带重建并部署当前 main 内容）。
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -27,6 +31,10 @@ jobs:
       # Patch search_index.json AFTER the build is fully done so the
       # n-gram injection survives all i18n passes.
       - run: python3 scripts/inject_ngrams.py site
+      # 拉「非美海外股」(韩/台/日/澳/欧) 实时行情写入 site/quotes.json，供前端
+      # stock-quote.js 同源读取（A股/港股/美股仍由浏览器实时取腾讯口）。
+      # 失败不阻断部署：拉不到就让前端回退「行情↗」。
+      - run: python3 scripts/fetch_foreign_quotes.py site/quotes.json || true
       # Push site/ to gh-pages branch.
       - run: |
           git config --global user.name 'github-actions[bot]'
