@@ -503,10 +503,42 @@
   .dm-conn { padding: .3rem 0; }
 }
 
-/* ─── 方向页:会议/企业/院所 横排 chips（复用 .dm-* 组件）──── */
-.chip-block { margin: 1rem 0 1.8rem; gap: .6rem; }
-.chip-block .dm-row { padding: .8rem 1rem; }
-.chip-block .dm-lbl { min-width: 3.4em; }
+/* ─── 方向页:会议/企业/院所 横排 chips（复用 .dm-chip，去掉填充带）──
+   分组标签做成实心小 pill，chips 浮在页面背景上，轻盈通透。 */
+.chip-block { margin: 1rem 0 1.8rem; display: flex; flex-direction: column; gap: .85rem; }
+.chip-block .dm-row {           /* 去掉原层次图的浅蓝填充带 */
+  background: none;
+  border-left: none;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  flex-wrap: nowrap;
+}
+.chip-block .dm-lbl {           /* 分组标签 → 实心 pill */
+  min-width: auto;
+  flex: 0 0 auto;
+  margin-top: .15rem;
+  padding: .26em .75em;
+  border-radius: 5px;
+  font-size: .76rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #3B5FCF;
+}
+.chip-block .dm-device .dm-lbl { background: #032168; }  /* 顶会 / 国内 — 深 */
+.chip-block .dm-arch   .dm-lbl { background: #3B5FCF; }  /* 顶刊 / 国外 — 中 */
+.chip-block .dm-chips { gap: .45rem .5rem; }
+
+[data-md-color-scheme="slate"] .chip-block .dm-lbl { color: #06142e; }
+[data-md-color-scheme="slate"] .chip-block .dm-device .dm-lbl { background: #B8D2F2; }
+[data-md-color-scheme="slate"] .chip-block .dm-arch   .dm-lbl { background: #8DAEE3; }
+
+@media (max-width: 600px) {     /* 窄屏：标签换到 chips 上方 */
+  .chip-block .dm-row { flex-direction: column; gap: .4rem; }
+  .chip-block .dm-lbl { margin-top: 0; }
+}
 
 /* 纯信息 chip（会议全名 / 院所研究重点放在 title） — 不反转颜色，仅轻微抬升 */
 .dm-chip--static { cursor: default; }
