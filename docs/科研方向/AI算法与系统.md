@@ -272,6 +272,10 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     大模型复杂推理（o1 复现）· 预训练数据工程 · 生成式 AI（GAIR）
 
+-   **[张拳石](https://faculty.sjtu.edu.cn/zhangquanshi/zh_CN/index.htm)** <span class="badge-other">交大</span>
+
+    神经网络可解释性（XAI 理论）· 博弈交互解释 · 深度学习理论
+
 -   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
 
     端云协同分布式 ML · 垂域基础模型 · AI 系统平台
@@ -291,6 +295,10 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 -   **[高阳](https://cs.nju.edu.cn/gaoyang/)** <span class="badge-other">南大</span>
 
     强化学习 · 多智能体学习 · 元学习 · 智能 Agent
+
+-   **[周志华](https://cs.nju.edu.cn/zhouzh/)** <span class="badge-other">南大</span>
+
+    机器学习理论 · 集成学习 · 弱监督学习 · 机器学习+逻辑推理（反绎学习）
 
 -   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
 
