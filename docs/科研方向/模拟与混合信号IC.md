@@ -100,24 +100,24 @@ hide:
 
 **国内**
 
-- [韦尔股份 / 豪威集团](https://www.willsemi.com/) · [实时股价](https://quote.eastmoney.com/sh603501.html) — CMOS 图像传感器读出电路龙头
-- [澜起科技](https://www.montage-tech.com/) · [实时股价](https://quote.eastmoney.com/sh688008.html) — 内存接口 / 高速互连芯片
-- [思瑞浦](https://www.3peak.cn/) · [实时股价](https://quote.eastmoney.com/sh688536.html) — 信号链与电源管理模拟芯片
-- [圣邦股份](https://www.sg-micro.com/) · [实时股价](https://quote.eastmoney.com/sz300661.html) — 信号链 / 电源管理模拟 IC
-- [纳芯微](https://www.novosns.com/) · [实时股价](https://quote.eastmoney.com/sh688052.html) — 车规 / 工业模拟与混合信号、隔离与传感
-- [上海贝岭](https://www.belling.com.cn/) · [实时股价](https://quote.eastmoney.com/sh600171.html) — 数据转换器 · 电源管理 · 高速接口
-- [杰华特（JoulWatt）](https://www.joulwatt.com/) · [实时股价](https://quote.eastmoney.com/sh688141.html) — DC-DC / AC-DC 电源管理 · 多相控制器 · 电池管理
-- [晶丰明源](https://www.bpsemi.com/) · [实时股价](https://quote.eastmoney.com/sh688368.html) — 电源管理 / LED 驱动 / 高性能计算电源芯片
+- [韦尔股份 / 豪威集团](https://www.willsemi.com/) <span class="sq" data-stock="sh:603501"></span>
+- [澜起科技](https://www.montage-tech.com/) <span class="sq" data-stock="sh:688008"></span>
+- [思瑞浦](https://www.3peak.cn/) <span class="sq" data-stock="sh:688536"></span>
+- [圣邦股份](https://www.sg-micro.com/) <span class="sq" data-stock="sz:300661"></span>
+- [纳芯微](https://www.novosns.com/) <span class="sq" data-stock="sh:688052"></span>
+- [上海贝岭](https://www.belling.com.cn/) <span class="sq" data-stock="sh:600171"></span>
+- [杰华特（JoulWatt）](https://www.joulwatt.com/) <span class="sq" data-stock="sh:688141"></span>
+- [晶丰明源](https://www.bpsemi.com/) <span class="sq" data-stock="sh:688368"></span>
 
 **国外**
 
-- [Texas Instruments（德州仪器）](https://www.ti.com/) · [实时股价](https://finance.yahoo.com/quote/TXN)
-- [Analog Devices（ADI）](https://www.analog.com/) · [实时股价](https://finance.yahoo.com/quote/ADI)
-- [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) · [实时股价](https://finance.yahoo.com/quote/MPWR)
-- [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) · [实时股价](https://finance.yahoo.com/quote/AVGO)
-- [Marvell（数据中心高速互连）](https://www.marvell.com/) · [实时股价](https://finance.yahoo.com/quote/MRVL)
-- [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) · [实时股价](https://finance.yahoo.com/quote/CRDO)
-- [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) · [实时股价](https://finance.yahoo.com/quote/ALAB)
+- [Texas Instruments（德州仪器）](https://www.ti.com/) <span class="sq" data-stock="us:TXN"></span>
+- [Analog Devices（ADI）](https://www.analog.com/) <span class="sq" data-stock="us:ADI"></span>
+- [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) <span class="sq" data-stock="us:MPWR"></span>
+- [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) <span class="sq" data-stock="us:AVGO"></span>
+- [Marvell（数据中心高速互连）](https://www.marvell.com/) <span class="sq" data-stock="us:MRVL"></span>
+- [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) <span class="sq" data-stock="us:CRDO"></span>
+- [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) <span class="sq" data-stock="us:ALAB"></span>
 
 ### 科研院所
 

@@ -98,25 +98,25 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 **国内**
 
-- [歌尔股份](https://www.goertek.com/) · [实时股价](https://quote.eastmoney.com/sz002241.html) — MEMS 麦克风全球市占第一、声学/光学传感器
-- [瑞声科技（AAC）](https://www.aactechnologies.com/) · [实时股价](https://quote.eastmoney.com/hk/02018.html) — 声学器件、MEMS 麦克风
-- [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) · [实时股价](https://quote.eastmoney.com/sz300456.html) — MEMS 晶圆代工龙头
-- [敏芯股份（MEMSensing）](https://www.memsensing.com/) · [实时股价](https://quote.eastmoney.com/sh688286.html) — MEMS 麦克风/压力/惯性传感器设计，"MEMS 第一股"
-- [矽睿科技（QST）](https://www.qstcorp.com/)（IMU/加速度计/磁传感器，科创板筹备中，未上市）
-- [明皜传感（MiraMEMS）](http://www.miramems.com/)（加速度计/陀螺仪，母公司苏州固锝控股）· [母公司股价](https://quote.eastmoney.com/sz002079.html)
-- [卓胜微（Maxscend）](https://www.maxscend.com/) · [实时股价](https://quote.eastmoney.com/sz300782.html) — RF 声学器件、SAW/BAW 滤波器（IPD/MEMS 工艺）
-- [天奥电子（Spaceon）](https://www.elecspn.com/) · [实时股价](https://quote.eastmoney.com/sz002935.html) — 时间频率器件、芯片级/小型原子钟
+- [歌尔股份](https://www.goertek.com/) <span class="sq" data-stock="sz:002241"></span>
+- [瑞声科技（AAC）](https://www.aactechnologies.com/) <span class="sq" data-stock="hk:02018"></span>
+- [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) <span class="sq" data-stock="sz:300456"></span>
+- [敏芯股份（MEMSensing）](https://www.memsensing.com/) <span class="sq" data-stock="sh:688286"></span>
+- [矽睿科技（QST）](https://www.qstcorp.com/) <span class="sq-none">未上市</span>
+- [明皜传感（MiraMEMS）](http://www.miramems.com/) <span class="sq" data-stock="sz:002079"></span>
+- [卓胜微（Maxscend）](https://www.maxscend.com/) <span class="sq" data-stock="sz:300782"></span>
+- [天奥电子（Spaceon）](https://www.elecspn.com/) <span class="sq" data-stock="sz:002935"></span>
 
 **国外**
 
-- [Bosch Sensortec](https://www.bosch-sensortec.com/)（惯性 MEMS 全球龙头，博世基金会控股，未上市）
-- [STMicroelectronics](https://www.st.com/) · [实时股价](https://finance.yahoo.com/quote/STM) — IMU/MEMS 传感器，智能手机市占领先
-- [TDK InvenSense](https://invensense.tdk.com/) · [实时股价](https://finance.yahoo.com/quote/6762.T) — 运动传感器、超声 MEMS
-- [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) · [实时股价](https://finance.yahoo.com/quote/QCOM) — 3D Sonic 超声指纹（PMUT）
-- [Butterfly Network](https://www.butterflynetwork.com/) · [实时股价](https://finance.yahoo.com/quote/BFLY) — CMUT 超声片上化（Ultrasound-on-Chip）便携医学成像
-- [Qorvo](https://www.qorvo.com/) · [实时股价](https://finance.yahoo.com/quote/QRVO) — BAW/FBAR 射频 MEMS 声学滤波器
-- [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) · [实时股价](https://finance.yahoo.com/quote/MCHP) — 芯片级原子钟 CSAC（MEMS 原子气室）
-- [Honeywell](https://www.honeywell.com/) · [实时股价](https://finance.yahoo.com/quote/HON) — 工业/航空惯性与压力 MEMS
+- [Bosch Sensortec](https://www.bosch-sensortec.com/) <span class="sq-none">未上市</span>
+- [STMicroelectronics](https://www.st.com/) <span class="sq" data-stock="us:STM"></span>
+- [TDK InvenSense](https://invensense.tdk.com/) <a class="sq-na-link" href="https://finance.yahoo.com/quote/6762.T" target="_blank" rel="noopener">行情↗</a>
+- [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) <span class="sq" data-stock="us:QCOM"></span>
+- [Butterfly Network](https://www.butterflynetwork.com/) <span class="sq" data-stock="us:BFLY"></span>
+- [Qorvo](https://www.qorvo.com/) <span class="sq" data-stock="us:QRVO"></span>
+- [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) <span class="sq" data-stock="us:MCHP"></span>
+- [Honeywell](https://www.honeywell.com/) <span class="sq" data-stock="us:HON"></span>
 
 ### 科研院所
 

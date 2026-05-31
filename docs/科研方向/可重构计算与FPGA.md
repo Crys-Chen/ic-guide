@@ -71,21 +71,21 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 **国内**
 
-- [复旦微电子（FMSH）](https://www.fmsh.com/) · [实时股价](https://quote.eastmoney.com/sh688385.html)——国产 FPGA 龙头，28nm 工艺 FPGA
-- [安路科技 Anlogic](https://www.anlogic.com/) · [实时股价](https://quote.eastmoney.com/sh688107.html)——A 股首家专注 FPGA 的上市公司
-- [高云半导体 Gowin](https://www.gowinsemi.com/)（未上市）——中低端 FPGA 与开发软件
-- [京微齐力 Hercules](https://hercules-micro.com/)（未上市）——国产 FPGA 与 AiPGA/异构计算芯片，布局 eFPGA IP 核
-- [紫光同创 Pango](https://www.pangomicro.com/)（未上市，IPO 辅导中；母公司紫光国微 002049 已上市）——国产 FPGA 综合实力领军者
+- [复旦微电子（FMSH）](https://www.fmsh.com/) <span class="sq" data-stock="sh:688385"></span>
+- [安路科技 Anlogic](https://www.anlogic.com/) <span class="sq" data-stock="sh:688107"></span>
+- [高云半导体 Gowin](https://www.gowinsemi.com/) <span class="sq-none">未上市</span>
+- [京微齐力 Hercules](https://hercules-micro.com/) <span class="sq-none">未上市</span>
+- [紫光同创 Pango](https://www.pangomicro.com/) <span class="sq-none">未上市</span>
 
 **国外**
 
-- [AMD（原 Xilinx）](https://www.amd.com/) · [实时股价](https://finance.yahoo.com/quote/AMD)——FPGA/自适应 SoC 全球龙头
-- [Altera](https://www.altera.com/)（已从 Intel 独立，Silver Lake 控股，未单独上市）——老牌 FPGA 厂商
-- [Lattice Semiconductor](https://www.latticesemi.com/) · [实时股价](https://finance.yahoo.com/quote/LSCC)——低功耗中小规模 FPGA
-- [Achronix](https://www.achronix.com/)（未上市）——高端独立 FPGA 与 eFPGA IP
-- [QuickLogic](https://www.quicklogic.com/) · [实时股价](https://finance.yahoo.com/quote/QUIK)——嵌入式 FPGA（eFPGA）硬核 IP 与边缘 AI
-- [Microsoft](https://www.microsoft.com/)（Project Catapult 数据中心 FPGA） · [实时股价](https://finance.yahoo.com/quote/MSFT)
-- [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/)（EC2 F1 云端 FPGA 加速实例） · [实时股价](https://finance.yahoo.com/quote/AMZN)
+- [AMD（原 Xilinx）](https://www.amd.com/) <span class="sq" data-stock="us:AMD"></span>
+- [Altera](https://www.altera.com/) <span class="sq-none">未上市</span>
+- [Lattice Semiconductor](https://www.latticesemi.com/) <span class="sq" data-stock="us:LSCC"></span>
+- [Achronix](https://www.achronix.com/) <span class="sq-none">未上市</span>
+- [QuickLogic](https://www.quicklogic.com/) <span class="sq" data-stock="us:QUIK"></span>
+- [Microsoft](https://www.microsoft.com/) <span class="sq" data-stock="us:MSFT"></span>
+- [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) <span class="sq" data-stock="us:AMZN"></span>
 
 ### 科研院所
 

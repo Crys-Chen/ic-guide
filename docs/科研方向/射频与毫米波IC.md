@@ -125,24 +125,24 @@ hide:
 
 **国内**
 
-- [卓胜微](https://www.maxscend.com/) · [实时股价](https://quote.eastmoney.com/sz300782.html) — 射频开关 / LNA / 射频前端模组龙头
-- [唯捷创芯](https://www.vanchip.com/) · [实时股价](https://quote.eastmoney.com/sh688153.html) — 射频功率放大器（PA）模组
-- [翱捷科技（ASR）](https://www.asrmicro.com/) · [实时股价](https://quote.eastmoney.com/sh688220.html) — 蜂窝基带与射频前端、无线 SoC
-- [三安光电（三安集成 GaN/GaAs 射频）](https://www.sanan-e.com/) · [实时股价](https://quote.eastmoney.com/sh600703.html) — 化合物半导体射频前端 / GaN 毫米波 MMIC 代工
-- [加特兰微电子（Calterah）](https://www.calterah.com/)（未上市） — CMOS 77/79 GHz 毫米波雷达 SoC、AiP 自动驾驶雷达
-- [紫光展锐（UNISOC）](https://www.unisoc.com/)（未上市） — 5G 基带、射频收发与射频前端芯片
-- [华为海思（HiSilicon）](https://www.hisilicon.com/)（华为未上市） — 射频收发机与无线 SoC
+- [卓胜微](https://www.maxscend.com/) <span class="sq" data-stock="sz:300782"></span>
+- [唯捷创芯](https://www.vanchip.com/) <span class="sq" data-stock="sh:688153"></span>
+- [翱捷科技（ASR）](https://www.asrmicro.com/) <span class="sq" data-stock="sh:688220"></span>
+- [三安光电（三安集成 GaN/GaAs 射频）](https://www.sanan-e.com/) <span class="sq" data-stock="sh:600703"></span>
+- [加特兰微电子（Calterah）](https://www.calterah.com/) <span class="sq-none">未上市</span>
+- [紫光展锐（UNISOC）](https://www.unisoc.com/) <span class="sq-none">未上市</span>
+- [华为海思（HiSilicon）](https://www.hisilicon.com/) <span class="sq-none">未上市</span>
 
 **国外**
 
-- [Qualcomm（高通）](https://www.qualcomm.com/) · [实时股价](https://finance.yahoo.com/quote/QCOM)
-- [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) · [实时股价](https://finance.yahoo.com/quote/AVGO)
-- [Skyworks Solutions](https://www.skyworksinc.com/) · [实时股价](https://finance.yahoo.com/quote/SWKS)
-- [Qorvo](https://www.qorvo.com/) · [实时股价](https://finance.yahoo.com/quote/QRVO)
-- [MediaTek（联发科）](https://www.mediatek.com/) · [实时股价](https://finance.yahoo.com/quote/2454.TW)
-- [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) · [实时股价](https://finance.yahoo.com/quote/MTSI)
-- [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) · [实时股价](https://finance.yahoo.com/quote/NXPI)
-- [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) · [实时股价](https://finance.yahoo.com/quote/IFNNY)
+- [Qualcomm（高通）](https://www.qualcomm.com/) <span class="sq" data-stock="us:QCOM"></span>
+- [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) <span class="sq" data-stock="us:AVGO"></span>
+- [Skyworks Solutions](https://www.skyworksinc.com/) <span class="sq" data-stock="us:SWKS"></span>
+- [Qorvo](https://www.qorvo.com/) <span class="sq" data-stock="us:QRVO"></span>
+- [MediaTek（联发科）](https://www.mediatek.com/) <a class="sq-na-link" href="https://finance.yahoo.com/quote/2454.TW" target="_blank" rel="noopener">行情↗</a>
+- [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) <span class="sq" data-stock="us:MTSI"></span>
+- [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) <span class="sq" data-stock="us:NXPI"></span>
+- [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) <span class="sq" data-stock="us:IFNNY"></span>
 
 ### 科研院所
 

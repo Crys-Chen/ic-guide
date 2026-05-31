@@ -116,28 +116,28 @@ hide:
 
 **国内**
 
-- [智谱 AI（Z.ai）](https://www.zhipuai.cn) · [实时股价](https://quote.eastmoney.com/hk/02513.html)（GLM 系列基座大模型，2026 年 1 月港交所上市，"全球大模型第一股"）
-- [MiniMax（稀宇科技）](https://www.minimaxi.com) · [实时股价](https://quote.eastmoney.com/hk/00100.html)（全模态大模型，2026 年 1 月港交所上市）
-- [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) · [实时股价](https://quote.eastmoney.com/hk/09988.html)（Qwen 系列开放权重大模型）
-- [腾讯 · 混元](https://hunyuan.tencent.com) · [实时股价](https://quote.eastmoney.com/hk/00700.html)
-- [百度 · 文心](https://yiyan.baidu.com) · [实时股价](https://quote.eastmoney.com/hk/09888.html)
-- [字节跳动 · 豆包](https://www.doubao.com)（未上市）
-- [深度求索 DeepSeek](https://www.deepseek.com)（DeepSeek-V3/R1，MoE 与 RL 训练，未上市）
-- [月之暗面 Kimi](https://www.moonshot.cn)（长上下文模型，未上市）
-- [Manus（蝴蝶效应）](https://manus.im)（通用 AI Agent，自主多步任务执行，未上市）
+- [智谱 AI（Z.ai）](https://www.zhipuai.cn) <span class="sq" data-stock="hk:02513"></span>
+- [MiniMax（稀宇科技）](https://www.minimaxi.com) <span class="sq" data-stock="hk:00100"></span>
+- [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) <span class="sq" data-stock="hk:09988"></span>
+- [腾讯 · 混元](https://hunyuan.tencent.com) <span class="sq" data-stock="hk:00700"></span>
+- [百度 · 文心](https://yiyan.baidu.com) <span class="sq" data-stock="hk:09888"></span>
+- [字节跳动 · 豆包](https://www.doubao.com) <span class="sq-none">未上市</span>
+- [深度求索 DeepSeek](https://www.deepseek.com) <span class="sq-none">未上市</span>
+- [月之暗面 Kimi](https://www.moonshot.cn) <span class="sq-none">未上市</span>
+- [Manus（蝴蝶效应）](https://manus.im) <span class="sq-none">未上市</span>
 
 **国外**
 
-- [NVIDIA](https://www.nvidia.com) · [实时股价](https://finance.yahoo.com/quote/NVDA)（GPU 与 CUDA，AI 训练/推理算力底座）
-- [Google DeepMind](https://deepmind.google) · [实时股价](https://finance.yahoo.com/quote/GOOGL)（Gemini · AlphaFold，母公司 Alphabet 上市）
-- [Meta AI](https://ai.meta.com) · [实时股价](https://finance.yahoo.com/quote/META)（Llama 开放权重 · PyTorch · JEPA）
-- [OpenAI](https://openai.com)（GPT/o 系列，未上市）
-- [Anthropic](https://www.anthropic.com)（Claude 系列 · 宪法 AI · 可解释性，未上市）
-- [Cognition](https://cognition.ai)（Devin AI 软件工程师，L3 代码 Agent，未上市）
-- [Together AI](https://www.together.ai)（开源模型推理云 · FlashAttention/推理引擎，未上市）
-- [Scale AI](https://scale.com)（AI 训练数据与标注 · 合成数据，Meta 持股、未上市）
-- [World Labs](https://www.worldlabs.ai)（空间智能 · 世界模型 Marble，李飞飞创立、未上市）
-- [Mistral AI](https://mistral.ai)（欧洲开放权重代表，未上市）
+- [NVIDIA](https://www.nvidia.com) <span class="sq" data-stock="us:NVDA"></span>
+- [Google DeepMind](https://deepmind.google) <span class="sq" data-stock="us:GOOGL"></span>
+- [Meta AI](https://ai.meta.com) <span class="sq" data-stock="us:META"></span>
+- [OpenAI](https://openai.com) <span class="sq-none">未上市</span>
+- [Anthropic](https://www.anthropic.com) <span class="sq-none">未上市</span>
+- [Cognition](https://cognition.ai) <span class="sq-none">未上市</span>
+- [Together AI](https://www.together.ai) <span class="sq-none">未上市</span>
+- [Scale AI](https://scale.com) <span class="sq-none">未上市</span>
+- [World Labs](https://www.worldlabs.ai) <span class="sq-none">未上市</span>
+- [Mistral AI](https://mistral.ai) <span class="sq-none">未上市</span>
 
 ### 科研院所
 
