@@ -287,6 +287,10 @@ graph LR
 
     射频/毫米波/太赫兹器件电路与系统 · 高速接口与芯粒封装 · ML 辅助 IC 设计
 
+-   **[赵博](https://person.zju.edu.cn/zhaobo)** <span class="badge-other">浙大</span>
+
+    超低功耗 CMOS 无线收发芯片 · 片上天线微型 Radio（ISSCC 最小芯片） · 物联网/生物医疗 RF SoC
+
 -   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
 
     数字化射频 IC（Digital-RF） · 新型相控阵芯片 · 毫米波数字雷达 · ADPLL/数字 PA
@@ -294,6 +298,10 @@ graph LR
 -   **[林福江](https://sme.ustc.edu.cn/2022/0601/c30996a556921/page.htm)** <span class="badge-other">中科大</span>
 
     超低噪声毫米波射频前端 · GaN 第三代器件 MMIC · 射频器件建模
+
+-   **[楼立恒](https://sme.ustc.edu.cn/2024/0225/c31014a630510/page.htm)** <span class="badge-other">中科大</span>
+
+    RF/毫米波收发电路与系统 · 全数字锁相环与频率综合 · 相控阵/MIMO IC 架构数字化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
