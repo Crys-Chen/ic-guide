@@ -902,15 +902,6 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      知识路径
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
       代表性机构
     </span>
   </a>
@@ -919,7 +910,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       企业
     </span>
@@ -928,7 +919,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       科研院所
     </span>
@@ -942,9 +933,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       顶会顶刊
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识路径
     </span>
   </a>
   
@@ -12460,15 +12460,6 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      知识路径
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
       代表性机构
     </span>
   </a>
@@ -12477,7 +12468,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       企业
     </span>
@@ -12486,7 +12477,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       科研院所
     </span>
@@ -12500,9 +12491,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       顶会顶刊
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识路径
     </span>
   </a>
   
@@ -12625,45 +12625,11 @@
 <li><strong>稀疏计算的映射</strong>：图计算、推荐模型等稀疏工作负载如何在 CIM/PIM 硬件上高效映射，避免大量单元空转？</li>
 <li><strong>硬件-算法协同</strong>：量化精度约束与存储阵列拓扑如何反过来指导神经网络结构搜索与训练策略？</li>
 </ul>
-<h2 id="_4">知识路径</h2>
-<pre class="mermaid"><code>graph TB
-    subgraph CIM["存算一体路径"]
-        direction LR
-        A1["模拟电路"] --&gt; A2["模拟IC设计"] --&gt; A3["ADC/DAC"] --&gt; A4["CIM电路设计"]
-    end
-
-    subgraph PIM["近存计算路径"]
-        direction LR
-        B1["计算机系统基础"] --&gt; B2["体系结构\n内存系统"] --&gt; B3["近存计算\n架构设计"]
-    end
-
-    subgraph Dev["器件基础（共享）"]
-        C1["半导体器件\n忆阻器·FeRAM·SRAM"]
-    end
-
-    C1 --&gt; A4
-    A4 &amp; B3 --&gt; D["CIM/PIM系统集成"]
-
-    classDef cim fill:#E6FFEC,stroke:#276749
-    classDef pim fill:#EBF4FF,stroke:#2C5282
-    classDef dev fill:#FDE8D8,stroke:#C0530A
-    class A1,A2,A3,A4 cim
-    class B1,B2,B3 pim
-    class C1 dev</code></pre>
-<p>图中的节点对应学习地图中的以下板块（点击进入，按需选修）：</p>
-<ul>
-<li>CIM 路径 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路（模拟方向）</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a></li>
-<li>PIM 路径 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构（体系结构方向）</a></li>
-<li>算法协同 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能（AI系统）</a></li>
-</ul>
-<blockquote>
-<p>图示为前置知识学习顺序；进入研究的起点见下方「入门三步走」，两者不需要顺序完成。</p>
-</blockquote>
-<h2 id="_5">代表性机构</h2>
+<h2 id="_4">代表性机构</h2>
 <blockquote>
 <p>这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。</p>
 </blockquote>
-<h3 id="_6">企业</h3>
+<h3 id="_5">企业</h3>
 <table>
 <thead>
 <tr>
@@ -12750,7 +12716,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_7">科研院所</h3>
+<h3 id="_6">科研院所</h3>
 <table>
 <thead>
 <tr>
@@ -12792,7 +12758,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_8">顶会顶刊</h2>
+<h2 id="_7">顶会顶刊</h2>
 <table>
 <thead>
 <tr>
@@ -12864,6 +12830,40 @@
 </tr>
 </tbody>
 </table>
+<h2 id="_8">知识路径</h2>
+<pre class="mermaid"><code>graph TB
+    subgraph CIM["存算一体路径"]
+        direction LR
+        A1["模拟电路"] --&gt; A2["模拟IC设计"] --&gt; A3["ADC/DAC"] --&gt; A4["CIM电路设计"]
+    end
+
+    subgraph PIM["近存计算路径"]
+        direction LR
+        B1["计算机系统基础"] --&gt; B2["体系结构\n内存系统"] --&gt; B3["近存计算\n架构设计"]
+    end
+
+    subgraph Dev["器件基础（共享）"]
+        C1["半导体器件\n忆阻器·FeRAM·SRAM"]
+    end
+
+    C1 --&gt; A4
+    A4 &amp; B3 --&gt; D["CIM/PIM系统集成"]
+
+    classDef cim fill:#E6FFEC,stroke:#276749
+    classDef pim fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    class A1,A2,A3,A4 cim
+    class B1,B2,B3 pim
+    class C1 dev</code></pre>
+<p>图中的节点对应学习地图中的以下板块（点击进入，按需选修）：</p>
+<ul>
+<li>CIM 路径 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路（模拟方向）</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a></li>
+<li>PIM 路径 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构（体系结构方向）</a></li>
+<li>算法协同 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能（AI系统）</a></li>
+</ul>
+<blockquote>
+<p>图示为前置知识的学习顺序，按需选修，不必全部学完再进入研究。</p>
+</blockquote>
 <h2 id="_9">相关课题组</h2>
 <h3 id="_10">境内</h3>
 <div class="grid cards prof-collapse">
