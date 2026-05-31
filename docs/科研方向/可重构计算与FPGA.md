@@ -193,6 +193,10 @@ graph LR
 
     FPGA 加速器 · FPGA SmartNIC（FpgaNIC） · 超异构计算平台
 
+-   **[卢丽强（Liqiang Lu）](https://person.zju.edu.cn/liqianglu)** <span class="badge-other">浙大</span>
+
+    FPGA 稀疏神经网络加速器（SpWA/Speedy） · 张量加速与软硬件协同 · 体系结构与 EDA
+
 -   **[周学海](https://cs.ustc.edu.cn/2020/0827/c23235a460092/page.htm)** <span class="badge-other">中科大</span>
 
     可重构系统 · 面向特定应用的硬件加速 · 异构多核体系结构
@@ -200,6 +204,10 @@ graph LR
 -   **[王超](https://faculty.ustc.edu.cn/cswang/zh_CN/index.htm)** <span class="badge-other">中科大</span>
 
     FPGA 可重构计算 · 智能处理器 · 深度学习加速系统
+
+-   **[李丽](https://ese.nju.edu.cn/74/10/c22629a357392/page.psp)** <span class="badge-other">南大</span> <span class="prof-w"></span>
+
+    可重构计算 · 多/众核处理芯片体系结构 · 三维片上网络（3D NoC）
 
 -   **[娄鑫](https://sist.shanghaitech.edu.cn/louxin/main.htm)** <span class="badge-other">上科大</span>
 

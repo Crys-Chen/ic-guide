@@ -246,6 +246,14 @@ graph LR
 
     精密传感接口芯片 · 超高分辨率 ΔΣ/Zoom ADC · 微能量采集与电源管理
 
+-   **[王国兴](https://icisee.sjtu.edu.cn/jiaoshiml/wangguoxing.html)** <span class="badge-other">交大</span>
+
+    超低功耗数模混合 IC · 智能脑机接口芯片 · 生物医疗模拟前端（ISSCC/JSSC）
+
+-   **[李永福](https://icisee.sjtu.edu.cn/jiaoshiml/liyongfu.html)** <span class="badge-other">交大</span>
+
+    模拟/混合信号 IC · 数据转换器（CT ΔΣ/时间交织 ADC）· 电源转换器与 AI 辅助 EDA
+
 -   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
 
     亚采样 PLL（Sub-Sampling PLL 发明人）· 射频/模数混合信号 IC · ISSCC 多篇
@@ -261,6 +269,10 @@ graph LR
 -   **[赵梦恋](https://person.zju.edu.cn/zhaomenglian)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
 
     数模混合 IC · 高精度低功耗数据转换芯片 · 电源管理 IC
+
+-   **[何乐年](https://person.zju.edu.cn/0099103)** <span class="badge-other">浙大</span>
+
+    模拟与混合信号 IC · 高速高精度 ADC/DAC · CMOS 图像传感器读出 · 电源管理芯片
 
 -   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
 
