@@ -114,52 +114,58 @@ hide:
 
 ### 企业
 
-**国内**
-
-- [智谱 AI（Z.ai）](https://www.zhipuai.cn) <span class="sq" data-stock="hk:02513"></span>
-- [MiniMax（稀宇科技）](https://www.minimaxi.com) <span class="sq" data-stock="hk:00100"></span>
-- [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) <span class="sq" data-stock="hk:09988"></span>
-- [腾讯 · 混元](https://hunyuan.tencent.com) <span class="sq" data-stock="hk:00700"></span>
-- [百度 · 文心](https://yiyan.baidu.com) <span class="sq" data-stock="hk:09888"></span>
-- [字节跳动 · 豆包](https://www.doubao.com) <span class="sq-none">未上市</span>
-- [深度求索 DeepSeek](https://www.deepseek.com) <span class="sq-none">未上市</span>
-- [月之暗面 Kimi](https://www.moonshot.cn) <span class="sq-none">未上市</span>
-- [Manus（蝴蝶效应）](https://manus.im) <span class="sq-none">未上市</span>
-
-**国外**
-
-- [NVIDIA](https://www.nvidia.com) <span class="sq" data-stock="us:NVDA"></span>
-- [Google DeepMind](https://deepmind.google) <span class="sq" data-stock="us:GOOGL"></span>
-- [Meta AI](https://ai.meta.com) <span class="sq" data-stock="us:META"></span>
-- [OpenAI](https://openai.com) <span class="sq-none">未上市</span>
-- [Anthropic](https://www.anthropic.com) <span class="sq-none">未上市</span>
-- [Cognition](https://cognition.ai) <span class="sq-none">未上市</span>
-- [Together AI](https://www.together.ai) <span class="sq-none">未上市</span>
-- [Scale AI](https://scale.com) <span class="sq-none">未上市</span>
-- [World Labs](https://www.worldlabs.ai) <span class="sq-none">未上市</span>
-- [Mistral AI](https://mistral.ai) <span class="sq-none">未上市</span>
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [智谱 AI（Z.ai）](https://www.zhipuai.cn) | <span class="sq" data-stock="hk:02513"></span> |
+| 国内 | [MiniMax（稀宇科技）](https://www.minimaxi.com) | <span class="sq" data-stock="hk:00100"></span> |
+| 国内 | [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) | <span class="sq" data-stock="hk:09988"></span> |
+| 国内 | [腾讯 · 混元](https://hunyuan.tencent.com) | <span class="sq" data-stock="hk:00700"></span> |
+| 国内 | [百度 · 文心](https://yiyan.baidu.com) | <span class="sq" data-stock="hk:09888"></span> |
+| 国内 | [字节跳动 · 豆包](https://www.doubao.com) | <span class="sq-none">未上市</span> |
+| 国内 | [深度求索 DeepSeek](https://www.deepseek.com) | <span class="sq-none">未上市</span> |
+| 国内 | [月之暗面 Kimi](https://www.moonshot.cn) | <span class="sq-none">未上市</span> |
+| 国内 | [Manus（蝴蝶效应）](https://manus.im) | <span class="sq-none">未上市</span> |
+| 国外 | [NVIDIA](https://www.nvidia.com) | <span class="sq" data-stock="us:NVDA"></span> |
+| 国外 | [Google DeepMind](https://deepmind.google) | <span class="sq" data-stock="us:GOOGL"></span> |
+| 国外 | [Meta AI](https://ai.meta.com) | <span class="sq" data-stock="us:META"></span> |
+| 国外 | [OpenAI](https://openai.com) | <span class="sq-none">未上市</span> |
+| 国外 | [Anthropic](https://www.anthropic.com) | <span class="sq-none">未上市</span> |
+| 国外 | [Cognition](https://cognition.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Together AI](https://www.together.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Scale AI](https://scale.com) | <span class="sq-none">未上市</span> |
+| 国外 | [World Labs](https://www.worldlabs.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Mistral AI](https://mistral.ai) | <span class="sq-none">未上市</span> |
 
 ### 科研院所
 
-**国内**
-
-- [上海人工智能实验室](https://www.shlab.org.cn) — "书生"大模型 · 多模态与通用人工智能
-- [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) — 悟道大模型 · BGE 检索 · FlagEval 评测开源生态
-- [之江实验室](https://www.zhejianglab.org) — 智能计算 · AI for Science · 算力基础设施
-- [中科院自动化研究所](https://www.ia.cas.cn) — 多模态大模型（紫东太初）· 决策智能
-
-**国外**
-
-- [MIT CSAIL](https://www.csail.mit.edu) — 高效深度学习 · ML 系统 · AI 算法基础研究
-- [Stanford HAI](https://hai.stanford.edu) — 基础模型评测（HELM）· 以人为本 AI · AI Index
-- [Meta FAIR](https://ai.meta.com/research/) — 开源大模型与基础研究 · PyTorch
-- [Allen Institute for AI（Ai2）](https://allenai.org) — 全开源大模型（OLMo）· AI for Science
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
+| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
+| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
+| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
+| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
+| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
+| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
+| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |
 
 ## 顶会顶刊
 
-**顶会**：NeurIPS · ICML · ICLR · CVPR · ICCV · ACL · EMNLP · AAAI · MLSys · OSDI
-
-**顶刊**：JMLR（机器学习）· TPAMI（IEEE Trans. Pattern Analysis and Machine Intelligence）· Nature Machine Intelligence
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | NeurIPS | 神经信息处理系统大会 |
+| 顶会 | ICML | 国际机器学习大会 |
+| 顶会 | ICLR | 国际学习表征会议 |
+| 顶会 | CVPR | IEEE 计算机视觉与模式识别会议 |
+| 顶会 | ICCV | 国际计算机视觉大会 |
+| 顶会 | ACL | 国际计算语言学协会年会 |
+| 顶会 | EMNLP | 自然语言处理经验方法会议 |
+| 顶会 | AAAI | 美国人工智能协会会议 |
+| 顶会 | MLSys | 机器学习与系统会议 |
+| 顶会 | OSDI | 操作系统设计与实现研讨会 |
+| 顶刊 | JMLR | 机器学习研究汇刊（机器学习） |
+| 顶刊 | TPAMI | IEEE 模式分析与机器智能汇刊 |
+| 顶刊 | Nature Machine Intelligence | 《自然·机器智能》 |
 
 ## 知识路径
 
