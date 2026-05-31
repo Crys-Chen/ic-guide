@@ -206,7 +206,7 @@ graph LR
 
     高速高精度 ADC · 混合信号 IC · RFID 国家标准
 
--   **[李宇根（Woogeun Rhee）](https://www.sic.tsinghua.edu.cn/info/1014/1809.htm)** <span class="badge-tsinghua">清华</span>
+-   **[李宇根（Woogeun Rhee）](https://www.x-mol.com/university/faculty/243668)** <span class="badge-tsinghua">清华</span>
 
     低相噪 PLL · 小数分频锁相环 · 混合信号时钟电路
 
@@ -218,7 +218,7 @@ graph LR
 
     混合信号 IC · AI 芯片 · 存算一体 AIoT 芯片
 
--   **[时龙兴](http://asic.seu.edu.cn/)** <span class="badge-other">东南大学</span>
+-   **[时龙兴](https://ic.seu.edu.cn/shilongxing/main.htm)** <span class="badge-other">东南大学</span>
 
     混合信号 IC · SAR ADC 架构 · 高速接口电路
 
@@ -333,11 +333,11 @@ graph LR
 
     PLL/CDR · 超低功耗 SerDes · 数字辅助模拟电路
 
--   **[Michael Flynn](https://web.eecs.umich.edu/~mpflynn/)** <span class="badge-intl">密歇根大学</span>
+-   **[Michael Flynn](https://web.eecs.umich.edu/~mpflynn/)** <span class="badge-intl">U Michigan</span>
 
     SAR ADC 架构创新 · 时间交织 ADC 校准 · 低功耗数据转换器
 
--   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/alon.html)** <span class="badge-intl">UC Berkeley</span>
+-   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
 
     高速 SerDes · 低功耗 I/O 互联 · 混合信号接口电路
 

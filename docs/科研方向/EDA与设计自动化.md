@@ -282,15 +282,15 @@ graph LR
 
     AI 辅助 EDA · LLM for RTL 生成 · 时序分析
 
--   **[Bei Yu（余备）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">CUHK</span>
+-   **[Bei Yu（余备）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">港中大</span>
 
     ML + EDA · 光刻热点检测 · 布局布线优化
 
--   **[Tsung-Yi Ho（何宗易）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/)** <span class="badge-hk">CUHK</span>
+-   **[Tsung-Yi Ho（何宗易）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/)** <span class="badge-hk">港中大</span>
 
     3D IC/先进封装 EDA · Chiplet 设计自动化
 
--   **[Qiang Xu（徐强）](https://www.cse.cuhk.edu.hk/~qxu/)** <span class="badge-hk">CUHK</span>
+-   **[Qiang Xu（徐强）](https://www.cse.cuhk.edu.hk/~qxu/)** <span class="badge-hk">港中大</span>
 
     EDA 测试与验证 · 硬件安全 · 近似计算
 

@@ -224,11 +224,11 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     神经网络量化 · 高效机器学习 · 随机优化算法
 
--   **[曹婷](https://air.tsinghua.edu.cn/en/info/1046/1941.htm)** <span class="badge-tsinghua">清华 AIR</span> <span class="prof-w"></span>
+-   **[曹婷](https://air.tsinghua.edu.cn/en/info/1046/1941.htm)** <span class="badge-tsinghua">清华</span> <span class="prof-w"></span>
 
     边缘 AI · 神经网络推理系统 · AI 加速器 · 基础模型算法
 
--   **[吴翼](https://jxwuyi.weebly.com/)** <span class="badge-tsinghua">清华 IIIS</span>
+-   **[吴翼](https://jxwuyi.weebly.com/)** <span class="badge-tsinghua">清华</span>
 
     大规模强化学习 · LLM 对齐 · 多智能体系统
 
@@ -280,7 +280,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     端云协同分布式 ML · 垂域基础模型 · AI 系统平台
 
--   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院计算所</span>
+-   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院</span>
 
     深度学习专用处理器 · 神经网络指令集（寒武纪）· 存算协同架构
 
@@ -300,16 +300,16 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     机器学习理论 · 集成学习 · 弱监督学习 · 机器学习+逻辑推理（反绎学习）
 
--   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
-
-    LLM Agent · 代码生成（Spider/SWE） · 计算机使用智能体（OSWorld）
-
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
 ### 境外
 
 <div class="grid cards prof-collapse" markdown>
+
+-   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
+
+    LLM Agent · 代码生成（Spider/SWE） · 计算机使用智能体（OSWorld）
 
 -   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
 
@@ -391,7 +391,7 @@ RL/Agent/LLM 三条路各有不同的研究文化和发表节奏。建议先读 
 
     模型压缩与量化 · 高效深度学习 · 联邦学习
 
--   **[Xiaowen Chu（褚晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大（广州）</span>
+-   **[Xiaowen Chu（褚晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大</span>
 
     ML 系统 · GPU 计算 · LLM 稀疏推理
 

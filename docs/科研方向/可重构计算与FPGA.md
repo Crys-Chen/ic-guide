@@ -177,7 +177,7 @@ graph LR
 
     模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
 
--   **[戴国浩](https://nicsefc.ee.tsinghua.edu.cn/people/GuohaoDai)** <span class="badge-other">上海交大</span>
+-   **[戴国浩](https://nicsefc.ee.tsinghua.edu.cn/people/GuohaoDai)** <span class="badge-other">交大</span>
 
     稀疏计算软硬件协同 · LLM 推理加速器（FlightLLM） · FPGA/GPU 异构
 

@@ -206,7 +206,7 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     物理量 MEMS 传感器（声矢量传感器、流量、压力） · 惯性传感器
 
--   **[张海霞](https://ic.pku.edu.cn/szdw/zzjs/jcwnxtx1/zhx/index.htm)** <span class="badge-pku">北大</span> <span class="prof-w"></span>
+-   **[张海霞](https://ic.pku.edu.cn/szdw/zzjs/Z1/zhx/index.htm)** <span class="badge-pku">北大</span> <span class="prof-w"></span>
 
     微纳系统 · MEMS 微能源（压电/摩擦纳米发电机） · 微纳制造
 

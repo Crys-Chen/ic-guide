@@ -207,7 +207,7 @@ graph LR
 
     射频/混合信号 IC · RFID 芯片 · 高速高精度 ADC
 
--   **[李宇根（Woogeun Rhee）](https://www.sic.tsinghua.edu.cn/info/1014/1809.htm)** <span class="badge-tsinghua">清华</span>
+-   **[李宇根（Woogeun Rhee）](https://www.x-mol.com/university/faculty/243668)** <span class="badge-tsinghua">清华</span>
 
     PLL/频率综合器 · 射频混合信号 IC · 毫米波时钟系统
 
