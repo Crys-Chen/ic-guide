@@ -134,9 +134,11 @@ graph LR
 
 如果你对 AI 感兴趣但不确定从哪里切入，TinyML 是最自然的起点：量化和剪枝的问题，你的硬件背景会让你比纯软件同学理解得更深，而且这类工作可以同时被 AI 顶会和硬件顶会接收，选题灵活度高。如果你更想做系统侧（vLLM 类的推理框架优化），计算机系统的基础（操作系统、并行计算）是必要储备。如果你对 RL 和 Agent 感兴趣，要做好心理准备：这条路的基础数学要求更高，且研究风格更接近 CS 理论，和 EE 背景的距离稍远一些。
 
-## 学术界课题组
+## 学术界
 
-### 境内
+### 课题组
+
+**境内**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -235,7 +237,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 境外
+**境外**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -342,20 +344,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
-| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
-| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
-| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
-| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
-| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
-| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
-| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |
-
-### 顶会顶刊
+### 学术会议与期刊
 
 | 类型 | 名称 | 说明 |
 |---|---|---|
@@ -376,6 +365,8 @@ graph LR
 ## 业界机构
 
 > 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
 
 | 地区 | 公司 | 上市 / 股价 |
 |---|---|---|
@@ -398,3 +389,16 @@ graph LR
 | 国外 | [Scale AI](https://scale.com) | <span class="sq-none">未上市</span> |
 | 国外 | [World Labs](https://www.worldlabs.ai) | <span class="sq-none">未上市</span> |
 | 国外 | [Mistral AI](https://mistral.ai) | <span class="sq-none">未上市</span> |
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
+| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
+| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
+| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
+| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
+| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
+| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
+| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |

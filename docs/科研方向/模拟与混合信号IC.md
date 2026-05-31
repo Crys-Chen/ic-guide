@@ -114,9 +114,11 @@ graph LR
 
 你需要对噪声理论（热噪声、闪烁噪声、相位噪声）和线性系统分析（传递函数、稳定性、相位裕量）有扎实掌握，同时具备从 S 参数、ENOB、FoM 这些指标上快速判断电路设计好坏的感觉。如果你喜欢数字验证流程（写 RTL、跑 EDA 工具链）远多于对着运放波形思考，这个方向可能并不是最舒适的选择。该方向对动手能力要求高，但"动手"主要体现在仿真精细度和芯片测试，而非大量编程或机器学习实验。
 
-## 学术界课题组
+## 学术界
 
-### 境内
+### 课题组
+
+**境内**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -235,7 +237,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 境外
+**境外**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -298,20 +300,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 数据转换器、高速接口与混合信号 IC 工艺与设计 |
-| 国内 | [中科院上海微系统所](https://www.sim.cas.cn/) | 传感器读出电路与微系统集成 |
-| 国内 | [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) | DDR5、高速 SerDes 等高端接口 IP |
-| 国内 | [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) | 先进工艺平台与模拟/混合信号 IP |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 先进 CMOS 工艺下的数据转换器与高速 I/O 研究 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 高速 SerDes、ADC 与混合信号系统 |
-| 国外 | [Stanford SystemX Alliance](https://systemx.stanford.edu/) | 从器件到系统的混合信号集成研究 |
-| 国外 | [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) | 模拟器件与精密测量 |
-
-### 顶会顶刊
+### 学术会议与期刊
 
 | 类型 | 名称 | 说明 |
 |---|---|---|
@@ -327,6 +316,8 @@ graph LR
 ## 业界机构
 
 > 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
 
 | 地区 | 公司 | 上市 / 股价 |
 |---|---|---|
@@ -345,3 +336,16 @@ graph LR
 | 国外 | [Marvell（数据中心高速互连）](https://www.marvell.com/) | <span class="sq" data-stock="us:MRVL"></span> |
 | 国外 | [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) | <span class="sq" data-stock="us:CRDO"></span> |
 | 国外 | [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) | <span class="sq" data-stock="us:ALAB"></span> |
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 数据转换器、高速接口与混合信号 IC 工艺与设计 |
+| 国内 | [中科院上海微系统所](https://www.sim.cas.cn/) | 传感器读出电路与微系统集成 |
+| 国内 | [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) | DDR5、高速 SerDes 等高端接口 IP |
+| 国内 | [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) | 先进工艺平台与模拟/混合信号 IP |
+| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 先进 CMOS 工艺下的数据转换器与高速 I/O 研究 |
+| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 高速 SerDes、ADC 与混合信号系统 |
+| 国外 | [Stanford SystemX Alliance](https://systemx.stanford.edu/) | 从器件到系统的混合信号集成研究 |
+| 国外 | [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) | 模拟器件与精密测量 |

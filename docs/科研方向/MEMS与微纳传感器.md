@@ -111,9 +111,11 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 仿真驱动型的同学可以专注于 MEMS 系统建模和等效电路分析，不必亲手做所有工艺，但理解工艺约束对设计的影响是必须的，否则仿真结论很难落到可制造的结构上。不太适合的情况：如果你对物理世界的感知和机械结构完全没有兴趣，纯粹只想做数字芯片或算法，MEMS 的研究氛围和关注点会显得相当陌生；而且这个方向的论文发表周期（从器件设计到工艺验证到测试）通常比纯仿真方向长，适合有耐心做完整实验闭环的研究者。
 
-## 学术界课题组
+## 学术界
 
-### 境内
+### 课题组
+
+**境内**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -212,7 +214,7 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 境外
+**境外**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -255,20 +257,7 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
-| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
-| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
-| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
-| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
-| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
-| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
-| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |
-
-### 顶会顶刊
+### 学术会议与期刊
 
 | 类型 | 名称 | 说明 |
 |---|---|---|
@@ -286,6 +275,8 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 ## 业界机构
 
 > 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
 
 | 地区 | 公司 | 上市 / 股价 |
 |---|---|---|
@@ -305,3 +296,16 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 | 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
 | 国外 | [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) | <span class="sq" data-stock="us:MCHP"></span> |
 | 国外 | [Honeywell](https://www.honeywell.com/) | <span class="sq" data-stock="us:HON"></span> |
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
+| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
+| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
+| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
+| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
+| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
+| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
+| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |

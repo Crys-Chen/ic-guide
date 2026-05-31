@@ -137,9 +137,11 @@ graph LR
 
 相比模拟方向，这个方向对电磁场理论的要求更高，同时对系统链路预算（link budget）的理解也是必须的。如果你对数学建模更感兴趣而不喜欢和测试仪器打交道，或者希望做更多软件/算法工作，这个方向可能不是最佳匹配。该方向与国防、雷达、卫星通信行业联系紧密，就业面宽，但学习曲线相对陡峭。
 
-## 学术界课题组
+## 学术界
 
-### 境内
+### 课题组
+
+**境内**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -246,7 +248,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 境外
+**境外**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -281,18 +283,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) | 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统 |
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 毫米波/射频 CMOS 收发机与前端集成 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 宽带无线通信与高速射频系统 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 毫米波 CMOS 收发机、5G/6G 无线系统 |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 毫米波相控阵、5G/6G 射频前端 |
-| 国外 | [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) | III-V/GaN 毫米波与太赫兹 MMIC |
-
-### 顶会顶刊
+### 学术会议与期刊
 
 | 类型 | 名称 | 说明 |
 |---|---|---|
@@ -309,6 +300,8 @@ graph LR
 ## 业界机构
 
 > 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+### 企业
 
 | 地区 | 公司 | 上市 / 股价 |
 |---|---|---|
@@ -327,3 +320,14 @@ graph LR
 | 国外 | [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) | <span class="sq" data-stock="us:MTSI"></span> |
 | 国外 | [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) | <span class="sq" data-stock="us:NXPI"></span> |
 | 国外 | [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) | <span class="sq" data-stock="us:IFNNY"></span> |
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) | 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统 |
+| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 毫米波/射频 CMOS 收发机与前端集成 |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 宽带无线通信与高速射频系统 |
+| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 毫米波 CMOS 收发机、5G/6G 无线系统 |
+| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 毫米波相控阵、5G/6G 射频前端 |
+| 国外 | [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) | III-V/GaN 毫米波与太赫兹 MMIC |

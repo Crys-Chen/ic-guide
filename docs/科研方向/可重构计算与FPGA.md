@@ -88,9 +88,11 @@ graph LR
 
 国内在 FPGA 方向有真实产业需求：复旦微电子、安路科技、高云半导体都在做自主 FPGA 芯片，清华、复旦有相关课题组直接与产业合作，这意味着学术研究成果有相对清晰的落地路径。
 
-## 学术界课题组
+## 学术界
 
-### 境内
+### 课题组
+
+**境内**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -157,7 +159,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 境外
+**境外**
 
 <div class="grid cards prof-collapse" markdown>
 
@@ -212,18 +214,7 @@ graph LR
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
-| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
-| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
-| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
-| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
-
-### 顶会顶刊
+### 学术会议与期刊
 
 | 类型 | 名称 | 说明 |
 |---|---|---|
@@ -243,6 +234,8 @@ graph LR
 
 > 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
 
+### 企业
+
 | 地区 | 公司 | 上市 / 股价 |
 |---|---|---|
 | 国内 | [复旦微电子（FMSH）](https://www.fmsh.com/) | <span class="sq" data-stock="sh:688385"></span> |
@@ -257,3 +250,14 @@ graph LR
 | 国外 | [QuickLogic](https://www.quicklogic.com/) | <span class="sq" data-stock="us:QUIK"></span> |
 | 国外 | [Microsoft](https://www.microsoft.com/) | <span class="sq" data-stock="us:MSFT"></span> |
 | 国外 | [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) | <span class="sq" data-stock="us:AMZN"></span> |
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
+| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
+| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
+| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
+| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
