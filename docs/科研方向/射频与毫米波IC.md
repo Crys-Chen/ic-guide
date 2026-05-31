@@ -102,71 +102,14 @@ hide:
 
 自动驾驶把射频研究又拉向了新的应用场景。77 GHz FMCW（调频连续波）雷达通过发射一段线性调频的毫米波信号，分析回波的频率偏移来精确计算目标的距离和速度，在雨、雾、雪中性能远超摄像头。这类雷达的前端就是一块完整的毫米波 SoC，集成了发射机、接收机和模数转换器。更远处是太赫兹（300 GHz 以上），这个频段此前因为缺乏可用的有源器件几乎无人问津，但近年 ISSCC 上出现了越来越多用标准 CMOS 工艺实现的太赫兹收发机，把电路设计的边界又向前推了一步。研究者的日常工作是：在 Cadence Virtuoso 里搭电路、跑 SpectreRF 仿真，在电磁仿真软件里优化天线和传输线版图，最终送流片，在专用测试台上用频谱仪和网络分析仪测量真实芯片性能。
 
-## 适合什么样的人
-
-这个方向强烈适合对"高频物理"和"电磁直觉"有天然兴趣的人。你需要习惯用 S 参数而非电压增益来描述电路，能从史密斯圆图上读出阻抗匹配状态，理解为什么几十微米的走线在毫米波频段会变成一根天线。如果你觉得"信号从天线到基带要经过哪些变换"这个问题本身令你着迷，大概率会喜欢这个方向。
-
-日常工作节奏是：Cadence Virtuoso 搭晶体管级电路 → SpectreRF 做 S 参数/噪声/非线性仿真 → Ansys HFSS 或 Momentum 做电磁仿真优化片上传输线和天线 → 版图 → 流片 → 用矢量网络分析仪（VNA）、频谱仪、噪声系数仪在探针台上测量芯片。流片周期长（通常半年以上），测试窗口短，需要极强的耐心和精细的测试方案设计能力。
-
-相比模拟方向，这个方向对电磁场理论的要求更高，同时对系统链路预算（link budget）的理解也是必须的。如果你对数学建模更感兴趣而不喜欢和测试仪器打交道，或者希望做更多软件/算法工作，这个方向可能不是最佳匹配。该方向与国防、雷达、卫星通信行业联系紧密，就业面宽，但学习曲线相对陡峭。
-
-## 核心研究问题
+### 核心研究问题
 
 - **毫米波路径损耗**：频率越高，空间损耗越大，如何用有限功耗维持链路预算？
 - **功率效率**：功率放大器（PA）的效率在毫米波频段急剧下降，如何设计高效率 PA？
 - **相控阵集成**：5G/6G 需要数百个天线单元的相控阵，如何将波束赋形电路集成在单芯片上？
 - **太赫兹**：300 GHz 以上频段的有源器件设计是前沿挑战，标准 CMOS 能走多远？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [卓胜微](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
-| 国内 | [唯捷创芯](https://www.vanchip.com/) | <span class="sq" data-stock="sh:688153"></span> |
-| 国内 | [翱捷科技（ASR）](https://www.asrmicro.com/) | <span class="sq" data-stock="sh:688220"></span> |
-| 国内 | [三安光电（三安集成 GaN/GaAs 射频）](https://www.sanan-e.com/) | <span class="sq" data-stock="sh:600703"></span> |
-| 国内 | [加特兰微电子（Calterah）](https://www.calterah.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [紫光展锐（UNISOC）](https://www.unisoc.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [华为海思（HiSilicon）](https://www.hisilicon.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [Qualcomm（高通）](https://www.qualcomm.com/) | <span class="sq" data-stock="us:QCOM"></span> |
-| 国外 | [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
-| 国外 | [Skyworks Solutions](https://www.skyworksinc.com/) | <span class="sq" data-stock="us:SWKS"></span> |
-| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
-| 国外 | [MediaTek（联发科）](https://www.mediatek.com/) | <span class="sq" data-stock="yf:2454.TW"></span> |
-| 国外 | [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) | <span class="sq" data-stock="us:MTSI"></span> |
-| 国外 | [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) | <span class="sq" data-stock="us:NXPI"></span> |
-| 国外 | [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) | <span class="sq" data-stock="us:IFNNY"></span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) | 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统 |
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 毫米波/射频 CMOS 收发机与前端集成 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 宽带无线通信与高速射频系统 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 毫米波 CMOS 收发机、5G/6G 无线系统 |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 毫米波相控阵、5G/6G 射频前端 |
-| 国外 | [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) | III-V/GaN 毫米波与太赫兹 MMIC |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | ISSCC | IEEE 国际固态电路会议 |
-| 顶会 | RFIC Symposium | IEEE 射频集成电路研讨会 |
-| 顶会 | IMS | IEEE MTT-S Int'l Microwave Symposium |
-| 顶会 | ESSERC | 欧洲固态电子电路会议（原 ESSCIRC） |
-| 顶会 | EuMW | 欧洲微波周（European Microwave Week） |
-| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
-| 顶刊 | T-MTT | IEEE Trans. Microwave Theory and Techniques |
-| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
-| 顶刊 | MWCL | IEEE Microwave and Wireless Components Letters |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -186,7 +129,16 @@ graph LR
 - [器件与工艺](../学习地图/器件与工艺/index.md)
 - [系统架构（信号与系统）](../学习地图/系统架构/index.md)
 
-## 相关课题组
+## 适合什么样的人
+
+这个方向强烈适合对"高频物理"和"电磁直觉"有天然兴趣的人。你需要习惯用 S 参数而非电压增益来描述电路，能从史密斯圆图上读出阻抗匹配状态，理解为什么几十微米的走线在毫米波频段会变成一根天线。如果你觉得"信号从天线到基带要经过哪些变换"这个问题本身令你着迷，大概率会喜欢这个方向。
+
+日常工作节奏是：Cadence Virtuoso 搭晶体管级电路 → SpectreRF 做 S 参数/噪声/非线性仿真 → Ansys HFSS 或 Momentum 做电磁仿真优化片上传输线和天线 → 版图 → 流片 → 用矢量网络分析仪（VNA）、频谱仪、噪声系数仪在探针台上测量芯片。流片周期长（通常半年以上），测试窗口短，需要极强的耐心和精细的测试方案设计能力。
+
+相比模拟方向，这个方向对电磁场理论的要求更高，同时对系统链路预算（link budget）的理解也是必须的。如果你对数学建模更感兴趣而不喜欢和测试仪器打交道，或者希望做更多软件/算法工作，这个方向可能不是最佳匹配。该方向与国防、雷达、卫星通信行业联系紧密，就业面宽，但学习曲线相对陡峭。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -329,3 +281,50 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [东南大学毫米波全国重点实验室](https://mmw.seu.edu.cn/) | 毫米波/亚毫米波核心器件与芯片、信息超材料、相控阵系统 |
+| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 毫米波/射频 CMOS 收发机与前端集成 |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 宽带无线通信与高速射频系统 |
+| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 毫米波 CMOS 收发机、5G/6G 无线系统 |
+| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 毫米波相控阵、5G/6G 射频前端 |
+| 国外 | [Fraunhofer IAF（德国应用固体物理研究所）](https://www.iaf.fraunhofer.de/en.html) | III-V/GaN 毫米波与太赫兹 MMIC |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | ISSCC | IEEE 国际固态电路会议 |
+| 顶会 | RFIC Symposium | IEEE 射频集成电路研讨会 |
+| 顶会 | IMS | IEEE MTT-S Int'l Microwave Symposium |
+| 顶会 | ESSERC | 欧洲固态电子电路会议（原 ESSCIRC） |
+| 顶会 | EuMW | 欧洲微波周（European Microwave Week） |
+| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
+| 顶刊 | T-MTT | IEEE Trans. Microwave Theory and Techniques |
+| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
+| 顶刊 | MWCL | IEEE Microwave and Wireless Components Letters |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [卓胜微](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
+| 国内 | [唯捷创芯](https://www.vanchip.com/) | <span class="sq" data-stock="sh:688153"></span> |
+| 国内 | [翱捷科技（ASR）](https://www.asrmicro.com/) | <span class="sq" data-stock="sh:688220"></span> |
+| 国内 | [三安光电（三安集成 GaN/GaAs 射频）](https://www.sanan-e.com/) | <span class="sq" data-stock="sh:600703"></span> |
+| 国内 | [加特兰微电子（Calterah）](https://www.calterah.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [紫光展锐（UNISOC）](https://www.unisoc.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [华为海思（HiSilicon）](https://www.hisilicon.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [Qualcomm（高通）](https://www.qualcomm.com/) | <span class="sq" data-stock="us:QCOM"></span> |
+| 国外 | [Broadcom（无线连接 / 射频前端）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
+| 国外 | [Skyworks Solutions](https://www.skyworksinc.com/) | <span class="sq" data-stock="us:SWKS"></span> |
+| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
+| 国外 | [MediaTek（联发科）](https://www.mediatek.com/) | <span class="sq" data-stock="yf:2454.TW"></span> |
+| 国外 | [MACOM（GaN MMIC · 相控阵雷达 · 卫星通信）](https://www.macom.com/) | <span class="sq" data-stock="us:MTSI"></span> |
+| 国外 | [NXP（77 GHz 车载雷达收发机）](https://www.nxp.com/) | <span class="sq" data-stock="us:NXPI"></span> |
+| 国外 | [Infineon（77/79 GHz 毫米波雷达 MMIC）](https://www.infineon.com/) | <span class="sq" data-stock="us:IFNNY"></span> |

@@ -75,75 +75,14 @@ hide:
 
 另一道边界来自材料本身。硅不兼容生命体，也不会弯曲，这两个限制把 MEMS 挡在人体和曲面之外。BioMEMS 绕过第一道墙，把结构材料换成 PDMS、水凝胶和可降解聚合物，这些材料柔软，能和组织长期共存，最终被人体吸收。植入式闭环神经接口读取脊髓信号、驱动肌肉电刺激，让截瘫患者重新控制肢体；organ-on-chip 在微流控芯片上重建肺、肝、肠的微环境，让药物毒性测试不再完全依赖动物实验。柔性 MEMS 绕过第二道墙。石墨烯和 MoS₂ 制成的 NEMS 薄膜只有 0.3 nm，能感知单个原子吸附引起的质量变化，也能共形贴附在曲面上；可拉伸版本贴在皮肤上持续监测电生理信号；可降解版本在体内完成诊断任务后被吸收，不需要二次手术取出。材料的边界，决定了 MEMS 能进的环境。
 
-## 适合什么样的人
-
-MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成：硅深刻蚀（DRIE）、薄膜沉积、释放刻蚀，以及用探针台或真空测试台对制备出来的微结构做电学和力学表征。如果你对亲手制作出一个肉眼看不见却能感知加速度或声波的微结构有强烈好奇心，这个方向的实验环节会很有吸引力。
-
-这个方向有一个独特之处：它要求同时懂力学和电学。固体力学（梁的弯曲、谐振模态）和电容传感原理需要一并掌握，而不是单纯的电路或单纯的材料背景。本科阶段如果同时接触过材料力学和模拟电路，会有很好的起步优势；如果只有纯电路背景，需要补充结构力学的基础。COMSOL 多物理场仿真是这个方向几乎必用的工具，提前熟悉会大幅降低入门门槛。
-
-仿真驱动型的同学可以专注于 MEMS 系统建模和等效电路分析，不必亲手做所有工艺，但理解工艺约束对设计的影响是必须的，否则仿真结论很难落到可制造的结构上。不太适合的情况：如果你对物理世界的感知和机械结构完全没有兴趣，纯粹只想做数字芯片或算法，MEMS 的研究氛围和关注点会显得相当陌生；而且这个方向的论文发表周期（从器件设计到工艺验证到测试）通常比纯仿真方向长，适合有耐心做完整实验闭环的研究者。
-
-## 核心研究问题
+### 核心研究问题
 
 - **多物理场耦合仿真**：MEMS 器件同时涉及结构力学、流体力学、静电场、热场，如何在设计早期准确预测多场耦合行为？
 - **CMOS-MEMS 单片集成**：MEMS 工艺与 CMOS 工艺的温度预算和材料体系不兼容，如何实现高集成度的单片方案？
 - **微封装与可靠性**：MEMS 可动结构对应力、温湿度、冲击敏感，如何实现稳定的晶圆级气密封装？
 - **微型化与能耗**：传感节点要求极低功耗（微瓦级）并能从环境中获取能量（压电/电磁能量采集），如何兼顾灵敏度与能效？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [歌尔股份](https://www.goertek.com/) | <span class="sq" data-stock="sz:002241"></span> |
-| 国内 | [瑞声科技（AAC）](https://www.aactechnologies.com/) | <span class="sq" data-stock="hk:02018"></span> |
-| 国内 | [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) | <span class="sq" data-stock="sz:300456"></span> |
-| 国内 | [敏芯股份（MEMSensing）](https://www.memsensing.com/) | <span class="sq" data-stock="sh:688286"></span> |
-| 国内 | [矽睿科技（QST）](https://www.qstcorp.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [明皜传感（MiraMEMS）](http://www.miramems.com/) | <span class="sq" data-stock="sz:002079"></span> |
-| 国内 | [卓胜微（Maxscend）](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
-| 国内 | [天奥电子（Spaceon）](https://www.elecspn.com/) | <span class="sq" data-stock="sz:002935"></span> |
-| 国外 | [Bosch Sensortec](https://www.bosch-sensortec.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [STMicroelectronics](https://www.st.com/) | <span class="sq" data-stock="us:STM"></span> |
-| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <span class="sq" data-stock="yf:6762.T"></span> |
-| 国外 | [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) | <span class="sq" data-stock="us:QCOM"></span> |
-| 国外 | [Butterfly Network](https://www.butterflynetwork.com/) | <span class="sq" data-stock="us:BFLY"></span> |
-| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
-| 国外 | [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) | <span class="sq" data-stock="us:MCHP"></span> |
-| 国外 | [Honeywell](https://www.honeywell.com/) | <span class="sq" data-stock="us:HON"></span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
-| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
-| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
-| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
-| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
-| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
-| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
-| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | Transducers | 国际固态传感器、执行器与微系统大会 |
-| 顶会 | IEEE MEMS | IEEE 国际微机电系统大会 |
-| 顶会 | IEEE Sensors | IEEE 国际传感器大会 |
-| 顶会 | Hilton Head Workshop | 希尔顿黑德固态传感器、执行器与微系统研讨会 |
-| 顶会 | IEDM | 国际电子器件大会（器件级） |
-| 顶刊 | JMEMS | IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊） |
-| 顶刊 | IEEE Sensors Journal | IEEE 传感器期刊 |
-| 顶刊 | Sensors and Actuators A/B | 传感器与执行器期刊 A/B 辑 |
-| 顶刊 | Microsystems & Nanoengineering | 微系统与纳米工程 |
-| 顶刊 | IEEE TED | IEEE Transactions on Electron Devices（电子器件汇刊） |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -164,7 +103,16 @@ graph LR
 - [器件与工艺](../学习地图/器件与工艺/index.md)（器件原理·IC工艺原理）
 - [电路](../学习地图/电路/index.md)（模拟电路·接口电路方向）
 
-## 相关课题组
+## 适合什么样的人
+
+MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成：硅深刻蚀（DRIE）、薄膜沉积、释放刻蚀，以及用探针台或真空测试台对制备出来的微结构做电学和力学表征。如果你对亲手制作出一个肉眼看不见却能感知加速度或声波的微结构有强烈好奇心，这个方向的实验环节会很有吸引力。
+
+这个方向有一个独特之处：它要求同时懂力学和电学。固体力学（梁的弯曲、谐振模态）和电容传感原理需要一并掌握，而不是单纯的电路或单纯的材料背景。本科阶段如果同时接触过材料力学和模拟电路，会有很好的起步优势；如果只有纯电路背景，需要补充结构力学的基础。COMSOL 多物理场仿真是这个方向几乎必用的工具，提前熟悉会大幅降低入门门槛。
+
+仿真驱动型的同学可以专注于 MEMS 系统建模和等效电路分析，不必亲手做所有工艺，但理解工艺约束对设计的影响是必须的，否则仿真结论很难落到可制造的结构上。不太适合的情况：如果你对物理世界的感知和机械结构完全没有兴趣，纯粹只想做数字芯片或算法，MEMS 的研究氛围和关注点会显得相当陌生；而且这个方向的论文发表周期（从器件设计到工艺验证到测试）通常比纯仿真方向长，适合有耐心做完整实验闭环的研究者。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -307,3 +255,54 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
+| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
+| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
+| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
+| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
+| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
+| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
+| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | Transducers | 国际固态传感器、执行器与微系统大会 |
+| 顶会 | IEEE MEMS | IEEE 国际微机电系统大会 |
+| 顶会 | IEEE Sensors | IEEE 国际传感器大会 |
+| 顶会 | Hilton Head Workshop | 希尔顿黑德固态传感器、执行器与微系统研讨会 |
+| 顶会 | IEDM | 国际电子器件大会（器件级） |
+| 顶刊 | JMEMS | IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊） |
+| 顶刊 | IEEE Sensors Journal | IEEE 传感器期刊 |
+| 顶刊 | Sensors and Actuators A/B | 传感器与执行器期刊 A/B 辑 |
+| 顶刊 | Microsystems & Nanoengineering | 微系统与纳米工程 |
+| 顶刊 | IEEE TED | IEEE Transactions on Electron Devices（电子器件汇刊） |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [歌尔股份](https://www.goertek.com/) | <span class="sq" data-stock="sz:002241"></span> |
+| 国内 | [瑞声科技（AAC）](https://www.aactechnologies.com/) | <span class="sq" data-stock="hk:02018"></span> |
+| 国内 | [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) | <span class="sq" data-stock="sz:300456"></span> |
+| 国内 | [敏芯股份（MEMSensing）](https://www.memsensing.com/) | <span class="sq" data-stock="sh:688286"></span> |
+| 国内 | [矽睿科技（QST）](https://www.qstcorp.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [明皜传感（MiraMEMS）](http://www.miramems.com/) | <span class="sq" data-stock="sz:002079"></span> |
+| 国内 | [卓胜微（Maxscend）](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
+| 国内 | [天奥电子（Spaceon）](https://www.elecspn.com/) | <span class="sq" data-stock="sz:002935"></span> |
+| 国外 | [Bosch Sensortec](https://www.bosch-sensortec.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [STMicroelectronics](https://www.st.com/) | <span class="sq" data-stock="us:STM"></span> |
+| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <span class="sq" data-stock="yf:6762.T"></span> |
+| 国外 | [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) | <span class="sq" data-stock="us:QCOM"></span> |
+| 国外 | [Butterfly Network](https://www.butterflynetwork.com/) | <span class="sq" data-stock="us:BFLY"></span> |
+| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
+| 国外 | [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) | <span class="sq" data-stock="us:MCHP"></span> |
+| 国外 | [Honeywell](https://www.honeywell.com/) | <span class="sq" data-stock="us:HON"></span> |

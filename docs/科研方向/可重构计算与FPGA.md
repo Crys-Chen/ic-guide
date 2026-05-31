@@ -45,17 +45,7 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 在应用层面，数据中心是 FPGA 最重要的新战场。Microsoft 的 Project Catapult 把 FPGA 部署在服务器机架内，用于加速 Bing 搜索的网页排名算法，后来扩展到 Azure 的网络功能加速（SmartNIC）。AWS EC2 F1 实例让用户可以租用云端 FPGA 资源。Intel 收购 Altera 后，把 FPGA 和 Xeon CPU 集成在同一封装里（FPGA as co-processor）。AI 推理是另一个重要场景：相比 GPU，FPGA 的优势在于低延迟（毫秒以下）、低功耗和灵活的精度支持（4-bit 甚至 2-bit 量化），这让它在边缘推理场景——自动驾驶、工业视觉、无线基站处理——占据独特地位。研究者面临的核心问题是：如何让神经网络的各层算子高效映射到 FPGA 的 DSP 和 LUT 上，同时最大化数据局部性、最小化片外内存访问。
 
-## 适合什么样的人
-
-这个方向最适合喜欢"动手"的人——写完代码就想下板验证，而不是停在仿真层面。FPGA 的魅力在于迭代快：一个架构改动，几小时内就能在真实硬件上看到结果，这种即时反馈对于喜欢快速实验的同学来说极有吸引力。
-
-如果你在数字电路或计组课上做过 FPGA 实验，并且觉得"跑通了还想再优化一下时序"，这个方向几乎是为你量身定制的。你不需要从头造一块新芯片，而是在一块可重复使用的硬件上把研究想法落地，研究成本远低于 ASIC 流片。
-
-背景上，数字电路、Verilog/VHDL 是硬性基础，懂 C/C++ 的同学可以直接切入 HLS 方向；如果你还有算法优化的兴趣（组合优化、强化学习），布局布线研究会让你觉得非常有意思——P&R 本质是一个极度现实、工程约束明确的 NP 难优化问题。顶会（FPGA、FCCM）发表周期相对集中，一年内能完成从想法到发表的完整循环，节奏相比体系结构顶会更快。
-
-国内在 FPGA 方向有真实产业需求：复旦微电子、安路科技、高云半导体都在做自主 FPGA 芯片，清华、复旦有相关课题组直接与产业合作，这意味着学术研究成果有相对清晰的落地路径。
-
-## 核心研究问题
+### 核心研究问题
 
 - **布局布线（Place-and-Route）**：FPGA 的 P&R 是 NP 难问题，如何用机器学习或新启发式算法加速并提升质量？
 - **高层次综合（HLS）**：HLS 生成的 RTL 与手写代码仍有质量差距，如何用自动化方法优化 pragma 配置和流水线结构？
@@ -63,55 +53,7 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 - **可重构架构设计**：FPGA 本身的架构如何演进——LUT 粒度、DSP 结构、片上网络设计如何适配 AI 时代的工作负载？
 - **运行时可重构**：FPGA 的部分重构（Partial Reconfiguration）如何支持动态调度多个加速器，实现真正的运行时灵活性？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [复旦微电子（FMSH）](https://www.fmsh.com/) | <span class="sq" data-stock="sh:688385"></span> |
-| 国内 | [安路科技 Anlogic](https://www.anlogic.com/) | <span class="sq" data-stock="sh:688107"></span> |
-| 国内 | [高云半导体 Gowin](https://www.gowinsemi.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [京微齐力 Hercules](https://hercules-micro.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [紫光同创 Pango](https://www.pangomicro.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [AMD（原 Xilinx）](https://www.amd.com/) | <span class="sq" data-stock="us:AMD"></span> |
-| 国外 | [Altera](https://www.altera.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [Lattice Semiconductor](https://www.latticesemi.com/) | <span class="sq" data-stock="us:LSCC"></span> |
-| 国外 | [Achronix](https://www.achronix.com/) | <span class="sq-none">未上市</span> |
-| 国外 | [QuickLogic](https://www.quicklogic.com/) | <span class="sq" data-stock="us:QUIK"></span> |
-| 国外 | [Microsoft](https://www.microsoft.com/) | <span class="sq" data-stock="us:MSFT"></span> |
-| 国外 | [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) | <span class="sq" data-stock="us:AMZN"></span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
-| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
-| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
-| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
-| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | FPGA | ACM/SIGDA 现场可编程门阵列国际研讨会 |
-| 顶会 | FCCM | IEEE 现场可编程定制计算机国际研讨会 |
-| 顶会 | FPL | 现场可编程逻辑与应用国际会议 |
-| 顶会 | DAC | 设计自动化大会 |
-| 顶会 | ICCAD | 国际计算机辅助设计大会 |
-| 顶会 | MICRO | IEEE/ACM 国际微体系结构研讨会 |
-| 顶会 | ASPLOS | 编程语言和操作系统的体系结构支持国际会议 |
-| 顶刊 | IEEE TCAD | 计算机辅助设计汇刊 |
-| 顶刊 | IEEE TVLSI | 超大规模集成系统汇刊 |
-| 顶刊 | ACM TRETS | 可重构技术与系统汇刊 |
-| 顶刊 | IEEE TC | 计算机汇刊 |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -136,7 +78,18 @@ graph LR
 - [算法编程（数据结构·算法）](../学习地图/算法编程/index.md)
 - [人工智能（AI系统）](../学习地图/人工智能/index.md)（EDA AI方向）
 
-## 相关课题组
+## 适合什么样的人
+
+这个方向最适合喜欢"动手"的人——写完代码就想下板验证，而不是停在仿真层面。FPGA 的魅力在于迭代快：一个架构改动，几小时内就能在真实硬件上看到结果，这种即时反馈对于喜欢快速实验的同学来说极有吸引力。
+
+如果你在数字电路或计组课上做过 FPGA 实验，并且觉得"跑通了还想再优化一下时序"，这个方向几乎是为你量身定制的。你不需要从头造一块新芯片，而是在一块可重复使用的硬件上把研究想法落地，研究成本远低于 ASIC 流片。
+
+背景上，数字电路、Verilog/VHDL 是硬性基础，懂 C/C++ 的同学可以直接切入 HLS 方向；如果你还有算法优化的兴趣（组合优化、强化学习），布局布线研究会让你觉得非常有意思——P&R 本质是一个极度现实、工程约束明确的 NP 难优化问题。顶会（FPGA、FCCM）发表周期相对集中，一年内能完成从想法到发表的完整循环，节奏相比体系结构顶会更快。
+
+国内在 FPGA 方向有真实产业需求：复旦微电子、安路科技、高云半导体都在做自主 FPGA 芯片，清华、复旦有相关课题组直接与产业合作，这意味着学术研究成果有相对清晰的落地路径。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -259,3 +212,49 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
+| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
+| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
+| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
+| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | FPGA | ACM/SIGDA 现场可编程门阵列国际研讨会 |
+| 顶会 | FCCM | IEEE 现场可编程定制计算机国际研讨会 |
+| 顶会 | FPL | 现场可编程逻辑与应用国际会议 |
+| 顶会 | DAC | 设计自动化大会 |
+| 顶会 | ICCAD | 国际计算机辅助设计大会 |
+| 顶会 | MICRO | IEEE/ACM 国际微体系结构研讨会 |
+| 顶会 | ASPLOS | 编程语言和操作系统的体系结构支持国际会议 |
+| 顶刊 | IEEE TCAD | 计算机辅助设计汇刊 |
+| 顶刊 | IEEE TVLSI | 超大规模集成系统汇刊 |
+| 顶刊 | ACM TRETS | 可重构技术与系统汇刊 |
+| 顶刊 | IEEE TC | 计算机汇刊 |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [复旦微电子（FMSH）](https://www.fmsh.com/) | <span class="sq" data-stock="sh:688385"></span> |
+| 国内 | [安路科技 Anlogic](https://www.anlogic.com/) | <span class="sq" data-stock="sh:688107"></span> |
+| 国内 | [高云半导体 Gowin](https://www.gowinsemi.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [京微齐力 Hercules](https://hercules-micro.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [紫光同创 Pango](https://www.pangomicro.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [AMD（原 Xilinx）](https://www.amd.com/) | <span class="sq" data-stock="us:AMD"></span> |
+| 国外 | [Altera](https://www.altera.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [Lattice Semiconductor](https://www.latticesemi.com/) | <span class="sq" data-stock="us:LSCC"></span> |
+| 国外 | [Achronix](https://www.achronix.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [QuickLogic](https://www.quicklogic.com/) | <span class="sq" data-stock="us:QUIK"></span> |
+| 国外 | [Microsoft](https://www.microsoft.com/) | <span class="sq" data-stock="us:MSFT"></span> |
+| 国外 | [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) | <span class="sq" data-stock="us:AMZN"></span> |

@@ -76,15 +76,7 @@ hide:
 
 研究者的日常工作是在 Cadence Virtuoso 里构建晶体管级电路，用 Spectre 跑蒙特卡洛仿真感受工艺偏差的影响，反复优化，然后发流片，在芯片测试台上用频谱仪、网络分析仪和示波器测量实测性能——ISSCC 论文的核心价值不在仿真图，而在流片实测结果。近年最活跃的两个方向是：数字辅助模拟（用片上数字逻辑校准模拟电路的非理想性，把数字工艺缩放的红利引入模拟设计）和 AI 辅助电路设计（用机器学习加速原本需要人工反复迭代的仿真和优化）——两者都是让逼近物理极限的过程更有方向感，而那个极限本身，由物理决定，不会消失。
 
-## 适合什么样的人
-
-这个方向适合对"电路物理直觉"有强烈兴趣的人——你需要从波形、噪声和失配的角度思考世界，而不仅仅是用数字电路的逻辑来推理。如果你在学模拟电子线路时觉得"搭运放、看波形、分析相位裕量"这件事本身很有趣，而不是痛苦地套公式，这个方向大概率适合你。
-
-日常工作的核心是仿真驱动的设计迭代：在 Cadence Virtuoso 里搭晶体管级电路，用 Spectre 或 SpectreRF 仿真瞬态、AC、噪声和 Monte Carlo（工艺角+失配），分析结果，调参数，再仿真。流片前需要完成版图（Layout），之后在芯片测试台上用示波器、频谱仪和信号发生器测量真实芯片性能——这是全周期工作，从纸上到硅片需要数月到一年的耐心。
-
-你需要对噪声理论（热噪声、闪烁噪声、相位噪声）和线性系统分析（传递函数、稳定性、相位裕量）有扎实掌握，同时具备从 S 参数、ENOB、FoM 这些指标上快速判断电路设计好坏的感觉。如果你喜欢数字验证流程（写 RTL、跑 EDA 工具链）远多于对着运放波形思考，这个方向可能并不是最舒适的选择。该方向对动手能力要求高，但"动手"主要体现在仿真精细度和芯片测试，而非大量编程或机器学习实验。
-
-## 核心研究问题
+### 核心研究问题
 
 - **ADC 能效墙**：采样速率和有效精度的提升带来指数级功耗代价，如何突破 Walden FoM 的能效边界？
 - **PLL 相位噪声**：时序裕量和射频系统 SNR 都受制于时钟质量，如何在更低功耗下实现更低相噪 PLL？
@@ -92,57 +84,7 @@ hide:
 - **图像传感器噪声**：更小像素、更高帧率下如何持续压低读出噪声，支撑夜景摄影和科学成像？
 - **数字辅助模拟**：ML 辅助的电路校准（失配补偿、非线性校正）能否大幅缩短模拟电路的设计迭代周期？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [韦尔股份 / 豪威集团](https://www.willsemi.com/) | <span class="sq" data-stock="sh:603501"></span> |
-| 国内 | [澜起科技](https://www.montage-tech.com/) | <span class="sq" data-stock="sh:688008"></span> |
-| 国内 | [思瑞浦](https://www.3peak.cn/) | <span class="sq" data-stock="sh:688536"></span> |
-| 国内 | [圣邦股份](https://www.sg-micro.com/) | <span class="sq" data-stock="sz:300661"></span> |
-| 国内 | [纳芯微](https://www.novosns.com/) | <span class="sq" data-stock="sh:688052"></span> |
-| 国内 | [上海贝岭](https://www.belling.com.cn/) | <span class="sq" data-stock="sh:600171"></span> |
-| 国内 | [杰华特（JoulWatt）](https://www.joulwatt.com/) | <span class="sq" data-stock="sh:688141"></span> |
-| 国内 | [晶丰明源](https://www.bpsemi.com/) | <span class="sq" data-stock="sh:688368"></span> |
-| 国外 | [Texas Instruments（德州仪器）](https://www.ti.com/) | <span class="sq" data-stock="us:TXN"></span> |
-| 国外 | [Analog Devices（ADI）](https://www.analog.com/) | <span class="sq" data-stock="us:ADI"></span> |
-| 国外 | [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) | <span class="sq" data-stock="us:MPWR"></span> |
-| 国外 | [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
-| 国外 | [Marvell（数据中心高速互连）](https://www.marvell.com/) | <span class="sq" data-stock="us:MRVL"></span> |
-| 国外 | [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) | <span class="sq" data-stock="us:CRDO"></span> |
-| 国外 | [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) | <span class="sq" data-stock="us:ALAB"></span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 数据转换器、高速接口与混合信号 IC 工艺与设计 |
-| 国内 | [中科院上海微系统所](https://www.sim.cas.cn/) | 传感器读出电路与微系统集成 |
-| 国内 | [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) | DDR5、高速 SerDes 等高端接口 IP |
-| 国内 | [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) | 先进工艺平台与模拟/混合信号 IP |
-| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 先进 CMOS 工艺下的数据转换器与高速 I/O 研究 |
-| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 高速 SerDes、ADC 与混合信号系统 |
-| 国外 | [Stanford SystemX Alliance](https://systemx.stanford.edu/) | 从器件到系统的混合信号集成研究 |
-| 国外 | [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) | 模拟器件与精密测量 |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | ISSCC | IEEE 国际固态电路会议 |
-| 顶会 | VLSI Symposium | IEEE VLSI 技术与电路研讨会 |
-| 顶会 | CICC | IEEE 定制集成电路会议 |
-| 顶会 | ESSERC（原 ESSCIRC） | 欧洲固态电子研究会议 |
-| 顶会 | A-SSCC | IEEE 亚洲固态电路会议 |
-| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
-| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
-| 顶刊 | TVLSI | IEEE Trans. VLSI Systems |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -164,7 +106,16 @@ graph LR
 - [器件与工艺](../学习地图/器件与工艺/index.md)
 - [系统架构（信号与系统）](../学习地图/系统架构/index.md)
 
-## 相关课题组
+## 适合什么样的人
+
+这个方向适合对"电路物理直觉"有强烈兴趣的人——你需要从波形、噪声和失配的角度思考世界，而不仅仅是用数字电路的逻辑来推理。如果你在学模拟电子线路时觉得"搭运放、看波形、分析相位裕量"这件事本身很有趣，而不是痛苦地套公式，这个方向大概率适合你。
+
+日常工作的核心是仿真驱动的设计迭代：在 Cadence Virtuoso 里搭晶体管级电路，用 Spectre 或 SpectreRF 仿真瞬态、AC、噪声和 Monte Carlo（工艺角+失配），分析结果，调参数，再仿真。流片前需要完成版图（Layout），之后在芯片测试台上用示波器、频谱仪和信号发生器测量真实芯片性能——这是全周期工作，从纸上到硅片需要数月到一年的耐心。
+
+你需要对噪声理论（热噪声、闪烁噪声、相位噪声）和线性系统分析（传递函数、稳定性、相位裕量）有扎实掌握，同时具备从 S 参数、ENOB、FoM 这些指标上快速判断电路设计好坏的感觉。如果你喜欢数字验证流程（写 RTL、跑 EDA 工具链）远多于对着运放波形思考，这个方向可能并不是最舒适的选择。该方向对动手能力要求高，但"动手"主要体现在仿真精细度和芯片测试，而非大量编程或机器学习实验。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -347,3 +298,51 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院微电子所](https://www.ime.cas.cn/) | 数据转换器、高速接口与混合信号 IC 工艺与设计 |
+| 国内 | [中科院上海微系统所](https://www.sim.cas.cn/) | 传感器读出电路与微系统集成 |
+| 国内 | [鹏城实验室·集成电路基础研究室](https://www.pcl.ac.cn/) | DDR5、高速 SerDes 等高端接口 IP |
+| 国内 | [上海集成电路研发中心（ICRD）](https://www.icrd.com.cn/) | 先进工艺平台与模拟/混合信号 IP |
+| 国外 | [imec（比利时微电子研究中心）](https://www.imec-int.com/en) | 先进 CMOS 工艺下的数据转换器与高速 I/O 研究 |
+| 国外 | [UC Berkeley 无线研究中心（BWRC）](https://bwrc.berkeley.edu/) | 高速 SerDes、ADC 与混合信号系统 |
+| 国外 | [Stanford SystemX Alliance](https://systemx.stanford.edu/) | 从器件到系统的混合信号集成研究 |
+| 国外 | [AIST（日本产业技术综合研究所）](https://www.aist.go.jp/index_en.html) | 模拟器件与精密测量 |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | ISSCC | IEEE 国际固态电路会议 |
+| 顶会 | VLSI Symposium | IEEE VLSI 技术与电路研讨会 |
+| 顶会 | CICC | IEEE 定制集成电路会议 |
+| 顶会 | ESSERC（原 ESSCIRC） | 欧洲固态电子研究会议 |
+| 顶会 | A-SSCC | IEEE 亚洲固态电路会议 |
+| 顶刊 | JSSC | IEEE Journal of Solid-State Circuits |
+| 顶刊 | TCAS-I/II | IEEE Trans. Circuits and Systems |
+| 顶刊 | TVLSI | IEEE Trans. VLSI Systems |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [韦尔股份 / 豪威集团](https://www.willsemi.com/) | <span class="sq" data-stock="sh:603501"></span> |
+| 国内 | [澜起科技](https://www.montage-tech.com/) | <span class="sq" data-stock="sh:688008"></span> |
+| 国内 | [思瑞浦](https://www.3peak.cn/) | <span class="sq" data-stock="sh:688536"></span> |
+| 国内 | [圣邦股份](https://www.sg-micro.com/) | <span class="sq" data-stock="sz:300661"></span> |
+| 国内 | [纳芯微](https://www.novosns.com/) | <span class="sq" data-stock="sh:688052"></span> |
+| 国内 | [上海贝岭](https://www.belling.com.cn/) | <span class="sq" data-stock="sh:600171"></span> |
+| 国内 | [杰华特（JoulWatt）](https://www.joulwatt.com/) | <span class="sq" data-stock="sh:688141"></span> |
+| 国内 | [晶丰明源](https://www.bpsemi.com/) | <span class="sq" data-stock="sh:688368"></span> |
+| 国外 | [Texas Instruments（德州仪器）](https://www.ti.com/) | <span class="sq" data-stock="us:TXN"></span> |
+| 国外 | [Analog Devices（ADI）](https://www.analog.com/) | <span class="sq" data-stock="us:ADI"></span> |
+| 国外 | [Monolithic Power Systems（MPS·电源管理）](https://www.monolithicpower.com/) | <span class="sq" data-stock="us:MPWR"></span> |
+| 国外 | [Broadcom（SerDes / 高速接口）](https://www.broadcom.com/) | <span class="sq" data-stock="us:AVGO"></span> |
+| 国外 | [Marvell（数据中心高速互连）](https://www.marvell.com/) | <span class="sq" data-stock="us:MRVL"></span> |
+| 国外 | [Credo（224G SerDes / AEC 有源电缆）](https://credosemi.com/) | <span class="sq" data-stock="us:CRDO"></span> |
+| 国外 | [Astera Labs（PCIe/CXL Retimer · 互连）](https://www.asteralabs.com/) | <span class="sq" data-stock="us:ALAB"></span> |

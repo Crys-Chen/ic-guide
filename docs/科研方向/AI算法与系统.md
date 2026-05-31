@@ -93,81 +93,14 @@ hide:
 
 如今**前沿模型的训练已经被大厂垄断**。表面原因是钱，单次训练 1 亿美元起。但更深的壁垒是**数据**和**数据中心**。开放互联网的数据是公共的，但 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类**高质量私有数据**只有大厂自己有，这才决定模型在真实任务上的上限。这也是为什么几乎所有 AI 在讲中文时都喜欢"稳稳地接住你"。中文语料贫乏单一，加上各家 AI 互相蒸馏，风格自然趋同。**万卡级 H100 集群**则是另一道门，涉及电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有被边缘化，反而和大厂形成了一种**对称依赖**。工业界做前沿大模型并把训练好的开源放出来，比如 Llama、DeepSeek 系列。学术界拿这些做后训练、推理优化、可解释性研究，Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作反过来又被大厂的推理引擎采用。**学术界的真正机会，不在和大厂比规模，而在那些能让所有模型用得更好的算法、系统与数据方法上。**
 
-## 适合什么样的人
-
-这个方向是一个"桥梁"方向——专为有 EE/微电子背景、想向 AI 研究延伸的同学而设。你不需要抛弃原有的硬件直觉，恰恰相反，这里最有价值的研究往往来自"既懂算法又懂芯片"的人。
-
-入场的前提条件是：你需要对 Python 和机器学习工作流感到自在。PyTorch 是这个方向的通用语言，不熟悉的话需要优先补上。和处理器架构不同，这里的实验主要在 GPU 上用 Python 跑，发论文的速度快得多——NeurIPS/ICML 截止日期一年有几次，一个好想法从实现到投稿可以在三四个月内完成，这和 ISCA 的节奏完全不同。
-
-如果你对 AI 感兴趣但不确定从哪里切入，TinyML 是最自然的起点：量化和剪枝的问题，你的硬件背景会让你比纯软件同学理解得更深，而且这类工作可以同时被 AI 顶会和硬件顶会接收，选题灵活度高。如果你更想做系统侧（vLLM 类的推理框架优化），计算机系统的基础（操作系统、并行计算）是必要储备。如果你对 RL 和 Agent 感兴趣，要做好心理准备：这条路的基础数学要求更高，且研究风格更接近 CS 理论，和 EE 背景的距离稍远一些。
-
-## 核心研究问题
+### 核心研究问题
 
 - **LLM 推理效率**：注意力机制的 KV Cache 随序列长度线性增长，如何用算法和系统联合优化降低推理延迟和内存占用？
 - **RL 样本效率**：强化学习需要大量与环境的交互样本，如何设计更高效的探索策略和离线学习算法？
 - **Agent 可靠性**：基于 LLM 的 Agent 在多步骤任务中容易累积错误，如何设计可验证、可纠错的 Agent 框架？
 - **硬件-算法协同**：量化和剪枝改变了模型的计算模式，如何让硬件加速器感知这些变化并最大化利用？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [智谱 AI（Z.ai）](https://www.zhipuai.cn) | <span class="sq" data-stock="hk:02513"></span> |
-| 国内 | [MiniMax（稀宇科技）](https://www.minimaxi.com) | <span class="sq" data-stock="hk:00100"></span> |
-| 国内 | [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) | <span class="sq" data-stock="hk:09988"></span> |
-| 国内 | [腾讯 · 混元](https://hunyuan.tencent.com) | <span class="sq" data-stock="hk:00700"></span> |
-| 国内 | [百度 · 文心](https://yiyan.baidu.com) | <span class="sq" data-stock="hk:09888"></span> |
-| 国内 | [字节跳动 · 豆包](https://www.doubao.com) | <span class="sq-none">未上市</span> |
-| 国内 | [深度求索 DeepSeek](https://www.deepseek.com) | <span class="sq-none">未上市</span> |
-| 国内 | [月之暗面 Kimi](https://www.moonshot.cn) | <span class="sq-none">未上市</span> |
-| 国内 | [Manus（蝴蝶效应）](https://manus.im) | <span class="sq-none">未上市</span> |
-| 国外 | [NVIDIA](https://www.nvidia.com) | <span class="sq" data-stock="us:NVDA"></span> |
-| 国外 | [Google DeepMind](https://deepmind.google) | <span class="sq" data-stock="us:GOOGL"></span> |
-| 国外 | [Meta AI](https://ai.meta.com) | <span class="sq" data-stock="us:META"></span> |
-| 国外 | [OpenAI](https://openai.com) | <span class="sq-none">未上市</span> |
-| 国外 | [Anthropic](https://www.anthropic.com) | <span class="sq-none">未上市</span> |
-| 国外 | [Cognition](https://cognition.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Together AI](https://www.together.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Scale AI](https://scale.com) | <span class="sq-none">未上市</span> |
-| 国外 | [World Labs](https://www.worldlabs.ai) | <span class="sq-none">未上市</span> |
-| 国外 | [Mistral AI](https://mistral.ai) | <span class="sq-none">未上市</span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
-| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
-| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
-| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
-| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
-| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
-| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
-| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | NeurIPS | 神经信息处理系统大会 |
-| 顶会 | ICML | 国际机器学习大会 |
-| 顶会 | ICLR | 国际学习表征会议 |
-| 顶会 | CVPR | IEEE 计算机视觉与模式识别会议 |
-| 顶会 | ICCV | 国际计算机视觉大会 |
-| 顶会 | ACL | 国际计算语言学协会年会 |
-| 顶会 | EMNLP | 自然语言处理经验方法会议 |
-| 顶会 | AAAI | 美国人工智能协会会议 |
-| 顶会 | MLSys | 机器学习与系统会议 |
-| 顶会 | OSDI | 操作系统设计与实现研讨会 |
-| 顶刊 | JMLR | 机器学习研究汇刊（机器学习） |
-| 顶刊 | TPAMI | IEEE 模式分析与机器智能汇刊 |
-| 顶刊 | Nature Machine Intelligence | 《自然·机器智能》 |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -193,7 +126,16 @@ graph LR
 - [系统架构（计算机系统基础）](../学习地图/系统架构/index.md)
 - [算法编程](../学习地图/算法编程/index.md)
 
-## 相关课题组
+## 适合什么样的人
+
+这个方向是一个"桥梁"方向——专为有 EE/微电子背景、想向 AI 研究延伸的同学而设。你不需要抛弃原有的硬件直觉，恰恰相反，这里最有价值的研究往往来自"既懂算法又懂芯片"的人。
+
+入场的前提条件是：你需要对 Python 和机器学习工作流感到自在。PyTorch 是这个方向的通用语言，不熟悉的话需要优先补上。和处理器架构不同，这里的实验主要在 GPU 上用 Python 跑，发论文的速度快得多——NeurIPS/ICML 截止日期一年有几次，一个好想法从实现到投稿可以在三四个月内完成，这和 ISCA 的节奏完全不同。
+
+如果你对 AI 感兴趣但不确定从哪里切入，TinyML 是最自然的起点：量化和剪枝的问题，你的硬件背景会让你比纯软件同学理解得更深，而且这类工作可以同时被 AI 顶会和硬件顶会接收，选题灵活度高。如果你更想做系统侧（vLLM 类的推理框架优化），计算机系统的基础（操作系统、并行计算）是必要储备。如果你对 RL 和 Agent 感兴趣，要做好心理准备：这条路的基础数学要求更高，且研究风格更接近 CS 理论，和 EE 背景的距离稍远一些。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -400,3 +342,60 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [上海人工智能实验室](https://www.shlab.org.cn) | "书生"大模型 · 多模态与通用人工智能 |
+| 国内 | [北京智源人工智能研究院（BAAI）](https://www.baai.ac.cn) | 悟道大模型 · BGE 检索 · FlagEval 评测开源生态 |
+| 国内 | [之江实验室](https://www.zhejianglab.org) | 智能计算 · AI for Science · 算力基础设施 |
+| 国内 | [中科院自动化研究所](https://www.ia.cas.cn) | 多模态大模型（紫东太初）· 决策智能 |
+| 国外 | [MIT CSAIL](https://www.csail.mit.edu) | 高效深度学习 · ML 系统 · AI 算法基础研究 |
+| 国外 | [Stanford HAI](https://hai.stanford.edu) | 基础模型评测（HELM）· 以人为本 AI · AI Index |
+| 国外 | [Meta FAIR](https://ai.meta.com/research/) | 开源大模型与基础研究 · PyTorch |
+| 国外 | [Allen Institute for AI（Ai2）](https://allenai.org) | 全开源大模型（OLMo）· AI for Science |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | NeurIPS | 神经信息处理系统大会 |
+| 顶会 | ICML | 国际机器学习大会 |
+| 顶会 | ICLR | 国际学习表征会议 |
+| 顶会 | CVPR | IEEE 计算机视觉与模式识别会议 |
+| 顶会 | ICCV | 国际计算机视觉大会 |
+| 顶会 | ACL | 国际计算语言学协会年会 |
+| 顶会 | EMNLP | 自然语言处理经验方法会议 |
+| 顶会 | AAAI | 美国人工智能协会会议 |
+| 顶会 | MLSys | 机器学习与系统会议 |
+| 顶会 | OSDI | 操作系统设计与实现研讨会 |
+| 顶刊 | JMLR | 机器学习研究汇刊（机器学习） |
+| 顶刊 | TPAMI | IEEE 模式分析与机器智能汇刊 |
+| 顶刊 | Nature Machine Intelligence | 《自然·机器智能》 |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [智谱 AI（Z.ai）](https://www.zhipuai.cn) | <span class="sq" data-stock="hk:02513"></span> |
+| 国内 | [MiniMax（稀宇科技）](https://www.minimaxi.com) | <span class="sq" data-stock="hk:00100"></span> |
+| 国内 | [阿里巴巴 · 通义千问](https://tongyi.aliyun.com) | <span class="sq" data-stock="hk:09988"></span> |
+| 国内 | [腾讯 · 混元](https://hunyuan.tencent.com) | <span class="sq" data-stock="hk:00700"></span> |
+| 国内 | [百度 · 文心](https://yiyan.baidu.com) | <span class="sq" data-stock="hk:09888"></span> |
+| 国内 | [字节跳动 · 豆包](https://www.doubao.com) | <span class="sq-none">未上市</span> |
+| 国内 | [深度求索 DeepSeek](https://www.deepseek.com) | <span class="sq-none">未上市</span> |
+| 国内 | [月之暗面 Kimi](https://www.moonshot.cn) | <span class="sq-none">未上市</span> |
+| 国内 | [Manus（蝴蝶效应）](https://manus.im) | <span class="sq-none">未上市</span> |
+| 国外 | [NVIDIA](https://www.nvidia.com) | <span class="sq" data-stock="us:NVDA"></span> |
+| 国外 | [Google DeepMind](https://deepmind.google) | <span class="sq" data-stock="us:GOOGL"></span> |
+| 国外 | [Meta AI](https://ai.meta.com) | <span class="sq" data-stock="us:META"></span> |
+| 国外 | [OpenAI](https://openai.com) | <span class="sq-none">未上市</span> |
+| 国外 | [Anthropic](https://www.anthropic.com) | <span class="sq-none">未上市</span> |
+| 国外 | [Cognition](https://cognition.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Together AI](https://www.together.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Scale AI](https://scale.com) | <span class="sq-none">未上市</span> |
+| 国外 | [World Labs](https://www.worldlabs.ai) | <span class="sq-none">未上市</span> |
+| 国外 | [Mistral AI](https://mistral.ai) | <span class="sq-none">未上市</span> |

@@ -69,68 +69,14 @@ EDA 工具本质上是在求解一系列 NP 难甚至更难的优化问题。以
 
 从国家战略的角度看，EDA 是芯片产业链里最典型的卡脖子环节：Synopsys、Cadence、Siemens EDA 三家美国公司占据全球市场 80% 以上的份额，2019 年对华为的禁令直接暴露了这一脆弱点，海思几乎在一夜之间失去了推进先进制程设计的工具。国内华大九天在模拟 EDA 工具上已有量产能力；对于想做 AI for EDA 研究的学者，OpenROAD 和 CircuitNet 是目前最直接的开源实验基础。
 
-## 适合什么样的人
-
-EDA 是一个少见的方向——它的核心问题是**算法**问题，但领域知识来自**芯片设计**，产业影响极为直接。如果你对组合优化、图算法、机器学习有兴趣，同时又希望研究成果能真正被工业界用到，这个方向非常合适。
-
-CS 背景的同学进入这个方向有天然的算法优势。布局、路由、时序优化的本质是图优化和约束求解问题，强化学习和图神经网络在这里不是锦上添花，而是解决实际工程痛点的工具。你不需要成为一个经验丰富的芯片设计师，但需要理解设计流程的每一步在做什么——这个门槛通过跑一遍 OpenROAD 或 Cadence 流程就能迈过。
-
-EE/微电子背景的同学则有另一个优势：你更容易理解为什么某个优化目标重要、为什么时序收敛这么难。这种领域直觉在构建有意义的研究问题时很有价值，纯算法背景的人往往要花很长时间才能获得同样的感受。
-
-从影响力角度来看，EDA 是为数不多的"做出来就能影响整个行业"的方向之一。一个更好的布局算法不只是发一篇论文，它可能真的会被 Synopsys 或国内的华大九天集成进产品，影响未来几年所有用这套工具的芯片设计。如果你对这种"基础设施级"的影响感兴趣，EDA 会让你觉得研究有重量。
-
-## 核心研究问题
+### 核心研究问题
 
 - **可扩展性**：2nm 以下工艺下，布局布线的搜索空间指数级爆炸，现有算法如何扩展？
 - **ML for EDA**：如何用强化学习、图神经网络替代或加速传统启发式算法？
 - **LLM for Chip Design**：大语言模型能否直接生成可综合的 RTL 代码，甚至理解设计意图？
 - **模拟 EDA**：模拟电路的自动化设计远比数字难，如何建立可靠的模拟综合流程？
 
-## 代表性机构
-
-> 这个方向毕业后能去的代表性企业与科研院所（国内外）。上市公司附实时股价链接，便于了解产业景气度。
-
-### 企业
-
-| 地区 | 公司 | 上市 / 股价 |
-|---|---|---|
-| 国内 | [华大九天 Empyrean](https://www.empyrean.com.cn/) | <span class="sq" data-stock="sz:301269"></span> |
-| 国内 | [概伦电子 Primarius](https://www.primarius-tech.com/) | <span class="sq" data-stock="sh:688206"></span> |
-| 国内 | [广立微 Semitronix](https://www.semitronix.com/) | <span class="sq" data-stock="sz:301095"></span> |
-| 国内 | [芯华章 X-EPIC](https://www.x-epic.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [芯和半导体 Xpeedic](https://www.xpeedic.com/) | <span class="sq-none">未上市</span> |
-| 国内 | [华为海思 HiSilicon](https://www.hisilicon.com/cn) | <span class="sq-none">未上市</span> |
-| 国外 | [Synopsys](https://www.synopsys.com/) | <span class="sq" data-stock="us:SNPS"></span> |
-| 国外 | [Cadence](https://www.cadence.com/) | <span class="sq" data-stock="us:CDNS"></span> |
-| 国外 | [Siemens EDA（原 Mentor）](https://www.siemens.com/en-us/company/electronic-design-automation/) | <span class="sq" data-stock="us:SIEGY"></span> |
-| 国外 | [NVIDIA](https://www.nvidia.com/) | <span class="sq" data-stock="us:NVDA"></span> |
-
-### 科研院所
-
-| 地区 | 机构 | 研究重点 |
-|---|---|---|
-| 国内 | [中科院微电子所 EDA 中心](https://www.ime.ac.cn/eda/) | 设计方法学与国产 EDA 工具研发 |
-| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与 AI for EDA |
-| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力支撑的 EDA 算法加速 |
-| 国外 | [OpenROAD（UCSD VLSI CAD 实验室主导）](https://theopenroadproject.org/) | 开源 RTL-to-GDS 数字后端流程，AI for EDA 标准实验平台 |
-| 国外 | [imec](https://www.imec-int.com/en) | DTCO/工艺-设计协同与先进节点设计方法学 |
-| 国外 | [Google DeepMind](https://deepmind.google/)（AlphaChip RL 布局） | 强化学习芯片布局 |
-
-## 顶会顶刊
-
-| 类型 | 名称 | 说明 |
-|---|---|---|
-| 顶会 | DAC | 设计自动化大会（Design Automation Conference） |
-| 顶会 | ICCAD | 国际计算机辅助设计会议（International Conference on Computer-Aided Design） |
-| 顶会 | DATE | 欧洲设计、自动化与测试会议（Design, Automation and Test in Europe） |
-| 顶会 | ASP-DAC | 亚太设计自动化会议（Asia and South Pacific Design Automation Conference） |
-| 顶会 | ISPD | 国际物理设计研讨会（International Symposium on Physical Design） |
-| 顶刊 | IEEE TCAD | 计算机辅助设计，本领域旗舰 |
-| 顶刊 | IEEE TVLSI | 超大规模集成系统 |
-| 顶刊 | ACM TODAES | 设计自动化 |
-| 顶刊 | IEEE TC | 计算机汇刊 |
-
-## 知识路径
+### 知识路径
 
 ```mermaid
 graph LR
@@ -155,7 +101,18 @@ graph LR
 - [算法编程（数据结构·算法）](../学习地图/算法编程/index.md)
 - [人工智能（AI系统）](../学习地图/人工智能/index.md)（EDA AI方向）
 
-## 相关课题组
+## 适合什么样的人
+
+EDA 是一个少见的方向——它的核心问题是**算法**问题，但领域知识来自**芯片设计**，产业影响极为直接。如果你对组合优化、图算法、机器学习有兴趣，同时又希望研究成果能真正被工业界用到，这个方向非常合适。
+
+CS 背景的同学进入这个方向有天然的算法优势。布局、路由、时序优化的本质是图优化和约束求解问题，强化学习和图神经网络在这里不是锦上添花，而是解决实际工程痛点的工具。你不需要成为一个经验丰富的芯片设计师，但需要理解设计流程的每一步在做什么——这个门槛通过跑一遍 OpenROAD 或 Cadence 流程就能迈过。
+
+EE/微电子背景的同学则有另一个优势：你更容易理解为什么某个优化目标重要、为什么时序收敛这么难。这种领域直觉在构建有意义的研究问题时很有价值，纯算法背景的人往往要花很长时间才能获得同样的感受。
+
+从影响力角度来看，EDA 是为数不多的"做出来就能影响整个行业"的方向之一。一个更好的布局算法不只是发一篇论文，它可能真的会被 Synopsys 或国内的华大九天集成进产品，影响未来几年所有用这套工具的芯片设计。如果你对这种"基础设施级"的影响感兴趣，EDA 会让你觉得研究有重量。
+
+## 学术界课题组
+
 
 ### 境内
 
@@ -310,3 +267,45 @@ graph LR
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
+
+### 科研院所
+
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院微电子所 EDA 中心](https://www.ime.ac.cn/eda/) | 设计方法学与国产 EDA 工具研发 |
+| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与 AI for EDA |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力支撑的 EDA 算法加速 |
+| 国外 | [OpenROAD（UCSD VLSI CAD 实验室主导）](https://theopenroadproject.org/) | 开源 RTL-to-GDS 数字后端流程，AI for EDA 标准实验平台 |
+| 国外 | [imec](https://www.imec-int.com/en) | DTCO/工艺-设计协同与先进节点设计方法学 |
+| 国外 | [Google DeepMind](https://deepmind.google/)（AlphaChip RL 布局） | 强化学习芯片布局 |
+
+### 顶会顶刊
+
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | DAC | 设计自动化大会（Design Automation Conference） |
+| 顶会 | ICCAD | 国际计算机辅助设计会议（International Conference on Computer-Aided Design） |
+| 顶会 | DATE | 欧洲设计、自动化与测试会议（Design, Automation and Test in Europe） |
+| 顶会 | ASP-DAC | 亚太设计自动化会议（Asia and South Pacific Design Automation Conference） |
+| 顶会 | ISPD | 国际物理设计研讨会（International Symposium on Physical Design） |
+| 顶刊 | IEEE TCAD | 计算机辅助设计，本领域旗舰 |
+| 顶刊 | IEEE TVLSI | 超大规模集成系统 |
+| 顶刊 | ACM TODAES | 设计自动化 |
+| 顶刊 | IEEE TC | 计算机汇刊 |
+
+## 业界机构
+
+> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
+
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [华大九天 Empyrean](https://www.empyrean.com.cn/) | <span class="sq" data-stock="sz:301269"></span> |
+| 国内 | [概伦电子 Primarius](https://www.primarius-tech.com/) | <span class="sq" data-stock="sh:688206"></span> |
+| 国内 | [广立微 Semitronix](https://www.semitronix.com/) | <span class="sq" data-stock="sz:301095"></span> |
+| 国内 | [芯华章 X-EPIC](https://www.x-epic.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [芯和半导体 Xpeedic](https://www.xpeedic.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [华为海思 HiSilicon](https://www.hisilicon.com/cn) | <span class="sq-none">未上市</span> |
+| 国外 | [Synopsys](https://www.synopsys.com/) | <span class="sq" data-stock="us:SNPS"></span> |
+| 国外 | [Cadence](https://www.cadence.com/) | <span class="sq" data-stock="us:CDNS"></span> |
+| 国外 | [Siemens EDA（原 Mentor）](https://www.siemens.com/en-us/company/electronic-design-automation/) | <span class="sq" data-stock="us:SIEGY"></span> |
+| 国外 | [NVIDIA](https://www.nvidia.com/) | <span class="sq" data-stock="us:NVDA"></span> |
