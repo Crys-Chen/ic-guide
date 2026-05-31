@@ -69,43 +69,47 @@ FPGA 最大的性能瓶颈不在逻辑，而在连线。一块 FPGA 上，面积
 
 ### 企业
 
-**国内**
-
-- [复旦微电子（FMSH）](https://www.fmsh.com/) <span class="sq" data-stock="sh:688385"></span>
-- [安路科技 Anlogic](https://www.anlogic.com/) <span class="sq" data-stock="sh:688107"></span>
-- [高云半导体 Gowin](https://www.gowinsemi.com/) <span class="sq-none">未上市</span>
-- [京微齐力 Hercules](https://hercules-micro.com/) <span class="sq-none">未上市</span>
-- [紫光同创 Pango](https://www.pangomicro.com/) <span class="sq-none">未上市</span>
-
-**国外**
-
-- [AMD（原 Xilinx）](https://www.amd.com/) <span class="sq" data-stock="us:AMD"></span>
-- [Altera](https://www.altera.com/) <span class="sq-none">未上市</span>
-- [Lattice Semiconductor](https://www.latticesemi.com/) <span class="sq" data-stock="us:LSCC"></span>
-- [Achronix](https://www.achronix.com/) <span class="sq-none">未上市</span>
-- [QuickLogic](https://www.quicklogic.com/) <span class="sq" data-stock="us:QUIK"></span>
-- [Microsoft](https://www.microsoft.com/) <span class="sq" data-stock="us:MSFT"></span>
-- [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) <span class="sq" data-stock="us:AMZN"></span>
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [复旦微电子（FMSH）](https://www.fmsh.com/) | <span class="sq" data-stock="sh:688385"></span> |
+| 国内 | [安路科技 Anlogic](https://www.anlogic.com/) | <span class="sq" data-stock="sh:688107"></span> |
+| 国内 | [高云半导体 Gowin](https://www.gowinsemi.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [京微齐力 Hercules](https://hercules-micro.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [紫光同创 Pango](https://www.pangomicro.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [AMD（原 Xilinx）](https://www.amd.com/) | <span class="sq" data-stock="us:AMD"></span> |
+| 国外 | [Altera](https://www.altera.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [Lattice Semiconductor](https://www.latticesemi.com/) | <span class="sq" data-stock="us:LSCC"></span> |
+| 国外 | [Achronix](https://www.achronix.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [QuickLogic](https://www.quicklogic.com/) | <span class="sq" data-stock="us:QUIK"></span> |
+| 国外 | [Microsoft](https://www.microsoft.com/) | <span class="sq" data-stock="us:MSFT"></span> |
+| 国外 | [AWS（Amazon）](https://aws.amazon.com/ec2/instance-types/f1/) | <span class="sq" data-stock="us:AMZN"></span> |
 
 ### 科研院所
 
-**国内**
-
-- [中科院计算所](http://www.ict.ac.cn/) — 可重构计算与领域专用加速器
-- [之江实验室](https://www.zhejianglab.org/) — 智能计算与可重构异构加速平台
-- [鹏城实验室](https://www.pcl.ac.cn/) — 大规模算力与可重构加速基础设施
-
-**国外**
-
-- [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) — 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线）
-- [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) — 数据中心 FPGA 加速架构
-- [UCLA VAST 实验室](https://vast.cs.ucla.edu/) — HLS 与 FPGA 设计自动化
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院计算所](http://www.ict.ac.cn/) | 可重构计算与领域专用加速器 |
+| 国内 | [之江实验室](https://www.zhejianglab.org/) | 智能计算与可重构异构加速平台 |
+| 国内 | [鹏城实验室](https://www.pcl.ac.cn/) | 大规模算力与可重构加速基础设施 |
+| 国外 | [Verilog-to-Routing（VTR，多伦多大学主导）](https://verilogtorouting.org/) | 开源 FPGA 架构与 CAD 研究平台（VPR 布局布线） |
+| 国外 | [Microsoft Research（Project Catapult）](https://www.microsoft.com/en-us/research/project/project-catapult/) | 数据中心 FPGA 加速架构 |
+| 国外 | [UCLA VAST 实验室](https://vast.cs.ucla.edu/) | HLS 与 FPGA 设计自动化 |
 
 ## 顶会顶刊
 
-**顶会**：FPGA · FCCM · FPL · DAC · ICCAD · MICRO · ASPLOS
-
-**顶刊**：IEEE TCAD（计算机辅助设计）· IEEE TVLSI（超大规模集成系统）· ACM TRETS（可重构技术与系统）· IEEE TC（计算机汇刊）
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | FPGA | ACM/SIGDA 现场可编程门阵列国际研讨会 |
+| 顶会 | FCCM | IEEE 现场可编程定制计算机国际研讨会 |
+| 顶会 | FPL | 现场可编程逻辑与应用国际会议 |
+| 顶会 | DAC | 设计自动化大会 |
+| 顶会 | ICCAD | 国际计算机辅助设计大会 |
+| 顶会 | MICRO | IEEE/ACM 国际微体系结构研讨会 |
+| 顶会 | ASPLOS | 编程语言和操作系统的体系结构支持国际会议 |
+| 顶刊 | IEEE TCAD | 计算机辅助设计汇刊 |
+| 顶刊 | IEEE TVLSI | 超大规模集成系统汇刊 |
+| 顶刊 | ACM TRETS | 可重构技术与系统汇刊 |
+| 顶刊 | IEEE TC | 计算机汇刊 |
 
 ## 知识路径
 

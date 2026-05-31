@@ -96,49 +96,52 @@ MEMS 研究是实验驱动的，日常工作有大量时间在洁净间里完成
 
 ### 企业
 
-**国内**
-
-- [歌尔股份](https://www.goertek.com/) <span class="sq" data-stock="sz:002241"></span>
-- [瑞声科技（AAC）](https://www.aactechnologies.com/) <span class="sq" data-stock="hk:02018"></span>
-- [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) <span class="sq" data-stock="sz:300456"></span>
-- [敏芯股份（MEMSensing）](https://www.memsensing.com/) <span class="sq" data-stock="sh:688286"></span>
-- [矽睿科技（QST）](https://www.qstcorp.com/) <span class="sq-none">未上市</span>
-- [明皜传感（MiraMEMS）](http://www.miramems.com/) <span class="sq" data-stock="sz:002079"></span>
-- [卓胜微（Maxscend）](https://www.maxscend.com/) <span class="sq" data-stock="sz:300782"></span>
-- [天奥电子（Spaceon）](https://www.elecspn.com/) <span class="sq" data-stock="sz:002935"></span>
-
-**国外**
-
-- [Bosch Sensortec](https://www.bosch-sensortec.com/) <span class="sq-none">未上市</span>
-- [STMicroelectronics](https://www.st.com/) <span class="sq" data-stock="us:STM"></span>
-- [TDK InvenSense](https://invensense.tdk.com/) <a class="sq-na-link" href="https://finance.yahoo.com/quote/6762.T" target="_blank" rel="noopener">行情↗</a>
-- [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) <span class="sq" data-stock="us:QCOM"></span>
-- [Butterfly Network](https://www.butterflynetwork.com/) <span class="sq" data-stock="us:BFLY"></span>
-- [Qorvo](https://www.qorvo.com/) <span class="sq" data-stock="us:QRVO"></span>
-- [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) <span class="sq" data-stock="us:MCHP"></span>
-- [Honeywell](https://www.honeywell.com/) <span class="sq" data-stock="us:HON"></span>
+| 地区 | 公司 | 上市 / 股价 |
+|---|---|---|
+| 国内 | [歌尔股份](https://www.goertek.com/) | <span class="sq" data-stock="sz:002241"></span> |
+| 国内 | [瑞声科技（AAC）](https://www.aactechnologies.com/) | <span class="sq" data-stock="hk:02018"></span> |
+| 国内 | [赛微电子（Silex/赛莱克斯）](https://www.smeiic.com/) | <span class="sq" data-stock="sz:300456"></span> |
+| 国内 | [敏芯股份（MEMSensing）](https://www.memsensing.com/) | <span class="sq" data-stock="sh:688286"></span> |
+| 国内 | [矽睿科技（QST）](https://www.qstcorp.com/) | <span class="sq-none">未上市</span> |
+| 国内 | [明皜传感（MiraMEMS）](http://www.miramems.com/) | <span class="sq" data-stock="sz:002079"></span> |
+| 国内 | [卓胜微（Maxscend）](https://www.maxscend.com/) | <span class="sq" data-stock="sz:300782"></span> |
+| 国内 | [天奥电子（Spaceon）](https://www.elecspn.com/) | <span class="sq" data-stock="sz:002935"></span> |
+| 国外 | [Bosch Sensortec](https://www.bosch-sensortec.com/) | <span class="sq-none">未上市</span> |
+| 国外 | [STMicroelectronics](https://www.st.com/) | <span class="sq" data-stock="us:STM"></span> |
+| 国外 | [TDK InvenSense](https://invensense.tdk.com/) | <a class="sq-na-link" href="https://finance.yahoo.com/quote/6762.T" target="_blank" rel="noopener">行情↗</a> |
+| 国外 | [Qualcomm](https://www.qualcomm.com/products/features/fingerprint-sensors) | <span class="sq" data-stock="us:QCOM"></span> |
+| 国外 | [Butterfly Network](https://www.butterflynetwork.com/) | <span class="sq" data-stock="us:BFLY"></span> |
+| 国外 | [Qorvo](https://www.qorvo.com/) | <span class="sq" data-stock="us:QRVO"></span> |
+| 国外 | [Microchip](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks) | <span class="sq" data-stock="us:MCHP"></span> |
+| 国外 | [Honeywell](https://www.honeywell.com/) | <span class="sq" data-stock="us:HON"></span> |
 
 ### 科研院所
 
-**国内**
-
-- [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) — 传感技术全国重点实验室，硅微机械加工与微系统
-- [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) — MEMS 中试/代工平台与微纳加工
-- [中科院微电子研究所](https://www.ime.ac.cn/) — MEMS 工艺平台与传感器集成
-
-**国外**
-
-- [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) — 全球顶尖高校 MEMS 研究中心
-- [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) — 惯性传感器、晶圆级封装、神经接口
-- [imec](https://www.imec-int.com/en) — 硅基传感器与超声 MEMS 工艺
-- [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) — 芯片级原子钟发源地、NEMS 精密测量
-- [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) — MEMS 工艺与微系统量产化（欧洲）
+| 地区 | 机构 | 研究重点 |
+|---|---|---|
+| 国内 | [中科院上海微系统与信息技术研究所](https://www.sim.cas.cn/) | 传感技术全国重点实验室，硅微机械加工与微系统 |
+| 国内 | [中科院苏州纳米技术与纳米仿生研究所](http://sinano.cas.cn/) | MEMS 中试/代工平台与微纳加工 |
+| 国内 | [中科院微电子研究所](https://www.ime.ac.cn/) | MEMS 工艺平台与传感器集成 |
+| 国外 | [Berkeley Sensor & Actuator Center (BSAC)](https://bsac.berkeley.edu/) | 全球顶尖高校 MEMS 研究中心 |
+| 国外 | [Michigan 集成传感器中心（WIMS²/Lurie Nanofab）](https://lnf.umich.edu/) | 惯性传感器、晶圆级封装、神经接口 |
+| 国外 | [imec](https://www.imec-int.com/en) | 硅基传感器与超声 MEMS 工艺 |
+| 国外 | [NIST 时间频率部](https://www.nist.gov/pml/time-and-frequency-division) | 芯片级原子钟发源地、NEMS 精密测量 |
+| 国外 | [Fraunhofer ISIT](https://www.isit.fraunhofer.de/) | MEMS 工艺与微系统量产化（欧洲） |
 
 ## 顶会顶刊
 
-**顶会**：Transducers · IEEE MEMS · IEEE Sensors · Hilton Head Workshop · IEDM（器件级）
-
-**顶刊**：IEEE/ASME J. of MEMS (JMEMS) · IEEE Sensors Journal · Sensors and Actuators A/B · Microsystems & Nanoengineering · IEEE TED
+| 类型 | 名称 | 说明 |
+|---|---|---|
+| 顶会 | Transducers | 国际固态传感器、执行器与微系统大会 |
+| 顶会 | IEEE MEMS | IEEE 国际微机电系统大会 |
+| 顶会 | IEEE Sensors | IEEE 国际传感器大会 |
+| 顶会 | Hilton Head Workshop | 希尔顿黑德固态传感器、执行器与微系统研讨会 |
+| 顶会 | IEDM | 国际电子器件大会（器件级） |
+| 顶刊 | JMEMS | IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊） |
+| 顶刊 | IEEE Sensors Journal | IEEE 传感器期刊 |
+| 顶刊 | Sensors and Actuators A/B | 传感器与执行器期刊 A/B 辑 |
+| 顶刊 | Microsystems & Nanoengineering | 微系统与纳米工程 |
+| 顶刊 | IEEE TED | IEEE Transactions on Electron Devices（电子器件汇刊） |
 
 ## 知识路径
 
