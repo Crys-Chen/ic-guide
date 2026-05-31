@@ -234,6 +234,10 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     微纳机电系统（M/NEMS）动力学 · 微机械谐振器 · 振动能量采集
 
+-   **[王晓林](https://imr.sjtu.edu.cn/sz_teachers/3303.html)** <span class="badge-other">交大</span>
+
+    生物 MEMS（BioMEMS） · 微流控器官芯片/类器官 · 微纳机器人与生物医学应用
+
 -   **[谢金](https://person.zju.edu.cn/xiejin)** <span class="badge-other">浙大</span>
 
     MEMS 设计与加工 · 微传感器与执行器 · 振动与声学测量
@@ -246,6 +250,14 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 
     生物 MEMS · 微纳能量收集 · 无线无源与自供能传感系统
 
+-   **[车录锋](https://person.zju.edu.cn/mems)** <span class="badge-other">浙大</span>
+
+    高性能 MEMS 振动/惯性传感器 · 集成微系统 · 可穿戴触觉传感
+
+-   **[董树荣](https://person.zju.edu.cn/sean)** <span class="badge-other">浙大</span>
+
+    RF MEMS · MEMS 智能传感器 · 柔性电子/电子皮肤 · 微纳系统集成
+
 -   **[左成杰](https://sme.ustc.edu.cn/2022/0601/c30996a556916/page.htm)** <span class="badge-other">中科大</span>
 
     RF-MEMS · 压电（AlN）谐振器 · FBAR/SAW 滤波器 · MEMS-IC 协同集成
@@ -253,6 +265,10 @@ COMSOL Multiphysics 的 MEMS 模块可以对机电耦合结构做有限元仿真
 -   **[许磊](http://leinao.ustc.edu.cn/2021/0430/c25925a483537/page.htm)** <span class="badge-other">中科大</span>
 
     低功耗 MEMS 气体传感器 · MEMS 流量传感器 · 嗅觉芯片
+
+-   **[潘挺睿](https://faculty.ustc.edu.cn/pantingrui/zh_CN/)** <span class="badge-other">中科大</span>
+
+    柔性离电触觉传感（FITS） · 可穿戴/植入式生物 MEMS · 微流控与微纳加工
 
 -   **[卢明辉](https://eng.nju.edu.cn/lmh/main.htm)** <span class="badge-other">南大</span>
 
