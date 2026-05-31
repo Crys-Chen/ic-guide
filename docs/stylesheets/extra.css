@@ -2086,3 +2086,32 @@
 .df-lnav-inner .df-lnc-t {
   font-size: 1.02rem;  /* 略减小 */
 }
+
+/* ════════════ 实时股价小组件（stock-quote.js）════════════ */
+.sq, .sq-none, .sq-na-link {
+  font-size: .82em;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  white-space: nowrap;
+  margin-left: .15em;
+  vertical-align: baseline;
+}
+.sq-loading { color: var(--md-default-fg-color--lighter); }
+.sq-ready  { font-weight: 600; letter-spacing: .1px; }
+.sq-up   { color: #e23b3b; }   /* 红涨 */
+.sq-down { color: #0a9b4e; }   /* 绿跌 */
+.sq-ready:hover { text-decoration: underline; text-underline-offset: 2px; }
+/* 取不到数字时的「行情↗」回退（JS 注入或 markdown 直给的非美海外股） */
+.sq-na, .sq-na-link {
+  color: var(--md-default-fg-color--light);
+  font-weight: 400;
+  cursor: pointer;
+}
+.sq-na:hover, .sq-na-link:hover { color: var(--md-accent-fg-color); text-decoration: underline; }
+/* 未上市标记 */
+.sq-none {
+  color: var(--md-default-fg-color--lighter);
+  font-weight: 400;
+}
+[data-md-color-scheme="slate"] .sq-up   { color: #ff6b6b; }
+[data-md-color-scheme="slate"] .sq-down { color: #34d399; }

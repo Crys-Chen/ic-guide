@@ -104,6 +104,7 @@ extra_javascript:
   - javascripts/prof-collapse.js
   - javascripts/orbit-galaxy.js
   - javascripts/hero-scroll.js
+  - javascripts/stock-quote.js
   - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
 
 extra:
