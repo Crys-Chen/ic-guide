@@ -262,14 +262,14 @@ graph LR
 ### 学术会议与期刊
 
 <div class="dm-wrap chip-block">
-  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+  <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
     <span class="dm-chip dm-chip--static" title="国际固态传感器、执行器与微系统大会">Transducers</span>
     <span class="dm-chip dm-chip--static" title="IEEE 国际微机电系统大会">IEEE MEMS</span>
     <span class="dm-chip dm-chip--static" title="IEEE 国际传感器大会">IEEE Sensors</span>
     <span class="dm-chip dm-chip--static" title="希尔顿黑德固态传感器、执行器与微系统研讨会">Hilton Head Workshop</span>
     <span class="dm-chip dm-chip--static" title="国际电子器件大会（器件级）">IEDM</span>
   </span></div>
-  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+  <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
     <span class="dm-chip dm-chip--static" title="IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊）">JMEMS</span>
     <span class="dm-chip dm-chip--static" title="IEEE 传感器期刊">IEEE Sensors Journal</span>
     <span class="dm-chip dm-chip--static" title="传感器与执行器期刊 A/B 辑">Sensors and Actuators A/B</span>
@@ -279,8 +279,6 @@ graph LR
 </div>
 
 ## 业界机构
-
-> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
 
 ### 企业
 

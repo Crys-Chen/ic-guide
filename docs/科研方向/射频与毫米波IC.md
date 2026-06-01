@@ -287,14 +287,14 @@ graph LR
 ### 学术会议与期刊
 
 <div class="dm-wrap chip-block">
-  <div class="dm-row dm-device"><span class="dm-lbl">顶会</span><span class="dm-chips">
+  <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
     <span class="dm-chip dm-chip--static" title="IEEE 国际固态电路会议">ISSCC</span>
     <span class="dm-chip dm-chip--static" title="IEEE 射频集成电路研讨会">RFIC Symposium</span>
     <span class="dm-chip dm-chip--static" title="IEEE MTT-S Int&#x27;l Microwave Symposium">IMS</span>
     <span class="dm-chip dm-chip--static" title="欧洲固态电子电路会议（原 ESSCIRC）">ESSERC</span>
     <span class="dm-chip dm-chip--static" title="欧洲微波周（European Microwave Week）">EuMW</span>
   </span></div>
-  <div class="dm-row dm-arch"><span class="dm-lbl">顶刊</span><span class="dm-chips">
+  <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
     <span class="dm-chip dm-chip--static" title="IEEE Journal of Solid-State Circuits">JSSC</span>
     <span class="dm-chip dm-chip--static" title="IEEE Trans. Microwave Theory and Techniques">T-MTT</span>
     <span class="dm-chip dm-chip--static" title="IEEE Trans. Circuits and Systems">TCAS-I/II</span>
@@ -303,8 +303,6 @@ graph LR
 </div>
 
 ## 业界机构
-
-> 这个方向毕业后主要的业界去向（国内外）。上市公司附实时股价链接，便于了解产业景气度。
 
 ### 企业
 
