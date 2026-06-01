@@ -14,19 +14,19 @@ hide:
     <marker id="spAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="910" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="455" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱：谁在用哪一段，谁属于哪条线</text>
+  <text x="455" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱的频段分配与典型用途</text>
   <!-- legend -->
   <rect x="296" y="39" width="14" height="10" rx="2" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
-  <text x="314" y="48" font-size="9.5" fill="#334155">通用</text>
-  <rect x="372" y="39" width="14" height="10" rx="2" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
-  <text x="390" y="48" font-size="9.5" fill="#1E40AF">省 · 低功耗</text>
-  <rect x="486" y="39" width="14" height="10" rx="2" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
-  <text x="504" y="48" font-size="9.5" fill="#9A3412">快 · 大带宽</text>
+  <text x="314" y="48" font-size="9.5" fill="#334155">通用通信</text>
+  <rect x="384" y="39" width="14" height="10" rx="2" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
+  <text x="402" y="48" font-size="9.5" fill="#1E40AF">低功耗短距</text>
+  <rect x="498" y="39" width="14" height="10" rx="2" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="516" y="48" font-size="9.5" fill="#9A3412">大带宽高速</text>
   <!-- zones -->
   <rect x="64" y="58" width="554" height="234" fill="#EAF1F9"/>
   <rect x="618" y="58" width="258" height="234" fill="#FBF1E6"/>
-  <text x="341" y="74" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频 · 拥挤 · 传播好（省线守这里）</text>
-  <text x="747" y="74" text-anchor="middle" font-size="10.5" fill="#9A3412">高频 · 空旷 · 带宽大（快线往这冲）</text>
+  <text x="341" y="74" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频：频段拥挤、传播损耗小</text>
+  <text x="747" y="74" text-anchor="middle" font-size="10.5" fill="#9A3412">高频：频谱充裕、可用带宽大</text>
   <!-- R1 -->
   <rect x="537" y="110" width="15" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
   <text x="545" y="104" text-anchor="middle" font-size="8.5" fill="#334155">北斗/GPS</text>
@@ -49,7 +49,7 @@ hide:
   <rect x="745" y="170" width="12" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
   <text x="751" y="198" text-anchor="middle" font-size="8.5" fill="#9A3412">雷达 77G</text>
   <!-- 省 cluster -->
-  <text x="300" y="206" text-anchor="middle" font-size="9" fill="#1E40AF">低功耗 · 省线：都挤在低频，图省电、便宜</text>
+  <text x="300" y="206" text-anchor="middle" font-size="9" fill="#1E40AF">低功耗短距系统（集中于低频段）</text>
   <rect x="305" y="222" width="14" height="16" rx="3" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
   <text x="311" y="252" text-anchor="middle" font-size="8.5" fill="#1E3A8A">RFID 13.56M</text>
   <rect x="490" y="222" width="34" height="16" rx="3" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
@@ -174,7 +174,7 @@ hide:
     <marker id="lbGap" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L8,0 L4,6 z" fill="#475569"/></marker>
   </defs>
   <rect width="860" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="430" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">链路预算：从瓦到飞瓦</text>
+  <text x="430" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线链路的功率预算示意</text>
   <!-- y axis -->
   <line x1="95" y1="45" x2="95" y2="272" stroke="#475569" stroke-width="1.2"/>
   <text x="95" y="40" text-anchor="middle" font-size="9" fill="#475569">功率/dBm</text>
@@ -187,26 +187,26 @@ hide:
   <text x="150" y="54" text-anchor="middle" font-size="9.5" fill="#1E3A8A">PA 输出 +30 dBm（≈1 W）</text>
   <!-- path loss lines -->
   <line x1="150" y1="64" x2="620" y2="201" stroke="#2563EB" stroke-width="2.2"/>
-  <text x="455" y="150" text-anchor="middle" font-size="9" fill="#2563EB">2.4 GHz：损耗较小</text>
+  <text x="455" y="150" text-anchor="middle" font-size="9" fill="#2563EB">2.4 GHz</text>
   <line x1="150" y1="64" x2="620" y2="242" stroke="#C2410C" stroke-width="2.2"/>
-  <text x="455" y="212" text-anchor="middle" font-size="9" fill="#C2410C">28 GHz：多损耗约 20 dB</text>
+  <text x="455" y="212" text-anchor="middle" font-size="9" fill="#C2410C">28 GHz（多损耗约 20 dB）</text>
   <circle cx="620" cy="201" r="3.5" fill="#2563EB"/>
   <circle cx="620" cy="242" r="3.5" fill="#C2410C"/>
   <!-- noise floor -->
   <line x1="150" y1="256" x2="730" y2="256" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5,3"/>
   <text x="734" y="259" text-anchor="start" font-size="9" fill="#B91C1C">噪声地板 ≈ -110 dBm</text>
-  <text x="430" y="270" text-anchor="middle" font-size="9" fill="#9A3412">接收 -100 dBm（0.1 pW），刚冒出噪声</text>
+  <text x="430" y="270" text-anchor="middle" font-size="9" fill="#9A3412">接收 -100 dBm（0.1 pW）</text>
   <!-- gap arrow -->
   <line x1="700" y1="68" x2="700" y2="238" stroke="#475569" stroke-width="1.1" stroke-dasharray="4,3" marker-start="url(#lbGap)" marker-end="url(#lbGap)"/>
-  <text x="708" y="150" text-anchor="start" font-size="9" fill="#475569">瓦→飞瓦</text>
-  <text x="708" y="164" text-anchor="start" font-size="9" fill="#475569">差约 13 个数量级</text>
+  <text x="708" y="150" text-anchor="start" font-size="9" fill="#475569">动态范围</text>
+  <text x="708" y="164" text-anchor="start" font-size="9" fill="#475569">≈ 130 dB（13 个数量级）</text>
   <!-- phased array lift -->
   <line x1="620" y1="240" x2="620" y2="200" stroke="#16A34A" stroke-width="2" marker-end="url(#lbUp)"/>
   <text x="628" y="214" text-anchor="start" font-size="9" fill="#15803D">相控阵阵列增益</text>
-  <text x="628" y="226" text-anchor="start" font-size="9" fill="#15803D">补回链路预算</text>
+  <text x="628" y="226" text-anchor="start" font-size="9" fill="#15803D">（补偿路径损耗）</text>
   <!-- stage labels -->
   <text x="150" y="288" text-anchor="middle" font-size="9" fill="#475569">PA 输出</text>
-  <text x="385" y="288" text-anchor="middle" font-size="9" fill="#475569">← 自由空间传播 →</text>
+  <text x="385" y="288" text-anchor="middle" font-size="9" fill="#475569">自由空间传播</text>
   <text x="620" y="288" text-anchor="middle" font-size="9" fill="#475569">接收 / LNA</text>
 </svg></div>
 
@@ -217,7 +217,7 @@ hide:
     <marker id="dcAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="820" height="240" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">超低功耗：靠“多睡少说”省电</text>
+  <text x="410" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">超低功耗收发机的占空比工作方式</text>
   <!-- axes -->
   <line x1="70" y1="45" x2="70" y2="200" stroke="#475569" stroke-width="1.2"/>
   <text x="64" y="40" text-anchor="end" font-size="9" fill="#475569">功耗</text>
@@ -227,11 +227,11 @@ hide:
   <path d="M70,185 L185,185 L185,70 L199,70 L199,185 L355,185 L355,70 L369,70 L369,185 L525,185 L525,70 L539,70 L539,185 L695,185 L695,70 L709,70 L709,185 L780,185" fill="none" stroke="#003F88" stroke-width="2"/>
   <!-- average power -->
   <line x1="70" y1="177" x2="780" y2="177" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5,3"/>
-  <text x="78" y="172" text-anchor="start" font-size="9" fill="#B91C1C">平均功耗（很低）</text>
+  <text x="78" y="172" text-anchor="start" font-size="9" fill="#B91C1C">平均功耗</text>
   <!-- annotations -->
-  <text x="235" y="76" text-anchor="start" font-size="9" fill="#1E3A8A">唤醒发送：几十 mW，几毫秒</text>
-  <text x="437" y="197" text-anchor="middle" font-size="9" fill="#475569">休眠：几 µW，几乎不耗电</text>
-  <text x="410" y="225" text-anchor="middle" font-size="10.5" fill="#15803D">占空比极小 → 平均功耗极低 → 一颗纽扣电池用十年</text>
+  <text x="235" y="76" text-anchor="start" font-size="9" fill="#1E3A8A">唤醒发送（数十 mW，数毫秒）</text>
+  <text x="437" y="197" text-anchor="middle" font-size="9" fill="#475569">休眠（数 µW）</text>
+  <text x="410" y="225" text-anchor="middle" font-size="10" fill="#334155">平均功耗 ≈ 占空比 × 峰值功耗</text>
 </svg></div>
 
 信号穿过空间到达接收机时，往往只剩 -100 dBm，也就是 0.1 皮瓦。发送时是几瓦，接收时是飞瓦，相差十几个数量级。把这个几乎被噪声掩盖的信号从噪声中分辨出来，是低噪声放大器（LNA）的任务。两侧在这里遇到的是同一个限制：热噪声。要得到更低的噪声、更高的灵敏度，就得加大晶体管的偏置电流，而热噪声划定的下限，再精巧的电路也无法突破。“快”这一侧要求 LNA 在几十 GHz 的毫米波下仍能压制噪声，“省”这一侧要求它在纳安级电流下仍能保持灵敏度。同一个限制，一侧体现在频率上，一侧体现在功耗上，能做的都是在下限之上找一个可接受的折中。
