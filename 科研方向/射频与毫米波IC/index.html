@@ -12558,6 +12558,56 @@
 <p>设计让无线信号穿越空间的模拟芯片，一端是追求带宽的毫米波，一端是追求能效的低功耗无线。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>二十年前，一部手机只能打电话、发短信；今天，时速三百公里的高铁上也能开视频会议、看直播。这是无线的一副面孔，越来越快。它还有另一副，方向几乎相反。手腕上的运动手环、随身的门禁卡、植入体内的起搏器，靠一颗小电池就能安静工作十年，这是它越来越省、越来越无处不在的一面。同一门射频学问，被这两种需求拉向相反的方向。它们面对的是同一件事的两本账：信号从发射机传到接收机，这一路的损耗与增益都要算清。一本账叫链路预算，关心信号能不能传到；一本账叫能量预算，关心传一次要花多少电。这个方向的研究，大多是在这两本账上和物理讨价还价。</p>
+<div><svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;">
+  <defs>
+    <marker id="spArrR" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C2410C"/></marker>
+    <marker id="spArrL" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#003F88"/></marker>
+    <marker id="spAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="880" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="440" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱：谁在用哪一段</text>
+  <!-- zones -->
+  <rect x="70" y="34" width="532" height="205" fill="#E8F0F9"/>
+  <rect x="602" y="34" width="248" height="205" fill="#FBF1E6"/>
+  <text x="336" y="50" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频 · 拥挤 · 传播好、器件便宜</text>
+  <text x="726" y="50" text-anchor="middle" font-size="10.5" fill="#9A3412">高频 · 空旷 · 带宽大、物理难</text>
+  <!-- two-line arrows -->
+  <text x="572" y="66" text-anchor="middle" font-size="10" fill="#9A3412">『快』要带宽，往右爬</text>
+  <line x1="452" y1="74" x2="694" y2="74" stroke="#C2410C" stroke-width="1.5" marker-end="url(#spArrR)"/>
+  <text x="308" y="66" text-anchor="middle" font-size="10" fill="#1E40AF">『省』要省电，守左边</text>
+  <line x1="428" y1="74" x2="188" y2="74" stroke="#003F88" stroke-width="1.5" marker-end="url(#spArrL)"/>
+  <!-- upper chips -->
+  <rect x="665" y="150" width="37" height="22" rx="4" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="683" y="145" text-anchor="middle" font-size="8.5" fill="#9A3412">5G 毫米波</text>
+  <rect x="739" y="150" width="53" height="22" rx="4" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="765" y="145" text-anchor="middle" font-size="8.5" fill="#9A3412">6G · 回传</text>
+  <!-- lower chips -->
+  <rect x="148" y="183" width="454" height="22" rx="4" fill="#D5E3F4" stroke="#1E40AF" stroke-width="1"/>
+  <text x="375" y="198" text-anchor="middle" font-size="9" fill="#1E3A8A">广播·电视 · 蜂窝 2G–5G · 北斗/GPS · WiFi · 蓝牙</text>
+  <rect x="636" y="183" width="46" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
+  <text x="659" y="219" text-anchor="middle" font-size="8.5" fill="#9A3412">卫星</text>
+  <rect x="716" y="183" width="22" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
+  <text x="727" y="219" text-anchor="middle" font-size="8.5" fill="#9A3412">雷达 77G</text>
+  <rect x="792" y="183" width="58" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
+  <text x="821" y="198" text-anchor="middle" font-size="8.5" fill="#9A3412">太赫兹</text>
+  <text x="375" y="222" text-anchor="middle" font-size="8.5" fill="#64748B">几乎所有民用无线都堆在 6 GHz 以下</text>
+  <!-- axis -->
+  <line x1="70" y1="235" x2="858" y2="235" stroke="#475569" stroke-width="1.5" marker-end="url(#spAxis)"/>
+  <text x="864" y="239" font-size="10" fill="#475569">频率</text>
+  <line x1="181" y1="235" x2="181" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="181" y="252" text-anchor="middle" font-size="9" fill="#475569">1 MHz</text>
+  <line x1="404" y1="235" x2="404" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="404" y="252" text-anchor="middle" font-size="9" fill="#475569">100 MHz</text>
+  <line x1="516" y1="235" x2="516" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="516" y="252" text-anchor="middle" font-size="9" fill="#475569">1 GHz</text>
+  <line x1="627" y1="235" x2="627" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="627" y="252" text-anchor="middle" font-size="9" fill="#475569">10 GHz</text>
+  <line x1="739" y1="235" x2="739" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="739" y="252" text-anchor="middle" font-size="9" fill="#475569">100 GHz</text>
+  <line x1="844" y1="235" x2="844" y2="241" stroke="#475569" stroke-width="1"/>
+  <text x="844" y="252" text-anchor="middle" font-size="9" fill="#475569">1 THz</text>
+</svg></div>
+
 <p>无论是把信号推向更高的频率，还是让它尽可能省电，都得先迈过同一道坎，而这道坎就在电路内部。在低频电路里，一根导线可以看成理想的连接：电流从这头到那头，不损耗、不延迟、不辐射。可频率一旦进入 GHz 量级，这个假设就不再成立。一根几毫米长的走线，其电感足以改变信号的相位；两根挨着的走线，寄生的耦合电容会把一路信号漏到另一路；晶体管的增益也随频率升高而下降。射频工程师只好换一套语言来描述电路，用 S 参数代替增益，用噪声系数衡量灵敏度，用史密斯圆图看阻抗是否匹配。这套语言是模拟电路在高频下的延伸，物理图像却已经完全不同。过了这道共同的坎，两个方向才真正分开。</p>
 <div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;">
   <defs>
@@ -12648,7 +12698,71 @@
 
 <p>信号要离开芯片、送上天线，先得有一级电路把它放大，这就是功率放大器（PA）。两种需求在这里第一次正面相遇。要传得远，PA 就得输出足够大的功率，可大功率会让晶体管进入非线性区，产生谐波、干扰相邻信道；要保持线性，又得降低工作点，效率随之下降。一个 4G 基站的 PA，效率常年只有三四成，其余的电都变成了热，这是“快”这一侧的难处。换到“省”这一侧，难处正好相反：一颗纽扣电池要供传感器工作十年，PA 不能一直开着，于是收发机大部分时间处于休眠，只在需要发送时醒来，发完立即休眠，每比特的能耗都要尽量压低。同一个放大器，一侧追求大功率和高效率，一侧追求极低功耗。</p>
 <p>信号一旦离开天线，损耗就开始了。电磁波在空间中扩散，能量衰减很快，而且频率越高，衰减越严重。路径损耗大致与频率的平方成正比，28 GHz 的信号比 2.4 GHz 的在相同距离上多损耗约 20 dB，功率只剩百分之一。这正是链路预算最难平衡的地方，两侧给出了相反的答案。“快”这一侧迎难而上。与其用一根天线向四周辐射，不如把几十上百个微小的天线单元排成阵列，分别控制每个单元的相位，让电磁波在目标方向上叠加、在其他方向上抵消，汇聚成一束波束，把损失的能量补回来，这就是相控阵。手机直连卫星是它的极端例子：卫星相当于把基站搬到几百公里高的轨道上，靠星上一面很大的相控阵，对准地面那部功率和天线都很小的手机。</p>
+<div><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;">
+  <defs>
+    <marker id="lbUp" markerWidth="9" markerHeight="9" refX="4" refY="2" orient="auto"><path d="M0,8 L4,0 L8,8 z" fill="#16A34A"/></marker>
+    <marker id="lbGap" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L8,0 L4,6 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="860" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="430" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">链路预算：从瓦到飞瓦</text>
+  <!-- y axis -->
+  <line x1="95" y1="45" x2="95" y2="272" stroke="#475569" stroke-width="1.2"/>
+  <text x="95" y="40" text-anchor="middle" font-size="9" fill="#475569">功率/dBm</text>
+  <text x="88" y="67" text-anchor="end" font-size="9" fill="#475569">+30</text>
+  <text x="88" y="108" text-anchor="end" font-size="9" fill="#475569">0</text>
+  <text x="88" y="177" text-anchor="end" font-size="9" fill="#475569">-50</text>
+  <text x="88" y="245" text-anchor="end" font-size="9" fill="#475569">-100</text>
+  <!-- PA output -->
+  <circle cx="150" cy="64" r="4" fill="#003F88"/>
+  <text x="150" y="54" text-anchor="middle" font-size="9.5" fill="#1E3A8A">PA 输出 +30 dBm（≈1 W）</text>
+  <!-- path loss lines -->
+  <line x1="150" y1="64" x2="620" y2="201" stroke="#2563EB" stroke-width="2.2"/>
+  <text x="455" y="150" text-anchor="middle" font-size="9" fill="#2563EB">2.4 GHz：损耗较小</text>
+  <line x1="150" y1="64" x2="620" y2="242" stroke="#C2410C" stroke-width="2.2"/>
+  <text x="455" y="212" text-anchor="middle" font-size="9" fill="#C2410C">28 GHz：多损耗约 20 dB</text>
+  <circle cx="620" cy="201" r="3.5" fill="#2563EB"/>
+  <circle cx="620" cy="242" r="3.5" fill="#C2410C"/>
+  <!-- noise floor -->
+  <line x1="150" y1="256" x2="730" y2="256" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="734" y="259" text-anchor="start" font-size="9" fill="#B91C1C">噪声地板 ≈ -110 dBm</text>
+  <text x="430" y="270" text-anchor="middle" font-size="9" fill="#9A3412">接收 -100 dBm（0.1 pW），刚冒出噪声</text>
+  <!-- gap arrow -->
+  <line x1="668" y1="68" x2="668" y2="238" stroke="#475569" stroke-width="1.1" stroke-dasharray="4,3" marker-start="url(#lbGap)" marker-end="url(#lbGap)"/>
+  <text x="676" y="150" text-anchor="start" font-size="9" fill="#475569">瓦→飞瓦</text>
+  <text x="676" y="164" text-anchor="start" font-size="9" fill="#475569">差约 13 个数量级</text>
+  <!-- phased array lift -->
+  <line x1="620" y1="240" x2="620" y2="200" stroke="#16A34A" stroke-width="2" marker-end="url(#lbUp)"/>
+  <text x="612" y="196" text-anchor="end" font-size="9" fill="#15803D">相控阵阵列增益</text>
+  <text x="612" y="208" text-anchor="end" font-size="9" fill="#15803D">补回链路预算</text>
+  <!-- stage labels -->
+  <text x="150" y="288" text-anchor="middle" font-size="9" fill="#475569">PA 输出</text>
+  <text x="385" y="288" text-anchor="middle" font-size="9" fill="#475569">← 自由空间传播 →</text>
+  <text x="620" y="288" text-anchor="middle" font-size="9" fill="#475569">接收 / LNA</text>
+</svg></div>
+
 <p>一部 5G 毫米波终端，会在指甲盖大小的面积里集成上百个天线单元和相应的移相器、放大器，毫秒内就能把波束对准基站。这种集成度十年前还难以想象，是“快”这一侧最活跃的方向之一。“省”这一侧既没有功率预算，也不需要相控阵。它要连接的不过是几十米外的网关，传不远本来就不是问题，难的是每次发送要做到多省。它的重点落在相反的一面：把整个收发机做得尽量简单、尽量小，把每次发送的能量降到最低，能不发就不发。同样面对这段距离，一侧的办法是加大发射，一侧的办法是尽量少发、把电路做到最简。</p>
+<div><svg viewBox="0 0 820 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
+  <defs>
+    <marker id="dcAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="820" height="240" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">超低功耗：靠“多睡少说”省电</text>
+  <!-- axes -->
+  <line x1="70" y1="45" x2="70" y2="200" stroke="#475569" stroke-width="1.2"/>
+  <text x="64" y="40" text-anchor="end" font-size="9" fill="#475569">功耗</text>
+  <line x1="70" y1="200" x2="788" y2="200" stroke="#475569" stroke-width="1.2" marker-end="url(#dcAxis)"/>
+  <text x="792" y="204" text-anchor="start" font-size="10" fill="#475569">时间</text>
+  <!-- power waveform: mostly asleep, brief spikes -->
+  <path d="M70,185 L185,185 L185,70 L199,70 L199,185 L355,185 L355,70 L369,70 L369,185 L525,185 L525,70 L539,70 L539,185 L695,185 L695,70 L709,70 L709,185 L780,185" fill="none" stroke="#003F88" stroke-width="2"/>
+  <!-- average power -->
+  <line x1="70" y1="177" x2="780" y2="177" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="78" y="172" text-anchor="start" font-size="9" fill="#B91C1C">平均功耗（很低）</text>
+  <!-- annotations -->
+  <text x="235" y="76" text-anchor="start" font-size="9" fill="#1E3A8A">唤醒发送：几十 mW，几毫秒</text>
+  <text x="437" y="197" text-anchor="middle" font-size="9" fill="#475569">休眠：几 µW，几乎不耗电</text>
+  <text x="410" y="225" text-anchor="middle" font-size="10.5" fill="#15803D">占空比极小 → 平均功耗极低 → 一颗纽扣电池用十年</text>
+</svg></div>
+
 <p>信号穿过空间到达接收机时，往往只剩 -100 dBm，也就是 0.1 皮瓦。发送时是几瓦，接收时是飞瓦，相差十几个数量级。把这个几乎被噪声掩盖的信号从噪声中分辨出来，是低噪声放大器（LNA）的任务。两侧在这里遇到的是同一个限制：热噪声。要得到更低的噪声、更高的灵敏度，就得加大晶体管的偏置电流，而热噪声划定的下限，再精巧的电路也无法突破。“快”这一侧要求 LNA 在几十 GHz 的毫米波下仍能压制噪声，“省”这一侧要求它在纳安级电流下仍能保持灵敏度。同一个限制，一侧体现在频率上，一侧体现在功耗上，能做的都是在下限之上找一个可接受的折中。</p>
 <p>无论收还是发，整条链路都需要一个稳定的本振，为信号确定载波频率。这本身是一门专门的学问，叫频率综合，核心是锁相环（PLL）。“快”这一侧要求本振在几十 GHz 下依然稳定，“省”这一侧要求它在几乎不耗电的条件下依然纯净。这个每个收发机都要用到的部件，同样被两种需求拉向两端。</p>
 <p>沿各自的方向走到尽头，两侧会遇到各自的极限。“快”的尽头是太赫兹，频率高到 300 GHz 以上，晶体管的增益已近枯竭，长期缺乏可用的有源器件，近年才有研究用标准 CMOS 工艺把收发机做到这个频段，将边界又推进一步。“省”的尽头则相反，把一个比特发送出去，能耗究竟还能降到多低，目前也没有定论。同一门射频，被这两种相反的需求，一边推向更高的频率，一边压向更低的功耗，发展成今天这样一个很宽的方向。</p>
