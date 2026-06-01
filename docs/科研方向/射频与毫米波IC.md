@@ -44,7 +44,7 @@ hide:
   <text x="375" y="222" text-anchor="middle" font-size="8.5" fill="#64748B">几乎所有民用无线都堆在 6 GHz 以下</text>
   <!-- axis -->
   <line x1="70" y1="235" x2="858" y2="235" stroke="#475569" stroke-width="1.5" marker-end="url(#spAxis)"/>
-  <text x="864" y="239" font-size="10" fill="#475569">频率</text>
+  <text x="852" y="230" text-anchor="end" font-size="10" fill="#475569">频率</text>
   <line x1="181" y1="235" x2="181" y2="241" stroke="#475569" stroke-width="1"/>
   <text x="181" y="252" text-anchor="middle" font-size="9" fill="#475569">1 MHz</text>
   <line x1="404" y1="235" x2="404" y2="241" stroke="#475569" stroke-width="1"/>
@@ -181,13 +181,13 @@ hide:
   <text x="734" y="259" text-anchor="start" font-size="9" fill="#B91C1C">噪声地板 ≈ -110 dBm</text>
   <text x="430" y="270" text-anchor="middle" font-size="9" fill="#9A3412">接收 -100 dBm（0.1 pW），刚冒出噪声</text>
   <!-- gap arrow -->
-  <line x1="668" y1="68" x2="668" y2="238" stroke="#475569" stroke-width="1.1" stroke-dasharray="4,3" marker-start="url(#lbGap)" marker-end="url(#lbGap)"/>
-  <text x="676" y="150" text-anchor="start" font-size="9" fill="#475569">瓦→飞瓦</text>
-  <text x="676" y="164" text-anchor="start" font-size="9" fill="#475569">差约 13 个数量级</text>
+  <line x1="700" y1="68" x2="700" y2="238" stroke="#475569" stroke-width="1.1" stroke-dasharray="4,3" marker-start="url(#lbGap)" marker-end="url(#lbGap)"/>
+  <text x="708" y="150" text-anchor="start" font-size="9" fill="#475569">瓦→飞瓦</text>
+  <text x="708" y="164" text-anchor="start" font-size="9" fill="#475569">差约 13 个数量级</text>
   <!-- phased array lift -->
   <line x1="620" y1="240" x2="620" y2="200" stroke="#16A34A" stroke-width="2" marker-end="url(#lbUp)"/>
-  <text x="612" y="196" text-anchor="end" font-size="9" fill="#15803D">相控阵阵列增益</text>
-  <text x="612" y="208" text-anchor="end" font-size="9" fill="#15803D">补回链路预算</text>
+  <text x="628" y="214" text-anchor="start" font-size="9" fill="#15803D">相控阵阵列增益</text>
+  <text x="628" y="226" text-anchor="start" font-size="9" fill="#15803D">补回链路预算</text>
   <!-- stage labels -->
   <text x="150" y="288" text-anchor="middle" font-size="9" fill="#475569">PA 输出</text>
   <text x="385" y="288" text-anchor="middle" font-size="9" fill="#475569">← 自由空间传播 →</text>
