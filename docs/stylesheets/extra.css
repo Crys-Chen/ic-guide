@@ -929,7 +929,7 @@
   border-left: 4px solid #032168 !important;
 }
 [data-md-color-scheme="default"] .md-typeset h3 {
-  border-left: 3px solid rgba(3,33,104,.45) !important;
+  border-left: 3px solid #1a48a8 !important;   /* 实心浅蓝，与 h2 深蓝成两档阶梯 */
 }
 [data-md-color-scheme="default"] .md-header {
   background: #fff !important;
