@@ -136,6 +136,26 @@
   border-left: 3px solid var(--md-primary-fg-color);
 }
 
+/* ─── 境内 / 境外：课题组下的分区标签（紧贴 .prof-collapse 卡片网格）── */
+.md-typeset p:has(+ .prof-collapse) {
+  margin: 1.5rem 0 .55rem;
+  padding-left: .5em;
+  border-left: 2px solid rgba(3, 33, 104, .35);
+  line-height: 1.2;
+}
+.md-typeset p:has(+ .prof-collapse) strong {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  color: rgba(3, 33, 104, .62);
+}
+[data-md-color-scheme="slate"] .md-typeset p:has(+ .prof-collapse) {
+  border-left-color: rgba(184, 210, 242, .4);
+}
+[data-md-color-scheme="slate"] .md-typeset p:has(+ .prof-collapse) strong {
+  color: rgba(184, 210, 242, .7);
+}
+
 /* ─── Admonition 圆角 + 阴影 ────────────────────────────── */
 .md-typeset .admonition,
 .md-typeset details {
@@ -929,7 +949,7 @@
   border-left: 4px solid #032168 !important;
 }
 [data-md-color-scheme="default"] .md-typeset h3 {
-  border-left: 3px solid rgba(3,33,104,.45) !important;
+  border-left: 3px solid #1a48a8 !important;   /* 实心浅蓝，与 h2 深蓝成两档阶梯 */
 }
 [data-md-color-scheme="default"] .md-header {
   background: #fff !important;
