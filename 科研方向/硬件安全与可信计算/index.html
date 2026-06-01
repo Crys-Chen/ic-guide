@@ -12665,28 +12665,35 @@
 <p>两者在硬件层面汇聚到同一类瓶颈：<strong>NTT（数论变换）</strong>、大整数模乘和 <strong>MSM（多标量乘法）</strong> 吃掉了绝大部分计算时间，纯软件实现比明文慢上万倍——靠数学走不动，必须靠硅。专用加速器随之冒头：MIT、Intel 都做了 FHE 加速器原型；ZK 方向有 <strong>Cysic</strong>（中国）、<strong>Ingonyama</strong> 这类 2022 年后涌现的初创公司，专门加速 prover。这条路彻底改写了硬件在安全里的角色——不再是信任之根，而是高性能的密码协处理器。</p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
-<li><strong>侧信道攻击（Side-Channel Attacks）</strong>：通过测量功耗曲线、电磁辐射或时序信息，推断 AES 密钥等敏感信息，如何在硬件设计阶段防止信息泄露？</li>
-<li><strong>硬件木马（Hardware Trojans）</strong>：恶意电路被植入 ASIC 的 RTL 或版图层，如何在流片前检测和验证？</li>
-<li><strong>物理不可克隆函数（PUF）</strong>：利用芯片制造过程中的随机工艺偏差生成唯一"指纹"，用于硬件身份认证，如何提高稳定性和抗攻击性？</li>
-<li><strong>可信执行环境（TEE）</strong>：ARM TrustZone、RISC-V PMP 等机制如何在硬件层面隔离安全计算，防止操作系统层面的攻击？</li>
+<li><strong>硬件漏洞无法升级</strong>：Spectre 这类漏洞来自三十年前"天经地义"的投机执行优化，刻在硅上无从回收，"修复"只能靠禁用功能换 5%–30% 性能。当性能优化与安全天然对立，微架构该如何在设计期就把侧信道堵死，而不是事后打补丁？</li>
+<li><strong>供应链信任与硬件木马检测</strong>：一颗芯片要过设计、IP、代工、封装数家之手，任何一环都可能植入只在特定条件触发的隐藏电路。几十亿晶体管里揪出极小一撮木马，功能仿真测不到、电镜逐层扫描又贵到只有国安场景用得起——侧信道指纹、ML 版图异常检测、RTL 形式化验证，谁能逼近"完全可靠"？</li>
+<li><strong>物理泄漏的猫鼠游戏</strong>：芯片做加密时，功耗、电磁、时序都在持续出卖密钥（SPA/DPA/EMA），如今连 NPU 的权重都能从功耗曲线反推。掩码（masking）、恒时执行（constant-time）这些物理层消噪手段，永远在被新的测量方法追赶——这场博弈关得上吗？</li>
+<li><strong>PUF 的稳定与抗建模</strong>：把制造偏差变成硅片"指纹"，难点在两端——如何让响应在温度漂移与器件老化下仍稳定重现，又如何抵抗攻击者用大量激励-响应对训练出的机器学习数学复制品？</li>
+<li><strong>可信执行环境的边界</strong>：ARM TrustZone、RISC-V PMP 想在硬件里划出"安全飞地"，让操作系统被攻陷时飞地内代码仍不被窥探。但 TEE 自身也不断被微架构侧信道击穿，这块"信任根"的边界究竟能守多牢？</li>
+<li><strong>让硬件不必被信任</strong>：从姚期智的"百万富翁问题"到安全多方计算，FHE 让密文上直接算、ZKP 证明为真而不泄露细节——硬件由此从"信任之根"变成密码协处理器。可 NTT、大整数模乘、MSM 让纯软件慢上万倍，必须靠专用加速器（FHE/ZK accelerator）救场，算法与硅如何协同把它拉回实用？</li>
 </ul>
 <h3 id="_3">知识路径</h3>
 <pre class="mermaid"><code>graph LR
-    A["数字IC设计\n了解电路实现细节"] --&gt; B["ASIC 设计流程\n知道漏洞在哪里产生"]
-    B --&gt; C["计算机组成原理\n微架构与侧信道"]
-    C --&gt; D["操作系统\nTEE·内核权限"]
-    D --&gt; E["硬件安全\n攻防研究"]
+    A["数字电路 / HDL\n功耗·时序的物理来源"] --&gt; B["ASIC 设计流程\n木马·工艺偏差在哪产生"]
+    B --&gt; C["体系结构 / 微架构\n投机执行·侧信道·TEE"]
+    C --&gt; D["系统安全 / 操作系统\nTrustZone·PMP·内核权限"]
+    D --&gt; E["硬件安全与可信计算\n攻防博弈"]
 
-    F["密码学基础\nAES·RSA·ECC"] --&gt; E
+    F["密码学\nAES·RSA · MPC/FHE/ZKP"] --&gt; E
+    F --&gt; G["密码加速器\nNTT·MSM·盲算硅"]
+    G --&gt; E
 
     classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
     classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
     class A,B,C,D,E core
-    class F supp</code></pre>
-<p><strong>本站相关课程：</strong></p>
+    class F,G supp</code></pre>
+<p>图中节点对应以下知识板块（按需选修）：</p>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97/">电路（数字）</a></li>
+<li>数字电路 / HDL → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97/">电路（数字）</a>、<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路总览</a></li>
+<li>ASIC 设计流程 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/ASIC/">电路 · ASIC 设计</a></li>
+<li>体系结构 / 微架构 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">系统架构 · 体系结构</a></li>
+<li>系统安全 / 操作系统 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/">系统架构 · 系统安全</a>、<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">系统架构 · 操作系统</a></li>
+<li>密码学（含 MPC/FHE/ZKP 与加速器的数学底座）→ <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E8%BF%9B%E9%98%B6/%E5%AF%86%E7%A0%81%E5%AD%A6/StandfordCrypto/">数学进阶 · 密码学（Stanford）</a>、<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E8%BF%9B%E9%98%B6/">数学进阶</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>这个方向对喜欢"对抗性思维"的人特别有吸引力——你需要同时扮演攻击者和防御者，设想各种非常规的信息泄露路径，再想办法堵住它们。</p>
