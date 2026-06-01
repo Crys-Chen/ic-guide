@@ -9,54 +9,70 @@ hide:
 
 二十年前，一部手机只能打电话、发短信；今天，时速三百公里的高铁上也能开视频会议、看直播。这是无线的一副面孔，越来越快。它还有另一副，方向几乎相反。手腕上的运动手环、随身的门禁卡、植入体内的起搏器，靠一颗小电池就能安静工作十年，这是它越来越省、越来越无处不在的一面。同一门射频学问，被这两种需求拉向相反的方向。它们面对的是同一件事的两本账：信号从发射机传到接收机，这一路的损耗与增益都要算清。一本账叫链路预算，关心信号能不能传到；一本账叫能量预算，关心传一次要花多少电。这个方向的研究，大多是在这两本账上和物理讨价还价。
 
-<div><svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;">
+<div><svg viewBox="0 0 910 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:910px;display:block;margin:1.5rem auto;">
   <defs>
-    <marker id="spArrR" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C2410C"/></marker>
-    <marker id="spArrL" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#003F88"/></marker>
     <marker id="spAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
-  <rect width="880" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="440" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱：谁在用哪一段</text>
+  <rect width="910" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="455" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱：谁在用哪一段，谁属于哪条线</text>
+  <!-- legend -->
+  <rect x="296" y="39" width="14" height="10" rx="2" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
+  <text x="314" y="48" font-size="9.5" fill="#334155">通用</text>
+  <rect x="372" y="39" width="14" height="10" rx="2" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
+  <text x="390" y="48" font-size="9.5" fill="#1E40AF">省 · 低功耗</text>
+  <rect x="486" y="39" width="14" height="10" rx="2" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="504" y="48" font-size="9.5" fill="#9A3412">快 · 大带宽</text>
   <!-- zones -->
-  <rect x="70" y="34" width="532" height="205" fill="#E8F0F9"/>
-  <rect x="602" y="34" width="248" height="205" fill="#FBF1E6"/>
-  <text x="336" y="50" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频 · 拥挤 · 传播好、器件便宜</text>
-  <text x="726" y="50" text-anchor="middle" font-size="10.5" fill="#9A3412">高频 · 空旷 · 带宽大、物理难</text>
-  <!-- two-line arrows -->
-  <text x="572" y="66" text-anchor="middle" font-size="10" fill="#9A3412">『快』要带宽，往右爬</text>
-  <line x1="452" y1="74" x2="694" y2="74" stroke="#C2410C" stroke-width="1.5" marker-end="url(#spArrR)"/>
-  <text x="308" y="66" text-anchor="middle" font-size="10" fill="#1E40AF">『省』要省电，守左边</text>
-  <line x1="428" y1="74" x2="188" y2="74" stroke="#003F88" stroke-width="1.5" marker-end="url(#spArrL)"/>
-  <!-- upper chips -->
-  <rect x="665" y="150" width="37" height="22" rx="4" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
-  <text x="683" y="145" text-anchor="middle" font-size="8.5" fill="#9A3412">5G 毫米波</text>
-  <rect x="739" y="150" width="53" height="22" rx="4" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
-  <text x="765" y="145" text-anchor="middle" font-size="8.5" fill="#9A3412">6G · 回传</text>
-  <!-- lower chips -->
-  <rect x="148" y="183" width="454" height="22" rx="4" fill="#D5E3F4" stroke="#1E40AF" stroke-width="1"/>
-  <text x="375" y="198" text-anchor="middle" font-size="9" fill="#1E3A8A">广播·电视 · 蜂窝 2G–5G · 北斗/GPS · WiFi · 蓝牙</text>
-  <rect x="636" y="183" width="46" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
-  <text x="659" y="219" text-anchor="middle" font-size="8.5" fill="#9A3412">卫星</text>
-  <rect x="716" y="183" width="22" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
-  <text x="727" y="219" text-anchor="middle" font-size="8.5" fill="#9A3412">雷达 77G</text>
-  <rect x="792" y="183" width="58" height="22" rx="4" fill="#FCE3CC" stroke="#C2410C" stroke-width="1"/>
-  <text x="821" y="198" text-anchor="middle" font-size="8.5" fill="#9A3412">太赫兹</text>
-  <text x="375" y="222" text-anchor="middle" font-size="8.5" fill="#64748B">几乎所有民用无线都堆在 6 GHz 以下</text>
+  <rect x="64" y="58" width="554" height="234" fill="#EAF1F9"/>
+  <rect x="618" y="58" width="258" height="234" fill="#FBF1E6"/>
+  <text x="341" y="74" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频 · 拥挤 · 传播好（省线守这里）</text>
+  <text x="747" y="74" text-anchor="middle" font-size="10.5" fill="#9A3412">高频 · 空旷 · 带宽大（快线往这冲）</text>
+  <!-- R1 -->
+  <rect x="537" y="110" width="15" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
+  <text x="545" y="104" text-anchor="middle" font-size="8.5" fill="#334155">北斗/GPS</text>
+  <rect x="688" y="110" width="25" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="700" y="104" text-anchor="middle" font-size="8.5" fill="#9A3412">5G 毫米波</text>
+  <rect x="760" y="110" width="55" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="787" y="104" text-anchor="middle" font-size="8.5" fill="#9A3412">6G · 回传</text>
+  <!-- R2 -->
+  <rect x="510" y="140" width="81" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
+  <text x="550" y="134" text-anchor="middle" font-size="8.5" fill="#334155">蜂窝 2G–5G</text>
+  <rect x="653" y="140" width="61" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="683" y="134" text-anchor="middle" font-size="8.5" fill="#9A3412">卫星 Ku/Ka</text>
+  <rect x="815" y="140" width="61" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="845" y="134" text-anchor="middle" font-size="8.5" fill="#9A3412">太赫兹</text>
+  <!-- R3 -->
+  <rect x="145" y="170" width="372" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
+  <text x="331" y="182" text-anchor="middle" font-size="9" fill="#334155">广播 · 电视（0.5 MHz – 0.8 GHz）</text>
+  <rect x="609" y="170" width="20" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
+  <text x="619" y="198" text-anchor="middle" font-size="8.5" fill="#334155">WiFi 5/6/6E</text>
+  <rect x="745" y="170" width="12" height="16" rx="3" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
+  <text x="751" y="198" text-anchor="middle" font-size="8.5" fill="#9A3412">雷达 77G</text>
+  <!-- 省 cluster -->
+  <text x="300" y="206" text-anchor="middle" font-size="9" fill="#1E40AF">低功耗 · 省线：都挤在低频，图省电、便宜</text>
+  <rect x="305" y="222" width="14" height="16" rx="3" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
+  <text x="311" y="252" text-anchor="middle" font-size="8.5" fill="#1E3A8A">RFID 13.56M</text>
+  <rect x="490" y="222" width="34" height="16" rx="3" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
+  <text x="507" y="218" text-anchor="middle" font-size="8.5" fill="#1E3A8A">LoRa/NB-IoT</text>
+  <rect x="566" y="222" width="14" height="16" rx="3" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
+  <text x="573" y="252" text-anchor="middle" font-size="8.5" fill="#1E3A8A">蓝牙/Zigbee</text>
   <!-- axis -->
-  <line x1="70" y1="235" x2="858" y2="235" stroke="#475569" stroke-width="1.5" marker-end="url(#spAxis)"/>
-  <text x="852" y="230" text-anchor="end" font-size="10" fill="#475569">频率</text>
-  <line x1="181" y1="235" x2="181" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="181" y="252" text-anchor="middle" font-size="9" fill="#475569">1 MHz</text>
-  <line x1="404" y1="235" x2="404" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="404" y="252" text-anchor="middle" font-size="9" fill="#475569">100 MHz</text>
-  <line x1="516" y1="235" x2="516" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="516" y="252" text-anchor="middle" font-size="9" fill="#475569">1 GHz</text>
-  <line x1="627" y1="235" x2="627" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="627" y="252" text-anchor="middle" font-size="9" fill="#475569">10 GHz</text>
-  <line x1="739" y1="235" x2="739" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="739" y="252" text-anchor="middle" font-size="9" fill="#475569">100 GHz</text>
-  <line x1="844" y1="235" x2="844" y2="241" stroke="#475569" stroke-width="1"/>
-  <text x="844" y="252" text-anchor="middle" font-size="9" fill="#475569">1 THz</text>
+  <line x1="64" y1="292" x2="888" y2="292" stroke="#475569" stroke-width="1.5" marker-end="url(#spAxis)"/>
+  <text x="882" y="284" text-anchor="end" font-size="10" fill="#475569">频率</text>
+  <line x1="180" y1="292" x2="180" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="180" y="309" text-anchor="middle" font-size="9" fill="#475569">1 MHz</text>
+  <line x1="296" y1="292" x2="296" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="296" y="309" text-anchor="middle" font-size="9" fill="#475569">10 MHz</text>
+  <line x1="412" y1="292" x2="412" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="412" y="309" text-anchor="middle" font-size="9" fill="#475569">100 MHz</text>
+  <line x1="528" y1="292" x2="528" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="528" y="309" text-anchor="middle" font-size="9" fill="#475569">1 GHz</text>
+  <line x1="644" y1="292" x2="644" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="644" y="309" text-anchor="middle" font-size="9" fill="#475569">10 GHz</text>
+  <line x1="760" y1="292" x2="760" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="760" y="309" text-anchor="middle" font-size="9" fill="#475569">100 GHz</text>
+  <line x1="876" y1="292" x2="876" y2="298" stroke="#475569" stroke-width="1"/>
+  <text x="876" y="309" text-anchor="middle" font-size="9" fill="#475569">1 THz</text>
 </svg></div>
 
 无论是把信号推向更高的频率，还是让它尽可能省电，都得先迈过同一道坎，而这道坎就在电路内部。在低频电路里，一根导线可以看成理想的连接：电流从这头到那头，不损耗、不延迟、不辐射。可频率一旦进入 GHz 量级，这个假设就不再成立。一根几毫米长的走线，其电感足以改变信号的相位；两根挨着的走线，寄生的耦合电容会把一路信号漏到另一路；晶体管的增益也随频率升高而下降。射频工程师只好换一套语言来描述电路，用 S 参数代替增益，用噪声系数衡量灵敏度，用史密斯圆图看阻抗是否匹配。这套语言是模拟电路在高频下的延伸，物理图像却已经完全不同。过了这道共同的坎，两个方向才真正分开。
