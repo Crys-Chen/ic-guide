@@ -12589,13 +12589,154 @@
 </svg></div>
 
 <p>这份自由的代价，写在 FPGA 的骨子里。要让一块芯片能实现任意逻辑、把任意两点连起来，它就得把大量硅片面积留给"可配置"本身。FPGA 的内部是一张网格，密密麻麻铺着可编程的查找表（LUT，本质是一张能装下任意真值表的小存储器）和可编程的连线。真正干活的逻辑只占一小块，<strong>面积和延迟的一半以上都耗在那些可编程的连线和开关上</strong>——信号从一个逻辑单元走到另一个，要穿过一长串多路选择器和缓冲器。代价有多大？只用查找表去拼，同一个电路在 FPGA 上平均比 ASIC <strong>大三十多倍、慢四倍</strong>；用上后面会讲到的那些专用硬块，差距能收窄到十倍上下，但终究矮一截。可重构计算这个方向要对付的所有难题，根子都在这笔账上，而账的大头，始终是连线。</p>
+<div><svg viewBox="0 0 820 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
+  <defs>
+    <marker id="lutArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="820" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">查找表（LUT）：一块「能查任意真值表」的硬件</text>
+  <text x="120" y="64" text-anchor="middle" font-size="10.5" fill="#9A3412">配置 SRAM（开机写入）</text>
+  <text x="74" y="84" text-anchor="end" font-size="9" fill="#64748B">地址 ab</text>
+  <rect x="92" y="76" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+  <text x="120" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">0</text>
+  <text x="84" y="96" text-anchor="end" font-size="9.5" fill="#64748B">00</text>
+  <rect x="92" y="112" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+  <text x="120" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">1</text>
+  <text x="84" y="132" text-anchor="end" font-size="9.5" fill="#64748B">01</text>
+  <rect x="92" y="148" width="56" height="30" rx="4" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="120" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">1</text>
+  <text x="84" y="168" text-anchor="end" font-size="9.5" fill="#1E40AF">10</text>
+  <rect x="92" y="184" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+  <text x="120" y="204" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">0</text>
+  <text x="84" y="204" text-anchor="end" font-size="9.5" fill="#64748B">11</text>
+  <line x1="148" y1="91" x2="300" y2="96" stroke="#475569" stroke-width="1.3"/>
+  <line x1="148" y1="127" x2="300" y2="120" stroke="#475569" stroke-width="1.3"/>
+  <line x1="148" y1="163" x2="300" y2="150" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="148" y1="199" x2="300" y2="174" stroke="#475569" stroke-width="1.3"/>
+  <polygon points="300,80 300,190 360,160 360,110" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+  <text x="326" y="139" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">MUX</text>
+  <line x1="318" y1="208" x2="318" y2="178" stroke="#475569" stroke-width="1.3" marker-end="url(#lutArr)"/>
+  <line x1="342" y1="208" x2="342" y2="166" stroke="#475569" stroke-width="1.3" marker-end="url(#lutArr)"/>
+  <text x="330" y="224" text-anchor="middle" font-size="10" fill="#334155">输入 a、b（当地址）</text>
+  <line x1="360" y1="135" x2="424" y2="135" stroke="#1D4ED8" stroke-width="2" marker-end="url(#lutArr)"/>
+  <rect x="426" y="120" width="34" height="30" rx="4" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.6"/>
+  <text x="443" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">O</text>
+  <text x="392" y="124" text-anchor="middle" font-size="9" fill="#1E40AF">读出 SRAM[ab]</text>
+  <text x="620" y="64" text-anchor="middle" font-size="10.5" fill="#334155">此刻这张表 = XOR</text>
+  <rect x="540" y="74" width="160" height="132" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="540" y1="100" x2="700" y2="100" stroke="#CBD5E1" stroke-width="1"/>
+  <line x1="593" y1="74" x2="593" y2="206" stroke="#CBD5E1" stroke-width="1"/>
+  <line x1="647" y1="74" x2="647" y2="206" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="566" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">a</text>
+  <text x="620" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">b</text>
+  <text x="673" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">O</text>
+  <text x="566" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="620" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="673" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text>
+  <text x="566" y="144" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="620" y="144" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="673" y="144" text-anchor="middle" font-size="10.5" fill="#334155">1</text>
+  <text x="566" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text><text x="620" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">0</text><text x="673" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text>
+  <text x="566" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="620" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="673" y="194" text-anchor="middle" font-size="10.5" fill="#334155">0</text>
+  <text x="410" y="262" text-anchor="middle" font-size="10.5" fill="#475569">改写这 4 个 SRAM 位 = 换一张真值表，同一块硬件立刻能变成 AND、OR 或任意 2 输入逻辑。</text>
+  <text x="410" y="286" text-anchor="middle" font-size="10.5" fill="#9A3412">代价：每个 LUT 都背着一串配置 SRAM —— 灵活，是用硅面积换来的。</text>
+</svg></div>
+
 <p>既然面积的大头花在连线上，怎么把逻辑摆放到位、让信号走最短的路，就成了 FPGA 头一道硬功夫。把设计灌进芯片，要先用 Verilog 描述电路，再经工具综合、布局、布线，生成一份比特流烧进去。其中<strong>布局布线（Place-and-Route，简称 P&amp;R）</strong>最难：哪个逻辑该落在哪个单元、哪根线该走哪条通道，是一个货真价实的 NP 难问题。设计一大，时序就越来越难收敛，一个大型设计的 P&amp;R 跑上几十个小时是常事，跑完还得看随机种子的运气。工业界的 Vivado、Quartus 背后是几十年攒下的启发式算法，学术界则把多伦多大学的开源工具 VTR 当作试验新算法的公共平台。这几年用机器学习替工具做布局决策的 <strong>ML for EDA</strong>，正是想从这块最硬的骨头上啃下时间和方差。</p>
 <p>P&amp;R 是替专家省时间，HLS 则想把门槛本身拆掉。写 RTL 是个力气活，得一个时钟周期一个时钟周期地抠；<strong>高层次综合（HLS）</strong>许诺的是另一幅图景：你用 C 或 C++ 把算法写出来，工具自动替你变成电路。听上去像免费的午餐，可惜没那么香。同一段算法，HLS 生成的电路时钟频率常常比手写低 20% 到 50%，面积也更大，因为工具在决定循环怎么展开、流水线怎么插、数据怎么摆进片上存储时，仍要靠工程师手工写一大堆 pragma 去指点，而这些选择的组合空间是指数级的。于是怎么让工具自己做出接近老手的判断，不再靠人堆 pragma，就成了近年最热闹的分支。</p>
 <p>代价压下去，FPGA 才能在它真正擅长的地方赢。它从不跟 GPU 比峰值算力，拼的是<strong>低延迟和可改</strong>。最有说服力的例子来自微软：它把 FPGA 插进数据中心的每一台服务器，先用来加速 Bing 搜索的网页排序，后来又接管了网络数据包的处理，让流量绕开 CPU 直接在硬件上转发。边缘侧的 AI 推理是另一个主场，延迟能压到毫秒以下，还能灵活支持 4-bit、2-bit 这类激进量化，于是怎么把神经网络的算子高效铺到 DSP 和 LUT 上，本身就成了一道研究题。</p>
 <p>FPGA 一旦进了机架，要同时服务多个租户、应付多变的负载，<strong>部分重构</strong>就成了关键——在不停机的前提下，只把芯片的一块区域换成另一个加速器。这才把"可重构"从一次性的编译能力，变成了运行时随需应变的真本事。</p>
 <p>软件再聪明，也只能在既定的硅片上榨，可那一半以上的连线浪费是 fabric 本身定死的。要再往下压，只剩一条路：回头改硬件。FPGA 架构师最核心的问题就一句话——<strong>哪些功能该硬化成专用电路，硬到什么程度，占多少芯片面积？</strong> 这是一场赌博：把一个功能焊进硅里，用得上它的应用立刻更小更快更省电；可一旦某块芯片碰上的应用根本用不到它，这块硅就白占了本该留给通用逻辑的地盘。</p>
 <p>FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片只有查找表和连线，之后才一样样往里加硬块。人们发现几乎每个设计都在做加法，就把进位链硬化进逻辑块；信号处理和 AI 离不开乘累加，于是有了专门的 <strong>DSP 块</strong>；数据总要在片上缓存，<strong>BRAM</strong> 也嵌了进来。到了深度学习时代，DSP 又长出按 int8、int4 拆分的张量模式。连最难啃的连线本身都在被硬化——长线延迟既然不随工艺改善，新一代器件干脆把一张<strong>硬核片上网络（NoC）</strong>做进芯片，比用可编程逻辑搭出来的软 NoC 省 23 倍面积、快 6 倍；单块芯片大到良率扛不住，就用 <strong>interposer</strong> 把好几块裸片拼进一个封装。今天的高端器件（如 AMD Versal）已经是「可编程逻辑 + AI 引擎 + ARM 处理器 + 硬核 NoC」的异构平台，纯查找表只剩其中一小块。</p>
+<div><svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:1.5rem auto;">
+  <rect width="900" height="360" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="450" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">FPGA 的进化：从清一色查找表，到异构平台</text>
+  <line x1="450" y1="46" x2="450" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="225" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1E40AF">早期 FPGA（1990 年代）</text>
+  <rect x="95" y="86" width="260" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
+  <line x1="138" y1="86" x2="138" y2="266" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="181" y1="86" x2="181" y2="266" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="224" y1="86" x2="224" y2="266" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="267" y1="86" x2="267" y2="266" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="310" y1="86" x2="310" y2="266" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="95" y1="126" x2="355" y2="126" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="95" y1="166" x2="355" y2="166" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="95" y1="206" x2="355" y2="206" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="95" y1="246" x2="355" y2="246" stroke="#BFDBFE" stroke-width="1"/>
+  <rect x="106" y="96" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <rect x="192" y="176" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <rect x="278" y="216" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="225" y="150" text-anchor="middle" font-size="9.5" fill="#3B82F6" opacity="0.75">逻辑块（LUT）阵列</text>
+  <rect x="130" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
+  <rect x="190" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
+  <rect x="250" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
+  <rect x="83" y="120" width="8" height="16" rx="2" fill="#94A3B8"/>
+  <rect x="83" y="170" width="8" height="16" rx="2" fill="#94A3B8"/>
+  <rect x="83" y="220" width="8" height="16" rx="2" fill="#94A3B8"/>
+  <text x="70" y="100" text-anchor="end" font-size="9" fill="#64748B">IO</text>
+  <text x="225" y="292" text-anchor="middle" font-size="10" fill="#475569">清一色逻辑块（LUT）+ IO + 可编程连线</text>
+  <text x="675" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#9A3412">今天的 FPGA（异构平台）</text>
+  <rect x="525" y="86" width="290" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
+  <line x1="525" y1="126" x2="815" y2="126" stroke="#BFDBFE" stroke-width="1"/>
+  <line x1="525" y1="206" x2="815" y2="206" stroke="#BFDBFE" stroke-width="1"/>
+  <rect x="565" y="92" width="22" height="168" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.3"/>
+  <text x="576" y="178" text-anchor="middle" font-size="9" fill="#166534" transform="rotate(-90 576 178)">BRAM</text>
+  <rect x="645" y="92" width="22" height="168" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+  <text x="656" y="178" text-anchor="middle" font-size="9" fill="#92400E" transform="rotate(-90 656 178)">DSP</text>
+  <rect x="602" y="98" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
+  <rect x="730" y="100" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
+  <rect x="690" y="214" width="118" height="44" rx="4" fill="#E2E8F0" stroke="#475569" stroke-width="1.4"/>
+  <text x="749" y="240" text-anchor="middle" font-size="9.5" fill="#334155">ARM 处理器子系统</text>
+  <line x1="525" y1="166" x2="815" y2="166" stroke="#B91C1C" stroke-width="2.4"/>
+  <line x1="708" y1="86" x2="708" y2="214" stroke="#B91C1C" stroke-width="2.4"/>
+  <circle cx="708" cy="166" r="3.2" fill="#B91C1C"/>
+  <text x="812" y="160" text-anchor="end" font-size="9" fill="#B91C1C">硬核 NoC</text>
+  <rect x="560" y="74" width="18" height="8" rx="2" fill="#64748B"/>
+  <rect x="600" y="74" width="18" height="8" rx="2" fill="#64748B"/>
+  <rect x="640" y="74" width="18" height="8" rx="2" fill="#64748B"/>
+  <text x="688" y="81" text-anchor="start" font-size="9" fill="#475569">← 高速收发器</text>
+  <text x="675" y="292" text-anchor="middle" font-size="10" fill="#9A3412">逻辑 + DSP + BRAM + 硬核 NoC + ARM…每种硬块都是一次赌赢的硬化</text>
+</svg></div>
+
 <p>可即便如此，FPGA 还不是可重构的终点。它的灵活来自 <strong>bit 级</strong>的细粒度可配置，每一个查找表、每一段连线都能单独设定，灵活到了极致，连线的代价也大到了极致。再往前一步是<strong>粗粒度</strong>的思路：与其让人摆弄每一根线，不如把可重构的颗粒做大，让一个个完整的运算单元按需连成数据通路，这就是 CGRA 与"<strong>软件定义芯片</strong>"。粒度一粗，配置开销骤降，效率随之向 ASIC 靠拢，代价是不再像 FPGA 那样什么都能配。从 FPGA 到软件定义芯片，争的始终是同一件事：既要流片之后还能改的自由，又要逼近专用芯片的效率，而不必在两者之间二选一。</p>
+<div><svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
+  <rect width="820" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">可重构的颗粒：bit 级 vs word 级</text>
+  <line x1="410" y1="46" x2="410" y2="258" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="205" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1E40AF">FPGA · bit 级（细粒度）</text>
+  <line x1="120" y1="92" x2="120" y2="218" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="160" y1="92" x2="160" y2="218" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="200" y1="92" x2="200" y2="218" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="240" y1="92" x2="240" y2="218" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="280" y1="92" x2="280" y2="218" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="100" y1="110" x2="300" y2="110" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="100" y1="150" x2="300" y2="150" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="100" y1="190" x2="300" y2="190" stroke="#94A3B8" stroke-width="1"/>
+  <rect x="125" y="115" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <rect x="205" y="115" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <rect x="165" y="155" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <rect x="245" y="155" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <rect x="125" y="195" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <rect x="285" y="195" width="12" height="12" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <circle cx="160" cy="110" r="2.4" fill="#D97706"/><circle cx="200" cy="110" r="2.4" fill="#D97706"/><circle cx="240" cy="110" r="2.4" fill="#D97706"/>
+  <circle cx="120" cy="150" r="2.4" fill="#D97706"/><circle cx="200" cy="150" r="2.4" fill="#D97706"/><circle cx="280" cy="150" r="2.4" fill="#D97706"/>
+  <circle cx="160" cy="190" r="2.4" fill="#D97706"/><circle cx="240" cy="190" r="2.4" fill="#D97706"/>
+  <text x="205" y="244" text-anchor="middle" font-size="9.5" fill="#475569">每根线、每个查找表都能单独配 → 最灵活，连线开销最大</text>
+  <text x="615" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#9A3412">CGRA · word 级（粗粒度）</text>
+  <line x1="510" y1="135" x2="720" y2="135" stroke="#475569" stroke-width="4"/>
+  <line x1="510" y1="185" x2="720" y2="185" stroke="#475569" stroke-width="4"/>
+  <line x1="560" y1="115" x2="560" y2="205" stroke="#475569" stroke-width="4"/>
+  <line x1="670" y1="115" x2="670" y2="205" stroke="#475569" stroke-width="4"/>
+  <rect x="500" y="112" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
+  <text x="530" y="139" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">ALU</text>
+  <rect x="640" y="112" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
+  <text x="670" y="139" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">×</text>
+  <rect x="500" y="166" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
+  <text x="530" y="193" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">+</text>
+  <rect x="640" y="166" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
+  <text x="670" y="193" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">ALU</text>
+  <circle cx="560" cy="135" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="135" r="3.6" fill="#1D4ED8"/>
+  <circle cx="560" cy="185" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="185" r="3.6" fill="#1D4ED8"/>
+  <text x="615" y="244" text-anchor="middle" font-size="9.5" fill="#9A3412">以运算单元为颗粒、整字总线相连 → 配置开销骤降，效率逼近 ASIC</text>
+  <text x="410" y="280" text-anchor="middle" font-size="10.5" fill="#334155">颗粒做粗，可配的东西变少，省下大量连线，代价是不再什么都能配。</text>
+</svg></div>
+
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>灵活性 vs 效率</strong>：FPGA 卡在 CPU 的可编程性与 ASIC 的极致性能之间，可重构带来的路由开销让面积的 70-80% 都耗在连线上——如何在保留可重构能力的同时把这部分效率损失压到最小？</li>
