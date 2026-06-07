@@ -12272,9 +12272,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1118" class="md-nav__link">
+  <a href="#1218" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 已完成（11/18）
+      ✅ 已完成（12/18）
     </span>
   </a>
   
@@ -12639,7 +12639,7 @@
 <p><strong>新 session 看这里</strong>：迁移文档在 <code>/mnt/user-data/outputs/session-handover.md</code>，包含完整的写作规则、画图规则、踩坑记录。<strong>先读 handover 再动手</strong>。</p>
 </blockquote>
 <hr />
-<h2 id="1118">✅ 已完成（11/18）</h2>
+<h2 id="1218">✅ 已完成（12/18）</h2>
 <table>
 <thead>
 <tr>
@@ -12683,6 +12683,10 @@
 <tr>
 <td><strong>射频与毫米波IC</strong></td>
 <td><strong>双轴重构</strong>（高频争带宽 ↔ 低功耗保续航，每个模块从两路对照）：2G→5G hook + 频谱分配 SVG + 射频/低频导线等效 SVG + Part1（路径损耗→链路预算→相控阵/手机直连卫星→LNA·PA·频综被高频逼→太赫兹）+ 链路预算瀑布图 SVG + Part2（能量预算→占空比/简化→同模块目标反转→低功耗尽头）+ 占空比 SVG。<strong>北斗/GPS、Starlink 商业模式按"讲芯片不讲系统"排除</strong>；PA/LNA/频综段去英译中翻译腔</td>
+</tr>
+<tr>
+<td><strong>可重构计算与FPGA</strong></td>
+<td><strong>"灵活性的代价/还债"主线</strong> + 补回 CGRA/软件定义芯片半边：FPGA=出厂可改的画布 hook + 灵活-效率散点图（用户插）→ 代价的根（LUT"背答案"/比 ASIC 大35×慢4×→硬块收窄到9×/连线占面积与延迟一半）+ LUT 原理图 → P&amp;R → HLS → 应用（微软数据中心 + 边缘 AI 为何低延迟）+ 批处理vs流水线图 → 部分重构 → <strong>段6 硬化演化</strong>（进位链→DSP→BRAM→硬核NoC→interposer→Versal异构，据 Boutros-Betz 综述）+ FPGA进化图 → CGRA/软件定义芯片 + 细/粗粒度图。bullets 5→8（加 FPGA架构/CGRA/可信）。<strong>LUT 省电边界：小逻辑省、大乘法反费→DSP</strong>；<strong>TPU 互连=光 OCS 非 FPGA（已查证排除）</strong>；SVG 内不能有空行（踩坑）</td>
 </tr>
 </tbody>
 </table>
@@ -12929,9 +12933,9 @@
 <td>（已完成）</td>
 </tr>
 <tr>
-<td>🟡</td>
+<td>✅🟡</td>
 <td>可重构计算与FPGA</td>
-<td>应用段三公司三产品平铺，HLS段偏技术文档</td>
+<td>（已完成 · "灵活性的代价"主线 + 补 CGRA/软件定义芯片 + 6 张图 · 据 Boutros-Betz 综述 · 应用段砍到微软+边缘AI）</td>
 </tr>
 <tr>
 <td>🟡</td>
@@ -12990,7 +12994,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-06-05
+    2026-06-07
   </span>
 
     
