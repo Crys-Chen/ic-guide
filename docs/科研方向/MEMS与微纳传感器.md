@@ -294,8 +294,6 @@ graph LR
     <span class="dm-chip dm-chip--stock"><a href="https://www.memsensing.com/">敏芯股份（MEMSensing）</a><span class="sq" data-stock="sh:688286"></span></span>
     <a class="dm-chip" href="https://www.qstcorp.com/">矽睿科技（QST）</a>
     <span class="dm-chip dm-chip--stock"><a href="http://www.miramems.com/">明皜传感（MiraMEMS）</a><span class="sq" data-stock="sz:002079"></span></span>
-    <span class="dm-chip dm-chip--stock"><a href="https://www.maxscend.com/">卓胜微（Maxscend）</a><span class="sq" data-stock="sz:300782"></span></span>
-    <span class="dm-chip dm-chip--stock"><a href="https://www.elecspn.com/">天奥电子（Spaceon）</a><span class="sq" data-stock="sz:002935"></span></span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <a class="dm-chip" href="https://www.bosch-sensortec.com/">Bosch Sensortec</a>

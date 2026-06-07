@@ -385,7 +385,6 @@ graph LR
     <a class="dm-chip" href="https://www.doubao.com">字节跳动 · 豆包</a>
     <a class="dm-chip" href="https://www.deepseek.com">深度求索 DeepSeek</a>
     <a class="dm-chip" href="https://www.moonshot.cn">月之暗面 Kimi</a>
-    <a class="dm-chip" href="https://manus.im">Manus（蝴蝶效应）</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <span class="dm-chip dm-chip--stock"><a href="https://www.nvidia.com">NVIDIA</a><span class="sq" data-stock="us:NVDA"></span></span>

@@ -354,14 +354,11 @@ graph LR
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
     <a class="dm-chip" href="https://www.ime.cas.cn/" title="数据转换器、高速接口与混合信号 IC 工艺与设计">中科院微电子所</a>
-    <a class="dm-chip" href="https://www.sim.cas.cn/" title="传感器读出电路与微系统集成">中科院上海微系统所</a>
     <a class="dm-chip" href="https://www.pcl.ac.cn/" title="DDR5、高速 SerDes 等高端接口 IP">鹏城实验室·集成电路基础研究室</a>
-    <a class="dm-chip" href="https://www.icrd.com.cn/" title="先进工艺平台与模拟/混合信号 IP">上海集成电路研发中心（ICRD）</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <a class="dm-chip" href="https://www.imec-int.com/en" title="先进 CMOS 工艺下的数据转换器与高速 I/O 研究">imec（比利时微电子研究中心）</a>
     <a class="dm-chip" href="https://bwrc.berkeley.edu/" title="高速 SerDes、ADC 与混合信号系统">UC Berkeley 无线研究中心（BWRC）</a>
-    <a class="dm-chip" href="https://systemx.stanford.edu/" title="从器件到系统的混合信号集成研究">Stanford SystemX Alliance</a>
     <a class="dm-chip" href="https://www.aist.go.jp/index_en.html" title="模拟器件与精密测量">AIST（日本产业技术综合研究所）</a>
   </span></div>
 </div>

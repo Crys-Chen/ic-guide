@@ -471,8 +471,6 @@ graph LR
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
     <a class="dm-chip" href="http://www.ict.ac.cn/" title="可重构计算与领域专用加速器">中科院计算所</a>
-    <a class="dm-chip" href="https://www.zhejianglab.org/" title="智能计算与可重构异构加速平台">之江实验室</a>
-    <a class="dm-chip" href="https://www.pcl.ac.cn/" title="大规模算力与可重构加速基础设施">鹏城实验室</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <a class="dm-chip" href="https://verilogtorouting.org/" title="开源 FPGA 架构与 CAD 研究平台（VPR 布局布线）">Verilog-to-Routing（VTR，多伦多大学主导）</a>

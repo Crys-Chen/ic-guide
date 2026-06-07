@@ -371,13 +371,11 @@ EDA 是一个少见的方向——它的内核是不折不扣的**算法**问题
     <span class="dm-chip dm-chip--stock"><a href="https://www.semitronix.com/">广立微 Semitronix</a><span class="sq" data-stock="sz:301095"></span></span>
     <a class="dm-chip" href="https://www.x-epic.com/">芯华章 X-EPIC</a>
     <a class="dm-chip" href="https://www.xpeedic.com/">芯和半导体 Xpeedic</a>
-    <a class="dm-chip" href="https://www.hisilicon.com/cn">华为海思 HiSilicon</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <span class="dm-chip dm-chip--stock"><a href="https://www.synopsys.com/">Synopsys</a><span class="sq" data-stock="us:SNPS"></span></span>
     <span class="dm-chip dm-chip--stock"><a href="https://www.cadence.com/">Cadence</a><span class="sq" data-stock="us:CDNS"></span></span>
     <span class="dm-chip dm-chip--stock"><a href="https://www.siemens.com/en-us/company/electronic-design-automation/">Siemens EDA（原 Mentor）</a><span class="sq" data-stock="us:SIEGY"></span></span>
-    <span class="dm-chip dm-chip--stock"><a href="https://www.nvidia.com/">NVIDIA</a><span class="sq" data-stock="us:NVDA"></span></span>
   </span></div>
 </div>
 
@@ -386,12 +384,10 @@ EDA 是一个少见的方向——它的内核是不折不扣的**算法**问题
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
     <a class="dm-chip" href="https://www.ime.ac.cn/eda/" title="设计方法学与国产 EDA 工具研发">中科院微电子所 EDA 中心</a>
-    <a class="dm-chip" href="https://www.zhejianglab.org/" title="智能计算与 AI for EDA">之江实验室</a>
     <a class="dm-chip" href="https://www.pcl.ac.cn/" title="大规模算力支撑的 EDA 算法加速">鹏城实验室</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
     <a class="dm-chip" href="https://theopenroadproject.org/" title="开源 RTL-to-GDS 数字后端流程，AI for EDA 标准实验平台">OpenROAD（UCSD VLSI CAD 实验室主导）</a>
     <a class="dm-chip" href="https://www.imec-int.com/en" title="DTCO/工艺-设计协同与先进节点设计方法学">imec</a>
-    <a class="dm-chip" href="https://deepmind.google/" title="强化学习芯片布局">Google DeepMind</a>
   </span></div>
 </div>
