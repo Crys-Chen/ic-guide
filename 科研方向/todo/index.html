@@ -12272,9 +12272,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1218" class="md-nav__link">
+  <a href="#1318" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 已完成（12/18）
+      ✅ 已完成（13/18）
     </span>
   </a>
   
@@ -12639,7 +12639,7 @@
 <p><strong>新 session 看这里</strong>：迁移文档在 <code>/mnt/user-data/outputs/session-handover.md</code>，包含完整的写作规则、画图规则、踩坑记录。<strong>先读 handover 再动手</strong>。</p>
 </blockquote>
 <hr />
-<h2 id="1218">✅ 已完成（12/18）</h2>
+<h2 id="1318">✅ 已完成（13/18）</h2>
 <table>
 <thead>
 <tr>
@@ -12687,6 +12687,10 @@
 <tr>
 <td><strong>可重构计算与FPGA</strong></td>
 <td><strong>"灵活性的代价/还债"主线</strong> + 补回 CGRA/软件定义芯片半边：FPGA=出厂可改的画布 hook + 灵活-效率散点图（用户插）→ 代价的根（LUT"背答案"/比 ASIC 大35×慢4×→硬块收窄到9×/连线占面积与延迟一半）+ LUT 原理图 → P&amp;R → HLS → 应用（微软数据中心 + 边缘 AI 为何低延迟）+ 批处理vs流水线图 → 部分重构 → <strong>段6 硬化演化</strong>（进位链→DSP→BRAM→硬核NoC→interposer→Versal异构，据 Boutros-Betz 综述）+ FPGA进化图 → CGRA/软件定义芯片 + 细/粗粒度图。bullets 5→8（加 FPGA架构/CGRA/可信）。<strong>LUT 省电边界：小逻辑省、大乘法反费→DSP</strong>；<strong>TPU 互连=光 OCS 非 FPGA（已查证排除）</strong>；SVG 内不能有空行（踩坑）</td>
+</tr>
+<tr>
+<td><strong>EDA与设计自动化</strong></td>
+<td>主线<strong>"人把芯片设计的苦活推给机器"</strong>（描述抽象↑ + 优化求解交给机器）：280亿晶体管 + HDL=人机交接抽象层（"不是软件，是并行硬件"，给 CS 同学）+ 抽象阶梯（RTL→Chisel→HLS→自然语言）→ 段2 <strong>NP hard</strong>（不写"NP难"）+ 广度（综合/验证/布线/时序/寄生/热/可制造）+ 保留流程图 → <strong>段3 AI for EDA 升为重心</strong>（AlphaChip深讲 + GNN/光刻ML/LLM 按任务铺开、砍名字堆砌 + 为什么现在=图与搜索+CircuitNet + 诚实多在研究阶段）→ 段4 模拟=AI够不着（单一标尺 vs 指标清单 + SPICE 不可信）+ 数字vs模拟 SVG → <strong>段5 3D堆叠+热（新）</strong>+ 2D→3D热 SVG → 收尾卡脖子一句。bullets 重排5条加3D/热。<strong>全节去翻译腔：破折号/冒号改句号断句（已存 memory 规则）</strong></td>
 </tr>
 </tbody>
 </table>
