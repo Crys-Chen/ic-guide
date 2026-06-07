@@ -47,36 +47,7 @@ hide:
 
 这块芯片之所以能做到，是因为它出厂时本是一张空白的画布。通用处理器（CPU、GPU）什么代码都能跑，可为了通用，效率注定上不去；专用芯片（ASIC）把电路为某个任务焊死，性能做到极致，代价却是功能再难改动，重新流片一次又动辄数月，耗费数百万元。FPGA，也就是现场可编程门阵列，正卡在这两极中间：它是一块出厂后还能反复重画的硬件，重新配置内部的逻辑单元和连线，同一块芯片就能今天跑图像处理、明天跑加密、后天跑神经网络推理。这份"还能改"的自由极其诱人，却从来不是免费的。
 
-<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
-  <!-- Background panel -->
-  <rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Triangle vertices (centered around x=430):
-       CPU: top-left  (200, 50)
-       ASIC: top-right (660, 50)
-       FPGA: bottom   (430, 185) -->
-  <!-- Triangle edges (dotted) -->
-  <line x1="200" y1="55" x2="660" y2="55" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
-  <line x1="200" y1="55" x2="430" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
-  <line x1="660" y1="55" x2="430" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="8,5"/>
-  <!-- CPU corner (blue) -->
-  <rect x="100" y="26" width="130" height="56" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
-  <text x="165" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8" font-family="sans-serif">CPU</text>
-  <text x="165" y="64" text-anchor="middle" font-size="10.5" fill="#3B82F6" font-family="sans-serif">最灵活 / 最低效</text>
-  <!-- ASIC corner (green) -->
-  <rect x="630" y="26" width="130" height="56" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-  <text x="695" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534" font-family="sans-serif">ASIC</text>
-  <text x="695" y="64" text-anchor="middle" font-size="10.5" fill="#16A34A" font-family="sans-serif">最高效 / 不可修改</text>
-  <!-- FPGA corner (amber) -->
-  <rect x="348" y="158" width="164" height="50" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
-  <text x="430" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E" font-family="sans-serif">FPGA</text>
-  <text x="430" y="196" text-anchor="middle" font-size="10.5" fill="#D97706" font-family="sans-serif">可重构 / 中间地带</text>
-  <!-- Center label: FPGA 研究空间 -->
-  <text x="430" y="100" text-anchor="middle" font-size="12" fill="#64748B" font-family="sans-serif" font-style="italic">FPGA 研究空间</text>
-  <!-- Sub-labels below -->
-  <text x="430" y="118" text-anchor="middle" font-size="10.5" fill="#94A3B8" font-family="sans-serif">数据中心加速 · AI推理 · 原型验证</text>
-</svg></div>
-
-这份自由的代价，写在 FPGA 的骨子里。要让一块芯片能实现任意逻辑、把任意两点连起来，它就得把大量硅片面积留给"可配置"本身。FPGA 的内部是一张网格，密密麻麻铺着可编程的查找表（LUT，本质是一张能装下任意真值表的小存储器）和可编程的连线。真正干活的逻辑只占一小块，**面积和延迟的一半以上都耗在那些可编程的连线和开关上**——信号从一个逻辑单元走到另一个，要穿过一长串多路选择器和缓冲器。代价有多大？只用查找表去拼，同一个电路在 FPGA 上平均比 ASIC **大三十多倍、慢四倍**；用上后面会讲到的那些专用硬块，差距能收窄到十倍上下，但终究矮一截。
+这份自由的代价，写在 FPGA 的骨子里。要让一块芯片能实现任意逻辑、把任意两点连起来，它就得把大量硅片面积留给"可配置"本身。FPGA 的内部是一张网格，密密麻麻铺着可编程的查找表（LUT）和可编程的连线。查找表是个有意思的东西。它不像加法器、乘法器那样真去做运算，而是预先把每种输入对应的结果填进一张小表，用时直接查表取数，说白了是"背答案"，不是"算答案"。改写表里存的内容，同一块硬件就能算出任意逻辑。可这份"什么都能配"的自由不是白来的：真正干活的逻辑只占一小块，**面积和延迟的一半以上都耗在那些可编程的连线和开关上**——信号从一个逻辑单元走到另一个，要穿过一长串多路选择器和缓冲器。代价有多大？只用查找表去拼，同一个电路在 FPGA 上平均比 ASIC **大三十多倍、慢四倍**；用上后面会讲到的那些专用硬块，差距能收窄到十倍上下，但终究矮一截。
 
 <div><svg viewBox="0 0 820 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
   <defs>
@@ -131,7 +102,7 @@ hide:
 
 P&R 是替专家省时间，HLS 则想把门槛本身拆掉。写 RTL 是个力气活，得一个时钟周期一个时钟周期地抠；**高层次综合（HLS）**许诺的是另一幅图景：你用 C 或 C++ 把算法写出来，工具自动替你变成电路。听上去像免费的午餐，可惜没那么香。同一段算法，HLS 生成的电路时钟频率常常比手写低 20% 到 50%，面积也更大，因为工具在决定循环怎么展开、流水线怎么插、数据怎么摆进片上存储时，仍要靠工程师手工写一大堆 pragma 去指点，而这些选择的组合空间是指数级的。于是怎么让工具自己做出接近老手的判断，不再靠人堆 pragma，就成了近年最热闹的分支。
 
-代价压下去，FPGA 才能在它真正擅长的地方赢。它从不跟 GPU 比峰值算力，拼的是**低延迟和可改**。最有说服力的例子来自微软：它把 FPGA 插进数据中心的每一台服务器，先用来加速 Bing 搜索的网页排序，后来又接管了网络数据包的处理，让流量绕开 CPU 直接在硬件上转发。边缘侧的 AI 推理是另一个主场，延迟能压到毫秒以下，还能灵活支持 4-bit、2-bit 这类激进量化，于是怎么把神经网络的算子高效铺到 DSP 和 LUT 上，本身就成了一道研究题。
+代价压下去，FPGA 才能在它真正擅长的地方赢。它从不跟 GPU 比峰值算力，拼的是**低延迟和可改**。微软把 FPGA 插进数据中心的每一台服务器，先用来加速 Bing 搜索的网页排序，后来又接管了网络数据包的处理，让流量绕开 CPU 直接在硬件上转发。边缘侧的 AI 推理是另一个主场。这里看重的不是高吞吐，而是每一帧都准时出结果——自动驾驶、机器人、工业质检都得逐帧实时响应。GPU 为了喂满算力，习惯把一批样本攒在一起算，单帧延迟因此偏高又不稳定；FPGA 却能把整个网络铺成一条定制流水线，数据流过即出结果，单帧延迟低到毫秒以下还很确定。再加上模型量化到 int8、int4 时，FPGA 能照着这个精度量身搭电路，每个查找表和 DSP 都用在刀刃上，在紧巴巴的功耗预算里把能效做得比 GPU 更高。于是怎么把神经网络的算子高效铺到 DSP 和 LUT 上，就成了一个专门的研究方向。
 
 FPGA 一旦进了机架，要同时服务多个租户、应付多变的负载，**部分重构**就成了关键——在不停机的前提下，只把芯片的一块区域换成另一个加速器。这才把"可重构"从一次性的编译能力，变成了运行时随需应变的真本事。
 
