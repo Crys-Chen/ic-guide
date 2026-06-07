@@ -12558,43 +12558,51 @@
 <p>在软件的灵活性和专用硬件的性能之间寻找最优平衡——FPGA 既是芯片设计的验证平台，也是数据中心和边缘计算的可编程加速器，而可重构计算研究的是如何让这套机制更高效、更易用。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>一支芯片团队设计出一种新的处理器架构，在仿真器里跑了三个月，确信逻辑没错，可要真正验证它在硬件上的表现，按常规就得流片——等上几个月，花掉几百万元，一旦做错还得全部推倒重来。但他们还有另一条路：把这套设计灌进一块 FPGA，不过两周，新架构就以接近真实芯片的速度在板子上跑了起来。</p>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="680" height="500" viewBox="0 0 680 500" role="img" font-family="'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',-apple-system,sans-serif">
+<div><svg viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;max-width:680px;display:block;margin:1.5rem auto;" font-family="'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',-apple-system,sans-serif">
   <title>灵活性（硬件可重构）vs 性能/能效</title>
   <desc>二维散点：横轴性能/能效，纵轴硬件可重构灵活性。CPU、DSP、FPGA、ASIC 各为一点；FPGA 灵活性最高，ASIC 性能最高、灵活性最低。</desc>
   <defs>
     <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#9c9a92"/></marker>
   </defs>
   <rect x="0" y="0" width="680" height="500" rx="14" fill="#ffffff"/>
-  <text x="40" y="40" font-size="17" font-weight="500" fill="#1f1f1d">灵活性（按硬件可重构）⇄ 性能 / 能效</text></p>
-<!-- axes -->
-<p><line x1="120" y1="400" x2="120" y2="80" stroke="#9c9a92" stroke-width="1" marker-end="url(#ah)"/>
+  <text x="40" y="40" font-size="17" font-weight="500" fill="#1f1f1d">灵活性（按硬件可重构）⇄ 性能 / 能效</text>
+
+  <!-- axes -->
+  <line x1="120" y1="400" x2="120" y2="80" stroke="#9c9a92" stroke-width="1" marker-end="url(#ah)"/>
   <line x1="120" y1="400" x2="640" y2="400" stroke="#9c9a92" stroke-width="1" marker-end="url(#ah)"/>
   <text transform="translate(70,250) rotate(-90)" font-size="13" fill="#3d3d3a" text-anchor="middle">灵活性 / 硬件可重构性 →</text>
   <text x="640" y="425" font-size="13" fill="#3d3d3a" text-anchor="end">性能 / 能效 →</text>
   <text x="112" y="95" font-size="11" fill="#9c9a92" text-anchor="end">高</text>
-  <text x="112" y="398" font-size="11" fill="#9c9a92" text-anchor="end">低</text></p>
-<!-- classic inverse trend (excludes FPGA) -->
-<p><path d="M165 150 C 300 205, 390 255, 560 350" fill="none" stroke="#c8c6bf" stroke-width="1.6" stroke-dasharray="5 5"/>
-  <text x="455" y="300" font-size="11.5" fill="#a7a59d" transform="rotate(20 455 300)">传统反相关趋势</text></p>
-<!-- points -->
-<p><circle cx="165" cy="150" r="6" fill="#378ADD"/>
+  <text x="112" y="398" font-size="11" fill="#9c9a92" text-anchor="end">低</text>
+
+  <!-- classic inverse trend (excludes FPGA) -->
+  <path d="M165 150 C 300 205, 390 255, 560 350" fill="none" stroke="#c8c6bf" stroke-width="1.6" stroke-dasharray="5 5"/>
+  <text x="455" y="300" font-size="11.5" fill="#a7a59d" transform="rotate(20 455 300)">传统反相关趋势</text>
+
+  <!-- points -->
+  <circle cx="165" cy="150" r="6" fill="#378ADD"/>
   <text x="178" y="146" font-size="14" font-weight="500" fill="#1f1f1d">CPU / GPP</text>
-  <text x="178" y="163" font-size="11" fill="#73726c">软件最通用、能效最低</text></p>
-<p><circle cx="275" cy="208" r="6" fill="#1D9E75"/>
+  <text x="178" y="163" font-size="11" fill="#73726c">软件最通用、能效最低</text>
+
+  <circle cx="275" cy="208" r="6" fill="#1D9E75"/>
   <text x="288" y="204" font-size="14" font-weight="500" fill="#1f1f1d">DSP</text>
-  <text x="288" y="221" font-size="11" fill="#73726c">可编程、面向信号处理</text></p>
-<p><circle cx="372" cy="116" r="7.5" fill="#D85A30"/>
+  <text x="288" y="221" font-size="11" fill="#73726c">可编程、面向信号处理</text>
+
+  <circle cx="372" cy="116" r="7.5" fill="#D85A30"/>
   <circle cx="372" cy="116" r="12" fill="none" stroke="#D85A30" stroke-width="1.2" opacity="0.5"/>
   <text x="388" y="112" font-size="14" font-weight="600" fill="#1f1f1d">FPGA</text>
-  <text x="388" y="129" font-size="11" fill="#73726c">可重构硬件，灵活性最高</text></p>
-<p><circle cx="565" cy="350" r="6" fill="#7F77DD"/>
+  <text x="388" y="129" font-size="11" fill="#73726c">可重构硬件，灵活性最高</text>
+
+  <circle cx="565" cy="350" r="6" fill="#7F77DD"/>
   <text x="555" y="345" font-size="14" font-weight="500" fill="#1f1f1d" text-anchor="end">ASIC</text>
-  <text x="555" y="362" font-size="11" fill="#73726c" text-anchor="end">定制固定，性能/能效最高</text></p>
-<!-- annotation for FPGA off-trend -->
-<p><text x="120" y="455" font-size="12" fill="#3d3d3a">注：FPGA 位于趋势线上方——在不大幅牺牲性能的前提下保留高可重构性，</text>
+  <text x="555" y="362" font-size="11" fill="#73726c" text-anchor="end">定制固定，性能/能效最高</text>
+
+  <!-- annotation for FPGA off-trend -->
+  <text x="120" y="455" font-size="12" fill="#3d3d3a">注：FPGA 位于趋势线上方——在不大幅牺牲性能的前提下保留高可重构性，</text>
   <text x="120" y="473" font-size="12" fill="#3d3d3a">这正是它作为"可重构硬件"的价值所在。纵轴为定性相对值，无绝对刻度。</text>
-</svg></p>
-<p>这块芯片之所以能做到，是因为它出厂时本是一张空白的画布。通用处理器（CPU、GPU）什么代码都能跑，可为了通用，效率注定上不去；专用芯片（ASIC）把电路为某个任务焊死，性能做到极致，代价却是功能再难改动，流片一次又动辄数月、数百万元。FPGA，也就是现场可编程门阵列，正卡在这两极中间：它是一块出厂后还能反复重画的硬件，重新配置内部的逻辑单元和连线，同一块芯片就能今天跑图像处理、明天跑加密、后天跑神经网络推理。这份"还能改"的自由极其诱人，却从来不是免费的。</p>
+</svg></div>
+
+<p>这块芯片之所以能做到，是因为它出厂时本是一张空白的画布。通用处理器（CPU、GPU）什么代码都能跑，可为了通用，效率注定上不去；专用芯片（ASIC）把电路为某个任务焊死，性能做到极致，代价却是功能再难改动，重新流片一次又动辄数月，耗费数百万元。FPGA，也就是现场可编程门阵列，正卡在这两极中间：它是一块出厂后还能反复重画的硬件，重新配置内部的逻辑单元和连线，同一块芯片就能今天跑图像处理、明天跑加密、后天跑神经网络推理。这份"还能改"的自由极其诱人，却从来不是免费的。</p>
 <div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.2em auto;">
   <!-- Background panel -->
   <rect x="10" y="10" width="840" height="200" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
