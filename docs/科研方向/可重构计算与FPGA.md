@@ -16,7 +16,6 @@ hide:
   </defs>
   <rect x="0" y="0" width="680" height="500" rx="14" fill="#ffffff"/>
   <text x="40" y="40" font-size="17" font-weight="500" fill="#1f1f1d">灵活性（按硬件可重构）⇄ 性能 / 能效</text>
-
   <!-- axes -->
   <line x1="120" y1="400" x2="120" y2="80" stroke="#9c9a92" stroke-width="1" marker-end="url(#ah)"/>
   <line x1="120" y1="400" x2="640" y2="400" stroke="#9c9a92" stroke-width="1" marker-end="url(#ah)"/>
@@ -24,29 +23,23 @@ hide:
   <text x="640" y="425" font-size="13" fill="#3d3d3a" text-anchor="end">性能 / 能效 →</text>
   <text x="112" y="95" font-size="11" fill="#9c9a92" text-anchor="end">高</text>
   <text x="112" y="398" font-size="11" fill="#9c9a92" text-anchor="end">低</text>
-
   <!-- classic inverse trend (excludes FPGA) -->
   <path d="M165 150 C 300 205, 390 255, 560 350" fill="none" stroke="#c8c6bf" stroke-width="1.6" stroke-dasharray="5 5"/>
   <text x="455" y="300" font-size="11.5" fill="#a7a59d" transform="rotate(20 455 300)">传统反相关趋势</text>
-
   <!-- points -->
   <circle cx="165" cy="150" r="6" fill="#378ADD"/>
   <text x="178" y="146" font-size="14" font-weight="500" fill="#1f1f1d">CPU / GPP</text>
   <text x="178" y="163" font-size="11" fill="#73726c">软件最通用、能效最低</text>
-
   <circle cx="275" cy="208" r="6" fill="#1D9E75"/>
   <text x="288" y="204" font-size="14" font-weight="500" fill="#1f1f1d">DSP</text>
   <text x="288" y="221" font-size="11" fill="#73726c">可编程、面向信号处理</text>
-
   <circle cx="372" cy="116" r="7.5" fill="#D85A30"/>
   <circle cx="372" cy="116" r="12" fill="none" stroke="#D85A30" stroke-width="1.2" opacity="0.5"/>
   <text x="388" y="112" font-size="14" font-weight="600" fill="#1f1f1d">FPGA</text>
   <text x="388" y="129" font-size="11" fill="#73726c">可重构硬件，灵活性最高</text>
-
   <circle cx="565" cy="350" r="6" fill="#7F77DD"/>
   <text x="555" y="345" font-size="14" font-weight="500" fill="#1f1f1d" text-anchor="end">ASIC</text>
   <text x="555" y="362" font-size="11" fill="#73726c" text-anchor="end">定制固定，性能/能效最高</text>
-
   <!-- annotation for FPGA off-trend -->
   <text x="120" y="455" font-size="12" fill="#3d3d3a">注：FPGA 位于趋势线上方——在不大幅牺牲性能的前提下保留高可重构性，</text>
   <text x="120" y="473" font-size="12" fill="#3d3d3a">这正是它作为"可重构硬件"的价值所在。纵轴为定性相对值，无绝对刻度。</text>
