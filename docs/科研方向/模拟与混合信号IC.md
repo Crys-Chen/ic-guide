@@ -106,26 +106,15 @@ hide:
 
 <div><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:720px;display:block;margin:1.5rem auto;">
   <rect width="720" height="320" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="360" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">模拟设计的八边形：八个指标互相牵制（Razavi）</text>
-  <line x1="360" y1="170" x2="360" y2="78" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="425" y2="105" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="452" y2="170" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="425" y2="235" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="360" y2="262" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="295" y2="235" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="268" y2="170" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="360" y1="170" x2="295" y2="105" stroke="#E2E8F0" stroke-width="1"/>
-  <polygon points="360,78 425,105 452,170 425,235 360,262 295,235 268,170 295,105" fill="none" stroke="#1E40AF" stroke-width="2"/>
-  <circle cx="360" cy="78" r="4" fill="#1E40AF"/>
-  <circle cx="425" cy="105" r="4" fill="#1E40AF"/>
-  <circle cx="452" cy="170" r="4" fill="#1E40AF"/>
-  <circle cx="425" cy="235" r="4" fill="#1E40AF"/>
-  <circle cx="360" cy="262" r="4" fill="#1E40AF"/>
-  <circle cx="295" cy="235" r="4" fill="#1E40AF"/>
-  <circle cx="268" cy="170" r="4" fill="#1E40AF"/>
-  <circle cx="295" cy="105" r="4" fill="#1E40AF"/>
-  <text x="360" y="167" text-anchor="middle" font-size="10" fill="#9A3412">牵一发</text>
-  <text x="360" y="181" text-anchor="middle" font-size="10" fill="#9A3412">动全身</text>
+  <text x="360" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">ADC、SerDes、PLL 摆上八边形：同一张取舍图，各占一块</text>
+  <line x1="360" y1="170" x2="360" y2="78" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="360" y1="170" x2="452" y2="170" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="360" y1="170" x2="360" y2="262" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="360" y1="170" x2="268" y2="170" stroke="#EEF2F6" stroke-width="1"/>
+  <polygon points="360,78 425,105 452,170 425,235 360,262 295,235 268,170 295,105" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="360,87 415,115 397,170 399,209 360,207 321,209 286,170 337,147" fill="#3B82F6" fill-opacity="0.15" stroke="#1E40AF" stroke-width="1.6"/>
+  <polygon points="360,119 406,124 397,170 406,216 360,207 327,203 273,170 314,124" fill="#F97316" fill-opacity="0.15" stroke="#C2410C" stroke-width="1.6"/>
+  <polygon points="360,87 386,144 397,170 399,209 360,211 334,196 291,170 337,147" fill="#22C55E" fill-opacity="0.15" stroke="#15803D" stroke-width="1.6"/>
   <text x="360" y="66" text-anchor="middle" font-size="10.5" fill="#334155">噪声</text>
   <text x="438" y="100" text-anchor="start" font-size="10.5" fill="#334155">线性度</text>
   <text x="462" y="173" text-anchor="start" font-size="10.5" fill="#334155">增益</text>
@@ -134,7 +123,13 @@ hide:
   <text x="282" y="240" text-anchor="end" font-size="10.5" fill="#334155">电压摆幅</text>
   <text x="258" y="173" text-anchor="end" font-size="10.5" fill="#334155">速度</text>
   <text x="282" y="100" text-anchor="end" font-size="10.5" fill="#334155">输入/输出阻抗</text>
-  <text x="360" y="304" text-anchor="middle" font-size="10.5" fill="#475569">改善一个往往牺牲另几个。ADC、SerDes、PLL，各是这张网在不同物理量上的投影。</text>
+  <rect x="556" y="108" width="14" height="10" rx="2" fill="#3B82F6" fill-opacity="0.5" stroke="#1E40AF" stroke-width="1"/>
+  <text x="575" y="117" text-anchor="start" font-size="10" fill="#1E40AF">ADC</text>
+  <rect x="556" y="136" width="14" height="10" rx="2" fill="#F97316" fill-opacity="0.5" stroke="#C2410C" stroke-width="1"/>
+  <text x="575" y="145" text-anchor="start" font-size="10" fill="#C2410C">SerDes</text>
+  <rect x="556" y="164" width="14" height="10" rx="2" fill="#22C55E" fill-opacity="0.5" stroke="#15803D" stroke-width="1"/>
+  <text x="575" y="173" text-anchor="start" font-size="10" fill="#15803D">PLL</text>
+  <text x="360" y="304" text-anchor="middle" font-size="10.5" fill="#475569">每类电路把不同的角往外拉：ADC 重噪声/线性度/速度，SerDes 重速度，PLL 重相噪。示意，非定量。</text>
 </svg></div>
 
 当数据中心要在芯片之间每秒搬运数百太比特，这些物理约束就从实验室问题变成了产业瓶颈。一颗 224 Gbps 的 SerDes，要把信号从一台 GPU 送到几十厘米外的交换机，中间那段铜线损耗高达 40 dB，还到处是反射，信号传到对面早就糊成了一团。办法分两步。发送端先把信号"预先扭曲"一下，估计信道会怎么糟蹋它，提前做反向补偿。接收端再用一连串均衡和时钟恢复电路，把糊掉的波形一级一级还原回来。每一步设计有多好，全看你对这段铜线的物理摸得有多透。SerDes 的速率每三年翻一倍，从 56 到 112 到 224，再往 448 去，可每次翻倍都不是把电路照搬放大，而是几乎每个节点都得推倒重来。
