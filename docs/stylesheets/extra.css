@@ -1882,7 +1882,7 @@
    ══════════════════════════════════════════════════════════ */
 /* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽) */
 .md-content__inner:has(.community-cards) {
-  max-width: 880px;
+  max-width: 1180px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
