@@ -116,6 +116,7 @@ extra:
     property: G-KJB4RXSKZG
 
 nav:
+  - 首页: index.md
   - 科研方向:
     - 科研方向/index.md
     - 全景叙事: "科研方向/全景叙事.md"
