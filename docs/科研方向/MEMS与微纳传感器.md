@@ -213,10 +213,6 @@ graph LR
 
     柔性离电触觉传感（FITS） · 可穿戴/植入式生物 MEMS · 微流控与微纳加工
 
--   **[卢明辉](https://eng.nju.edu.cn/lmh/main.htm)** <span class="badge-other">南大</span>
-
-    MEMS 热线式矢量传声器 · 声质点振速/声矢量探测 · 声学超构材料
-
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
@@ -231,10 +227,6 @@ graph LR
 -   **[Norman Tien（田之楠）](https://www.eee.hku.hk/people/nctien/)** <span class="badge-hk">港大</span>
 
     MEMS 微纳制造（通信/医疗/环境监测）· Taikoo Chair Professor of Microsystems Technology
-
--   **[Wei-Hsin Liao（廖維新）](https://www4.mae.cuhk.edu.hk/peoples/liao-wei-hsin/)** <span class="badge-hk">港中大</span>
-
-    MEMS 智能材料 · 压电/磁致伸缩执行器 · 振动能量回收 · ASME Da Vinci Award
 
 -   **[Butrus Khuri-Yakub](https://kyg.stanford.edu/)** <span class="badge-intl">Stanford</span>
 
@@ -259,6 +251,10 @@ graph LR
 -   **[Gary Fedder](https://www.ece.cmu.edu/directory/bios/fedder-gary.html)** <span class="badge-intl">CMU</span>
 
     CMOS-MEMS 单片集成工艺与设计方法学 · 微加速度计与陀螺 · IEEE Fellow
+
+-   **[Yansong Yang（杨岩松）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
+
+    压电 MEMS 谐振器与滤波器 · RF MEMS 微系统 · 铌酸锂薄膜异质集成
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

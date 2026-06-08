@@ -179,10 +179,6 @@ graph LR
 
     强化学习 · 多智能体 · AI 对齐 · 具身 AI
 
--   **[董豪](http://zsdonghao.github.io)** <span class="badge-pku">北大</span>
-
-    深度强化学习 · 机器学习系统 · 开源 AI 框架（TensorLayer）
-
 -   **[邱锡鹏](https://xpqiu.github.io/)** <span class="badge-fudan">复旦</span>
 
     大语言模型新架构 · 多模态后训练 · 高效 NLP 系统（FastNLP）
@@ -293,10 +289,6 @@ graph LR
 -   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
 
     可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
-
--   **[Chelsea Finn](https://ai.stanford.edu/~cbfinn/)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
-
-    元学习 · 高效学习适应 · 机器人强化学习
 
 -   **[Percy Liang（梁）](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
 

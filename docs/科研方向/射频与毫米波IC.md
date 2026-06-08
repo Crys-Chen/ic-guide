@@ -392,14 +392,6 @@ graph LR
 
     低功耗无线神经记录芯片 · 高精度 ADC · IoT 混合信号 IC
 
--   **[叶乐](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/yl/index.htm)** <span class="badge-pku">北大</span>
-
-    混合信号与射频 IC · 存算一体 AI 芯片
-
--   **[王茂俊](https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/wmj/index.htm)** <span class="badge-pku">北大</span>
-
-    GaN 功率与射频器件 · 高功率密度毫米波前端
-
 -   **[闫娜](https://sme.fudan.edu.cn/60/61/c31157a352353/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     高能效射频芯片 · 6G 可重构 RF · 毫米波雷达
@@ -474,10 +466,6 @@ graph LR
 -   **[C. Patrick Yue（俞捷）](https://ece.hkust.edu.hk/eepatrick)** <span class="badge-hk">港科大</span>
 
     毫米波通信与感知电路 · 光无线物理层 · 高速有线 SoC
-
--   **[Yansong Yang（杨岩松）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
-
-    压电 MEMS 谐振器与滤波器 · 5G/mmWave 射频前端
 
 -   **[Ali Niknejad](https://rfic.eecs.berkeley.edu)** <span class="badge-intl">UC Berkeley</span>
 

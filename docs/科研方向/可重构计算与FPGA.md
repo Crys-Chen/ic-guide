@@ -361,10 +361,6 @@ graph LR
 
     可重构计算 · 多/众核处理芯片体系结构 · 三维片上网络（3D NoC）
 
--   **[娄鑫](https://sist.shanghaitech.edu.cn/louxin/main.htm)** <span class="badge-other">上科大</span>
-
-    数字 VLSI 设计 · 可重构滤波器与 DSP · 三维视觉/渲染芯片
-
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

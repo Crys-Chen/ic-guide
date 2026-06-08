@@ -244,10 +244,6 @@ EDA 是一个少见的方向——它的内核是不折不扣的**算法**问题
 
     EDA 电路仿真 · 稀疏矩阵并行求解 · 面向科学计算的软硬件协同
 
--   **[纪志罡](https://icisee.sjtu.edu.cn/jiaoshiml/jizhigang.html)** <span class="badge-other">交大</span>
-
-    电路/器件协同可靠性设计 · 新型范式计算 · 硬件安全 EDA
-
 -   **[蒋力](https://www.cs.sjtu.edu.cn/jiaoshiml/jiangli.html)** <span class="badge-other">交大</span>
 
     芯片设计自动化 · ML 辅助硬件设计 · AI 加速器与存算架构
@@ -267,10 +263,6 @@ EDA 是一个少见的方向——它的内核是不折不扣的**算法**问题
 -   **[钱超](http://www.lamda.nju.edu.cn/qianc/)** <span class="badge-other">南大</span>
 
     演化计算与机器学习 · AI for EDA · 时序驱动芯片布局
-
--   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
-
-    AI 算法辅助 EDA · 模拟/射频集成电路设计 · AI 芯片架构
 
 -   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
