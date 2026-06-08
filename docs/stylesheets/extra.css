@@ -210,15 +210,30 @@
   color: var(--md-primary-fg-color) !important;
 }
 
-/* ─── 右侧目录（TOC）：字号加大 ─────────────────────────── */
+/* ─── 右侧目录（TOC）：字号加大 + 右栏加宽占约 2/3 ────────── */
 .md-nav--secondary {
-  font-size: .8rem;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
 }
 
 .md-nav--secondary .md-nav__title {
   font-weight: 700;
-  font-size: .78rem;
+  font-size: 1rem !important;
   letter-spacing: .01em;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 1rem !important;
+}
+
+/* 右栏（TOC 侧栏）加宽，让整个目录占满右栏约 2/3 */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    width: 16rem !important;
+  }
+  [dir=ltr] .md-sidebar--secondary .md-sidebar__inner {
+    padding-right: .8rem !important;
+  }
 }
 
 /* ─── 图片圆角（可选） ──────────────────────────────────── */
