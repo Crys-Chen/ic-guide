@@ -258,11 +258,11 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **叶凡** <span class="badge-fudan">复旦</span>
+-   **[叶凡](https://sme.fudan.edu.cn/60/57/c31157a352343/page.htm)** <span class="badge-fudan">复旦</span>
 
     高能效 SAR ADC · 低功耗数据转换器 · ISSCC/VLSI 发表
 
--   **倪熔华** <span class="badge-fudan">复旦</span>
+-   **[倪熔华](https://sme.fudan.edu.cn/60/15/c31149a352277/page.htm)** <span class="badge-fudan">复旦</span>
 
     高速 PLL/频率综合器 · SerDes CDR · 片上时钟生成
 
