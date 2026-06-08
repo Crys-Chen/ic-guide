@@ -12601,10 +12601,87 @@
 </svg></div>
 
 <p>难归难，这两年 LLM 的爆发让机器人的大脑迎来了一波升级。一些具身智能研究者直接把那些在互联网上训练出来的大模型，直接搬到机器人的决策上。2023 年 Google DeepMind 的 <strong>RT-2</strong> 就是这么干的，它把一个视觉-语言大模型直接当成机器人的"大脑"，输入是摄像头看到的画面加上一句指令，输出直接就是机械臂的动作。因为这个大模型在海量网络数据里见过世界，它能听懂训练时从没出现过的指令。你让它"把可乐罐放到和可口可乐 logo 同颜色的方块上"，它能自己推断出那是红色，再去做。这种举一反三的本领，是过去任何机器人都没有的。</p>
+<div><svg viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <defs>
+    <marker id="emBorrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#1D4ED8"/></marker>
+    <marker id="emEarn" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C2410C"/></marker>
+  </defs>
+  <rect width="820" height="340" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">会想能从互联网借，会做只能靠身体一次次攒</text>
+  <rect x="372" y="62" width="76" height="46" rx="6" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.5"/>
+  <text x="410" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">会想</text>
+  <text x="410" y="99" text-anchor="middle" font-size="8.5" fill="#1D4ED8">理解·认物·常识</text>
+  <line x1="410" y1="108" x2="410" y2="120" stroke="#475569" stroke-width="1.5"/>
+  <rect x="360" y="120" width="100" height="84" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="410" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">会做</text>
+  <text x="410" y="168" text-anchor="middle" font-size="8.5" fill="#166534">力度·平衡</text>
+  <text x="410" y="181" text-anchor="middle" font-size="8.5" fill="#166534">手上功夫</text>
+  <rect x="64" y="56" width="148" height="54" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
+  <text x="138" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">互联网大模型</text>
+  <text x="138" y="97" text-anchor="middle" font-size="8.5" fill="#64748B">海量文本 + 图像</text>
+  <line x1="214" y1="84" x2="368" y2="84" stroke="#1D4ED8" stroke-width="2" marker-end="url(#emBorrow)"/>
+  <text x="291" y="74" text-anchor="middle" font-size="11" font-weight="bold" fill="#1D4ED8">借</text>
+  <text x="476" y="158" text-anchor="start" font-size="9.5" fill="#B91C1C">这半网上没有</text>
+  <text x="476" y="172" text-anchor="start" font-size="9.5" fill="#B91C1C">借不来</text>
+  <rect x="92" y="276" width="160" height="40" rx="6" fill="#FFF7ED" stroke="#C2410C" stroke-width="1.3"/>
+  <text x="172" y="295" text-anchor="middle" font-size="10" font-weight="bold" fill="#9A3412">真人遥控示范</text>
+  <text x="172" y="309" text-anchor="middle" font-size="8.5" fill="#C2410C">贵</text>
+  <rect x="330" y="276" width="160" height="40" rx="6" fill="#FFF7ED" stroke="#C2410C" stroke-width="1.3"/>
+  <text x="410" y="295" text-anchor="middle" font-size="10" font-weight="bold" fill="#9A3412">仿真里练</text>
+  <text x="410" y="309" text-anchor="middle" font-size="8.5" fill="#C2410C">有 Sim-to-Real 鸿沟</text>
+  <rect x="568" y="276" width="160" height="40" rx="6" fill="#FFF7ED" stroke="#C2410C" stroke-width="1.3"/>
+  <text x="648" y="295" text-anchor="middle" font-size="10" font-weight="bold" fill="#9A3412">真机边做边学</text>
+  <text x="648" y="309" text-anchor="middle" font-size="8.5" fill="#C2410C">慢·险·会遗忘</text>
+  <line x1="172" y1="276" x2="372" y2="204" stroke="#C2410C" stroke-width="1.6" marker-end="url(#emEarn)"/>
+  <line x1="410" y1="276" x2="410" y2="208" stroke="#C2410C" stroke-width="1.6" marker-end="url(#emEarn)"/>
+  <line x1="648" y1="276" x2="448" y2="204" stroke="#C2410C" stroke-width="1.6" marker-end="url(#emEarn)"/>
+  <text x="410" y="250" text-anchor="middle" font-size="11" font-weight="bold" fill="#C2410C">挣（一次次攒经验）</text>
+</svg></div>
+
 <p>可问题在于，捏杯子的力度、走路的平衡，这种身体功夫在互联网上依然没有现成答案，LLM 也不懂。机器只能一次次真实地试、从结果里学。麻烦是真实的尝试又慢又贵，于是研究者凑出了三条攒经验的路。第一条是<strong>真人遥控</strong>，让人手把手地遥控机器人，把一个个动作示范给它看，π0 这类模型就靠海量的人类示范学会了叠衣服、装洗碗机，代价是请人示范极费工夫。第二条是<strong>仿真</strong>，在虚拟环境里让成千上万个机器人并行练习，又快又便宜，人形机器人的跑、跳、平衡几乎都是这么练出来的。但仿真里的物理和真实世界总对不上，这道<strong>仿真到现实的鸿沟（Sim-to-Real）</strong>让练好的技能一搬到真机就常常失灵。</p>
 <p>第三条最诱人也最难，就是让机器人自己在真实世界里边做边学，熟能生巧，也就是<strong>在线学习</strong>。可是真机试错又慢、又有风险、还特别费样本，机器人摔一次可能就摔坏了。而且光有数据还不够，把新经验真正更新进模型的权重，本身也是一道坎。神经网络有个老毛病叫<strong>灾难性遗忘</strong>，一学新动作，旧本事常常被覆盖、忘掉；在线更新又不像离线那样能先测好再上线，一次坏的更新就可能让机器人当场变笨、甚至闯祸，事后还很难撤回。把这条路走通，再让机器人在部署之后还能持续学、自己纠错、适应没见过的新环境，就能把"攒经验"从一次性的训练变成一辈子的本事。说到底，<strong>怎么让机器以扛得住的代价攒够身体经验，是整个具身智能最核心的难题</strong>。</p>
 <p>再往前看，还有人想给机器人配上一种"想象力"，让它在脑子里建起一个物理世界的模型，真动手之前先预演一下"推这一下会怎样、松了手会不会倒"，这就是当下很热的<strong>世界模型</strong>和<strong>空间智能</strong>。具身智能整体还是个剧烈变形中的早期方向，视觉-语言-动作模型会长成什么样、眼下都没有定论。可也正因为没定型，真正的开放问题特别多，进来得早的人，有机会亲手定义这个领域的一部分。</p>
 <p>此外，机器人不能每动一下都去问云端，延迟太高，断了网就瘫，所以模型必须在机器人身上就地运行。可机器人是电池供电的，留给芯片的功耗和散热预算往往只有十几瓦，决策却得在几十毫秒内出结果。把一个几十亿参数的视觉-语言-动作模型塞进这么小的预算里实时跑，逼出了一类专门的<strong>具身芯片</strong>研究。一头是边缘 AI 推理的专用加速器和模型压缩，一头是把感知、决策和微秒级电机力矩控制集成进一颗机器人 SoC，还要给触觉、视觉这些传感器配上高密度的读出前端。功耗、散热、延迟这三堵墙，正好把芯片架构和能效推到了最前线。</p>
+<div><svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <defs>
+    <marker id="emWall" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#DC2626"/></marker>
+    <marker id="emCut" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="820" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">具身芯片：把几十亿参数的 VLA 塞进十几瓦、几十毫秒</text>
+  <rect x="330" y="98" width="160" height="68" rx="6" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+  <text x="410" y="126" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">具身芯片</text>
+  <text x="410" y="144" text-anchor="middle" font-size="9" fill="#64748B">实时跑 VLA · 几十亿参数</text>
+  <line x1="345" y1="98" x2="345" y2="90" stroke="#475569" stroke-width="1.4"/>
+  <line x1="375" y1="98" x2="375" y2="90" stroke="#475569" stroke-width="1.4"/>
+  <line x1="445" y1="98" x2="445" y2="90" stroke="#475569" stroke-width="1.4"/>
+  <line x1="475" y1="98" x2="475" y2="90" stroke="#475569" stroke-width="1.4"/>
+  <rect x="150" y="98" width="12" height="68" fill="#FCA5A5" stroke="#DC2626" stroke-width="1"/>
+  <line x1="178" y1="132" x2="324" y2="132" stroke="#DC2626" stroke-width="1.8" marker-end="url(#emWall)"/>
+  <text x="140" y="124" text-anchor="end" font-size="10" font-weight="bold" fill="#B91C1C">功耗墙</text>
+  <text x="140" y="138" text-anchor="end" font-size="8.5" fill="#9A3412">只有十几瓦</text>
+  <rect x="658" y="98" width="12" height="68" fill="#FCA5A5" stroke="#DC2626" stroke-width="1"/>
+  <line x1="642" y1="132" x2="496" y2="132" stroke="#DC2626" stroke-width="1.8" marker-end="url(#emWall)"/>
+  <text x="680" y="124" text-anchor="start" font-size="10" font-weight="bold" fill="#B91C1C">延迟墙</text>
+  <text x="680" y="138" text-anchor="start" font-size="8.5" fill="#9A3412">几十毫秒要出结果</text>
+  <rect x="330" y="68" width="160" height="10" fill="#FCA5A5" stroke="#DC2626" stroke-width="1"/>
+  <line x1="410" y1="84" x2="410" y2="94" stroke="#DC2626" stroke-width="1.8" marker-end="url(#emWall)"/>
+  <text x="410" y="60" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#B91C1C">散热墙 · 热散不出去</text>
+  <line x1="370" y1="166" x2="190" y2="206" stroke="#475569" stroke-width="1.2" marker-end="url(#emCut)"/>
+  <line x1="410" y1="166" x2="410" y2="206" stroke="#475569" stroke-width="1.2" marker-end="url(#emCut)"/>
+  <line x1="450" y1="166" x2="630" y2="206" stroke="#475569" stroke-width="1.2" marker-end="url(#emCut)"/>
+  <rect x="100" y="210" width="180" height="44" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="190" y="230" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#1E40AF">边缘 AI 加速器</text>
+  <text x="190" y="244" text-anchor="middle" font-size="8.5" fill="#1D4ED8">+ 模型压缩</text>
+  <rect x="320" y="210" width="180" height="44" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="410" y="230" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#15803D">机器人 SoC</text>
+  <text x="410" y="244" text-anchor="middle" font-size="8" fill="#166534">感知+决策+微秒级力矩控制</text>
+  <rect x="540" y="210" width="180" height="44" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.2"/>
+  <text x="630" y="230" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#92400E">传感器读出前端</text>
+  <text x="630" y="244" text-anchor="middle" font-size="8.5" fill="#B45309">触觉 / 视觉</text>
+  <text x="410" y="282" text-anchor="middle" font-size="10.5" fill="#475569">再聪明的大脑，也得装进这颗芯片里实时跑。三堵墙把架构和能效推到最前线。</text>
+</svg></div>
+
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>操作、运动、导航三道身体坎</strong>：抓取、双足平衡、陌生环境里认路定位，都是一岁小孩的本能、AI 的难关。凭什么这些 sensorimotor 技能这么难学，又怎么让一个模型同时学会这几样？</li>

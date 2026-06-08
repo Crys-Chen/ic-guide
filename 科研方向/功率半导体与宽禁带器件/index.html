@@ -12596,7 +12596,82 @@
 <p>那禁带再宽一点会怎样？沿着这条思路往前，就是氧化镓（Ga₂O₃）和金刚石这类超宽禁带材料，禁带宽到 4.8 eV 甚至 5.5 eV，击穿场强比 SiC、GaN 还高一截。氧化镓尤其诱人，因为它能像拉硅锭那样从熔体里直接长出大块单晶，成本和尺寸上比要靠高温高压才长得出的 SiC、GaN 都占便宜。但它有两个绕不开的软肋，几乎不导热，热量憋在器件里散不出去，而且至今做不出像样的 p 型。把这些材料从实验室推向产品，是这个方向最前沿的探索。</p>
 <p>以一辆电动车为例，其驱动系统的核心是逆变器——把电池的直流电变换成驱动电机的三相交流电。逆变器里的开关器件要承受几百伏的电压、数百安的电流，同时以十几 kHz 的频率高速开关。用硅基 IGBT 时，系统效率约 95%；换成 SiC MOSFET，效率可以到 97-98%，这两个百分点体现在续航里就是几十公里的差距，体现在逆变器体积里就是更小的散热器和更轻的重量。特斯拉 Model 3 是率先大规模使用 SiC MOSFET 的量产车型，此后比亚迪、蔚来等也相继跟进。GaN 则在更高频率、较低电压的场景占优，你的 65W 快充充电头之所以比传统充电器小一半，就是因为 GaN 允许在更高的开关频率下工作（几 MHz 甚至更高，硅基方案通常只有几十到几百 kHz），频率越高、储能电感和电容尺寸就越小，整个电路就能做得更紧凑。</p>
 <p>不过快充和射频里用的 GaN 都是横向器件，电流贴着表面那一层流动，耐压做到六百多伏就开始吃力，所以它的主场是中低压高频。想把 GaN 也送进电动车那种几百上千伏、几百安的场合，得把器件竖过来做成垂直 GaN，让电流在 GaN 衬底里纵向穿过、靠材料厚度去扛电压，电场和发热都往体内走，背面还能直接贴散热。这条路性能很诱人，卡的是衬底，又大又便宜、缺陷又少的体 GaN 晶圆至今很难得，这也是眼下一个很热的攻关点。</p>
-<p>研究这类器件的人，日常往往在材料、器件、电路三个层面之间来回横跳。材料这头，SiC 单晶生长里的位错和微管缺陷直接决定一整片晶圆能出多少颗好器件，怎么把外延层缺陷压下去是长期啃不动的工艺难题。到了器件这头，GaN 高电子迁移率晶体管（HEMT）缓冲层里的陷阱会让它在高压开关时电流比直流测量值低一截，这种电流崩塌得靠各种表征手段揪出陷阱来源、再改外延结构去压制。再到电路这头，器件开关快到纳秒级，几纳亨的寄生电感就能在开关瞬间激起上百伏过电压，门极驱动和封装版图必须贴着器件特性精心设计。横向 GaN 在这里还多一条出路，它能把开关管和驱动、保护单片集成成一颗功率 IC，把分立器件之间那段寄生电感直接省掉。而贯穿这三层始终绷着的一根弦是可靠性，器件长年泡在高压、高温、大电流和高速开关的应力里，怎么扛住长期退化、过得了车规、甚至在辐射环境里不失效，本身就是一门独立的学问。</p>
+<div><svg viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <defs>
+    <marker id="gan-cur" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#DC2626"/></marker>
+  </defs>
+  <text x="230" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">横向 GaN（HEMT）</text>
+  <text x="630" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">垂直 GaN</text>
+  <line x1="430" y1="48" x2="430" y2="262" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- 左：横向 -->
+  <rect x="110" y="116" width="46" height="24" rx="2" fill="#64748B"/>
+  <text x="133" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">S</text>
+  <rect x="212" y="116" width="46" height="24" rx="2" fill="#1E293B"/>
+  <text x="235" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">G</text>
+  <rect x="314" y="116" width="46" height="24" rx="2" fill="#64748B"/>
+  <text x="337" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">D</text>
+  <rect x="70" y="140" width="320" height="66" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="86" y="176" font-size="10" fill="#15803D">GaN</text>
+  <line x1="158" y1="152" x2="312" y2="152" stroke="#DC2626" stroke-width="2" marker-end="url(#gan-cur)"/>
+  <text x="240" y="172" text-anchor="middle" font-size="9" fill="#B91C1C">电流沿 2DEG 横向流</text>
+  <rect x="70" y="206" width="320" height="38" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="230" y="230" text-anchor="middle" font-size="10" fill="#475569">Si / SiC 衬底</text>
+  <text x="230" y="270" text-anchor="middle" font-size="10" fill="#475569">耐压靠拉开 S–D 间距，商用 ~650V</text>
+  <text x="230" y="288" text-anchor="middle" font-size="9" fill="#94A3B8">主场：快充 · 数据中心电源</text>
+  <!-- 右：垂直 -->
+  <rect x="556" y="100" width="70" height="22" rx="2" fill="#64748B"/>
+  <text x="591" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">S</text>
+  <rect x="632" y="100" width="46" height="22" rx="2" fill="#1E293B"/>
+  <text x="655" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">G</text>
+  <rect x="470" y="122" width="320" height="92" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="612" y="162" text-anchor="middle" font-size="10" fill="#15803D">GaN 漂移层</text>
+  <text x="612" y="178" text-anchor="middle" font-size="9" fill="#15803D">（耐压靠厚度）</text>
+  <rect x="470" y="214" width="320" height="30" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="630" y="234" text-anchor="middle" font-size="10" fill="#15803D">体 GaN 衬底</text>
+  <rect x="470" y="244" width="320" height="16" fill="#475569"/>
+  <text x="630" y="256" text-anchor="middle" font-size="9" fill="#FFFFFF">漏极 Drain（背面，兼散热）</text>
+  <line x1="712" y1="124" x2="712" y2="242" stroke="#DC2626" stroke-width="2" marker-end="url(#gan-cur)"/>
+  <text x="744" y="186" text-anchor="middle" font-size="9" fill="#B91C1C">纵向</text>
+  <text x="630" y="280" text-anchor="middle" font-size="10" fill="#475569">耐压靠漂移层厚度，目标 &gt;1.2kV</text>
+  <text x="630" y="298" text-anchor="middle" font-size="9" fill="#94A3B8">卡点：缺又大又便宜的体 GaN 衬底</text>
+</svg></div>
+
+<p>研究这类器件的人，日常往往在材料、器件、电路三个层面之间来回横跳。材料这头，SiC 单晶生长里的位错和微管缺陷直接决定一整片晶圆能出多少颗好器件，怎么把外延层缺陷压下去是长期啃不动的工艺难题。到了器件这头，GaN 高电子迁移率晶体管（HEMT）有两块难啃的骨头。一是电流崩塌，缓冲层里的陷阱会让它在高压开关时电流比直流测量值低一截，得靠各种表征手段揪出陷阱来源、再改外延结构去压制。二是散热，GaN 器件功率密度极高、沟道局部温度蹿得飞快，而它的热导率又不如 SiC，所以常把 GaN 长在导热好的 SiC 衬底上、甚至转移到金刚石上散热，否则结温一高，可靠性和电流崩塌会一起恶化。再到电路这头，器件开关快到纳秒级，几纳亨的寄生电感就能在开关瞬间激起上百伏过电压，门极驱动和封装版图必须贴着器件特性精心设计。横向 GaN 在这里还多一条出路，它能把开关管和驱动、保护单片集成成一颗功率 IC，把分立器件之间那段寄生电感直接省掉。而贯穿这三层始终绷着的一根弦是可靠性，器件长年泡在高压、高温、大电流和高速开关的应力里，怎么扛住长期退化、过得了车规、甚至在辐射环境里不失效，本身就是一门独立的学问。</p>
+<p>把这些材料和器件按各自的本事铺开，就能看清它们分别占着哪块地盘。硅守着低压低频的消费电子和工频电源，碳化硅扛起电动车主驱、充电桩和电网这些高压大功率的活，横向 GaN 则凭高频拿下快充、数据中心电源和车载充电机。再往高压和更前沿走，是还在攻关的垂直 GaN 和超宽禁带的氧化镓。</p>
+<div><svg viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <defs>
+    <marker id="pw-ax" markerWidth="9" markerHeight="9" refX="4" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#64748B"/></marker>
+  </defs>
+  <!-- 轴 -->
+  <line x1="70" y1="360" x2="70" y2="48" stroke="#64748B" stroke-width="1.4" marker-end="url(#pw-ax)"/>
+  <line x1="70" y1="360" x2="815" y2="360" stroke="#64748B" stroke-width="1.4" marker-end="url(#pw-ax)"/>
+  <text x="78" y="44" font-size="10" fill="#475569">耐压 · 功率 高</text>
+  <text x="812" y="380" text-anchor="end" font-size="10" fill="#475569">开关频率 高 →</text>
+  <!-- Si -->
+  <rect x="100" y="272" width="142" height="74" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="171" y="298" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">硅 Si</text>
+  <text x="171" y="316" text-anchor="middle" font-size="9" fill="#475569">消费电子 · 工频</text>
+  <text x="171" y="332" text-anchor="middle" font-size="9" fill="#94A3B8">&lt;1200V · 低频</text>
+  <!-- SiC -->
+  <rect x="100" y="92" width="186" height="110" rx="6" fill="#93C5FD" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="193" y="124" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">碳化硅 SiC</text>
+  <text x="193" y="144" text-anchor="middle" font-size="9" fill="#1E3A8A">电动车主驱 · 充电桩 · 电网</text>
+  <text x="193" y="162" text-anchor="middle" font-size="9" fill="#1E40AF">≥1200V · 中频 · 大功率</text>
+  <!-- 横向GaN -->
+  <rect x="558" y="268" width="235" height="78" rx="6" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="675" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">横向 GaN</text>
+  <text x="675" y="312" text-anchor="middle" font-size="9" fill="#475569">快充 · 数据中心 · 车载 OBC</text>
+  <text x="675" y="328" text-anchor="middle" font-size="9" fill="#94A3B8">80–650V · 高频</text>
+  <!-- 垂直GaN -->
+  <rect x="330" y="186" width="200" height="70" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="430" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#1E40AF">垂直 GaN（研发）</text>
+  <text x="430" y="235" text-anchor="middle" font-size="9" fill="#475569">突破 650V，目标 &gt;1.2kV</text>
+  <!-- Ga2O3 -->
+  <rect x="330" y="88" width="200" height="70" rx="6" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="430" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">氧化镓 Ga₂O₃（前沿）</text>
+  <text x="430" y="137" text-anchor="middle" font-size="9" fill="#475569">超高压潜力 · 散热待解</text>
+</svg></div>
+
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>SiC 单晶缺陷与良率</strong>：碳化硅衬底生长中的位错、微管，以及外延层的缺陷密度，直接卡住整片晶圆能出多少好器件——把缺陷密度压到多低、压得多便宜，是这个方向长期没被根治的工艺难题。</li>
@@ -12604,7 +12679,7 @@
 <li><strong>把禁带宽度的物理优势兑现成器件性能</strong>：SiC/GaN 三倍于硅的禁带，理论上给出更高击穿场强、更低导通电阻、更好的高温特性，但实测器件离材料给出的物理上限总有距离——器件结构怎么设计，才能真正逼近这条上限？</li>
 <li><strong>纳秒开关与寄生电感的博弈</strong>：宽禁带器件开关快到纳秒级，这是低损耗的来源，可几纳亨的寄生电感就能在开关瞬间激起上百伏过电压——门极驱动电路和封装版图要怎样协同，才能既开得快、又不把器件打坏？</li>
 <li><strong>"以频率换体积"的边界</strong>：GaN 把开关频率从硅基的几十~几百 kHz 推到几 MHz，储能电感电容随之缩小、整机更紧凑（65W 快充体积减半就是例证），但频率越高，损耗与 EMI 也越难压——这条路的物理边界到底在哪？</li>
-<li><strong>超宽禁带的散热与 p 型难题</strong>：Ga₂O₃、金刚石禁带更宽、击穿场强更高，氧化镓还能低成本熔体长晶，可热导率极低、热量出不来，p 型掺杂又几乎做不出——怎么把热导走、怎么实现有效 p 型，是超宽禁带能不能从实验室落地的命门。</li>
+<li><strong>从 GaN 到超宽禁带，散热是绕不开的坎</strong>：GaN 功率密度高、自加热严重，热导率还不如 SiC，得靠 GaN-on-SiC 乃至 GaN-on-diamond 把热抽走；到了 Ga₂O₃ 更极端，它几乎不导热，再加上 p 型几乎做不出，散热和掺杂一起成了超宽禁带能否落地的命门。怎么在材料、衬底、封装各层把热导出去，是贯穿这个方向的一条主线。</li>
 <li><strong>垂直化上高压 vs 集成化提密度</strong>：横向 GaN 耐压受表面限制，做成垂直结构能在小面积上扛高压大电流，却卡在缺少又大又便宜的体 GaN 衬底；横向 GaN 则适合把驱动、保护与开关单片集成成功率 IC。这两条路各自的天花板在哪，又分别适合什么场景？</li>
 </ul>
 <h3 id="_3">知识路径</h3>
