@@ -102,36 +102,39 @@ hide:
 
 数字设计师有一个特权，可以假装世界上只有 0 和 1。一个逻辑门输出 3.2V 还是 3.5V 无关紧要，只要超过门限就算逻辑 1，足够稳定就能传到下一级。这个抽象层让数字工程师在逻辑、架构、软件层面工作，完全不必管底层的物理细节。模拟电路设计师没有这个特权。ADC 要分辨 1.0000V 和 1.0001V 的差别，PLL 要把时钟抖动控制在皮秒量级，LNA 要在 -100 dBm 的微弱信号下不引入额外噪声。每一个晶体管的热噪声、每一对器件的随机失配、每一条走线的寄生电感，都是看得见的误差来源，没法"假装不存在"。
 
-模拟 IC 的核心挑战，是物理上的好东西往往不可兼得。热噪声来自电阻和晶体管里电子的随机热运动，理论上没法消除。想降低噪声，就得用更大的偏置电流或更大的电容，也就意味着更多功耗、更大面积。速度和精度之间也有一对类似的矛盾。ADC 每次采样需要一定的建立时间，想更快就得接受更多误差，想更准就得放慢速度。设计者能做的，是在约束内用更聪明的架构去逼近理论极限。SAR ADC 用二分搜索，在低功耗场景里特别高效；ΔΣ ADC 把量化噪声整形到高频，再用数字滤波器压掉，两者在"速度、精度、功耗"的三角里选了不同的生存位置。
+模拟 IC 的核心挑战，是物理上的好东西往往不可兼得。Razavi 在经典教材里把这件事画成一个八边形，八个指标分占八个角，谁也不让谁。热噪声来自电阻和晶体管里电子的随机热运动，理论上没法消除。想降低噪声，就得用更大的偏置电流或更大的电容，也就意味着更多功耗、更大面积。速度和精度之间也有一对类似的矛盾。ADC 每次采样需要一定的建立时间，想更快就得接受更多误差，想更准就得放慢速度。设计者能做的，是在约束内用更聪明的架构去逼近理论极限。SAR ADC 用二分搜索，在低功耗场景里特别高效；ΔΣ ADC 把量化噪声整形到高频，再用数字滤波器压掉，两者在"速度、精度、功耗"的三角里选了不同的生存位置。
 
-<div><svg viewBox="0 0 820 270" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
-  <rect width="820" height="270" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">同一个 noise-power 矛盾，换了物理量在三处复现</text>
-  <text x="160" y="66" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">ADC</text>
-  <line x1="92" y1="150" x2="228" y2="150" stroke="#475569" stroke-width="3"/>
-  <polygon points="148,178 172,178 160,152" fill="#64748B"/>
-  <line x1="92" y1="150" x2="92" y2="164" stroke="#475569" stroke-width="2"/>
-  <line x1="228" y1="150" x2="228" y2="164" stroke="#475569" stroke-width="2"/>
-  <text x="92" y="184" text-anchor="middle" font-size="9.5" fill="#1E40AF">又快又准</text>
-  <text x="228" y="184" text-anchor="middle" font-size="9.5" fill="#C2410C">功耗 / 面积</text>
-  <text x="160" y="206" text-anchor="middle" font-size="9" fill="#64748B">速度·精度·功耗 三角</text>
-  <text x="410" y="66" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">SerDes</text>
-  <line x1="342" y1="150" x2="478" y2="150" stroke="#475569" stroke-width="3"/>
-  <polygon points="398,178 422,178 410,152" fill="#64748B"/>
-  <line x1="342" y1="150" x2="342" y2="164" stroke="#475569" stroke-width="2"/>
-  <line x1="478" y1="150" x2="478" y2="164" stroke="#475569" stroke-width="2"/>
-  <text x="342" y="184" text-anchor="middle" font-size="9.5" fill="#1E40AF">信号还原得干净</text>
-  <text x="478" y="184" text-anchor="middle" font-size="9.5" fill="#C2410C">功耗</text>
-  <text x="410" y="206" text-anchor="middle" font-size="9" fill="#64748B">均衡越强越费电</text>
-  <text x="660" y="66" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">PLL</text>
-  <line x1="592" y1="150" x2="728" y2="150" stroke="#475569" stroke-width="3"/>
-  <polygon points="648,178 672,178 660,152" fill="#64748B"/>
-  <line x1="592" y1="150" x2="592" y2="164" stroke="#475569" stroke-width="2"/>
-  <line x1="728" y1="150" x2="728" y2="164" stroke="#475569" stroke-width="2"/>
-  <text x="592" y="184" text-anchor="middle" font-size="9.5" fill="#1E40AF">时钟更纯（低相噪）</text>
-  <text x="728" y="184" text-anchor="middle" font-size="9.5" fill="#C2410C">功耗</text>
-  <text x="660" y="206" text-anchor="middle" font-size="9" fill="#64748B">相噪压一截就得多耗电</text>
-  <text x="410" y="244" text-anchor="middle" font-size="10.5" fill="#475569">想要的性能在一头，功耗在另一头。换了物理量，矛盾的结构一模一样。</text>
+<div><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:720px;display:block;margin:1.5rem auto;">
+  <rect width="720" height="320" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="360" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">模拟设计的八边形：八个指标互相牵制（Razavi）</text>
+  <line x1="360" y1="170" x2="360" y2="78" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="425" y2="105" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="452" y2="170" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="425" y2="235" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="360" y2="262" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="295" y2="235" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="268" y2="170" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="360" y1="170" x2="295" y2="105" stroke="#E2E8F0" stroke-width="1"/>
+  <polygon points="360,78 425,105 452,170 425,235 360,262 295,235 268,170 295,105" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="360" cy="78" r="4" fill="#1E40AF"/>
+  <circle cx="425" cy="105" r="4" fill="#1E40AF"/>
+  <circle cx="452" cy="170" r="4" fill="#1E40AF"/>
+  <circle cx="425" cy="235" r="4" fill="#1E40AF"/>
+  <circle cx="360" cy="262" r="4" fill="#1E40AF"/>
+  <circle cx="295" cy="235" r="4" fill="#1E40AF"/>
+  <circle cx="268" cy="170" r="4" fill="#1E40AF"/>
+  <circle cx="295" cy="105" r="4" fill="#1E40AF"/>
+  <text x="360" y="167" text-anchor="middle" font-size="10" fill="#9A3412">动一个</text>
+  <text x="360" y="181" text-anchor="middle" font-size="10" fill="#9A3412">牵动全部</text>
+  <text x="360" y="66" text-anchor="middle" font-size="10.5" fill="#334155">噪声</text>
+  <text x="438" y="100" text-anchor="start" font-size="10.5" fill="#334155">线性度</text>
+  <text x="462" y="173" text-anchor="start" font-size="10.5" fill="#334155">增益</text>
+  <text x="438" y="240" text-anchor="start" font-size="10.5" fill="#334155">功耗</text>
+  <text x="360" y="280" text-anchor="middle" font-size="10.5" fill="#334155">电源电压</text>
+  <text x="282" y="240" text-anchor="end" font-size="10.5" fill="#334155">电压摆幅</text>
+  <text x="258" y="173" text-anchor="end" font-size="10.5" fill="#334155">速度</text>
+  <text x="282" y="100" text-anchor="end" font-size="10.5" fill="#334155">输入/输出阻抗</text>
+  <text x="360" y="304" text-anchor="middle" font-size="10.5" fill="#475569">改善一个往往牺牲另几个。ADC、SerDes、PLL，各是这张网在不同物理量上的投影。</text>
 </svg></div>
 
 当数据中心要在芯片之间每秒搬运数百太比特，这些物理约束就从实验室问题变成了产业瓶颈。一颗 224 Gbps 的 SerDes，要把信号从一台 GPU 送到几十厘米外的交换机，中间那段铜线损耗高达 40 dB，还到处是反射，信号传到对面早就糊成了一团。办法分两步。发送端先把信号"预先扭曲"一下，估计信道会怎么糟蹋它，提前做反向补偿。接收端再用一连串均衡和时钟恢复电路，把糊掉的波形一级一级还原回来。每一步设计有多好，全看你对这段铜线的物理摸得有多透。SerDes 的速率每三年翻一倍，从 56 到 112 到 224，再往 448 去，可每次翻倍都不是把电路照搬放大，而是几乎每个节点都得推倒重想。PLL 是同一个故事换了时间轴。每块数字芯片都靠 PLL 从一个低频参考时钟合成出 CPU 的工作主频，而时钟有多不纯净（相位噪声）直接吃掉时序裕量。5G 基带的本振 PLL 相位噪声每差 1 dB，系统误码率就明显变坏。这还是那个 noise-power 矛盾，只是从电压幅度换到了时间抖动，结构一模一样。
