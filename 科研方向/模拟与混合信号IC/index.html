@@ -12685,13 +12685,12 @@
 </svg></div>
 
 <p>当数据中心要在芯片之间每秒搬运数百太比特，这些物理约束就从实验室问题变成了产业瓶颈。一颗 224 Gbps 的 SerDes，要把信号从一台 GPU 送到几十厘米外的交换机，中间那段铜线损耗高达 40 dB，还到处是反射，信号传到对面早就糊成了一团。办法分两步。发送端先把信号"预先扭曲"一下，估计信道会怎么糟蹋它，提前做反向补偿。接收端再用一连串均衡和时钟恢复电路，把糊掉的波形一级一级还原回来。每一步设计有多好，全看你对这段铜线的物理摸得有多透。SerDes 的速率每三年翻一倍，从 56 到 112 到 224，再往 448 去，可每次翻倍都不是把电路照搬放大，而是几乎每个节点都得推倒重来。</p>
-<p>PLL 讲的是同一个故事，只不过搬到了时间轴上。每块数字芯片都需要一个又快又稳的节拍来同步，PLL 就负责把一个慢的参考时钟倍频成芯片用的 GHz 主频。可再好的时钟，每一下"嘀嗒"也不会卡得分毫不差，边沿总会忽早忽晚地抖一点，这种时间上的抖动就是相位噪声。它在两个地方都要命。在数字芯片里，时钟一抖，留给每个信号稳定下来的余量就被压缩，主频就上不去；在 5G 收发机里，那个负责搬移频率的时钟一抖，发出去的信号符号就糊在一起，收错的概率跟着上升。说到底，想让时钟更稳，就得多花功耗。这还是 ADC 那个 noise-power 矛盾，只是把电压上的噪声换成了时间上的抖动，结构一模一样。</p>
 <div><svg viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
   <defs>
     <marker id="sdArr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="820" height="260" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">224 Gbps 信号：发端预补偿 → 铜线糟蹋 → 收端逐级还原</text>
+  <text x="410" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">SerDes（高速串行收发器）：224 Gbps 信号在铜线上糊掉，再被一步步还原</text>
   <rect x="40" y="70" width="180" height="90" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.4"/>
   <line x1="70" y1="90" x2="190" y2="140" stroke="#16A34A" stroke-width="1.5"/>
   <line x1="70" y1="140" x2="190" y2="90" stroke="#16A34A" stroke-width="1.5"/>
@@ -12717,6 +12716,40 @@
   <text x="594" y="194" text-anchor="middle" font-size="9" fill="#475569">逐级均衡 + 时钟恢复</text>
   <text x="594" y="207" text-anchor="middle" font-size="9" fill="#475569">眼图重新睁开</text>
   <text x="410" y="238" text-anchor="middle" font-size="10.5" fill="#475569">发送端预补偿，接收端逐级还原。两步都看你把这段铜线的物理摸得多透。</text>
+</svg></div>
+
+<p>PLL 讲的是同一个故事，只不过搬到了时间轴上。每块数字芯片都需要一个又快又稳的节拍来同步，PLL 就负责把一个慢的参考时钟倍频成芯片用的 GHz 主频。可再好的时钟，每一下"嘀嗒"也不会卡得分毫不差，边沿总会忽早忽晚地抖一点，这种时间上的抖动就是相位噪声。它在两个地方都要命。在数字芯片里，时钟一抖，留给每个信号稳定下来的余量就被压缩，主频就上不去；在 5G 收发机里，那个负责搬移频率的时钟一抖，发出去的信号符号就糊在一起，收错的概率跟着上升。说到底，想让时钟更稳，就得多花功耗。这还是 ADC 那个 noise-power 矛盾，只是把电压上的噪声换成了时间上的抖动，结构一模一样。</p>
+<div><svg viewBox="0 0 820 230" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
+  <defs>
+    <marker id="plArr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="820" height="230" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">PLL（锁相环）的结构：把输出锁定到参考 N 倍的负反馈环</text>
+  <text x="55" y="92" text-anchor="middle" font-size="10" fill="#475569">参考时钟</text>
+  <text x="55" y="106" text-anchor="middle" font-size="10" fill="#475569">f_ref</text>
+  <line x1="92" y1="100" x2="128" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#plArr)"/>
+  <rect x="130" y="78" width="92" height="44" rx="5" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.4"/>
+  <text x="176" y="98" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1E40AF">鉴相器</text>
+  <text x="176" y="113" text-anchor="middle" font-size="9" fill="#1D4ED8">PFD 比相位</text>
+  <line x1="222" y1="100" x2="256" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#plArr)"/>
+  <rect x="258" y="78" width="104" height="44" rx="5" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.4"/>
+  <text x="310" y="98" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1E40AF">环路滤波器</text>
+  <text x="310" y="113" text-anchor="middle" font-size="9" fill="#1D4ED8">相差变控制电压</text>
+  <line x1="362" y1="100" x2="396" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#plArr)"/>
+  <rect x="398" y="78" width="104" height="44" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.4"/>
+  <text x="450" y="98" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#15803D">压控振荡器</text>
+  <text x="450" y="113" text-anchor="middle" font-size="9" fill="#166534">VCO 生成时钟</text>
+  <line x1="502" y1="100" x2="600" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#plArr)"/>
+  <text x="660" y="92" text-anchor="middle" font-size="10" fill="#475569">输出主频</text>
+  <text x="660" y="107" text-anchor="middle" font-size="10" font-weight="bold" fill="#15803D">= N × f_ref</text>
+  <line x1="550" y1="100" x2="550" y2="170" stroke="#475569" stroke-width="1.6"/>
+  <line x1="551" y1="170" x2="406" y2="170" stroke="#475569" stroke-width="1.6"/>
+  <rect x="316" y="153" width="90" height="34" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+  <text x="361" y="174" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">÷N 分频器</text>
+  <line x1="316" y1="170" x2="176" y2="170" stroke="#475569" stroke-width="1.6"/>
+  <line x1="176" y1="170" x2="176" y2="124" stroke="#475569" stroke-width="1.6" marker-end="url(#plArr)"/>
+  <text x="246" y="186" text-anchor="middle" font-size="9" fill="#9A3412">把输出分频后送回比较</text>
+  <text x="410" y="214" text-anchor="middle" font-size="10.5" fill="#475569">鉴相器不停比较参考和反馈的相位差，用它微调 VCO，直到输出稳稳锁在参考的 N 倍上。这就叫"锁相"。</text>
 </svg></div>
 
 <p>近年最活跃的两条新路，都在想办法让"逼近极限"这件事更有方向感。一条叫数字辅助模拟，用片上的数字逻辑去校准模拟电路的失配和非理想性，把数字工艺缩放的红利借给模拟设计。另一条是 AI 辅助电路设计，用机器学习去加速原本要靠人反复迭代的仿真与优化。但两者都只是让逼近极限的路走得更快，那个极限本身由物理决定，不会消失。</p>
