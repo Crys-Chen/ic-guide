@@ -1956,6 +1956,12 @@
   --c-mid:   #1D4ED8;
   --c-light: #60A5FA;
 }
+/* 10 Agentic4Systems — 靛蓝 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(10) {
+  --c-deep:  #3730A3;
+  --c-mid:   #4F46E5;
+  --c-light: #818CF8;
+}
 
 .md-typeset .grid.cards.community-cards > ul {
   display: grid !important;
@@ -2024,6 +2030,9 @@
 }
 .md-typeset .grid.cards.community-cards > ul > li:nth-child(9) > p:first-child {
   background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 60%, #60A5FA 100%);
+}
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(10) > p:first-child {
+  background: linear-gradient(135deg, #3730A3 0%, #4F46E5 60%, #818CF8 100%);
 }
 /* 装饰圆点 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child::after {
@@ -2257,3 +2266,53 @@
 }
 [data-md-color-scheme="slate"] .sq-up   { color: #ff6b6b; }
 [data-md-color-scheme="slate"] .sq-down { color: #34d399; }
+
+/* ============ 专题社区卡片 · 轻量化重设计（单色 / 紧凑 / 去渐变） ============ */
+.md-typeset .grid.cards.community-cards > ul {
+  grid-template-columns: 1fr 1fr !important;
+  gap: .9rem !important;
+  margin: 1.4rem 0 !important;
+}
+.md-typeset .grid.cards.community-cards > ul > li {
+  padding: 0 !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-left: 3px solid var(--md-primary-fg-color) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05) !important;
+}
+.md-typeset .grid.cards.community-cards > ul > li:hover {
+  transform: scale(1.015) !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10) !important;
+}
+/* 标题：去渐变 header，改深色小字 + 复旦蓝链接 */
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+  background: none !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  padding: .8rem 1rem .15rem !important;
+}
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child a { color: var(--md-primary-fg-color) !important; }
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child::after { display: none !important; }
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child svg {
+  width: 1.05rem !important; height: 1.05rem !important;
+  fill: var(--md-primary-fg-color) !important; filter: none !important; margin-right: .4rem !important;
+}
+/* 正文 / bullet / 引用：收紧左右留白 + 小字 */
+.md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
+.md-typeset .grid.cards.community-cards > ul > li > ul,
+.md-typeset .grid.cards.community-cards > ul > li > blockquote { margin-left: 1rem !important; margin-right: 1rem !important; }
+.md-typeset .grid.cards.community-cards > ul > li > p:nth-child(2) { margin-top: .25rem !important; }
+.md-typeset .grid.cards.community-cards > ul > li p { font-size: .8rem !important; line-height: 1.55 !important; }
+.md-typeset .grid.cards.community-cards > ul > li > ul > li { font-size: .76rem !important; line-height: 1.5 !important; margin: .2rem 0 !important; }
+.md-typeset .grid.cards.community-cards > ul > li > ul > li::before { background: var(--md-primary-fg-color) !important; }
+.md-typeset .grid.cards.community-cards > ul > li blockquote {
+  font-size: .75rem !important; margin: .55rem 1rem .9rem !important; padding: .4rem .7rem !important;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent) !important;
+  border-left: 3px solid var(--md-primary-fg-color) !important; color: var(--md-primary-fg-color) !important;
+}
+.md-typeset .grid.cards.community-cards > ul > li strong { color: var(--md-primary-fg-color) !important; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li {
+  background: #1e2330 !important; border-color: rgba(255,255,255,.08) !important; border-left-color: var(--md-primary-fg-color) !important;
+}
+@media (max-width: 700px) { .md-typeset .grid.cards.community-cards > ul { grid-template-columns: 1fr !important; } }
