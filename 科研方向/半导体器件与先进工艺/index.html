@@ -11046,6 +11046,77 @@
 </svg></div>
 
 <p>另一个战场在存储器件，这边的支柱垮得更彻底。DRAM 用一颗电容里的电荷量代表 0 和 1，电容做小到一定程度，漏电和扰动让电荷再也存不住；Flash 靠 3D NAND 一层层堆维持密度，堆过 200 层之后键合应力压不住，继续堆要付出指数级的工艺代价。两根支柱在物理上同时撞墙，新型存储的思路就一条，绕开"用电荷数存信息"，换一种物理量顶上去。RRAM（阻变存储器）不存电荷，存的是一段几纳米厚氧化物薄膜的电阻状态。施加正向电压，薄膜里的氧空位沿电场排成一根<strong>导电细丝</strong>，电阻陡降到低阻态，读作 1；反向电压把细丝打散，电阻回到高阻态，读作 0。结构简单到极致，两层电极夹一层介质，能堆成三维高密度阵列；电阻还能在中间连续调，同一颗器件既是存储单元也是模拟乘法器，天然衔接存算一体。最大的难点是<strong>变异性</strong>。细丝在每颗器件里的成形位置带着随机性，放进阵列就成了良率分布问题，工业界和学术界都在想办法把这个分布压窄。其他几条路线做的是同样的事，只是物理量不同，PCM（相变存储器）用结晶和非晶的相态，MRAM（磁阻存储器）用磁化方向，FeRAM（铁电存储器）用铁电极化的翻转，共同点都是不再数电荷。</p>
+<div><svg viewBox="0 0 880 250" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <!-- Panel 1: RRAM 原理 -->
+  <rect x="10" y="10" width="520" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="270" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">RRAM：用电阻状态存信息</text>
+  <!-- SET 低阻态 -->
+  <text x="140" y="50" text-anchor="middle" font-size="9" fill="#7C3AED">+V 正向电压</text>
+  <rect x="70" y="56" width="140" height="18" rx="2" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
+  <text x="140" y="69" text-anchor="middle" font-size="9" fill="#F8FAFC">顶电极</text>
+  <rect x="70" y="74" width="140" height="62" fill="#FFF7ED" stroke="#D97706" stroke-width="1"/>
+  <circle cx="140" cy="82" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="140" cy="94" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="140" cy="106" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="140" cy="118" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="140" cy="129" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <rect x="70" y="136" width="140" height="18" rx="2" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
+  <text x="140" y="149" text-anchor="middle" font-size="9" fill="#F8FAFC">底电极</text>
+  <text x="140" y="174" text-anchor="middle" font-size="10" fill="#475569">细丝连通 · 低阻态</text>
+  <text x="140" y="190" text-anchor="middle" font-size="10" font-weight="600" fill="#166534">读作 1</text>
+  <!-- RESET 高阻态 -->
+  <text x="380" y="50" text-anchor="middle" font-size="9" fill="#7C3AED">−V 反向电压</text>
+  <rect x="310" y="56" width="140" height="18" rx="2" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
+  <text x="380" y="69" text-anchor="middle" font-size="9" fill="#F8FAFC">顶电极</text>
+  <rect x="310" y="74" width="140" height="62" fill="#FFF7ED" stroke="#D97706" stroke-width="1"/>
+  <circle cx="380" cy="82" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="380" cy="94" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <circle cx="362" cy="108" r="3.5" fill="#FBBF24" stroke="#D97706" stroke-width="1" opacity="0.7"/>
+  <circle cx="396" cy="112" r="3.5" fill="#FBBF24" stroke="#D97706" stroke-width="1" opacity="0.7"/>
+  <circle cx="380" cy="129" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <rect x="310" y="136" width="140" height="18" rx="2" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
+  <text x="380" y="149" text-anchor="middle" font-size="9" fill="#F8FAFC">底电极</text>
+  <text x="380" y="174" text-anchor="middle" font-size="10" fill="#475569">细丝打散 · 高阻态</text>
+  <text x="380" y="190" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">读作 0</text>
+  <!-- Captions -->
+  <text x="270" y="212" text-anchor="middle" font-size="10" fill="#475569">氧空位排成细丝就导通，打散就断开</text>
+  <text x="270" y="228" text-anchor="middle" font-size="10" fill="#94A3B8">细丝成形位置随机，变异性是最大难点</text>
+  <!-- Panel 2: 四种物理量 -->
+  <rect x="540" y="10" width="330" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="705" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">不数电荷的四种物理量</text>
+  <rect x="552" y="46" width="150" height="72" rx="5" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="627" y="62" text-anchor="middle" font-size="10" font-weight="700" fill="#1E40AF">RRAM 电阻态</text>
+  <polyline points="592,84 602,76 612,92 622,76 632,92 642,76 652,84" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+  <text x="627" y="108" text-anchor="middle" font-size="9" fill="#3B82F6">细丝通断改变电阻</text>
+  <rect x="712" y="46" width="150" height="72" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="787" y="62" text-anchor="middle" font-size="10" font-weight="700" fill="#92400E">PCM 相态</text>
+  <circle cx="747" cy="80" r="2.5" fill="#D97706"/>
+  <circle cx="757" cy="80" r="2.5" fill="#D97706"/>
+  <circle cx="767" cy="80" r="2.5" fill="#D97706"/>
+  <circle cx="747" cy="90" r="2.5" fill="#D97706"/>
+  <circle cx="757" cy="90" r="2.5" fill="#D97706"/>
+  <circle cx="767" cy="90" r="2.5" fill="#D97706"/>
+  <line x1="784" y1="74" x2="784" y2="96" stroke="#FBBF24" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="801" cy="78" r="2.5" fill="#D97706" opacity="0.7"/>
+  <circle cx="815" cy="86" r="2.5" fill="#D97706" opacity="0.7"/>
+  <circle cx="804" cy="92" r="2.5" fill="#D97706" opacity="0.7"/>
+  <circle cx="822" cy="77" r="2.5" fill="#D97706" opacity="0.7"/>
+  <circle cx="812" cy="74" r="2.5" fill="#D97706" opacity="0.7"/>
+  <text x="787" y="108" text-anchor="middle" font-size="9" fill="#92400E">结晶 ↔ 非晶</text>
+  <rect x="552" y="126" width="150" height="72" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="627" y="142" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">MRAM 磁化方向</text>
+  <text x="605" y="172" text-anchor="middle" font-size="16" fill="#16A34A">↑↑</text>
+  <text x="650" y="172" text-anchor="middle" font-size="16" fill="#16A34A">↑↓</text>
+  <text x="627" y="190" text-anchor="middle" font-size="9" fill="#166534">平行 ↔ 反平行</text>
+  <rect x="712" y="126" width="150" height="72" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="787" y="142" text-anchor="middle" font-size="10" font-weight="700" fill="#5B21B6">FeRAM 极化翻转</text>
+  <text x="772" y="172" text-anchor="middle" font-size="16" fill="#7C3AED">↑</text>
+  <text x="802" y="172" text-anchor="middle" font-size="16" fill="#7C3AED">↓</text>
+  <text x="787" y="190" text-anchor="middle" font-size="9" fill="#5B21B6">极化向上 ↔ 向下</text>
+  <text x="705" y="222" text-anchor="middle" font-size="10" fill="#475569">都把一个双稳态物理量当作 0 和 1</text>
+  <text x="705" y="236" text-anchor="middle" font-size="10" fill="#94A3B8">速度、功耗、耐久怎么打平还没定论</text>
+</svg></div>
+
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>二维半导体能不能量产（IC 切口）</strong>：硅切到 1-2 nm 表面长满悬挂键、迁移率塌掉，MoS₂、WSe₂ 天生薄又不塌。晶圆级单晶生长、CMOS 后端兼容、欧姆接触全是开放问题，是最大的一类课题组方向。</li>

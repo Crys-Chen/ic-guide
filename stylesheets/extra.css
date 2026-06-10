@@ -2358,12 +2358,16 @@ html { scroll-behavior: smooth; }
 
 /* ============ 科研方向星图 · 底部巡礼滚动提示 ============ */
 .rg-scroll {
-  position: absolute; left: 50%; bottom: 1.2rem; transform: translateX(-50%);
-  display: inline-flex; flex-direction: column; align-items: center; gap: .15rem;
-  text-decoration: none; font-size: .85rem; font-weight: 600; letter-spacing: .06em;
-  color: var(--md-primary-fg-color); opacity: .85; z-index: 6; white-space: nowrap;
+  position: absolute; left: 50%; bottom: 1rem; transform: translateX(-50%);
+  display: inline-flex; flex-direction: column; align-items: center; gap: .1rem;
+  text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .06em;
+  color: var(--md-primary-fg-color); z-index: 8; white-space: nowrap;
+  background: rgba(255,255,255,.94); padding: .45rem 1.15rem; border-radius: 22px;
+  box-shadow: 0 2px 12px rgba(3,33,104,.14);
   animation: df-scroll-bounce 1.9s ease-in-out infinite;
 }
 .rg-scroll .df-scroll-a { font-size: 1.05rem; line-height: 1; }
-.rg-scroll:hover { opacity: 1; }
-[data-md-color-scheme="slate"] .rg-scroll { color: rgba(255,255,255,.82); }
+.rg-scroll:hover { box-shadow: 0 4px 18px rgba(3,33,104,.22); }
+[data-md-color-scheme="slate"] .rg-scroll {
+  color: rgba(255,255,255,.9); background: rgba(30,35,48,.94); box-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
