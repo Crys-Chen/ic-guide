@@ -212,18 +212,18 @@
 
 /* ─── 右侧目录（TOC）：字号加大 + 右栏加宽占约 2/3 ────────── */
 .md-nav--secondary {
-  font-size: 1rem !important;
+  font-size: .8rem !important;
   line-height: 1.7 !important;
 }
 
 .md-nav--secondary .md-nav__title {
   font-weight: 700;
-  font-size: 1rem !important;
+  font-size: .85rem !important;
   letter-spacing: .01em;
 }
 
 .md-nav--secondary .md-nav__link {
-  font-size: 1rem !important;
+  font-size: .8rem !important;
 }
 
 /* 右栏（TOC 侧栏）加宽，让整个目录占满右栏约 2/3 */
@@ -420,6 +420,7 @@
 /* ─── C: 链接基础：圆角 + 过渡（桌面端才有 hover 动效） ─── */
 .md-nav--primary .md-nav__link {
   border-radius: 4px;
+  font-size: .8rem;
 }
 
 @media screen and (min-width: 76.25em) {
@@ -1881,6 +1882,11 @@
    专题社区 — 大卡片(单列,整卡可点跳外链,每卡一套主题色)
    ══════════════════════════════════════════════════════════ */
 /* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽) */
+/* 放宽全站内容网格：原 61rem 太窄，三栏布局(左导航+正文+右TOC)下正文被挤瘦 */
+.md-grid {
+  max-width: 74rem;
+}
+
 .md-content__inner:has(.community-cards) {
   max-width: 1180px;
   margin-left: auto !important;
