@@ -8,9 +8,7 @@
 
 - **[CMU 15-445](15445.md)** — Andy Pavlo 主讲,**国际公认最好的数据库课** ★;BusTub Lab 是教育级精品
 - **[UCB CS186](CS186.md)** — Berkeley 数据库入门
-- **[CMU 15-799](15799.md)** — CMU 数据库高阶课
 - **[Caltech CS122](CS122.md)** — Caltech 数据库系统
-- **[Stanford CS346](CS346.md)** — Stanford 数据库
 
 ## 对应的科研方向
 

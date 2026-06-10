@@ -8,8 +8,6 @@
 
 - **[学习路线图(Yao Fu)](roadmap.md)** — 进阶机器学习理论的完整学习路径
 - **[CMU 10-708: Probabilistic Graphical Models](CMU10-708.md)** — CMU 概率图模型经典课 ★
-- **[Columbia STAT 8201](STAT8201.md)** — 哥大统计学习理论
-- **[U Toronto STA 4273](STA4273.md)** — 多伦多大学贝叶斯学习
 - **[Stanford CS229M](CS229M.md)** — Stanford 机器学习理论(Tengyu Ma 主讲)
 
 ## 对应的科研方向

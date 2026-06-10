@@ -33,17 +33,9 @@ graph LR
 
 **[MITx: Fundamentals of Integrated Photonics](MITx_integrated_photonics.md)** ★ 最贴合需求 — MIT 在 edX 上的硅光子入门课,模块化自学;讲集成光子器件、光链路设计、应用驱动力,**ECE 学生入门硅光的最优起点**。
 
-### 3. 集成光子学入门(中文)
-
-**[浙大 戴道锌:硅基光电子学基础导论](ZJU_dai_silicon_photonics.md)** ★ 中文首选 — 浙大硅光团队负责人主讲,B 站完整录像;讲硅波导、调制器、探测器、AWG 等核心器件,与硅光 工业前沿同步。
-
-### 4. 光电子器件原理(中文)
+### 3. 光电子器件原理(中文)
 
 **[北大 周治平:光电子学](PKU_zhou_optoelectronics.md)** — 北大教授周治平主讲(《硅基光电子学》一书作者),32 讲完整版,B 站公开;**国内中文光电子课程最权威的版本**。
-
-### 5. 光子器件深入(英文,可选)
-
-**[MIT 3.46: Photonic Materials and Devices](MIT3.46.md)** — MIT 材料系硅光课,从光学材料到 microphotonic 集成电路,讲义在 OCW 完整公开;比 MITx 更深一层。
 
 ## 对科研方向的作用
 

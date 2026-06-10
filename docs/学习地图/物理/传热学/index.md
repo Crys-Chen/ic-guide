@@ -28,8 +28,6 @@ graph LR
 
 ### 英文 / 海外名校
 
-- **[MIT 2.051: Introduction to Heat Transfer](MIT2.051.md)** ★ 入门首选 — MIT 机械系本科入门课,Kripa Varanasi 主讲,OCW 完整公开;半学期课程,适合 ECE 学生作为通识
-- **[MIT 2.51: Intermediate Heat and Mass Transfer](MIT2.51.md)** — MIT 高级本科课,深入分析与建模,适合做研究方向后深化
 
 ### 中文 / 国内
 

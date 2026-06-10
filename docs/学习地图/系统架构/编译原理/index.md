@@ -8,9 +8,7 @@
 
 - **[Stanford CS143](CS143.md)** — Stanford 经典编译原理课,完整实现 COOL 语言编译器
 - **[NJU 编译原理](NJU-Compilers.md)** — 南京大学 李樾、谭添 主讲,**国内中文编译原理课首选** ★
-- **[PKU 编译原理实践](PKU-Compilers.md)** — 北大编译实验,从零写一个 SysY → RISC-V 编译器
 - **[USTC 编译原理与技术](USTC-Compilers.md)** — 中科大版本
-- **[SJTU 编译原理](SJTU-Compilers.md)** — 上交大版本
 - **[KAIST CS420](CS420.md)** — 韩国 KAIST 现代编译原理课,LLVM-based
 
 ## 学习路径建议

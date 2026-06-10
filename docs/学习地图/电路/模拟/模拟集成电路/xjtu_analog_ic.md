@@ -18,4 +18,4 @@
 
 - 课程视频（B 站）：<https://www.bilibili.com/video/BV1E54y187et/>
 - 课程教材：《Design of Analog CMOS Integrated Circuits》Behzad Razavi，第 2 版（McGraw-Hill）
-- 英文原版配套：[Razavi Design of Analog CMOS IC (UCLA)](razavi.md)
+- 同目录配套：[东南大学 吴金:CMOS 模拟集成电路设计(48 讲)](SEU_wujin.md)

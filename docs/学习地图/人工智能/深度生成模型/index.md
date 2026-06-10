@@ -8,9 +8,7 @@
 
 - **[学习路线图](roadmap.md)** — 深度生成模型的总体学习路径
 - **[MIT 6.S184](MIT6.S184.md)** — MIT 深度生成模型新课
-- **[MIT 6.S978: Deep Generative Models](MIT6.S978.md)** — MIT 深度生成模型研究生课
 - **[UCB CS294-158: Deep Unsupervised Learning](CS294-158.md)** — Berkeley 经典深度生成模型课 ★
-- **[CMU 10423: Generative AI](CMU10423.md)** — CMU 生成式 AI 课
 - **[大语言模型/](大语言模型/)** — LLM 子目录,含 CS336、CMU 11-868 等专门课程
 
 ## 学习路径建议

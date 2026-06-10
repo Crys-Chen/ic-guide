@@ -35,5 +35,4 @@
 
 - **不要被"PhD course"标签吓到**——这门课的设计目标就是让本科生 / 行业工程师能跟上,数学要求不高
 - 课程后续的 **Photonic Integrated Circuits 1** 才是更深入的器件物理,可选
-- 学完后直接配合 [浙大 戴道锌:硅基光电子学基础导论](ZJU_dai_silicon_photonics.md) 巩固中文术语,**英文 + 中文双语对应是做硅光研究读论文的基础**
 - 想接触实际设计:配合 UBC 的 [SiEPIC 开源工具](https://siepic.ubc.ca/) 走一遍 MZM 设计流程,**0 成本就能实战**

@@ -7,7 +7,6 @@
 ## 推荐课程
 
 - **[先进集成电路工艺技术(复旦)](MICR130018.md)** — 复旦微电子高年级专业课
-- **[Stanford EE311: Advanced IC Design](stanford_ee311.md)** — Stanford 经典进阶 IC 课,讲义开放;FinFET、短沟道效应、互连延迟等议题
 - **[先进工艺技术学习资源导航](advanced_process.md)** — 进阶资源汇总
 - **[补充资源](补充资源.md)** — IEDM 论文、行业白皮书等
 
