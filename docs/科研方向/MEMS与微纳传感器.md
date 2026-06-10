@@ -81,56 +81,56 @@ hide:
   </defs>
   <!-- Panel 1: 从微米到纳米 -->
   <rect x="10" y="10" width="520" height="210" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="270" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">从微米到纳米，力学的质变</text>
+  <text x="270" y="32" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">从微米到纳米，力学的质变</text>
   <!-- station 1: 微米 MEMS -->
   <polyline points="48,95 56,87 64,103 72,87 80,103 88,95" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
   <rect x="88" y="80" width="44" height="30" rx="3" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="92" y="134" text-anchor="middle" font-size="10" fill="#475569">热涨落只是背景噪声</text>
-  <text x="92" y="149" text-anchor="middle" font-size="10" fill="#94A3B8">Q≈10⁵</text>
+  <text x="92" y="134" text-anchor="middle" font-size="12" fill="#475569">热涨落只是背景噪声</text>
+  <text x="92" y="149" text-anchor="middle" font-size="12" fill="#94A3B8">Q≈10⁵</text>
   <!-- station 2: SiN 纳米鼓 -->
   <circle cx="265" cy="98" r="22" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
   <circle cx="265" cy="98" r="12" fill="none" stroke="#93C5FD" stroke-width="1" stroke-dasharray="3,2"/>
   <circle cx="265" cy="55" r="4" fill="#16A34A"/>
   <line x1="265" y1="60" x2="265" y2="68" stroke="#16A34A" stroke-width="1.5"/>
   <path d="M262,68 L268,68 L265,74 z" fill="#16A34A"/>
-  <text x="273" y="53" font-size="9" fill="#166534">蛋白质落上</text>
+  <text x="273" y="53" font-size="11" fill="#166534">蛋白质落上</text>
   <line x1="305" y1="70" x2="305" y2="100" stroke="#CBD5E1" stroke-width="1"/>
   <line x1="305" y1="100" x2="368" y2="100" stroke="#CBD5E1" stroke-width="1"/>
   <polyline points="308,80 332,80 332,93 364,93" fill="none" stroke="#D97706" stroke-width="2"/>
-  <text x="297" y="76" font-size="8" fill="#94A3B8">f</text>
-  <text x="368" y="110" font-size="8" fill="#94A3B8">t</text>
-  <text x="300" y="134" text-anchor="middle" font-size="10" fill="#475569">SiN 纳米鼓，单分子称重</text>
-  <text x="300" y="149" text-anchor="middle" font-size="10" fill="#94A3B8">Q≈10⁸</text>
+  <text x="297" y="76" font-size="9.5" fill="#94A3B8">f</text>
+  <text x="368" y="110" font-size="9.5" fill="#94A3B8">t</text>
+  <text x="300" y="134" text-anchor="middle" font-size="12" fill="#475569">SiN 纳米鼓，单分子称重</text>
+  <text x="300" y="149" text-anchor="middle" font-size="12" fill="#94A3B8">Q≈10⁸</text>
   <!-- station 3: 量子 NEMS -->
   <path d="M420,95 Q437,65 455,95 Q473,125 490,95" fill="none" stroke="#7C3AED" stroke-width="2"/>
   <path d="M420,95 Q437,125 455,95 Q473,65 490,95" fill="none" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4,3" opacity="0.45"/>
-  <text x="455" y="134" text-anchor="middle" font-size="10" fill="#475569">量子 NEMS，冷却到基态</text>
-  <text x="455" y="149" text-anchor="middle" font-size="10" fill="#94A3B8">量子传感 · 引力波探测</text>
+  <text x="455" y="134" text-anchor="middle" font-size="12" fill="#475569">量子 NEMS，冷却到基态</text>
+  <text x="455" y="149" text-anchor="middle" font-size="12" fill="#94A3B8">量子传感 · 引力波探测</text>
   <!-- axis -->
   <line x1="35" y1="172" x2="505" y2="172" stroke="#64748B" stroke-width="2" marker-end="url(#arr4)"/>
-  <text x="92" y="190" text-anchor="middle" font-size="10" fill="#475569">微米</text>
-  <text x="300" y="190" text-anchor="middle" font-size="10" fill="#475569">纳米</text>
-  <text x="465" y="190" text-anchor="middle" font-size="10" fill="#475569">量子极限</text>
-  <text x="270" y="210" text-anchor="middle" font-size="10" fill="#94A3B8">尺度每降一级，热涨落从背景噪声变成测量极限</text>
+  <text x="92" y="190" text-anchor="middle" font-size="12" fill="#475569">微米</text>
+  <text x="300" y="190" text-anchor="middle" font-size="12" fill="#475569">纳米</text>
+  <text x="465" y="190" text-anchor="middle" font-size="12" fill="#475569">量子极限</text>
+  <text x="270" y="210" text-anchor="middle" font-size="12" fill="#94A3B8">尺度每降一级，热涨落从背景噪声变成测量极限</text>
   <!-- Panel 2: 芯片级原子钟 -->
   <rect x="540" y="10" width="330" height="210" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="705" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">芯片级原子钟</text>
+  <text x="705" y="32" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">芯片级原子钟</text>
   <rect x="565" y="48" width="130" height="24" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="630" y="64" text-anchor="middle" font-size="10" fill="#166534">光电探测</text>
+  <text x="630" y="64" text-anchor="middle" font-size="12" fill="#166534">光电探测</text>
   <rect x="565" y="76" width="130" height="44" rx="3" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="630" y="94" text-anchor="middle" font-size="10" fill="#1E40AF">原子气室</text>
-  <text x="630" y="108" text-anchor="middle" font-size="9" fill="#3B82F6">Rb 蒸气</text>
+  <text x="630" y="94" text-anchor="middle" font-size="12" fill="#1E40AF">原子气室</text>
+  <text x="630" y="108" text-anchor="middle" font-size="11" fill="#3B82F6">Rb 蒸气</text>
   <rect x="565" y="124" width="130" height="24" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="630" y="140" text-anchor="middle" font-size="10" fill="#92400E">VCSEL 激光</text>
+  <text x="630" y="140" text-anchor="middle" font-size="12" fill="#92400E">VCSEL 激光</text>
   <line x1="585" y1="124" x2="585" y2="72" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="702" y="94" font-size="9" fill="#475569">← 微加热线圈</text>
-  <text x="702" y="110" font-size="9" fill="#475569">← 磁补偿线圈</text>
+  <text x="702" y="94" font-size="11" fill="#475569">← 微加热线圈</text>
+  <text x="702" y="110" font-size="11" fill="#475569">← 磁补偿线圈</text>
   <rect x="790" y="52" width="30" height="84" rx="2" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
-  <text x="805" y="150" text-anchor="middle" font-size="9" fill="#475569">机柜铷钟</text>
+  <text x="805" y="150" text-anchor="middle" font-size="11" fill="#475569">机柜铷钟</text>
   <ellipse cx="805" cy="166" rx="5" ry="3" fill="#D97706"/>
-  <text x="805" y="182" text-anchor="middle" font-size="9" fill="#92400E">米粒大小</text>
-  <text x="705" y="196" text-anchor="middle" font-size="10" fill="#475569">激光锁定原子跃迁，加热与磁补偿线圈全集成</text>
-  <text x="705" y="212" text-anchor="middle" font-size="10" fill="#94A3B8">稳定度 10⁻¹¹ · GPS 拒止环境自主计时</text>
+  <text x="805" y="182" text-anchor="middle" font-size="11" fill="#92400E">米粒大小</text>
+  <text x="705" y="196" text-anchor="middle" font-size="12" fill="#475569">激光锁定原子跃迁，加热与磁补偿线圈全集成</text>
+  <text x="705" y="212" text-anchor="middle" font-size="12" fill="#94A3B8">稳定度 10⁻¹¹ · GPS 拒止环境自主计时</text>
 </svg></div>
 
 另一道边界来自材料本身。硅不兼容生命体，也不会弯曲，这两个限制把 MEMS 挡在人体和曲面之外。BioMEMS 把结构材料换成 PDMS、水凝胶和可降解聚合物，这些材料柔软，能和组织长期共存，最终被人体吸收。比如植入式闭环神经接口读取脊髓信号、驱动肌肉电刺激，让截瘫患者重新控制肢体。柔性 MEMS 像石墨烯（约 0.34 nm）和 MoS₂（约 0.65 nm）制成的 NEMS 薄膜只有原子级厚度，能感知单个原子吸附引起的质量变化，也能共形贴附在曲面上。材料的能力，决定了 MEMS 的应用边界。
