@@ -14,19 +14,19 @@ hide:
     <marker id="spAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="910" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="455" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">无线频谱的频段分配与典型用途</text>
+  <text x="455" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E293B">无线频谱的频段分配与典型用途</text>
   <!-- legend -->
   <rect x="296" y="39" width="14" height="10" rx="2" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
-  <text x="314" y="48" font-size="9.5" fill="#334155">通用通信</text>
+  <text x="314" y="48" font-size="10" fill="#334155">通用通信</text>
   <rect x="384" y="39" width="14" height="10" rx="2" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
-  <text x="402" y="48" font-size="9.5" fill="#1E40AF">低功耗短距</text>
+  <text x="402" y="48" font-size="10" fill="#1E40AF">低功耗短距</text>
   <rect x="498" y="39" width="14" height="10" rx="2" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
-  <text x="516" y="48" font-size="9.5" fill="#9A3412">大带宽高速</text>
+  <text x="516" y="48" font-size="10" fill="#9A3412">大带宽高速</text>
   <!-- zones -->
   <rect x="64" y="58" width="554" height="234" fill="#EAF1F9"/>
   <rect x="618" y="58" width="258" height="234" fill="#FBF1E6"/>
-  <text x="341" y="74" text-anchor="middle" font-size="10.5" fill="#1E40AF">低频：频段拥挤、传播损耗小</text>
-  <text x="747" y="74" text-anchor="middle" font-size="10.5" fill="#9A3412">高频：频谱充裕、可用带宽大</text>
+  <text x="341" y="74" text-anchor="middle" font-size="11" fill="#1E40AF">低频：频段拥挤、传播损耗小</text>
+  <text x="747" y="74" text-anchor="middle" font-size="11" fill="#9A3412">高频：频谱充裕、可用带宽大</text>
   <!-- R1 -->
   <rect x="537" y="110" width="15" height="16" rx="3" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
   <text x="545" y="104" text-anchor="middle" font-size="8.5" fill="#334155">北斗/GPS</text>
@@ -58,21 +58,21 @@ hide:
   <text x="573" y="252" text-anchor="middle" font-size="8.5" fill="#1E3A8A">蓝牙/Zigbee</text>
   <!-- axis -->
   <line x1="64" y1="292" x2="888" y2="292" stroke="#475569" stroke-width="1.5" marker-end="url(#spAxis)"/>
-  <text x="882" y="284" text-anchor="end" font-size="10" fill="#475569">频率</text>
+  <text x="882" y="284" text-anchor="end" font-size="11" fill="#475569">频率</text>
   <line x1="180" y1="292" x2="180" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="180" y="309" text-anchor="middle" font-size="9" fill="#475569">1 MHz</text>
+  <text x="180" y="309" text-anchor="middle" font-size="10" fill="#475569">1 MHz</text>
   <line x1="296" y1="292" x2="296" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="296" y="309" text-anchor="middle" font-size="9" fill="#475569">10 MHz</text>
+  <text x="296" y="309" text-anchor="middle" font-size="10" fill="#475569">10 MHz</text>
   <line x1="412" y1="292" x2="412" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="412" y="309" text-anchor="middle" font-size="9" fill="#475569">100 MHz</text>
+  <text x="412" y="309" text-anchor="middle" font-size="10" fill="#475569">100 MHz</text>
   <line x1="528" y1="292" x2="528" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="528" y="309" text-anchor="middle" font-size="9" fill="#475569">1 GHz</text>
+  <text x="528" y="309" text-anchor="middle" font-size="10" fill="#475569">1 GHz</text>
   <line x1="644" y1="292" x2="644" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="644" y="309" text-anchor="middle" font-size="9" fill="#475569">10 GHz</text>
+  <text x="644" y="309" text-anchor="middle" font-size="10" fill="#475569">10 GHz</text>
   <line x1="760" y1="292" x2="760" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="760" y="309" text-anchor="middle" font-size="9" fill="#475569">100 GHz</text>
+  <text x="760" y="309" text-anchor="middle" font-size="10" fill="#475569">100 GHz</text>
   <line x1="876" y1="292" x2="876" y2="298" stroke="#475569" stroke-width="1"/>
-  <text x="876" y="309" text-anchor="middle" font-size="9" fill="#475569">1 THz</text>
+  <text x="876" y="309" text-anchor="middle" font-size="10" fill="#475569">1 THz</text>
 </svg></div>
 
 以上所述的向外传输信息的电路就是射频电路，它跟低频电路大不相同。高中物理的电学部分曾经简要提到过，交流电路的频率低时，导线的电阻可以视为0，电流从这头流到那头，不损耗、不延迟，也不往外辐射。但当电路的工作频率不断升高到 GHz级别，电容、电感、电阻乃至一根导线，它的物理特性都会发生变化。一段导线就算只有几毫米长，也不能近似为0电阻，必须将其视为一段电感，它会改变信号的相位；紧挨着的两根导线会互相串扰；信号还会像电磁波一样从导线上辐射出去。也正是靠这份能辐射的本事，信号才能由天线送上天空，所以这段能做无线的高频就叫射频（RF）。
