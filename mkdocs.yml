@@ -232,7 +232,7 @@ nav:
       - 集成电路工艺:
         - 学习地图/器件与工艺/集成电路工艺/index.md
         - 集成电路工艺原理(复旦): "学习地图/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md"
-        - "MIT 6.152J: Micro/Nano Processing": "学习地图/器件与工艺/集成电路工艺/MIT6.152J.md"
+        - 哈工大王蔚:微电子工艺(106讲): "学习地图/器件与工艺/集成电路工艺/HIT_micro_fab.md"
         - 补充资源: "学习地图/器件与工艺/集成电路工艺/补充资源.md"
       - 半导体器件:
         - 学习地图/器件与工艺/半导体器件/index.md
@@ -242,8 +242,6 @@ nav:
       - 先进工艺技术:
         - 学习地图/器件与工艺/先进集成电路工艺技术_FDU/index.md
         - 先进集成电路工艺技术(复旦): "学习地图/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
-        - 先进工艺技术学习资源导航: "学习地图/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
-        - 补充资源: "学习地图/器件与工艺/先进集成电路工艺技术_FDU/补充资源.md"
     - 电路:
       - 导言: "学习地图/电路/index.md"
       - 入门速成:
@@ -271,7 +269,6 @@ nav:
         - FPGA:
           - FPGA数字系统设计(复旦): "学习地图/电路/数字/FPGA/MICR130024.md"
           - "Coursera: FPGA Design for Embedded Systems": "学习地图/电路/数字/FPGA/coursera_fpga.md"
-          - "FPGA 学习资源导航": "学习地图/电路/数字/FPGA/fpga_courses.md"
         - 数字集成电路:
           - 数字集成电路设计原理(复旦): "学习地图/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md"
           - "NPTEL VLSI Design": "学习地图/电路/数字/数字集成电路/VLSI_design.md"
@@ -315,7 +312,7 @@ nav:
           - "Coursera MATLAB (Vanderbilt)": "学习地图/电路/信号处理/MATLAB/vanderbilt_matlab.md"
         - 数模模数转换器:
           - 数模模数转换器(复旦): "学习地图/电路/信号处理/数模模数转换器/INFO130270.md"
-          - "Stanford: Boris Murmann ADC 设计教程": "学习地图/电路/信号处理/数模模数转换器/stanford_adc.md"
+          - "NPTEL: VLSI Data Conversion Circuits(IIT Madras)": "学习地图/电路/信号处理/数模模数转换器/NPTEL_data_converters.md"
       - EDA工具:
         - 学习地图/电路/EDA/index.md
         - EDA工具(复旦): "学习地图/电路/EDA/MICR130035.md"
