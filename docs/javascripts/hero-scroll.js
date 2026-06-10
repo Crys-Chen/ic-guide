@@ -4,11 +4,13 @@
   function init() {
     var light = document.querySelector('.df-light');
     var dark  = document.querySelector('.df-dark');
+    var rg    = document.querySelector('.rg-root');
     var hero  = null;
     if (light && getComputedStyle(light).display !== 'none') hero = light;
     else if (dark && getComputedStyle(dark).display !== 'none') hero = dark;
+    else if (rg && getComputedStyle(rg).display !== 'none') hero = rg;
 
-    var below = document.querySelector('.df-below');
+    var below = document.querySelector('.df-below') || document.querySelector('.rg-essay');
     if (!hero || !below) return;
 
     // 移动端不做 fixed 效果，直接显示正文

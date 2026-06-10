@@ -2,7 +2,6 @@
 title: 科研方向
 hide:
   - navigation
-  - toc
 ---
 
 <style>
