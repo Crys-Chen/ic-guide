@@ -11202,7 +11202,7 @@
 
   <h1>处理器架构与编译系统</h1>
 
-<p>研究怎么把一批晶体管组织成算得快、耗电少的计算机。从通用 CPU 到 AI 加速器，再到把算法高效映射到硬件的编译器，软硬两层在这条线上密不可分。</p>
+<p>设计让计算机"算得更快、更省电"的核心硬件与软件栈——从通用 CPU 到神经网络加速器，再到将算法高效映射到硬件的编译器，三者构成一条完整的纵向研究方向。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>你的手机每次用面容解锁，背后有一颗专用神经引擎在工作：不到一瓦的功耗，几毫秒内完成整个神经网络的推理。拿同一个模型跑在手机的CPU上，速度慢二十倍，耗电多十倍，续航会被明显拖累。算法没变，模型参数没变，差别只在芯片内部——计算单元如何组织、数据以什么路径流动、中间结果存在哪里。处理器架构研究的核心问题就是这个：给定一批晶体管，怎样把它们排布成一台计算机，让它在物理约束下算得最快、耗电最少。</p>
 <p>过去四十年，处理器的进步是一件相当无聊的事——不需要创意，只要跟着制程走。<strong>摩尔定律</strong>预言晶体管数量每两年翻倍，<strong>Dennard 缩放定律</strong>则保证晶体管缩小一半时电路跑快一倍且功耗不变，两条定律叠加让"力大砖飞"成了主旋律：同一个设计每隔两年在新制程上重新流片，什么架构都不用改，性能自动翻倍。创新存在，但并非必须。</p>
@@ -11275,12 +11275,12 @@
   <rect x="36" y="172" width="224" height="20" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1"/>
   <text x="148" y="186" text-anchor="middle" font-size="10" fill="#1D4ED8">共享 L3 Cache（数十 MB）</text>
   <text x="148" y="220" text-anchor="middle" font-size="11" font-weight="600" fill="#1D4ED8">4–64 核</text>
-  <text x="148" y="236" text-anchor="middle" font-size="9" fill="#64748B">通用程序，单线程延迟低</text>
+  <text x="148" y="236" text-anchor="middle" font-size="10" fill="#64748B">通用程序，单线程延迟低</text>
   <line x1="290" y1="18" x2="290" y2="242" stroke="#E2E8F0" stroke-width="1.5"/>
   <text x="438" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">GPU</text>
   <text x="438" y="47" text-anchor="middle" font-size="10" fill="#64748B">海量简单核 · 靠切换线程隐藏延迟</text>
   <rect x="300" y="56" width="276" height="136" rx="6" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="438" y="72" text-anchor="middle" font-size="9" fill="#6D28D9">流式多处理器（SM）× 132</text>
+  <text x="438" y="72" text-anchor="middle" font-size="10" fill="#6D28D9">流式多处理器（SM）× 132</text>
   <rect x="311" y="79" width="17" height="13" rx="2" fill="#C4B5FD"/>
   <rect x="333" y="79" width="17" height="13" rx="2" fill="#C4B5FD"/>
   <rect x="355" y="79" width="17" height="13" rx="2" fill="#C4B5FD"/>
@@ -11345,8 +11345,8 @@
   <text x="438" y="236" text-anchor="middle" font-size="9" fill="#64748B">并行规则计算，吞吐量极高</text>
   <line x1="584" y1="18" x2="584" y2="242" stroke="#E2E8F0" stroke-width="1.5"/>
   <text x="722" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#15803D">DSA（以 TPU 为例）</text>
-  <text x="722" y="47" text-anchor="middle" font-size="10" fill="#64748B">脉动阵列 · 权重只搬一次</text>
-  <text x="596" y="73" text-anchor="start" font-size="9" fill="#15803D">输入行→</text>
+  <text x="722" y="47" text-anchor="middle" font-size="10" fill="#64748B">脉动阵列 · 权重只读一次</text>
+  <text x="596" y="73" text-anchor="start" font-size="10" fill="#15803D">输入行→</text>
   <rect x="648" y="62" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
   <text x="661" y="76" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="688" y="62" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
@@ -11355,7 +11355,7 @@
   <text x="741" y="76" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="768" y="62" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
   <text x="781" y="76" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
-  <text x="596" y="103" text-anchor="start" font-size="9" fill="#15803D">输入行→</text>
+  <text x="596" y="103" text-anchor="start" font-size="10" fill="#15803D">输入行→</text>
   <rect x="648" y="92" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
   <text x="661" y="106" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="688" y="92" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
@@ -11364,7 +11364,7 @@
   <text x="741" y="106" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="768" y="92" width="26" height="20" rx="3" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
   <text x="781" y="106" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
-  <text x="596" y="133" text-anchor="start" font-size="9" fill="#15803D">输入行→</text>
+  <text x="596" y="133" text-anchor="start" font-size="10" fill="#15803D">输入行→</text>
   <rect x="648" y="122" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
   <text x="661" y="136" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="688" y="122" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
@@ -11373,7 +11373,7 @@
   <text x="741" y="136" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="768" y="122" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
   <text x="781" y="136" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
-  <text x="596" y="163" text-anchor="start" font-size="9" fill="#15803D">输入行→</text>
+  <text x="596" y="163" text-anchor="start" font-size="10" fill="#15803D">输入行→</text>
   <rect x="648" y="152" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
   <text x="661" y="166" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="688" y="152" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
@@ -11382,12 +11382,12 @@
   <text x="741" y="166" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
   <rect x="768" y="152" width="26" height="20" rx="3" fill="#86EFAC" stroke="#16A34A" stroke-width="1.2"/>
   <text x="781" y="166" text-anchor="middle" font-size="8" fill="#166534">MAC</text>
-  <text x="661" y="185" text-anchor="middle" font-size="9" fill="#15803D">↓结果</text>
-  <text x="701" y="185" text-anchor="middle" font-size="9" fill="#15803D">↓结果</text>
-  <text x="741" y="185" text-anchor="middle" font-size="9" fill="#15803D">↓结果</text>
-  <text x="781" y="185" text-anchor="middle" font-size="9" fill="#15803D">↓结果</text>
+  <text x="661" y="185" text-anchor="middle" font-size="10" fill="#15803D">↓结果</text>
+  <text x="701" y="185" text-anchor="middle" font-size="10" fill="#15803D">↓结果</text>
+  <text x="741" y="185" text-anchor="middle" font-size="10" fill="#15803D">↓结果</text>
+  <text x="781" y="185" text-anchor="middle" font-size="10" fill="#15803D">↓结果</text>
   <text x="722" y="220" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">256 × 256 MAC阵列</text>
-  <text x="722" y="236" text-anchor="middle" font-size="9" fill="#64748B">只做矩阵乘，能效极高</text>
+  <text x="722" y="236" text-anchor="middle" font-size="10" fill="#64748B">只做矩阵乘，能效极高</text>
 </svg></div>
 
 <p>带着这三个矛盾，可以更清楚地看到架构研究的具体疆域。设计一块处理器，首先要确定的是<strong>指令集（ISA）</strong>——软件能看到、硬件必须实现的那层接口。<strong>x86</strong> 走的是"指令越丰富越好"的路，几十年向后兼容积累了大量包袱，解码电路本身就要消耗不少功耗；<strong>ARM</strong> 用精简指令集换来更低的实现成本，在移动端大获全胜；<strong>RISC-V</strong> 把指令集完全开源，第一次让人不交授权费就能设计和修改指令集——Hennessy 与 Patterson 专门把这一点列为新黄金时代的结构性条件，因为它把芯片创新的门槛从亿级资本降到了学术组可以参与的范围。</p>
