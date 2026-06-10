@@ -12602,7 +12602,7 @@
 <li><strong>L4：创新型</strong>(协助发明)</li>
 <li><strong>L5：组织型</strong>(替代整个组织)</li>
 </ul>
-<p>如今，<strong>L2 早已实现</strong>——思维链(Chain-of-Thought)让模型在推理问题上大放异彩。<strong>L3 也基本实现</strong>——Claude Code、OpenAI Codex 已经能够自主完成多步编程任务。<strong>L4 也在大力发展</strong>——AI for Science 已经在蛋白质结构(AlphaFold)、新材料发现等方向取得突破。AI 的每一步发展都需要 <strong>算法、系统、数据</strong> 三方面协同突破，这就是本方向在研究的事情。</p>
+<p>随着思维链(Chain-of-Thought)技术让模型具备深度推理能力，<strong>L2 已完全实现</strong>。截止至2026年6月，Claude Code、OpenAI Codex 在过去半年快速迭代，<strong>L3 也基本实现</strong>。目前<strong>L4</strong>正在大力研发中，普通人还没有感受到 AI for Science 的威力。但据新闻通稿，AI 已经在蛋白质结构(AlphaFold)、新材料发现等方向取得突破。从 L1 到 L4，再到未来的 L5，AI 的每一步发展都需要 <strong>算法、系统、数据</strong> 三方面协同突破，这就是本方向在研究的事情。</p>
 <div><svg viewBox="0 0 880 305" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif">
   <text x="440.0" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1E293B">OpenAI 2024 年 7 月披露的 AGI 5 级路线图</text>
   <text x="440.0" y="46" text-anchor="middle" font-size="11" fill="#64748B">每跨一级,需要算法、系统、数据三方面同步突破</text>
@@ -12670,14 +12670,15 @@
   <text x="788.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">远期</text>
 </svg></div>
 
-<p>算法层的核心是：<strong>在算力撞墙之前，怎么让模型继续变强</strong>——三个方向并行推进。<strong>一是更高效的 scaling</strong>：Llama 3 的 405B 版本，Meta 动用 1.6 万张 H100 训了 54 天，纯堆参数已经撞墙；<strong>MoE</strong>(DeepSeek-V3，2024)把模型拆成多个"专家"、每次只激活其中一两个，让参数规模和计算成本解耦。<strong>二是更聪明的训练</strong>：强化学习成为核心——R1-Zero 范式只用一份很小的"冷启动"数据告诉模型推理格式，后面全靠 RL 让模型自己摸索，这是 L2 思维链能稳定落地的关键。<strong>三是更广的输入</strong>：<strong>多模态</strong>(GPT-4V、Sora) 让模型从纯文本走向能理解图像、视频。但 LLM 也不是唯一答案——图灵奖得主、深度学习三巨头之一 <strong>Yann LeCun</strong> 长期质疑 LLM 的 token 级预测学不到物理世界的规律；他主导的 <strong>JEPA 系列</strong> 让 AI 预测视频/图像中被遮部分的高层语义("这是个球，正在落地")，而不是像素本身。<strong>Neuro-symbolic AI</strong> 则把神经网络的模糊感知和符号系统的严格推理结合。</p>
-<p>系统层面，<strong>L3 agent</strong> 把推理转化为对外部世界的多步操作：Claude Code 在终端写代码、跑测试、调试 bug；Devin 接到软件工程任务后能自主完成。<strong>多 agent</strong> 让多个角色协作：一个分解任务、一个执行、一个评估，<strong>OpenClaw</strong>(2026 年初开源，几周内 GitHub stars 破 20 万)是代表。模型训练好之后，如何低成本推理同样很重要。<strong>Flash Attention</strong> 用矩阵分块，让数据从 HBM 取出来后在片上尽可能多地运算，之后再存回 HBM，节省大量片外访存开销。<strong>vLLM 的 PagedAttention</strong> 则是借鉴了虚拟内存的分页系统，高效地管理模型回顾上下文所需要的 KV Cache。神经网络的权重值绝大多数集中在很小的区间，32 位浮点的精度大半浪费——把权重压到 8 位甚至 4 位整数，离散化得当时精度几乎不损，这就是 <strong>量化</strong>。</p>
+<p>算法层的核心是有三个方向。<strong>一是更高效的 scaling</strong>：Llama 3 的 405B 版本，Meta 动用 1.6 万张 H100 训了 54 天，纯堆参数已经撞墙；<strong>MoE</strong>(DeepSeek-V3，2024)把模型拆成多个"专家"、每次只激活其中一两个，让参数规模和计算成本解耦。<strong>二是更聪明的训练</strong>：强化学习成为核心——R1-Zero 范式只用一份很小的"冷启动"数据告诉模型推理格式，后面全靠 RL 让模型自己摸索，这是 L2 思维链能稳定落地的关键。<strong>三是更广的输入</strong>：<strong>多模态</strong>(GPT-4V、Sora) 让模型从纯文本走向能理解图像、视频。</p>
+<p>以上三个方向都是在 LLM 这条路线上的努力。但 LLM 并非唯一答案。图灵奖得主、深度学习三巨头之一 的 <strong>Yann LeCun</strong> 长期质疑 LLM 的 token 级预测学不到物理世界的规律。他主导的 <strong>JEPA 系列</strong> 让 AI 预测视频/图像中被遮部分的高层语义("这是个球，正在落地")，而不是像素本身。<strong>Neuro-symbolic AI</strong> 则把神经网络的模糊感知和符号系统的严格推理结合。</p>
+<p>系统层面，<strong>L3 agent</strong> 把推理转化为对外部世界的多步操作：Claude Code 在终端写代码、跑测试、调试 bug；<strong>多 agent</strong> 让多个角色协作：一个分解任务、一个执行、一个评估，<strong>OpenClaw</strong>是代表。模型训练好之后，如何低成本推理同样很重要。<strong>Flash Attention</strong> 用矩阵分块，让数据从 HBM 取出来后在片上尽可能多地运算，之后再存回 HBM，节省大量片外访存开销。<strong>vLLM 的 PagedAttention</strong> 则是借鉴了虚拟内存的分页系统，高效地管理模型回顾上下文所需要的 KV Cache。神经网络的权重值绝大多数集中在很小的区间，32 位浮点的精度大半浪费——把权重压到 8 位甚至 4 位整数，离散化得当时精度几乎不损，这就是 <strong>量化</strong>。</p>
 <p>数据层面，模型最终学到什么不靠架构、靠数据。GPT-4、Llama 3 量级的训练数据在 10-15 万亿 token，基本把开放互联网的高质量内容训了一遍。Sam Altman 和 Ilya Sutskever 都公开承认过：<strong>互联网公开数据快用光了</strong>。下一步走两条路。一条是<strong>合成数据</strong>：让强模型生成新数据训练后续模型，微软 Phi 系列已经验证这条路可行，Tesla 的 FSD 也用模拟器生成小孩冲马路、暴雨夜驾这类极端场景来训练自动驾驶。另一条是<strong>专家精选数据</strong>，比如科学论文、专业的推理过程标注。</p>
 <p>此外，<strong>AI 的可解释性</strong>(Interpretability) 和 <strong>AI 安全</strong> 同样重要——只有真正理解模型、给它可控的行为边界，才能放心把更多决策交给它。2026 年 2 月，美军一次导弹打击把伊朗的一所小学误当成军火库，156 条无辜生命遇难，事后查明根因是过时的人工情报坐标，而 Claude 正被用在这套打击规划流程里；同类风险还有越狱攻击、ChatGPT 写法律文书引用虚构判例被法庭处罚等。<strong>AI 安全</strong> 给模型一套可控的行为边界，比如 Anthropic 的 <strong>宪法 AI</strong>(Constitutional AI) 让模型按一组原则做生成时的自检；<strong>可解释性</strong> 则去搞清楚模型内部在做什么，比如 Anthropic 的稀疏自编码器(SAE)能在大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。</p>
 <p>如今<strong>前沿模型的训练已经被大厂垄断</strong>。表面原因是钱，单次训练 1 亿美元起。但更深的壁垒是<strong>数据</strong>和<strong>数据中心</strong>。开放互联网的数据是公共的，但 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类<strong>高质量私有数据</strong>只有大厂自己有，这才决定模型在真实任务上的上限。这也是为什么几乎所有 AI 在讲中文时都喜欢"稳稳地接住你"。中文语料贫乏单一，加上各家 AI 互相蒸馏，风格自然趋同。<strong>万卡级 H100 集群</strong>则是另一道门，涉及电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有被边缘化，反而和大厂形成了一种<strong>对称依赖</strong>。工业界做前沿大模型并把训练好的开源放出来，比如 Llama、DeepSeek 系列。学术界拿这些做后训练、推理优化、可解释性研究，Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作反过来又被大厂的推理引擎采用。<strong>学术界的真正机会，不在和大厂比规模，而在那些能让所有模型用得更好的算法、系统与数据方法上。</strong></p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
-<li><strong>算力撞墙后怎么把模型做强</strong>：纯堆参数已撞墙，MoE 把参数规模和算力解耦但路由与稀疏激活没解，高质量语料快训光、合成数据怕退化，新架构和数据工程要一起往前推。</li>
+<li><strong>在算力瓶颈下如何继续提高模型能力</strong>：纯堆参数已撞墙，MoE 把参数规模和算力解耦但路由与稀疏激活没解，高质量语料快训光、合成数据怕退化，新架构和数据工程要一起往前推。</li>
 <li><strong>强化学习与后训练</strong>：R1-Zero 式 RL 撑起了 L2 思维链，但奖励设计、训练稳定性、对齐和样本效率都不成熟，这是当下最热的一大簇。</li>
 <li><strong>Agent 与多智能体</strong>：L3 agent 把推理变成对外界的多步操作，长任务里错误一路累积，多个角色怎么协作、怎么做到可验证可纠错还没定论。</li>
 <li><strong>训练与 serving 系统</strong>：万卡集群上的并行训练、低成本 LLM serving、端边云推理调度，要在带宽、显存、通信之间反复权衡。</li>
@@ -12992,7 +12993,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-06-09
+    2026-06-10
   </span>
 
     
