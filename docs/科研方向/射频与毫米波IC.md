@@ -14,14 +14,14 @@ hide:
     <marker id="spAxis" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="910" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="455" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E293B">无线频谱的频段分配与典型用途</text>
+  <text x="455" y="24" text-anchor="middle" font-size="18" font-weight="bold" fill="#1E293B">无线频谱的频段分配与典型用途</text>
   <!-- legend -->
   <rect x="296" y="39" width="14" height="10" rx="2" fill="#D6DEE8" stroke="#64748B" stroke-width="1"/>
-  <text x="314" y="48" font-size="10" fill="#334155">通用通信</text>
+  <text x="314" y="48" font-size="12" fill="#334155">通用通信</text>
   <rect x="384" y="39" width="14" height="10" rx="2" fill="#BFD3EC" stroke="#1E40AF" stroke-width="1"/>
-  <text x="402" y="48" font-size="10" fill="#1E40AF">低功耗短距</text>
+  <text x="402" y="48" font-size="12" fill="#1E40AF">低功耗短距</text>
   <rect x="498" y="39" width="14" height="10" rx="2" fill="#FBD5AE" stroke="#C2410C" stroke-width="1"/>
-  <text x="516" y="48" font-size="10" fill="#9A3412">大带宽高速</text>
+  <text x="516" y="48" font-size="12" fill="#9A3412">大带宽高速</text>
   <!-- zones -->
   <rect x="64" y="58" width="554" height="234" fill="#EAF1F9"/>
   <rect x="618" y="58" width="258" height="234" fill="#FBF1E6"/>

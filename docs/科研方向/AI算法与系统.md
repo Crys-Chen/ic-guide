@@ -17,8 +17,8 @@ hide:
 思维链(Chain-of-Thought)让模型学会一步步推理，**L2 已经坐稳**。再往上，Claude Code、OpenAI Codex 这半年快速迭代，能自己改代码、跑通多步任务，**L3 正在加速兑现**。**L4** 还在远处，但科学智能已经在蛋白质结构(AlphaFold)、新材料发现上露了头。每跨一级都不是靠某个单点突破。**模型怎么变强、系统跑不跑得动、拿什么数据喂它，这三件事被同一堵墙逼着一起往前**。AI 变聪明的这些年，与其说一路高歌，不如说是一轮轮撞上瓶颈、再换下一种打法。下面就顺这条线走一遍。
 
 <div><svg viewBox="0 0 880 305" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif">
-  <text x="440.0" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1E293B">OpenAI 2024 年 7 月披露的 AGI 5 级路线图</text>
-  <text x="440.0" y="46" text-anchor="middle" font-size="11" fill="#64748B">每跨一级,需要算法、系统、数据三方面同步突破</text>
+  <text x="440.0" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">OpenAI 2024 年 7 月披露的 AGI 5 级路线图</text>
+  <text x="440.0" y="46" text-anchor="middle" font-size="12" fill="#64748B">每跨一级,需要算法、系统、数据三方面同步突破</text>
   <rect x="10.0" y="60" width="164.0" height="6" rx="2" fill="#3B82F6"/>
   <rect x="10.0" y="66" width="164.0" height="224" rx="0" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.2"/>
   <text x="92.0" y="98" text-anchor="middle" font-size="22" font-weight="800" fill="#1E40AF">L1</text>

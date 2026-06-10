@@ -56,35 +56,35 @@ hide:
     <marker id="lutArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="820" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">查找表（LUT）：一块「能查任意真值表」的硬件</text>
-  <text x="120" y="64" text-anchor="middle" font-size="10.5" fill="#9A3412">配置 SRAM（开机写入）</text>
-  <text x="74" y="84" text-anchor="end" font-size="10" fill="#64748B">地址 ab</text>
+  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">查找表（LUT）：一块「能查任意真值表」的硬件</text>
+  <text x="120" y="64" text-anchor="middle" font-size="12.5" fill="#9A3412">配置 SRAM（开机写入）</text>
+  <text x="74" y="84" text-anchor="end" font-size="11" fill="#64748B">地址 ab</text>
   <rect x="92" y="76" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
-  <text x="120" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">0</text>
-  <text x="84" y="96" text-anchor="end" font-size="9.5" fill="#64748B">00</text>
+  <text x="120" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400E">0</text>
+  <text x="84" y="96" text-anchor="end" font-size="11" fill="#64748B">00</text>
   <rect x="92" y="112" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
-  <text x="120" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">1</text>
-  <text x="84" y="132" text-anchor="end" font-size="9.5" fill="#64748B">01</text>
+  <text x="120" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400E">1</text>
+  <text x="84" y="132" text-anchor="end" font-size="11" fill="#64748B">01</text>
   <rect x="92" y="148" width="56" height="30" rx="4" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="2"/>
-  <text x="120" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">1</text>
-  <text x="84" y="168" text-anchor="end" font-size="9.5" fill="#1E40AF">10</text>
+  <text x="120" y="168" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">1</text>
+  <text x="84" y="168" text-anchor="end" font-size="11" fill="#1E40AF">10</text>
   <rect x="92" y="184" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
-  <text x="120" y="204" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">0</text>
-  <text x="84" y="204" text-anchor="end" font-size="9.5" fill="#64748B">11</text>
+  <text x="120" y="204" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400E">0</text>
+  <text x="84" y="204" text-anchor="end" font-size="11" fill="#64748B">11</text>
   <line x1="148" y1="91" x2="300" y2="96" stroke="#475569" stroke-width="1.3"/>
   <line x1="148" y1="127" x2="300" y2="120" stroke="#475569" stroke-width="1.3"/>
   <line x1="148" y1="163" x2="300" y2="150" stroke="#1D4ED8" stroke-width="2"/>
   <line x1="148" y1="199" x2="300" y2="174" stroke="#475569" stroke-width="1.3"/>
   <polygon points="300,80 300,190 360,160 360,110" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
-  <text x="326" y="139" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">MUX</text>
+  <text x="326" y="139" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">MUX</text>
   <line x1="318" y1="208" x2="318" y2="178" stroke="#475569" stroke-width="1.3" marker-end="url(#lutArr)"/>
   <line x1="342" y1="208" x2="342" y2="166" stroke="#475569" stroke-width="1.3" marker-end="url(#lutArr)"/>
-  <text x="330" y="224" text-anchor="middle" font-size="10" fill="#334155">输入 a、b（当地址）</text>
+  <text x="330" y="224" text-anchor="middle" font-size="11" fill="#334155">输入 a、b（当地址）</text>
   <line x1="360" y1="135" x2="424" y2="135" stroke="#1D4ED8" stroke-width="2" marker-end="url(#lutArr)"/>
   <rect x="426" y="120" width="34" height="30" rx="4" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.6"/>
-  <text x="443" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">O</text>
-  <text x="392" y="124" text-anchor="middle" font-size="10" fill="#1E40AF">读出 SRAM[ab]</text>
-  <text x="620" y="64" text-anchor="middle" font-size="10.5" fill="#334155">此刻这张表 = XOR</text>
+  <text x="443" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">O</text>
+  <text x="392" y="124" text-anchor="middle" font-size="11" fill="#1E40AF">读出 SRAM[ab]</text>
+  <text x="620" y="64" text-anchor="middle" font-size="12.5" fill="#334155">此刻这张表 = XOR</text>
   <rect x="540" y="74" width="160" height="132" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
   <line x1="540" y1="100" x2="700" y2="100" stroke="#CBD5E1" stroke-width="1"/>
   <line x1="593" y1="74" x2="593" y2="206" stroke="#CBD5E1" stroke-width="1"/>
