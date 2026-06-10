@@ -65,8 +65,8 @@ hide:
   <path d="M600,46 Q630,22 660,15 Q690,22 720,46" fill="none" stroke="#16A34A" stroke-width="1.5" opacity="0.4"/>
   <text x="660" y="80" text-anchor="middle" font-size="10.5" fill="#166534">超声波辐射</text>
   <!-- Caption -->
-  <text x="660" y="178" text-anchor="middle" font-size="10" fill="#475569">施加交流电压 → 薄膜振动 → 发射/接收超声</text>
-  <text x="660" y="195" text-anchor="middle" font-size="10" fill="#94A3B8">超声指纹识别 · 便携医疗成像</text>
+  <text x="660" y="178" text-anchor="middle" font-size="12" fill="#475569">施加交流电压 → 薄膜振动 → 发射/接收超声</text>
+  <text x="660" y="195" text-anchor="middle" font-size="12" fill="#94A3B8">超声指纹识别 · 便携医疗成像</text>
 </svg></div>
 
 加速度计翻译的是惯性力，难的不在原理，在设计。质量块面积、弹簧刚度、梳齿间距、气膜阻尼互相牵制，力学、电学、热噪声三头都要顾，改一个参数就动全局。超声 MEMS 翻译的是声压。CMUT 靠振膜下悬空的气隙电容收发超声，PMUT 换成压电薄膜，灵敏度更高，高通的屏下超声指纹走的就是这条路线。两条路线都已量产。把结构继续往下做小，量子力学就进场了。
