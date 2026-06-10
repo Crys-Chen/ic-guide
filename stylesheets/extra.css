@@ -2355,3 +2355,15 @@
   50%     { transform: translateX(-50%) translateY(5px); }
 }
 html { scroll-behavior: smooth; }
+
+/* ============ 科研方向星图 · 底部巡礼滚动提示 ============ */
+.rg-scroll {
+  position: absolute; left: 50%; bottom: 1.2rem; transform: translateX(-50%);
+  display: inline-flex; flex-direction: column; align-items: center; gap: .15rem;
+  text-decoration: none; font-size: .85rem; font-weight: 600; letter-spacing: .06em;
+  color: var(--md-primary-fg-color); opacity: .85; z-index: 6; white-space: nowrap;
+  animation: df-scroll-bounce 1.9s ease-in-out infinite;
+}
+.rg-scroll .df-scroll-a { font-size: 1.05rem; line-height: 1; }
+.rg-scroll:hover { opacity: 1; }
+[data-md-color-scheme="slate"] .rg-scroll { color: rgba(255,255,255,.82); }
