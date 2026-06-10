@@ -13,5 +13,5 @@
 
 ## 学习地图
 
-- 课程网站：[爱课程 NUDT 软件工程](http://www.icourses.cn/sCourse/course_4192.html)
-- 课程视频：见课程网站
+- 课程网站：[爱课程 NUDT 软件工程](http://www.icourses.cn/sCourse/course_4192.html)（原国家精品开放课页面，现需登录验证后访问）
+- 课程视频：原爱课程平台资源需登录访问，B 站与中国大学 MOOC 均无可验证的公开录像，暂无其他公开渠道

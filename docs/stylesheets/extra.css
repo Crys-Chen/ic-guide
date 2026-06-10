@@ -2286,11 +2286,16 @@
 }
 /* 标题：去渐变 header，改深色小字 + 复旦蓝链接 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  background: none !important;
-  color: var(--md-default-fg-color) !important;
+  background: #eef3fb !important;
+  color: var(--md-primary-fg-color) !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
-  padding: .8rem 1rem .15rem !important;
+  padding: .7rem 1rem !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent) !important;
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 22%, #1e2330) !important;
+  color: #cdddf5 !important;
 }
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child a { color: var(--md-primary-fg-color) !important; }
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child::after { display: none !important; }

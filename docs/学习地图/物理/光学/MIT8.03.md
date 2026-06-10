@@ -16,10 +16,9 @@ MIT 8.03 是 MIT 物理三部曲的最后一部(8.01 力学 → 8.02 电磁 → 
 ## 学习地图
 
 - 课程网站(2016 版,Yen-Jie Lee):<https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/>
-- 课程网站(2004 版,Walter Lewin):<https://ocw.mit.edu/courses/8-03-physics-iii-vibrations-and-waves-fall-2004/>
 - 课程视频:
-  - YouTube MIT OCW 频道:Lewin 版有完整 23 讲
-  - B 站搜"MIT 8.03 Lewin"或"MIT 振动与波"有中字版
+  - Lewin 2004 版完整 23 讲(OCW 原页面已下线,以下为第三方频道 "For the Allure of Physics" 整理的播放列表):<https://www.youtube.com/playlist?list=PLUdYlQf0_sSsdOhQ_8jfrAGzbGbJ7MXGe>
+  - B 站中英字幕版(23 讲,1080p 修复):<https://www.bilibili.com/video/BV1AUhnzFExZ/>
 - 课程教材:Bekefi & Barrett《Electromagnetic Vibrations, Waves and Radiation》(MIT 自编),OCW 提供讲义可替代
 - 课程作业:OCW 完整 problem set + 答案
 
