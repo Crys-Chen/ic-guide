@@ -2276,9 +2276,9 @@
 .md-typeset .grid.cards.community-cards > ul > li:nth-child(5),
 .md-typeset .grid.cards.community-cards > ul > li:nth-child(6) { --c-deep:#15803D; --c-mid:#16A34A; --c-soft:#EDFBF1; }
 .md-typeset .grid.cards.community-cards > ul > li:nth-child(7),
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(10) { --c-deep:#C2410C; --c-mid:#EA580C; --c-soft:#FEF3EB; }
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(8),
-.md-typeset .grid.cards.community-cards > ul > li:nth-child(9) { --c-deep:#475569; --c-mid:#64748B; --c-soft:#F1F5F9; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(8) { --c-deep:#C2410C; --c-mid:#EA580C; --c-soft:#FEF3EB; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(9),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(10) { --c-deep:#475569; --c-mid:#64748B; --c-soft:#F1F5F9; }
 
 .md-typeset .grid.cards.community-cards > ul {
   grid-template-columns: 1fr 1fr !important;
