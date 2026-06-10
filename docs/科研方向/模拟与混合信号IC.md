@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-设计让模拟世界与数字世界高速转换的"接口芯片"。ADC（模数转换器，Analog-to-Digital Converter）、DAC（数模转换器，Digital-to-Analog Converter）、PLL（锁相环，Phase-Locked Loop）、SerDes（高速串行收发器，Serializer/Deserializer）是每块现代 SoC 都不可或缺的混合信号基础模块。
+设计让模拟世界与数字世界高速转换的"接口芯片"——ADC、DAC、锁相环、SerDes 是每块现代 SoC 都不可或缺的混合信号基础模块。
 
 ## 这个方向在研究什么
 
