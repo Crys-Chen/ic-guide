@@ -5,7 +5,7 @@
 ## 推荐课程
 
 - **[量子力学(复旦)](MICR130015.md)** — 复旦微电子专业必修,内容紧贴半导体物理需求
-- **[MIT 8.04: Quantum Physics I](MIT8.04.md)** — MIT 经典本科量子物理课,OCW 完整公开;Allan Adams 主讲,讲法直观
+- **[MIT 8.04: Quantum Physics I](MIT8.04.md)** — MIT 经典本科量子物理课,OCW 完整公开;Barton Zwiebach 主讲(Spring 2016 版),讲法直观
 
 ## 对应的科研方向
 

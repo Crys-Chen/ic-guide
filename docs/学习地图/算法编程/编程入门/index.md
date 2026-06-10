@@ -8,8 +8,8 @@
 
 - **[Python 语言](Python/)** — UCB CS61A、Harvard CS50P、MIT 6.100L
 - **[C 语言](C/)** — Harvard CS50、Duke C Programming
-- **[C++ 语言](cpp/)** — Stanford CS106L/B/X、AUT AP1400-2
-- **[Rust 语言](Rust/)** — Stanford CS110L、KAIST CS220/CS431
+- **[C++ 语言](cpp/CS106L.md)** — Stanford CS106L/B/X、侯捷系列
+- **[Rust 语言](Rust/CS110L.md)** — Stanford CS110L、令狐/杨旭中文系列
 
 ## 学习路径建议
 
@@ -17,7 +17,7 @@
 
 **做硬件研究 / 仿真器开发:C++**(掌握 Stanford CS106B/X 即可达到入门工程水平)
 
-**做系统/分布式研究:Rust**(KAIST CS220/CS431 是 Rust 学习路径的天花板,中文圈也少见的高质量资源)
+**做系统研究:Rust**(Stanford CS110L 用 Rust 重讲系统编程,是安全系统语言的最佳入门)
 
 辅助工具:**[MIT-Missing-Semester](MIT-Missing-Semester.md)** — Linux Shell + Git + Vim 等工具速成,**所有编程入门同学都该看**。
 

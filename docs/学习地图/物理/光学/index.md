@@ -8,8 +8,8 @@
 graph LR
     A["波动光学基础<br/>MIT 8.03 / 大学物理"] --> B["电磁波 & 波导<br/>MIT 6.013"]
     B --> C["光电子器件<br/>北大 周治平"]
-    C --> D["集成光子学<br/>MITx · 浙大 戴道锌"]
-    D --> E["硅光设计实战<br/>HELIOS · UBC SiEPIC"]
+    C --> D["集成光子学<br/>MITx 入门课"]
+    D --> E["硅光设计实战<br/>UBC SiEPIC"]
 
     classDef base fill:#FEF3F2,stroke:#DC2626,stroke-width:2px
     classDef dev fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
@@ -48,9 +48,9 @@ graph LR
 
 ## 学习路径建议
 
-**只想了解"光互连为什么重要":** 看 MITx 入门课的前两章 + 戴道锌硅基光电子的概述部分,**3-5 小时**建立认知。
+**只想了解"光互连为什么重要":** 看 MITx 入门课的前两章,**3-5 小时**建立认知。
 
-**做硅光研究(小论文级):** 走全链 1→2→3→4,先英文入门(MITx)再中文深化(戴道锌 + 周治平),最后用 HELIOS 课程或 UBC SiEPIC 工具做一个 MZM 设计 lab。
+**做硅光研究(小论文级):** 走全链 1→2→3,先英文入门(MITx)再中文深化(周治平),最后用 UBC SiEPIC 工具做一个 MZM 设计 lab。
 
 **做光计算 / 光神经网络方向:** 主要依托 [AI 算法与系统](../../../科研方向/AI算法与系统.md) 与 [光电子与硅光集成](../../../科研方向/光电子与硅光集成.md) 的交叉,建议补完 #2 + #3 后直接读光计算的代表论文(MIT Englund 组、UCLA Ozcan 组)。
 
