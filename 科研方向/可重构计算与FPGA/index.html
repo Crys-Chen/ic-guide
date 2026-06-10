@@ -11511,9 +11511,9 @@
     <marker id="lutArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="820" height="330" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">查找表（LUT）：一块「能查任意真值表」的硬件</text>
+  <text x="410" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">查找表（LUT）：一块「能查任意真值表」的硬件</text>
   <text x="120" y="64" text-anchor="middle" font-size="10.5" fill="#9A3412">配置 SRAM（开机写入）</text>
-  <text x="74" y="84" text-anchor="end" font-size="9" fill="#64748B">地址 ab</text>
+  <text x="74" y="84" text-anchor="end" font-size="10" fill="#64748B">地址 ab</text>
   <rect x="92" y="76" width="56" height="30" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
   <text x="120" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">0</text>
   <text x="84" y="96" text-anchor="end" font-size="9.5" fill="#64748B">00</text>
@@ -11538,7 +11538,7 @@
   <line x1="360" y1="135" x2="424" y2="135" stroke="#1D4ED8" stroke-width="2" marker-end="url(#lutArr)"/>
   <rect x="426" y="120" width="34" height="30" rx="4" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.6"/>
   <text x="443" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">O</text>
-  <text x="392" y="124" text-anchor="middle" font-size="9" fill="#1E40AF">读出 SRAM[ab]</text>
+  <text x="392" y="124" text-anchor="middle" font-size="10" fill="#1E40AF">读出 SRAM[ab]</text>
   <text x="620" y="64" text-anchor="middle" font-size="10.5" fill="#334155">此刻这张表 = XOR</text>
   <rect x="540" y="74" width="160" height="132" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
   <line x1="540" y1="100" x2="700" y2="100" stroke="#CBD5E1" stroke-width="1"/>
@@ -11552,7 +11552,7 @@
   <text x="566" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text><text x="620" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">0</text><text x="673" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text>
   <text x="566" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="620" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="673" y="194" text-anchor="middle" font-size="10.5" fill="#334155">0</text>
   <text x="410" y="262" text-anchor="middle" font-size="10.5" fill="#475569">改写这 4 个 SRAM 位 = 换一张真值表，同一块硬件立刻能变成 AND、OR 或任意 2 输入逻辑。</text>
-  <text x="410" y="286" text-anchor="middle" font-size="10.5" fill="#9A3412">代价：每个 LUT 都背着一串配置 SRAM —— 灵活，是用硅面积换来的。</text>
+  <text x="410" y="286" text-anchor="middle" font-size="10.5" fill="#9A3412">代价：每个 LUT 都附带一串配置 SRAM —— 灵活性以硅面积为代价换得。</text>
 </svg></div>
 
 <p>既然面积的大头花在连线上，怎么把逻辑摆放到位、让信号走最短的路，就成了 FPGA 一大研究热点。把设计灌进芯片，要先用 Verilog 描述电路，再经工具综合、布局、布线，生成一份比特流烧进去。其中<strong>布局布线（Place-and-Route，简称 P&amp;R）</strong>最难：哪个逻辑该落在哪个单元、哪根线该走哪条通道，是一个货真价实的 NP-Hard 问题。设计规模越大，时序就越来越难收敛，一个大型设计的 P&amp;R 跑上几十个小时是常事，跑完还得看随机种子的运气。工业界的 Vivado、Quartus 背后是几十年攒下的启发式算法，学术界则把多伦多大学的开源工具 VTR 当作试验新算法的公共平台。这几年用机器学习替工具做布局决策的 <strong>ML for EDA</strong>，正是想从这块最硬的骨头上啃下时间和方差。</p>
@@ -11563,19 +11563,19 @@
     <marker id="latArr" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#475569"/></marker>
   </defs>
   <rect width="860" height="340" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="430" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">为什么 FPGA 适合边缘实时推理：批处理 vs 数据流流水线</text>
+  <text x="430" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">为什么 FPGA 适合边缘实时推理：批处理 vs 数据流流水线</text>
   <line x1="210" y1="72" x2="210" y2="266" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="210" y="64" text-anchor="middle" font-size="10" fill="#475569">帧 1 到达</text>
   <text x="58" y="116" font-size="12" font-weight="bold" fill="#1E40AF">GPU</text>
-  <text x="58" y="132" font-size="9.5" fill="#64748B">攒一批再算</text>
-  <text x="270" y="90" text-anchor="middle" font-size="9" fill="#64748B">帧2</text>
-  <text x="320" y="90" text-anchor="middle" font-size="9" fill="#64748B">帧3</text>
-  <text x="370" y="90" text-anchor="middle" font-size="9" fill="#64748B">帧4</text>
+  <text x="58" y="132" font-size="10.5" fill="#64748B">批量累积后计算</text>
+  <text x="270" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧2</text>
+  <text x="320" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧3</text>
+  <text x="370" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧4</text>
   <line x1="270" y1="94" x2="270" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <line x1="320" y1="94" x2="320" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <line x1="370" y1="94" x2="370" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <rect x="210" y="104" width="250" height="26" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"/>
-  <text x="335" y="121" text-anchor="middle" font-size="10.5" fill="#475569">等齐一批（帧2/3/4 还在路上）</text>
+  <text x="335" y="121" text-anchor="middle" font-size="10.5" fill="#475569">等待凑满批（帧2/3/4 仍在传输）</text>
   <rect x="460" y="104" width="150" height="26" fill="#3B82F6"/>
   <text x="535" y="121" text-anchor="middle" font-size="10.5" fill="#ffffff">批量计算</text>
   <circle cx="612" cy="117" r="4" fill="#B91C1C"/>
@@ -11583,7 +11583,7 @@
   <line x1="210" y1="146" x2="612" y2="146" stroke="#475569" stroke-width="1" marker-start="url(#latArr)" marker-end="url(#latArr)"/>
   <text x="411" y="160" text-anchor="middle" font-size="10" fill="#B91C1C">GPU 单帧延迟：长，且随批大小波动</text>
   <text x="58" y="216" font-size="12" font-weight="bold" fill="#15803D">FPGA</text>
-  <text x="58" y="232" font-size="9.5" fill="#64748B">定制流水线</text>
+  <text x="58" y="232" font-size="10.5" fill="#64748B">定制流水线</text>
   <rect x="210" y="204" width="44" height="26" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
   <text x="232" y="221" text-anchor="middle" font-size="10" fill="#166534">层1</text>
   <rect x="256" y="204" width="44" height="26" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
@@ -11592,10 +11592,10 @@
   <text x="324" y="221" text-anchor="middle" font-size="10" fill="#166534">层3</text>
   <circle cx="352" cy="217" r="4" fill="#15803D"/>
   <text x="360" y="221" font-size="10" fill="#15803D">帧1 结果</text>
-  <text x="430" y="216" font-size="9.5" fill="#64748B">帧1 在层2 时，帧2 已进层1，逐帧流过不必等批</text>
+  <text x="430" y="216" font-size="9.5" fill="#64748B">帧1 在层2 时，帧2 已进层1，逐帧流过无需等批</text>
   <line x1="210" y1="246" x2="352" y2="246" stroke="#475569" stroke-width="1" marker-start="url(#latArr)" marker-end="url(#latArr)"/>
   <text x="281" y="260" text-anchor="middle" font-size="10" fill="#15803D">FPGA 单帧延迟：短，且固定</text>
-  <text x="430" y="300" text-anchor="middle" font-size="10.5" fill="#475569">边缘要的是每帧准时出结果。GPU 靠攒批换吞吐，单帧延迟高；FPGA 把网络铺成流水线，</text>
+  <text x="430" y="300" text-anchor="middle" font-size="10.5" fill="#475569">边缘要的是每帧准时出结果。GPU 以批量积累换吞吐，单帧延迟高；FPGA 把网络铺成流水线，</text>
   <text x="430" y="320" text-anchor="middle" font-size="10.5" fill="#475569">数据流过即出结果，延迟低而确定，还能按模型精度（int8/int4）量身定制每一级。</text>
 </svg></div>
 
