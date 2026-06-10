@@ -82,6 +82,7 @@
 .md-typeset table:not([class]) {
   display: table;
   width: 100%;
+  font-size: .8rem;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--md-default-fg-color--lightest);
