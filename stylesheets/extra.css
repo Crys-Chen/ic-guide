@@ -807,6 +807,14 @@
   font-family: "Noto Serif SC", "Source Han Serif SC",
                "STSong", "SimSun", Georgia, serif;
   line-height: 1.95;
+  font-size: .9rem;
+}
+
+/* 科研方向页正文限宽，避免在宽网格下行太长（74rem grid 的副作用） */
+.is-research-page .md-content__inner {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .is-research-page .md-typeset h1,
