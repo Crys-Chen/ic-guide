@@ -25,7 +25,7 @@ hide:
   <text x="92.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">对话型</text>
   <text x="92.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Chatbots</text>
   <line x1="24.0" y1="152" x2="160.0" y2="152" stroke="#1E40AF" stroke-width="0.6" opacity="0.4"/>
-  <text x="92.0" y="168" text-anchor="middle" font-size="10" fill="#475569">对话能力 / 自然语言交互</text>
+  <text x="92.0" y="168" text-anchor="middle" font-size="11" fill="#475569">对话能力 / 自然语言交互</text>
   <text x="92.0" y="197" text-anchor="middle" font-size="10" fill="#94A3B8">代表产品</text>
   <text x="92.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#1E40AF">ChatGPT</text>
   <text x="92.0" y="223" text-anchor="middle" font-size="10" font-weight="600" fill="#1E40AF">Claude</text>
@@ -38,7 +38,7 @@ hide:
   <text x="266.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">推理型</text>
   <text x="266.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Reasoners</text>
   <line x1="198.0" y1="152" x2="334.0" y2="152" stroke="#0E7490" stroke-width="0.6" opacity="0.4"/>
-  <text x="266.0" y="168" text-anchor="middle" font-size="10" fill="#475569">博士级问题求解</text>
+  <text x="266.0" y="168" text-anchor="middle" font-size="11" fill="#475569">博士级问题求解</text>
   <text x="266.0" y="197" text-anchor="middle" font-size="10" fill="#94A3B8">代表产品</text>
   <text x="266.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#0E7490">o1 / o3</text>
   <text x="266.0" y="223" text-anchor="middle" font-size="10" font-weight="600" fill="#0E7490">DeepSeek-R1</text>
@@ -51,8 +51,8 @@ hide:
   <text x="440.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">行动型</text>
   <text x="440.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Agents</text>
   <line x1="372.0" y1="152" x2="508.0" y2="152" stroke="#B45309" stroke-width="0.6" opacity="0.4"/>
-  <text x="440.0" y="168" text-anchor="middle" font-size="10" fill="#475569">自主完成长任务</text>
-  <text x="440.0" y="181" text-anchor="middle" font-size="10" fill="#475569">(数小时-数天)</text>
+  <text x="440.0" y="168" text-anchor="middle" font-size="11" fill="#475569">自主完成长任务</text>
+  <text x="440.0" y="181" text-anchor="middle" font-size="11" fill="#475569">(数小时-数天)</text>
   <text x="440.0" y="210" text-anchor="middle" font-size="10" fill="#94A3B8">代表产品</text>
   <text x="440.0" y="224" text-anchor="middle" font-size="10" font-weight="600" fill="#B45309">Claude Code</text>
   <text x="440.0" y="236" text-anchor="middle" font-size="10" font-weight="600" fill="#B45309">Devin</text>
@@ -65,7 +65,7 @@ hide:
   <text x="614.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">创新型</text>
   <text x="614.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Innovators</text>
   <line x1="546.0" y1="152" x2="682.0" y2="152" stroke="#64748B" stroke-width="0.6" opacity="0.4"/>
-  <text x="614.0" y="168" text-anchor="middle" font-size="10" fill="#475569">协助科学发明 / 提出新想法</text>
+  <text x="614.0" y="168" text-anchor="middle" font-size="11" fill="#475569">协助科学发明 / 提出新想法</text>
   <text x="614.0" y="197" text-anchor="middle" font-size="10" fill="#94A3B8">代表产品</text>
   <text x="614.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">—</text>
   <rect x="574.0" y="268" width="80" height="16" rx="3" fill="#64748B"/>
@@ -76,7 +76,7 @@ hide:
   <text x="788.0" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">组织型</text>
   <text x="788.0" y="140" text-anchor="middle" font-size="10" fill="#64748B" font-style="italic">Organizations</text>
   <line x1="720.0" y1="152" x2="856.0" y2="152" stroke="#64748B" stroke-width="0.6" opacity="0.4"/>
-  <text x="788.0" y="168" text-anchor="middle" font-size="10" fill="#475569">替代整个组织运作</text>
+  <text x="788.0" y="168" text-anchor="middle" font-size="11" fill="#475569">替代整个组织运作</text>
   <text x="788.0" y="197" text-anchor="middle" font-size="10" fill="#94A3B8">代表产品</text>
   <text x="788.0" y="211" text-anchor="middle" font-size="10" font-weight="600" fill="#64748B">—</text>
   <rect x="748.0" y="268" width="80" height="16" rx="3" fill="#64748B"/>
@@ -91,22 +91,22 @@ hide:
     <marker id="aiTurn" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C2410C"/></marker>
   </defs>
   <rect width="760" height="340" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="380" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">规模扩展的边际收益递减</text>
+  <text x="380" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E293B">规模扩展的边际收益递减</text>
   <line x1="90" y1="250" x2="660" y2="250" stroke="#475569" stroke-width="1.6" marker-end="url(#aiAx)"/>
   <line x1="90" y1="250" x2="90" y2="55" stroke="#475569" stroke-width="1.6" marker-end="url(#aiAx)"/>
-  <text x="660" y="270" text-anchor="end" font-size="11" fill="#64748B">算力 / 参数规模 →</text>
-  <text x="84" y="62" text-anchor="end" font-size="11" fill="#64748B">能力</text>
+  <text x="660" y="270" text-anchor="end" font-size="12" fill="#64748B">算力 / 参数规模 →</text>
+  <text x="84" y="62" text-anchor="end" font-size="12" fill="#64748B">能力</text>
   <path d="M 100,244 C 180,150 250,112 360,102 C 470,93 560,91 620,90" fill="none" stroke="#2563EB" stroke-width="2.6"/>
   <line x1="560" y1="80" x2="560" y2="250" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="5 4"/>
-  <text x="560" y="74" text-anchor="middle" font-size="11" font-weight="bold" fill="#B91C1C">瓶颈</text>
-  <text x="560" y="241" text-anchor="middle" font-size="10" fill="#9A3412">继续扩大规模，提升有限</text>
+  <text x="560" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#B91C1C">瓶颈</text>
+  <text x="560" y="241" text-anchor="middle" font-size="11" fill="#9A3412">继续扩大规模，提升有限</text>
   <circle cx="560" cy="91" r="4.5" fill="#1D4ED8"/>
-  <text x="548" y="118" text-anchor="end" font-size="10" fill="#1E40AF">Llama 3 · 4050 亿参数</text>
-  <text x="548" y="131" text-anchor="end" font-size="10" fill="#1E40AF">1.6 万张 H100 · 54 天</text>
+  <text x="548" y="118" text-anchor="end" font-size="11" fill="#1E40AF">Llama 3 · 4050 亿参数</text>
+  <text x="548" y="131" text-anchor="end" font-size="11" fill="#1E40AF">1.6 万张 H100 · 54 天</text>
   <path d="M 620,98 C 672,165 668,250 562,282" fill="none" stroke="#C2410C" stroke-width="1.8" marker-end="url(#aiTurn)"/>
   <rect x="360" y="288" width="360" height="42" rx="7" fill="#FFF7ED" stroke="#C2410C" stroke-width="1.3"/>
-  <text x="540" y="306" text-anchor="middle" font-size="11" font-weight="bold" fill="#9A3412">转向更高效的训练方法</text>
-  <text x="540" y="321" text-anchor="middle" font-size="10" fill="#C2410C">MoE · 强化学习(R1-Zero) · 多模态</text>
+  <text x="540" y="306" text-anchor="middle" font-size="12" font-weight="bold" fill="#9A3412">转向更高效的训练方法</text>
+  <text x="540" y="321" text-anchor="middle" font-size="10.5" fill="#C2410C">MoE · 强化学习(R1-Zero) · 多模态</text>
 </svg></div>
 
 模型再聪明，**跑不起来也是白搭**。一到真实部署，瓶颈就卡在显存和带宽上。注意力机制要让序列里每个词两两交互，中间生成一大堆临时矩阵，反复在显存(HBM)和计算核心之间搬来搬去，又慢又费带宽。上下文越长，要缓存的 **KV Cache** 越大，显存越紧。一批工作专门来抠这件事。**Flash Attention** 把注意力分块，数据从 HBM 取出后在片上尽量算完再写回，省掉大量来回搬运。**vLLM 的 PagedAttention** 借虚拟内存的分页思路管 KV Cache，把零碎显存利用起来。**量化**则盯上另一处浪费，神经网络的权重绝大多数挤在很小的区间，32 位浮点白白占着，压到 8 位甚至 4 位整数、做得当几乎不掉精度。这条线最贴硬件，也是微电子背景最容易切进来的地方。在模型之外再包一层 **Agent**，用一套控制框架(skill、harness 那些)引导它调用工具、跑通多步任务，就把"会想"推成了"会做事"，也就是 L3。Claude Code、Openclaw 都是这类工程。
@@ -117,35 +117,35 @@ hide:
     <marker id="aiFA" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#16A34A"/></marker>
   </defs>
   <rect width="820" height="400" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">内存墙：注意力的瓶颈在于频繁访存</text>
-  <text x="410" y="44" text-anchor="middle" font-size="11" fill="#64748B">Flash Attention 通过分块将计算保持在片上，减少 HBM 访问</text>
+  <text x="410" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E293B">内存墙：注意力的瓶颈在于频繁访存</text>
+  <text x="410" y="44" text-anchor="middle" font-size="12" fill="#64748B">Flash Attention 通过分块将计算保持在片上，减少 HBM 访问</text>
   <rect x="24" y="60" width="372" height="272" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.4"/>
-  <text x="210" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="#B91C1C">朴素注意力</text>
+  <text x="210" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#B91C1C">朴素注意力</text>
   <rect x="64" y="100" width="292" height="44" rx="6" fill="#FFE4E6" stroke="#F43F5E" stroke-width="1.2"/>
-  <text x="210" y="127" text-anchor="middle" font-size="11" fill="#9F1239">计算核心 · 片上 SRAM</text>
+  <text x="210" y="127" text-anchor="middle" font-size="12" fill="#9F1239">计算核心 · 片上 SRAM</text>
   <rect x="64" y="248" width="292" height="44" rx="6" fill="#FECACA" stroke="#EF4444" stroke-width="1.2"/>
-  <text x="210" y="275" text-anchor="middle" font-size="11" fill="#7F1D1D">片外显存 HBM</text>
+  <text x="210" y="275" text-anchor="middle" font-size="12" fill="#7F1D1D">片外显存 HBM</text>
   <line x1="110" y1="146" x2="110" y2="246" stroke="#DC2626" stroke-width="1.6" marker-start="url(#aiRW)" marker-end="url(#aiRW)"/>
   <line x1="160" y1="146" x2="160" y2="246" stroke="#DC2626" stroke-width="1.6" marker-start="url(#aiRW)" marker-end="url(#aiRW)"/>
   <line x1="260" y1="146" x2="260" y2="246" stroke="#DC2626" stroke-width="1.6" marker-start="url(#aiRW)" marker-end="url(#aiRW)"/>
   <line x1="310" y1="146" x2="310" y2="246" stroke="#DC2626" stroke-width="1.6" marker-start="url(#aiRW)" marker-end="url(#aiRW)"/>
-  <text x="210" y="201" text-anchor="middle" font-size="10" font-weight="bold" fill="#B91C1C">中间结果反复读写</text>
+  <text x="210" y="201" text-anchor="middle" font-size="11" font-weight="bold" fill="#B91C1C">中间结果反复读写</text>
   <rect x="424" y="60" width="372" height="272" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.4"/>
-  <text x="610" y="84" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">Flash Attention（分块）</text>
+  <text x="610" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803D">Flash Attention（分块）</text>
   <rect x="464" y="100" width="292" height="44" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.2"/>
   <rect x="486" y="112" width="20" height="20" rx="2" fill="#86EFAC" stroke="#16A34A" stroke-width="0.8"/>
   <rect x="512" y="112" width="20" height="20" rx="2" fill="#86EFAC" stroke="#16A34A" stroke-width="0.8"/>
   <rect x="538" y="112" width="20" height="20" rx="2" fill="#86EFAC" stroke="#16A34A" stroke-width="0.8"/>
-  <text x="660" y="126" text-anchor="middle" font-size="10.5" fill="#166534">分块在片上完成</text>
+  <text x="660" y="126" text-anchor="middle" font-size="11" fill="#166534">分块在片上完成</text>
   <rect x="464" y="248" width="292" height="44" rx="6" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.2"/>
-  <text x="610" y="275" text-anchor="middle" font-size="11" fill="#14532D">显存 HBM</text>
+  <text x="610" y="275" text-anchor="middle" font-size="12" fill="#14532D">显存 HBM</text>
   <line x1="540" y1="146" x2="540" y2="246" stroke="#16A34A" stroke-width="1.8" marker-end="url(#aiFA)"/>
-  <text x="516" y="201" text-anchor="end" font-size="10" fill="#15803D">读入分块</text>
+  <text x="516" y="201" text-anchor="end" font-size="11" fill="#15803D">读入分块</text>
   <line x1="680" y1="246" x2="680" y2="146" stroke="#16A34A" stroke-width="1.8" marker-end="url(#aiFA)"/>
-  <text x="704" y="201" text-anchor="start" font-size="10" fill="#15803D">写回结果</text>
-  <text x="210" y="356" text-anchor="middle" font-size="11" font-weight="bold" fill="#B91C1C">频繁访存，带宽受限</text>
-  <text x="610" y="356" text-anchor="middle" font-size="11" font-weight="bold" fill="#15803D">访存大幅减少，带宽友好</text>
-  <text x="410" y="384" text-anchor="middle" font-size="10" fill="#64748B">量化：权重集中于窄区间，由 32 位浮点降至 4 位整数，精度损失很小</text>
+  <text x="704" y="201" text-anchor="start" font-size="11" fill="#15803D">写回结果</text>
+  <text x="210" y="356" text-anchor="middle" font-size="12" font-weight="bold" fill="#B91C1C">频繁访存，带宽受限</text>
+  <text x="610" y="356" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803D">访存大幅减少，带宽友好</text>
+  <text x="410" y="384" text-anchor="middle" font-size="11" fill="#64748B">量化：权重集中于窄区间，由 32 位浮点降至 4 位整数，精度损失很小</text>
 </svg></div>
 
 算法和系统再使劲，模型到底学成什么样，归根到底由数据定。GPT-4、Llama 3 这个量级，训练数据在 10 到 15 万亿词(token)，差不多把开放互联网上的高质量内容啃了一遍。如今公开数据快见底，往后只剩两条路。一条是**合成数据**，让强模型造出新数据喂下一代，比如 Tesla 的 FSD 用仿真造出暴雨夜驾、小孩突然冲上马路这类极端场景来练。另一条是**专家精选数据**，比如科学论文、专业的推理过程标注，或者请顶尖数学家出一套题库给模型学。
