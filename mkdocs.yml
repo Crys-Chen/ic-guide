@@ -159,9 +159,14 @@ nav:
       - 数学进阶:
         - 学习地图/数学/数学进阶/index.md
         - 入门速成:
-          - 工程数学及概率方法(复旦): "学习地图/数学/数学进阶/入门速成/MICR130008.md"
           - "UCB CS70": "学习地图/数学/数学进阶/入门速成/CS70.md"
           - "MIT 6.042J": "学习地图/数学/数学进阶/入门速成/6.042J.md"
+        - 概率统计:
+          - 工程数学及概率方法(复旦): "学习地图/数学/数学进阶/概率统计/MICR130008.md"
+          - 浙大:概率论与数理统计: "学习地图/数学/数学进阶/概率统计/ZJU_probability.md"
+          - "Harvard Stat 110: Probability": "学习地图/数学/数学进阶/概率统计/Harvard_Stat110.md"
+          - "MIT 6.041: Probabilistic Systems Analysis": "学习地图/数学/数学进阶/概率统计/MIT6.041.md"
+          - "MIT 6.262: Discrete Stochastic Processes": "学习地图/数学/数学进阶/概率统计/MIT6.262.md"
         - 矩阵分析:
           - "MIT18.065": "学习地图/数学/数学进阶/矩阵分析/MIT18.065.md"
           - 严质彬(哈工大): "学习地图/数学/数学进阶/矩阵分析/HIT.md"
@@ -176,7 +181,7 @@ nav:
           - "MIT 6.875: Foundations of Cryptography": "学习地图/数学/数学进阶/密码学/MIT6.875.md"
           - Standford: "学习地图/数学/数学进阶/密码学/StandfordCrypto.md"
         - 信息论:
-          - "信息论进阶(UCB CS126)": "学习地图/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
+          - "MacKay: 信息论、推断与学习算法": "学习地图/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
         - 离散数学:
           - 北大屈婉玲:离散数学: "学习地图/数学/数学进阶/离散数学/PKU_discrete.md"
         - 数值分析:
