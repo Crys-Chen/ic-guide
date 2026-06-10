@@ -2267,7 +2267,19 @@
 [data-md-color-scheme="slate"] .sq-up   { color: #ff6b6b; }
 [data-md-color-scheme="slate"] .sq-down { color: #34d399; }
 
-/* ============ 专题社区卡片 · 轻量化重设计（单色 / 紧凑 / 去渐变） ============ */
+/* ============ 专题社区卡片 · 轻量化 + 按类型分色系 ============ */
+/* 芯片流片=蓝 / RISC-V软件=青 / AI=绿 / 竞赛集训=橙 / 学习资源=灰 */
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(1),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(2),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(3) { --c-deep:#1E40AF; --c-mid:#2563EB; --c-soft:#EEF3FB; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(4) { --c-deep:#0E7490; --c-mid:#0891B2; --c-soft:#ECFEFF; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(5),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(6) { --c-deep:#15803D; --c-mid:#16A34A; --c-soft:#EDFBF1; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(7),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(10) { --c-deep:#C2410C; --c-mid:#EA580C; --c-soft:#FEF3EB; }
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(8),
+.md-typeset .grid.cards.community-cards > ul > li:nth-child(9) { --c-deep:#475569; --c-mid:#64748B; --c-soft:#F1F5F9; }
+
 .md-typeset .grid.cards.community-cards > ul {
   grid-template-columns: 1fr 1fr !important;
   gap: 1.6rem !important;
@@ -2276,7 +2288,7 @@
 .md-typeset .grid.cards.community-cards > ul > li {
   padding: 0 !important;
   border: 1px solid var(--md-default-fg-color--lightest) !important;
-  border-left: 3px solid var(--md-primary-fg-color) !important;
+  border-left: 3px solid var(--c-mid) !important;
   border-radius: 8px !important;
   box-shadow: 0 1px 3px rgba(0,0,0,.05) !important;
 }
@@ -2284,24 +2296,25 @@
   transform: scale(1.015) !important;
   box-shadow: 0 4px 14px rgba(0,0,0,.10) !important;
 }
-/* 标题：去渐变 header，改深色小字 + 复旦蓝链接 */
+/* 标题：淡色 header（按类型）+ 该色系深色标题 */
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  background: #eef3fb !important;
-  color: var(--md-primary-fg-color) !important;
+  background: var(--c-soft) !important;
+  color: var(--c-deep) !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
   padding: .7rem 1rem !important;
-  border-bottom: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent) !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--c-mid) 18%, transparent) !important;
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child {
-  background: color-mix(in srgb, var(--md-primary-fg-color) 22%, #1e2330) !important;
-  color: #cdddf5 !important;
+  background: color-mix(in srgb, var(--c-mid) 20%, #1e2330) !important;
+  color: color-mix(in srgb, var(--c-mid) 72%, white) !important;
 }
-.md-typeset .grid.cards.community-cards > ul > li > p:first-child a { color: var(--md-primary-fg-color) !important; }
+.md-typeset .grid.cards.community-cards > ul > li > p:first-child a { color: var(--c-deep) !important; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li > p:first-child a { color: color-mix(in srgb, var(--c-mid) 72%, white) !important; }
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child::after { display: none !important; }
 .md-typeset .grid.cards.community-cards > ul > li > p:first-child svg {
   width: 1.05rem !important; height: 1.05rem !important;
-  fill: var(--md-primary-fg-color) !important; filter: none !important; margin-right: .4rem !important;
+  fill: var(--c-mid) !important; filter: none !important; margin-right: .4rem !important;
 }
 /* 正文 / bullet / 引用：收紧左右留白 + 小字 */
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(n+2),
@@ -2310,14 +2323,16 @@
 .md-typeset .grid.cards.community-cards > ul > li > p:nth-child(2) { margin-top: .25rem !important; }
 .md-typeset .grid.cards.community-cards > ul > li p { font-size: .8rem !important; line-height: 1.55 !important; }
 .md-typeset .grid.cards.community-cards > ul > li > ul > li { font-size: .76rem !important; line-height: 1.5 !important; margin: .2rem 0 !important; }
-.md-typeset .grid.cards.community-cards > ul > li > ul > li::before { background: var(--md-primary-fg-color) !important; }
+.md-typeset .grid.cards.community-cards > ul > li > ul > li::before { background: var(--c-mid) !important; }
 .md-typeset .grid.cards.community-cards > ul > li blockquote {
   font-size: .75rem !important; margin: .55rem 1rem .9rem !important; padding: .4rem .7rem !important;
-  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent) !important;
-  border-left: 3px solid var(--md-primary-fg-color) !important; color: var(--md-primary-fg-color) !important;
+  background: color-mix(in srgb, var(--c-mid) 7%, transparent) !important;
+  border-left: 3px solid var(--c-mid) !important; color: var(--c-deep) !important;
 }
-.md-typeset .grid.cards.community-cards > ul > li strong { color: var(--md-primary-fg-color) !important; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li blockquote { color: color-mix(in srgb, var(--c-mid) 72%, white) !important; }
+.md-typeset .grid.cards.community-cards > ul > li strong { color: var(--c-deep) !important; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li strong { color: color-mix(in srgb, var(--c-mid) 72%, white) !important; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.community-cards > ul > li {
-  background: #1e2330 !important; border-color: rgba(255,255,255,.08) !important; border-left-color: var(--md-primary-fg-color) !important;
+  background: #1e2330 !important; border-color: rgba(255,255,255,.08) !important; border-left-color: var(--c-mid) !important;
 }
 @media (max-width: 700px) { .md-typeset .grid.cards.community-cards > ul { grid-template-columns: 1fr !important; } }

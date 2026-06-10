@@ -17,6 +17,6 @@
 ## 学习地图
 
 - 课程网站：https://diffusion.csail.mit.edu/
-- 课程视频：参见课程网站
+- 课程视频：[YouTube 官方播放列表（IAP 2025 全 6 讲）](https://www.youtube.com/playlist?list=PL_1TbuIu65A9rac2dMLkvXvPS5YHtADRF)
 - 课程教材：[An Introduction to Flow Matching and Diffusion Models](https://arxiv.org/abs/2506.02070)
 - 课程作业：三个实验，具体参见课程网站
