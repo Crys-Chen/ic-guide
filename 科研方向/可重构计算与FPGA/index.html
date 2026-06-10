@@ -10932,15 +10932,15 @@
   <line x1="540" y1="100" x2="700" y2="100" stroke="#CBD5E1" stroke-width="1"/>
   <line x1="593" y1="74" x2="593" y2="206" stroke="#CBD5E1" stroke-width="1"/>
   <line x1="647" y1="74" x2="647" y2="206" stroke="#CBD5E1" stroke-width="1"/>
-  <text x="566" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">a</text>
-  <text x="620" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">b</text>
-  <text x="673" y="93" text-anchor="middle" font-size="10" font-weight="bold" fill="#475569">O</text>
-  <text x="566" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="620" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="673" y="119" text-anchor="middle" font-size="10.5" fill="#334155">0</text>
-  <text x="566" y="144" text-anchor="middle" font-size="10.5" fill="#334155">0</text><text x="620" y="144" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="673" y="144" text-anchor="middle" font-size="10.5" fill="#334155">1</text>
-  <text x="566" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text><text x="620" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">0</text><text x="673" y="169" text-anchor="middle" font-size="10.5" fill="#1E40AF" font-weight="bold">1</text>
-  <text x="566" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="620" y="194" text-anchor="middle" font-size="10.5" fill="#334155">1</text><text x="673" y="194" text-anchor="middle" font-size="10.5" fill="#334155">0</text>
-  <text x="410" y="262" text-anchor="middle" font-size="10.5" fill="#475569">改写这 4 个 SRAM 位 = 换一张真值表，同一块硬件立刻能变成 AND、OR 或任意 2 输入逻辑。</text>
-  <text x="410" y="286" text-anchor="middle" font-size="10.5" fill="#9A3412">代价：每个 LUT 都附带一串配置 SRAM —— 灵活性以硅面积为代价换得。</text>
+  <text x="566" y="93" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">a</text>
+  <text x="620" y="93" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">b</text>
+  <text x="673" y="93" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">O</text>
+  <text x="566" y="119" text-anchor="middle" font-size="13" fill="#334155">0</text><text x="620" y="119" text-anchor="middle" font-size="13" fill="#334155">0</text><text x="673" y="119" text-anchor="middle" font-size="13" fill="#334155">0</text>
+  <text x="566" y="144" text-anchor="middle" font-size="13" fill="#334155">0</text><text x="620" y="144" text-anchor="middle" font-size="13" fill="#334155">1</text><text x="673" y="144" text-anchor="middle" font-size="13" fill="#334155">1</text>
+  <text x="566" y="169" text-anchor="middle" font-size="13" fill="#1E40AF" font-weight="bold">1</text><text x="620" y="169" text-anchor="middle" font-size="13" fill="#1E40AF" font-weight="bold">0</text><text x="673" y="169" text-anchor="middle" font-size="13" fill="#1E40AF" font-weight="bold">1</text>
+  <text x="566" y="194" text-anchor="middle" font-size="13" fill="#334155">1</text><text x="620" y="194" text-anchor="middle" font-size="13" fill="#334155">1</text><text x="673" y="194" text-anchor="middle" font-size="13" fill="#334155">0</text>
+  <text x="410" y="262" text-anchor="middle" font-size="12.5" fill="#475569">改写这 4 个 SRAM 位 = 换一张真值表，同一块硬件立刻能变成 AND、OR 或任意 2 输入逻辑。</text>
+  <text x="410" y="286" text-anchor="middle" font-size="12.5" fill="#9A3412">代价：每个 LUT 都附带一串配置 SRAM —— 灵活性以硅面积为代价换得。</text>
 </svg></div>
 
 <p>既然面积的大头花在连线上，怎么把逻辑摆放到位、让信号走最短的路，就成了 FPGA 一大研究热点。把设计灌进芯片，要先用 Verilog 描述电路，再经工具综合、布局、布线，生成一份比特流烧进去。其中<strong>布局布线（Place-and-Route，简称 P&amp;R）</strong>最难：哪个逻辑该落在哪个单元、哪根线该走哪条通道，是一个货真价实的 NP-Hard 问题。设计规模越大，时序就越来越难收敛，一个大型设计的 P&amp;R 跑上几十个小时是常事，跑完还得看随机种子的运气。工业界的 Vivado、Quartus 背后是几十年攒下的启发式算法，学术界则把多伦多大学的开源工具 VTR 当作试验新算法的公共平台。这几年用机器学习替工具做布局决策的 <strong>ML for EDA</strong>，正是想从这块最硬的骨头上啃下时间和方差。</p>
@@ -10951,40 +10951,40 @@
     <marker id="latArr" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#475569"/></marker>
   </defs>
   <rect width="860" height="340" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="430" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">为什么 FPGA 适合边缘实时推理：批处理 vs 数据流流水线</text>
+  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">为什么 FPGA 适合边缘实时推理：批处理 vs 数据流流水线</text>
   <line x1="210" y1="72" x2="210" y2="266" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="210" y="64" text-anchor="middle" font-size="10" fill="#475569">帧 1 到达</text>
-  <text x="58" y="116" font-size="12" font-weight="bold" fill="#1E40AF">GPU</text>
-  <text x="58" y="132" font-size="10.5" fill="#64748B">批量累积后计算</text>
-  <text x="270" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧2</text>
-  <text x="320" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧3</text>
-  <text x="370" y="90" text-anchor="middle" font-size="10" fill="#64748B">帧4</text>
+  <text x="210" y="64" text-anchor="middle" font-size="11" fill="#475569">帧 1 到达</text>
+  <text x="58" y="116" font-size="14" font-weight="bold" fill="#1E40AF">GPU</text>
+  <text x="58" y="132" font-size="12" fill="#64748B">批量累积后计算</text>
+  <text x="270" y="90" text-anchor="middle" font-size="11" fill="#64748B">帧2</text>
+  <text x="320" y="90" text-anchor="middle" font-size="11" fill="#64748B">帧3</text>
+  <text x="370" y="90" text-anchor="middle" font-size="11" fill="#64748B">帧4</text>
   <line x1="270" y1="94" x2="270" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <line x1="320" y1="94" x2="320" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <line x1="370" y1="94" x2="370" y2="104" stroke="#94A3B8" stroke-width="1"/>
   <rect x="210" y="104" width="250" height="26" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"/>
-  <text x="335" y="121" text-anchor="middle" font-size="10.5" fill="#475569">等待凑满批（帧2/3/4 仍在传输）</text>
+  <text x="335" y="121" text-anchor="middle" font-size="12" fill="#475569">等待凑满批（帧2/3/4 仍在传输）</text>
   <rect x="460" y="104" width="150" height="26" fill="#3B82F6"/>
-  <text x="535" y="121" text-anchor="middle" font-size="10.5" fill="#ffffff">批量计算</text>
+  <text x="535" y="121" text-anchor="middle" font-size="12" fill="#ffffff">批量计算</text>
   <circle cx="612" cy="117" r="4" fill="#B91C1C"/>
-  <text x="620" y="121" font-size="10" fill="#B91C1C">帧1 结果</text>
+  <text x="620" y="121" font-size="11" fill="#B91C1C">帧1 结果</text>
   <line x1="210" y1="146" x2="612" y2="146" stroke="#475569" stroke-width="1" marker-start="url(#latArr)" marker-end="url(#latArr)"/>
-  <text x="411" y="160" text-anchor="middle" font-size="10" fill="#B91C1C">GPU 单帧延迟：长，且随批大小波动</text>
-  <text x="58" y="216" font-size="12" font-weight="bold" fill="#15803D">FPGA</text>
-  <text x="58" y="232" font-size="10.5" fill="#64748B">定制流水线</text>
+  <text x="411" y="160" text-anchor="middle" font-size="11.5" fill="#B91C1C">GPU 单帧延迟：长，且随批大小波动</text>
+  <text x="58" y="216" font-size="14" font-weight="bold" fill="#15803D">FPGA</text>
+  <text x="58" y="232" font-size="12" fill="#64748B">定制流水线</text>
   <rect x="210" y="204" width="44" height="26" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
-  <text x="232" y="221" text-anchor="middle" font-size="10" fill="#166534">层1</text>
+  <text x="232" y="221" text-anchor="middle" font-size="11" fill="#166534">层1</text>
   <rect x="256" y="204" width="44" height="26" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
-  <text x="278" y="221" text-anchor="middle" font-size="10" fill="#166534">层2</text>
+  <text x="278" y="221" text-anchor="middle" font-size="11" fill="#166534">层2</text>
   <rect x="302" y="204" width="44" height="26" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
-  <text x="324" y="221" text-anchor="middle" font-size="10" fill="#166534">层3</text>
+  <text x="324" y="221" text-anchor="middle" font-size="11" fill="#166534">层3</text>
   <circle cx="352" cy="217" r="4" fill="#15803D"/>
-  <text x="360" y="221" font-size="10" fill="#15803D">帧1 结果</text>
-  <text x="430" y="216" font-size="9.5" fill="#64748B">帧1 在层2 时，帧2 已进层1，逐帧流过无需等批</text>
+  <text x="360" y="221" font-size="11" fill="#15803D">帧1 结果</text>
+  <text x="430" y="216" font-size="11" fill="#64748B">帧1 在层2 时，帧2 已进层1，逐帧流过无需等批</text>
   <line x1="210" y1="246" x2="352" y2="246" stroke="#475569" stroke-width="1" marker-start="url(#latArr)" marker-end="url(#latArr)"/>
-  <text x="281" y="260" text-anchor="middle" font-size="10" fill="#15803D">FPGA 单帧延迟：短，且固定</text>
-  <text x="430" y="300" text-anchor="middle" font-size="10.5" fill="#475569">边缘要的是每帧准时出结果。GPU 以批量积累换吞吐，单帧延迟高；FPGA 把网络铺成流水线，</text>
-  <text x="430" y="320" text-anchor="middle" font-size="10.5" fill="#475569">数据流过即出结果，延迟低而确定，还能按模型精度（int8/int4）量身定制每一级。</text>
+  <text x="281" y="260" text-anchor="middle" font-size="11.5" fill="#15803D">FPGA 单帧延迟：短，且固定</text>
+  <text x="430" y="300" text-anchor="middle" font-size="12" fill="#475569">边缘要的是每帧准时出结果。GPU 以批量积累换吞吐，单帧延迟高；FPGA 把网络铺成流水线，</text>
+  <text x="430" y="320" text-anchor="middle" font-size="12" fill="#475569">数据流过即出结果，延迟低而确定，还能按模型精度（int8/int4）量身定制每一级。</text>
 </svg></div>
 
 <p>FPGA 一旦进了机架，要同时服务多个租户、应付多变的负载，<strong>部分重构</strong>就成了关键——在不停机的前提下，只把芯片的一块区域换成另一个加速器。这才把"可重构"从一次性的编译能力，变成了运行时随需应变的真本事。</p>
@@ -10992,9 +10992,9 @@
 <p>FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片只有查找表和连线，之后才一样样往里加硬块。人们发现几乎每个设计都在做加法，就把进位链硬化进逻辑块；信号处理和 AI 离不开乘累加，于是有了专门的 <strong>DSP 块</strong>；数据总要在片上缓存，<strong>BRAM</strong> 也嵌了进来。到了深度学习时代，DSP 又长出按 int8、int4 拆分的张量模式。连最难啃的连线本身都在被硬化——长线延迟既然不随工艺改善，新一代器件干脆把一张<strong>硬核片上网络（NoC）</strong>做进芯片，比用可编程逻辑搭出来的软 NoC 省 23 倍面积、快 6 倍；单块芯片大到良率扛不住，就用 <strong>interposer</strong> 把好几块裸片拼进一个封装。今天的高端器件（如 AMD Versal）已经是「可编程逻辑 + AI 引擎 + ARM 处理器 + 硬核 NoC」的异构平台，纯查找表只剩其中一小块。</p>
 <div><svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:1.5rem auto;">
   <rect width="900" height="360" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="450" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">FPGA 的进化：从纯查找表阵列，到异构平台</text>
+  <text x="450" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1E293B">FPGA 的进化：从纯查找表阵列，到异构平台</text>
   <line x1="450" y1="46" x2="450" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
-  <text x="225" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">早期 FPGA（1990 年代）</text>
+  <text x="225" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">早期 FPGA（1990 年代）</text>
   <rect x="95" y="86" width="260" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
   <line x1="138" y1="86" x2="138" y2="266" stroke="#BFDBFE" stroke-width="1"/>
   <line x1="181" y1="86" x2="181" y2="266" stroke="#BFDBFE" stroke-width="1"/>
@@ -11008,36 +11008,36 @@
   <rect x="106" y="96" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
   <rect x="192" y="176" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
   <rect x="278" y="216" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
-  <text x="225" y="150" text-anchor="middle" font-size="10" fill="#3B82F6" opacity="0.75">逻辑块（LUT）阵列</text>
+  <text x="225" y="150" text-anchor="middle" font-size="12" fill="#3B82F6" opacity="0.75">逻辑块（LUT）阵列</text>
   <rect x="130" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="190" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="250" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="83" y="120" width="8" height="16" rx="2" fill="#94A3B8"/>
   <rect x="83" y="170" width="8" height="16" rx="2" fill="#94A3B8"/>
   <rect x="83" y="220" width="8" height="16" rx="2" fill="#94A3B8"/>
-  <text x="70" y="100" text-anchor="end" font-size="10" fill="#64748B">IO</text>
-  <text x="225" y="292" text-anchor="middle" font-size="10" fill="#475569">全部为逻辑块（LUT）+ IO + 可编程连线</text>
-  <text x="675" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#9A3412">今天的 FPGA（异构平台）</text>
+  <text x="70" y="100" text-anchor="end" font-size="11" fill="#64748B">IO</text>
+  <text x="225" y="292" text-anchor="middle" font-size="12" fill="#475569">全部为逻辑块（LUT）+ IO + 可编程连线</text>
+  <text x="675" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#9A3412">今天的 FPGA（异构平台）</text>
   <rect x="525" y="86" width="290" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
   <line x1="525" y1="126" x2="815" y2="126" stroke="#BFDBFE" stroke-width="1"/>
   <line x1="525" y1="206" x2="815" y2="206" stroke="#BFDBFE" stroke-width="1"/>
   <rect x="565" y="92" width="22" height="168" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.3"/>
-  <text x="576" y="178" text-anchor="middle" font-size="10" fill="#166534" transform="rotate(-90 576 178)">BRAM</text>
+  <text x="576" y="178" text-anchor="middle" font-size="12" fill="#166534" transform="rotate(-90 576 178)">BRAM</text>
   <rect x="645" y="92" width="22" height="168" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
-  <text x="656" y="178" text-anchor="middle" font-size="10" fill="#92400E" transform="rotate(-90 656 178)">DSP</text>
+  <text x="656" y="178" text-anchor="middle" font-size="12" fill="#92400E" transform="rotate(-90 656 178)">DSP</text>
   <rect x="602" y="98" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
   <rect x="730" y="100" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
   <rect x="690" y="214" width="118" height="44" rx="4" fill="#E2E8F0" stroke="#475569" stroke-width="1.4"/>
-  <text x="749" y="240" text-anchor="middle" font-size="10" fill="#334155">ARM 处理器子系统</text>
+  <text x="749" y="240" text-anchor="middle" font-size="11.5" fill="#334155">ARM 处理器子系统</text>
   <line x1="525" y1="166" x2="815" y2="166" stroke="#B91C1C" stroke-width="2.4"/>
   <line x1="708" y1="86" x2="708" y2="214" stroke="#B91C1C" stroke-width="2.4"/>
   <circle cx="708" cy="166" r="3.2" fill="#B91C1C"/>
-  <text x="812" y="160" text-anchor="end" font-size="10" fill="#B91C1C">硬核 NoC</text>
+  <text x="812" y="160" text-anchor="end" font-size="11" fill="#B91C1C">硬核 NoC</text>
   <rect x="560" y="74" width="18" height="8" rx="2" fill="#64748B"/>
   <rect x="600" y="74" width="18" height="8" rx="2" fill="#64748B"/>
   <rect x="640" y="74" width="18" height="8" rx="2" fill="#64748B"/>
-  <text x="688" y="81" text-anchor="start" font-size="10" fill="#475569">← 高速收发器</text>
-  <text x="675" y="292" text-anchor="middle" font-size="10" fill="#9A3412">逻辑 + DSP + BRAM + 硬核 NoC + ARM…每种硬块都是一次成功的硬化</text>
+  <text x="688" y="81" text-anchor="start" font-size="11" fill="#475569">← 高速收发器</text>
+  <text x="675" y="292" text-anchor="middle" font-size="12" fill="#9A3412">逻辑 + DSP + BRAM + 硬核 NoC + ARM…每种硬块都是一次成功的硬化</text>
 </svg></div>
 
 <p>可即便如此，FPGA 还不是可重构的终点。它的灵活来自 <strong>bit 级</strong>的细粒度可配置，每一个查找表、每一段连线都能单独设定，灵活到了极致，连线的代价也大到了极致。再往前一步是<strong>粗粒度</strong>的思路：与其让人摆弄每一根线，不如把可重构的颗粒做大，让一个个完整的运算单元按需连成数据通路，这就是 CGRA 与"<strong>软件定义芯片</strong>"。粒度一粗，配置开销骤降，效率随之向 ASIC 靠拢，代价是不再像 FPGA 那样什么都能配。从 FPGA 到软件定义芯片，争的始终是同一件事：既要流片之后还能改的自由，又要逼近专用芯片的效率，而不必在两者之间二选一。</p>
