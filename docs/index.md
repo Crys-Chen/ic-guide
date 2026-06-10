@@ -15,6 +15,7 @@ hide:
 <a href="学习地图/" class="df-ghost">学习地图</a>
 </div>
 </div>
+<a class="df-scroll" href="#_1"><span class="df-scroll-t">向下看 · 序言</span><span class="df-scroll-a">↓</span></a>
 </div>
 
 <!-- ══════════════ DAY MODE HERO (default only) ══════════════ -->
@@ -39,6 +40,7 @@ hide:
 </div>
 </nav>
 </div>
+<a class="df-scroll" href="#_1"><span class="df-scroll-t">向下看 · 序言</span><span class="df-scroll-a">↓</span></a>
 </div>
 
 <!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->

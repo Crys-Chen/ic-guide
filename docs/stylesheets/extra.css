@@ -2336,3 +2336,22 @@
   background: #1e2330 !important; border-color: rgba(255,255,255,.08) !important; border-left-color: var(--c-mid) !important;
 }
 @media (max-width: 700px) { .md-typeset .grid.cards.community-cards > ul { grid-template-columns: 1fr !important; } }
+
+/* ============ 首页 hero · 向下滚动提示（提示下方有序言） ============ */
+.df-light, .df-dark { position: relative; }
+.df-scroll {
+  position: absolute; left: 50%; bottom: 1.5rem; transform: translateX(-50%);
+  display: inline-flex; flex-direction: column; align-items: center; gap: .12rem;
+  text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .08em;
+  z-index: 6; opacity: .82;
+  animation: df-scroll-bounce 1.9s ease-in-out infinite;
+}
+.df-scroll-a { font-size: 1.05rem; line-height: 1; }
+.df-scroll:hover { opacity: 1; }
+.df-light .df-scroll { color: var(--md-primary-fg-color); }
+.df-dark  .df-scroll { color: rgba(255,255,255,.82); }
+@keyframes df-scroll-bounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%     { transform: translateX(-50%) translateY(5px); }
+}
+html { scroll-behavior: smooth; }
