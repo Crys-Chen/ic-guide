@@ -8,7 +8,6 @@
 
 - **[NJU 软件分析](NJU-SoftwareAnalysis.md)** — 南京大学谭添老师课程,**国内中文 PL 入门首选**
 - **[PKU 软件分析](PKU-SoftwareAnalysis.md)** — 北大版本
-- **[Cambridge: Semantics of Programming Languages](Cambridge-Semantics.md)** — 剑桥的形式语义课,理论深
 
 ## 对应的科研方向
 

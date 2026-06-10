@@ -7,13 +7,11 @@
 ## 推荐课程
 
 - **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课,**讲 GPU、向量化、cache coherence、共享内存** ★
-- **[MIT 6.824](MIT6.824.md)** — MIT 分布式系统,**国外分布式课的标杆**;Lab 实现 Raft、MapReduce、KV-Store 等
 
 ## 学习路径建议
 
 **做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ 配合 Gem5/GPGPU-Sim 实操
 
-**做大型系统 / 数据中心方向:MIT 6.824 优先**(分布式一致性 + 实战 Raft/MapReduce)
 
 ## 对应的科研方向
 
