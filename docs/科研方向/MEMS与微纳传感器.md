@@ -135,47 +135,6 @@ hide:
 
 另一道边界来自材料本身。硅不兼容生命体，也不会弯曲，这两个限制把 MEMS 挡在人体和曲面之外。BioMEMS 把结构材料换成 PDMS、水凝胶和可降解聚合物，这些材料柔软，能和组织长期共存，最终被人体吸收。比如植入式闭环神经接口读取脊髓信号、驱动肌肉电刺激，让截瘫患者重新控制肢体。柔性 MEMS 像石墨烯（约 0.34 nm）和 MoS₂（约 0.65 nm）制成的 NEMS 薄膜只有原子级厚度，能感知单个原子吸附引起的质量变化，也能共形贴附在曲面上。材料的能力，决定了 MEMS 的应用边界。
 
-<div><svg viewBox="0 0 880 250" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
-  <defs>
-    <marker id="arr5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#3B82F6"/>
-    </marker>
-    <marker id="arr6" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#16A34A"/>
-    </marker>
-    <marker id="arr7" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#D97706"/>
-    </marker>
-  </defs>
-  <rect x="10" y="10" width="860" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="440" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">硅过不去的两道墙</text>
-  <!-- lane 1: 人体 -->
-  <text x="40" y="50" font-size="10" font-weight="600" fill="#475569">第一道墙 · 人体</text>
-  <rect x="40" y="58" width="60" height="30" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
-  <text x="70" y="78" text-anchor="middle" font-size="11" fill="#475569">硅</text>
-  <line x1="100" y1="73" x2="398" y2="73" stroke="#3B82F6" stroke-width="2" marker-end="url(#arr5)"/>
-  <text x="250" y="66" text-anchor="middle" font-size="9" fill="#94A3B8">不兼容生命体</text>
-  <text x="413" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#DC2626">✕</text>
-  <rect x="430" y="48" width="14" height="44" rx="2" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
-  <rect x="130" y="92" width="190" height="24" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="225" y="108" text-anchor="middle" font-size="9" fill="#166534">PDMS · 水凝胶 · 可降解聚合物</text>
-  <line x1="320" y1="104" x2="468" y2="104" stroke="#16A34A" stroke-width="2" marker-end="url(#arr6)"/>
-  <text x="480" y="108" font-size="10" font-weight="600" fill="#1E293B">植入式闭环神经接口 · 器官芯片</text>
-  <!-- lane 2: 曲面 -->
-  <text x="40" y="138" font-size="10" font-weight="600" fill="#475569">第二道墙 · 曲面</text>
-  <rect x="40" y="146" width="60" height="30" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
-  <text x="70" y="166" text-anchor="middle" font-size="11" fill="#475569">硅</text>
-  <line x1="100" y1="161" x2="398" y2="161" stroke="#3B82F6" stroke-width="2" marker-end="url(#arr5)"/>
-  <text x="250" y="154" text-anchor="middle" font-size="9" fill="#94A3B8">不会弯曲</text>
-  <text x="413" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#DC2626">✕</text>
-  <rect x="430" y="136" width="14" height="44" rx="2" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
-  <rect x="130" y="180" width="190" height="24" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="225" y="196" text-anchor="middle" font-size="9" fill="#92400E">石墨烯 · MoS₂ 原子级薄膜</text>
-  <line x1="320" y1="192" x2="468" y2="192" stroke="#D97706" stroke-width="2" marker-end="url(#arr7)"/>
-  <text x="480" y="196" font-size="10" font-weight="600" fill="#1E293B">共形贴附曲面 · 贴皮电子皮肤</text>
-  <text x="440" y="228" text-anchor="middle" font-size="10" fill="#94A3B8">换一种结构材料，就多进一种环境</text>
-</svg></div>
-
 ### 核心研究问题
 
 - **惯性与物理量传感器**：加速度计、陀螺、压力、声矢量都要在同一张仿真图里把质量块面积、弹簧刚度、梳齿间距、气膜阻尼一次算清，力学、电学、热噪声约束改一个就崩一片。
