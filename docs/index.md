@@ -7,7 +7,7 @@ hide:
 <div class="df-bg"></div>
 <div class="df-gridlines"></div>
 <div class="df-inner">
-<div class="df-pill">ECE 自学指南 · 复旦大学</div>
+<div class="df-pill">IC 自学指南 · 复旦大学</div>
 <h1 class="df-title">让知识<br><span class="df-glow">回归连续</span></h1>
 <p class="df-desc">从器件工艺到量子芯片，17 个前沿科研方向，200+ 门精选课程</p>
 <div class="df-ctas">
@@ -22,7 +22,7 @@ hide:
 <div class="df-lbg"></div>
 <div class="df-lwrap">
 <div class="df-linner">
-<div class="df-lmark">ECE 自学指南 · 复旦大学</div>
+<div class="df-lmark">IC 自学指南 · 复旦大学</div>
 <h1 class="df-lhl">让知识<br><span class="df-lred">回归连续</span></h1>
 <p class="df-ldeck">从器件工艺到量子芯片——复旦大学微电子专业自学指南，覆盖 17 个前沿科研方向与 200 余门精选课程。</p>
 <div class="df-lbtns">
