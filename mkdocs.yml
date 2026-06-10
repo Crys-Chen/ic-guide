@@ -167,22 +167,18 @@ nav:
           - 严质彬(哈工大): "学习地图/数学/数学进阶/矩阵分析/HIT.md"
         - 高等代数:
           - 丘维声(北大): "学习地图/数学/数学进阶/高等代数/pku.md"
-          - "MIT 18.700: Linear Algebra": "学习地图/数学/数学进阶/高等代数/MIT18.700.md"
-          - "Berkeley Math 110: Linear Algebra": "学习地图/数学/数学进阶/高等代数/Berkeley_Math110.md"
+          - "Axler: Linear Algebra Done Right（官方视频）": "学习地图/数学/数学进阶/高等代数/Axler_LADR.md"
         - 抽象代数:
           - 南大孙智伟:近世代数: "学习地图/数学/数学进阶/抽象代数/NJU_sun_algebra.md"
-          - "MIT 18.701/702: Algebra (Artin)": "学习地图/数学/数学进阶/抽象代数/MIT18.701.md"
           - Harvard: "学习地图/数学/数学进阶/抽象代数/harvard.md"
         - 密码学:
           - 北邮:现代密码学: "学习地图/数学/数学进阶/密码学/BUPT_crypto.md"
           - "MIT 6.875: Foundations of Cryptography": "学习地图/数学/数学进阶/密码学/MIT6.875.md"
           - Standford: "学习地图/数学/数学进阶/密码学/StandfordCrypto.md"
         - 信息论:
-          - 信息论基础: "学习地图/数学/数学进阶/信息论/information.md"
           - "信息论进阶(UCB CS126)": "学习地图/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md"
         - 离散数学:
           - 北大屈婉玲:离散数学: "学习地图/数学/数学进阶/离散数学/PKU_discrete.md"
-          - "UCB CS126": "学习地图/数学/数学进阶/离散数学/CS126.md"
         - 数值分析:
           - 复旦吴宗敏:数值逼近: "学习地图/数学/数学进阶/数值分析/FDU_wu_numerical.md"
           - 中科大:数值分析: "学习地图/数学/数学进阶/数值分析/USTC_numerical.md"
@@ -194,7 +190,6 @@ nav:
           - 补充资源: "学习地图/数学/数学进阶/凸优化/补充资源.md"
         - 复变函数:
           - 西安交大:复变函数: "学习地图/数学/数学进阶/复变函数/XJTU_complex.md"
-          - Princeton Stein 复分析: "学习地图/数学/数学进阶/复变函数/Princeton_Stein_complex.md"
           - Bilibili: "学习地图/数学/数学进阶/复变函数/bilibili.md"
     - 物理:
       - 导言: "学习地图/物理/index.md"
@@ -209,7 +204,7 @@ nav:
       - 固体物理:
         - 学习地图/物理/固体物理/index.md
         - 固体物理(复旦): "学习地图/物理/固体物理/MICR130013.md"
-        - MIT 8.231 Physics of Solids I: "学习地图/物理/固体物理/MIT8.231.md"
+        - 山东大学 赵明文:固体物理(57讲): "学习地图/物理/固体物理/SDU_zhaomw.md"
       - 半导体物理:
         - 学习地图/物理/半导体物理/index.md
         - 半导体物理(复旦): "学习地图/物理/半导体物理/MICR130005.md"
@@ -219,13 +214,9 @@ nav:
         - 导言: "学习地图/物理/光学/index.md"
         - "MIT 8.03: Vibrations and Waves": "学习地图/物理/光学/MIT8.03.md"
         - "MITx: Fundamentals of Integrated Photonics": "学习地图/物理/光学/MITx_integrated_photonics.md"
-        - "MIT 3.46: Photonic Materials and Devices": "学习地图/物理/光学/MIT3.46.md"
-        - 浙大 戴道锌:硅基光电子学基础导论: "学习地图/物理/光学/ZJU_dai_silicon_photonics.md"
         - 北大 周治平:光电子学: "学习地图/物理/光学/PKU_zhou_optoelectronics.md"
       - 传热学:
         - 导言: "学习地图/物理/传热学/index.md"
-        - "MIT 2.051: Introduction to Heat Transfer": "学习地图/物理/传热学/MIT2.051.md"
-        - "MIT 2.51: Intermediate Heat and Mass Transfer": "学习地图/物理/传热学/MIT2.51.md"
         - 西安交大 陶文铨:传热学: "学习地图/物理/传热学/XJTU_taowq.md"
         - 上海交大:传热学: "学习地图/物理/传热学/SJTU_heat_transfer.md"
       - 其他:
@@ -242,12 +233,10 @@ nav:
         - 学习地图/器件与工艺/半导体器件/index.md
         - 半导体器件原理(复旦): "学习地图/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md"
         - 半导体器件原理补充资源: "学习地图/器件与工艺/半导体器件/半导体器件原理_FDU/补充资源.md"
-        - "MIT 6.012: Microelectronic Devices": "学习地图/器件与工艺/半导体器件/MIT6.012.md"
-        - MIT6.012补充资源: "学习地图/器件与工艺/半导体器件/补充资源.md"
+        - 补充资源: "学习地图/器件与工艺/半导体器件/补充资源.md"
       - 先进工艺技术:
         - 学习地图/器件与工艺/先进集成电路工艺技术_FDU/index.md
         - 先进集成电路工艺技术(复旦): "学习地图/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md"
-        - "Stanford EE311: Advanced IC Design": "学习地图/器件与工艺/先进集成电路工艺技术_FDU/stanford_ee311.md"
         - 先进工艺技术学习资源导航: "学习地图/器件与工艺/先进集成电路工艺技术_FDU/advanced_process.md"
         - 补充资源: "学习地图/器件与工艺/先进集成电路工艺技术_FDU/补充资源.md"
     - 电路:
@@ -257,7 +246,6 @@ nav:
         - 清华于歆杰:电路原理: "学习地图/电路/入门速成/THU_yu_circuit.md"
         - 上交郑益慧:模拟电子技术基础: "学习地图/电路/入门速成/SJTU_zheng_analog.md"
         - "EE16A&B: Designing Information Devices and Systems": "学习地图/电路/入门速成/EE16.md"
-        - "UCB EE120: Signal and Systems": "学习地图/电路/入门速成/signal.md"
         - "MIT 6.007 Signals and Systems": "学习地图/电路/入门速成/Signals_and_Systems_AVO.md"
       - 硬件描述语言(HDL):
         - 学习地图/电路/硬件描述语言(HDL)/index.md
@@ -292,7 +280,7 @@ nav:
           - 电子科技大学：模拟电子技术基础: "学习地图/电路/模拟/模拟电子线路/uestc_analog.md"
         - 模拟集成电路:
           - 模拟集成电路(复旦): "学习地图/电路/模拟/模拟集成电路/MICR130030.md"
-          - "Razavi Design of Analog CMOS IC (UCLA)": "学习地图/电路/模拟/模拟集成电路/razavi.md"
+          - 东南大学 吴金:CMOS模拟集成电路设计: "学习地图/电路/模拟/模拟集成电路/SEU_wujin.md"
           - 西安交通大学：模拟CMOS集成电路(张鸿): "学习地图/电路/模拟/模拟集成电路/xjtu_analog_ic.md"
         - 电路分析基础:
           - 电路基础(Bilibili): "学习地图/电路/模拟/电路分析基础/tingyi.md"
@@ -300,7 +288,6 @@ nav:
           - 西电:高频电子线路: "学习地图/电路/模拟/高频电子线路/Xidian_high_freq.md"
           - 川大刘长军:射频通信电路: "学习地图/电路/模拟/高频电子线路/SCU_RF_comm.md"
           - "EE613: High-Frequency Analog Circuit Design": "学习地图/电路/模拟/高频电子线路/EE613.md"
-          - "MIT 6.776: High Speed Communication Circuits": "学习地图/电路/模拟/高频电子线路/MIT6.776.md"
         - 射频集成电路:
           - 复旦殷韵:射频电路设计: "学习地图/电路/模拟/射频集成电路/FDU_yin_RFIC.md"
           - 成电:射频集成电路: "学习地图/电路/模拟/射频集成电路/UESTC_RFIC.md"
@@ -311,7 +298,6 @@ nav:
         - 信号与系统:
           - 信号与系统(复旦): "学习地图/电路/信号处理/信号与系统/MICR130004.md"
           - "MIT 6.003: Signals and Systems": "学习地图/电路/信号处理/信号与系统/MIT6.003.md"
-          - "MIT 6.011: Signals, Systems and Inference": "学习地图/电路/信号处理/信号与系统/MIT6.011.md"
           - "UCB EE120: Signals and Systems": "学习地图/电路/信号处理/信号与系统/EE120.md"
         - 数字信号处理:
           - 数字信号处理(复旦): "学习地图/电路/信号处理/数字信号处理/INFO130010.md"
@@ -361,14 +347,12 @@ nav:
         - C++ 语言:
           - 北大郭炜:程序设计与算法(三)C++: "学习地图/算法编程/编程入门/cpp/PKU_guowei_cpp.md"
           - 侯捷:C++面向对象高级开发: "学习地图/算法编程/编程入门/cpp/houjie_cpp.md"
-          - "AUT AP1400-2: Advanced Programming": "学习地图/算法编程/编程入门/cpp/AUT1400.md"
           - "Stanford CS106L": "学习地图/算法编程/编程入门/cpp/CS106L.md"
           - "Stanford CS106B/X": "学习地图/算法编程/编程入门/cpp/CS106B_CS106X.md"
         - Rust 语言:
           - 杨旭:Rust入门教程: "学习地图/算法编程/编程入门/Rust/yangxu_rust.md"
           - 令狐壹冲:Rust编程教程: "学习地图/算法编程/编程入门/Rust/linghu_rust.md"
           - "Stanford CS110L": "学习地图/算法编程/编程入门/Rust/CS110L.md"
-          - "KAIST CS220": "学习地图/算法编程/编程入门/Rust/cs220.md"
           - "KAIST CS431": "学习地图/算法编程/编程入门/Rust/cs431.md"
       - 数据结构与算法:
         - 学习地图/算法编程/数据结构与算法/index.md
@@ -380,16 +364,12 @@ nav:
         - "UCB CS170": "学习地图/算法编程/数据结构与算法/CS170.md"
       - 编程语言设计与分析:
         - 学习地图/算法编程/编程语言设计与分析/index.md
-        - "Stanford CS242": "学习地图/算法编程/编程语言设计与分析/CS242.md"
         - NJU 软件分析: "学习地图/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md"
         - PKU 软件分析: "学习地图/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
         - "Cambridge: Semantics of Programming Languages": "学习地图/算法编程/编程语言设计与分析/Cambridge-Semantics.md"
       - 软件工程:
         - 学习地图/算法编程/软件工程/index.md
-        - 国防科大:软件工程: "学习地图/算法编程/软件工程/NUDT_software_eng.md"
         - 北大孙艳春:软件工程: "学习地图/算法编程/软件工程/PKU_sun_software_eng.md"
-        - "MIT 6.031": "学习地图/算法编程/软件工程/6031.md"
-        - "UCB CS169": "学习地图/算法编程/软件工程/CS169.md"
         - "CMU 17-803": "学习地图/算法编程/软件工程/17803.md"
       - 计算机图形学:
         - 导言: "学习地图/算法编程/计算机图形学/index.md"
@@ -398,7 +378,6 @@ nav:
         - GAMES101: "学习地图/算法编程/计算机图形学/GAMES101.md"
         - GAMES202: "学习地图/算法编程/计算机图形学/GAMES202.md"
         - GAMES103: "学习地图/算法编程/计算机图形学/GAMES103.md"
-        - "Stanford CS148": "学习地图/算法编程/计算机图形学/CS148.md"
         - "CMU 15-462": "学习地图/算法编程/计算机图形学/15462.md"
         - "USTC CG": "学习地图/算法编程/计算机图形学/USTC ComputerGraphics.md"
     - 系统架构:
@@ -453,16 +432,12 @@ nav:
         - "UCB CS186": "学习地图/系统架构/数据库系统/CS186.md"
         - "CMU 15-445": "学习地图/系统架构/数据库系统/15445.md"
         - "Caltech CS122": "学习地图/系统架构/数据库系统/CS122.md"
-        - "Stanford CS346": "学习地图/系统架构/数据库系统/CS346.md"
-        - "CMU 15-799": "学习地图/系统架构/数据库系统/15799.md"
       - 编译原理:
         - 学习地图/系统架构/编译原理/index.md
-        - "PKU 编译原理实践": "学习地图/系统架构/编译原理/PKU-Compilers.md"
         - "Stanford CS143": "学习地图/系统架构/编译原理/CS143.md"
         - "NJU 编译原理": "学习地图/系统架构/编译原理/NJU-Compilers.md"
         - "KAIST CS420": "学习地图/系统架构/编译原理/CS420.md"
         - "USTC 编译原理与技术": "学习地图/系统架构/编译原理/USTC-Compilers.md"
-        - "SJTU 编译原理": "学习地图/系统架构/编译原理/SJTU-Compilers.md"
     - 人工智能:
       - 导言: "学习地图/人工智能/index.md"
       - 入门速成:
@@ -504,15 +479,11 @@ nav:
         - 学习地图/人工智能/深度生成模型/index.md
         - 学习路线图: "学习地图/人工智能/深度生成模型/roadmap.md"
         - "MIT 6.S184": "学习地图/人工智能/深度生成模型/MIT6.S184.md"
-        - "MIT 6.S978: Deep Generative Models": "学习地图/人工智能/深度生成模型/MIT6.S978.md"
         - "UCB CS294-158: Deep Unsupervised Learning": "学习地图/人工智能/深度生成模型/CS294-158.md"
-        - "CMU 10423: Generative AI": "学习地图/人工智能/深度生成模型/CMU10423.md"
         - 大语言模型:
           - 清华刘知远 OpenBMB:大模型公开课: "学习地图/人工智能/深度生成模型/大语言模型/OpenBMB_LLM.md"
           - 李沐:深度学习论文精读: "学习地图/人工智能/深度生成模型/大语言模型/limu_paper_reading.md"
           - "Stanford CS336: Language Modeling from Scratch": "学习地图/人工智能/深度生成模型/大语言模型/CS336.md"
-          - "CMU 11-868: Large Language Model Systems": "学习地图/人工智能/深度生成模型/大语言模型/CMU11-868.md"
-          - "CMU 11-667: LLM Methods and Applications": "学习地图/人工智能/深度生成模型/大语言模型/CMU11-667.md"
           - "CMU 11-711: Advanced NLP": "学习地图/人工智能/深度生成模型/大语言模型/CMU11-711.md"
       - 机器学习理论:
         - 学习地图/人工智能/机器学习理论/index.md
@@ -520,8 +491,6 @@ nav:
         - 张志华:机器学习导论: "学习地图/人工智能/机器学习理论/zhangzhihua_introML.md"
         - 学习路线图: "学习地图/人工智能/机器学习理论/roadmap.md"
         - "CMU 10-708: Probabilistic Graphical Models": "学习地图/人工智能/机器学习理论/CMU10-708.md"
-        - "Columbia STAT 8201": "学习地图/人工智能/机器学习理论/STAT8201.md"
-        - "U Toronto STA 4273": "学习地图/人工智能/机器学习理论/STA4273.md"
         - "Stanford CS229M": "学习地图/人工智能/机器学习理论/CS229M.md"
   - 工程工具:
       - 工程工具/index.md
