@@ -207,9 +207,9 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
 
 <div><svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
   <rect width="820" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">可重构的颗粒：bit 级 vs word 级</text>
+  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">可重构的颗粒：bit 级 vs word 级</text>
   <line x1="410" y1="46" x2="410" y2="258" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
-  <text x="205" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">FPGA · bit 级（细粒度）</text>
+  <text x="205" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">FPGA · bit 级（细粒度）</text>
   <line x1="120" y1="92" x2="120" y2="218" stroke="#94A3B8" stroke-width="1"/>
   <line x1="160" y1="92" x2="160" y2="218" stroke="#94A3B8" stroke-width="1"/>
   <line x1="200" y1="92" x2="200" y2="218" stroke="#94A3B8" stroke-width="1"/>
@@ -227,24 +227,24 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
   <circle cx="160" cy="110" r="2.4" fill="#D97706"/><circle cx="200" cy="110" r="2.4" fill="#D97706"/><circle cx="240" cy="110" r="2.4" fill="#D97706"/>
   <circle cx="120" cy="150" r="2.4" fill="#D97706"/><circle cx="200" cy="150" r="2.4" fill="#D97706"/><circle cx="280" cy="150" r="2.4" fill="#D97706"/>
   <circle cx="160" cy="190" r="2.4" fill="#D97706"/><circle cx="240" cy="190" r="2.4" fill="#D97706"/>
-  <text x="205" y="244" text-anchor="middle" font-size="10" fill="#475569">每根线、每个查找表都能单独配 → 最灵活，连线开销最大</text>
-  <text x="615" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#9A3412">CGRA · word 级（粗粒度）</text>
+  <text x="205" y="244" text-anchor="middle" font-size="12" fill="#475569">每根线、每个查找表都能单独配 → 最灵活，连线开销最大</text>
+  <text x="615" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#9A3412">CGRA · word 级（粗粒度）</text>
   <line x1="510" y1="135" x2="720" y2="135" stroke="#475569" stroke-width="4"/>
   <line x1="510" y1="185" x2="720" y2="185" stroke="#475569" stroke-width="4"/>
   <line x1="560" y1="115" x2="560" y2="205" stroke="#475569" stroke-width="4"/>
   <line x1="670" y1="115" x2="670" y2="205" stroke="#475569" stroke-width="4"/>
   <rect x="500" y="112" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
-  <text x="530" y="139" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">ALU</text>
+  <text x="530" y="139" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400E">ALU</text>
   <rect x="640" y="112" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
-  <text x="670" y="139" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">×</text>
+  <text x="670" y="139" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400E">×</text>
   <rect x="500" y="166" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
-  <text x="530" y="193" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">+</text>
+  <text x="530" y="193" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400E">+</text>
   <rect x="640" y="166" width="60" height="44" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
-  <text x="670" y="193" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">ALU</text>
+  <text x="670" y="193" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400E">ALU</text>
   <circle cx="560" cy="135" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="135" r="3.6" fill="#1D4ED8"/>
   <circle cx="560" cy="185" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="185" r="3.6" fill="#1D4ED8"/>
-  <text x="615" y="244" text-anchor="middle" font-size="10" fill="#9A3412">以运算单元为颗粒、整字总线相连 → 配置开销骤降，效率逼近 ASIC</text>
-  <text x="410" y="280" text-anchor="middle" font-size="10.5" fill="#334155">颗粒做粗，可配项变少，省下大量连线，代价是不再什么都能配。</text>
+  <text x="615" y="244" text-anchor="middle" font-size="12" fill="#9A3412">以运算单元为颗粒、整字总线相连 → 配置开销骤降，效率逼近 ASIC</text>
+  <text x="410" y="280" text-anchor="middle" font-size="12" fill="#334155">颗粒做粗，可配项变少，省下大量连线，代价是不再什么都能配。</text>
 </svg></div>
 
 ### 核心研究问题

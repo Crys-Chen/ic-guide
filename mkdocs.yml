@@ -243,8 +243,6 @@ nav:
       - 导言: "学习地图/电路/index.md"
       - 入门速成:
         - 学习地图/电路/入门速成/index.md
-        - 清华于歆杰:电路原理: "学习地图/电路/入门速成/THU_yu_circuit.md"
-        - 上交郑益慧:模拟电子技术基础: "学习地图/电路/入门速成/SJTU_zheng_analog.md"
         - "EE16A&B: Designing Information Devices and Systems": "学习地图/电路/入门速成/EE16.md"
         - "MIT 6.007 Signals and Systems": "学习地图/电路/入门速成/Signals_and_Systems_AVO.md"
       - 硬件描述语言(HDL):
@@ -275,14 +273,15 @@ nav:
           - 模拟电子线路(复旦): "学习地图/电路/模拟/模拟电子线路/MICR130002.md"
           - "Razavi Electronics 1 & 2 (UCLA)": "学习地图/电路/模拟/模拟电子线路/razavi_electronics.md"
           - 清华大学：模拟电子技术基础(华成英): "学习地图/电路/模拟/模拟电子线路/qinghua_analog.md"
-          - 上海交通大学：模拟电子线路(郑益慧): "学习地图/电路/模拟/模拟电子线路/yihuizheng.md"
+          - 上交郑益慧:模拟电子技术基础: "学习地图/电路/模拟/模拟电子线路/SJTU_zheng_analog.md"
           - 电子科技大学：模拟电子技术基础: "学习地图/电路/模拟/模拟电子线路/uestc_analog.md"
         - 模拟集成电路:
           - 模拟集成电路(复旦): "学习地图/电路/模拟/模拟集成电路/MICR130030.md"
           - 东南大学 吴金:CMOS模拟集成电路设计: "学习地图/电路/模拟/模拟集成电路/SEU_wujin.md"
           - 西安交通大学：模拟CMOS集成电路(张鸿): "学习地图/电路/模拟/模拟集成电路/xjtu_analog_ic.md"
         - 电路分析基础:
-          - 电路基础(Bilibili): "学习地图/电路/模拟/电路分析基础/tingyi.md"
+          - 电路基础(复旦): "学习地图/电路/模拟/电路分析基础/tingyi.md"
+          - 清华于歆杰:电路原理: "学习地图/电路/模拟/电路分析基础/THU_yu_circuit.md"
         - 高频电子线路:
           - 西电:高频电子线路: "学习地图/电路/模拟/高频电子线路/Xidian_high_freq.md"
           - 川大刘长军:射频通信电路: "学习地图/电路/模拟/高频电子线路/SCU_RF_comm.md"
@@ -409,7 +408,6 @@ nav:
       - 机器学习:
         - 学习地图/人工智能/机器学习/index.md
         - 南大周志华:机器学习初步(西瓜书亲讲): "学习地图/人工智能/机器学习/NJU_zhou_ML.md"
-        - 台大李宏毅:机器学习 2023: "学习地图/人工智能/机器学习/NTU_lihongyi_ML.md"
         - "Coursera: Machine Learning": "学习地图/人工智能/机器学习/ML.md"
         - "Stanford CS229": "学习地图/人工智能/机器学习/CS229.md"
         - "UCB CS189": "学习地图/人工智能/机器学习/CS189.md"
@@ -422,7 +420,6 @@ nav:
         - 李沐:动手学深度学习 v2: "学习地图/人工智能/AI系统/d2l_limu.md"
         - "CMU 10-414/714: Deep Learning Systems": "学习地图/人工智能/AI系统/CMU10-414.md"
         - "MIT6.5940: TinyML and Efficient Deep Learning": "学习地图/人工智能/AI系统/EML.md"
-        - "Machine Learning Compilation": "学习地图/人工智能/AI系统/MLC.md"
         - 补充资源: "学习地图/人工智能/AI系统/补充资源.md"
       - 深度学习:
         - 学习地图/人工智能/深度学习/index.md

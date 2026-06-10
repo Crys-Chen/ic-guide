@@ -8,10 +8,14 @@
 - **[UCB CS61C](CS61C.md)** — Berkeley 体系结构入门,RISC-V ISA + 实战 Project
 - **[ETHz: Digital Design and Computer Architecture (DDCA)](DDCA.md)** — Onur Mutlu 主讲,YouTube 全公开;**逻辑清晰、内容现代,新手最好的本科课** ★
 - **[ETHz: Computer Architecture](CA.md)** — Onur Mutlu 的研究生进阶版,讲的是 ISCA/MICRO 级别的话题
+- **[清华:计算机组成原理](THU_computer_org.md)** — 中文计组体系课,57 讲完整搬运
+- **[国科大胡伟武:计算机体系结构](UCAS_hu_archbase.md)** — 龙芯首席科学家亲授,配套开源教材
 
 ## 学习路径建议
 
-**入门:Nand2Tetris(动手) + CS61C(系统化) → 进阶:DDCA → 研究入门:Onur Mutlu CA + 配合 Gem5 仿真器实操**
+**入门:Nand2Tetris(动手) + CS61C(系统化) → 进阶:DDCA → 研究入门:Onur Mutlu CA + 配合 [Gem5](../../../工程工具/Gem5.md) / [GPGPU-Sim](../../../工程工具/GPGPUSIM.md) 仿真器实操**(两个仿真器在工程工具板块有速通页)
+
+想动手从零实现一个 RISC-V 处理器并流片,见[专题社区](../../../专题社区/index.md)的"一生一芯"。
 
 学完 DDCA + CA,你就能读懂大多数 ISCA / MICRO / HPCA 论文了。
 

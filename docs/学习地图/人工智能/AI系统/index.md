@@ -9,7 +9,7 @@ AI 系统(ML Systems / AI Systems)研究**如何把 AI 模型高效地跑起来*
 - **[智能计算系统(AICS,陈云霁)](AICS.md)** — 中科院计算所陈云霁老师课程,**国内中文最权威的 AI 系统教材** ★
 - **[CMU 10-414/714: Deep Learning Systems](CMU10-414.md)** — Tianqi Chen + Zico Kolter 主讲,**国外 AI 系统课的标杆** ★;Lab 让你从零写一个深度学习库(类似 PyTorch)
 - **[MIT 6.5940: TinyML and Efficient Deep Learning](EML.md)** — Song Han 主讲,聚焦量化/剪枝/蒸馏等模型压缩技术
-- **[Machine Learning Compilation (MLC)](MLC.md)** — Tianqi Chen 在 mlc.ai 上的开源课,深入 TVM 等 AI 编译器
+- **[陈天奇:机器学习编译(MLC 中文版)](MLC_chen.md)** — 围绕 TVM 四大抽象讲透 AI 编译器,配套 Jupyter Notebook 实操
 - **[补充资源](补充资源.md)** — 推荐论文与延伸阅读
 
 ## 学习路径建议

@@ -31,10 +31,5 @@ hide:
 <div class="dm-row dm-cross"><span class="dm-lbl">交叉前沿</span><span class="dm-chips"><a class="dm-chip" href="AI算法与系统/">AI算法与系统</a><a class="dm-chip" href="具身智能/">具身智能</a><a class="dm-chip" href="量子计算与量子芯片/">量子计算与量子芯片</a><a class="dm-chip" href="类脑芯片/">类脑芯片</a></span></div>
 </div>
   </div>
-</div>
-
-<div style="text-align:center; padding: 3rem 0 4rem; opacity: 0.7;">
-  <a href="巡礼/" style="font-size: 1rem; letter-spacing: .08em; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px;">
-    巡礼：计算如何成为可能 →
-  </a>
+  <a class="rg-scroll" href="巡礼/"><span class="df-scroll-t">巡礼 · 计算如何成为可能</span><span class="df-scroll-a">↓</span></a>
 </div>
