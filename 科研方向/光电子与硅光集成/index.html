@@ -10948,15 +10948,15 @@
   <text x="705" y="162" text-anchor="middle" font-size="11.5" fill="white">Ge 外延</text>
   <text x="705" y="177" text-anchor="middle" font-size="11" fill="white" opacity="0.9">锗</text>
   <line x1="385" y1="96" x2="385" y2="120" stroke="#1E293B" stroke-width="1.5" marker-end="url(#ea)"/>
-  <text x="385" y="90" text-anchor="middle" font-size="9" fill="#475569">电信号输入</text>
+  <text x="385" y="90" text-anchor="middle" font-size="11" fill="#475569">电信号输入</text>
   <line x1="705" y1="189" x2="705" y2="213" stroke="#1E293B" stroke-width="1.5" marker-end="url(#ea)"/>
-  <text x="705" y="227" text-anchor="middle" font-size="9" fill="#475569">电信号输出</text>
-  <text x="135" y="258" text-anchor="middle" font-size="10" fill="#7F1D1D">硅是间接带隙</text>
-  <text x="135" y="272" text-anchor="middle" font-size="10" fill="#7F1D1D">→ 不能发光</text>
-  <text x="385" y="258" text-anchor="middle" font-size="10" fill="#0E7490">硅电光系数弱</text>
-  <text x="385" y="272" text-anchor="middle" font-size="10" fill="#0E7490">→ 难以高效调制</text>
-  <text x="705" y="258" text-anchor="middle" font-size="10" fill="#5B21B6">硅在 1310/1550nm 透明</text>
-  <text x="705" y="272" text-anchor="middle" font-size="10" fill="#5B21B6">→ 吸收不了</text>
+  <text x="705" y="227" text-anchor="middle" font-size="11" fill="#475569">电信号输出</text>
+  <text x="135" y="258" text-anchor="middle" font-size="11.5" fill="#7F1D1D">硅是间接带隙</text>
+  <text x="135" y="272" text-anchor="middle" font-size="11.5" fill="#7F1D1D">→ 不能发光</text>
+  <text x="385" y="258" text-anchor="middle" font-size="11.5" fill="#0E7490">硅电光系数弱</text>
+  <text x="385" y="272" text-anchor="middle" font-size="11.5" fill="#0E7490">→ 难以高效调制</text>
+  <text x="705" y="258" text-anchor="middle" font-size="11.5" fill="#5B21B6">硅在 1310/1550nm 透明</text>
+  <text x="705" y="272" text-anchor="middle" font-size="11.5" fill="#5B21B6">→ 吸收不了</text>
 </svg></div>
 
 <p>沿光信号在芯片上走一遍，就能看清这套外援逻辑。起点是<strong>光源</strong>。硅自己发不出激光，主流方案是把砷化镓（GaAs）或磷化铟（InP）这类 III-V 族激光器键合到硅片上，让外部产生的光从耦合区注入硅光子电路。键合界面至今是工艺难点，两种材料晶格常数不匹配，接合面缺陷密度比同质材料高出多个量级，直接影响激光器寿命和良率。光接着进入<strong>调制器</strong>。硅基的<strong>马赫-曾德调制器（MZM）</strong>靠电压改变波导折射率来调相位，但硅的电光系数太弱，相移段往往要几毫米才够；铌酸锂（LiNbO₃）的电光效应强一个数量级以上，几十微米就能完成同样的调制，<strong>薄膜铌酸锂（TFLN）</strong>因此成为过去几年光子集成研究中最活跃的材料之一。中间的<strong>波导</strong>是硅唯一的主场，红外光在硅波导里以极低损耗传播。到了终点的<strong>探测器</strong>又得请外援，硅对通信波长透明吸收不了，主流做法是在硅上外延生长一层<strong>锗（Ge）</strong>，锗对红外吸收强，把光高效转回电信号。</p>
