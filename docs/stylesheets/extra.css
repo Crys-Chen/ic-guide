@@ -2270,7 +2270,7 @@
 /* ============ 专题社区卡片 · 轻量化重设计（单色 / 紧凑 / 去渐变） ============ */
 .md-typeset .grid.cards.community-cards > ul {
   grid-template-columns: 1fr 1fr !important;
-  gap: .9rem !important;
+  gap: 1.6rem !important;
   margin: 1.4rem 0 !important;
 }
 .md-typeset .grid.cards.community-cards > ul > li {

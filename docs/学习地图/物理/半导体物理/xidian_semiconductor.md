@@ -10,12 +10,13 @@
 
 柴常春教授长期执教西电半导体物理课程，其 B 站系列已成为国内同类课程中播放量最高、口碑最好的版本之一。课程以刘恩科《半导体物理学》（国内最主流教材）为主线，系统讲授半导体的晶体结构与能带理论、载流子统计（费米-狄拉克分布）、载流子输运（漂移与扩散）、非平衡载流子与复合机制、PN 结理论（理想结方程、正向注入与反向截止）以及金属-半导体接触，完整覆盖复旦《半导体物理》课程全部核心内容，且讲解风格通俗易懂，对国内学生极为友好。
 
-86 讲完整课程录像在 B 站上持续更新并附有精品版重录，是非复旦学生自学半导体物理的首选中文资料。配合 Purdue ECE 606（Mark Lundstrom，英文）交叉对照，可同时兼顾直觉理解与严格推导。
+86 讲完整课程录像在 B 站有高播放量搬运，是非复旦学生自学半导体物理的首选中文资料。配合 Purdue ECE 606（Mark Lundstrom，英文）交叉对照，可同时兼顾直觉理解与严格推导。
 
 ## 学习地图
 
-- 课程视频（B 站，完整 86 讲）：<https://www.bilibili.com/video/BV19i4y1t7yP/>
-- 课程视频（B 站，精品重录版）：<https://www.bilibili.com/video/BV16a4y1x7u7/>
-- 半导体器件物理 II（B 站，进阶续集）：<https://www.bilibili.com/video/BV1Tc411h7JX/>
+- 课程视频（B 站，完整 86 讲）：<https://www.bilibili.com/video/BV1fp4y1z7oF/>
+- 课程视频（B 站，104P 补齐版，备选）：<https://www.bilibili.com/video/BV1Ce4y1K7fv/>
+- 课程视频（B 站，33 讲节选版）：<https://www.bilibili.com/video/BV19i4y1t7yP/>
+- 半导体器件物理 II（B 站，进阶续集，48 讲）：<https://www.bilibili.com/video/BV1Tc411h7JX/>
 - 配套 MOOC（中国大学 MOOC）：<https://www.icourse163.org/course/XDU-1472391161>
 - 课程教材：《半导体物理学》刘恩科 等（电子工业出版社，第 7 版）

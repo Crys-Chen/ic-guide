@@ -18,6 +18,5 @@ UIUC VLSI CAD 系列由 Rob A. Rutenbar 教授主讲，是 Coursera 上少数完
 
 - 课程主页（Part I · Logic）：<https://www.coursera.org/learn/vlsi-cad-logic>
 - 课程说明（Part I）：Rob A. Rutenbar 主讲，共 6 模块，审计模式免费；4.6/5 评分（557 条评价）
-- 中国大学 MOOC（搜索"超大规模集成电路设计"或"ASIC 设计"）：<https://www.icourse163.org/>
 - 课程教材（推荐）：《Electronic Design Automation: Synthesis, Verification, and Test》Laung-Terng Wang 等（Morgan Kaufmann）
 - 课程教材（布局布线）：《VLSI Physical Design: From Graph Partitioning to Timing Closure》Andrew B. Kahng 等（Springer）
