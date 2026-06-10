@@ -14,4 +14,4 @@
 
 ## 工具资源
 
-- AMD/Xilinx 大学计划：<https://www.xilinx.com/support/university.html> — 官方 Vivado 教材与 IP 核资源，与复旦课程工具环境配套
+- AMD/Xilinx 大学计划：<https://www.amd.com/en/corporate/university-program.html> — 官方 Vivado 教材与 IP 核资源，与复旦课程工具环境配套

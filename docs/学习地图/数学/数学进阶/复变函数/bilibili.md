@@ -14,5 +14,5 @@
 
 - 课程网站：[Bilibili](https://www.bilibili.com/video/BV1hV411v7KB/?spm_id_from=333.337.search-card.all.click&vd_source=9d2bce86b7ac9d09d427b27dd6f02b28)
 - 课程视频：参见课程网站
-- 课程教材：[教材](https://github.com/Crys-Chen/Fudan-ME/blob/resources/Fudan/%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%8F%8A%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95/%E8%AE%B2%E4%B9%89/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2-%E7%8E%8B%E7%BA%A2.pdf)
+- 课程教材：李红《复变函数与积分变换》（华中科技大学，高等教育出版社）
 - 课程作业：参见课程网站

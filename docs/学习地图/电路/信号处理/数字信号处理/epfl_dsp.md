@@ -14,7 +14,7 @@ Paolo Prandoni 主讲的 Coursera DSP 是目前英语数字信号处理入门质
 
 ## 学习地图
 
-- 课程主页（Coursera）：<https://www.coursera.org/learn/dsp>
+- 课程主页（Coursera）：<https://www.coursera.org/learn/dsp1>（原合并课已拆分为 DSP1–4，此为第一门）
 - 课程视频：参见 Coursera 平台（审计模式免费）
 - 课程教材：《Discrete-Time Signal Processing》Oppenheim & Schafer（与 MIT_DSP 共用）
 - 课程作业：Coursera 平台提供 Jupyter Notebook 编程作业

@@ -24,7 +24,6 @@ MIT 3.46 是材料系开设的**硅光器件 + 集成的进阶课**,由 Lionel K
 - 配套教材:Saleh & Teich《Fundamentals of Photonics》(章节级别引用 OCW 都给出)
 - 后续课程:
   - **AIM Photonics Summer Academy**:Kimerling 团队的暑期短期课,实战流片演练
-  - **HELIOS Silicon Photonics PhD Course**(欧盟 HELIOS Consortium 项目,完全免费):<https://www.helios-project.eu/>(21 学时完整版,涵盖 9 个章节,从波导到集成、封装、应用)
 
 ## 涵盖内容
 
@@ -40,5 +39,4 @@ MIT 3.46 是材料系开设的**硅光器件 + 集成的进阶课**,由 Lionel K
 
 - 课程是 2006 年版,**部分材料生长工艺细节略过时**(EUV 等已商业化),但物理基础依然 valid
 - 实操性强——OCW 资源含完整的"如何设计一个 Si MZI"的 walk-through,可作为 lab notebook 模板
-- 国内学生若对欧盟 HELIOS 完整 PhD 课程感兴趣,可下载它的全 21 小时视频 + 讲义(免费),内容比 MIT 3.46 更系统化
 - 想深入硅光设计实战:配合 [UBC SiEPIC](https://siepic.ubc.ca/) 工具(Lukas Chrostowski 团队维护)走完一个完整流片流程

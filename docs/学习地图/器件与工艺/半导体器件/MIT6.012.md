@@ -12,11 +12,11 @@ MIT 6.012《Microelectronic Devices and Circuits》是 MIT 电气工程系经典
 
 课程后半段将器件特性与小信号模型相结合，讲授 MOSFET/BJT 放大器的共源/共射/共栅/共基/共集配置，最终过渡到 CMOS 数字逻辑门的静态与动态特性分析。这种"器件—模型—电路"的一体化叙事，使本课成为联结半导体器件原理与模拟/数字电路设计的最佳桥梁课程，对复旦 MICR130006《半导体器件原理》的学习有极强的互补与拓展价值。
 
-OCW 提供了完整的讲义（Lecture Notes）、问题集（Problem Sets）及历年考题，部分版本（Spring 2009）还配有视频讲座录像，建议优先阅读讲义并独立完成习题，以检验对器件物理的掌握深度。
+OCW 提供了完整的讲义（Lecture Notes）、问题集（Problem Sets）及历年考题，但各版本均无视频录像，建议以讲义为主线自学并独立完成习题，以检验对器件物理的掌握深度。
 
 ## 学习地图
 
 - 课程网站：<https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/>
-- 课程视频：<https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/>（Spring 2009 版含视频）
+- 课程视频：暂无公开视频（OCW 各版本均只有讲义与习题；Spring 2009 版另见 <https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/>）
 - 课程教材：Sedra & Smith《Microelectronic Circuits》（7th ed.）；Neamen《半导体物理与器件》（中文版）
 - 课程作业：MIT OCW 课程页面 Assignments 及 Exams 栏目

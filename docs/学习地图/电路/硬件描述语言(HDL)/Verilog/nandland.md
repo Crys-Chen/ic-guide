@@ -18,8 +18,8 @@ Nandland 是由 Russell Merrick 创建的 FPGA 入门教育平台，以"让 FPGA
 
 - 平台主页：<https://nandland.com>
 - FPGA 入门课程：<https://nandland.com/fpga-101/>
-- Verilog 教程：<https://nandland.com/verilog/>
-- VHDL 教程：<https://nandland.com/vhdl/>
+- Verilog 教程：<https://nandland.com/learn-verilog/>
+- VHDL 教程：<https://nandland.com/learn-vhdl/>
 - 课程视频：平台内置视频 + YouTube 同步发布
 - 课程教材：《Getting Started with FPGAs》（官网购买，约 300 页）
 - 课程作业：各章节配套练习题，在线仿真验证

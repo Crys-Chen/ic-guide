@@ -15,7 +15,7 @@
 
 ## 学习地图
 
-- 课程网站：[国家精品课程平台](https://www.icourses.cn/sCourse/course_3519.html)
-- 课程视频：[B 站完整版](https://www.bilibili.com/video/BV16E411j7WA/)
+- 课程网站：暂无（原爱课程平台页面已下线）
+- 课程视频：[B 站完整版（97 讲）](https://www.bilibili.com/video/BV16E411j7WA/)
 - 课程教材：杨波《现代密码学》（第 4 版，清华大学出版社）
 - 课程作业：参考教材课后题

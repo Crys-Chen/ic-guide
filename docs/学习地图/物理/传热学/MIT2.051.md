@@ -16,7 +16,7 @@ MIT 机械系开设的**本科传热学入门课**,半学期完成,讲清楚"导
 ## 学习地图
 
 - 课程主页:<https://ocw.mit.edu/courses/2-051-introduction-to-heat-transfer-fall-2015/>
-- 课程视频:OCW + YouTube 部分;B 站搜"MIT 2.051"可找到搬运
+- 课程视频:暂无公开视频(OCW 仅提供讲义与 quiz review)
 - 课程教材:Incropera《Fundamentals of Heat and Mass Transfer》或 Cengel《Heat Transfer》(任一即可,**Cengel 写得更面向工程师**)
 - 课程作业:OCW 提供 quiz review、equation sheet;**问题集本身未公开**,需配合教材习题
 - 配套深化:同系列 [MIT 2.51 中级版](MIT2.51.md)

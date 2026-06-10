@@ -54,8 +54,8 @@ graph TB
 - **[MATLAB / 科学计算](科学计算.md)** — 信号处理、控制、仿真原型
 - **[LTspice](LTspice.md)** — 模拟电路仿真,免费且工业级
 - **[KiCad](KiCad.md)** — PCB 设计开源神器
-- **[Cadence Virtuoso](../电路/EDA/cadence.md)** — 模拟 IC 设计工业标准
-- **[Vivado](../电路/EDA/vivado.md)** — Xilinx FPGA 综合 + 实现
+- **[Cadence Virtuoso](../学习地图/电路/EDA/cadence.md)** — 模拟 IC 设计工业标准
+- **[Vivado](../学习地图/电路/EDA/vivado.md)** — Xilinx FPGA 综合 + 实现
 - **[ModelSim](ModelSim.md)** — HDL 仿真器(数字验证入门)
 - **[Gem5](Gem5.md)** — 体系结构研究的"国民仿真器",ISCA/MICRO 标配
 - **[GPGPU-Sim](GPGPUSIM.md)** — GPU 仿真,做 GPU 架构研究必备
@@ -73,11 +73,11 @@ graph TB
 
 | 方向 | 必备工具 |
 |---|---|
-| [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md) | Gem5 + GPGPU-Sim + Linux Shell |
-| [模拟与混合信号 IC](../../科研方向/模拟与混合信号IC.md) | Cadence Virtuoso + LTspice + MATLAB |
-| [可重构计算与FPGA](../../科研方向/可重构计算与FPGA.md) | Vivado + ModelSim + Verilog/Chisel |
-| [EDA 与设计自动化](../../科研方向/EDA与设计自动化.md) | Cadence/Synopsys + Python + C++ + Make/CMake |
-| [AI 算法与系统](../../科研方向/AI算法与系统.md) | Docker + Git + Python 生态 |
+| [处理器架构与编译系统](../科研方向/处理器架构与编译系统.md) | Gem5 + GPGPU-Sim + Linux Shell |
+| [模拟与混合信号 IC](../科研方向/模拟与混合信号IC.md) | Cadence Virtuoso + LTspice + MATLAB |
+| [可重构计算与FPGA](../科研方向/可重构计算与FPGA.md) | Vivado + ModelSim + Verilog/Chisel |
+| [EDA 与设计自动化](../科研方向/EDA与设计自动化.md) | Cadence/Synopsys + Python + C++ + Make/CMake |
+| [AI 算法与系统](../科研方向/AI算法与系统.md) | Docker + Git + Python 生态 |
 | 任何方向 | Git + LaTeX + Linux Shell |
 
 ## 学习节奏

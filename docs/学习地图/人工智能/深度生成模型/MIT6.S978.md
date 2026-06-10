@@ -15,6 +15,6 @@
 ## 学习地图
 
 - 课程主页：<https://mit-6s978.github.io/schedule.html>
-- 课程视频：参见课程主页
+- 课程视频：暂无公开视频（课程主页仅提供讲义 PDF 与论文清单）
 - 课程教材：无指定教材，以课程 slides 与 handout 为主
 - 课程作业：参见课程主页（含 PyTorch 编程作业）

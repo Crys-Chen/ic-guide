@@ -15,5 +15,5 @@
 
 ## 学习地图
 
-- 课程网站：[MLC.ai 中文版](https://mlc.ai/zh/)
-- 课程视频：B 站搜"MLC 机器学习编译"
+- 课程网站：[MLC.ai 中文版（2022 夏）](https://mlc.ai/summer22-zh/)
+- 课程视频：[第 1 讲 · 机器学习编译概述 - bilibili](https://www.bilibili.com/video/BV15v4y1g7EU/)，后续各讲见[陈天奇机器学习 B 站官方账号](https://space.bilibili.com/1663273796)
