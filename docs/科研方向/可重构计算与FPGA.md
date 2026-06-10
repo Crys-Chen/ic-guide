@@ -155,9 +155,9 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
 
 <div><svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:1.5rem auto;">
   <rect width="900" height="360" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="450" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">FPGA 的进化：从清一色查找表，到异构平台</text>
+  <text x="450" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">FPGA 的进化：从纯查找表阵列，到异构平台</text>
   <line x1="450" y1="46" x2="450" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
-  <text x="225" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1E40AF">早期 FPGA（1990 年代）</text>
+  <text x="225" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">早期 FPGA（1990 年代）</text>
   <rect x="95" y="86" width="260" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
   <line x1="138" y1="86" x2="138" y2="266" stroke="#BFDBFE" stroke-width="1"/>
   <line x1="181" y1="86" x2="181" y2="266" stroke="#BFDBFE" stroke-width="1"/>
@@ -171,45 +171,45 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
   <rect x="106" y="96" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
   <rect x="192" y="176" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
   <rect x="278" y="216" width="20" height="20" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.2"/>
-  <text x="225" y="150" text-anchor="middle" font-size="9.5" fill="#3B82F6" opacity="0.75">逻辑块（LUT）阵列</text>
+  <text x="225" y="150" text-anchor="middle" font-size="10" fill="#3B82F6" opacity="0.75">逻辑块（LUT）阵列</text>
   <rect x="130" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="190" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="250" y="74" width="16" height="8" rx="2" fill="#94A3B8"/>
   <rect x="83" y="120" width="8" height="16" rx="2" fill="#94A3B8"/>
   <rect x="83" y="170" width="8" height="16" rx="2" fill="#94A3B8"/>
   <rect x="83" y="220" width="8" height="16" rx="2" fill="#94A3B8"/>
-  <text x="70" y="100" text-anchor="end" font-size="9" fill="#64748B">IO</text>
-  <text x="225" y="292" text-anchor="middle" font-size="10" fill="#475569">清一色逻辑块（LUT）+ IO + 可编程连线</text>
-  <text x="675" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#9A3412">今天的 FPGA（异构平台）</text>
+  <text x="70" y="100" text-anchor="end" font-size="10" fill="#64748B">IO</text>
+  <text x="225" y="292" text-anchor="middle" font-size="10" fill="#475569">全部为逻辑块（LUT）+ IO + 可编程连线</text>
+  <text x="675" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#9A3412">今天的 FPGA（异构平台）</text>
   <rect x="525" y="86" width="290" height="180" rx="4" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.4"/>
   <line x1="525" y1="126" x2="815" y2="126" stroke="#BFDBFE" stroke-width="1"/>
   <line x1="525" y1="206" x2="815" y2="206" stroke="#BFDBFE" stroke-width="1"/>
   <rect x="565" y="92" width="22" height="168" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.3"/>
-  <text x="576" y="178" text-anchor="middle" font-size="9" fill="#166534" transform="rotate(-90 576 178)">BRAM</text>
+  <text x="576" y="178" text-anchor="middle" font-size="10" fill="#166534" transform="rotate(-90 576 178)">BRAM</text>
   <rect x="645" y="92" width="22" height="168" rx="3" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
-  <text x="656" y="178" text-anchor="middle" font-size="9" fill="#92400E" transform="rotate(-90 656 178)">DSP</text>
+  <text x="656" y="178" text-anchor="middle" font-size="10" fill="#92400E" transform="rotate(-90 656 178)">DSP</text>
   <rect x="602" y="98" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
   <rect x="730" y="100" width="18" height="18" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.1"/>
   <rect x="690" y="214" width="118" height="44" rx="4" fill="#E2E8F0" stroke="#475569" stroke-width="1.4"/>
-  <text x="749" y="240" text-anchor="middle" font-size="9.5" fill="#334155">ARM 处理器子系统</text>
+  <text x="749" y="240" text-anchor="middle" font-size="10" fill="#334155">ARM 处理器子系统</text>
   <line x1="525" y1="166" x2="815" y2="166" stroke="#B91C1C" stroke-width="2.4"/>
   <line x1="708" y1="86" x2="708" y2="214" stroke="#B91C1C" stroke-width="2.4"/>
   <circle cx="708" cy="166" r="3.2" fill="#B91C1C"/>
-  <text x="812" y="160" text-anchor="end" font-size="9" fill="#B91C1C">硬核 NoC</text>
+  <text x="812" y="160" text-anchor="end" font-size="10" fill="#B91C1C">硬核 NoC</text>
   <rect x="560" y="74" width="18" height="8" rx="2" fill="#64748B"/>
   <rect x="600" y="74" width="18" height="8" rx="2" fill="#64748B"/>
   <rect x="640" y="74" width="18" height="8" rx="2" fill="#64748B"/>
-  <text x="688" y="81" text-anchor="start" font-size="9" fill="#475569">← 高速收发器</text>
-  <text x="675" y="292" text-anchor="middle" font-size="10" fill="#9A3412">逻辑 + DSP + BRAM + 硬核 NoC + ARM…每种硬块都是一次赌赢的硬化</text>
+  <text x="688" y="81" text-anchor="start" font-size="10" fill="#475569">← 高速收发器</text>
+  <text x="675" y="292" text-anchor="middle" font-size="10" fill="#9A3412">逻辑 + DSP + BRAM + 硬核 NoC + ARM…每种硬块都是一次成功的硬化</text>
 </svg></div>
 
 可即便如此，FPGA 还不是可重构的终点。它的灵活来自 **bit 级**的细粒度可配置，每一个查找表、每一段连线都能单独设定，灵活到了极致，连线的代价也大到了极致。再往前一步是**粗粒度**的思路：与其让人摆弄每一根线，不如把可重构的颗粒做大，让一个个完整的运算单元按需连成数据通路，这就是 CGRA 与"**软件定义芯片**"。粒度一粗，配置开销骤降，效率随之向 ASIC 靠拢，代价是不再像 FPGA 那样什么都能配。从 FPGA 到软件定义芯片，争的始终是同一件事：既要流片之后还能改的自由，又要逼近专用芯片的效率，而不必在两者之间二选一。
 
 <div><svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;">
   <rect width="820" height="300" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">可重构的颗粒：bit 级 vs word 级</text>
+  <text x="410" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E293B">可重构的颗粒：bit 级 vs word 级</text>
   <line x1="410" y1="46" x2="410" y2="258" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
-  <text x="205" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1E40AF">FPGA · bit 级（细粒度）</text>
+  <text x="205" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">FPGA · bit 级（细粒度）</text>
   <line x1="120" y1="92" x2="120" y2="218" stroke="#94A3B8" stroke-width="1"/>
   <line x1="160" y1="92" x2="160" y2="218" stroke="#94A3B8" stroke-width="1"/>
   <line x1="200" y1="92" x2="200" y2="218" stroke="#94A3B8" stroke-width="1"/>
@@ -227,8 +227,8 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
   <circle cx="160" cy="110" r="2.4" fill="#D97706"/><circle cx="200" cy="110" r="2.4" fill="#D97706"/><circle cx="240" cy="110" r="2.4" fill="#D97706"/>
   <circle cx="120" cy="150" r="2.4" fill="#D97706"/><circle cx="200" cy="150" r="2.4" fill="#D97706"/><circle cx="280" cy="150" r="2.4" fill="#D97706"/>
   <circle cx="160" cy="190" r="2.4" fill="#D97706"/><circle cx="240" cy="190" r="2.4" fill="#D97706"/>
-  <text x="205" y="244" text-anchor="middle" font-size="9.5" fill="#475569">每根线、每个查找表都能单独配 → 最灵活，连线开销最大</text>
-  <text x="615" y="64" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#9A3412">CGRA · word 级（粗粒度）</text>
+  <text x="205" y="244" text-anchor="middle" font-size="10" fill="#475569">每根线、每个查找表都能单独配 → 最灵活，连线开销最大</text>
+  <text x="615" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#9A3412">CGRA · word 级（粗粒度）</text>
   <line x1="510" y1="135" x2="720" y2="135" stroke="#475569" stroke-width="4"/>
   <line x1="510" y1="185" x2="720" y2="185" stroke="#475569" stroke-width="4"/>
   <line x1="560" y1="115" x2="560" y2="205" stroke="#475569" stroke-width="4"/>
@@ -243,8 +243,8 @@ FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片
   <text x="670" y="193" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400E">ALU</text>
   <circle cx="560" cy="135" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="135" r="3.6" fill="#1D4ED8"/>
   <circle cx="560" cy="185" r="3.6" fill="#1D4ED8"/><circle cx="670" cy="185" r="3.6" fill="#1D4ED8"/>
-  <text x="615" y="244" text-anchor="middle" font-size="9.5" fill="#9A3412">以运算单元为颗粒、整字总线相连 → 配置开销骤降，效率逼近 ASIC</text>
-  <text x="410" y="280" text-anchor="middle" font-size="10.5" fill="#334155">颗粒做粗，可配的东西变少，省下大量连线，代价是不再什么都能配。</text>
+  <text x="615" y="244" text-anchor="middle" font-size="10" fill="#9A3412">以运算单元为颗粒、整字总线相连 → 配置开销骤降，效率逼近 ASIC</text>
+  <text x="410" y="280" text-anchor="middle" font-size="10.5" fill="#334155">颗粒做粗，可配项变少，省下大量连线，代价是不再什么都能配。</text>
 </svg></div>
 
 ### 核心研究问题

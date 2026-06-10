@@ -48,13 +48,13 @@ EDA的工作，本质是在求解一连串 **NP hard 甚至更难的优化问题
   <text x="704" y="90" text-anchor="middle" font-size="10" fill="#3B82F6" font-family="sans-serif">送厂流片</text>
   <!-- Problem annotation under Box 3 -->
   <rect x="308" y="114" width="168" height="38" rx="5" fill="#FEF9C3" stroke="#D97706" stroke-width="1.2"/>
-  <text x="392" y="129" text-anchor="middle" font-size="9.5" fill="#92400E" font-family="sans-serif">NP-难 | 数十亿单元</text>
-  <text x="392" y="145" text-anchor="middle" font-size="9.5" fill="#92400E" font-family="sans-serif">可能迭代数周</text>
+  <text x="392" y="129" text-anchor="middle" font-size="10" fill="#92400E" font-family="sans-serif">NP-难 | 数十亿单元</text>
+  <text x="392" y="145" text-anchor="middle" font-size="10" fill="#92400E" font-family="sans-serif">可能迭代数周</text>
   <line x1="392" y1="102" x2="392" y2="114" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4,3"/>
   <!-- AI/ML acceleration box (amber) -->
   <rect x="174" y="158" width="132" height="40" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/>
   <text x="240" y="175" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400E" font-family="sans-serif">ML 模型</text>
-  <text x="240" y="192" text-anchor="middle" font-size="9.5" fill="#D97706" font-family="sans-serif">AI / ML 加速</text>
+  <text x="240" y="192" text-anchor="middle" font-size="10" fill="#D97706" font-family="sans-serif">AI / ML 加速</text>
   <!-- Arrow from ML box to Box 2 -->
   <line x1="236" y1="158" x2="236" y2="108" stroke="#D97706" stroke-width="1.5" stroke-dasharray="5,3"/>
   <polygon points="232,108 236,96 240,108" fill="#D97706"/>
@@ -74,7 +74,7 @@ AI 能够用于 EDA ,主要源于两点。一是 EDA 的核心对象天生就是
     <marker id="edaArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
   </defs>
   <rect width="820" height="320" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-  <text x="410" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">为什么 AI 学得动数字、学不动模拟</text>
+  <text x="410" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E293B">为什么 AI 适配数字 EDA、难适配模拟 EDA</text>
   <line x1="410" y1="50" x2="410" y2="292" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
   <text x="205" y="74" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#15803D">数字 EDA：一把清晰的尺</text>
   <path d="M120,210 A85,85 0 0,1 205,125" fill="none" stroke="#DC2626" stroke-width="10" stroke-linecap="round"/>
@@ -84,7 +84,7 @@ AI 能够用于 EDA ,主要源于两点。一是 EDA 的核心对象天生就是
   <text x="138" y="232" text-anchor="middle" font-size="10" fill="#B91C1C">✗ 超时</text>
   <text x="272" y="232" text-anchor="middle" font-size="10" fill="#15803D">✓ 达标</text>
   <text x="205" y="262" text-anchor="middle" font-size="10.5" fill="#334155">满足时序？好坏一个数说了算</text>
-  <text x="205" y="282" text-anchor="middle" font-size="10" fill="#15803D">→ 有明确学习信号，机器学得动</text>
+  <text x="205" y="282" text-anchor="middle" font-size="11" fill="#15803D">→ 学习信号明确，模型可学</text>
   <text x="615" y="74" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#9A3412">模拟 EDA：相互牵制的清单</text>
   <polygon points="615,107 556,141 556,209 615,243 674,209 674,141" fill="none" stroke="#CBD5E1" stroke-width="1.2"/>
   <line x1="615" y1="175" x2="615" y2="107" stroke="#E2E8F0" stroke-width="1"/>
@@ -94,12 +94,12 @@ AI 能够用于 EDA ,主要源于两点。一是 EDA 的核心对象天生就是
   <line x1="615" y1="175" x2="674" y2="209" stroke="#E2E8F0" stroke-width="1"/>
   <line x1="615" y1="175" x2="674" y2="141" stroke="#E2E8F0" stroke-width="1"/>
   <polygon points="615,124 570,149 567,201 615,226 659,197 656,151" fill="#FED7AA" stroke="#D97706" stroke-width="1.6" opacity="0.85"/>
-  <text x="615" y="100" text-anchor="middle" font-size="9" fill="#9A3412">增益</text>
-  <text x="549" y="138" text-anchor="end" font-size="9" fill="#9A3412">带宽</text>
-  <text x="549" y="216" text-anchor="end" font-size="9" fill="#9A3412">噪声</text>
-  <text x="615" y="258" text-anchor="middle" font-size="9" fill="#9A3412">功耗</text>
-  <text x="681" y="216" text-anchor="start" font-size="9" fill="#9A3412">稳定性</text>
-  <text x="681" y="138" text-anchor="start" font-size="9" fill="#9A3412">线性度</text>
+  <text x="615" y="100" text-anchor="middle" font-size="10" fill="#9A3412">增益</text>
+  <text x="549" y="138" text-anchor="end" font-size="10" fill="#9A3412">带宽</text>
+  <text x="549" y="216" text-anchor="end" font-size="10" fill="#9A3412">噪声</text>
+  <text x="615" y="258" text-anchor="middle" font-size="10" fill="#9A3412">功耗</text>
+  <text x="681" y="216" text-anchor="start" font-size="10" fill="#9A3412">稳定性</text>
+  <text x="681" y="138" text-anchor="start" font-size="10" fill="#9A3412">线性度</text>
   <text x="615" y="284" text-anchor="middle" font-size="10" fill="#9A3412">改好一个常牺牲另几个，没有单一目标 → 拿不到可学信号</text>
 </svg></div>
 
@@ -114,7 +114,7 @@ AI 能够用于 EDA ,主要源于两点。一是 EDA 的核心对象天生就是
   <line x1="410" y1="50" x2="410" y2="270" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,4"/>
   <text x="205" y="76" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#1E40AF">2D · 平铺</text>
   <rect x="90" y="200" width="230" height="20" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"/>
-  <text x="205" y="214" text-anchor="middle" font-size="9" fill="#475569">封装基板</text>
+  <text x="205" y="214" text-anchor="middle" font-size="10" fill="#475569">封装基板</text>
   <rect x="120" y="172" width="170" height="28" rx="3" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.4"/>
   <text x="205" y="190" text-anchor="middle" font-size="10" fill="#1E40AF">单层裸片</text>
   <line x1="150" y1="172" x2="150" y2="144" stroke="#EA580C" stroke-width="2" marker-end="url(#heatUp)"/>
@@ -129,8 +129,8 @@ AI 能够用于 EDA ,主要源于两点。一是 EDA 的核心对象天生就是
   <line x1="560" y1="134" x2="560" y2="198" stroke="#64748B" stroke-width="2"/>
   <line x1="615" y1="134" x2="615" y2="198" stroke="#64748B" stroke-width="2"/>
   <line x1="670" y1="134" x2="670" y2="198" stroke="#64748B" stroke-width="2"/>
-  <text x="712" y="148" text-anchor="start" font-size="9" fill="#475569">TSV 跨die</text>
-  <text x="712" y="169" text-anchor="start" font-size="9" fill="#B91C1C">热困中层</text>
+  <text x="712" y="148" text-anchor="start" font-size="10" fill="#475569">TSV 跨die</text>
+  <text x="712" y="169" text-anchor="start" font-size="10" fill="#B91C1C">热困中层</text>
   <line x1="585" y1="156" x2="585" y2="140" stroke="#EA580C" stroke-width="2"/>
   <line x1="645" y1="156" x2="645" y2="140" stroke="#EA580C" stroke-width="2"/>
   <line x1="553" y1="132" x2="677" y2="132" stroke="#B91C1C" stroke-width="2" stroke-dasharray="3,2"/>
