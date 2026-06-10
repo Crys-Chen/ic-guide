@@ -148,7 +148,7 @@ graph TB
 
 我走到哪，就把路铺到哪。
 
-### 从 CS 到 IC
+### Make IC Great Again
 
 最后，要特别致敬北京大学的 [CS 自学指南](https://github.com/pkuflyingpig/cs-self-learning/)。这个网站最初的灵感和框架都来自那个仓库，某种程度上，「IC 自学指南」就是它的硬件孪生版，其中一些课程和工具的教程也直接沿用了原仓库的内容。
 
