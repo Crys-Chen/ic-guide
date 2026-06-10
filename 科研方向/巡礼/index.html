@@ -12,7 +12,7 @@
         <meta name="author" content="Crys-Chen">
       
       
-        <link rel="canonical" href="https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%A8%E6%99%AF%E5%8F%99%E4%BA%8B/">
+        <link rel="canonical" href="https://crys-chen.github.io/Fudan-ME/%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%B7%A1%E7%A4%BC/">
       
       
         <link rel="prev" href="../">
@@ -26,7 +26,7 @@
     
     
       
-        <title>全景叙事 - ECE自学指南</title>
+        <title>巡礼 - ECE自学指南</title>
       
     
     
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              全景叙事
+              巡礼
             
           </span>
         </div>
@@ -489,7 +489,7 @@
           
   
   <span class="md-ellipsis">
-    全景叙事
+    巡礼
   </span>
   
 
@@ -500,7 +500,7 @@
         
   
   <span class="md-ellipsis">
-    全景叙事
+    巡礼
   </span>
   
 
@@ -12494,7 +12494,7 @@
   
 
 
-  <h1>全景叙事</h1>
+  <h1>巡礼</h1>
 
 <p>集成电路（微电子）这门学科，实在是包罗万象。我梳理下来，大概有17个科研方向。本科期间做科研，常感觉自己“只见树木，不见森林”。这几年东一榔头西一棒槌做下来，总算有了点系统的认知。如今即将毕业，我整理了过往对每个方向的笔记，尝试梳理出一个较为完整的学术谱系。现在将其分享出来，希望对大家了解这门学科有所帮助。</p>
 <p>本文其实只是我本科笔记的冰山一角。目前我正在用 Vibe Coding 搭建一个网站，详细介绍每个科研方向究竟在研究什么、适合什么样的同学、需要哪些领域的知识、国内外有哪些知名课题组、哪些对口企业。整个集成电路学科相关的课程资源和学习地图，届时也会一并整理分享出来。某种程度上，这才是我真正的毕设。本文只是一个先导，敬请期待！</p>
@@ -13514,7 +13514,49 @@
 <p>感知声音、翻译信号、传递信息、驱动电机......这些接口让计算能听、能说、能出力。但还有一个接口，野心更大，试图让芯片与生物连接，这便是<strong>生物电子与脑机接口</strong>。</p>
 <p>硅用电子通信。神经元用离子和递质通信。两套完全不同的语言，之间没有现成的词典。<strong>生物电子与脑机接口</strong>要在硅和神经之间搭翻译层：电极要小到不损伤脑组织，要稳定到在体内工作几年不退化，要灵敏到在电化学噪声里分辨出单个神经元的放电，还不能被免疫系统当异物排斥。这并不是在感知外部世界，而是让一个计算系统直接读写另一个计算系统的内部状态。</p>
 <p>当芯片成了银行、电网、国防的底层之后，一个新问题冒出来：你凭什么相信一块芯片是可靠的？软件加密做得再好，也假设了底下的硬件可信。可硬件本身会泄密。计算的物理过程，会泄露计算的内容。比如芯片做加密运算时，功耗会随密钥的每一位微微起伏，拿示波器量一量功耗曲线，就能把密钥一位一位推出来。这叫侧信道攻击（side-channel attack）。此外，处理器为了跑得快，会提前猜测、抢先执行后面的指令，猜错了就丢掉；可这些被丢掉的运算在缓存里留下了痕迹，攻击者顺着痕迹就能读到本不该看到的数据。为了快而做的优化，反倒成了漏洞。</p>
-<p><img alt="侧信道攻击：从加密运算到密钥泄露" src="../assets/fig-18.png" /></p>
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <defs>
+    <marker id="hw-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
+    </marker>
+  </defs>
+  <!-- Panel 1: 芯片正常运行 -->
+  <rect x="20" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="135" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">① 芯片正常运行</text>
+  <rect x="55" y="58" width="160" height="90" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="135" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">AES 加密运算</text>
+  <text x="135" y="100" text-anchor="middle" font-size="20" fill="#1D4ED8">🔒</text>
+  <text x="135" y="124" text-anchor="middle" font-size="11" fill="#1E40AF">密钥安全存储</text>
+  <text x="135" y="142" text-anchor="middle" font-size="11" fill="#1E40AF">在芯片内部</text>
+  <text x="135" y="185" text-anchor="middle" font-size="11" fill="#64748B">正常功能：加密输出</text>
+  <!-- Arrow 1→2 -->
+  <line x1="250" y1="110" x2="298" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/>
+  <!-- Panel 2: 攻击者测量 -->
+  <rect x="300" y="20" width="260" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="430" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">② 攻击者测量</text>
+  <rect x="330" y="58" width="140" height="80" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="400" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">AES 加密运算</text>
+  <text x="400" y="100" text-anchor="middle" font-size="20" fill="#1D4ED8">🔒</text>
+  <text x="400" y="120" text-anchor="middle" font-size="11" fill="#1E40AF">芯片运行中</text>
+  <!-- Red probe wire -->
+  <line x1="400" y1="138" x2="400" y2="158" stroke="#EF4444" stroke-width="2.5"/>
+  <circle cx="400" cy="138" r="4" fill="#EF4444"/>
+  <!-- Oscilloscope waves -->
+  <polyline points="420,170 430,155 440,175 450,155 460,170 470,158 480,168 490,158 500,165 510,155 520,165 530,158 540,168" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="430" y="198" text-anchor="middle" font-size="11" fill="#DC2626">功耗 / 电磁 / 时序测量</text>
+  <!-- Arrow 2→3 -->
+  <line x1="560" y1="110" x2="608" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#hw-arrow)"/>
+  <!-- Panel 3: 密钥泄露 -->
+  <rect x="610" y="20" width="230" height="180" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="725" y="44" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">③ 密钥泄露</text>
+  <rect x="645" y="58" width="160" height="80" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="725" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#DC2626">密钥暴露</text>
+  <text x="725" y="100" text-anchor="middle" font-size="20" fill="#DC2626">🔓</text>
+  <text x="725" y="120" text-anchor="middle" font-size="11" fill="#B91C1C">无需密码数学漏洞</text>
+  <text x="725" y="160" text-anchor="middle" font-size="11" fill="#64748B">密钥恢复</text>
+  <text x="725" y="178" text-anchor="middle" font-size="11" fill="#64748B">无需暴力破解</text>
+</svg></div>
+
 <p><strong>硬件安全与可信计算</strong>研究的就是当攻击者能碰到计算的物理层面，怎么守住计算的保密性与安全性。一个办法是利用制造时的微小偏差，给每块芯片生成一个无法复制的"指纹"，用来证明它的身份；还有一个办法是在芯片里划出一块隔离区，敏感运算只在里面做，外面碰不到；还有从开机第一行代码起逐级验证，确保整条启动链没被篡改。还有一种思路更釜底抽薪。与其费力守住计算的物理层面，不如让数据自己就读不懂。同态加密（homomorphic encryption）让计算可以直接在密文上进行——你把加密后的数据交给一台完全不可信的服务器，它在不解密的情况下算出结果，结果还是密文，只有你能解开。从头到尾，服务器没见过你的原始数据。代价是慢，在密文上算一次可能比明文慢上千上万倍。怎么用专用硬件把它加速到能用，是这个方向最前沿的挑战之一。</p>
 <hr />
 <h2 id="6">6 计算的革命</h2>
@@ -13676,7 +13718,64 @@
 <p>然而现在的AI还是差强人意。大脑仅用 20 瓦的功耗就能在室温下完成人类全部的感知、语言、推理和运动控制，AI 用几十亿参数和几百瓦的功耗却还做不到。能不能模仿大脑来设计芯片？这就是<strong>类脑芯片</strong>做的事。大脑神经元只在收到脉冲时才激活，其余时间几乎不耗能。信息不编码在电压的高低里，而是在脉冲的时序里。神经突触既存储又计算，且本质上是模拟计算，突触电位连续变化，脉冲时序连续分布。类脑芯片提取这套计算策略，试图用半导体工艺复刻我们的大脑。脉冲神经网络（spiking neural network）、忆阻器突触，都是这一方向的结晶。</p>
 <p>如果说，类脑芯片只是在计算架构上做文章，本质上还是用电信号做计算，那么光计算与量子计算则彻底颠覆了芯片的底层物理机制。神经网络推理的核心是矩阵乘法 y = Wx——把输入向量乘以权重矩阵得到输出。光学干涉天然就能完成这件事。把输入向量的各个分量分别编码成不同光路上的光强或相位，让这些光路通过一个由分束器和相移器构成的网格，光在内部干涉叠加，从输出端口出来的每一路光强就对应矩阵乘法的一个结果。光计算的计算功耗低，频率高，且可以用不同频率的光同时计算，并行度高。但问题在于精度低、算子单一、光电转换功耗高、光器件的集成度也差。这是目前光计算研究者在攻坚的瓶颈。</p>
 <p><strong>量子计算与量子芯片</strong>则扎根量子物理。经典比特是 0 或者 1，量子比特（qubit）可以同时处于两者的叠加态（superposition）。多个量子比特纠缠关联，干涉效应让错误的计算路径相消、正确的路径增强。对特定问题——大数分解、分子模拟、组合优化——量子算法需要的步骤数可以指数级少于经典算法。但量子态极其脆弱，环境里任何不受控的扰动都会破坏叠加。研究者面对的核心问题是：用什么物理系统做量子比特最稳（超导、离子、光子还没分出胜负），又怎么用一堆会出错的物理比特纠错出一个可靠的逻辑比特？今天的超导量子芯片要在接近绝对零度里工作，能不能放松这一条件？</p>
-<p><img alt="量子计算：经典比特 → 量子比特 → 量子擅长的问题" src="../assets/fig-19.png" /></p>
+<div><svg viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif;">
+  <defs>
+    <marker id="qc-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
+    </marker>
+  </defs>
+  <!-- Panel 1: 经典比特 -->
+  <rect x="10" y="10" width="240" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="130" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">① 经典比特</text>
+  <!-- Switch OFF (0) -->
+  <rect x="50" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="85" y="80" text-anchor="middle" font-size="22" font-weight="bold" fill="#1D4ED8">0</text>
+  <text x="85" y="100" text-anchor="middle" font-size="10" fill="#3B82F6">OFF</text>
+  <!-- Switch ON (1) -->
+  <rect x="140" y="55" width="70" height="55" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="175" y="80" text-anchor="middle" font-size="22" font-weight="bold" fill="#1D4ED8">1</text>
+  <text x="175" y="100" text-anchor="middle" font-size="10" fill="#3B82F6">ON</text>
+  <!-- OR label -->
+  <text x="130" y="90" text-anchor="middle" font-size="11" fill="#64748B">或</text>
+  <text x="130" y="145" text-anchor="middle" font-size="10" fill="#64748B">确定性：每次只能是</text>
+  <text x="130" y="162" text-anchor="middle" font-size="10" fill="#64748B">0 或 1 之一</text>
+  <text x="130" y="195" text-anchor="middle" font-size="10" fill="#64748B">n位 = 2ⁿ 种状态之一</text>
+  <!-- Arrow -->
+  <line x1="250" y1="110" x2="290" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/>
+  <!-- Panel 2: 量子比特 -->
+  <rect x="292" y="10" width="270" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="427" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">② 量子比特</text>
+  <!-- Bloch sphere (simple: circle + arrow) -->
+  <circle cx="427" cy="110" r="55" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <!-- Equator ellipse (hint of 3D) -->
+  <ellipse cx="427" cy="110" rx="55" ry="14" fill="none" stroke="#7C3AED" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Vertical axis -->
+  <line x1="427" y1="55" x2="427" y2="165" stroke="#7C3AED" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- |0⟩ and |1⟩ poles -->
+  <text x="427" y="50" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">|0⟩</text>
+  <text x="427" y="178" text-anchor="middle" font-size="10" font-weight="600" fill="#6D28D9">|1⟩</text>
+  <!-- State arrow (superposition) -->
+  <line x1="427" y1="110" x2="468" y2="78" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#qc-arrow)"/>
+  <circle cx="427" cy="110" r="3" fill="#7C3AED"/>
+  <text x="478" y="74" font-size="10" fill="#6D28D9">|ψ⟩</text>
+  <text x="427" y="195" text-anchor="middle" font-size="10" fill="#64748B">叠加态 | n量子比特 = 2ⁿ个状态同时</text>
+  <!-- Arrow -->
+  <line x1="562" y1="110" x2="598" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#qc-arrow)"/>
+  <!-- Panel 3: 应用场景 -->
+  <rect x="600" y="10" width="250" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="725" y="34" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">③ 量子擅长的问题</text>
+  <rect x="625" y="50" width="200" height="38" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="725" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">分子模拟</text>
+  <text x="725" y="83" text-anchor="middle" font-size="9" fill="#166534">药物设计·材料发现</text>
+  <rect x="625" y="98" width="200" height="38" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.2"/>
+  <text x="725" y="116" text-anchor="middle" font-size="11" font-weight="600" fill="#B45309">大整数分解</text>
+  <text x="725" y="131" text-anchor="middle" font-size="9" fill="#92400E">Shor 算法·RSA 威胁</text>
+  <rect x="625" y="146" width="200" height="38" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="725" y="164" text-anchor="middle" font-size="11" font-weight="600" fill="#6D28D9">组合优化</text>
+  <text x="725" y="179" text-anchor="middle" font-size="9" fill="#5B21B6">QAOA·物流·金融</text>
+  <text x="725" y="200" text-anchor="middle" font-size="9" fill="#64748B">经典计算机难以高效处理</text>
+</svg></div>
+
 <p>类脑芯片、光计算芯片、量子芯片，它们都在寻找硅和经典逻辑之外的载体来计算。上层的 AI 革命在重新定义计算能做什么；底层的探索在重新定义计算可以是什么。两层同时发生，互相拉扯，互相加速，是这一轮AI革命最底层的推动力。</p>
 <hr />
 <h2 id="7">7 计算的本质</h2>
