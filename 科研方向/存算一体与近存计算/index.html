@@ -4111,8 +4111,6 @@
     
       
         
-          
-        
       
         
       
@@ -4128,24 +4126,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%85%88%E8%BF%9B%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA%E6%8A%80%E6%9C%AF_FDU/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     先进工艺技术
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4_4">
@@ -4155,6 +4145,25 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../学习地图/器件与工艺/先进集成电路工艺技术_FDU/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4163,7 +4172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%85%88%E8%BF%9B%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA%E6%8A%80%E6%9C%AF_FDU/MICR130018/" class="md-nav__link">
+      <a href="../../学习地图/器件与工艺/先进集成电路工艺技术_FDU/MICR130018.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10946,7 +10955,7 @@
 
   <h1>存算一体与近存计算</h1>
 
-<p>你的手机里运行大模型时，大约 70% 的能量不是花在矩阵乘法上，而是花在把数字从内存搬到计算单元这件事上——存算一体（CIM）与近存计算（NMC）研究的，是能不能让计算直接在数据所在的地方发生。</p>
+<p>大模型推理时，数据搬运消耗的能量常常超过矩阵乘法本身——存算一体（CIM）与近存计算（NMC）研究的，是能不能让计算直接在数据所在的地方发生。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>冯·诺依曼在 1945 年设计出"计算单元和存储单元分开"这套架构时，这是一个优雅的决策——让两者各做各的专项。但它也内置了一个代价：数据必须在存储和计算之间来回搬运，而这件事本身消耗能量和时间。在规模不大的时候，代价不显眼；AI 把模型规模推到数百亿参数之后，这个代价变得无法忽视。一块 NVIDIA H100 GPU（图形处理器）的理论算力是每秒 990 TFLOPS（每秒万亿次浮点运算，FP16 精度），但它的片外内存带宽只有约 3.35 TB/s——芯片大量时间不是在算，而是在等数据从内存传来。这个差距在大模型推理时格外显眼：权重矩阵巨大但每次只用一次，实际有效算力利用率有时不到 30%。更触目惊心的是能耗：有测量表明，在 H100 上跑推理时，数据搬运消耗的能量比矩阵乘法本身还多。这不是工程师没优化好，而是冯·诺依曼架构埋下的物理代价，随着 AI 模型规模暴涨，它从一个学术话题变成了影响整个产业的根本瓶颈。</p>
 <div><svg viewBox="0 0 880 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
