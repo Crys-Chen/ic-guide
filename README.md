@@ -2,9 +2,9 @@
   <img src=./docs/images/title.png >
 </div> -->
 
-# ECE自学指南
+# IC自学指南
 
-> *本仓库基本框架完全继承自北京大学的[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)，在其基础上添加了IC自学指南、知识体系梳理等内容。因改动较大，故另起炉灶。但由于CS的内容基本保留，所以License未更改。*
+> *本仓库基本框架完全继承自北京大学的[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)，在其基础上添加了集成电路（IC）方向的自学资源、知识体系梳理等内容。因改动较大，故另起炉灶。但由于CS的内容基本保留，所以License未更改。*
 
 [![Website](https://img.shields.io/badge/website-crys-chen.github.io/Fudan-ME-blue)](https://crys-chen.github.io/Fudan-ME/)
 [![License](https://img.shields.io/github/license/Crys-Chen/Fudan-ME)](https://github.com/Crys-Chen/Fudan-ME/blob/master/LICENSE)
@@ -61,7 +61,7 @@ graph TB
 
 ### 从ME到ECE
 
-由于本仓库继承自[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)，其原有关于CS的资源基本保留，因此叫“IC/ME自学指南”并不合适。思量再三，决定叫“ECE自学指南”。ECE全称是Electrical Computer Engineering，指电子与计算机工程，是一门软硬兼修的专业。计算机（Computer Science, CS）的同学，如若想做架构和系统研究，没有硬件知识也是寸步难行。因此，本仓库也面向有志于从事架构研究的CS同学，为其提供硬件相关的自学资源，也欢迎CS的同学参与贡献。
+本仓库继承自北京大学的[CS自学指南](https://github.com/pkuflyingpig/cs-self-learning/)，可以说是它的硬件孪生版。CS自学指南帮人自学计算机，这一份则帮人自学集成电路（IC, Integrated Circuits），故取名“IC自学指南”。原仓库关于CS的资源基本保留。集成电路与计算机本就同根，做架构与系统研究的CS同学，没有硬件知识同样寸步难行。因此本仓库虽以IC为主，也面向想补硬件的CS同学，欢迎大家参与贡献。
 
 ## 建站大纲
 
