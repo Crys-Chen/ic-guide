@@ -112,12 +112,19 @@
       position:   'fixed',
       top:        topOff + 'px',
       left:       '0',
-      right:      '0',
+      right:      'auto',
       zIndex:     '5',
       transition: 'opacity 0.15s ease',
     });
     hero.style.setProperty('margin',  '0', 'important');
     hero.style.setProperty('width',   '100vw', 'important');
+
+    // 若祖先有 contain:layout / transform 创建了新的 containing block，
+    // left:0 会相对于祖先而非视口 — 读实际偏移并补偿
+    var fixLeft = hero.getBoundingClientRect().left;
+    if (Math.abs(fixLeft) > 0.5) {
+      hero.style.left = (-fixLeft) + 'px';
+    }
 
     var fadeScrollDist = Math.round(heroH * FADE);
     below.style.paddingTop    = (fadeScrollDist + 32) + 'px';
