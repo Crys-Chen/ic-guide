@@ -11354,7 +11354,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      复旦课表参考
+      板块间的依赖关系
     </span>
   </a>
   
@@ -11363,34 +11363,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      宏观全局视图
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      跨领域依赖图
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分领域详图
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      芯片完整生产流程
+      芯片生产流程
     </span>
   </a>
   
@@ -11415,237 +11388,77 @@
 
 
 <h1 id="_1">学习地图</h1>
-<p>学习地图是本站的"自底向上"入口。从培养方案出发把知识连成网，每个板块给出可自学的课程直链。与「科研方向」配合使用：那边告诉你某方向要爬哪几根树枝，这边告诉你每根树枝怎么爬。</p>
+<p>学习地图按知识领域分为七个板块，每个板块收录经过核实的公开课程。<a href="../科研方向/">科研方向</a>页面说明做某个研究方向需要哪些知识，这里给出每个知识领域的具体学习路径。</p>
 <h2 id="_2">七大板块</h2>
-<ul>
-<li><a href="%E6%95%B0%E5%AD%A6/">数学</a> · <a href="%E7%89%A9%E7%90%86/">物理</a> · <a href="%E7%94%B5%E8%B7%AF/">电路</a> · <a href="%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a></li>
-<li><a href="%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/">算法编程</a> · <a href="%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a> · <a href="%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></li>
-</ul>
-<p>导航中标注「征集中」的槽位虚位以待，欢迎通过<a href="../%E5%8F%82%E4%B8%8E%E5%BB%BA%E8%AE%BE/">参与建设</a>推荐你验证过的好课。</p>
-<h2 id="_3">复旦课表参考</h2>
-<ul>
-<li><a href="%E5%A4%8D%E6%97%A6%E5%BE%AE%E7%94%B5%E5%AD%90%E8%AF%BE%E7%A8%8B%E8%A1%A8/">2021年课程表</a> · <a href="%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/">2026年课程表</a></li>
-</ul>
-<h2 id="_4">宏观全局视图</h2>
-<p>以复旦微电子学院培养方案为核心坐标，覆盖 IC 工程师所需的完整知识体系。可点击节点折叠/展开，滚轮缩放，拖拽平移。详细前后依赖关系见下方各分领域详图。</p>
-<blockquote>
-<p><strong>学完知识体系想动手做项目?</strong> 看 <a href="../%E4%B8%93%E9%A2%98%E7%A4%BE%E5%8C%BA/">专题社区</a>——收录"一生一芯"、"Embodied-AI-Guide"等带完整训练路径的综合学习生态。</p>
-</blockquote>
-<div class="markmap">
-<script type="text/template">
----
-markmap:
-  maxWidth: 300
-  initialExpandLevel: 2
-  colorFreezeLevel: 3
-  duration: 400
----
-# IC / ECE 知识体系
-## 🏛️ 基础层
-### 数学分析
-### 线性代数
-### 工程数学
-### 量子力学
-### 固体物理
-### 半导体物理
-### 程序设计基础
-### 数据结构与算法
-## 🔬 器件与工艺
-### 半导体器件原理
-### IC工艺原理
-### 先进工艺技术
-## 🔢 数字电路
-### 数字逻辑基础
-### 硬件描述语言
-### 数字EDA工具
-### FPGA系统设计
-### 数字集成电路设计原理
-## 〰️ 模拟电路
-### 电路分析基础
-### 模拟电子线路
-### 模拟EDA
-### 模拟集成电路设计
-### 高频电子线路
-### 射频集成电路
-## 📡 信号处理
-### 信号与系统
-### MATLAB
-### 数字信号处理
-### ADC / DAC
-## 🖥️ 系统架构
-### 计算机组成原理
-### 操作系统
-## 🚀 系统集成与应用
-### ASIC设计
-### 嵌入式SoC
-### EDA工具开发
-## 🛠️ 工程工具
-### 通用：Git · Vim · LaTeX · Docker · Linux Shell
-### EE 专用：MATLAB · LTspice · KiCad · ModelSim · Cadence · Vivado · Gem5 · GPGPU-Sim
-### 构建：GNU Make · CMake · Scoop · Emacs
-</script>
-</div>
-
-<h2 id="_5">跨领域依赖图</h2>
+<table>
+<thead>
+<tr>
+<th>板块</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="%E6%95%B0%E5%AD%A6/">数学</a></td>
+<td>微积分到凸优化，信号处理、机器学习、EDA算法的数学基础</td>
+</tr>
+<tr>
+<td><a href="%E7%89%A9%E7%90%86/">物理</a></td>
+<td>量子力学到半导体物理，器件研究和模拟电路的物理前置</td>
+</tr>
+<tr>
+<td><a href="%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a></td>
+<td>晶体管原理与IC制造工艺，IC设计物理约束的来源</td>
+</tr>
+<tr>
+<td><a href="%E7%94%B5%E8%B7%AF/">电路</a></td>
+<td>数字、模拟、信号处理三条路线，从逻辑门到射频集成电路</td>
+</tr>
+<tr>
+<td><a href="%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/">算法编程</a></td>
+<td>程序设计、数据结构与算法，EDA工具开发和AI框架的编程基础</td>
+</tr>
+<tr>
+<td><a href="%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构</a></td>
+<td>体系结构、操作系统、编译原理，AI系统和处理器设计研究的软件侧知识</td>
+</tr>
+<tr>
+<td><a href="%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></td>
+<td>机器学习到大模型系统，AI算法与AI芯片协同设计的知识库</td>
+</tr>
+</tbody>
+</table>
+<p>复旦课表参考：<a href="%E5%A4%8D%E6%97%A6%E5%BE%AE%E7%94%B5%E5%AD%90%E8%AF%BE%E7%A8%8B%E8%A1%A8/">2021年课程表</a> · <a href="%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/">2026年课程表</a></p>
+<h2 id="_3">板块间的依赖关系</h2>
+<p>箭头从前置板块指向后置板块，表示学习后者通常需要先有前者的基础。</p>
 <pre class="mermaid"><code>graph TB
-    subgraph BASE["基础层"]
-        MATH["数学\n数分 · 线代 · 工程数学"]
-        PHY["物理\n量子力学 · 固体 · 半导体"]
-        CS["编程\n程序设计 · 数据结构"]
-    end
+    MATH["数学"]
+    PHY["物理"]
+    CS["算法编程"]
+    DEV["器件与工艺"]
+    CIR["电路"]
+    SYS["系统架构"]
+    AI["人工智能"]
 
-    subgraph MID["核心技术层"]
-        DEV["器件与工艺"]
-        DIG["数字电路"]
-        ANA["模拟电路"]
-        SIG["信号处理"]
-    end
-
-    subgraph SYS["系统层"]
-        ARCH["系统架构"]
-        EDA["EDA 工具链"]
-    end
-
-    subgraph APP["应用层"]
-        ASIC["ASIC · SoC"]
-        AI["AI 算法与系统"]
-    end
-
+    MATH --&gt; CIR
+    MATH --&gt; AI
     PHY --&gt; DEV
-    MATH --&gt; DIG
-    MATH --&gt; SIG
-    CS --&gt; ARCH
+    PHY --&gt; CIR
+    DEV --&gt; CIR
+    CS --&gt; SYS
     CS --&gt; AI
+    CIR --&gt; SYS
+    SYS --&gt; AI
 
-    DEV -.-&gt;|PDK 供给| ANA
-    SIG --&gt; ANA
-    DIG --&gt; ARCH
-    DIG --&gt; EDA
-    ANA --&gt; EDA
-
-    ARCH --&gt; ASIC
-    ARCH --&gt; AI
-    EDA --&gt; ASIC
-    ASIC -.-&gt;|硬件平台| AI</code></pre>
-<hr />
-<h2 id="_6">分领域详图</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">器件与工艺</label><label for="__tabbed_1_2">数字 IC</label><label for="__tabbed_1_3">模拟 IC</label><label for="__tabbed_1_4">信号处理</label><label for="__tabbed_1_5">系统架构</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<pre class="mermaid"><code>graph TB
-    QM["量子力学"]
-    SSP["固体物理"]
-    SCP["半导体物理"]
-    DEV["半导体器件原理"]
-    PROC["IC工艺原理"]
-    ADPROC["先进工艺技术"]
-    PDK["工艺设计套件 PDK"]
-
-    QM --&gt; SSP --&gt; SCP --&gt; DEV --&gt; PROC --&gt; ADPROC
-    PROC --&gt; PDK
-    ADPROC --&gt; PDK
-    PDK -.-&gt;|供给| 电路设计
-
-    classDef device fill:#FDE8D8,stroke:#C0530A,stroke-width:2px
-    class QM,SSP,SCP,DEV,PROC,ADPROC,PDK device</code></pre>
-</div>
-<div class="tabbed-block">
-<pre class="mermaid"><code>graph TB
-    DE["数字逻辑基础"]
-    HDLv["Verilog HDL"]
-    HDLc["Chisel / HLS"]
-    DEDA["数字EDA工具"]
-    FPGA["FPGA 设计"]
-    DIGIC["数字集成电路设计原理"]
-    DFT["可测性设计 DFT"]
-    ASICFE["ASIC 前端"]
-    ASICBE["ASIC 后端"]
-    UVM["芯片验证"]
-
-    DE --&gt; HDLv
-    DE --&gt; HDLc
-    HDLv --&gt; DEDA
-    HDLv --&gt; DIGIC
-    DEDA --&gt; FPGA
-    HDLv --&gt; FPGA
-    DIGIC --&gt; FPGA
-    DIGIC --&gt; ASICFE
-    HDLv --&gt; ASICFE
-    HDLv --&gt; UVM
-    ASICFE --&gt; DFT
-    ASICFE --&gt; ASICBE
-    DFT --&gt; ASICBE
-
-    classDef digital fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    class DE,HDLv,HDLc,DEDA,FPGA,DIGIC,DFT,ASICFE,ASICBE,UVM digital</code></pre>
-</div>
-<div class="tabbed-block">
-<pre class="mermaid"><code>graph TB
-    CB["电路分析基础"]
-    AE["模拟电子线路"]
-    AEDA["模拟EDA"]
-    ANIC["模拟集成电路设计"]
-    BGR["基准与偏置电路"]
-    HF["高频电子线路"]
-    RF["射频集成电路"]
-    ADDA["ADC / DAC"]
-
-    CB --&gt; AE --&gt; ANIC
-    AE --&gt; AEDA
-    AEDA --&gt; ANIC
-    ANIC --&gt; BGR
-    ANIC --&gt; HF --&gt; RF
-    ANIC --&gt; ADDA
-
-    classDef analog fill:#E6FFEC,stroke:#276749,stroke-width:2px
-    class CB,AE,AEDA,ANIC,BGR,HF,RF,ADDA analog</code></pre>
-</div>
-<div class="tabbed-block">
-<pre class="mermaid"><code>graph TB
-    EM["工程数学"]
-    SS["信号与系统"]
-    MATLAB["MATLAB"]
-    DSP["数字信号处理"]
-    ADDA["ADC / DAC"]
-    IT["信息论"]
-    COM["数字通信"]
-
-    EM --&gt; SS
-    SS --&gt; DSP
-    MATLAB --&gt; DSP
-    DSP --&gt; ADDA
-    IT -.-&gt;|可选深化| DSP
-    DSP --&gt; COM
-    ADDA --&gt; COM
-
-    classDef signal fill:#EBF4FF,stroke:#2C5282,stroke-width:2px
-    class EM,SS,MATLAB,DSP,ADDA,IT,COM signal</code></pre>
-</div>
-<div class="tabbed-block">
-<pre class="mermaid"><code>graph TB
-    PROG["程序设计基础"]
-    DS["数据结构与算法"]
-    ARCH["计算机组成原理"]
-    OS["操作系统"]
-    EMB["嵌入式开发"]
-    SOC["嵌入式 SoC 设计"]
-    RISC["RISC-V 处理器实现"]
-
-    PROG --&gt; DS --&gt; ARCH --&gt; OS
-    ARCH --&gt; EMB --&gt; SOC
-    ARCH --&gt; RISC
-    OS -.-&gt;|软件栈| SOC
-    RISC -.-&gt;|硬件实现| SOC
-
-    classDef system fill:#F3E8FF,stroke:#553C9A,stroke-width:2px
-    class PROG,DS,ARCH,OS,EMB,SOC,RISC system</code></pre>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="_7">芯片完整生产流程</h2>
+    classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
+    classDef upper fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    class MATH,PHY,CS base
+    class DEV,CIR,SYS,AI upper</code></pre>
+<p>图中有两条主干链：物理→器件与工艺→电路，是器件和模拟方向的纵向路径；算法编程→系统架构→人工智能，是数字和AI方向的纵向路径。数学横向支撑电路和人工智能两个板块。</p>
+<h2 id="_4">芯片生产流程</h2>
+<p>下图展示从 RTL 设计到晶圆量产的完整链条，供理解各板块知识在工业流程中的位置参考。</p>
 <pre class="mermaid"><code>graph TD
-    subgraph FE["🖊️ 前端设计（Frontend）"]
+    subgraph FE["前端设计"]
         direction TB
         SPEC["系统规格 / 架构设计"] --&gt; RTL["RTL 编码"]
         RTL --&gt; SIM["功能仿真"]
@@ -11655,7 +11468,7 @@ markmap:
         SIM --&gt; UVM["形式验证 / UVM"]
     end
 
-    subgraph BE["🔧 后端设计（Backend）"]
+    subgraph BE["后端设计"]
         direction TB
         FP["布局规划"] --&gt; CTS["时钟树综合 CTS"]
         CTS --&gt; PR["布局布线 P&amp;R"]
@@ -11664,7 +11477,7 @@ markmap:
         PV --&gt; GDS["GDSII 交付"]
     end
 
-    subgraph FAB["🏭 制造与测试"]
+    subgraph FAB["制造与测试"]
         direction TB
         MASK["掩膜版制作"] --&gt; WAFER["晶圆制造 Fab"]
         WAFER --&gt; CP["晶圆级测试 CP"]
