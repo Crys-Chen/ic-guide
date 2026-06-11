@@ -93,6 +93,7 @@
 
     // 移动端不做 fixed 效果，直接显示正文
     if (window.innerWidth < 768) {
+      hero.style.opacity        = '1';
       below.style.opacity       = '1';
       below.style.pointerEvents = '';
       return;
@@ -116,7 +117,7 @@
       transition: 'opacity 0.15s ease',
     });
     hero.style.setProperty('margin',  '0', 'important');
-    hero.style.setProperty('width',   '100%', 'important');
+    hero.style.setProperty('width',   '100vw', 'important');
 
     var fadeScrollDist = Math.round(heroH * FADE);
     below.style.paddingTop    = (fadeScrollDist + 32) + 'px';
