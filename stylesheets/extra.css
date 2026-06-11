@@ -433,27 +433,18 @@
 
 @media screen and (min-width: 76.25em) {
   .md-nav--primary .md-nav__link {
-    transition: transform .15s ease, background .15s ease, color .15s ease;
-  }
-
-  .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
-    transform: translateX(3px);
-    background: rgba(3, 33, 104, .06);
-  }
-
-  [data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover:not(.md-nav__link--active) {
-    background: rgba(179, 157, 219, .09);
+    transition: color .15s ease;
   }
 }
 
-/* ─── C: 当前页渐变高亮（覆盖原有纯左边框） ───────────────── */
+/* ─── C: 当前页渐变高亮 ───────────────────────────────────── */
 .md-nav--primary .md-nav__link--active {
-  background: linear-gradient(90deg, rgba(3, 33, 104, .13) 0%, transparent 80%);
+  background: linear-gradient(90deg, rgba(3, 33, 104, .06) 0%, transparent 70%);
   border-radius: 4px;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary .md-nav__link--active {
-  background: linear-gradient(90deg, rgba(179, 157, 219, .16) 0%, transparent 80%);
+  background: linear-gradient(90deg, rgba(179, 157, 219, .09) 0%, transparent 70%);
 }
 
 /* ─── C: 区块节标题拉开层级感 ───────────────────────────── */
@@ -854,15 +845,10 @@
   /* 侧边栏缩窄，给正文留更多空间 */
   .md-sidebar--primary {
     width: 10.4rem;
-    background-color: #f5f7fb;
   }
 
   [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
     padding-right: calc(100% - 9.8rem) !important;
-  }
-
-  [data-md-color-scheme="slate"] .md-sidebar--primary {
-    background-color: rgba(15, 25, 60, .35);
   }
 
   /* 导航字号 + 行高 */
@@ -992,7 +978,7 @@
   box-shadow: 0 1px 0 rgba(0,0,0,.12) !important;
 }
 [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
-  background: linear-gradient(90deg, rgba(3,33,104,.09) 0%, transparent 80%) !important;
+  background: linear-gradient(90deg, rgba(3,33,104,.06) 0%, transparent 70%) !important;
   color: #032168 !important;
 }
 [data-md-color-scheme="default"] .md-typeset table:not([class]) th {
