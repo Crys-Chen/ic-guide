@@ -157,6 +157,16 @@
   color: rgba(184, 210, 242, .7);
 }
 
+/* ─── 首行缩进两字符（中文排版惯例） ────────────────────── */
+.md-typeset p { text-indent: 2em; }
+.md-typeset li p,
+.md-typeset td p,
+.md-typeset th p,
+.md-typeset .admonition p,
+.md-typeset details p,
+.df-inner p,
+.df-linner p { text-indent: 0; }
+
 /* ─── Admonition 圆角 + 阴影 ────────────────────────────── */
 .md-typeset .admonition,
 .md-typeset details {
