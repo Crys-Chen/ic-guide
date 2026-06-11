@@ -1891,13 +1891,13 @@
    专题社区 — 大卡片(单列,整卡可点跳外链,每卡一套主题色)
    ══════════════════════════════════════════════════════════ */
 /* 页面整体宽度收窄(因为 hide:navigation+toc 使内容撑满全宽) */
-/* 放宽全站内容网格：原 61rem 太窄，三栏布局(左导航+正文+右TOC)下正文被挤瘦 */
+/* 全站内容网格：留出页边距，header/tabs/正文均受此约束 */
 .md-grid {
-  max-width: 74rem;
+  max-width: 64rem;
 }
 
 .md-content__inner:has(.community-cards) {
-  max-width: 1180px;
+  max-width: 920px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
