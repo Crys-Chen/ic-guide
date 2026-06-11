@@ -261,6 +261,10 @@ nav:
           - "UCB EECS151/251A": "学习地图/电路/硬件描述语言(HDL)/Verilog/EECS151.md"
         - Chisel:
           - Chisel Bootcamp: "学习地图/电路/硬件描述语言(HDL)/Chisel/chisel-bootcamp.md"
+        - HLS:
+          - 学习地图/电路/硬件描述语言(HDL)/HLS/index.md
+          - "高亚军：跟 Xilinx SAE 学 HLS": "学习地图/电路/硬件描述语言(HDL)/HLS/gaoyajun_hls.md"
+          - "HLS Programming with FPGAs（Lehigh）": "学习地图/电路/硬件描述语言(HDL)/HLS/lehigh_hls.md"
       - 数字:
         - 学习地图/电路/数字/index.md
         - 数字逻辑基础:
@@ -329,6 +333,10 @@ nav:
         - 学习地图/电路/ASIC/index.md
         - ASIC设计(复旦): "学习地图/电路/ASIC/INFO130094.md"
         - "UIUC VLSI CAD (Coursera)": "学习地图/电路/ASIC/UIUC_VLSI_CAD.md"
+        - EDA算法:
+          - 学习地图/电路/ASIC/EDA算法/index.md
+          - "NPTEL: VLSI Physical Design (IIT KGP)": "学习地图/电路/ASIC/EDA算法/NPTEL_physical_design.md"
+          - "NPTEL: Synthesis of Digital Systems (IIT Delhi)": "学习地图/电路/ASIC/EDA算法/NPTEL_synthesis.md"
         - 数字后端(征集中): "学习地图/电路/ASIC/数字后端.md"
         - 补充资源: "学习地图/电路/ASIC/补充资源.md"
       - 生物电子接口(征集中): "学习地图/电路/生物电子/index.md"
@@ -376,6 +384,10 @@ nav:
         - 学习地图/算法编程/编程语言设计与分析/index.md
         - NJU 软件分析: "学习地图/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md"
         - PKU 软件分析: "学习地图/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md"
+      - 量子计算:
+        - 学习地图/算法编程/量子计算/index.md
+        - 北大李彤阳:量子计算: "学习地图/算法编程/量子计算/PKU_li_quantum.md"
+        - "Qiskit: Understanding Quantum Information and Computation": "学习地图/算法编程/量子计算/qiskit_watrous.md"
     - 系统架构:
       - 导言: "学习地图/系统架构/index.md"
       - 计算机系统基础:
@@ -402,6 +414,11 @@ nav:
         - 中科大:并行计算: "学习地图/系统架构/并行与分布式系统/USTC_parallel.md"
         - 高性能并行编程(parallel101): "学习地图/系统架构/并行与分布式系统/parallel101.md"
         - "CMU 15-418/Stanford CS149": "学习地图/系统架构/并行与分布式系统/CS149.md"
+        - GPU体系结构:
+          - 学习地图/系统架构/并行与分布式系统/GPU体系结构/index.md
+          - "NPTEL: GPU Architectures and Programming (IIT KGP)": "学习地图/系统架构/并行与分布式系统/GPU体系结构/NPTEL_GPU.md"
+          - "ETH HetSys（Gómez-Luna / Mutlu）": "学习地图/系统架构/并行与分布式系统/GPU体系结构/ETH_HetSys.md"
+          - "ZOMI 酱：GPU 架构原理系列": "学习地图/系统架构/并行与分布式系统/GPU体系结构/ZOMI_GPU.md"
       - 编译原理:
         - 学习地图/系统架构/编译原理/index.md
         - "Stanford CS143": "学习地图/系统架构/编译原理/CS143.md"
@@ -454,6 +471,11 @@ nav:
           - "Stanford CS336: Language Modeling from Scratch": "学习地图/人工智能/深度生成模型/大语言模型/CS336.md"
           - "CMU 11-711: Advanced NLP": "学习地图/人工智能/深度生成模型/大语言模型/CMU11-711.md"
       - 机器人学(征集中): "学习地图/人工智能/机器人学/index.md"
+      - 强化学习:
+        - 学习地图/人工智能/强化学习/index.md
+        - 西湖赵世钰:强化学习的数学原理: "学习地图/人工智能/强化学习/xhu_zhao_RL.md"
+        - "David Silver: UCL Reinforcement Learning": "学习地图/人工智能/强化学习/silver_RL.md"
+      - 类脑与SNN: "学习地图/人工智能/类脑与SNN/index.md"
       - 机器学习理论:
         - 学习地图/人工智能/机器学习理论/index.md
         - 张志华:统计机器学习: "学习地图/人工智能/机器学习理论/zhangzhihua_statML.md"

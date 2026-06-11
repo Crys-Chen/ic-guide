@@ -6,6 +6,7 @@
 
 - **[Verilog](Verilog/)** — 业界事实标准,语法类似 C 语言;**做数字 IC 必学的第一门 HDL**
 - **[Chisel](Chisel/)** — 基于 Scala 的现代 HDL,参数化能力强,适合大型 SoC(RISC-V Rocket Chip 用此构建)
+- **[HLS（高层次综合）](HLS/)** — 把 C/C++ 直接综合成 RTL;FPGA 加速器开发的主力工具链
 
 ## 学习路径建议
 
