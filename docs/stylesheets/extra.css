@@ -1159,7 +1159,10 @@
   text-align: center;
   padding: 5.5rem 1.5rem 4.5rem;
   overflow: hidden;
-  margin: -1.5rem -1.5rem 0;
+  width: 100vw;
+  margin-top: -1.5rem;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 0;
   border-radius: 0 0 24px 24px;
 }
 .df-bg {
@@ -1332,7 +1335,7 @@
 @media (max-width: 760px) {
   .df-lhl { font-size: 2.6rem !important; }
   .df-linner { padding: 3.5rem 1.4rem 2.5rem; }
-  .df-dark { margin: -1.5rem -1.5rem 0; }
+  .df-dark { margin-top: -1.5rem; }
   .df-title { font-size: 2.4rem !important; }
 }
 
@@ -1580,10 +1583,11 @@
   overflow: visible;
 }
 
-/* ── Fullscreen mode (galaxy index: hide nav + toc) ─────── */
+/* ── Fullscreen mode (galaxy index: hide nav) ────────────── */
 .rg-root.rg-fullscreen {
-  margin: -1rem -1.6rem 0 !important;
-  width: calc(100% + 3.2rem);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: -1rem;
 }
 
 .rg-root.rg-fullscreen .rg-stage {
@@ -1893,8 +1897,15 @@
   max-width: 64rem;
 }
 
+/* hide: navigation 页面（首页/后记/星图页）收窄正文至适合阅读的宽度 */
+.md-main__inner:has(> .md-sidebar--primary[hidden]) .md-content__inner {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .md-content__inner:has(.community-cards) {
-  max-width: 920px;
+  max-width: 920px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
