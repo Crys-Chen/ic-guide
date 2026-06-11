@@ -336,22 +336,6 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[叶凡](https://sme.fudan.edu.cn/60/57/c31157a352343/page.htm)** <span class="badge-fudan">复旦</span>
-
-    流水线 ADC · 时间交织数据转换器 · 5G 基站高精度 ADC/DAC
-
--   **[倪熔华](https://sme.fudan.edu.cn/60/15/c31149a352277/page.htm)** <span class="badge-fudan">复旦</span>
-
-    低抖动分数 N PLL · 高速 SerDes 收发器 · 宽带 VCO 时钟生成
-
--   **[许灏](https://sme.fudan.edu.cn/6b/47/c31134a420679/page.htm)** <span class="badge-fudan">复旦</span>
-
-    SAR ADC · Sub-sampling PLL · 宽带射频收发前端
-
--   **[洪志良](https://icmne.fudan.edu.cn/3c/45/c48925a736325/page.htm)** <span class="badge-fudan">复旦</span>
-
-    增量 ΣΔ ADC · 模拟运放与电源管理 IC · 混合信号射频收发
-
 -   **[孙楠（Nan Sun）](https://www.nansunlab.com/)** <span class="badge-tsinghua">清华</span>
 
     VCO-based 新型 ADC 架构 · 低功耗噪声整形数据转换器 · 磁传感器读出电路
@@ -368,13 +352,48 @@ graph LR
 
     超低功耗模拟 IC · 无线收发 SoC · 生物信号采集芯片
 
--   **[叶乐](https://ic.pku.edu.cn/szdw/zzjs/Y1/yl/index.htm)** <span class="badge-pku">北大</span>
-
-    混合信号 IC · AI 推理芯片 · 超低功耗 AIoT 传感器
-
 -   **[李福乐](https://www.sic.tsinghua.edu.cn/info/1014/1812.htm)** <span class="badge-tsinghua">清华</span>
 
     高速高精度 ADC · 数据转换器架构 · 数模混合 IC
+
+-   **[叶凡](https://sme.fudan.edu.cn/60/57/c31157a352343/page.htm)** <span class="badge-fudan">复旦</span>
+
+    流水线 ADC · 时间交织数据转换器 · 5G 基站高精度 ADC/DAC
+
+-   **[倪熔华](https://sme.fudan.edu.cn/60/15/c31149a352277/page.htm)** <span class="badge-fudan">复旦</span>
+
+    低抖动分数 N PLL · 高速 SerDes 收发器 · 宽带 VCO 时钟生成
+
+-   **[许灏](https://sme.fudan.edu.cn/6b/47/c31134a420679/page.htm)** <span class="badge-fudan">复旦</span>
+
+    SAR ADC · Sub-sampling PLL · 宽带射频收发前端
+
+-   **[洪志良](https://icmne.fudan.edu.cn/3c/45/c48925a736325/page.htm)** <span class="badge-fudan">复旦</span>
+
+    增量 ΣΔ ADC · 模拟运放与电源管理 IC · 混合信号射频收发
+
+-   **[殷韵](https://icmne.fudan.edu.cn/2d/56/c48925a732502/page.htm)** <span class="badge-fudan">复旦</span>
+
+    数字化射频发射机 · 宽带功率放大器
+
+-   **[李硕](https://icmne.fudan.edu.cn/2d/22/c48925a732450/page.htm)** <span class="badge-fudan">复旦</span>
+
+    超低功耗物联网 SoC · 能量采集与电源管理
+
+-   **[徐佳伟](https://icmne.fudan.edu.cn/2d/4c/c48925a732492/page.htm)** <span class="badge-fudan">复旦</span>
+
+    生物信号采集前端 · 生物阻抗测量接口 · 高精度 ADC
+
+-   **[江文宁](https://icmne.fudan.edu.cn/2d/1e/c48925a732446/page.htm)** <span class="badge-fudan">复旦</span>
+
+    高速高精度 ADC · 流水线混合信号电路
+
+-   **[李文宏](https://icmne.fudan.edu.cn/2d/24/c48925a732452/page.htm)** <span class="badge-fudan">复旦</span>
+
+    图像传感读出电路 · 电源管理 IC
+-   **[叶乐](https://ic.pku.edu.cn/szdw/zzjs/Y1/yl/index.htm)** <span class="badge-pku">北大</span>
+
+    混合信号 IC · AI 推理芯片 · 超低功耗 AIoT 传感器
 
 -   **[沈林晓](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/slx/index.htm)** <span class="badge-pku">北大</span>
 
@@ -444,25 +463,6 @@ graph LR
 
     PLL / CDR 时钟恢复 · 高速混合信号 ADC/DAC · 光电融合互联
 
--   **[殷韵](https://icmne.fudan.edu.cn/2d/56/c48925a732502/page.htm)** <span class="badge-fudan">复旦</span>
-
-    数字化射频发射机 · 宽带功率放大器
-
--   **[李硕](https://icmne.fudan.edu.cn/2d/22/c48925a732450/page.htm)** <span class="badge-fudan">复旦</span>
-
-    超低功耗物联网 SoC · 能量采集与电源管理
-
--   **[徐佳伟](https://icmne.fudan.edu.cn/2d/4c/c48925a732492/page.htm)** <span class="badge-fudan">复旦</span>
-
-    生物信号采集前端 · 生物阻抗测量接口 · 高精度 ADC
-
--   **[江文宁](https://icmne.fudan.edu.cn/2d/1e/c48925a732446/page.htm)** <span class="badge-fudan">复旦</span>
-
-    高速高精度 ADC · 流水线混合信号电路
-
--   **[李文宏](https://icmne.fudan.edu.cn/2d/24/c48925a732452/page.htm)** <span class="badge-fudan">复旦</span>
-
-    图像传感读出电路 · 电源管理 IC
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -491,6 +491,17 @@ graph LR
 
     开关电源 · 开关电容功率转换器 · 电源管理 IC
 
+-   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
+
+    高速串行收发器 · 低抖动锁相环 · 混合信号接口 IC
+
+-   **[Borivoje Nikolić](https://bwrc.eecs.berkeley.edu/people/borivoje-nikolic)** <span class="badge-intl">UC Berkeley</span>
+
+    SAR-VCO ADC · 多相时钟电路 · 自动化模拟版图生成
+
+-   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
+
+    存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
 -   **[Boris Murmann](https://murmann-group.org/)** <span class="badge-intl">U Hawaii</span>
 
     SAR ADC · 神经接口数据采集 IC · 模拟电路设计自动化
@@ -507,10 +518,6 @@ graph LR
 
     噪声整形 SAR ADC · 时间交织连续时间 ΔΣ ADC · VCO 基量化器
 
--   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
-
-    高速串行收发器 · 低抖动锁相环 · 混合信号接口 IC
-
 -   **[Behzad Razavi](https://www.ee.ucla.edu/behzad-razavi/)** <span class="badge-intl">UCLA</span>
 
     SAR/流水线 ADC · 低噪声锁相环 · 毫米波收发机
@@ -519,13 +526,6 @@ graph LR
 
     连续时间 ΔΣ ADC · 滤波型数据转换器 · 高速模拟噪声分析
 
--   **[Borivoje Nikolić](https://bwrc.eecs.berkeley.edu/people/borivoje-nikolic)** <span class="badge-intl">UC Berkeley</span>
-
-    SAR-VCO ADC · 多相时钟电路 · 自动化模拟版图生成
-
--   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
-
-    存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

@@ -391,10 +391,6 @@ graph LR
 
     CGRA 可重构架构 · 密码硬件加速器 · 硬件安全芯片
 
--   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
-
-    FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
-
 -   **[王伶俐](https://icmne.fudan.edu.cn/2d/43/c48925a732483/page.htm)** <span class="badge-fudan">复旦</span>
 
     FPGA 架构设计 · CGRA 设计空间探索 · 可重构计算 EDA
@@ -406,6 +402,13 @@ graph LR
 -   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
     模拟电路 EDA · 互连仿真与时序分析 · 并行 EDA 算法
+
+-   **[来金梅](https://icmne.fudan.edu.cn/2d/21/c48925a732449/page.htm)** <span class="badge-fudan">复旦</span>
+
+    FPGA 神经网络加速器 · 可编程深度学习平台
+-   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
+
+    FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
 
 -   **[戴国浩](https://dai.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
@@ -439,9 +442,6 @@ graph LR
 
     可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
 
--   **[来金梅](https://icmne.fudan.edu.cn/2d/21/c48925a732449/page.htm)** <span class="badge-fudan">复旦</span>
-
-    FPGA 神经网络加速器 · 可编程深度学习平台
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -457,6 +457,18 @@ graph LR
 -   **[Hayden Kwok-Hay So（蘇國曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
 
     异构可重构计算 · 稀疏加速器设计 · 事件驱动视觉处理
+
+-   **[Zhiru Zhang（张志汝）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
+
+    HLS 编译器设计 · FPGA 数据流加速 · 硬件加速器自动生成
+
+-   **[Mohamed Abdelfattah](https://www.abdelfattah-lab.com/)** <span class="badge-intl">Cornell</span>
+
+    FPGA 架构创新 · AI 推理硬件设计 · DNN 稀疏混合精度
+
+-   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
+
+    异构加速器编译 · FPGA Transformer 加速 · AI 引擎 MLIR 框架
 
 -   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
 
@@ -474,21 +486,9 @@ graph LR
 
     FPGA 设计自动化 · HLS 数据流加速 · 领域专用计算
 
--   **[Zhiru Zhang（张志汝）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
-
-    HLS 编译器设计 · FPGA 数据流加速 · 硬件加速器自动生成
-
--   **[Mohamed Abdelfattah](https://www.abdelfattah-lab.com/)** <span class="badge-intl">Cornell</span>
-
-    FPGA 架构创新 · AI 推理硬件设计 · DNN 稀疏混合精度
-
 -   **[Cong Hao（郝聪）](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span> <span class="prof-w"></span>
 
     FPGA 神经网络加速 · ML for EDA 布线 · 3D FPGA 架构生成
-
--   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
-
-    异构加速器编译 · FPGA Transformer 加速 · AI 引擎 MLIR 框架
 
 -   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span> <span class="prof-w"></span>
 

@@ -280,6 +280,45 @@ graph LR
 
     器件建模与 EDA · 宽禁带半导体器件 · 毫米波电路自动设计
 
+-   **[陈建利](https://sme.fudan.edu.cn/5f/c6/c31141a352198/page.htm)** <span class="badge-fudan">复旦</span>
+
+    芯片单元布局合法化 · 全局布线算法 · 光刻热点检测
+
+-   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
+
+    模拟电路仿真 · 高速互连建模 · 制造工艺协同设计
+
+-   **[杨帆](https://faculty.fudan.edu.cn/yangfan/zh_CN/index.htm)** <span class="badge-fudan">复旦</span>
+
+    电路分析与仿真 · 互连建模优化 · 模型降阶方法
+
+-   **[严昌浩](https://icmne.fudan.edu.cn/2d/4e/c48925a732494/page.htm)** <span class="badge-fudan">复旦</span>
+
+    模拟电路智能综合 · 良率与变差优化 · AI 驱动版图自动化
+
+-   **[朱可人](https://icmne.fudan.edu.cn/2d/64/c48925a732516/page.htm)** <span class="badge-fudan">复旦</span>
+
+    物理设计与布局布线 · 模拟电路设计自动化 · 逻辑综合优化
+
+-   **[毕朝日](https://icmne.fudan.edu.cn/17/48/c48925a726856/page.htm)** <span class="badge-fudan">复旦</span>
+
+    模拟电路设计自动化 · 强化学习辅助优化
+
+-   **[陶俊](https://icmne.fudan.edu.cn/2d/3a/c48925a732474/page.htm)** <span class="badge-fudan">复旦</span>
+
+    统计建模与良率优化 · AI 辅助设计 · 混合信号仿真
+
+-   **[陆叶](https://icmne.fudan.edu.cn/2d/2e/c48925a732462/page.htm)** <span class="badge-fudan">复旦</span>
+
+    先进晶体管建模 · 机器学习辅助设计
+
+-   **[陆振海](https://icmne.fudan.edu.cn/2d/2f/c48925a732463/page.htm)** <span class="badge-fudan">复旦</span>
+
+    半导体器件建模 · AI 辅助 EDA
+
+-   **[王志昂](https://icmne.fudan.edu.cn/97/b8/c48925a759736/page.htm)** <span class="badge-fudan">复旦</span>
+
+    数字芯片物理设计 · 工艺-设计协同优化
 -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     硬件综合与 EDA · FPGA 可重构计算 · AI 芯片硬件软件协同
@@ -296,25 +335,9 @@ graph LR
 
     算法硬件协同设计 · 神经网络加速器优化 · 隐私保护 AI 推理
 
--   **[陈建利](https://sme.fudan.edu.cn/5f/c6/c31141a352198/page.htm)** <span class="badge-fudan">复旦</span>
-
-    芯片单元布局合法化 · 全局布线算法 · 光刻热点检测
-
--   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
-
-    模拟电路仿真 · 高速互连建模 · 制造工艺协同设计
-
--   **[杨帆](https://faculty.fudan.edu.cn/yangfan/zh_CN/index.htm)** <span class="badge-fudan">复旦</span>
-
-    电路分析与仿真 · 互连建模优化 · 模型降阶方法
-
 -   **[郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/)** <span class="badge-other">交大</span>
 
     AI 辅助 EDA · 低功耗设计 · FPGA 加速器
-
--   **[严昌浩](https://icmne.fudan.edu.cn/2d/4e/c48925a732494/page.htm)** <span class="badge-fudan">复旦</span>
-
-    模拟电路智能综合 · 良率与变差优化 · AI 驱动版图自动化
 
 -   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
 
@@ -356,29 +379,6 @@ graph LR
 
     LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
 
--   **[朱可人](https://icmne.fudan.edu.cn/2d/64/c48925a732516/page.htm)** <span class="badge-fudan">复旦</span>
-
-    物理设计与布局布线 · 模拟电路设计自动化 · 逻辑综合优化
-
--   **[毕朝日](https://icmne.fudan.edu.cn/17/48/c48925a726856/page.htm)** <span class="badge-fudan">复旦</span>
-
-    模拟电路设计自动化 · 强化学习辅助优化
-
--   **[陶俊](https://icmne.fudan.edu.cn/2d/3a/c48925a732474/page.htm)** <span class="badge-fudan">复旦</span>
-
-    统计建模与良率优化 · AI 辅助设计 · 混合信号仿真
-
--   **[陆叶](https://icmne.fudan.edu.cn/2d/2e/c48925a732462/page.htm)** <span class="badge-fudan">复旦</span>
-
-    先进晶体管建模 · 机器学习辅助设计
-
--   **[陆振海](https://icmne.fudan.edu.cn/2d/2f/c48925a732463/page.htm)** <span class="badge-fudan">复旦</span>
-
-    半导体器件建模 · AI 辅助 EDA
-
--   **[王志昂](https://icmne.fudan.edu.cn/97/b8/c48925a759736/page.htm)** <span class="badge-fudan">复旦</span>
-
-    数字芯片物理设计 · 工艺-设计协同优化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -403,6 +403,14 @@ graph LR
 
     电路结构学习 · 形式验证与 SAT · 硬件测试与安全
 
+-   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
+
+    强化学习芯片布图 · AI 硬件协同设计 · ML 系统优化
+
+-   **[Larry Pileggi](https://users.ece.cmu.edu/~pileggi/)** <span class="badge-intl">CMU</span>
+
+    电路仿真与时序分析 · 互连建模 · 逻辑加锁与芯片安全
+
 -   **[Andrew Kahng](https://vlsicad.ucsd.edu/~abk/)** <span class="badge-intl">UCSD</span>
 
     物理设计与布局布线 · 设计制造协同 · OpenROAD 开源 EDA
@@ -414,14 +422,6 @@ graph LR
 -   **[David Z. Pan（潘志刚）](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
 
     AI 驱动物理设计 · LLM 辅助 RTL 生成 · 模拟与射频 EDA
-
--   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
-
-    强化学习芯片布图 · AI 硬件协同设计 · ML 系统优化
-
--   **[Larry Pileggi](https://users.ece.cmu.edu/~pileggi/)** <span class="badge-intl">CMU</span>
-
-    电路仿真与时序分析 · 互连建模 · 逻辑加锁与芯片安全
 
 -   **[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)** <span class="badge-intl">UT Austin</span> <span class="prof-w"></span>
 

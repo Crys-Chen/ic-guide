@@ -290,6 +290,14 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[马恺声](http://group.iiis.tsinghua.edu.cn/~maks/)** <span class="badge-tsinghua">清华</span>
+
+    DNN/LLM 推理加速器 · 算法架构协同设计 · Chiplet 片上网络
+
+-   **[高鸣宇](https://people.iiis.tsinghua.edu.cn/~gaomy/)** <span class="badge-tsinghua">清华</span>
+
+    近数据处理与存内计算 · 稀疏张量加速器 · AI 负载内存优化
+
 
 -   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
 
@@ -311,14 +319,6 @@ graph LR
 
     端侧 LLM 推理 · 量化压缩 · AI 加速器
 
--   **[崔斌](https://cuibinpku.github.io/)** <span class="badge-pku">北大</span>
-
-    分布式大模型训练 · 异构集群并行策略 · LLM 推理加速
-
--   **[杨耀东](https://yangyaodong.com/)** <span class="badge-pku">北大</span>
-
-    大模型对齐训练 · 强化学习后训练 · 多智能体系统
-
 -   **[邱锡鹏](https://xpqiu.github.io/)** <span class="badge-fudan">复旦</span>
 
     大模型高效训练 · 长上下文推理 · 稀疏化与压缩
@@ -326,6 +326,14 @@ graph LR
 -   **[陈涛](https://eetchen.github.io/)** <span class="badge-fudan">复旦</span>
 
     视觉大模型压缩 · 量化与剪枝加速 · 边缘高效推理
+
+-   **[崔斌](https://cuibinpku.github.io/)** <span class="badge-pku">北大</span>
+
+    分布式大模型训练 · 异构集群并行策略 · LLM 推理加速
+
+-   **[杨耀东](https://yangyaodong.com/)** <span class="badge-pku">北大</span>
+
+    大模型对齐训练 · 强化学习后训练 · 多智能体系统
 
 -   **[陈全](https://www.cs.sjtu.edu.cn/~chen-quan/)** <span class="badge-other">交大</span>
 
@@ -385,6 +393,18 @@ graph LR
 -   **[Tao Yu（余涛）](https://taoyds.github.io/)** <span class="badge-hk">港大</span>
 
     LLM Agent · 代码生成（Spider/SWE）· 计算机使用智能体（OSWorld）
+
+-   **[Kai Chen（陈凯）](https://cse.hkust.edu.hk/~kaichen/)** <span class="badge-hk">港科大</span>
+
+    分布式训练网络 · AI 集群调度 · 高性能互联
+
+-   **[James Tin Yau Kwok（郭天佑）](https://www.cse.ust.hk/~jamesk/)** <span class="badge-hk">港科大</span>
+
+    模型压缩与量化 · 高效深度学习 · 联邦学习
+
+-   **[Xiaowen Chu（褚晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大</span>
+
+    稀疏 LLM 推理系统 · KV 缓存压缩 · MoE 分布式训练
 
 -   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
 
@@ -446,25 +466,9 @@ graph LR
 
     边缘 AI 推理 · TinyML 系统 · MLPerf 基准测试
 
--   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
-
-    LLM 加速器设计 · AI 编译器（HLS） · FPGA 推理加速
-
 -   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span> <span class="prof-w"></span>
 
     大语言模型训练 · 长上下文推理 · 对齐与强化学习
-
--   **[Kai Chen（陈凯）](https://cse.hkust.edu.hk/~kaichen/)** <span class="badge-hk">港科大</span>
-
-    分布式训练网络 · AI 集群调度 · 高性能互联
-
--   **[James Tin Yau Kwok（郭天佑）](https://www.cse.ust.hk/~jamesk/)** <span class="badge-hk">港科大</span>
-
-    模型压缩与量化 · 高效深度学习 · 联邦学习
-
--   **[Xiaowen Chu（褚晓文）](https://sites.google.com/view/chuxiaowen)** <span class="badge-hk">港科大</span>
-
-    稀疏 LLM 推理系统 · KV 缓存压缩 · MoE 分布式训练
 
 -   **[Karthik Narasimhan](https://karthikncode.github.io/)** <span class="badge-intl">Princeton</span>
 
@@ -473,6 +477,10 @@ graph LR
 -   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span> <span class="prof-w"></span>
 
     高效 LLM 推理 · 上下文稀疏性（Deja Vu） · 单卡推理（FlexGen）
+
+-   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
+
+    LLM 加速器设计 · AI 编译器（HLS） · FPGA 推理加速
 
 -   **[Yuandong Tian（田渊栋）](https://yuandong-tian.com/)** <span class="badge-intl">Meta FAIR</span>
 
