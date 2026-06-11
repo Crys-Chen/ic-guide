@@ -2,22 +2,6 @@
 hide:
   - navigation
 ---
-<!-- ══════════════ NIGHT MODE HERO (slate only) ══════════════ -->
-<div class="df-dark">
-<div class="df-bg"></div>
-<div class="df-gridlines"></div>
-<div class="df-inner">
-<div class="df-pill">IC 自学指南 · 复旦大学</div>
-<h1 class="df-title">让知识<br><span class="df-glow">回归连续</span></h1>
-<p class="df-desc">从器件工艺到量子芯片，17 个前沿科研方向，200+ 门精选课程</p>
-<div class="df-ctas">
-<a href="科研方向/" class="df-btn">探索科研方向 →</a>
-<a href="学习地图/" class="df-ghost">学习地图</a>
-</div>
-</div>
-<a class="df-scroll" href="#_1"><span class="df-scroll-t">序言</span><span class="df-scroll-a">↓</span></a>
-</div>
-
 <!-- ══════════════ DAY MODE HERO (default only) ══════════════ -->
 <div class="df-light">
 <div class="df-lbg"></div>
@@ -41,14 +25,6 @@ hide:
 </nav>
 </div>
 <a class="df-scroll" href="#_1"><span class="df-scroll-t">序言</span><span class="df-scroll-a">↓</span></a>
-</div>
-
-<!-- ══════════════ NIGHT MODE CARDS (slate only) ══════════════ -->
-<div class="df-cards">
-<a href="科研方向/" class="df-card"><div class="df-ct"><span class="df-ci">🔬</span><span class="df-ca">→</span></div><h3>科研方向</h3><p>17 个前沿方向，器件·电路·架构·应用</p></a>
-<a href="学习地图/数学/" class="df-card"><div class="df-ct"><span class="df-ci">📚</span><span class="df-ca">→</span></div><h3>学习地图</h3><p>200+ 精选课程，国内外顶级高校收录</p></a>
-<a href="学习地图/" class="df-card"><div class="df-ct"><span class="df-ci">🗺️</span><span class="df-ca">→</span></div><h3>学习地图</h3><p>跨学科知识地图，明确路径与依赖</p></a>
-<a href="工程工具/Git/" class="df-card"><div class="df-ct"><span class="df-ci">🛠️</span><span class="df-ca">→</span></div><h3>工程工具</h3><p>Git · Linux · LaTeX · Docker 速通</p></a>
 </div>
 
 <div class="df-below" markdown>

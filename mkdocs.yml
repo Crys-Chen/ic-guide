@@ -37,15 +37,6 @@ theme:
     - scheme: default
       primary: custom
       accent: custom
-      toggle:
-        icon: material/weather-night
-        name: 切换为夜间模式
-    - scheme: slate
-      primary: custom
-      accent: deep purple
-      toggle:
-        icon: material/weather-sunny
-        name: 切换为日间模式
 
   font:
     text: Noto Sans SC
