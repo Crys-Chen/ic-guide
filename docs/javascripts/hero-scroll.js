@@ -37,17 +37,17 @@
     var heroH = hero.offsetHeight || (window.innerHeight - topOff);
 
     // hero 固定全屏（首页和星图页完全一致）
+    // setProperty + important 覆盖 .rg-fullscreen 里的 margin !important CSS
     Object.assign(hero.style, {
       position:   'fixed',
       top:        topOff + 'px',
       left:       '0',
       right:      '0',
-      width:      '100%',
-      marginLeft: '0',
-      marginTop:  '0',
       zIndex:     '1',
       transition: 'opacity 0.15s ease',
     });
+    hero.style.setProperty('margin',  '0', 'important');
+    hero.style.setProperty('width',   '100%', 'important');
 
     var fadeScrollDist = Math.round(heroH * FADE);
     below.style.paddingTop    = (fadeScrollDist + 32) + 'px';

@@ -227,13 +227,10 @@
   font-size: .8rem !important;
 }
 
-/* 右栏（TOC 侧栏）加宽，让整个目录占满右栏约 2/3 */
+/* 右栏（TOC 侧栏）收窄配合 64rem 网格，避免 layout 溢出 */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--secondary {
-    width: 16rem !important;
-  }
-  [dir=ltr] .md-sidebar--secondary .md-sidebar__inner {
-    padding-right: .8rem !important;
+    width: 12.1rem !important;
   }
 }
 
