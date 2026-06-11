@@ -7,11 +7,13 @@
 ## 推荐课程
 
 - **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课,**讲 GPU、向量化、cache coherence、共享内存** ★
-- **[GPU 体系结构](GPU体系结构/index.md)** — SIMT 执行模型 / warp 调度 / HBM 内存系统；含入门（NPTEL）、深度（ETH Mutlu）、中文（ZOMI 酱）三层课程 ★
+- **[NPTEL: GPU Architectures and Programming (IIT KGP)](NPTEL_GPU.md)** — GPU 入门，CUDA 编程模型 + warp 执行 + 并行算法 ★
+- **[ETH HetSys: Heterogeneous Systems（Mutlu）](ETH_HetSys.md)** — GPU 深度课，warp 调度 / 访存合并 / HBM 微架构 ★
+- **[ZOMI 酱：GPU 架构原理系列](ZOMI_GPU.md)** — 中文，Fermi→Hopper 代际演进，含 Tensor Core 专题 ★
 
 ## 学习路径建议
 
-**做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ 进入 [GPU 体系结构](GPU体系结构/index.md) 深挖微架构 → 配合 Gem5/GPGPU-Sim 实操
+**做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ NPTEL GPU 入门微架构 → ETH HetSys 深挖 warp 调度与 HBM → 配合 Gem5/GPGPU-Sim 实操
 
 
 ## 对应的科研方向

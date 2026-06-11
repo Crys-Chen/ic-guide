@@ -262,7 +262,6 @@ nav:
         - Chisel:
           - Chisel Bootcamp: "学习地图/电路/硬件描述语言(HDL)/Chisel/chisel-bootcamp.md"
         - HLS:
-          - 学习地图/电路/硬件描述语言(HDL)/HLS/index.md
           - "高亚军：跟 Xilinx SAE 学 HLS": "学习地图/电路/硬件描述语言(HDL)/HLS/gaoyajun_hls.md"
           - "HLS Programming with FPGAs（Lehigh）": "学习地图/电路/硬件描述语言(HDL)/HLS/lehigh_hls.md"
       - 数字:
@@ -333,10 +332,8 @@ nav:
         - 学习地图/电路/ASIC/index.md
         - ASIC设计(复旦): "学习地图/电路/ASIC/INFO130094.md"
         - "UIUC VLSI CAD (Coursera)": "学习地图/电路/ASIC/UIUC_VLSI_CAD.md"
-        - EDA算法:
-          - 学习地图/电路/ASIC/EDA算法/index.md
-          - "NPTEL: VLSI Physical Design (IIT KGP)": "学习地图/电路/ASIC/EDA算法/NPTEL_physical_design.md"
-          - "NPTEL: Synthesis of Digital Systems (IIT Delhi)": "学习地图/电路/ASIC/EDA算法/NPTEL_synthesis.md"
+        - "NPTEL: VLSI Physical Design (IIT KGP)": "学习地图/电路/ASIC/NPTEL_physical_design.md"
+        - "NPTEL: Synthesis of Digital Systems (IIT Delhi)": "学习地图/电路/ASIC/NPTEL_synthesis.md"
         - 数字后端(征集中): "学习地图/电路/ASIC/数字后端.md"
         - 补充资源: "学习地图/电路/ASIC/补充资源.md"
       - 生物电子接口(征集中): "学习地图/电路/生物电子/index.md"
@@ -414,11 +411,9 @@ nav:
         - 中科大:并行计算: "学习地图/系统架构/并行与分布式系统/USTC_parallel.md"
         - 高性能并行编程(parallel101): "学习地图/系统架构/并行与分布式系统/parallel101.md"
         - "CMU 15-418/Stanford CS149": "学习地图/系统架构/并行与分布式系统/CS149.md"
-        - GPU体系结构:
-          - 学习地图/系统架构/并行与分布式系统/GPU体系结构/index.md
-          - "NPTEL: GPU Architectures and Programming (IIT KGP)": "学习地图/系统架构/并行与分布式系统/GPU体系结构/NPTEL_GPU.md"
-          - "ETH HetSys（Gómez-Luna / Mutlu）": "学习地图/系统架构/并行与分布式系统/GPU体系结构/ETH_HetSys.md"
-          - "ZOMI 酱：GPU 架构原理系列": "学习地图/系统架构/并行与分布式系统/GPU体系结构/ZOMI_GPU.md"
+        - "NPTEL: GPU Architectures and Programming (IIT KGP)": "学习地图/系统架构/并行与分布式系统/NPTEL_GPU.md"
+        - "ETH HetSys: Heterogeneous Systems（Mutlu）": "学习地图/系统架构/并行与分布式系统/ETH_HetSys.md"
+        - "ZOMI 酱：GPU 架构原理系列": "学习地图/系统架构/并行与分布式系统/ZOMI_GPU.md"
       - 编译原理:
         - 学习地图/系统架构/编译原理/index.md
         - "Stanford CS143": "学习地图/系统架构/编译原理/CS143.md"
