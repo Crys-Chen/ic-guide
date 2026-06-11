@@ -8,10 +8,10 @@
     if (!sidebar) return;
     var nav = sidebar.querySelector('.md-nav--secondary');
     if (!nav) return;
-    var headings = essay.querySelectorAll('h2[id]');
+    var headings = Array.from(essay.querySelectorAll('h2[id]'));
     if (!headings.length) return;
 
-    // 补上 Material 标准的"目录"标题（正常页面由模板生成，这里手动补）
+    // 补上 Material 标准的"目录"标题
     if (!nav.querySelector('.md-nav__title')) {
       var label = document.createElement('label');
       label.className = 'md-nav__title';
@@ -27,23 +27,45 @@
     if (existing) existing.remove();
     var ul = document.createElement('ul');
     ul.className = 'md-nav__list';
-    ul.setAttribute('data-md-component', 'toc');
-    ul.setAttribute('data-md-scrollfix', '');
+
+    var links = [];
     headings.forEach(function (h) {
       var li = document.createElement('li');
       li.className = 'md-nav__item';
       var a = document.createElement('a');
       a.href = '#' + h.id;
       a.className = 'md-nav__link';
+      // 阻止 Material instant nav 拦截 hash 链接，改用原生滚动
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var target = document.getElementById(h.id);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
       var span = document.createElement('span');
       span.className = 'md-ellipsis';
       span.textContent = h.textContent.replace(/¶$/, '').trim();
       a.appendChild(span);
       li.appendChild(a);
       ul.appendChild(li);
+      links.push(a);
     });
+
     nav.appendChild(ul);
     sidebar.removeAttribute('hidden');
+
+    // 自行实现滚动高亮（Material scroll-spy 在注入前已初始化，无法感知这批 link）
+    function updateActive() {
+      var currentId = null;
+      headings.forEach(function (h) {
+        if (h.getBoundingClientRect().top <= 120) currentId = h.id;
+      });
+      links.forEach(function (a) {
+        a.classList.toggle('md-nav__link--active', a.getAttribute('href') === '#' + currentId);
+      });
+    }
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
   }
 
   function init() {
