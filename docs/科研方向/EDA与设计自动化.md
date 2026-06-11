@@ -9,6 +9,7 @@ hide:
   <text x="570" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1E293B">集成电路科研方向全景图</text>
   <text x="250" y="54" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#0E7490">← 计算媒介更奇异</text>
   <text x="1000" y="54" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#16A34A">更贴近物理世界 →</text>
+  <defs><filter id="loc-b" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.4"/></filter></defs>
   <rect x="88" y="88" width="147" height="298" rx="6" fill="#ECFEFF"/>
   <rect x="239" y="88" width="147" height="298" rx="6" fill="#FEF2F2"/>
   <rect x="390" y="88" width="147" height="298" rx="6" fill="#F8FAFC"/>
@@ -33,6 +34,7 @@ hide:
   <text x="81" y="240" text-anchor="end" font-size="10.5" fill="#475569">体系结构</text>
   <text x="81" y="298" text-anchor="end" font-size="10.5" fill="#475569">电路</text>
   <text x="81" y="356" text-anchor="end" font-size="10.5" fill="#475569">器件</text>
+  <g filter="url(#loc-b)" opacity="0.42">
   <rect x="92" y="92" width="68" height="290" rx="5" fill="#CFFAFE" stroke="#0E7490" stroke-width="1.2"/>
   <text x="126" y="231" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">量子计算</text>
   <text x="126" y="246" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">与量子芯片</text>
@@ -73,7 +75,9 @@ hide:
   <rect x="1060" y="266" width="68" height="116" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
   <text x="1094" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#15803D">MEMS 与</text>
   <text x="1094" y="332" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#15803D">微纳传感器</text>
+  </g>
   <text x="81" y="450" text-anchor="end" font-size="10.5" fill="#475569">各方向通用</text>
+  <g filter="url(#loc-b)" opacity="0.42">
   <rect x="92" y="408" width="1040" height="28" rx="5" fill="#F1F5F9" stroke="#64748B" stroke-width="1.1"/>
   <text x="612" y="426" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">EDA 与设计自动化</text>
   <rect x="92" y="440" width="1040" height="28" rx="5" fill="#EEF2F6" stroke="#64748B" stroke-width="1.1"/>

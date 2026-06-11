@@ -80,10 +80,4 @@ graph TB
 | [AI 算法与系统](../科研方向/AI算法与系统.md) | Docker + Git + Python 生态 |
 | 任何方向 | Git + LaTeX + Linux Shell |
 
-## 学习节奏
-
-- **大一阶段**:Git + Linux + Vim + LaTeX,先把"通用工具"学到自如(MIT Missing Semester 是最好的入门)
-- **大二大三**:按方向选 EE 工具(模拟方向:LTspice/Cadence;数字方向:Vivado/ModelSim)
-- **大四 / 研究生**:按科研需求精进(架构方向上 Gem5,ML 方向上 Docker)
-
 > 工具是**杠杆**,不是目标。把 70% 的精力放在"学到能用"上,30% 放在"学到精通"上。除非你的研究本身就是工具开发(EDA 方向),否则不需要把每个工具的每个选项都摸透。
