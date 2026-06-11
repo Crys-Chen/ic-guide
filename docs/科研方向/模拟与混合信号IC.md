@@ -360,7 +360,7 @@ graph LR
 
     高速流水线 ADC · 混合信号 IC · RFID 芯片系统
 
--   **[李宇根（Woogeun Rhee）](https://www.x-mol.com/university/faculty/243668)** <span class="badge-tsinghua">清华</span>
+-   **[李宇根（Woogeun Rhee）](https://www.sic.tsinghua.edu.cn/info/1045/2240.htm)** <span class="badge-tsinghua">清华</span>
 
     低压混合型 PLL · 小数分频频率合成 · BLE 射频收发前端
 
