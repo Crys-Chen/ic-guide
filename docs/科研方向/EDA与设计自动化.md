@@ -185,43 +185,43 @@ graph LR
 
 -   **[喻文健](http://numbda.cs.tsinghua.edu.cn/~yuwj/)** <span class="badge-tsinghua">清华</span>
 
-    EDA 算法 · 电磁场求解器 · IC 互连参数提取
+    IC 互连参数提取 · 电磁场快速求解 · 3D IC 热仿真
 
 -   **[叶佐昌](https://www.sic.tsinghua.edu.cn/en/info/1085/1414.htm)** <span class="badge-tsinghua">清华</span>
 
-    VLSI CAD 数值算法 · 电磁仿真 · 模拟/混合信号电路仿真
+    VLSI 电磁仿真算法 · 混合信号电路仿真 · EDA 数值方法
 
 -   **[王彦](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm)** <span class="badge-tsinghua">清华</span> <span class="prof-w"></span>
 
-    器件建模与 EDA · 电路-器件协同仿真 · 宽禁带半导体器件
+    器件建模与 EDA · 宽禁带半导体器件 · 毫米波电路自动设计
 
 -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
-    EDA · FPGA HLS 编译优化 · AI 异构计算加速
+    硬件综合与 EDA · FPGA 可重构计算 · AI 芯片硬件软件协同
 
 -   **[罗国杰](http://ceca.pku.edu.cn/en/people_/faculty_/guojie_luo/)** <span class="badge-pku">北大</span>
 
-    物理设计自动化 · FPGA 布局布线 · 领域专用加速器
+    芯片物理设计自动化 · FPGA 布局布线 · AI 驱动 EDA
 
 -   **[林亦波](https://ic.pku.edu.cn/szdw/zzjs/sjzdhyjsxtx1/lyb_ae03bbb7dd1548659c1ffe83edd4a047/index.htm)** <span class="badge-pku">北大</span>
 
-    AI for EDA · GPU/FPGA 加速 EDA 算法 · CircuitNet 数据集
+    芯片布局 · 布线与时序优化 · AI 辅助物理设计
 
 -   **[李萌（Meng Li）](https://mengli.me/)** <span class="badge-pku">北大</span>
 
-    EDA 与硬件软件协同设计 · 高效安全 AI 加速
+    算法硬件协同设计 · 神经网络加速器优化 · 隐私保护 AI 推理
 
 -   **[陈建利](https://sme.fudan.edu.cn/5f/c6/c31141a352198/page.htm)** <span class="badge-fudan">复旦</span>
 
-    IC 布局算法 · VLSI 物理设计优化
+    芯片单元布局合法化 · 全局布线算法 · 光刻热点检测
 
 -   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
-    模拟电路 EDA · ML 辅助 IC 设计自动化 · 高速互连分析
+    模拟电路仿真 · 高速互连建模 · 制造工艺协同设计
 
 -   **[杨帆](https://faculty.fudan.edu.cn/yangfan/zh_CN/index.htm)** <span class="badge-fudan">复旦</span>
 
-    电路级仿真 · 互连仿真 · 热分析 EDA
+    电路分析与仿真 · 互连建模优化 · 模型降阶方法
 
 -   **[郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/)** <span class="badge-other">交大</span>
 
@@ -229,19 +229,19 @@ graph LR
 
 -   **[严昌浩](https://icmne.fudan.edu.cn/2d/4e/c48925a732494/page.htm)** <span class="badge-fudan">复旦</span>
 
-    模拟电路设计自动化 · 寄生参数提取 · 可制造性设计（DFM）
+    模拟电路智能综合 · 良率与变差优化 · AI 驱动版图自动化
 
 -   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
 
-    EDA 电路仿真 · 稀疏矩阵并行求解 · 面向科学计算的软硬件协同
+    SPICE 电路仿真加速 · 寄生参数快速提取 · 信号完整性分析
 
 -   **[蒋力](https://www.cs.sjtu.edu.cn/jiaoshiml/jiangli.html)** <span class="badge-other">交大</span>
 
-    芯片设计自动化 · ML 辅助硬件设计 · AI 加速器与存算架构
+    ML 辅助芯片设计 · 存算一体架构 · AI 加速器物理实现
 
 -   **[卓成](https://person.zju.edu.cn/chengzhuo)** <span class="badge-other">浙大</span>
 
-    设计自动化 · 低功耗芯片设计 · AI 算法与硬件协同
+    LLM 辅助设计综合 · 智能体 EDA 流程 · 低功耗芯片自动化
 
 -   **[孙奇（Qi Sun）](https://qisunchn.top/)** <span class="badge-other">浙大</span>
 
@@ -249,11 +249,11 @@ graph LR
 
 -   **[陈松](https://faculty.ustc.edu.cn/chensong/zh_CN/index.htm)** <span class="badge-other">中科大</span>
 
-    高层次综合 · 物理设计自动化 · 片上网络与神经网络加速器
+    高层次综合 · 神经网络加速器架构 · 物理设计时序预测
 
 -   **[钱超](http://www.lamda.nju.edu.cn/qianc/)** <span class="badge-other">南大</span>
 
-    演化计算与机器学习 · AI for EDA · 时序驱动芯片布局
+    演化计算与黑盒优化 · AI 驱动芯片布局 · 时序驱动物理设计
 
 -   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
@@ -261,15 +261,15 @@ graph LR
 
 -   **[郑飞君](https://person.zju.edu.cn/frank_zheng)** <span class="badge-other">浙大</span>
 
-    数模混合芯片 EDA · 设计制造一体化与零缺陷制造 · AI 辅助 EDA 算法
+    数模混合电路 EDA · 设计制造一体化 · AI 辅助 EDA 算法
 
 -   **[王杰（Jie Wang）](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
 
-    AI for EDA · 芯片宏单元布局（LaMPlace/ChiPBench） · 强化学习与神经逻辑综合
+    AI 辅助芯片布局 · 神经逻辑综合 · 强化学习优化
 
 -   **[杜源（Yuan Du）](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
 
-    AI/LLM 辅助模拟电路设计 · 晶体管级电路与版图自动生成 · 高速接口 EDA
+    LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -280,47 +280,47 @@ graph LR
 
 -   **[Zhiyao Xie（谢知遥）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
 
-    AI 辅助 EDA · LLM for RTL 生成 · 时序分析
+    LLM 生成 RTL 代码 · 功耗与时序分析 · 芯片基础模型
 
 -   **[Bei Yu（余备）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">港中大</span>
 
-    ML + EDA · 光刻热点检测 · 布局布线优化
+    光刻掩模优化 · 布局布线物理设计 · ML 驱动 EDA
 
 -   **[Tsung-Yi Ho（何宗易）](https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/)** <span class="badge-hk">港中大</span>
 
-    3D IC/先进封装 EDA · Chiplet 设计自动化
+    Chiplet 封装协同设计 · 3D IC 全局布线 · 微流控芯片自动化
 
 -   **[Qiang Xu（徐强）](https://www.cse.cuhk.edu.hk/~qxu/)** <span class="badge-hk">港中大</span>
 
-    EDA 测试与验证 · 硬件安全 · 近似计算
+    电路结构学习 · 形式验证与 SAT · 硬件测试与安全
 
 -   **[Andrew Kahng](https://vlsicad.ucsd.edu/~abk/)** <span class="badge-intl">UCSD</span>
 
-    物理设计 · 布局布线 · OpenROAD 开源 EDA
+    物理设计与布局布线 · 设计制造协同 · OpenROAD 开源 EDA
 
 -   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
 
-    FPGA 设计自动化 · HLS · 领域专用计算
+    FPGA 综合与自动化 · 高层次综合 HLS · 专用加速器设计
 
 -   **[David Z. Pan（潘志刚）](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
 
-    EDA · AI/IC 协同优化 · 模拟/RF 设计自动化
+    AI 驱动物理设计 · LLM 辅助 RTL 生成 · 模拟与射频 EDA
 
 -   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
-    ML 驱动芯片布局 · AlphaChip
+    强化学习芯片布图 · AI 硬件协同设计 · ML 系统优化
 
 -   **[Larry Pileggi](https://users.ece.cmu.edu/~pileggi/)** <span class="badge-intl">CMU</span>
 
-    互连建模与时序仿真 · IC 设计方法学 · 电力系统优化
+    电路仿真与时序分析 · 互连建模 · 逻辑加锁与芯片安全
 
 -   **[Diana Marculescu](https://www.ece.utexas.edu/people/faculty/diana-marculescu)** <span class="badge-intl">UT Austin</span> <span class="prof-w"></span>
 
-    能效与可靠性感知计算 · 硬件感知机器学习 · 嵌入式系统
+    硬件感知神经网络设计 · AI 模型到芯片映射 · FPGA 稀疏加速
 
 -   **[Deming Chen（陈德铭）](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
 
-    高层次综合（HLS） · FPGA 重构计算 · ML 硬件加速自动化
+    高层次综合（HLS） · LLM 辅助 RTL 生成 · 形式验证自动化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

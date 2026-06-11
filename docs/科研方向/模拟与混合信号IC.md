@@ -253,111 +253,111 @@ graph LR
 
 -   **[叶凡](https://sme.fudan.edu.cn/60/57/c31157a352343/page.htm)** <span class="badge-fudan">复旦</span>
 
-    高能效 SAR ADC · 低功耗数据转换器 · ISSCC/VLSI 发表
+    流水线 ADC · 时间交织数据转换器 · 5G 基站高精度 ADC/DAC
 
 -   **[倪熔华](https://sme.fudan.edu.cn/60/15/c31149a352277/page.htm)** <span class="badge-fudan">复旦</span>
 
-    高速 PLL/频率综合器 · SerDes CDR · 片上时钟生成
+    低抖动分数 N PLL · 高速 SerDes 收发器 · 宽带 VCO 时钟生成
 
 -   **[许灏](https://sme.fudan.edu.cn/6b/47/c31134a420679/page.htm)** <span class="badge-fudan">复旦</span>
 
-    模拟 IC 设计 · ADC · 混合信号/射频集成电路
+    SAR ADC · Sub-sampling PLL · 宽带射频收发前端
 
 -   **[洪志良](https://icmne.fudan.edu.cn/3c/45/c48925a736325/page.htm)** <span class="badge-fudan">复旦</span>
 
-    混合信号 IC · 高速接口 · 模拟集成电路分析与设计
+    增量 ΣΔ ADC · 模拟运放与电源管理 IC · 混合信号射频收发
 
 -   **[孙楠（Nan Sun）](https://www.nansunlab.com/)** <span class="badge-tsinghua">清华</span>
 
-    新型 ADC 架构 · 低功耗数据转换器 · 磁传感器读出电路
+    VCO-based 新型 ADC 架构 · 低功耗噪声整形数据转换器 · 磁传感器读出电路
 
 -   **[王志华](https://www.sic.tsinghua.edu.cn/info/1014/1791.htm)** <span class="badge-tsinghua">清华</span>
 
-    高速高精度 ADC · 混合信号 IC · RFID 国家标准
+    高速流水线 ADC · 混合信号 IC · RFID 芯片系统
 
 -   **[李宇根（Woogeun Rhee）](https://www.x-mol.com/university/faculty/243668)** <span class="badge-tsinghua">清华</span>
 
-    低相噪 PLL · 小数分频锁相环 · 混合信号时钟电路
+    低压混合型 PLL · 小数分频频率合成 · BLE 射频收发前端
 
 -   **[姜汉钧](https://www.sic.tsinghua.edu.cn/info/1014/1814.htm)** <span class="badge-tsinghua">清华</span>
 
-    高精度 ADC · IoT 混合信号 IC · 模拟集成电路设计
+    超低功耗模拟 IC · 无线收发 SoC · 生物信号采集芯片
 
 -   **[叶乐](https://ic.pku.edu.cn/szdw/zzjs/Y1/yl/index.htm)** <span class="badge-pku">北大</span>
 
-    混合信号 IC · AI 芯片 · 存算一体 AIoT 芯片
+    混合信号 IC · AI 推理芯片 · 超低功耗 AIoT 传感器
 
 -   **[李福乐](https://www.sic.tsinghua.edu.cn/info/1014/1812.htm)** <span class="badge-tsinghua">清华</span>
 
-    高速高精度流水线 ADC · 电流舵 DAC · 数模混合 IC
+    高速高精度 ADC · 数据转换器架构 · 数模混合 IC
 
 -   **[沈林晓](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/slx/index.htm)** <span class="badge-pku">北大</span>
 
-    高速 SAR ADC · 噪声整形流水线 ADC · 智能传感器读出芯片
+    高速流水线 SAR ADC · 噪声整形 ADC · 传感器读出与成像芯片
 
 -   **[唐希源](https://ic.pku.edu.cn/szdw/zzjs/jcdlsjx1/txy/index.htm)** <span class="badge-pku">北大</span>
 
-    增量噪声整形 ADC · 电容数字转换器（CDC） · 浮动反相放大器
+    增量 Zoom ADC · 噪声整形流水线 ADC · 传感器前端信号调理
 
 -   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
 
-    模拟/射频/混合信号 IC · 高速 SerDes PHY · ADC/DAC（CARFIC 中心）
+    模拟/射频/混合信号 IC · 高速 SerDes PHY · ADC/DAC 数据转换
 
 -   **[金晶](https://icisee.sjtu.edu.cn/jiaoshiml/jinjing.html)** <span class="badge-other">交大</span> <span class="prof-w"></span>
 
-    频率综合器/PLL · 数据转换器 ADC/DAC · 射频/混合信号 IC
+    锁相环/频率综合器 · 数据转换器 ADC/DAC · 射频混合信号 IC
 
 -   **[陈铭易](https://icisee.sjtu.edu.cn/jiaoshiml/chenmingyi.html)** <span class="badge-other">交大</span>
 
-    精密传感接口芯片 · 超高分辨率 ΔΣ/Zoom ADC · 微能量采集与电源管理
+    精密传感接口芯片 · 超高分辨率 ΔΣ/Zoom ADC · 能量采集与电源管理
 
 -   **[王国兴](https://icisee.sjtu.edu.cn/jiaoshiml/wangguoxing.html)** <span class="badge-other">交大</span>
 
-    超低功耗数模混合 IC · 智能脑机接口芯片 · 生物医疗模拟前端（ISSCC/JSSC）
+    超低功耗神经信号读出 IC · 模拟前端与生物医疗 ADC · 可穿戴植入传感 SoC
 
 -   **[李永福](https://icisee.sjtu.edu.cn/jiaoshiml/liyongfu.html)** <span class="badge-other">交大</span>
 
-    模拟/混合信号 IC · 数据转换器（CT ΔΣ/时间交织 ADC）· 电源转换器与 AI 辅助 EDA
+    连续时间 ΔΣ 与时间交织 ADC · 亚采样 PLL 与数据转换器 · AI 辅助 EDA 与混合信号 IC
 
 -   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
 
-    亚采样 PLL（Sub-Sampling PLL 发明人）· 射频/模数混合信号 IC · ISSCC 多篇
+    亚采样 PLL（Sub-Sampling PLL 发明人）· 分数-N 频率综合与低抖动设计 · 毫米波射频模拟 IC
 
 -   **[谭志超](https://person.zju.edu.cn/zctan)** <span class="badge-other">浙大</span>
 
-    高精度 ADC · 超低功耗混合信号电路 · 传感器读出电路
+    噪声整形 SAR ADC 与 CT-DT ADC · 超低功耗混合信号电路 · 传感器接口与能量收集 IC
 
 -   **[罗宇轩](https://person.zju.edu.cn/luoyx)** <span class="badge-other">浙大</span>
 
-    模拟/混合信号 IC（JSSC/ISSCC/VLSI）· 传感器/仪器仪表 ASIC
+    MEMS 与电化学传感器 ASIC · 高动态范围读出电路 · 无线无源生物医疗 SoC
 
 -   **[赵梦恋](https://person.zju.edu.cn/zhaomenglian)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
 
-    数模混合 IC · 高精度低功耗数据转换芯片 · 电源管理 IC
+    数模混合 IC · 高精度噪声整形 ADC · 电源管理芯片
 
 -   **[何乐年](https://person.zju.edu.cn/0099103)** <span class="badge-other">浙大</span>
 
-    模拟与混合信号 IC · 高速高精度 ADC/DAC · CMOS 图像传感器读出 · 电源管理芯片
+    模拟与混合信号 IC · 高精度 ADC 与隔离放大器 · 图像传感器读出
 
 -   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
 
-    全数字锁相环 ADPLL · 超低相噪振荡器 · 数字化射频 IC
+    全数字锁相环 ADPLL · 低相噪振荡器 · 毫米波射频 IC
 
 -   **[程林](https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm)** <span class="badge-other">中科大</span>
 
-    电源管理 DC-DC · 模拟集成电路 · 生物电信号模拟前端 AFE（ISSCC/JSSC）
+    高效率 DC-DC 转换器 · 无线充电芯片 · 生物电信号前端 AFE
 
 -   **[赵雷](https://sme.ustc.edu.cn/2022/0601/c30996a556917/page.htm)** <span class="badge-other">中科大</span>
 
-    专用集成电路 ASIC · 高速高精度信号采集 ADC · 超高精度时间测量 TDC
+    高速 ADC 与时间交错校准 · 超高精度 TDC · 粒子探测读出 ASIC
 
 -   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
 
-    模拟集成电路设计 · 光通信模拟前端 AFE · AI 辅助模拟电路敏捷设计
+    模拟 IC 设计 · AI 辅助敏捷设计 · 存算一体芯片
 
 -   **[杜源](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
 
-    高速 SerDes/CDR · 光电高速 IO（2–224 Gbps）· AI 辅助高速接口电路
+    PLL / CDR 时钟恢复 · 高速混合信号 ADC/DAC · 光电融合互联
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -368,7 +368,7 @@ graph LR
 
 -   **[Rui P. Martins](https://ime.um.edu.mo/people/rmartins/)** <span class="badge-hk">澳门大学</span>
 
-    模拟与混合信号 VLSI · 射频 IC · 国家重点实验室 PI
+    高精度 ADC 架构 · 运放与基准电路 · 低功耗混合信号 VLSI
 
 -   **余成斌** <span class="badge-hk">澳门大学</span>
 
@@ -376,51 +376,51 @@ graph LR
 
 -   **[Pui-In Mak（麥沛然）](https://ime.um.edu.mo/people/pimak/)** <span class="badge-hk">澳门大学</span>
 
-    射频与模拟电路 · 微流控芯片 · 无线传感 IC
+    Sub-Sampling PLL · 射频模拟混合信号 IC · 超低功耗数据转换
 
 -   **[Howard Cam Luong（梁錦和）](https://ece.hkust.edu.hk/eeluong)** <span class="badge-hk">港科大</span>
 
-    高速低功耗数据转换器 · 混合信号 IC · 射频接口电路
+    毫米波频率合成器 · PLL / VCO 设计 · 混合信号射频 IC
 
 -   **[Wing-Hung Ki（暨永雄）](https://ece.hkust.edu.hk/eeki)** <span class="badge-hk">港科大</span>
 
-    开关电源/PMIC · 开关电容功率转换器 · 电源管理 IC
+    开关电源 · 开关电容功率转换器 · 电源管理 IC
 
 -   **[Boris Murmann](https://murmann-group.org/)** <span class="badge-intl">U Hawaii</span>
 
-    SAR ADC · ADC 性能数据库 · 数据转换器教材
+    SAR ADC · 神经接口数据采集 IC · 模拟电路设计自动化
 
 -   **[Ian Galton](https://web.eng.ucsd.edu/~galton/)** <span class="badge-intl">UCSD</span>
 
-    ΔΣ 调制器 · 增量式 ADC · 数字辅助模拟校准
+    ΔΣ 调制器 · 高速 DAC ISI 校准 · 数字辅助 PLL
 
 -   **[Pavan Kumar Hanumolu](https://hanumolu.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
-    PLL/CDR · 超低功耗 SerDes · 数字辅助模拟电路
+    低抖动小数分频 PLL · 高速相干光 SerDes · 数字辅助模拟电路
 
 -   **[Michael Flynn](https://web.eecs.umich.edu/~mpflynn/)** <span class="badge-intl">U Michigan</span>
 
-    SAR ADC 架构创新 · 时间交织 ADC 校准 · 低功耗数据转换器
+    噪声整形 SAR ADC · 时间交织连续时间 ΔΣ ADC · VCO 基量化器
 
 -   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
 
-    高速 SerDes · 低功耗 I/O 互联 · 混合信号接口电路
+    高速串行收发器 · 低抖动锁相环 · 混合信号接口 IC
 
 -   **[Behzad Razavi](https://www.ee.ucla.edu/behzad-razavi/)** <span class="badge-intl">UCLA</span>
 
-    数据转换器 · PLL · 模拟/射频/混合信号 IC 教材权威
+    SAR/流水线 ADC · 低噪声锁相环 · 毫米波收发机
 
 -   **[Shanthi Pavan](https://www.ee.iitm.ac.in/people/shanthi-pavan/)** <span class="badge-intl">IIT Madras</span>
 
-    ΔΣ ADC · 连续时间调制器 · 高速模拟电路
+    连续时间 ΔΣ ADC · 滤波型数据转换器 · 高速模拟噪声分析
 
 -   **[Borivoje Nikolić](https://bwrc.eecs.berkeley.edu/people/borivoje-nikolic)** <span class="badge-intl">UC Berkeley</span>
 
-    高速数模混合电路 · 低功耗数字/模拟 VLSI · 敏捷芯片设计
+    SAR-VCO ADC · 多相时钟电路 · 自动化模拟版图生成
 
 -   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
 
-    机器学习硬件 · 数模混合 IC · 边缘 AI 芯片系统集成
+    存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

@@ -300,59 +300,59 @@ graph LR
 
 -   **[尹首一](https://www.sic.tsinghua.edu.cn/info/1040/1567.htm) & [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
 
-    软件定义芯片 · 可重构计算架构 · 神经网络加速器（Thinker）· VLSI 设计方法学
+    软件定义芯片 · 可重构计算架构 · 神经网络加速器
 
 -   **[刘雷波](https://www.sic.tsinghua.edu.cn/info/1014/1807.htm)** <span class="badge-tsinghua">清华</span>
 
-    软件定义芯片架构 · 密码处理器 · 可重构计算系统
+    CGRA 可重构架构 · 密码硬件加速器 · 硬件安全芯片
 
 -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
-    FPGA HLS 编译优化 · 硬件软件协同设计 · 神经网络加速
+    FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
 
 -   **[王伶俐](https://icmne.fudan.edu.cn/2d/43/c48925a732483/page.htm)** <span class="badge-fudan">复旦</span>
 
-    FPGA 结构研究 · 抗辐射 FPGA · 安全可编程计算
+    FPGA 架构设计 · CGRA 设计空间探索 · 可重构计算 EDA
 
 -   **[王堃](https://sme.fudan.edu.cn/60/2f/c31155a352303/page.htm)** <span class="badge-fudan">复旦</span>
 
-    FPGA 编译器设计 · 电路 EDA · 硬件-软件协同设计
+    FPGA 加速器编译器 · 稀疏神经网络加速 · EDA 自动化工具
 
 -   **[曾璇](https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
-    模拟电路 EDA · ML 辅助 IC 设计自动化 · FPGA 流程
+    模拟电路 EDA · 互连仿真与时序分析 · 并行 EDA 算法
 
 -   **[戴国浩](https://nicsefc.ee.tsinghua.edu.cn/people/GuohaoDai)** <span class="badge-other">交大</span>
 
-    稀疏计算软硬件协同 · LLM 推理加速器（FlightLLM） · FPGA/GPU 异构
+    FPGA LLM 推理加速 · 稀疏计算硬件映射 · 多 FPGA 异构系统
 
 -   **[张宸](https://chenzhangsjtu.github.io/)** <span class="badge-other">交大</span>
 
-    FPGA 深度学习加速器 · AI 处理器架构 · FPGA 可重构计算名人堂
+    FPGA 深度学习加速器 · 稀疏 AI 计算架构 · GPU 多节点系统设计
 
 -   **[赵杰茹](https://zjru.github.io/)** <span class="badge-other">交大</span> <span class="prof-w"></span>
 
-    高层次综合 HLS（COMBA） · 可重构计算与 EDA · 软硬件协同 AI 加速
+    高层次综合 HLS · 编译器与硬件协同设计 · LLM 自动生成硬件代码
 
 -   **[王则可（Zeke Wang）](https://wangzeke.github.io/)** <span class="badge-other">浙大</span>
 
-    FPGA 加速器 · FPGA SmartNIC（FpgaNIC） · 超异构计算平台
+    FPGA 加速器设计 · SmartNIC 网络卸载 · FPGA/P4/GPU 异构平台
 
 -   **[卢丽强（Liqiang Lu）](https://person.zju.edu.cn/liqianglu)** <span class="badge-other">浙大</span>
 
-    FPGA 稀疏神经网络加速器（SpWA/Speedy） · 张量加速与软硬件协同 · 体系结构与 EDA
+    FPGA 神经网络加速器 · 注意力机制与低精度计算 · AI 芯片软硬件协同
 
 -   **[周学海](https://cs.ustc.edu.cn/2020/0827/c23235a460092/page.htm)** <span class="badge-other">中科大</span>
 
-    可重构系统 · 面向特定应用的硬件加速 · 异构多核体系结构
+    可重构系统与 FPGA 加速 · 面向应用的硬件定制 · 异构多核体系结构
 
 -   **[王超](https://faculty.ustc.edu.cn/cswang/zh_CN/index.htm)** <span class="badge-other">中科大</span>
 
-    FPGA 可重构计算 · 智能处理器 · 深度学习加速系统
+    FPGA 可重构计算 · 深度学习加速系统 · 智能处理器架构
 
 -   **[李丽](https://ese.nju.edu.cn/74/10/c22629a357392/page.psp)** <span class="badge-other">南大</span> <span class="prof-w"></span>
 
-    可重构计算 · 多/众核处理芯片体系结构 · 三维片上网络（3D NoC）
+    可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -363,51 +363,51 @@ graph LR
 
 -   **[Wei Zhang（张薇）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span> <span class="prof-w"></span>
 
-    FPGA 敏捷设计 · 硬件-软件协同设计 · DNN FPGA 加速
+    FPGA 敏捷设计流程 · 高层次综合（HLS）与功耗优化 · LLM 与 DNN 硬件加速
 
 -   **[Hayden Kwok-Hay So（蘇國曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
 
-    异构可重构计算 · FPGA Overlay · 事件驱动视觉处理
+    异构可重构计算 · 稀疏加速器设计 · 事件驱动视觉处理
 
 -   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
 
-    FPGA 架构与 CAD · VPR/VTR 开源工具 · 布局布线算法
+    FPGA 架构与 CAD · 3D 堆叠 FPGA · 深度学习硬件映射
 
 -   **[Jason Anderson](https://www.ece.utoronto.ca/people/anderson-j-h/)** <span class="badge-intl">U Toronto</span>
 
-    FPGA 架构设计 · HLS · FPGA 物理设计自动化
+    FPGA 与 CGRA 架构 · HLS 编译优化 · RL 驱动逻辑综合
 
 -   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
-    FPGA HLS · ML for EDA · 神经网络 FPGA 加速
+    HLS 到 AI 加速器 · LLM 推理加速 · FPGA 异构计算
 
 -   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
 
-    FPGA 设计自动化 · HLS · 领域专用计算
+    FPGA 设计自动化 · HLS 数据流加速 · 领域专用计算
 
 -   **[Zhiru Zhang（张志汝）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
 
-    高层次综合 HLS · FPGA 加速器自动生成 · 硬件-算法协同优化
+    HLS 编译器设计 · FPGA 数据流加速 · 硬件加速器自动生成
 
 -   **[Mohamed Abdelfattah](https://www.abdelfattah-lab.com/)** <span class="badge-intl">Cornell</span>
 
-    FPGA 架构与 LLM 加速 · 神经网络 FPGA 映射 · HLS 自动化
+    FPGA 架构创新 · AI 推理硬件设计 · DNN 稀疏混合精度
 
 -   **[Cong Hao（郝聪）](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span> <span class="prof-w"></span>
 
-    FPGA 神经网络加速 · ML for EDA · 高效 DNN 硬件映射
+    FPGA 神经网络加速 · ML for EDA 布线 · 3D FPGA 架构生成
 
 -   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
 
-    定制化体系结构 · HLS 与 FPGA · AMD Versal ACAP 异构加速
+    异构加速器编译 · FPGA Transformer 加速 · AI 引擎 MLIR 框架
 
 -   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span> <span class="prof-w"></span>
 
-    动态调度 HLS（Dynamatic） · 数据流电路综合 · 编译器-硬件协同
+    动态调度 HLS · 数据流电路综合 · 编译器硬件协同
 
 -   **[Andre DeHon](https://www.seas.upenn.edu/faculty-directory/andre-dehon/)** <span class="badge-intl">U Penn</span>
 
-    空间计算与可重构架构 · FPGA 互连 · 硬件安全
+    FPGA 架构与互连 · 高层次综合 HLS · 增量编译与局部重配置
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

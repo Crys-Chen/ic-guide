@@ -360,43 +360,43 @@ graph LR
 
 -   **[王志华](https://www.sic.tsinghua.edu.cn/info/1014/1791.htm)** <span class="badge-tsinghua">清华</span>
 
-    射频/混合信号 IC · RFID 芯片 · 高速高精度 ADC
+    射频与混合信号 IC · 毫米波雷达收发机 · 高速 ADC 芯片
 
 -   **[李宇根（Woogeun Rhee）](https://www.x-mol.com/university/faculty/243668)** <span class="badge-tsinghua">清华</span>
 
-    PLL/频率综合器 · 射频混合信号 IC · 毫米波时钟系统
+    PLL 与频率综合器 · 超低功耗 UWB 收发机 · IoT 无线射频 IC
 
 -   **[陈文华](https://web.ee.tsinghua.edu.cn/chenwenhua/zh_CN/index.htm)** <span class="badge-tsinghua">清华</span>
 
-    射频功率放大器效率优化 · 5G/6G 线性化技术 · Doherty PA
+    射频功率放大器设计 · 5G 基站线性化技术 · 毫米波太赫兹 IC
 
 -   **[邓伟](https://www.sic.tsinghua.edu.cn/info/1014/1823.htm)** <span class="badge-tsinghua">清华</span>
 
-    高效率毫米波 PA 设计
+    毫米波收发机芯片 · 硅基太赫兹 IC · 雷达通信一体化系统
 
 -   **[池保勇](https://www.sic.tsinghua.edu.cn/info/1014/1825.htm)** <span class="badge-tsinghua">清华</span>
 
-    CMOS 毫米波收发机 · 5G 射频前端
+    CMOS 毫米波收发机 · 5G/6G 射频前端 · 宽带低噪 LNA 设计
 
 -   **[贾海昆](https://www.sic.tsinghua.edu.cn/info/1014/1815.htm)** <span class="badge-tsinghua">清华</span>
 
-    太赫兹 CMOS 收发机 · 毫米波雷达 IC
+    毫米波 / 太赫兹收发机 · 大规模相控阵芯片 · 高速串行接口 IC
 
 -   **[姜汉钧](https://www.sic.tsinghua.edu.cn/info/1014/1814.htm)** <span class="badge-tsinghua">清华</span>
 
-    低功耗无线神经记录芯片 · 高精度 ADC · IoT 混合信号 IC
+    超低功耗无线收发机 · 低温 CMOS 量子接口 · 生物信号混合信号 IC
 
 -   **[闫娜](https://sme.fudan.edu.cn/60/61/c31157a352353/page.htm)** <span class="badge-fudan">复旦</span> <span class="prof-w"></span>
 
-    高能效射频芯片 · 6G 可重构 RF · 毫米波雷达
+    宽带可重构 RF 收发机 · 低噪放与 PLL · 毫米波雷达前端
 
 -   **[徐鸿涛](https://icmne.fudan.edu.cn/2d/17/c48925a732439/page.htm)** <span class="badge-fudan">复旦</span>
 
-    毫米波 IC 与系统 · 5G/6G · 可穿戴 IoT 无线 SoC
+    5G/6G 数字功率放大器 · 毫米波宽带收发机 · 无线 SoC 与全双工 IC
 
 -   **[洪志良](http://icmne.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
 
-    高性能模拟/混合信号 IC · 射频收发机 · 高速接口芯片
+    射频混合信号收发机 · 高精度 ADC 与 DC-DC · 模拟 IC 基础设计
 
 -   **[唐长文](http://rfic.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
 
@@ -404,27 +404,27 @@ graph LR
 
 -   **[闵昊](http://rficae.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
 
-    射频与天线协同设计 · 毫米波封装天线（AiP） · 相控阵系统
+    宽带射频收发机 · 天线芯片协同设计 · 高速 ADC/DAC
 
 -   **[王志功](http://iroi.seu.edu.cn)** <span class="badge-other">东南大学</span>
 
-    微波光子集成电路 · 太赫兹器件 · 高速无线通信芯片
+    微波光子集成电路 · 太赫兹芯片 · 高速无线通信前端
 
 -   **[马顺利](https://icmne.fudan.edu.cn/2d/31/c48925a732465/page.htm)** <span class="badge-fudan">复旦</span>
 
-    毫米波/太赫兹相控阵雷达芯片 · 5G/6G 毫米波收发机 · FMCW/ADPLL
+    毫米波相控阵收发机 · 雷达与 5G/6G 芯片 · ADPLL/FMCW 锁相环
 
 -   **[洪伟](https://mmw.seu.edu.cn/2020/0928/c30531a348210/page.htm)** <span class="badge-other">东南大学</span>
 
-    毫米波集成天线与系统 · 大规模相控阵 · 毫米波/太赫兹理论与器件
+    毫米波集成天线 · 大规模相控阵系统 · 智能超表面与太赫兹
 
 -   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
 
-    CMOS 射频收发机 · 毫米波通信与雷达 IC · 高速有线收发前端
+    CMOS 射频收发机 · 毫米波通信与雷达 IC · 相控阵波束成形电路
 
 -   **[金晶](https://icisee.sjtu.edu.cn/jiaoshiml/jinjing.html)** <span class="badge-other">交大</span> <span class="prof-w"></span>
 
-    射频/混合信号 IC · 频率综合器（PLL） · 低功耗收发机与射频前端
+    射频/混合信号 IC · 频率综合器（PLL） · 毫米波雷达与 UWB 收发前端
 
 -   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
 
@@ -432,23 +432,23 @@ graph LR
 
 -   **[崔强](https://person.zju.edu.cn/qiangcui)** <span class="badge-other">浙大</span>
 
-    射频/毫米波/太赫兹器件电路与系统 · 高速接口与芯粒封装 · ML 辅助 IC 设计
+    射频/毫米波/太赫兹器件电路与系统 · 高速接口与芯粒封装 · 太赫兹收发机前端
 
 -   **[赵博](https://person.zju.edu.cn/zhaobo)** <span class="badge-other">浙大</span>
 
-    超低功耗 CMOS 无线收发芯片 · 片上天线微型 Radio（ISSCC 最小芯片） · 物联网/生物医疗 RF SoC
+    超低功耗 CMOS 无线收发芯片 · 无源无电池背散射 Radio · 物联网/生物医疗 RF SoC
 
 -   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
 
-    数字化射频 IC（Digital-RF） · 新型相控阵芯片 · 毫米波数字雷达 · ADPLL/数字 PA
+    毫米波全数字收发机 · 相控阵 IC 数字化 · ADPLL 与频率综合
 
 -   **[林福江](https://sme.ustc.edu.cn/2022/0601/c30996a556921/page.htm)** <span class="badge-other">中科大</span>
 
-    超低噪声毫米波射频前端 · GaN 第三代器件 MMIC · 射频器件建模
+    毫米波超低噪声前端 · GaN MMIC 功率器件 · 射频器件建模
 
 -   **[楼立恒](https://sme.ustc.edu.cn/2024/0225/c31014a630510/page.htm)** <span class="badge-other">中科大</span>
 
-    RF/毫米波收发电路与系统 · 全数字锁相环与频率综合 · 相控阵/MIMO IC 架构数字化
+    毫米波收发机电路 · 全数字锁相环 · 相控阵 MIMO 数字化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -459,27 +459,27 @@ graph LR
 
 -   **[C. Patrick Yue（俞捷）](https://ece.hkust.edu.hk/eepatrick)** <span class="badge-hk">港科大</span>
 
-    毫米波通信与感知电路 · 光无线物理层 · 高速有线 SoC
+    毫米波通信与感知 IC · 光无线高速收发 · 宽带 SoC 芯片
 
 -   **[Ali Niknejad](https://rfic.eecs.berkeley.edu)** <span class="badge-intl">UC Berkeley</span>
 
-    毫米波 CMOS 电路 · 5G/6G 收发机
+    毫米波 CMOS 功率放大器 · 5G/6G 收发机 · 数字化相控阵
 
 -   **[Behzad Razavi](https://www.seas.ucla.edu/brweb/)** <span class="badge-intl">UCLA</span>
 
-    射频/混合信号 IC · VCO/PLL/LNA 设计
+    射频/混合信号 IC · 收发机前端电路 · PLL/ADC/时钟综合
 
 -   **[Thomas Lee](https://profiles.stanford.edu/thomas-lee)** <span class="badge-intl">Stanford</span>
 
-    射频集成电路 · 超宽带/毫米波 CMOS
+    射频与太赫兹 CMOS · 超宽带收发机 · 振荡器网络与信号处理
 
 -   **[Gabriel Rebeiz](https://jacobsschool.ucsd.edu/faculty/profile?id=238)** <span class="badge-intl">UCSD</span>
 
-    相控阵与波束赋形 · 毫米波 RFIC · MEMS 开关
+    硅基相控阵与波束赋形 · 毫米波收发 RFIC · RF MEMS 可调滤波器
 
 -   **[Harish Krishnaswamy](https://cosmiccolumbia.com)** <span class="badge-intl">Columbia</span>
 
-    毫米波全双工 · 太赫兹 CMOS 收发机 · 频谱共享射频系统
+    毫米波/太赫兹收发机 · 全双工同频收发 IC · 频谱共享射频系统
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
