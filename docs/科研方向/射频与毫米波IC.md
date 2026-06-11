@@ -5,9 +5,94 @@ hide:
 
 设计让无线信号穿越空间的模拟芯片，把信息多快好省地传出去。从 5G 手机、毫米波雷达到卫星互联网，凡是要无线传信息的地方都少不了它。
 
+<div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="570" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1E293B">集成电路科研方向全景图</text>
+  <text x="250" y="54" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#0E7490">← 计算媒介更奇异</text>
+  <text x="1000" y="54" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#16A34A">更贴近物理世界 →</text>
+  <rect x="88" y="88" width="147" height="298" rx="6" fill="#ECFEFF"/>
+  <rect x="239" y="88" width="147" height="298" rx="6" fill="#FEF2F2"/>
+  <rect x="390" y="88" width="147" height="298" rx="6" fill="#F8FAFC"/>
+  <rect x="541" y="88" width="289" height="298" rx="6" fill="#EFF6FF"/>
+  <rect x="834" y="88" width="76" height="298" rx="6" fill="#FFFBEB"/>
+  <rect x="914" y="88" width="218" height="298" rx="6" fill="#F0FDF4"/>
+  <text x="161" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#0E7490">光 · 量子</text>
+  <text x="312" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#DC2626">模拟 · 射频</text>
+  <text x="463" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#64748B">存储 · 神经形态</text>
+  <text x="685" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#1D4ED8">数字计算</text>
+  <text x="872" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#D97706">功率电子</text>
+  <text x="1023" y="82" text-anchor="middle" font-size="12" font-weight="bold" fill="#16A34A">传感 · 生物 · 机械</text>
+  <line x1="86" y1="92" x2="1132" y2="92" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="86" y1="150" x2="1132" y2="150" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="86" y1="208" x2="1132" y2="208" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="86" y1="266" x2="1132" y2="266" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="86" y1="324" x2="1132" y2="324" stroke="#EEF2F6" stroke-width="1"/>
+  <line x1="86" y1="382" x2="1132" y2="382" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="86" y1="92" x2="86" y2="382" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="81" y="124" text-anchor="end" font-size="10.5" fill="#475569">算法 / 应用</text>
+  <text x="81" y="182" text-anchor="end" font-size="10.5" fill="#475569">系统 / 软件</text>
+  <text x="81" y="240" text-anchor="end" font-size="10.5" fill="#475569">体系结构</text>
+  <text x="81" y="298" text-anchor="end" font-size="10.5" fill="#475569">电路</text>
+  <text x="81" y="356" text-anchor="end" font-size="10.5" fill="#475569">器件</text>
+  <rect x="92" y="92" width="68" height="290" rx="5" fill="#CFFAFE" stroke="#0E7490" stroke-width="1.2"/>
+  <text x="126" y="231" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">量子计算</text>
+  <text x="126" y="246" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">与量子芯片</text>
+  <rect x="163" y="92" width="68" height="290" rx="5" fill="#CFFAFE" stroke="#0E7490" stroke-width="1.2"/>
+  <text x="197" y="231" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">光电子</text>
+  <text x="197" y="246" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#0E7490">与硅光集成</text>
+  <rect x="243" y="266" width="68" height="116" rx="5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <text x="277" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#DC2626">模拟与</text>
+  <text x="277" y="332" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#DC2626">混合信号IC</text>
+  <rect x="314" y="266" width="68" height="116" rx="5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <text x="348" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#DC2626">射频与</text>
+  <text x="348" y="332" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#DC2626">毫米波IC</text>
+  <rect x="394" y="92" width="68" height="290" rx="5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2"/>
+  <text x="428" y="239" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#DC2626">类脑芯片</text>
+  <rect x="465" y="92" width="68" height="290" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="499" y="231" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7C3AED">存算一体</text>
+  <text x="499" y="246" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7C3AED">与近存计算</text>
+  <rect x="545" y="92" width="68" height="290" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="579" y="231" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7C3AED">硬件安全</text>
+  <text x="579" y="246" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7C3AED">与可信计算</text>
+  <rect x="616" y="92" width="68" height="174" rx="5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="650" y="172" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">AI 算法</text>
+  <text x="650" y="187" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">与系统</text>
+  <rect x="687" y="150" width="68" height="116" rx="5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="721" y="201" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">处理器架构</text>
+  <text x="721" y="216" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">与编译系统</text>
+  <rect x="758" y="208" width="68" height="116" rx="5" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="792" y="259" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">可重构计算</text>
+  <text x="792" y="274" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1D4ED8">与 FPGA</text>
+  <rect x="838" y="266" width="68" height="116" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.2"/>
+  <text x="872" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#B45309">功率半导体</text>
+  <text x="872" y="332" text-anchor="middle" font-size="10" font-weight="bold" fill="#B45309">与宽禁带器件</text>
+  <rect x="918" y="92" width="68" height="290" rx="5" fill="#ECFCCB" stroke="#65A30D" stroke-width="1.2"/>
+  <text x="952" y="239" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#4D7C0F">具身智能</text>
+  <rect x="989" y="266" width="68" height="116" rx="5" fill="#D1FAE5" stroke="#059669" stroke-width="1.2"/>
+  <text x="1023" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#047857">生物电子</text>
+  <text x="1023" y="332" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#047857">与脑机接口</text>
+  <rect x="1060" y="266" width="68" height="116" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="1094" y="317" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#15803D">MEMS 与</text>
+  <text x="1094" y="332" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#15803D">微纳传感器</text>
+  <text x="81" y="450" text-anchor="end" font-size="10.5" fill="#475569">各方向通用</text>
+  <rect x="92" y="408" width="1040" height="28" rx="5" fill="#F1F5F9" stroke="#64748B" stroke-width="1.1"/>
+  <text x="612" y="426" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">EDA 与设计自动化</text>
+  <rect x="92" y="440" width="1040" height="28" rx="5" fill="#EEF2F6" stroke="#64748B" stroke-width="1.1"/>
+  <text x="612" y="458" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">先进封装与系统集成</text>
+  <rect x="92" y="472" width="1040" height="30" rx="5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2"/>
+  <text x="612" y="491" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">半导体器件与先进工艺</text>
+  <rect x="92" y="512" width="13" height="13" rx="2" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.1"/>
+  <text x="110" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字</text>
+  <rect x="160" y="512" width="13" height="13" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.1"/>
+  <text x="178" y="522" text-anchor="start" font-size="10.5" fill="#475569">模拟</text>
+  <rect x="228" y="512" width="13" height="13" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.1"/>
+  <text x="246" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字 / 模拟 交叉</text>
+  <rect x="310" y="262" width="76" height="124" rx="8" fill="none" stroke="#0F172A" stroke-width="3.5"/>
+</svg></div>
+
 ## 这个方向在研究什么
 
-二十多年前的 2G 时代，一部手机能做的不过是打电话、发短信，在诺基亚的小屏幕上玩玩贪吃蛇；到了 3G，手机第一次能上网，刷网页、聊 QQ；4G 让移动互联网井喷，地铁上刷短视频、扫码付钱、动动手指就叫来出租车和外卖；如今的 5G，在时速三百公里的高铁上开视频会议、看 4K 直播都不卡顿。每往前一代，能搬运的数据都翻上好几番。换个场景，手腕上的运动手环、植入体内的起搏器，靠一颗小电池就能安静工作十年。这两类无线需求几乎相反，没有一块芯片能同时满足。要多、要快，就得占用更宽的频段、推向更高的频率，可频率越高越费电、越脆弱；要省电，就得砍发射功率、压带宽。于是这门学问分成两路，一路往高频走、争带宽，一路往低功耗压、保续航。
+二十多年前的 2G 时代，一部手机能做的不过是打电话、发短信，在诺基亚的小屏幕上玩玩贪吃蛇；到了 3G，手机第一次能上网，刷网页、聊 QQ；4G 让移动互联网井喷，地铁上刷短视频、扫码付钱、动动手指就叫来出租车和外卖；如今的 5G，在时速三百公里的高铁上开视频会议、看 4K 直播都不卡顿。每往前一代，能搬运的数据都翻上好几番。换个场景，手腕上的运动手环、植入体内的起搏器，靠一颗小电池就能安静工作十年。这两类无线需求几乎相反，没有一块芯片能同时满足。要多、要快，就得占用更宽的频段、推向更高的频率，可频率越高越费电、越脆弱；要省电，就得砍发射功率、压带宽。于是这门学问分成两路，一路往高频走，争带宽，一路力求功耗压，保续航。
 
 <div><svg viewBox="0 0 910 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:910px;display:block;margin:1.5rem auto;">
   <defs>
@@ -310,9 +395,7 @@ hide:
 
 第二招是把电路本身做到最简、最小，能省一级就省一级，而不是像毫米波那样堆上百个天线单元。
 
-这一路用的还是同一批模块，但考核目标整个换了。同样的 LNA，要在纳安级的电流下保住灵敏度；同样的 PA，在意的不是功率多大，而是能不能彻底关断、醒来进入状态够快；本振也从稳住几十 GHz，变成在近乎零功耗时保持纯净。
-
-发一比特究竟最少要耗多少电，理论有下界，但现有实现距那条线还差几个数量级。
+追求低功耗的射频芯片，跟高带宽的射频芯片用的是同一批模块，但对指标的追求不同。同样的 LNA，要在纳安级的电流下保住灵敏度；同样的 PA，在意的不是功率多大，而是能不能彻底关断、醒来进入状态够快；本振也从稳住几十 GHz，变成在近乎零功耗时保持纯净。发一比特究竟最少要耗多少电，理论有下界，但现有实现距那条线还差几个数量级。
 
 ### 核心研究问题
 
