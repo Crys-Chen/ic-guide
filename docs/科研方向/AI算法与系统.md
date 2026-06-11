@@ -226,10 +226,6 @@ graph LR
 
     边缘 AI · 神经网络推理系统 · AI 加速器 · 基础模型算法
 
--   **[吴翼](https://jxwuyi.weebly.com/)** <span class="badge-tsinghua">清华</span>
-
-    大规模强化学习 · LLM 对齐 · 多智能体系统
-
 -   **[崔斌](https://cuibinpku.github.io/)** <span class="badge-pku">北大</span>
 
     分布式 AI 系统 · 大模型训练与服务 · ML 系统基础设施
@@ -345,7 +341,7 @@ graph LR
 
     离线强化学习 · 机器人学习 · 决策 Transformer
 
--   **[马毅](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
+-   **[Yi Ma（马毅）](https://people.eecs.berkeley.edu/~yima/)** <span class="badge-intl">UC Berkeley</span>
 
     可解释深度学习理论 · 稀疏/低秩表示 · 神经网络几何
 
