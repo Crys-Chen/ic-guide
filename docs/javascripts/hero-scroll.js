@@ -1,6 +1,36 @@
 (function () {
   var FADE = 0.25; // hero 在前 25% 高度内完成淡变
 
+  function buildRgToc() {
+    var essay = document.querySelector('.rg-essay');
+    if (!essay) return;
+    var sidebar = document.querySelector('.md-sidebar--secondary');
+    if (!sidebar) return;
+    var nav = sidebar.querySelector('.md-nav--secondary');
+    if (!nav) return;
+    var headings = essay.querySelectorAll('h2[id]');
+    if (!headings.length) return;
+    var existing = nav.querySelector('ul.md-nav__list');
+    if (existing) existing.remove();
+    var ul = document.createElement('ul');
+    ul.className = 'md-nav__list';
+    headings.forEach(function (h) {
+      var li = document.createElement('li');
+      li.className = 'md-nav__item';
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.className = 'md-nav__link';
+      var span = document.createElement('span');
+      span.className = 'md-ellipsis';
+      span.textContent = h.textContent.replace(/¶$/, '').trim();
+      a.appendChild(span);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    nav.appendChild(ul);
+    sidebar.removeAttribute('hidden');
+  }
+
   function init() {
     var light = document.querySelector('.df-light');
     var dark  = document.querySelector('.df-dark');
@@ -11,6 +41,8 @@
     if (light && getComputedStyle(light).display !== 'none') hero = light;
     else if (dark && getComputedStyle(dark).display !== 'none') hero = dark;
     else if (rg && getComputedStyle(rg).display !== 'none') { hero = rg; isRg = true; }
+
+    if (isRg) buildRgToc();
 
     var below = document.querySelector('.df-below') || document.querySelector('.rg-essay');
     if (!below) return;
