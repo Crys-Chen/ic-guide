@@ -6,14 +6,15 @@
 
 ## 推荐课程
 
-- **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课,**讲 GPU、向量化、cache coherence、共享内存** ★
-- **[NPTEL: GPU Architectures and Programming (IIT KGP)](NPTEL_GPU.md)** — GPU 入门，CUDA 编程模型 + warp 执行 + 并行算法 ★
-- **[ETH HetSys: Heterogeneous Systems（Mutlu）](ETH_HetSys.md)** — GPU 深度课，warp 调度 / 访存合并 / HBM 微架构 ★
-- **[ZOMI 酱：GPU 架构原理系列](ZOMI_GPU.md)** — 中文，Fermi→Hopper 代际演进，含 Tensor Core 专题 ★
+- **[中科大：并行计算](USTC_parallel.md)** — 中文，MPI + OpenMP + CUDA 编程模型，理论与实践兼顾 ★
+- **[高性能并行编程（parallel101）](parallel101.md)** — 中文实战课，CUDA / TBB / ISPC，适合快速上手 ★
+- **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课，向量化、cache coherence、共享内存编程模型 ★
+
+GPU 硬件微架构（warp 调度、HBM、Tensor Core）见 **[GPU 体系结构](../GPU体系结构/index.md)**。
 
 ## 学习路径建议
 
-**做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ NPTEL GPU 入门微架构 → ETH HetSys 深挖 warp 调度与 HBM → 配合 Gem5/GPGPU-Sim 实操
+并行编程入门从 parallel101 或中科大并行计算开始，建立 CUDA/MPI 编程直觉；CS149 系统讲并行计算模型和 cache coherence，是进阶必读。需要深入 GPU 硬件微架构，转到 GPU 体系结构板块。
 
 
 ## 对应的科研方向

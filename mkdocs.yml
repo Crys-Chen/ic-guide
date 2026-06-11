@@ -411,9 +411,11 @@ nav:
         - 中科大:并行计算: "学习地图/系统架构/并行与分布式系统/USTC_parallel.md"
         - 高性能并行编程(parallel101): "学习地图/系统架构/并行与分布式系统/parallel101.md"
         - "CMU 15-418/Stanford CS149": "学习地图/系统架构/并行与分布式系统/CS149.md"
-        - "NPTEL: GPU Architectures and Programming (IIT KGP)": "学习地图/系统架构/并行与分布式系统/NPTEL_GPU.md"
-        - "ETH HetSys: Heterogeneous Systems（Mutlu）": "学习地图/系统架构/并行与分布式系统/ETH_HetSys.md"
-        - "ZOMI 酱：GPU 架构原理系列": "学习地图/系统架构/并行与分布式系统/ZOMI_GPU.md"
+      - GPU体系结构:
+        - 学习地图/系统架构/GPU体系结构/index.md
+        - "NPTEL: GPU Architectures and Programming (IIT KGP)": "学习地图/系统架构/GPU体系结构/NPTEL_GPU.md"
+        - "ETH HetSys: Heterogeneous Systems（Mutlu）": "学习地图/系统架构/GPU体系结构/ETH_HetSys.md"
+        - "ZOMI 酱：GPU 架构原理系列": "学习地图/系统架构/GPU体系结构/ZOMI_GPU.md"
       - 编译原理:
         - 学习地图/系统架构/编译原理/index.md
         - "Stanford CS143": "学习地图/系统架构/编译原理/CS143.md"
