@@ -293,6 +293,7 @@
 .md-typeset .mermaid {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  max-width: 100%; /* 防止容器随 SVG 扩张，使 overflow-x 真正生效 */
 }
 
 .md-typeset .mermaid svg {
