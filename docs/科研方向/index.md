@@ -953,6 +953,7 @@ hide:
 
 <span id="dir-7"></span>于是，在AI时代，**存算一体与近存计算**走了一条更具颠覆性的道路。这个方向摒弃冯诺依曼架构，把计算塞进存储器，在存储器里面或附近做计算。一条典型路径就是依靠一种叫忆阻器（memristor）的器件。用该器件的电阻值存权重，输入电压，输出电流，利用欧姆定律（I = VS）直接完成乘法。当然，这只是存算一体的一种实现方式，这个方向还有很多个细分流派。值得注意的是，刚刚介绍的这种方法使用的是模拟运算（欧姆定律），信号编码在连续的电压和电流里。在计算领域被数字电路统治几十年后，模拟电路开始有回归的趋势。
 
+<div>
 <svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>冯·诺依曼架构 vs 存算一体</title>
 <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
@@ -1013,6 +1014,7 @@ hide:
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="510" y="325" text-anchor="middle" fill="#888">整个阵列并行完成矩阵乘法</text>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="510" y="341" text-anchor="middle" fill="#888">模拟计算回归</text>
 </svg>
+</div>
 
 摩尔定律放缓之后，进步没有停止，只是从缩小空间转向了压缩时间。但到这里，所有的优化仍然在同一个框架内——经典的、基于 0 和 1 的计算。接下来的方向，则是横向扩展计算的边界，让计算深入到物理世界的方方面面。
 

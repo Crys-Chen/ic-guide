@@ -134,8 +134,11 @@
     function tick() {
       var s = window.scrollY;
       var t = Math.min(1, Math.max(0, s / fadeScrollDist));
-      hero.style.opacity        = String(1 - t);
-      hero.style.pointerEvents  = t > 0.9 ? 'none' : '';
+      var alpha = 1 - t;
+      hero.style.opacity       = String(alpha);
+      hero.style.pointerEvents = t > 0.9 ? 'none' : '';
+      // visibility:hidden 彻底阻断后代事件（pointer-events:none 无法覆盖子元素的 !important）
+      hero.style.visibility    = alpha < 0.01 ? 'hidden' : '';
       below.style.opacity       = String(t);
       below.style.pointerEvents = t > 0.1 ? '' : 'none';
       if (toc) toc.style.opacity = String(t);
