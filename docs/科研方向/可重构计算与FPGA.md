@@ -410,6 +410,14 @@ graph LR
 
     FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
 
+-   **[周学海](https://cs.ustc.edu.cn/2020/0827/c23235a460092/page.htm)** <span class="badge-other">中科大</span>
+
+    可重构系统与 FPGA 加速 · 面向应用的硬件定制 · 异构多核体系结构
+
+-   **[王超](https://faculty.ustc.edu.cn/cswang/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    FPGA 可重构计算 · 深度学习加速系统 · 智能处理器架构
+
 -   **[戴国浩](https://dai.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
     FPGA LLM 推理加速 · 稀疏计算硬件映射 · 多 FPGA 异构系统
@@ -422,6 +430,10 @@ graph LR
 
     高层次综合 HLS · 编译器与硬件协同设计 · LLM 自动生成硬件代码
 
+-   **[李丽](https://ese.nju.edu.cn/74/10/c22629a357392/page.psp)** <span class="badge-other">南大</span> <span class="prof-w"></span>
+
+    可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
+
 -   **[王则可（Zeke Wang）](https://wangzeke.github.io/)** <span class="badge-other">浙大</span>
 
     FPGA 加速器设计 · SmartNIC 网络卸载 · FPGA/P4/GPU 异构平台
@@ -429,18 +441,6 @@ graph LR
 -   **[卢丽强（Liqiang Lu）](https://person.zju.edu.cn/liqianglu)** <span class="badge-other">浙大</span>
 
     FPGA 神经网络加速器 · 注意力机制与低精度计算 · AI 芯片软硬件协同
-
--   **[周学海](https://cs.ustc.edu.cn/2020/0827/c23235a460092/page.htm)** <span class="badge-other">中科大</span>
-
-    可重构系统与 FPGA 加速 · 面向应用的硬件定制 · 异构多核体系结构
-
--   **[王超](https://faculty.ustc.edu.cn/cswang/zh_CN/index.htm)** <span class="badge-other">中科大</span>
-
-    FPGA 可重构计算 · 深度学习加速系统 · 智能处理器架构
-
--   **[李丽](https://ese.nju.edu.cn/74/10/c22629a357392/page.psp)** <span class="badge-other">南大</span> <span class="prof-w"></span>
-
-    可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
 
 
 </div>
@@ -450,13 +450,17 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
+-   **[Hayden Kwok-Hay So（蘇國曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
+
+    异构可重构计算 · 稀疏加速器设计 · 事件驱动视觉处理
+
 -   **[Wei Zhang（张薇）](https://ece.hkust.edu.hk/eeweiz)** <span class="badge-hk">港科大</span> <span class="prof-w"></span>
 
     FPGA 敏捷设计流程 · 高层次综合（HLS）与功耗优化 · LLM 与 DNN 硬件加速
 
--   **[Hayden Kwok-Hay So（蘇國曦）](https://www.eee.hku.hk/~hso/)** <span class="badge-hk">港大</span>
+-   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
 
-    异构可重构计算 · 稀疏加速器设计 · 事件驱动视觉处理
+    异构加速器编译 · FPGA Transformer 加速 · AI 引擎 MLIR 框架
 
 -   **[Zhiru Zhang（张志汝）](https://zhang.ece.cornell.edu/)** <span class="badge-intl">Cornell</span>
 
@@ -466,10 +470,17 @@ graph LR
 
     FPGA 架构创新 · AI 推理硬件设计 · DNN 稀疏混合精度
 
--   **[Peipei Zhou（周佩佩）](https://peipeizhou-eecs.github.io/)** <span class="badge-intl">Brown</span> <span class="prof-w"></span>
+-   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span> <span class="prof-w"></span>
 
-    异构加速器编译 · FPGA Transformer 加速 · AI 引擎 MLIR 框架
+    动态调度 HLS · 数据流电路综合 · 编译器硬件协同
 
+-   **[Cong Hao（郝聪）](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span> <span class="prof-w"></span>
+
+    FPGA 神经网络加速 · ML for EDA 布线 · 3D FPGA 架构生成
+
+-   **[Andre DeHon](https://www.seas.upenn.edu/faculty-directory/andre-dehon/)** <span class="badge-intl">U Penn</span>
+
+    FPGA 架构与互连 · 高层次综合 HLS · 增量编译与局部重配置
 -   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
 
     FPGA 架构与 CAD · 3D 堆叠 FPGA · 深度学习硬件映射
@@ -478,25 +489,14 @@ graph LR
 
     FPGA 与 CGRA 架构 · HLS 编译优化 · RL 驱动逻辑综合
 
--   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
-
-    HLS 到 AI 加速器 · LLM 推理加速 · FPGA 异构计算
-
 -   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
 
     FPGA 设计自动化 · HLS 数据流加速 · 领域专用计算
 
--   **[Cong Hao（郝聪）](https://haocong.ece.gatech.edu/)** <span class="badge-intl">Georgia Tech</span> <span class="prof-w"></span>
+-   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
-    FPGA 神经网络加速 · ML for EDA 布线 · 3D FPGA 架构生成
+    HLS 到 AI 加速器 · LLM 推理加速 · FPGA 异构计算
 
--   **[Lana Josipović](https://dynamo.ethz.ch/)** <span class="badge-intl">ETH Zürich</span> <span class="prof-w"></span>
-
-    动态调度 HLS · 数据流电路综合 · 编译器硬件协同
-
--   **[Andre DeHon](https://www.seas.upenn.edu/faculty-directory/andre-dehon/)** <span class="badge-intl">U Penn</span>
-
-    FPGA 架构与互连 · 高层次综合 HLS · 增量编译与局部重配置
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

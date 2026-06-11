@@ -335,6 +335,18 @@ graph LR
 
     大模型对齐训练 · 强化学习后训练 · 多智能体系统
 
+-   **[谢洪](https://faculty.ustc.edu.cn/xiehong1/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    大模型强化微调 · 智能体规划与世界模型 · 科学智能
+
+-   **[康奇宇](https://faculty.ustc.edu.cn/kangqiyu/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    大模型量化与高效推理 · 物理信息神经网络 · 多模态大模型
+
+-   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院</span>
+
+    神经网络专用处理器 · AI 编译器与算子生成 · 芯片设计自动化
+
 -   **[陈全](https://www.cs.sjtu.edu.cn/~chen-quan/)** <span class="badge-other">交大</span>
 
     DNN 推理系统 · 异构硬件调度 · AI 编译与加速
@@ -359,22 +371,6 @@ graph LR
 
     神经网络可解释性（XAI 理论）· LLM 推理机制分析 · 深度学习泛化理论
 
--   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
-
-    大模型指令微调 · 多模态大模型 · AI 系统与开放平台
-
--   **[陈云霁](https://novel.ict.ac.cn/ychen_cn/)** <span class="badge-other">中科院</span>
-
-    神经网络专用处理器 · AI 编译器与算子生成 · 芯片设计自动化
-
--   **[谢洪](https://faculty.ustc.edu.cn/xiehong1/zh_CN/index.htm)** <span class="badge-other">中科大</span>
-
-    大模型强化微调 · 智能体规划与世界模型 · 科学智能
-
--   **[康奇宇](https://faculty.ustc.edu.cn/kangqiyu/zh_CN/index.htm)** <span class="badge-other">中科大</span>
-
-    大模型量化与高效推理 · 物理信息神经网络 · 多模态大模型
-
 -   **[高阳](https://cs.nju.edu.cn/gaoyang/)** <span class="badge-other">南大</span>
 
     强化学习 · 多智能体学习 · 大模型推理与 Agent
@@ -382,6 +378,10 @@ graph LR
 -   **[周志华](https://cs.nju.edu.cn/zhouzh/)** <span class="badge-other">南大</span>
 
     机器学习理论 · 集成学习 · 弱监督学习
+-   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
+
+    大模型指令微调 · 多模态大模型 · AI 系统与开放平台
+
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -406,14 +406,6 @@ graph LR
 
     稀疏 LLM 推理系统 · KV 缓存压缩 · MoE 分布式训练
 
--   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
-
-    LLM 量化与压缩（AWQ/SmoothQuant）· 高效推理与稀疏注意力 · 端侧大模型部署
-
--   **[Vivienne Sze（施）](https://eems.mit.edu/)** <span class="badge-intl">MIT</span> <span class="prof-w"></span>
-
-    神经网络加速器设计 · 稀疏计算加速（Eyeriss/HighLight）· 硬件-算法协同优化
-
 -   **[Tianqi Chen（陈天奇）](https://tqchen.com/)** <span class="badge-intl">CMU</span>
 
     AI 编译器（TVM/Apache MXNet）· LLM 全平台部署（MLC-LLM）· ML 系统全栈
@@ -425,6 +417,42 @@ graph LR
 -   **[Graham Neubig](https://www.phontron.com/)** <span class="badge-intl">CMU</span>
 
     LLM Agent 系统 · 代码生成与软件工程 · 多语言 NLP
+
+-   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span> <span class="prof-w"></span>
+
+    高效 LLM 推理 · 上下文稀疏性（Deja Vu） · 单卡推理（FlexGen）
+
+-   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
+
+    边缘 AI 推理 · TinyML 系统 · MLPerf 基准测试
+
+-   **[Song Han（韩松）](https://hanlab.mit.edu/songhan)** <span class="badge-intl">MIT</span>
+
+    LLM 量化与压缩（AWQ/SmoothQuant）· 高效推理与稀疏注意力 · 端侧大模型部署
+
+-   **[Vivienne Sze（施）](https://eems.mit.edu/)** <span class="badge-intl">MIT</span> <span class="prof-w"></span>
+
+    神经网络加速器设计 · 稀疏计算加速（Eyeriss/HighLight）· 硬件-算法协同优化
+
+-   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span> <span class="prof-w"></span>
+
+    大语言模型训练 · 长上下文推理 · 对齐与强化学习
+
+-   **[Karthik Narasimhan](https://karthikncode.github.io/)** <span class="badge-intl">Princeton</span>
+
+    LLM Agent · 推理框架（ReAct/ToT） · 代码自动化（SWE-agent）
+
+-   **[Percy Liang（梁）](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
+
+    大模型从头训练 · 基础模型评测（HELM）· AI 系统基础设施
+
+-   **[Fei-Fei Li（李飞飞）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
+
+    视觉语言基础模型 · 空间智能与 3D 理解 · 具身 AI 系统
+
+-   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
+
+    强化学习 · RL 调优 LLM · 教育医疗决策
 
 -   **[Ion Stoica](https://people.eecs.berkeley.edu/~istoica/)** <span class="badge-intl">UC Berkeley</span>
 
@@ -450,41 +478,13 @@ graph LR
 
     白盒 Transformer 理论 · 稀疏率压缩表示 · 可解释深度学习
 
--   **[Percy Liang（梁）](https://cs.stanford.edu/~pliang/)** <span class="badge-intl">Stanford</span>
+-   **[Yuandong Tian（田渊栋）](https://yuandong-tian.com/)** <span class="badge-intl">Meta FAIR</span>
 
-    大模型从头训练 · 基础模型评测（HELM）· AI 系统基础设施
-
--   **[Fei-Fei Li（李飞飞）](https://profiles.stanford.edu/fei-fei-li)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
-
-    视觉语言基础模型 · 空间智能与 3D 理解 · 具身 AI 系统
-
--   **[Emma Brunskill](https://cs.stanford.edu/people/ebrun/)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
-
-    强化学习 · RL 调优 LLM · 教育医疗决策
-
--   **[Vijay Janapa Reddi](https://scholar.harvard.edu/vijay-janapa-reddi)** <span class="badge-intl">Harvard</span>
-
-    边缘 AI 推理 · TinyML 系统 · MLPerf 基准测试
-
--   **[Danqi Chen（陈丹琦）](https://www.cs.princeton.edu/~danqic/)** <span class="badge-intl">Princeton</span> <span class="prof-w"></span>
-
-    大语言模型训练 · 长上下文推理 · 对齐与强化学习
-
--   **[Karthik Narasimhan](https://karthikncode.github.io/)** <span class="badge-intl">Princeton</span>
-
-    LLM Agent · 推理框架（ReAct/ToT） · 代码自动化（SWE-agent）
-
--   **[Beidi Chen（陈贝迪）](https://www.andrew.cmu.edu/user/beidic/)** <span class="badge-intl">CMU</span> <span class="prof-w"></span>
-
-    高效 LLM 推理 · 上下文稀疏性（Deja Vu） · 单卡推理（FlexGen）
-
+    训练内存优化（GaLore） · LLM 量化与推理加速 · 隐空间推理（Coconut）
 -   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
     LLM 加速器设计 · AI 编译器（HLS） · FPGA 推理加速
 
--   **[Yuandong Tian（田渊栋）](https://yuandong-tian.com/)** <span class="badge-intl">Meta FAIR</span>
-
-    训练内存优化（GaLore） · LLM 量化与推理加速 · 隐空间推理（Coconut）
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

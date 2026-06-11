@@ -516,6 +516,18 @@ graph LR
 
     毫米波集成天线 · 大规模相控阵系统 · 智能超表面与太赫兹
 
+-   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
+
+    毫米波全数字收发机 · 相控阵 IC 数字化 · ADPLL 与频率综合
+
+-   **[林福江](https://sme.ustc.edu.cn/2022/0601/c30996a556921/page.htm)** <span class="badge-other">中科大</span>
+
+    毫米波超低噪声前端 · GaN MMIC 功率器件 · 射频器件建模
+
+-   **[楼立恒](https://sme.ustc.edu.cn/2024/0225/c31014a630510/page.htm)** <span class="badge-other">中科大</span>
+
+    毫米波收发机电路 · 全数字锁相环 · 相控阵 MIMO 数字化
+
 -   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
 
     CMOS 射频收发机 · 毫米波通信与雷达 IC · 相控阵波束成形电路
@@ -536,18 +548,6 @@ graph LR
 
     超低功耗 CMOS 无线收发芯片 · 无源无电池背散射 Radio · 物联网/生物医疗 RF SoC
 
--   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
-
-    毫米波全数字收发机 · 相控阵 IC 数字化 · ADPLL 与频率综合
-
--   **[林福江](https://sme.ustc.edu.cn/2022/0601/c30996a556921/page.htm)** <span class="badge-other">中科大</span>
-
-    毫米波超低噪声前端 · GaN MMIC 功率器件 · 射频器件建模
-
--   **[楼立恒](https://sme.ustc.edu.cn/2024/0225/c31014a630510/page.htm)** <span class="badge-other">中科大</span>
-
-    毫米波收发机电路 · 全数字锁相环 · 相控阵 MIMO 数字化
-
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -560,17 +560,17 @@ graph LR
 
     毫米波通信与感知 IC · 光无线高速收发 · 宽带 SoC 芯片
 
--   **[Ali Niknejad](https://rfic.eecs.berkeley.edu)** <span class="badge-intl">UC Berkeley</span>
+-   **[Harish Krishnaswamy](https://cosmiccolumbia.com)** <span class="badge-intl">Columbia</span>
 
-    毫米波 CMOS 功率放大器 · 5G/6G 收发机 · 数字化相控阵
-
+    毫米波/太赫兹收发机 · 全双工同频收发 IC · 频谱共享射频系统
 -   **[Thomas Lee](https://profiles.stanford.edu/thomas-lee)** <span class="badge-intl">Stanford</span>
 
     射频与太赫兹 CMOS · 超宽带收发机 · 振荡器网络与信号处理
 
--   **[Harish Krishnaswamy](https://cosmiccolumbia.com)** <span class="badge-intl">Columbia</span>
+-   **[Ali Niknejad](https://rfic.eecs.berkeley.edu)** <span class="badge-intl">UC Berkeley</span>
 
-    毫米波/太赫兹收发机 · 全双工同频收发 IC · 频谱共享射频系统
+    毫米波 CMOS 功率放大器 · 5G/6G 收发机 · 数字化相控阵
+
 -   **[Behzad Razavi](https://www.seas.ucla.edu/brweb/)** <span class="badge-intl">UCLA</span>
 
     射频/混合信号 IC · 收发机前端电路 · PLL/ADC/时钟综合

@@ -307,6 +307,18 @@ graph LR
 
     压电超声换能器（PMUT） · 超声指纹识别 · 光声血压检测
 
+-   **[左成杰](https://sme.ustc.edu.cn/2022/0601/c30996a556916/page.htm)** <span class="badge-other">中科大</span>
+
+    FBAR/SAW 射频滤波器 · 压电超声换能器（PMUT） · 声光调制器件
+
+-   **[许磊](http://leinao.ustc.edu.cn/2021/0430/c25925a483537/page.htm)** <span class="badge-other">中科大</span>
+
+    MEMS 气体传感器与电子鼻 · 低功耗微加热板 · 热式流量传感器
+
+-   **[潘挺睿](https://faculty.ustc.edu.cn/pantingrui/zh_CN/)** <span class="badge-other">中科大</span>
+
+    柔性离电触觉传感 · 可穿戴健康监测 · 离电材料与微结构
+
 -   **[刘景全](https://icisee.sjtu.edu.cn/jiaoshiml/782.html)** <span class="badge-other">交大</span>
 
     植入式神经电极与脑机接口 · 极端环境 MEMS 传感器 · 微纳加工
@@ -343,18 +355,6 @@ graph LR
 
     FBAR/SAW 谐振器与滤波器 · 无线无源 SAW 传感器 · 植入式柔性电极
 
--   **[左成杰](https://sme.ustc.edu.cn/2022/0601/c30996a556916/page.htm)** <span class="badge-other">中科大</span>
-
-    FBAR/SAW 射频滤波器 · 压电超声换能器（PMUT） · 声光调制器件
-
--   **[许磊](http://leinao.ustc.edu.cn/2021/0430/c25925a483537/page.htm)** <span class="badge-other">中科大</span>
-
-    MEMS 气体传感器与电子鼻 · 低功耗微加热板 · 热式流量传感器
-
--   **[潘挺睿](https://faculty.ustc.edu.cn/pantingrui/zh_CN/)** <span class="badge-other">中科大</span>
-
-    柔性离电触觉传感 · 可穿戴健康监测 · 离电材料与微结构
-
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -363,17 +363,21 @@ graph LR
 
 <div class="grid cards prof-collapse" markdown>
 
--   **[Yi-Kuen Lee（李貽昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
-
-    CMOS-MEMS 流量与惯性传感器 · 微型磁强计 · 微流控生物检测
-
 -   **[Norman Tien（田之楠）](https://www.eee.hku.hk/people/nctien/)** <span class="badge-hk">港大</span>
 
     MEMS 微纳制造 · RF MEMS 与微镜（历史方向）
 
+-   **[Yi-Kuen Lee（李貽昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
+
+    CMOS-MEMS 流量与惯性传感器 · 微型磁强计 · 微流控生物检测
+
 -   **[Yansong Yang（杨岩松）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
 
     FBAR/SAW 射频滤波器 · 毫米波声学谐振器 · 高功率器件可靠性
+-   **[Gary Fedder](https://www.ece.cmu.edu/directory/bios/fedder-gary.html)** <span class="badge-intl">CMU</span>
+
+    CMOS-MEMS 加速度计 · 抗冲击惯性测量 · 单片集成设计
+
 -   **[Butrus Khuri-Yakub](https://kyg.stanford.edu/)** <span class="badge-intl">Stanford</span>
 
     电容式超声换能器（CMUT） · 可穿戴超声贴片 · 超声神经调控
@@ -385,10 +389,6 @@ graph LR
 -   **[Kristofer Pister](https://www2.eecs.berkeley.edu/Faculty/Homepages/pister.html)** <span class="badge-intl">UC Berkeley</span>
 
     单芯片微尘节点 · 硅微机器人 · 自供能传感平台
-
--   **[Gary Fedder](https://www.ece.cmu.edu/directory/bios/fedder-gary.html)** <span class="badge-intl">CMU</span>
-
-    CMOS-MEMS 加速度计 · 抗冲击惯性测量 · 单片集成设计
 
 -   **[Khalil Najafi](https://eecs.engin.umich.edu/people/najafi-khalil/)** <span class="badge-intl">U Michigan</span>
 

@@ -335,17 +335,37 @@ graph LR
 
     算法硬件协同设计 · 神经网络加速器优化 · 隐私保护 AI 推理
 
+-   **[陈松](https://faculty.ustc.edu.cn/chensong/zh_CN/index.htm)** <span class="badge-other">中科大</span>
+
+    高层次综合 · 神经网络加速器架构 · 物理设计时序预测
+
+-   **[王杰（Jie Wang）](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
+
+    AI 辅助芯片布局 · 神经逻辑综合 · 强化学习优化
+
 -   **[郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/)** <span class="badge-other">交大</span>
 
     AI 辅助 EDA · 低功耗设计 · FPGA 加速器
 
--   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
-
-    SPICE 电路仿真加速 · 寄生参数快速提取 · 信号完整性分析
-
 -   **[蒋力](https://www.cs.sjtu.edu.cn/jiaoshiml/jiangli.html)** <span class="badge-other">交大</span>
 
     ML 辅助芯片设计 · 存算一体架构 · AI 加速器物理实现
+
+-   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
+
+    ML for EDA · 组合优化求解器与逻辑综合 · 图学习驱动布局布线/时序预测
+
+-   **[钱超](http://www.lamda.nju.edu.cn/qianc/)** <span class="badge-other">南大</span>
+
+    演化计算与黑盒优化 · AI 驱动芯片布局 · 时序驱动物理设计
+
+-   **[杜源（Yuan Du）](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
+
+    LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
+
+-   **[金洲](https://person.zju.edu.cn/person/0025054)** <span class="badge-other">浙大</span> <span class="prof-w"></span>
+
+    SPICE 电路仿真加速 · 寄生参数快速提取 · 信号完整性分析
 
 -   **[卓成](https://person.zju.edu.cn/chengzhuo)** <span class="badge-other">浙大</span>
 
@@ -355,29 +375,9 @@ graph LR
 
     ML for EDA · LLM 辅助设计与 DTCO · 设计空间探索
 
--   **[陈松](https://faculty.ustc.edu.cn/chensong/zh_CN/index.htm)** <span class="badge-other">中科大</span>
-
-    高层次综合 · 神经网络加速器架构 · 物理设计时序预测
-
--   **[钱超](http://www.lamda.nju.edu.cn/qianc/)** <span class="badge-other">南大</span>
-
-    演化计算与黑盒优化 · AI 驱动芯片布局 · 时序驱动物理设计
-
--   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
-
-    ML for EDA · 组合优化求解器与逻辑综合 · 图学习驱动布局布线/时序预测
-
 -   **[郑飞君](https://person.zju.edu.cn/frank_zheng)** <span class="badge-other">浙大</span>
 
     数模混合电路 EDA · 设计制造一体化 · AI 辅助 EDA 算法
-
--   **[王杰（Jie Wang）](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
-
-    AI 辅助芯片布局 · 神经逻辑综合 · 强化学习优化
-
--   **[杜源（Yuan Du）](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
-
-    LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
 
 
 </div>
@@ -386,10 +386,6 @@ graph LR
 **境外**
 
 <div class="grid cards prof-collapse" markdown>
-
--   **[Zhiyao Xie（谢知遥）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
-
-    LLM 生成 RTL 代码 · 功耗与时序分析 · 芯片基础模型
 
 -   **[Bei Yu（余备）](https://www.cse.cuhk.edu.hk/~byu/)** <span class="badge-hk">港中大</span>
 
@@ -403,22 +399,29 @@ graph LR
 
     电路结构学习 · 形式验证与 SAT · 硬件测试与安全
 
--   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
+-   **[Zhiyao Xie（谢知遥）](https://zhiyaoxie.com/)** <span class="badge-hk">港科大</span>
 
-    强化学习芯片布图 · AI 硬件协同设计 · ML 系统优化
+    LLM 生成 RTL 代码 · 功耗与时序分析 · 芯片基础模型
 
 -   **[Larry Pileggi](https://users.ece.cmu.edu/~pileggi/)** <span class="badge-intl">CMU</span>
 
     电路仿真与时序分析 · 互连建模 · 逻辑加锁与芯片安全
 
--   **[Andrew Kahng](https://vlsicad.ucsd.edu/~abk/)** <span class="badge-intl">UCSD</span>
+-   **[Azalia Mirhoseini](https://profiles.stanford.edu/azalia-mirhoseini)** <span class="badge-intl">Stanford</span> <span class="prof-w"></span>
 
-    物理设计与布局布线 · 设计制造协同 · OpenROAD 开源 EDA
+    强化学习芯片布图 · AI 硬件协同设计 · ML 系统优化
 
 -   **[Jason Cong（丛京生）](https://vast.cs.ucla.edu/people/faculty/jason-cong)** <span class="badge-intl">UCLA</span>
 
     FPGA 综合与自动化 · 高层次综合 HLS · 专用加速器设计
 
+-   **[Andrew Kahng](https://vlsicad.ucsd.edu/~abk/)** <span class="badge-intl">UCSD</span>
+
+    物理设计与布局布线 · 设计制造协同 · OpenROAD 开源 EDA
+
+-   **[Deming Chen（陈德铭）](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
+
+    高层次综合（HLS） · LLM 辅助 RTL 生成 · 形式验证自动化
 -   **[David Z. Pan（潘志刚）](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
 
     AI 驱动物理设计 · LLM 辅助 RTL 生成 · 模拟与射频 EDA
@@ -427,9 +430,6 @@ graph LR
 
     硬件感知神经网络设计 · AI 模型到芯片映射 · FPGA 稀疏加速
 
--   **[Deming Chen（陈德铭）](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
-
-    高层次综合（HLS） · LLM 辅助 RTL 生成 · 形式验证自动化
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>

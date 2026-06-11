@@ -403,6 +403,18 @@ graph LR
 
     增量 Zoom ADC · 噪声整形流水线 ADC · 传感器前端信号调理
 
+-   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
+
+    全数字锁相环 ADPLL · 低相噪振荡器 · 毫米波射频 IC
+
+-   **[程林](https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm)** <span class="badge-other">中科大</span>
+
+    高效率 DC-DC 转换器 · 无线充电芯片 · 生物电信号前端 AFE
+
+-   **[赵雷](https://sme.ustc.edu.cn/2022/0601/c30996a556917/page.htm)** <span class="badge-other">中科大</span>
+
+    高速 ADC 与时间交错校准 · 超高精度 TDC · 粒子探测读出 ASIC
+
 -   **[周健军](https://icisee.sjtu.edu.cn/jiaoshiml/zhoujianjun.html)** <span class="badge-other">交大</span>
 
     模拟/射频/混合信号 IC · 高速 SerDes PHY · ADC/DAC 数据转换
@@ -422,6 +434,14 @@ graph LR
 -   **[李永福](https://icisee.sjtu.edu.cn/jiaoshiml/liyongfu.html)** <span class="badge-other">交大</span>
 
     连续时间 ΔΣ 与时间交织 ADC · 亚采样 PLL 与数据转换器 · AI 辅助 EDA 与混合信号 IC
+
+-   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
+
+    模拟 IC 设计 · AI 辅助敏捷设计 · 存算一体芯片
+
+-   **[杜源](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
+
+    PLL / CDR 时钟恢复 · 高速混合信号 ADC/DAC · 光电融合互联
 
 -   **[高翔](https://person.zju.edu.cn/xianggao)** <span class="badge-other">浙大</span>
 
@@ -443,26 +463,6 @@ graph LR
 
     模拟与混合信号 IC · 高精度 ADC 与隔离放大器 · 图像传感器读出
 
--   **[胡诣哲](https://sme.ustc.edu.cn/2022/1012/c30996a575413/page.htm)** <span class="badge-other">中科大</span>
-
-    全数字锁相环 ADPLL · 低相噪振荡器 · 毫米波射频 IC
-
--   **[程林](https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm)** <span class="badge-other">中科大</span>
-
-    高效率 DC-DC 转换器 · 无线充电芯片 · 生物电信号前端 AFE
-
--   **[赵雷](https://sme.ustc.edu.cn/2022/0601/c30996a556917/page.htm)** <span class="badge-other">中科大</span>
-
-    高速 ADC 与时间交错校准 · 超高精度 TDC · 粒子探测读出 ASIC
-
--   **[杜力](https://ese.nju.edu.cn/dl/list.htm)** <span class="badge-other">南大</span>
-
-    模拟 IC 设计 · AI 辅助敏捷设计 · 存算一体芯片
-
--   **[杜源](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
-
-    PLL / CDR 时钟恢复 · 高速混合信号 ADC/DAC · 光电融合互联
-
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -470,6 +470,14 @@ graph LR
 **境外**
 
 <div class="grid cards prof-collapse" markdown>
+
+-   **[Howard Cam Luong（梁錦和）](https://ece.hkust.edu.hk/eeluong)** <span class="badge-hk">港科大</span>
+
+    毫米波频率合成器 · PLL / VCO 设计 · 混合信号射频 IC
+
+-   **[Wing-Hung Ki（暨永雄）](https://ece.hkust.edu.hk/eeki)** <span class="badge-hk">港科大</span>
+
+    开关电源 · 开关电容功率转换器 · 电源管理 IC
 
 -   **[Rui P. Martins](https://ime.um.edu.mo/people/rmartins/)** <span class="badge-hk">澳门大学</span>
 
@@ -483,14 +491,9 @@ graph LR
 
     Sub-Sampling PLL · 射频模拟混合信号 IC · 超低功耗数据转换
 
--   **[Howard Cam Luong（梁錦和）](https://ece.hkust.edu.hk/eeluong)** <span class="badge-hk">港科大</span>
+-   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
 
-    毫米波频率合成器 · PLL / VCO 设计 · 混合信号射频 IC
-
--   **[Wing-Hung Ki（暨永雄）](https://ece.hkust.edu.hk/eeki)** <span class="badge-hk">港科大</span>
-
-    开关电源 · 开关电容功率转换器 · 电源管理 IC
-
+    存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
 -   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
 
     高速串行收发器 · 低抖动锁相环 · 混合信号接口 IC
@@ -499,20 +502,13 @@ graph LR
 
     SAR-VCO ADC · 多相时钟电路 · 自动化模拟版图生成
 
--   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
+-   **[Shanthi Pavan](https://www.ee.iitm.ac.in/people/shanthi-pavan/)** <span class="badge-intl">IIT Madras</span>
 
-    存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
+    连续时间 ΔΣ ADC · 滤波型数据转换器 · 高速模拟噪声分析
+
 -   **[Boris Murmann](https://murmann-group.org/)** <span class="badge-intl">U Hawaii</span>
 
     SAR ADC · 神经接口数据采集 IC · 模拟电路设计自动化
-
--   **[Ian Galton](https://web.eng.ucsd.edu/~galton/)** <span class="badge-intl">UCSD</span>
-
-    ΔΣ 调制器 · 高速 DAC ISI 校准 · 数字辅助 PLL
-
--   **[Pavan Kumar Hanumolu](https://hanumolu.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
-
-    低抖动小数分频 PLL · 高速相干光 SerDes · 数字辅助模拟电路
 
 -   **[Michael Flynn](https://web.eecs.umich.edu/~mpflynn/)** <span class="badge-intl">U Michigan</span>
 
@@ -522,9 +518,13 @@ graph LR
 
     SAR/流水线 ADC · 低噪声锁相环 · 毫米波收发机
 
--   **[Shanthi Pavan](https://www.ee.iitm.ac.in/people/shanthi-pavan/)** <span class="badge-intl">IIT Madras</span>
+-   **[Ian Galton](https://web.eng.ucsd.edu/~galton/)** <span class="badge-intl">UCSD</span>
 
-    连续时间 ΔΣ ADC · 滤波型数据转换器 · 高速模拟噪声分析
+    ΔΣ 调制器 · 高速 DAC ISI 校准 · 数字辅助 PLL
+
+-   **[Pavan Kumar Hanumolu](https://hanumolu.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
+
+    低抖动小数分频 PLL · 高速相干光 SerDes · 数字辅助模拟电路
 
 
 </div>
