@@ -10,10 +10,25 @@
     if (!nav) return;
     var headings = essay.querySelectorAll('h2[id]');
     if (!headings.length) return;
+
+    // 补上 Material 标准的"目录"标题（正常页面由模板生成，这里手动补）
+    if (!nav.querySelector('.md-nav__title')) {
+      var label = document.createElement('label');
+      label.className = 'md-nav__title';
+      label.setAttribute('for', '__toc');
+      var icon = document.createElement('span');
+      icon.className = 'md-nav__icon md-icon';
+      label.appendChild(icon);
+      label.appendChild(document.createTextNode('目录'));
+      nav.insertBefore(label, nav.firstChild);
+    }
+
     var existing = nav.querySelector('ul.md-nav__list');
     if (existing) existing.remove();
     var ul = document.createElement('ul');
     ul.className = 'md-nav__list';
+    ul.setAttribute('data-md-component', 'toc');
+    ul.setAttribute('data-md-scrollfix', '');
     headings.forEach(function (h) {
       var li = document.createElement('li');
       li.className = 'md-nav__item';
