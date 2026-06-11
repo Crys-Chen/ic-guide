@@ -364,6 +364,9 @@
     lastTs = null;
     rafId = requestAnimationFrame(tick);
 
+    var center = root.querySelector('.rg-center');
+    if (center) center.style.opacity = '1';
+
     new MutationObserver(function (muts) {
       muts.forEach(function (m) {
         if (m.attributeName === 'data-md-color-scheme') refreshCardVars();
