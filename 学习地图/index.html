@@ -11440,7 +11440,10 @@
     SYS["系统架构"]
     AI["人工智能"]
 
+    MATH --&gt; DEV
     MATH --&gt; CIR
+    MATH --&gt; CS
+    MATH --&gt; SYS
     MATH --&gt; AI
     PHY --&gt; DEV
     PHY --&gt; CIR
@@ -11454,7 +11457,7 @@
     classDef upper fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
     class MATH,PHY,CS base
     class DEV,CIR,SYS,AI upper</code></pre>
-<p>图中有两条主干链：物理→器件与工艺→电路，是器件和模拟方向的纵向路径；算法编程→系统架构→人工智能，是数字和AI方向的纵向路径。数学横向支撑电路和人工智能两个板块。</p>
+<p>数学是除物理以外所有板块的共同基础。物理→器件与工艺→电路构成器件和模拟方向的纵向路径。算法编程→系统架构→人工智能构成数字和AI方向的纵向路径。</p>
 <h2 id="_4">芯片生产流程</h2>
 <p>下图展示从 RTL 设计到晶圆量产的完整链条，供理解各板块知识在工业流程中的位置参考。</p>
 <pre class="mermaid"><code>graph TD
