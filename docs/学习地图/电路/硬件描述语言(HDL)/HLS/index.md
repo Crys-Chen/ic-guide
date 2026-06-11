@@ -13,7 +13,7 @@ HLS 并不取代 RTL 手写，而是解决了一个具体问题：用 C++ 描述
 
 **先看高亚军**建立中文直觉（pragma 含义、接口综合、pipeline/unroll 对比），再看 Lehigh 课做完整工程（Vitis HLS + AWS F1）。两门合在一起约 3–4 周。
 
-先修：[Verilog](../Verilog/index.md) 基础是硬性要求；读得懂 C++ 即可，不需要 Verilog 熟练。
+先修：[Verilog](../Verilog/HDLBits.md)（HDLBits 练习）基础是硬性要求；读得懂 C++ 即可，不需要 Verilog 熟练。
 
 ## 对应的科研方向
 

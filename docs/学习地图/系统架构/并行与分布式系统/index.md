@@ -7,10 +7,11 @@
 ## 推荐课程
 
 - **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课,**讲 GPU、向量化、cache coherence、共享内存** ★
+- **[GPU 体系结构](GPU体系结构/index.md)** — SIMT 执行模型 / warp 调度 / HBM 内存系统；含入门（NPTEL）、深度（ETH Mutlu）、中文（ZOMI 酱）三层课程 ★
 
 ## 学习路径建议
 
-**做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ 配合 Gem5/GPGPU-Sim 实操
+**做 AI / GPU 方向:CS149 优先**(并行编程模型、GPU、cache coherence)→ 进入 [GPU 体系结构](GPU体系结构/index.md) 深挖微架构 → 配合 Gem5/GPGPU-Sim 实操
 
 
 ## 对应的科研方向
