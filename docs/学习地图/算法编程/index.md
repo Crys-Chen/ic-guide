@@ -2,18 +2,9 @@
 
 写代码和设计算法是所有工程研究的基础工具。这个板块从编程语言入门到算法分析，覆盖做硬件研究也需要掌握的软件能力。
 
-## 知识谱系
+## 课程关系
 
-```mermaid
-graph LR
-    A["编程入门<br/>Python · C/C++ · Rust"] --> B["数据结构与算法<br/>CS61B · 6.006 · Algo"]
-    B --> C["编程语言设计与分析<br/>NJU/PKU 软件分析"]
-
-    classDef foundation fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
-    classDef advanced fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
-    class A foundation
-    class B,C advanced
-```
+三个子板块构成一条直线，编程入门 → 数据结构与算法 → 编程语言设计与分析，依次递进。编程入门内部的几门语言（Python、C/C++、Rust）相互独立，选一门主修即可。
 
 ---
 

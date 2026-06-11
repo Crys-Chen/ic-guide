@@ -2,25 +2,29 @@
 
 从计算机如何执行一条指令，到 GPU 如何并行调度上万个线程，这个板块覆盖"软件如何在硬件上运行"这条完整的知识链。对做硬件研究的人来说，体系结构和编译原理是最直接相关的两个子方向。
 
-## 知识谱系
+## 课程关系
+
+箭头从前置课程指向后置课程，虚线表示通向其他板块的去向。
 
 ```mermaid
 graph TB
     A["计算机系统基础<br/>CSAPP · 计组原理"] --> B[体系结构]
     A --> C[操作系统]
     A --> D[编译原理]
-
-    B --> E["并行与分布式系统<br/>GPU · 分布式训练"]
+    B --> E["并行与分布式系统<br/>MPI · CUDA · cache coherence"]
     C --> E
-    D --> F["LLVM · MLIR · TVM<br/>(AI 编译/系统)"]
+    B --> F["GPU体系结构<br/>warp 调度 · HBM"]
+    D -.-> G["AI 编译<br/>(人工智能板块 AI系统)"]
 
     classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef arch fill:#F3E8FF,stroke:#553C9A,stroke-width:2px
-    classDef other fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px
+    classDef other fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     class A base
-    class B,D,F arch
-    class C,E other
+    class B,C,D,E,F arch
+    class G other
 ```
+
+计算机系统基础是全板块的公共入口。往上分三条路：体系结构通向 GPU 体系结构和并行与分布式系统，是做硬件的主线；操作系统和并行与分布式系统是做系统软件的主线；编译原理自成一条线，通向人工智能板块的 AI 编译。
 
 ---
 
@@ -28,11 +32,13 @@ graph TB
 
 **[体系结构](体系结构/)** — 处理器微架构、流水线、缓存层次、内存系统；研究处理器和加速器设计的核心知识。
 
+**[操作系统](操作系统/)** — 进程、内存管理、文件系统；系统栈的另一主干层次，做架构与编译方向建议选修。
+
 **[编译原理](编译原理/)** — 词法分析、中间表示、代码优化；理解编译器如何把高级语言映射到硬件指令，是研究 LLVM/MLIR/TVM 的前置基础。
 
-**[并行与分布式系统](并行与分布式系统/)** — GPU 编程模型、分布式训练、一致性协议；做 AI 系统和大规模计算的必备背景。
+**[并行与分布式系统](并行与分布式系统/)** — MPI、CUDA 编程模型、cache coherence；做 AI 系统和大规模计算的必备背景。
 
-**[操作系统](操作系统/CS162.md)** — 系统栈的另一主干层次，做架构与编译方向建议选修。
+**[GPU体系结构](GPU体系结构/)** — warp 调度、访存合并、Tensor Core、HBM；GPU 硬件内部如何运作，区别于并行编程。
 
 ## 对科研方向的作用
 
