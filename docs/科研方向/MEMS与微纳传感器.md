@@ -239,11 +239,7 @@ graph LR
 
     MEMS 设计与加工 · 微传感器与执行器 · 振动与声学测量
 
--   **[罗吉魁（Jikui Luo）](https://person.zju.edu.cn/en/LuoJikui)** <span class="badge-other">浙大</span>
-
-    声表面波（SAW）/薄膜体声波（FBAR）谐振器 · 物理化学传感器 · 自供能无线微系统
-
--   **[骆季奎](https://sensor.zju.edu.cn/zh/author/骆季奎/)** <span class="badge-other">浙大</span>
+-   **[骆季奎](https://person.zju.edu.cn/en/LuoJikui)** <span class="badge-other">浙大</span>
 
     生物 MEMS · 微纳能量收集 · 无线无源与自供能传感系统
 
