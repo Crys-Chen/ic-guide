@@ -167,6 +167,18 @@
 .df-inner p,
 .df-linner p { text-indent: 0; }
 
+/* 图片段落：去掉缩进，居中 */
+.md-typeset p:has(> img) {
+  text-indent: 0;
+  text-align: center;
+}
+
+/* 表格：水平居中 */
+.md-typeset table:not([class]) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ─── Admonition 圆角 + 阴影 ────────────────────────────── */
 .md-typeset .admonition,
 .md-typeset details {
