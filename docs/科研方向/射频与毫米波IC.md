@@ -533,6 +533,22 @@ graph LR
 
     毫米波收发机电路 · 全数字锁相环 · 相控阵 MIMO 数字化
 
+-   **[李巍](https://icmne.fudan.edu.cn/2d/23/c48925a732451/page.htm)** <span class="badge-fudan">复旦</span>
+
+    射频模拟集成电路 · 无线收发器芯片
+
+-   **[王云](https://icmne.fudan.edu.cn/2d/47/c48925a732487/page.htm)** <span class="badge-fudan">复旦</span>
+
+    毫米波功率放大器 · 5G/6G 相控阵收发
+
+-   **[江晨](https://icmne.fudan.edu.cn/2d/1c/c48925a732444/page.htm)** <span class="badge-fudan">复旦</span>
+
+    太赫兹集成电路 · 片上成像与感知系统
+
+-   **[谭恺](https://icmne.fudan.edu.cn/2d/38/c48925a732472/page.htm)** <span class="badge-fudan">复旦</span>
+
+    毫米波雷达芯片 · 雷达成像信号处理
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

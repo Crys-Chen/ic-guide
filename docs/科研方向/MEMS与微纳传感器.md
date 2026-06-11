@@ -348,6 +348,14 @@ graph LR
 
     柔性离电触觉传感 · 可穿戴健康监测 · 离电材料与微结构
 
+-   **[袁凯平](https://icmne.fudan.edu.cn/2d/57/c48925a732503/page.htm)** <span class="badge-fudan">复旦</span>
+
+    微纳气体传感器 · 光谱感知集成
+
+-   **[吴广健](https://icmne.fudan.edu.cn/2d/4a/c48925a732490/page.htm)** <span class="badge-fudan">复旦</span>
+
+    铁电增强光电探测 · 感存算融合器件
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

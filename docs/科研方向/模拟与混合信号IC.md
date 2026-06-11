@@ -444,6 +444,26 @@ graph LR
 
     PLL / CDR 时钟恢复 · 高速混合信号 ADC/DAC · 光电融合互联
 
+-   **[殷韵](https://icmne.fudan.edu.cn/2d/56/c48925a732502/page.htm)** <span class="badge-fudan">复旦</span>
+
+    数字化射频发射机 · 宽带功率放大器
+
+-   **[李硕](https://icmne.fudan.edu.cn/2d/22/c48925a732450/page.htm)** <span class="badge-fudan">复旦</span>
+
+    超低功耗物联网 SoC · 能量采集与电源管理
+
+-   **[徐佳伟](https://icmne.fudan.edu.cn/2d/4c/c48925a732492/page.htm)** <span class="badge-fudan">复旦</span>
+
+    生物信号采集前端 · 生物阻抗测量接口 · 高精度 ADC
+
+-   **[江文宁](https://icmne.fudan.edu.cn/2d/1e/c48925a732446/page.htm)** <span class="badge-fudan">复旦</span>
+
+    高速高精度 ADC · 流水线混合信号电路
+
+-   **[李文宏](https://icmne.fudan.edu.cn/2d/24/c48925a732452/page.htm)** <span class="badge-fudan">复旦</span>
+
+    图像传感读出电路 · 电源管理 IC
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

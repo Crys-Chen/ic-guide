@@ -356,6 +356,30 @@ graph LR
 
     LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
 
+-   **[朱可人](https://icmne.fudan.edu.cn/2d/64/c48925a732516/page.htm)** <span class="badge-fudan">复旦</span>
+
+    物理设计与布局布线 · 模拟电路设计自动化 · 逻辑综合优化
+
+-   **[毕朝日](https://icmne.fudan.edu.cn/17/48/c48925a726856/page.htm)** <span class="badge-fudan">复旦</span>
+
+    模拟电路设计自动化 · 强化学习辅助优化
+
+-   **[陶俊](https://icmne.fudan.edu.cn/2d/3a/c48925a732474/page.htm)** <span class="badge-fudan">复旦</span>
+
+    统计建模与良率优化 · AI 辅助设计 · 混合信号仿真
+
+-   **[陆叶](https://icmne.fudan.edu.cn/2d/2e/c48925a732462/page.htm)** <span class="badge-fudan">复旦</span>
+
+    先进晶体管建模 · 机器学习辅助设计
+
+-   **[陆振海](https://icmne.fudan.edu.cn/2d/2f/c48925a732463/page.htm)** <span class="badge-fudan">复旦</span>
+
+    半导体器件建模 · AI 辅助 EDA
+
+-   **[王志昂](https://icmne.fudan.edu.cn/97/b8/c48925a759736/page.htm)** <span class="badge-fudan">复旦</span>
+
+    数字芯片物理设计 · 工艺-设计协同优化
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 

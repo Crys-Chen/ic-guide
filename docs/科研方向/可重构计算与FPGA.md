@@ -439,6 +439,10 @@ graph LR
 
     可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
 
+-   **[来金梅](https://icmne.fudan.edu.cn/2d/21/c48925a732449/page.htm)** <span class="badge-fudan">复旦</span>
+
+    FPGA 神经网络加速器 · 可编程深度学习平台
+
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
 
