@@ -808,11 +808,13 @@
   font-size: .9rem;
 }
 
-/* 科研方向页正文限宽，避免在宽网格下行太长（74rem grid 的副作用） */
-.is-research-page .md-content__inner {
-  max-width: 52rem;
-  margin-left: auto;
-  margin-right: auto;
+/* 科研方向页正文限宽，只在桌面端生效；移动端保留 Material 默认边距 */
+@media screen and (min-width: 76.25em) {
+  .is-research-page .md-content__inner {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .is-research-page .md-typeset h1,
@@ -1893,11 +1895,13 @@
   max-width: 64rem;
 }
 
-/* hide: navigation 页面（首页/后记/星图页）收窄正文至适合阅读的宽度 */
-.md-main__inner:has(> .md-sidebar--primary[hidden]) .md-content__inner {
-  max-width: 46rem;
-  margin-left: auto;
-  margin-right: auto;
+/* hide: navigation 页面（首页/后记/星图页）收窄正文至适合阅读的宽度，只桌面端 */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner:has(> .md-sidebar--primary[hidden]) .md-content__inner {
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .md-content__inner:has(.community-cards) {
