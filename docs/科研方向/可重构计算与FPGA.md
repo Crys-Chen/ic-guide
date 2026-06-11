@@ -407,7 +407,7 @@ graph LR
 
     模拟电路 EDA · 互连仿真与时序分析 · 并行 EDA 算法
 
--   **[戴国浩](https://nicsefc.ee.tsinghua.edu.cn/people/GuohaoDai)** <span class="badge-other">交大</span>
+-   **[戴国浩](https://dai.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
     FPGA LLM 推理加速 · 稀疏计算硬件映射 · 多 FPGA 异构系统
 

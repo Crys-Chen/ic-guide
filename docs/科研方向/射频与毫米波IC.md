@@ -477,7 +477,7 @@ graph LR
 
     5G/6G 数字功率放大器 · 毫米波宽带收发机 · 无线 SoC 与全双工 IC
 
--   **[洪志良](http://icmne.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
+-   **[洪志良](https://sme.fudan.edu.cn/5f/e3/c31145a352227/page.htm)** <span class="badge-fudan">复旦</span>
 
     射频混合信号收发机 · 高精度 ADC 与 DC-DC · 模拟 IC 基础设计
 
@@ -485,7 +485,7 @@ graph LR
 
     毫米波 CMOS 收发机 · 相控阵芯片 · 5G/6G 射频前端
 
--   **[闵昊](http://rficae.fudan.edu.cn)** <span class="badge-fudan">复旦</span>
+-   **[闵昊](https://sme.fudan.edu.cn/60/b4/c31133a352436/page.htm)** <span class="badge-fudan">复旦</span>
 
     宽带射频收发机 · 天线芯片协同设计 · 高速 ADC/DAC
 
