@@ -12218,7 +12218,8 @@
 </svg></p>
 <p>以上两个方向都只是在让处理器算得更快，却没碰到一个更本质的问题。如今我们主流的芯片架构，无一例外都是“约翰·冯·诺依曼（John von Neumann）架构”。这是祖师爷冯·诺依曼在1945 年提出来的一个经典架构，典型特征就是“存算分离”。数据平时放在存储器，要运算时搬到处理器进行运算。这样做的好处是存储器和处理器可以分开设计，坏处是处理器每做一次运算都要去存储器跑一个来回取数据。这趟旅程不产出任何结果，却实实在在地耗时耗能。训练大语言模型（LLM）时，接近七成能耗花在搬数据上，真正做乘加的只有三成。</p>
 <p><span id="dir-7"></span>于是，在AI时代，<strong>存算一体与近存计算</strong>走了一条更具颠覆性的道路。这个方向摒弃冯诺依曼架构，把计算塞进存储器，在存储器里面或附近做计算。一条典型路径就是依靠一种叫忆阻器（memristor）的器件。用该器件的电阻值存权重，输入电压，输出电流，利用欧姆定律（I = VS）直接完成乘法。当然，这只是存算一体的一种实现方式，这个方向还有很多个细分流派。值得注意的是，刚刚介绍的这种方法使用的是模拟运算（欧姆定律），信号编码在连续的电压和电流里。在计算领域被数字电路统治几十年后，模拟电路开始有回归的趋势。</p>
-<p><svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img">
+<div>
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>冯·诺依曼架构 vs 存算一体</title>
 <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <text font-family="'Noto Sans SC',sans-serif" font-weight="500" font-size="14" x="155" y="22" text-anchor="middle" fill="#1a1a1a">冯·诺依曼架构</text>
@@ -12236,23 +12237,38 @@
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="155" y="150" text-anchor="middle" fill="#A32D2D">写回去</text>
 <text font-family="'Noto Sans SC',sans-serif" font-weight="500" font-size="12" x="155" y="170" text-anchor="middle" fill="#A32D2D">~70%能耗</text>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="155" y="270" text-anchor="middle" fill="#888">处理和存储分离</text>
-<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="155" y="286" text-anchor="middle" fill="#888">数据必须搬运</text></p>
+<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="155" y="286" text-anchor="middle" fill="#888">数据必须搬运</text>
+
 <!-- CIM: memory array with computation -->
-<p><text font-family="'Noto Sans SC',sans-serif" font-size="11" x="390" y="58" fill="#085041">输入电压 V₁ V₂ V₃</text>
+
+
+<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="390" y="58" fill="#085041">输入电压 V₁ V₂ V₃</text>
 <line x1="412" y1="65" x2="412" y2="82" stroke="#0F6E56" stroke-width="1"/>
 <line x1="460" y1="65" x2="460" y2="82" stroke="#0F6E56" stroke-width="1"/>
-<line x1="508" y1="65" x2="508" y2="82" stroke="#0F6E56" stroke-width="1"/></p>
+<line x1="508" y1="65" x2="508" y2="82" stroke="#0F6E56" stroke-width="1"/>
+
 <!-- Memory array grid -->
-<p><rect x="392" y="82" width="136" height="130" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/></p>
+
+
+<rect x="392" y="82" width="136" height="130" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+
 <!-- Row lines -->
-<p><line x1="392" y1="105" x2="528" y2="105" stroke="#0F6E56" stroke-width="0.5" opacity="0.3"/>
+
+
+<line x1="392" y1="105" x2="528" y2="105" stroke="#0F6E56" stroke-width="0.5" opacity="0.3"/>
 <line x1="392" y1="140" x2="528" y2="140" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/>
-<line x1="392" y1="175" x2="528" y2="175" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/></p>
+<line x1="392" y1="175" x2="528" y2="175" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/>
+
 <!-- Col lines -->
-<p><line x1="438" y1="82" x2="438" y2="212" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/>
-<line x1="484" y1="82" x2="484" y2="212" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/></p>
+
+
+<line x1="438" y1="82" x2="438" y2="212" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/>
+<line x1="484" y1="82" x2="484" y2="212" stroke="#0F6E56" stroke-width="0.3" opacity="0.3"/>
+
 <!-- Resistance symbols at intersections (dots) -->
-<p><circle cx="412" cy="105" r="4" fill="#1D9E75" opacity="0.6"/><text font-family="'Noto Sans SC',sans-serif" font-size="7" x="412" y="108" text-anchor="middle" fill="white">G</text>
+
+
+<circle cx="412" cy="105" r="4" fill="#1D9E75" opacity="0.6"/><text font-family="'Noto Sans SC',sans-serif" font-size="7" x="412" y="108" text-anchor="middle" fill="white">G</text>
 <circle cx="460" cy="105" r="4" fill="#1D9E75" opacity="0.6"/><text font-family="'Noto Sans SC',sans-serif" font-size="7" x="460" y="108" text-anchor="middle" fill="white">G</text>
 <circle cx="508" cy="105" r="4" fill="#1D9E75" opacity="0.6"/><text font-family="'Noto Sans SC',sans-serif" font-size="7" x="508" y="108" text-anchor="middle" fill="white">G</text>
 <circle cx="412" cy="140" r="4" fill="#1D9E75" opacity="0.5"/>
@@ -12260,14 +12276,20 @@
 <circle cx="508" cy="140" r="4" fill="#1D9E75" opacity="0.5"/>
 <circle cx="412" cy="175" r="4" fill="#1D9E75" opacity="0.4"/>
 <circle cx="460" cy="175" r="4" fill="#1D9E75" opacity="0.4"/>
-<circle cx="508" cy="175" r="4" fill="#1D9E75" opacity="0.4"/></p>
+<circle cx="508" cy="175" r="4" fill="#1D9E75" opacity="0.4"/>
+
 <!-- Output currents -->
-<p><line x1="412" y1="212" x2="412" y2="230" stroke="#0F6E56" stroke-width="1" marker-end="url(#arr2)"/>
+
+
+<line x1="412" y1="212" x2="412" y2="230" stroke="#0F6E56" stroke-width="1" marker-end="url(#arr2)"/>
 <line x1="460" y1="212" x2="460" y2="230" stroke="#0F6E56" stroke-width="1" marker-end="url(#arr2)"/>
 <line x1="508" y1="212" x2="508" y2="230" stroke="#0F6E56" stroke-width="1" marker-end="url(#arr2)"/>
-<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="390" y="248" fill="#085041">输出电流 I₁ I₂ I₃</text></p>
+<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="390" y="248" fill="#085041">输出电流 I₁ I₂ I₃</text>
+
 <!-- Labels -->
-<p><text font-family="'Noto Sans SC',sans-serif" font-size="11" x="545" y="100" fill="#085041">每个交叉点</text>
+
+
+<text font-family="'Noto Sans SC',sans-serif" font-size="11" x="545" y="100" fill="#085041">每个交叉点</text>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="545" y="116" fill="#085041">存储权重 G</text>
 <line x1="530" y1="105" x2="540" y2="105" stroke="#085041" stroke-width="0.5" stroke-dasharray="2 2"/>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="545" y="150" fill="#0F6E56">I = V × G</text>
@@ -12277,7 +12299,8 @@
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="510" y="296" text-anchor="middle" fill="#1D9E75">搬运 τ → 0</text>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="510" y="325" text-anchor="middle" fill="#888">整个阵列并行完成矩阵乘法</text>
 <text font-family="'Noto Sans SC',sans-serif" font-size="11" x="510" y="341" text-anchor="middle" fill="#888">模拟计算回归</text>
-</svg></p>
+</svg>
+</div>
 <p>摩尔定律放缓之后，进步没有停止，只是从缩小空间转向了压缩时间。但到这里，所有的优化仍然在同一个框架内——经典的、基于 0 和 1 的计算。接下来的方向，则是横向扩展计算的边界，让计算深入到物理世界的方方面面。</p>
 <hr />
 <h2 id="_6">计算触碰世界</h2>
