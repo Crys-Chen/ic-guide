@@ -11331,7 +11331,153 @@
 <p>设计一块处理器，首先要确定的是<strong>指令集（ISA）</strong>，也就是软件能看到、硬件必须实现的那层接口。<strong>x86</strong> 走的是"指令越丰富越好"的路，几十年向后兼容积累了大量包袱，光解码电路就要烧掉不少功耗；<strong>ARM</strong> 用精简指令集换来更低的实现成本，在移动端大获全胜；<strong>RISC-V</strong> 干脆把指令集开源，不交授权费就能自己设计和修改。Hennessy 与 Patterson 把开源 ISA 列为新黄金时代的结构性条件，它把芯片创新的门槛从亿级资本降到了学术组玩得起的范围。</p>
 <p>指令集之下是<strong>微架构</strong>，同一套 ISA 可以有无数种不同的电路实现。同样是 x86，Intel Raptor Lake 和 AMD Zen 4 的流水线级数、乱序执行宽度、分支预测算法完全不同，性能和功耗能差 30%。微架构是架构研究发表最密集的地方。分支预测命中率多高、预取器提前几步取数据、缓存替换选 LRU 还是 RRIP，每一个细节都是独立的研究课题。贯穿其中的是<strong>存储层次</strong>这条暗线。L1 缓存命中四拍，L3 要四十拍，DRAM 等两百拍，每一级的大小、替换算法、与相邻层的预取协议都压在真实性能上。内存墙不只是宏观叙事，它具体落在每一个缓存设计决策里。</p>
 <p>以上这些研究全部在<strong>冯·诺依曼架构</strong>的框架之内进行。计算与存储分离、指令顺序取来执行，是 1945 年以来所有主流处理器共同遵守的基本假设。近年来研究者开始正面质疑这个假设本身。神经形态计算用脉冲信号取代精确数值，数据流架构让计算随数据到来自动触发，<strong>近存计算（NMP）</strong>把处理单元挪到内存旁边，<strong>存算一体（CIM）</strong>直接在存储阵列内部完成乘加运算。这些非冯方向的动机是同一个，数据搬运的成本已经大到不得不从根本上重新考虑计算与存储的关系。其中存算一体和近存计算热度最高，已经自成一个方向，见<a href="../%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a>。</p>
-<p>架构研究离不开编译器，一块新芯片没有配套软件栈，只是一块昂贵的硅片。编译器的核心工作是<strong>调度</strong>，决定指令以什么顺序执行、数据从哪里取、什么时候取。调度有两种基本哲学。<strong>静态调度</strong>在编译期把一切安排好，生成的指令序列运行时无需硬件再做决策，是 <strong>VLIW</strong> 这类架构的基础；<strong>动态调度</strong>把决策权留给硬件，处理器在运行时按实际情况乱序执行，能应对编译期无法预知的变化，是现代高性能 CPU 的标配。<strong>LLVM</strong> 系统化地解决了不同硬件后端与不同语言前端之间的适配问题；<strong>MLIR</strong> 把这套思路延伸到张量运算，在"矩阵乘法"和"硬件寄存器"之间架起多个中间层；<strong>TVM</strong> 再加上自动调优，用搜索在数百万种循环分块方案里找最优配置。调度的思想还在往运行时延伸。<strong>vLLM</strong> 把操作系统虚拟内存的分页思路拿来管理 LLM 的 KV Cache，同一块 GPU 上的推理吞吐量提了二十余倍，硬件没有任何改动。架构与编译器的研究问题深度交织，<strong>ASPLOS</strong> 这个顶会的名字里同时带着 Architecture、Programming Languages 和 Operating Systems，正因如此。</p>
+<p>架构研究离不开编译器，一块新芯片没有配套软件栈，只是一块昂贵的硅片。编译器的核心工作是<strong>调度</strong>，决定指令以什么顺序执行、数据从哪里取、什么时候取。调度有两种基本哲学。<strong>静态调度</strong>在编译期把一切安排好，生成的指令序列运行时无需硬件再做决策，是 <strong>VLIW</strong> 这类架构的基础；<strong>动态调度</strong>把决策权留给硬件，处理器在运行时按实际情况乱序执行，能应对编译期无法预知的变化，是现代高性能 CPU 的标配。</p>
+<div><svg viewBox="0 0 880 240" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <!-- Panel 1: 静态调度 -->
+  <rect x="10" y="10" width="420" height="220" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="220" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">静态调度</text>
+  <text x="220" y="54" text-anchor="middle" font-size="9" fill="#94A3B8">程序顺序</text>
+  <rect x="152" y="60" width="28" height="28" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="166" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">1</text>
+  <rect x="188" y="60" width="28" height="28" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="202" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">2</text>
+  <rect x="224" y="60" width="28" height="28" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="238" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">3</text>
+  <rect x="260" y="60" width="28" height="28" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="274" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#5B21B6">4</text>
+  <line x1="220" y1="92" x2="220" y2="100" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M216,100 L224,100 L220,106 z" fill="#64748B"/>
+  <rect x="120" y="108" width="200" height="30" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="220" y="127" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">编译器在编译期排定顺序</text>
+  <line x1="220" y1="142" x2="220" y2="150" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M216,150 L224,150 L220,156 z" fill="#64748B"/>
+  <rect x="152" y="160" width="28" height="28" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="166" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">1</text>
+  <rect x="188" y="160" width="28" height="28" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="202" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">2</text>
+  <rect x="224" y="160" width="28" height="28" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="238" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">3</text>
+  <rect x="260" y="160" width="28" height="28" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="274" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#5B21B6">4</text>
+  <text x="220" y="206" text-anchor="middle" font-size="10" fill="#475569">运行时不再改变顺序，硬件照单执行</text>
+  <text x="220" y="221" text-anchor="middle" font-size="10" fill="#94A3B8">硬件简单省电 · 代表：VLIW</text>
+  <!-- Panel 2: 动态调度 -->
+  <rect x="450" y="10" width="420" height="220" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="660" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">动态调度</text>
+  <text x="660" y="54" text-anchor="middle" font-size="9" fill="#94A3B8">程序顺序</text>
+  <rect x="592" y="60" width="28" height="28" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="606" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">1</text>
+  <rect x="628" y="60" width="28" height="28" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="642" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">2</text>
+  <rect x="664" y="60" width="28" height="28" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="678" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">3</text>
+  <rect x="700" y="60" width="28" height="28" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="714" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#5B21B6">4</text>
+  <line x1="660" y1="92" x2="660" y2="100" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M656,100 L664,100 L660,106 z" fill="#64748B"/>
+  <rect x="560" y="108" width="200" height="30" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="660" y="127" text-anchor="middle" font-size="11" font-weight="600" fill="#92400E">乱序执行引擎在运行时重排</text>
+  <line x1="660" y1="142" x2="660" y2="150" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M656,150 L664,150 L660,156 z" fill="#64748B"/>
+  <rect x="592" y="160" width="28" height="28" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="606" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40AF">1</text>
+  <rect x="628" y="160" width="28" height="28" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="642" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">3</text>
+  <rect x="664" y="160" width="28" height="28" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="678" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">2</text>
+  <rect x="700" y="160" width="28" height="28" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="714" y="179" text-anchor="middle" font-size="12" font-weight="700" fill="#5B21B6">4</text>
+  <text x="660" y="206" text-anchor="middle" font-size="10" fill="#475569">指令 2 在等数据，就绪的指令 3 先执行</text>
+  <text x="660" y="221" text-anchor="middle" font-size="10" fill="#94A3B8">硬件复杂但灵活 · 代表：现代高性能 CPU</text>
+</svg></div>
+
+<p><strong>LLVM</strong> 系统化地解决了不同硬件后端与不同语言前端之间的适配问题；<strong>MLIR</strong> 把这套思路延伸到张量运算，在"矩阵乘法"和"硬件寄存器"之间架起多个中间层；<strong>TVM</strong> 再加上自动调优，用搜索在数百万种循环分块方案里找最优配置。</p>
+<div><svg viewBox="0 0 880 250" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <!-- Panel 1: 没有 IR -->
+  <rect x="10" y="10" width="420" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="220" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">没有中间表示</text>
+  <rect x="40" y="64" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="85" y="82" text-anchor="middle" font-size="10" fill="#475569">C++</text>
+  <rect x="40" y="114" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="85" y="132" text-anchor="middle" font-size="10" fill="#475569">Python</text>
+  <rect x="40" y="164" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="85" y="182" text-anchor="middle" font-size="10" fill="#475569">Rust</text>
+  <line x1="130" y1="78" x2="300" y2="65" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="78" x2="300" y2="111" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="78" x2="300" y2="157" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="78" x2="300" y2="203" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="128" x2="300" y2="65" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="128" x2="300" y2="111" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="128" x2="300" y2="157" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="128" x2="300" y2="203" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="178" x2="300" y2="65" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="178" x2="300" y2="111" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="178" x2="300" y2="157" stroke="#CBD5E1" stroke-width="1.2"/>
+  <line x1="130" y1="178" x2="300" y2="203" stroke="#CBD5E1" stroke-width="1.2"/>
+  <rect x="300" y="52" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="350" y="69" text-anchor="middle" font-size="10" fill="#475569">x86 CPU</text>
+  <rect x="300" y="98" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="350" y="115" text-anchor="middle" font-size="10" fill="#475569">ARM</text>
+  <rect x="300" y="144" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="350" y="161" text-anchor="middle" font-size="10" fill="#475569">GPU</text>
+  <rect x="300" y="190" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="350" y="207" text-anchor="middle" font-size="10" fill="#475569">NPU</text>
+  <text x="220" y="232" text-anchor="middle" font-size="10" fill="#475569">3 种语言 × 4 种硬件 = 12 个翻译器，每个都要单独开发</text>
+  <!-- Panel 2: 有 IR -->
+  <rect x="450" y="10" width="420" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="660" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">有了中间表示（LLVM 的做法）</text>
+  <rect x="480" y="64" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="525" y="82" text-anchor="middle" font-size="10" fill="#475569">C++</text>
+  <rect x="480" y="114" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="525" y="132" text-anchor="middle" font-size="10" fill="#475569">Python</text>
+  <rect x="480" y="164" width="90" height="28" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="525" y="182" text-anchor="middle" font-size="10" fill="#475569">Rust</text>
+  <line x1="570" y1="78" x2="620" y2="120" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="570" y1="128" x2="620" y2="128" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="570" y1="178" x2="620" y2="136" stroke="#3B82F6" stroke-width="1.5"/>
+  <rect x="620" y="105" width="90" height="46" rx="6" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="665" y="124" text-anchor="middle" font-size="10" font-weight="700" fill="#1E40AF">中间表示</text>
+  <text x="665" y="140" text-anchor="middle" font-size="9" fill="#1E40AF">IR</text>
+  <line x1="710" y1="120" x2="755" y2="65" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="710" y1="125" x2="755" y2="111" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="710" y1="131" x2="755" y2="157" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="710" y1="136" x2="755" y2="203" stroke="#3B82F6" stroke-width="1.5"/>
+  <rect x="755" y="52" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="805" y="69" text-anchor="middle" font-size="10" fill="#475569">x86 CPU</text>
+  <rect x="755" y="98" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="805" y="115" text-anchor="middle" font-size="10" fill="#475569">ARM</text>
+  <rect x="755" y="144" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="805" y="161" text-anchor="middle" font-size="10" fill="#475569">GPU</text>
+  <rect x="755" y="190" width="100" height="26" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.2"/>
+  <text x="805" y="207" text-anchor="middle" font-size="10" fill="#475569">NPU</text>
+  <text x="660" y="232" text-anchor="middle" font-size="10" fill="#475569">3 + 4 = 7 个接口，优化在 IR 上做一次、所有硬件共享</text>
+</svg></div>
+
+<div><svg viewBox="0 0 880 270" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
+  <rect x="10" y="10" width="860" height="250" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="440" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#1E293B">一次矩阵乘法的编译过程</text>
+  <rect x="240" y="48" width="360" height="36" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="420" y="71" text-anchor="middle" font-size="11" font-weight="600" fill="#5B21B6">y = Wx（矩阵乘法）</text>
+  <text x="612" y="71" font-size="9" fill="#94A3B8">← 程序员写下的一行</text>
+  <line x1="420" y1="88" x2="420" y2="96" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M416,96 L424,96 L420,102 z" fill="#64748B"/>
+  <text x="432" y="97" font-size="9" fill="#7C3AED">MLIR 逐层下降</text>
+  <rect x="240" y="104" width="360" height="36" rx="5" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="420" y="127" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">三重循环，按块计算</text>
+  <text x="612" y="127" font-size="9" fill="#94A3B8">← TVM 在数百万种分块方案里搜索最快的</text>
+  <line x1="420" y1="144" x2="420" y2="152" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M416,152 L424,152 L420,158 z" fill="#64748B"/>
+  <rect x="240" y="160" width="360" height="36" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="420" y="183" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">向量指令 · 寄存器分配</text>
+  <text x="612" y="183" font-size="9" fill="#94A3B8">← 硬件能直接执行的形式</text>
+  <line x1="420" y1="200" x2="420" y2="208" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M416,208 L424,208 L420,214 z" fill="#64748B"/>
+  <rect x="340" y="218" width="160" height="28" rx="5" fill="#E2E8F0" stroke="#64748B" stroke-width="1.5"/>
+  <text x="420" y="236" text-anchor="middle" font-size="11" fill="#475569">GPU / NPU 执行</text>
+  <text x="440" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">每往下一层离硬件更近，每一层都有自己的优化空间</text>
+</svg></div>
+
+<p>调度的思想还在往运行时延伸。<strong>vLLM</strong> 把操作系统虚拟内存的分页思路拿来管理 LLM 的 KV Cache，同一块 GPU 上的推理吞吐量提了二十余倍，硬件没有任何改动。架构与编译器的研究问题深度交织，<strong>ASPLOS</strong> 这个顶会的名字里同时带着 Architecture、Programming Languages 和 Operating Systems，正因如此。</p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>AI 加速器与领域专用架构</strong>：通用 CPU 塞满分支预测、乱序引擎、大缓存，跑神经网络时几乎全空转；DSA 只留算法需要的电路，能效高一两个数量级，代价是算法一变架构就要重做。</li>
@@ -11685,7 +11831,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-06-10
+    2026-06-11
   </span>
 
     

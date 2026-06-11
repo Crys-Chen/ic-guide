@@ -47,6 +47,13 @@
     below.style.pointerEvents = 'none';
     below.style.transition    = 'opacity 0.15s ease';
 
+    // 星图页：目录栏随文章一起淡入
+    var toc = (hero === rg) ? document.querySelector('.md-sidebar--secondary') : null;
+    if (toc) {
+      toc.style.opacity    = '0';
+      toc.style.transition = 'opacity 0.15s ease';
+    }
+
     function tick() {
       var s = window.scrollY;
       var t = Math.min(1, Math.max(0, s / fadeScrollDist));
@@ -54,6 +61,7 @@
       below.style.opacity       = String(t);
       below.style.pointerEvents = t > 0.1 ? '' : 'none';
       hero.style.pointerEvents  = t > 0.9 ? 'none' : '';
+      if (toc) toc.style.opacity = String(t);
     }
 
     window.addEventListener('scroll', tick, { passive: true });
