@@ -11338,6 +11338,74 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      课程关系
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      子板块
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="子板块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学基础
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学进阶
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      对科研方向的作用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      征集中的槽位
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -11354,71 +11422,52 @@
   
 
 
-<h1 id="_1">知识谱系</h1>
+<h1 id="_1">数学</h1>
+<p>数学是除物理以外所有板块的共同基础。信号处理依赖复变函数，机器学习依赖概率统计和矩阵分析，EDA 算法依赖离散数学和数值分析。本板块分两层，数学基础是本科前两年的必修内容，数学进阶按需选学。</p>
+<h2 id="_2">课程关系</h2>
+<p>箭头从前置课程指向后置课程。数学分析和线性代数是图中所有进阶课程的公共起点。</p>
 <pre class="mermaid"><code>graph TB
-    subgraph 基础
-        A[数学分析]
-        B[线性代数]
-    end
+    A[数学分析]
+    B[线性代数]
+    A --&gt; M[复变函数]
+    A --&gt; G[数值分析]
+    A --&gt; C[概率统计]
+    A --&gt; L[凸优化]
+    B --&gt; L
+    B --&gt; E[矩阵分析]
+    B --&gt; D[高等代数]
+    C --&gt; F[信息论]
+    D --&gt; I[抽象代数]
+    I --&gt; J[密码学]
+    H[离散数学]
 
-    subgraph 进阶
-        C[概率论]
-        D[高等代数]
-        E[矩阵分析]
-        F[信息论]
-        G[数值分析]
-        H[离散数学]
-        I[抽象代数]
-        J[密码学]
-        L[凸优化]
-        M[复变函数]
-    end
-
-        A --&gt; M
-    A --&gt; C
-    A --&gt; F
-    A --&gt; G
-    A --&gt; H
-
-    B --&gt; D
-    B --&gt; E
-    B --&gt; C
-    B --&gt; F
-    B --&gt; G
-    B --&gt; H
-
-    D --&gt; I
-    I --&gt; J
-    G --&gt; L</code></pre>
-<h1 id="ece">数学在ECE的地位</h1>
-<p>“吾生也有涯，而知也无涯。”有很多知识是不值得我们“以有涯随无涯”的，但数学绝不在此列。做科研的时候，常常感到万物的尽头就是数学。数学通了什么都通了，绝不存在工科生数学不用那么好的道理，数学底子是多多益善的。以下是我认为对ECE至关重要的数学知识：</p>
-<ol>
-<li><strong>数学分析</strong>：
-   数学分析是现代数学的基石，它涵盖了函数的极限、连续性、导数和积分等概念。该课程奠定了深刻理解物理现象的基础，</li>
-<li><strong>线性代数</strong>：
-   线性代数在现代数学和应用科学中尤为重要，涵盖了向量空间、线性变换与矩阵理论。通过解决线性方程组，它在计算机图形学、工程优化和数据科学中的信号处理等领域起着核心作用。</li>
-<li><strong>概率论</strong>：
-   概率论是理解机器学习算法的基础，并用于评价模型预测的准确性，也是当下图像领域主宰——扩散模型（Diffusion Model）的基石。它与信息论结合，分析数据传输的效率，是通信系统及随机信号处理中的关键技术。</li>
-<li><strong>信息论</strong>：
-   信息论分析数据压缩和传输效率，在深度学习中的信息最大化和集成电路信号处理的功率优化中具有应用价值。与概率论互相支持，信息论提高模型的信息捕获能力。</li>
-<li><strong>离散数学</strong>：
-   离散数学为算法设计和数据结构提供了理论基础，贯穿图论、逻辑推理，这在AI中的路径规划、搜索算法上尤为重要。</li>
-<li><strong>复变函数</strong>：
-   复变函数是信号处理及分析复杂频率域信号方面的基础，它在集成电路中用于电路响应分析和滤波设计。</li>
-<li><strong>数值分析</strong>：
-   数值分析解决非线性问题的计算方法，可优化AI模型的训练过程，在模拟芯片性能和分析电路动态特性方面提供支持。</li>
-<li><strong>凸优化</strong>：
-   凸优化技术应用于机器学习算法的优化问题，如支持向量机（SVM）和神经网络的参数调优，也为集成电路设计提供了电路性能最大化的路径分析工具。</li>
-<li><strong>矩阵分析</strong>：
-   很多线性代数课程不涉及矩阵求导，但深度学习中的反向传播会有所涉及，可以看一下矩阵分析快速补课。</li>
-<li><strong>高等代数</strong>：
-    高等代数提供代数结构的解析工具，支持加密算法和数据编码技术的设计，在信息安全与AI加密模型中发挥重要作用。</li>
-<li><strong>抽象代数</strong>：
-    密码学的基础。</li>
-<li><strong>密码学</strong>：
-    密码学为信息安全的基础，通过加密和解密技术保护数据的机密性和完整性。在网络安全和数据隐私方面有重要应用。</li>
-</ol>
-<h1 id="_2">对科研方向的作用</h1>
+    classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
+    classDef advanced fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
+    class A,B base
+    class C,D,E,F,G,H,I,J,L,M advanced</code></pre>
+<p>进阶课程分三条线。分析线从数学分析延伸出复变函数、数值分析、概率统计，概率统计再支撑信息论。代数线从线性代数延伸出矩阵分析和高等代数，高等代数经抽象代数通向密码学。凸优化同时依赖数学分析和线性代数。离散数学不依赖分析与代数，可以直接学。</p>
+<h2 id="_3">子板块</h2>
+<h3 id="_4">数学基础</h3>
+<ul>
+<li><strong>数学分析</strong> — 极限、微积分、级数。复旦数学分析（MATH120016/17）与 MIT 公开课可互为补充</li>
+<li><strong>线性代数</strong> — 向量空间、线性变换、矩阵理论。MIT 18.06（Strang）是公认的最佳入门</li>
+</ul>
+<h3 id="_5">数学进阶</h3>
+<ul>
+<li><strong>入门速成</strong> — CS70、MIT 6.042J 这类离散数学与概率混合课，为转入 CS 类课程快速补数学语言</li>
+<li><strong>概率统计</strong> — 机器学习和随机信号处理的基础。Harvard Stat 110 讲得最透</li>
+<li><strong>矩阵分析</strong> — 矩阵求导、SVD、最小二乘。深度学习反向传播的数学语言，普通线性代数课不覆盖</li>
+<li><strong>高等代数</strong> — 线性代数的理论深化版，为抽象代数做准备</li>
+<li><strong>抽象代数</strong> — 群环域。密码学的代数基础</li>
+<li><strong>密码学</strong> — 加密、签名、零知识证明。硬件安全方向的理论基础</li>
+<li><strong>信息论</strong> — 熵、信道容量、数据压缩。通信系统和机器学习理论都建立在它之上</li>
+<li><strong>离散数学</strong> — 图论、逻辑、组合。EDA 算法和数据结构的理论基础</li>
+<li><strong>数值分析</strong> — 非线性方程、数值积分、迭代法。SPICE 仿真器和 TCAD 求解器的算法内核</li>
+<li><strong>凸优化</strong> — 对偶理论、KKT 条件。机器学习训练和 EDA 布局布线的优化框架</li>
+<li><strong>复变函数</strong> — 留数、共形映射。信号系统频域分析和滤波器设计的数学工具</li>
+<li><strong>数理方程</strong>（征集中）</li>
+</ul>
+<h2 id="_6">对科研方向的作用</h2>
 <table>
 <thead>
 <tr>
@@ -11432,11 +11481,11 @@
 <td>所有方向(基础)</td>
 </tr>
 <tr>
-<td>复变函数 + 信号处理基础</td>
+<td>复变函数</td>
 <td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a>、<a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%B0%84%E9%A2%91%E4%B8%8E%E6%AF%AB%E7%B1%B3%E6%B3%A2IC/">射频与毫米波 IC</a></td>
 </tr>
 <tr>
-<td>概率论 + 信息论</td>
+<td>概率统计 + 信息论</td>
 <td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a>、<a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a></td>
 </tr>
 <tr>
@@ -11449,18 +11498,19 @@
 </tr>
 <tr>
 <td>数值分析</td>
-<td>所有需要"仿真"的方向(EDA/电磁/电路/MEMS)</td>
+<td>所有需要仿真的方向(EDA/电磁/电路/MEMS)</td>
 </tr>
 <tr>
 <td>抽象代数 + 密码学</td>
 <td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a></td>
 </tr>
-<tr>
-<td>量子物理(非数学但相关)</td>
-<td><a href="../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E4%B8%8E%E9%87%8F%E5%AD%90%E8%8A%AF%E7%89%87/">量子计算与量子芯片</a></td>
-</tr>
 </tbody>
 </table>
+<h2 id="_7">征集中的槽位</h2>
+<p>以下子领域已规划进知识框架，但还没有经过验证的课程推荐。欢迎通过<a href="../../%E5%8F%82%E4%B8%8E%E5%BB%BA%E8%AE%BE/">参与建设</a>补全：</p>
+<ul>
+<li><a href="%E6%95%B0%E5%AD%A6%E8%BF%9B%E9%98%B6/%E6%95%B0%E7%90%86%E6%96%B9%E7%A8%8B/">数理方程</a>（征集中）</li>
+</ul>
 
 
 
@@ -11481,7 +11531,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-11
+    2026-06-11
   </span>
 
     

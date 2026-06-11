@@ -11347,7 +11347,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      知识谱系
+      课程关系
     </span>
   </a>
   
@@ -11391,12 +11391,15 @@
 
 <h1 id="_1">人工智能</h1>
 <p>从机器学习的数学基础到大语言模型的系统实现，这个板块覆盖 AI 算法与系统的完整知识链。对做硬件研究的人来说，机器学习基础和 AI 系统（ML Systems）是与芯片设计交叉最深的两个子方向。</p>
-<h2 id="_2">知识谱系</h2>
+<h2 id="_2">课程关系</h2>
+<p>箭头从前置课程指向后置课程。</p>
 <pre class="mermaid"><code>graph TB
     A["入门速成&lt;br/&gt;Karpathy · CS50 AI · CS188"] --&gt; B["机器学习&lt;br/&gt;CS229 · CS189 · Data100"]
     B --&gt; C["深度学习&lt;br/&gt;CS231n · CS224n · LHY"]
     C --&gt; D["深度生成模型&lt;br/&gt;扩散 · LLM · CS336"]
     B --&gt; E["机器学习理论&lt;br/&gt;PGM · 统计学习理论"]
+    B --&gt; G["强化学习&lt;br/&gt;赵世钰 · Silver"]
+    C --&gt; H["类脑与SNN"]
     C --&gt; F["AI 系统&lt;br/&gt;10-414 · TinyML · MLC"]
     D --&gt; F
 
@@ -11407,8 +11410,8 @@
     class A intro
     class B,C,D algo
     class F sys
-    class E theory</code></pre>
-<p>水平方向是"算法层":入门 → ML 基础 → DL 主流 → 生成模型前沿。<strong>AI 系统</strong>是垂直一层,讲怎么把这些模型高效跑起来——这一层是芯片研究者最该投入的。</p>
+    class E,G,H theory</code></pre>
+<p>主链是算法层，入门 → 机器学习 → 深度学习 → 生成模型前沿。AI 系统在算法层之上，讲怎么把模型高效跑起来，是芯片研究者最该投入的一层。机器学习理论、强化学习、类脑与SNN 是从主链分出的三个专题方向，按研究需要选学。</p>
 <hr />
 <p><strong><a href="入门速成/">入门速成</a></strong> — Neural Networks: Zero to Hero、CS50 AI、CS188；几天之内建立 AI 的基本图景，适合从零开始。</p>
 <p><strong><a href="机器学习/">机器学习</a></strong> — CS229、CS189、Data100；监督学习、优化、泛化理论；做 AI 硬件协同设计的数学基础。</p>
