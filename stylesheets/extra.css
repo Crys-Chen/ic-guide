@@ -97,6 +97,14 @@
   border-bottom: none;
 }
 
+/* 表头里的链接同样用白色，否则深蓝链接色融进深蓝表头底色 */
+.md-typeset table:not([class]) th a,
+.md-typeset table:not([class]) th a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* 首列（地区 / 类型 等标签列）文字淡化，弱化重复标签的视觉权重 */
 .md-typeset table:not([class]) td:first-child {
   color: var(--md-default-fg-color--light);

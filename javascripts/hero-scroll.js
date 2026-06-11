@@ -140,7 +140,7 @@
       // visibility:hidden 彻底阻断后代事件（pointer-events:none 无法覆盖子元素的 !important）
       hero.style.visibility    = alpha < 0.01 ? 'hidden' : '';
       below.style.opacity       = String(t);
-      below.style.pointerEvents = t > 0.1 ? '' : 'none';
+      below.style.pointerEvents = t > 0.1 ? 'auto' : 'none';
       if (toc) toc.style.opacity = String(t);
     }
 
