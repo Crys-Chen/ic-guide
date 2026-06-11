@@ -89,6 +89,17 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
 }
 
+/* 首页前言表格：Material 的包裹层是 inline-block、收缩到内容宽，
+   这里放宽到 720px 并居中（培养方案对比表） */
+.df-below .md-typeset__table {
+  display: block !important;
+  width: min(720px, 100%) !important;
+  margin: 0 auto !important;
+}
+.df-below .md-typeset__table table:not([class]) {
+  width: 100% !important;
+}
+
 /* 表头 */
 .md-typeset table:not([class]) th {
   background: var(--md-primary-fg-color);
@@ -1178,11 +1189,10 @@
   text-align: center;
   padding: 5.5rem 1.5rem 4.5rem;
   overflow: hidden;
-  width: 100vw;
   margin-top: -1.5rem;
-  margin-left: calc(50% - 50vw);
   margin-bottom: 0;
   border-radius: 0 0 24px 24px;
+  opacity: 0;
 }
 .df-bg {
   position: absolute; inset: 0;
@@ -1268,12 +1278,11 @@
    ════════════════════════════════════════════════════════ */
 .df-light {
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   margin-top: -1.5rem;
   margin-bottom: 0;
   overflow: hidden;
   background: #ffffff;
+  opacity: 0;
 }
 .df-lwrap {
   position: relative;
@@ -1356,6 +1365,7 @@
   .df-linner { padding: 1.5rem 1.4rem 2.5rem; }
   .df-dark { margin-top: -1.5rem; }
   .df-title { font-size: 2.4rem !important; }
+  .df-light, .df-dark { opacity: 1 !important; }
 }
 
 
