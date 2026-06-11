@@ -181,87 +181,87 @@ graph LR
 
 -   **[金晓冬](https://sme.fudan.edu.cn/83/6c/c31146a689004/page.htm)** <span class="badge-fudan">复旦</span>
 
-    新型 MEMS 器件设计 · MEMS 专用 ASIC 芯片 · MEMS 可靠性
+    MEMS 传感器与执行器 · MEMS 接口 ASIC · MEMS 可靠性
 
 -   **[卢红亮](https://sme.fudan.edu.cn/60/ba/c31133a352442/page.htm)** <span class="badge-fudan">复旦</span>
 
-    MEMS 气体传感器 · 新型氧化物半导体材料 · ALD 纳米功能薄膜
+    MEMS 气体传感器 · ALD 功能薄膜 · 柔性触觉与生物传感
 
 -   **[任天令](https://www.sic.tsinghua.edu.cn/info/1033/1545.htm)** <span class="badge-tsinghua">清华</span>
 
-    石墨烯/二维材料微纳器件 · 柔性可穿戴传感器 · 声学 MEMS · IEEE Fellow
+    石墨烯声学器件（人工喉） · 柔性压力/应变传感器 · 可穿戴健康监测
 
 -   **[阮勇](https://faculty.dpi.tsinghua.edu.cn/ruanyong/zh_CN/index/13066/list/index.htm)** <span class="badge-tsinghua">清华</span>
 
-    硅基 MEMS 加工技术 · MEMS 继电器 · 恶劣环境传感器与执行器
+    谐振式压力传感器与加速度计 · 高温薄膜传感器 · MEMS 封装与键合
 
 -   **[张大成](https://ic.pku.edu.cn/szdw/zzjs/Z1/zdc/index.htm)** <span class="badge-pku">北大</span>
 
-    硅 MEMS 微加工工艺 · CMOS-MEMS 单片集成 · 多物理量传感器
+    CMOS-MEMS 单片集成 · 气体与压力传感器 · MEMS 工艺表征
 
 -   **[杨振川](https://ic.pku.edu.cn/szdw/zzjs/jcwnxtx1/yzc/index.htm)** <span class="badge-pku">北大</span>
 
-    物理量 MEMS 传感器（声矢量传感器、流量、压力） · 惯性传感器
+    声矢量传感器与水听器 · 电化学振动传感器 · 非制冷红外探测器
 
 -   **[张海霞](https://ic.pku.edu.cn/szdw/zzjs/Z1/zhx/index.htm)** <span class="badge-pku">北大</span> <span class="prof-w"></span>
 
-    微纳系统 · MEMS 微能源（压电/摩擦纳米发电机） · 微纳制造
+    摩擦纳米发电机（TENG） · 振动能量采集 · 自供能可穿戴传感
 
 -   **[李志宏](https://ic.pku.edu.cn/szdw/zzjs/L1/lzh/index.htm)** <span class="badge-pku">北大</span>
 
-    生物 MEMS（BioMEMS） · 微纳流控系统 · 植入式神经探针
+    植入式神经电极 · 微针生物电极 · 微流控系统
 
 -   **[卢奕鹏](https://ic.pku.edu.cn/szdw/zzjs/jcwnxtx1/lyp/index.htm)** <span class="badge-pku">北大</span>
 
-    压电 MEMS（PMUT）超声传感器 · CMOS-MEMS 集成 · 超声指纹识别
+    压电超声换能器（PMUT） · 超声指纹识别 · 光声血压检测
 
 -   **[刘景全](https://icisee.sjtu.edu.cn/jiaoshiml/782.html)** <span class="badge-other">交大</span>
 
-    MEMS 脑机接口器件与微系统 · 极端环境 MEMS 智能传感器 · 微纳加工与集成
+    植入式神经电极与脑机接口 · 极端环境 MEMS 传感器 · 微纳加工
 
 -   **[丁桂甫](https://gpmems.sjtu.edu.cn/Web/Show/1014)** <span class="badge-other">交大</span>
 
-    非硅 MEMS 微纳加工 · MEMS 微执行器/微继电器 · 高密度 3D 集成制造
+    非硅微加工与电铸 · MEMS 微执行器/继电器 · 柔性应变传感器
 
 -   **[杨卓青](https://faculty.sjtu.edu.cn/yangzhuoqing)** <span class="badge-other">交大</span>
 
-    MEMS 微纳传感器与执行器 · MEMS 惯性开关 · 柔性纤维传感器与电子皮肤
+    MEMS 惯性开关 · 柔性电子皮肤 · 微能源（PowerMEMS）
 
 -   **[张文明](https://me.sjtu.edu.cn/teacher_directory1/zhangwenming)** <span class="badge-other">交大</span>
 
-    微纳机电系统（M/NEMS）动力学 · 微机械谐振器 · 振动能量采集
+    MEMS 谐振器动力学 · 谐振式传感器 · 声流控生物制造
 
 -   **[王晓林](https://imr.sjtu.edu.cn/sz_teachers/3303.html)** <span class="badge-other">交大</span>
 
-    生物 MEMS（BioMEMS） · 微流控器官芯片/类器官 · 微纳机器人与生物医学应用
+    微流控器官芯片 · 微纳机器人 · 生物 MEMS
 
 -   **[谢金](https://person.zju.edu.cn/xiejin)** <span class="badge-other">浙大</span>
 
-    MEMS 设计与加工 · 微传感器与执行器 · 振动与声学测量
+    谐振式惯性传感器 · 压电谐振器与 PMUT · 声学传感器
 
 -   **[骆季奎](https://person.zju.edu.cn/en/LuoJikui)** <span class="badge-other">浙大</span>
 
-    生物 MEMS · 微纳能量收集 · 无线无源与自供能传感系统
+    SAW 传感器 · 摩擦纳米发电机（TENG） · 自供能无线传感
 
 -   **[车录锋](https://person.zju.edu.cn/mems)** <span class="badge-other">浙大</span>
 
-    高性能 MEMS 振动/惯性传感器 · 集成微系统 · 可穿戴触觉传感
+    MEMS 惯性传感器 · 硅麦克风与压力传感器 · 自供能传感
 
 -   **[董树荣](https://person.zju.edu.cn/sean)** <span class="badge-other">浙大</span>
 
-    RF MEMS · MEMS 智能传感器 · 柔性电子/电子皮肤 · 微纳系统集成
+    FBAR/SAW 谐振器与滤波器 · 无线无源 SAW 传感器 · 植入式柔性电极
 
 -   **[左成杰](https://sme.ustc.edu.cn/2022/0601/c30996a556916/page.htm)** <span class="badge-other">中科大</span>
 
-    RF-MEMS · 压电（AlN）谐振器 · FBAR/SAW 滤波器 · MEMS-IC 协同集成
+    FBAR/SAW 射频滤波器 · 压电超声换能器（PMUT） · 声光调制器件
 
 -   **[许磊](http://leinao.ustc.edu.cn/2021/0430/c25925a483537/page.htm)** <span class="badge-other">中科大</span>
 
-    低功耗 MEMS 气体传感器 · MEMS 流量传感器 · 嗅觉芯片
+    MEMS 气体传感器与电子鼻 · 低功耗微加热板 · 热式流量传感器
 
 -   **[潘挺睿](https://faculty.ustc.edu.cn/pantingrui/zh_CN/)** <span class="badge-other">中科大</span>
 
-    柔性离电触觉传感（FITS） · 可穿戴/植入式生物 MEMS · 微流控与微纳加工
+    柔性离电触觉传感 · 可穿戴健康监测 · 离电材料与微结构
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
@@ -272,39 +272,39 @@ graph LR
 
 -   **[Yi-Kuen Lee（李貽昆）](https://seng.hkust.edu.hk/about/people/faculty/yi-kuen-lee)** <span class="badge-hk">港科大</span>
 
-    CMOS MEMS 传感器（AIoT 应用） · 微纳流控生物医疗 MEMS
+    CMOS-MEMS 流量与惯性传感器 · 微型磁强计 · 微流控生物检测
 
 -   **[Norman Tien（田之楠）](https://www.eee.hku.hk/people/nctien/)** <span class="badge-hk">港大</span>
 
-    MEMS 微纳制造（通信/医疗/环境监测）· Taikoo Chair Professor of Microsystems Technology
+    MEMS 微纳制造 · RF MEMS 与微镜（历史方向）
 
 -   **[Butrus Khuri-Yakub](https://kyg.stanford.edu/)** <span class="badge-intl">Stanford</span>
 
-    电容式微加工超声换能器（CMUT） · 医学超声成像 · 化学/生物传感器
+    电容式超声换能器（CMUT） · 可穿戴超声贴片 · 超声神经调控
 
 -   **[Clark T.-C. Nguyen](https://people.eecs.berkeley.edu/~ctnguyen/index.html)** <span class="badge-intl">UC Berkeley</span>
 
-    MEMS 谐振器/滤波器/振荡器 · RF MEMS 信号处理 · BSAC 执行主任
+    金刚石微机械谐振器 · 谐振器温度补偿 · CMUT 阵列
 
 -   **[Kristofer Pister](https://www2.eecs.berkeley.edu/Faculty/Homepages/pister.html)** <span class="badge-intl">UC Berkeley</span>
 
-    自主微系统（Smart Dust 概念发明者） · 硅微机器人 · MEMS 传感节点
+    单芯片微尘节点 · 硅微机器人 · 自供能传感平台
 
 -   **[Khalil Najafi](https://eecs.engin.umich.edu/people/najafi-khalil/)** <span class="badge-intl">U Michigan</span>
 
-    MEMS 惯性传感器（微机械振动环陀螺先驱） · 晶圆级气密封装 · 神经接口微系统
+    微壳谐振陀螺仪 · 高 Q 值谐振器 · 三维微纳加工
 
 -   **[Yogesh Gianchandani](https://gianchandani.engin.umich.edu/)** <span class="badge-intl">U Michigan</span>
 
-    微传感器/微执行器（惯性/环境/生物医疗） · 微流控 · WIMS² Institute 主任
+    微型气相色谱 · 可吞服医疗微系统 · 环境监测微系统
 
 -   **[Gary Fedder](https://www.ece.cmu.edu/directory/bios/fedder-gary.html)** <span class="badge-intl">CMU</span>
 
-    CMOS-MEMS 单片集成工艺与设计方法学 · 微加速度计与陀螺 · IEEE Fellow
+    CMOS-MEMS 加速度计 · 抗冲击惯性测量 · 单片集成设计
 
 -   **[Yansong Yang（杨岩松）](https://www.yansongyang.com/)** <span class="badge-hk">港科大</span>
 
-    压电 MEMS 谐振器与滤波器 · RF MEMS 微系统 · 铌酸锂薄膜异质集成
+    FBAR/SAW 射频滤波器 · 毫米波声学谐振器 · 高功率器件可靠性
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
