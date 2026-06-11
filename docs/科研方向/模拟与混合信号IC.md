@@ -263,7 +263,7 @@ graph LR
 
     模拟 IC 设计 · ADC · 混合信号/射频集成电路
 
--   **[洪志良](https://sme.fudan.edu.cn/60/a2/c31133a352418/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[洪志良](https://icmne.fudan.edu.cn/3c/45/c48925a736325/page.htm)** <span class="badge-fudan">复旦</span>
 
     混合信号 IC · 高速接口 · 模拟集成电路分析与设计
 

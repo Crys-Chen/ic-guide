@@ -310,7 +310,7 @@ graph LR
 
     FPGA HLS 编译优化 · 硬件软件协同设计 · 神经网络加速
 
--   **[王伶俐](https://sme.fudan.edu.cn/60/3c/c31133a352316/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[王伶俐](https://icmne.fudan.edu.cn/2d/43/c48925a732483/page.htm)** <span class="badge-fudan">复旦</span>
 
     FPGA 结构研究 · 抗辐射 FPGA · 安全可编程计算
 

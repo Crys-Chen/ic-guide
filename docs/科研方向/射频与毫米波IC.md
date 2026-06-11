@@ -390,7 +390,7 @@ graph LR
 
     高能效射频芯片 · 6G 可重构 RF · 毫米波雷达
 
--   **[徐鸿涛](https://sme.fudan.edu.cn/60/92/c31155a352402/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[徐鸿涛](https://icmne.fudan.edu.cn/2d/17/c48925a732439/page.htm)** <span class="badge-fudan">复旦</span>
 
     毫米波 IC 与系统 · 5G/6G · 可穿戴 IoT 无线 SoC
 
@@ -410,7 +410,7 @@ graph LR
 
     微波光子集成电路 · 太赫兹器件 · 高速无线通信芯片
 
--   **[马顺利](https://sme.fudan.edu.cn/60/13/c31134a352275/page.htm)** <span class="badge-fudan">复旦</span>
+-   **[马顺利](https://icmne.fudan.edu.cn/2d/31/c48925a732465/page.htm)** <span class="badge-fudan">复旦</span>
 
     毫米波/太赫兹相控阵雷达芯片 · 5G/6G 毫米波收发机 · FMCW/ADPLL
 
