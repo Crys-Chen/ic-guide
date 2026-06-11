@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - toc
 ---
 <!-- ══════════════ NIGHT MODE HERO (slate only) ══════════════ -->
 <div class="df-dark">

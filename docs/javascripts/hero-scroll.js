@@ -112,7 +112,7 @@
       top:        topOff + 'px',
       left:       '0',
       right:      '0',
-      zIndex:     '1',
+      zIndex:     '3',
       transition: 'opacity 0.15s ease',
     });
     hero.style.setProperty('margin',  '0', 'important');
