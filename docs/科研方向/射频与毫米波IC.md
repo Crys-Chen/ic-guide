@@ -294,7 +294,7 @@ hide:
   <text x="410" y="23" text-anchor="middle" font-size="17" font-weight="bold" fill="#1E293B">超低功耗收发机的占空比工作方式</text>
   <!-- axes -->
   <line x1="70" y1="45" x2="70" y2="200" stroke="#475569" stroke-width="1.2"/>
-  <text x="64" y="40" text-anchor="end" font-size="13" fill="#475569">功耗</text>
+  <text x="18" y="122" text-anchor="middle" font-size="13" fill="#475569" transform="rotate(-90,18,122)">功耗</text>
   <line x1="70" y1="200" x2="788" y2="200" stroke="#475569" stroke-width="1.2" marker-end="url(#dcAxis)"/>
   <text x="792" y="204" text-anchor="start" font-size="13" fill="#475569">时间</text>
   <!-- power waveform: mostly asleep, brief spikes -->
