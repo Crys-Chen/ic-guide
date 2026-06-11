@@ -11703,65 +11703,108 @@
 <p>大模型推理时，数据搬运消耗的能量常常超过矩阵乘法本身——存算一体（CIM）与近存计算（NMC）研究的，是能不能让计算直接在数据所在的地方发生。</p>
 <h2 id="_1">这个方向在研究什么</h2>
 <p>冯·诺依曼在 1945 年把"计算单元和存储单元分开"定下来时，这是个优雅的设计，让两者各做各的专项。可它也埋下一个代价。数据得在存储和计算之间来回搬运，这件事本身就耗能量、耗时间。规模不大时代价不显眼，等 AI 把模型推到数百亿参数，它就藏不住了。一块 NVIDIA H100 的理论算力是每秒 990 TFLOPS（FP16 精度下每秒万亿次浮点运算），片外内存带宽却只有约 3.35 TB/s。芯片大量时间不是在算，而是在等数据从内存传来。大模型推理时这道差距尤其刺眼，权重矩阵巨大、每个却只用一次，有效算力利用率有时不到三成。更突出的是能耗。有测量表明，H100 跑推理时，数据搬运消耗的能量比矩阵乘法本身还多。这不是工程师没优化好，而是冯·诺依曼架构埋下的物理代价。随着模型规模暴涨，它从一个学术话题变成了横在整个产业面前的根本瓶颈。出路其实只有一个方向，让计算离数据更近。而"近到什么程度"，拉出一条从保守到激进的谱系，越往里融合，省得越多，代价也越狠。</p>
-<div><svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif;">
+<div><svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif;">
   <defs>
     <marker id="cimAx" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94A3B8"/></marker>
     <marker id="cimEff" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#16A34A"/></marker>
     <marker id="cimCost" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#DC2626"/></marker>
   </defs>
-  <rect width="880" height="380" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect width="880" height="470" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="440" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">能效与代价随融合程度同步上升</text>
-  <text x="440" y="50" text-anchor="middle" font-size="12" fill="#475569">横轴：计算与存储的融合程度递增</text>
+  <text x="440" y="50" text-anchor="middle" font-size="12" fill="#475569">横轴：计算与存储的融合程度递增（能效相对 GPU + HBM 系统）</text>
   <line x1="24" y1="62" x2="856" y2="62" stroke="#94A3B8" stroke-width="1.4" marker-end="url(#cimAx)"/>
   <rect x="18" y="74" width="200" height="6" rx="2" fill="#64748B"/>
-  <rect x="18" y="80" width="200" height="218" rx="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.3"/>
-  <text x="118" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#334155">冯·诺依曼</text>
-  <text x="118" y="127" text-anchor="middle" font-size="11.5" fill="#475569">计算与存储分离</text>
-  <text x="118" y="166" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
-  <text x="118" y="194" text-anchor="middle" font-size="24" font-weight="bold" fill="#64748B">1×</text>
-  <line x1="38" y1="210" x2="198" y2="210" stroke="#CBD5E1" stroke-width="1"/>
-  <text x="118" y="232" text-anchor="middle" font-size="11.5" fill="#475569">基准</text>
-  <text x="118" y="252" text-anchor="middle" font-size="11" fill="#64748B">数据搬运是瓶颈</text>
+  <rect x="18" y="80" width="200" height="300" rx="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.3"/>
+  <text x="118" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#334155">GPU + HBM</text>
+  <text x="118" y="122" text-anchor="middle" font-size="10" fill="#94A3B8">传统系统 · 冯·诺依曼</text>
+  <rect x="33" y="146" width="46" height="30" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"/>
+  <text x="56" y="165" text-anchor="middle" font-size="9.5" fill="#475569">GPU</text>
+  <rect x="157" y="146" width="46" height="30" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1"/>
+  <text x="180" y="165" text-anchor="middle" font-size="9.5" fill="#15803D">HBM</text>
+  <line x1="81" y1="161" x2="153" y2="161" stroke="#DC2626" stroke-width="2" marker-end="url(#cimCost)"/>
+  <text x="117" y="186" text-anchor="middle" font-size="8.5" fill="#DC2626">长数据通路</text>
+  <text x="118" y="210" text-anchor="middle" font-size="11" fill="#475569">计算与存储分离</text>
+  <text x="118" y="230" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
+  <text x="118" y="258" text-anchor="middle" font-size="24" font-weight="bold" fill="#64748B">1×</text>
+  <line x1="38" y1="274" x2="198" y2="274" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="118" y="296" text-anchor="middle" font-size="11.5" fill="#475569">基准系统</text>
+  <text x="118" y="316" text-anchor="middle" font-size="10.5" fill="#64748B">数据搬运是瓶颈</text>
   <rect x="233" y="74" width="200" height="6" rx="2" fill="#2563EB"/>
-  <rect x="233" y="80" width="200" height="218" rx="8" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.3"/>
-  <text x="333" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#1D4ED8">近存 NMC</text>
-  <text x="333" y="127" text-anchor="middle" font-size="11.5" fill="#475569">逻辑紧贴存储</text>
-  <text x="333" y="166" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
-  <text x="333" y="194" text-anchor="middle" font-size="24" font-weight="bold" fill="#2563EB">~2×</text>
-  <line x1="253" y1="210" x2="413" y2="210" stroke="#BFDBFE" stroke-width="1"/>
-  <text x="333" y="232" text-anchor="middle" font-size="11.5" fill="#475569">已量产 · 风险低</text>
-  <text x="333" y="252" text-anchor="middle" font-size="10.5" fill="#1E40AF">三星 HBM-PIM</text>
+  <rect x="233" y="80" width="200" height="300" rx="8" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.3"/>
+  <text x="333" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#1D4ED8">近存计算</text>
+  <text x="333" y="122" text-anchor="middle" font-size="10.5" fill="#2563EB">NMC / NMP</text>
+  <rect x="250" y="144" width="92" height="40" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-width="1"/>
+  <text x="296" y="168" text-anchor="middle" font-size="10" fill="#15803D">HBM 存储</text>
+  <rect x="346" y="150" width="42" height="28" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="367" y="168" text-anchor="middle" font-size="8.5" fill="#1D4ED8">计算</text>
+  <text x="333" y="210" text-anchor="middle" font-size="11" fill="#475569">逻辑紧贴存储</text>
+  <text x="333" y="230" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
+  <text x="333" y="258" text-anchor="middle" font-size="24" font-weight="bold" fill="#2563EB">~2×</text>
+  <line x1="253" y1="274" x2="413" y2="274" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="333" y="296" text-anchor="middle" font-size="11.5" fill="#475569">已量产 · 风险低</text>
+  <text x="333" y="316" text-anchor="middle" font-size="10.5" fill="#1E40AF">三星 HBM-PIM</text>
   <rect x="448" y="74" width="200" height="6" rx="2" fill="#D97706"/>
-  <rect x="448" y="80" width="200" height="218" rx="8" fill="#FFFBEB" stroke="#FBBF24" stroke-width="1.3"/>
-  <text x="548" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#B45309">数字存内</text>
-  <text x="548" y="126" text-anchor="middle" font-size="11" fill="#92400E">SRAM-CIM</text>
-  <text x="548" y="143" text-anchor="middle" font-size="11" fill="#475569">数字 MAC 进阵列</text>
-  <text x="548" y="170" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
-  <text x="548" y="196" text-anchor="middle" font-size="23" font-weight="bold" fill="#D97706">3–5×</text>
-  <line x1="468" y1="212" x2="628" y2="212" stroke="#FDE68A" stroke-width="1"/>
-  <text x="548" y="233" text-anchor="middle" font-size="11.5" fill="#475569">精度可控</text>
-  <text x="548" y="253" text-anchor="middle" font-size="10.5" fill="#92400E">ISSCC 完整流片</text>
+  <rect x="448" y="80" width="200" height="300" rx="8" fill="#FFFBEB" stroke="#FBBF24" stroke-width="1.3"/>
+  <text x="548" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#B45309">数字存内</text>
+  <text x="548" y="122" text-anchor="middle" font-size="10.5" fill="#D97706">CIM / PIM</text>
+  <rect x="472" y="144" width="152" height="42" rx="5" fill="#FEF9E7" stroke="#D97706" stroke-width="1.2"/>
+  <line x1="510" y1="146" x2="510" y2="184" stroke="#FCD34D" stroke-width="0.8"/>
+  <line x1="548" y1="146" x2="548" y2="184" stroke="#FCD34D" stroke-width="0.8"/>
+  <line x1="586" y1="146" x2="586" y2="184" stroke="#FCD34D" stroke-width="0.8"/>
+  <line x1="474" y1="165" x2="622" y2="165" stroke="#FCD34D" stroke-width="0.8"/>
+  <rect x="488" y="150" width="10" height="10" rx="1" fill="#F59E0B"/>
+  <rect x="560" y="150" width="10" height="10" rx="1" fill="#F59E0B"/>
+  <rect x="524" y="168" width="10" height="10" rx="1" fill="#F59E0B"/>
+  <rect x="596" y="168" width="10" height="10" rx="1" fill="#F59E0B"/>
+  <text x="548" y="210" text-anchor="middle" font-size="11" fill="#475569">SRAM 阵列做数字 MAC</text>
+  <text x="548" y="230" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
+  <text x="548" y="258" text-anchor="middle" font-size="23" font-weight="bold" fill="#D97706">3–5×</text>
+  <line x1="468" y1="274" x2="628" y2="274" stroke="#FDE68A" stroke-width="1"/>
+  <text x="548" y="296" text-anchor="middle" font-size="11.5" fill="#475569">精度可控</text>
+  <text x="548" y="316" text-anchor="middle" font-size="10.5" fill="#92400E">ISSCC 完整流片</text>
   <rect x="663" y="74" width="200" height="6" rx="2" fill="#DC2626"/>
-  <rect x="663" y="80" width="200" height="218" rx="8" fill="#FEF2F2" stroke="#F87171" stroke-width="1.3"/>
-  <text x="763" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#B91C1C">模拟存内</text>
-  <text x="763" y="126" text-anchor="middle" font-size="11" fill="#991B1B">RRAM / PCM</text>
-  <text x="763" y="143" text-anchor="middle" font-size="11" fill="#475569">器件物理直接算</text>
-  <text x="763" y="170" text-anchor="middle" font-size="10" fill="#94A3B8">相对能效</text>
-  <text x="763" y="196" text-anchor="middle" font-size="23" font-weight="bold" fill="#DC2626">~100×</text>
-  <line x1="683" y1="212" x2="843" y2="212" stroke="#FECACA" stroke-width="1"/>
-  <text x="763" y="233" text-anchor="middle" font-size="11.5" fill="#475569">尚在研究阶段</text>
-  <text x="763" y="253" text-anchor="middle" font-size="10.5" fill="#B91C1C">精度·ADC·器件成熟度</text>
-  <text x="34" y="334" text-anchor="start" font-size="12.5" font-weight="bold" fill="#15803D">能效 ↗</text>
-  <line x1="96" y1="331" x2="845" y2="331" stroke="#16A34A" stroke-width="2" marker-end="url(#cimEff)"/>
-  <text x="470" y="324" text-anchor="middle" font-size="10" fill="#15803D">1× → ~100×</text>
-  <text x="34" y="361" text-anchor="start" font-size="12.5" font-weight="bold" fill="#B91C1C">代价 ↗</text>
-  <line x1="96" y1="358" x2="845" y2="358" stroke="#DC2626" stroke-width="2" marker-end="url(#cimCost)"/>
-  <text x="470" y="351" text-anchor="middle" font-size="10" fill="#B91C1C">器件与 ADC 的制约同步加剧</text>
+  <rect x="663" y="80" width="200" height="300" rx="8" fill="#FEF2F2" stroke="#F87171" stroke-width="1.3"/>
+  <text x="763" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#B91C1C">模拟存内</text>
+  <text x="763" y="122" text-anchor="middle" font-size="10.5" fill="#DC2626">CIM / PIM</text>
+  <line x1="706" y1="148" x2="820" y2="148" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="706" y1="162" x2="820" y2="162" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="706" y1="176" x2="820" y2="176" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="716" y1="142" x2="716" y2="182" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="744" y1="142" x2="744" y2="182" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="772" y1="142" x2="772" y2="182" stroke="#DC2626" stroke-width="1.2"/>
+  <line x1="800" y1="142" x2="800" y2="182" stroke="#DC2626" stroke-width="1.2"/>
+  <circle cx="716" cy="148" r="2.6" fill="#B91C1C"/>
+  <circle cx="744" cy="148" r="2.6" fill="#B91C1C"/>
+  <circle cx="772" cy="148" r="2.6" fill="#B91C1C"/>
+  <circle cx="800" cy="148" r="2.6" fill="#B91C1C"/>
+  <circle cx="716" cy="162" r="2.6" fill="#B91C1C"/>
+  <circle cx="744" cy="162" r="2.6" fill="#B91C1C"/>
+  <circle cx="772" cy="162" r="2.6" fill="#B91C1C"/>
+  <circle cx="800" cy="162" r="2.6" fill="#B91C1C"/>
+  <circle cx="716" cy="176" r="2.6" fill="#B91C1C"/>
+  <circle cx="744" cy="176" r="2.6" fill="#B91C1C"/>
+  <circle cx="772" cy="176" r="2.6" fill="#B91C1C"/>
+  <circle cx="800" cy="176" r="2.6" fill="#B91C1C"/>
+  <line x1="688" y1="162" x2="704" y2="162" stroke="#94A3B8" stroke-width="1.2" marker-end="url(#cimAx)"/>
+  <text x="763" y="195" text-anchor="middle" font-size="8.5" fill="#B91C1C">交叉阵列 · 电流即乘加</text>
+  <text x="763" y="212" text-anchor="middle" font-size="11" fill="#475569">器件物理直接乘加</text>
+  <text x="763" y="230" text-anchor="middle" font-size="10" fill="#94A3B8">理论峰值</text>
+  <text x="763" y="258" text-anchor="middle" font-size="21" font-weight="bold" fill="#DC2626">10–100×</text>
+  <line x1="683" y1="274" x2="843" y2="274" stroke="#FECACA" stroke-width="1"/>
+  <text x="763" y="296" text-anchor="middle" font-size="11.5" fill="#475569">尚在研究阶段</text>
+  <text x="763" y="316" text-anchor="middle" font-size="10.5" fill="#B91C1C">精度·ADC·器件成熟度</text>
+  <text x="34" y="405" text-anchor="start" font-size="12.5" font-weight="bold" fill="#15803D">能效 ↗</text>
+  <line x1="96" y1="402" x2="845" y2="402" stroke="#16A34A" stroke-width="2" marker-end="url(#cimEff)"/>
+  <text x="470" y="395" text-anchor="middle" font-size="10" fill="#15803D">1× → 10–100×</text>
+  <text x="34" y="432" text-anchor="start" font-size="12.5" font-weight="bold" fill="#B91C1C">代价 ↗</text>
+  <line x1="96" y1="429" x2="845" y2="429" stroke="#DC2626" stroke-width="2" marker-end="url(#cimCost)"/>
+  <text x="470" y="422" text-anchor="middle" font-size="10" fill="#B91C1C">器件与 ADC 制约同步加剧</text>
+  <text x="440" y="458" text-anchor="middle" font-size="10" fill="#94A3B8">能效为相对 GPU + HBM 系统的量级示意，随精度与负载而变</text>
 </svg></div>
 
 <p>先说最保守的一步，近存计算（Near-Memory Computing，NMC）。它不动存储阵列本身，只把计算逻辑紧贴着存储放，让数据少走几步路。其实把计算并进内存的想法 1970 年代就有，只是长期卡在逻辑和 DRAM 工艺不兼容，做不出又好又便宜的芯片。直到 3D 堆叠成熟，近存这条务实路线才真正量产落地。三星 2021 年的 HBM-PIM 就是这么干的，把计算单元集成进 HBM 的逻辑层，相对上一代拿到两倍以上吞吐、七成以上的能耗下降。SK Hynix 的 AiM 走的是同一条路。这些已经是能量产的产品，证明近存计算不只是实验室概念。它代价小、风险低，可收益也最有限，毕竟计算和存储还是分开的两家。</p>
 <p>再往里走一步，把计算直接搬进存储阵列内部，这就是存算一体（Compute-in-Memory，CIM）。先看稳妥的数字路线 SRAM-CIM。在标准 SRAM 宏里加上计算逻辑，输入以电压注入整列，所有单元同时做乘法，列末端自然累加成一次向量内积。它用的是常规数字电路，精度可控，还能复用成熟的 EDA 流程，量产风险不大，能效比 GPU 提升大约三到五倍。2018 年前后，台湾清华大学张孟凡团队等就在 ISSCC 上发表了完整流片的 SRAM-CIM 芯片，把每次乘加的能耗从 GPU 的数十皮焦压到亚皮焦级。</p>
-<p>最激进的一步，是干脆让器件物理自己来算，这就是模拟路线，代表是用忆阻器（RRAM，阻变存储器；PCM，相变存储器）搭的存算阵列。这种器件的电阻能调、断电还记得住，正好拿来存神经网络的权重。给它加一个输入电压，流过的电流就是电压乘以电导，等于天然做了一次乘法，整列电流一汇合，基尔霍夫定律就替你把累加也做完了。一个器件同时管存储和计算，理论能效能比 GPU 高一百倍以上。可代价也最狠，有三道坎。一是模拟量天生不准，器件制造偏差、电源噪声、温度漂移都会污染结果，稳下来的有效精度常常只有 4 到 6 位。二是阵列算出的是模拟电流，最后还得用 ADC 读回数字域，而高精度 ADC 又大又费电，常常把阵列省下的能量重新吃掉一大半。三是 RRAM、PCM 这些器件本身的成熟度和良率还不过关，难以放大成可量产的大阵列。</p>
+<p>最激进的一步，是干脆让器件物理自己来算，这就是模拟路线，代表是用忆阻器（RRAM，阻变存储器；PCM，相变存储器）搭的存算阵列。这种器件的电阻能调、断电还记得住，正好拿来存神经网络的权重。给它加一个输入电压，流过的电流就是电压乘以电导，等于天然做了一次乘法，整列电流一汇合，基尔霍夫定律就替你把累加也做完了。一个器件同时管存储和计算，理论能效能比 GPU 高一两个数量级。可代价也最狠，有三道坎。一是模拟量天生不准，器件制造偏差、电源噪声、温度漂移都会污染结果，稳下来的有效精度常常只有 4 到 6 位。二是阵列算出的是模拟电流，最后还得用 ADC 读回数字域，而高精度 ADC 又大又费电，常常把阵列省下的能量重新吃掉一大半。三是 RRAM、PCM 这些器件本身的成熟度和良率还不过关，难以放大成可量产的大阵列。</p>
 <p>三条路激进程度不同，却汇到同一个地方，算法和硬件得一起设计。最典型的就是量化，让网络的精度需求主动去迁就电路的物理约束，能省多少电、精度掉几位，都在这里博弈。这是眼下最活跃的研究地带，器件、电路、架构三种背景的人都能进场。至于最激进的模拟存内到底能不能成，主要不取决于架构，而取决于器件和 ADC 这两道硬坎迈不迈得过去，这也是整个方向最大的悬念。</p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
