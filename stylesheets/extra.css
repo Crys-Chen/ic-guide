@@ -2373,8 +2373,6 @@ html { scroll-behavior: smooth; }
   color: rgba(255,255,255,.9); background: rgba(30,35,48,.94); box-shadow: 0 2px 12px rgba(0,0,0,.35);
 }
 
-/* 巡礼正文（并入星图页下方）限宽居中；z-index+背景色让它盖住下方 sticky 星图 */
-.rg-essay { max-width: 54rem; margin: 1.5rem auto 3rem; padding: 0 1rem;
-  position: relative; z-index: 2;
-  background-color: var(--md-default-bg-color); }
+/* 巡礼正文（并入星图页下方）限宽居中；初始隐藏防止星图加载前闪现 */
+.rg-essay { max-width: 54rem; margin: 1.5rem auto 3rem; padding: 0 1rem; opacity: 0; }
 .rg-essay .md-typeset, .rg-essay { line-height: 1.95; }
