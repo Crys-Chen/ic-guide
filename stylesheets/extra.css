@@ -167,8 +167,8 @@
 .df-inner p,
 .df-linner p { text-indent: 0; }
 
-/* 图片段落：去掉缩进，居中 */
-.md-typeset p:has(> img) {
+/* 图片段落：去掉缩进，居中（img 可能嵌在 a 里，不限直接子） */
+.md-typeset p:has(img) {
   text-indent: 0;
   text-align: center;
 }
