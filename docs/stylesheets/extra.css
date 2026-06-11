@@ -1283,10 +1283,10 @@
 .df-linner {
   flex: 1 1 0%;
   min-width: 0;
-  padding: 4rem 1.5rem 3.5rem;
+  padding: 2rem 1.5rem 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 720px;
 }
 .df-lmark {
@@ -1358,7 +1358,7 @@
   flex: 0 0 260px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem 1.2rem 2rem 0;
   gap: 0;
   background: transparent;
