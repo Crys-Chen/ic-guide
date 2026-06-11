@@ -1345,7 +1345,7 @@
 
 @media (max-width: 760px) {
   .df-lhl { font-size: 2.6rem !important; }
-  .df-linner { padding: 3.5rem 1.4rem 2.5rem; }
+  .df-linner { padding: 1.5rem 1.4rem 2.5rem; }
   .df-dark { margin-top: -1.5rem; }
   .df-title { font-size: 2.4rem !important; }
 }
