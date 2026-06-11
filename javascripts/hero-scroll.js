@@ -112,7 +112,7 @@
       top:        topOff + 'px',
       left:       '0',
       right:      '0',
-      zIndex:     '3',
+      zIndex:     '5',
       transition: 'opacity 0.15s ease',
     });
     hero.style.setProperty('margin',  '0', 'important');
@@ -125,7 +125,7 @@
     below.style.transition    = 'opacity 0.15s ease';
 
     // 星图页：目录随文章一起淡入
-    var toc = isRg ? document.querySelector('.md-sidebar--secondary') : null;
+    var toc = document.querySelector('.md-sidebar--secondary');
     if (toc) {
       toc.style.opacity    = '0';
       toc.style.transition = 'opacity 0.15s ease';
