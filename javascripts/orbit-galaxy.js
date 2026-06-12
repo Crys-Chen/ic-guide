@@ -410,8 +410,8 @@
     var btnBack = document.createElement('a');
     btnBack.className = 'rg-dir-btn rg-dir-back';
     btnBack.href = galaxyUrl();
-    btnBack.title = '返回科研版图';
-    btnBack.innerHTML = '<span class="rg-dir-icon">⊙</span><span class="rg-dir-label">版图</span>';
+    btnBack.title = '返回科研巡礼';
+    btnBack.innerHTML = '<span class="rg-dir-icon">⊙</span><span class="rg-dir-label">巡礼</span>';
 
     var btnRandom = document.createElement('button');
     btnRandom.className = 'rg-dir-btn rg-dir-random';
