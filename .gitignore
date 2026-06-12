@@ -1,7 +1,7 @@
 .DS_Store
 .vscode/
 archive/
-/venv
+/.venv
 /site
 /old_docs
 *.pdf
@@ -9,4 +9,4 @@ archive/
 *.xlsx.venv/
 /.claude/
 /.github/
-/
+/__pycache__/
