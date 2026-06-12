@@ -89,13 +89,18 @@
     var btn  = document.getElementById('pf-search-btn');
     if (!box) return;
     if (title && btn) {
-      var tRect = title.getBoundingClientRect();
-      var bRect = btn.getBoundingClientRect();
-      box.style.left  = tRect.left + 'px';
-      box.style.right = (window.innerWidth - bRect.right) + 'px';
+      var GAP = 16;
+      var titleSpan = document.querySelector('.md-header__topic .md-ellipsis');
+      var leftEdge  = titleSpan
+        ? titleSpan.getBoundingClientRect().right + GAP
+        : title.getBoundingClientRect().left + GAP;
+      var bRect    = btn.getBoundingClientRect();
+      var rightEdge = bRect.left - GAP;
+      box.style.left  = leftEdge + 'px';
+      box.style.right = (window.innerWidth - rightEdge) + 'px';
     } else {
-      box.style.left  = '12rem';
-      box.style.right = '12rem';
+      box.style.left  = '14rem';
+      box.style.right = '5rem';
     }
   }
 

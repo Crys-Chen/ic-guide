@@ -2481,13 +2481,13 @@ body.pf-noscroll { overflow: hidden !important; }
 /* 搜索面板：绝对定位，left/right 由 JS 计算 */
 #pf-box {
   position: absolute;
-  top: 0;
+  top: 8px;
   z-index: 1;
   background: #fff;
-  max-height: 80vh;
+  max-height: 62vh;
   overflow-y: auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .28);
-  border-radius: 0 0 4px 4px;
+  border-radius: 4px;
   animation: pf-drop .14s ease;
 }
 @keyframes pf-drop {
