@@ -516,6 +516,7 @@ graph LR
 -   **[谭恺](https://icmne.fudan.edu.cn/2d/38/c48925a732472/page.htm)** <span class="badge-fudan">复旦</span>
 
     毫米波雷达芯片 · 雷达成像信号处理
+
 -   **[王志功](http://iroi.seu.edu.cn)** <span class="badge-other">东南大学</span>
 
     微波光子集成电路 · 太赫兹芯片 · 高速无线通信前端
@@ -571,6 +572,7 @@ graph LR
 -   **[Harish Krishnaswamy](https://cosmiccolumbia.com)** <span class="badge-intl">Columbia</span>
 
     毫米波/太赫兹收发机 · 全双工同频收发 IC · 频谱共享射频系统
+
 -   **[Thomas Lee](https://profiles.stanford.edu/thomas-lee)** <span class="badge-intl">Stanford</span>
 
     射频与太赫兹 CMOS · 超宽带收发机 · 振荡器网络与信号处理

@@ -323,6 +323,7 @@ graph LR
 -   **[王志昂](https://icmne.fudan.edu.cn/97/b8/c48925a759736/page.htm)** <span class="badge-fudan">复旦</span>
 
     数字芯片物理设计 · 工艺-设计协同优化
+
 -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     硬件综合与 EDA · FPGA 可重构计算 · AI 芯片硬件软件协同
@@ -426,6 +427,7 @@ graph LR
 -   **[Deming Chen（陈德铭）](https://ece.illinois.edu/about/directory/faculty/dchen)** <span class="badge-intl">UIUC</span>
 
     高层次综合（HLS） · LLM 辅助 RTL 生成 · 形式验证自动化
+
 -   **[David Z. Pan（潘志刚）](https://users.ece.utexas.edu/~dpan/)** <span class="badge-intl">UT Austin</span>
 
     AI 驱动物理设计 · LLM 辅助 RTL 生成 · 模拟与射频 EDA

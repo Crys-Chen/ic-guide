@@ -300,11 +300,11 @@ graph LR
 <div class="grid cards prof-collapse" markdown>
 -   **[马恺声](http://group.iiis.tsinghua.edu.cn/~maks/)** <span class="badge-tsinghua">清华</span>
 
-    DNN/LLM 推理加速器 · 算法架构协同设计 · Chiplet 片上网络
+    LLM 高效推理 · 算法架构协同设计 · Chiplet 大模型加速器
 
 -   **[高鸣宇](https://people.iiis.tsinghua.edu.cn/~gaomy/)** <span class="badge-tsinghua">清华</span>
 
-    近数据处理与存内计算 · 稀疏张量加速器 · AI 负载内存优化
+    稀疏注意力优化 · 私有推理架构 · 稀疏张量加速器
 
 
 -   **[朱军](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml)** <span class="badge-tsinghua">清华</span>
@@ -386,6 +386,7 @@ graph LR
 -   **[周志华](https://cs.nju.edu.cn/zhouzh/)** <span class="badge-other">南大</span>
 
     机器学习理论 · 集成学习 · 弱监督学习
+
 -   **[吴飞](https://person.zju.edu.cn/wufei)** <span class="badge-other">浙大</span>
 
     大模型指令微调 · 多模态大模型 · AI 系统与开放平台
@@ -489,6 +490,7 @@ graph LR
 -   **[Yuandong Tian（田渊栋）](https://yuandong-tian.com/)** <span class="badge-intl">Meta FAIR</span>
 
     训练内存优化（GaLore） · LLM 量化与推理加速 · 隐空间推理（Coconut）
+
 -   **[Deming Chen（陈德铭）](https://dchen.ece.illinois.edu/)** <span class="badge-intl">UIUC</span>
 
     LLM 加速器设计 · AI 编译器（HLS） · FPGA 推理加速

@@ -414,6 +414,7 @@ graph LR
 -   **[来金梅](https://icmne.fudan.edu.cn/2d/21/c48925a732449/page.htm)** <span class="badge-fudan">复旦</span>
 
     FPGA 神经网络加速器 · 可编程深度学习平台
+
 -   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
@@ -489,6 +490,7 @@ graph LR
 -   **[Andre DeHon](https://www.seas.upenn.edu/faculty-directory/andre-dehon/)** <span class="badge-intl">U Penn</span>
 
     FPGA 架构与互连 · 高层次综合 HLS · 增量编译与局部重配置
+
 -   **[Vaughn Betz](https://www.eecg.utoronto.ca/~vaughn/)** <span class="badge-intl">U Toronto</span>
 
     FPGA 架构与 CAD · 3D 堆叠 FPGA · 深度学习硬件映射

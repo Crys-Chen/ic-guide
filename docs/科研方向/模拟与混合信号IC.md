@@ -399,6 +399,7 @@ graph LR
 -   **[李文宏](https://icmne.fudan.edu.cn/2d/24/c48925a732452/page.htm)** <span class="badge-fudan">复旦</span>
 
     图像传感读出电路 · 电源管理 IC
+
 -   **[叶乐](https://ic.pku.edu.cn/szdw/zzjs/Y1/yl/index.htm)** <span class="badge-pku">北大</span>
 
     混合信号 IC · AI 推理芯片 · 超低功耗 AIoT 传感器
@@ -502,6 +503,7 @@ graph LR
 -   **[Naveen Verma](https://ee.princeton.edu/people/naveen-verma)** <span class="badge-intl">Princeton</span>
 
     存内计算宏单元 · ADC 读出电路 · 机器学习芯片系统
+
 -   **[Elad Alon](https://www2.eecs.berkeley.edu/Faculty/Homepages/elad.html)** <span class="badge-intl">UC Berkeley</span>
 
     高速串行收发器 · 低抖动锁相环 · 混合信号接口 IC
