@@ -3,6 +3,7 @@
 ## 课程简介
 
 - 所属大学：复旦大学
+- 课程代码：ICSE30015·射频集成电路基础（2025 培养方案）
 - 先修要求：模拟集成电路、高频电子线路
 - 编程语言：无（含 Cadence 仿真）
 - 授课教师：殷韵
@@ -15,5 +16,5 @@
 
 ## 课程资源
 
-- 课程视频：[B 站合集（噪声章节）](https://www.bilibili.com/video/BV1ze4y1A7kD/)
+- 课程视频：[B 站合集](https://www.bilibili.com/video/BV1ze4y1A7kD/)
 - 配套教材：Behzad Razavi, *RF Microelectronics* (2nd ed.)
