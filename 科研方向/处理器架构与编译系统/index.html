@@ -13768,7 +13768,7 @@
   <text x="722" y="236" text-anchor="middle" font-size="12" fill="#64748B">只做矩阵乘，能效极高</text>
 </svg></div>
 
-<p>设计一块处理器，首先要确定的是<strong>指令集</strong>（Instruction Set Architecture, ISA），也就是软件能看到、硬件必须实现的那层接口。<strong>x86</strong> 走的是"指令越丰富越好"的路，几十年向后兼容积累了大量包袱，光解码电路就要烧掉不少功耗；<strong>ARM</strong> 用精简指令集换来更低的实现成本，在移动端大获全胜；<strong>RISC-V</strong> 干脆把指令集开源，不交授权费就能自己设计和修改。Hennessy 与 Patterson 把开源 ISA 列为新黄金时代的结构性条件，它把芯片创新的门槛从亿级资本降到了学术组玩得起的范围。</p>
+<p>设计一块处理器，首先要确定的是<strong>指令集</strong>（Instruction Set Architecture, ISA），也就是软件能看到、硬件必须实现的那层接口。<strong>x86</strong> 走的是“指令越丰富越好”的路，几十年向后兼容积累了大量包袱，光解码电路就要烧掉不少功耗；<strong>ARM</strong> 用精简指令集换来更低的实现成本，在移动端大获全胜；<strong>RISC-V</strong> 干脆把指令集开源，不交授权费就能自己设计和修改。Hennessy 与 Patterson 把开源 ISA 列为新黄金时代的结构性条件，它把芯片创新的门槛从亿级资本降到了学术组玩得起的范围。</p>
 <p>指令集之下是<strong>微架构</strong>，同一套 ISA 可以有无数种不同的电路实现。同样是 x86，Intel Raptor Lake 和 AMD Zen 4 的流水线级数、乱序执行宽度、分支预测算法完全不同，性能和功耗能差 30%。微架构是架构研究发表最密集的地方。分支预测命中率多高、预取器提前几步取数据、缓存替换选 LRU 还是 RRIP，每一个细节都是独立的研究课题。贯穿其中的是<strong>存储层次</strong>这条暗线。L1 缓存命中四拍，L3 要四十拍，DRAM 等两百拍，每一级的大小、替换算法、与相邻层的预取协议都压在真实性能上。<u>内存墙不只是宏观叙事，它具体落在每一个缓存设计决策里</u>。</p>
 <p>以上这些研究全部在<strong>冯·诺依曼架构</strong>的框架之内进行。计算与存储分离、指令顺序取来执行，是 1945 年以来所有主流处理器共同遵守的基本假设。近年来研究者开始正面质疑这个假设本身。神经形态计算用脉冲信号取代精确数值，数据流架构让计算随数据到来自动触发，<strong>近存计算</strong>（Near-Memory Processing, NMP）把处理单元挪到内存旁边，<strong>存算一体</strong>（Computing-in-Memory, CIM）直接在存储阵列内部完成乘加运算。这些非冯方向的动机是同一个，数据搬运的成本已经大到不得不从根本上重新考虑计算与存储的关系。其中存算一体和近存计算热度最高，已经自成一个方向，见<a href="../%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a>。</p>
 <p>架构研究离不开编译器，<u>一块新芯片没有配套软件栈，只是一块昂贵的硅片</u>。编译器的核心工作是<strong>调度</strong>，决定指令以什么顺序执行、数据从哪里取、什么时候取。调度有两种基本哲学。<strong>静态调度</strong>在编译期把一切安排好，生成的指令序列运行时无需硬件再做决策，是 <strong>VLIW</strong>（Very Long Instruction Word，超长指令字）这类架构的基础；<strong>动态调度</strong>把决策权留给硬件，处理器在运行时按实际情况乱序执行，能应对编译期无法预知的变化，是现代高性能 CPU 的标配。</p>
@@ -13831,7 +13831,7 @@
   <text x="660" y="221" text-anchor="middle" font-size="10" fill="#94A3B8">硬件复杂但灵活 · 代表：现代高性能 CPU</text>
 </svg></div>
 
-<p><strong>LLVM</strong> 系统化地解决了不同硬件后端与不同语言前端之间的适配问题；<strong>MLIR</strong> 把这套思路延伸到张量运算，在"矩阵乘法"和"硬件寄存器"之间架起多个中间层；<strong>TVM</strong> 再加上自动调优，用搜索在数百万种循环分块方案里找最优配置。</p>
+<p><strong>LLVM</strong> 系统化地解决了不同硬件后端与不同语言前端之间的适配问题；<strong>MLIR</strong> 把这套思路延伸到张量运算，在“矩阵乘法”和“硬件寄存器”之间架起多个中间层；<strong>TVM</strong> 再加上自动调优，用搜索在数百万种循环分块方案里找最优配置。</p>
 <div><svg viewBox="0 0 880 250" style="width:100%;max-width:860px;display:block;margin:1.5em auto;font-family:system-ui,-apple-system,sans-serif">
   <!-- Panel 1: 没有 IR -->
   <rect x="10" y="10" width="420" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>

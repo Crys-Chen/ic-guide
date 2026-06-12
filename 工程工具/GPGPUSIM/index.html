@@ -13397,7 +13397,7 @@
 <h1 id="gpgpu-sim-gpu">GPGPU-Sim GPU 仿真</h1>
 <h2 id="_1">是什么</h2>
 <p><a href="https://github.com/gpgpu-sim/gpgpu-sim_distribution">GPGPU-Sim</a> 是 UBC Tor Aamodt 教授组维护的<strong>学术界最主流的 GPU 周期级仿真器</strong>,精确建模 NVIDIA Fermi/Kepler/Pascal/Volta 等多代 GPU 微架构,支持 CUDA 和 OpenCL 工作负载,集成 GPUWattch 能耗模型。</p>
-<p>GPU 架构论文(ISCA、MICRO、HPCA、ASPLOS 上的 GPU section)很大一部分实验是用 GPGPU-Sim 跑的——它和 gem5 一起构成了"CPU + GPU 异构架构研究"的两件标配工具。</p>
+<p>GPU 架构论文(ISCA、MICRO、HPCA、ASPLOS 上的 GPU section)很大一部分实验是用 GPGPU-Sim 跑的——它和 gem5 一起构成了“CPU + GPU 异构架构研究”的两件标配工具。</p>
 <h2 id="_2">适合谁</h2>
 <ul>
 <li><strong>做 GPU 架构研究的同学</strong>:warp scheduler、register file、L1/L2 cache、互联网络的设计点都可以改</li>
@@ -13427,13 +13427,13 @@
 <h3 id="_6">中文资料</h3>
 <ul>
 <li>中科院计算所、北大集成电路学院、上海交大、清华相关组都有内部教程</li>
-<li>B 站搜"GPGPU-Sim 教程",有几个完整的环境搭建到 cycle-level 分析的录播</li>
+<li>B 站搜“GPGPU-Sim 教程”,有几个完整的环境搭建到 cycle-level 分析的录播</li>
 </ul>
 <h2 id="_7">入门三步走</h2>
 <ol>
 <li><strong>环境</strong>: 用官方 VM(免编译,几小时上手)或本地编译(需 CUDA Toolkit 4.x-11.x,Ubuntu 16/18 较稳)。新手强烈建议先 VM</li>
 <li><strong>跑通 GPU benchmark</strong>: <code>cd gpgpu-sim_distribution &amp;&amp; source setup_environment</code> 后 <code>make</code>,然后跑 NVIDIA SDK 自带的 vectorAdd 等示例,看 cycle 报告</li>
-<li><strong>修改一个组件</strong>: 例如改 warp scheduler(<code>src/gpgpu-sim/scheduler_unit.cc</code>)的轮询策略,对比 IPC 变化——这是大多数论文的"最小可发表实验"模板</li>
+<li><strong>修改一个组件</strong>: 例如改 warp scheduler(<code>src/gpgpu-sim/scheduler_unit.cc</code>)的轮询策略,对比 IPC 变化——这是大多数论文的“最小可发表实验”模板</li>
 </ol>
 <h2 id="_8">注意事项</h2>
 <ul>
