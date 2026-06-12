@@ -2458,47 +2458,52 @@ html { scroll-behavior: smooth; }
 .rg-essay .md-typeset, .rg-essay { line-height: 1.95; }
 
 /* ════════════════════════════════════════════════════════════
-   PageFind 搜索 overlay
+   PageFind 搜索 overlay — 全宽从顶部下拉，对齐 Material 风格
    ════════════════════════════════════════════════════════════ */
 body.pf-noscroll { overflow: hidden !important; }
 
+/* 全屏容器：backdrop 铺满，pf-box 钉在顶部 */
 #pf-overlay {
   display: none;
   position: fixed;
   inset: 0;
   z-index: 300;
   align-items: flex-start;
-  justify-content: center;
-  padding-top: 64px;
+  justify-content: flex-start;
 }
 #pf-overlay.pf-open { display: flex; }
 
+/* 半透明背景幕（在 pf-box 后面） */
 #pf-bg {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .54);
 }
 
-/* 主搜索面板 — 贴近 Material 原生搜索的白色卡片风格 */
+/* 搜索面板：全宽，从顶部自然下拉 */
 #pf-box {
   position: relative;
   z-index: 1;
   background: #fff;
-  border-radius: 4px;
-  width: min(700px, 94vw);
+  width: 100%;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, .30);
-  animation: pf-drop .12s ease;
-  /* 顶部复旦蓝细条，和 Material header 的下边线呼应 */
-  border-top: 3px solid #032168;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .28);
+  border-radius: 0;
+  border-bottom: 1px solid rgba(3, 33, 104, .12);
+  animation: pf-drop .14s ease;
 }
 @keyframes pf-drop {
-  from { opacity: 0; transform: translateY(-6px); }
+  from { opacity: 0; transform: translateY(-4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-#pf-ui { padding: 12px 16px 16px; }
+/* 内容居中限宽（同 Material 正文区宽度） */
+#pf-ui {
+  max-width: 61rem;
+  margin: 0 auto;
+  padding: 10px 1.2rem 16px;
+}
 
 /* PageFind CSS 变量 */
 #pf-ui {
