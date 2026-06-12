@@ -1,9 +1,6 @@
 /*
  * PageFind 搜索 overlay。
  *
- * 替代 Material 内置的 lunr + TinySegmenter 搜索，彻底解决中文
- * 3 字短语（如"高鸣宇"）无法搜索的问题。
- *
  * 触发方式：
  *   - 点击 header 里的 #pf-search-btn 放大镜按钮
  *   - 键盘 /（非 input/textarea 焦点时）
@@ -13,18 +10,32 @@
 (function () {
   'use strict';
 
-  /* window.__mkdocs_site 由 overrides/main.html 注入，形如
-     "https://crys-chen.github.io/Fudan-ME/"              */
-  var SITE = (window.__mkdocs_site || '').replace(/\/?$/, '/');
+  /* ── 计算 pagefind/ 的绝对根路径 ──────────────────────────────
+     优先用 window.__mkdocs_site（由 overrides/main.html 注入），
+     但如果它的 origin 和当前页面不同（本地 dev 服务器），则
+     回退到从 extra.css 的 <link> href 推算站点根路径。          */
+  function getSiteRoot() {
+    var site = window.__mkdocs_site || '';
+    if (site && location.origin && site.startsWith(location.origin)) {
+      return site.replace(/\/?$/, '/');
+    }
+    // 本地 dev 回退：找 extra.css link 推根路径
+    var css = document.querySelector('link[href*="stylesheets/extra.css"]');
+    if (css && css.href) {
+      return css.href.replace(/stylesheets\/extra\.css.*$/, '');
+    }
+    return location.origin + '/';
+  }
+
+  var SITE = getSiteRoot();
   var PF_CSS = SITE + 'pagefind/pagefind-ui.css';
   var PF_JS  = SITE + 'pagefind/pagefind-ui.js';
 
   var overlay = null;
-  var loaded  = false;
 
   /* ── 一次性加载 PageFind CSS ── */
   function loadCSS() {
-    if (document.querySelector('link[href="' + PF_CSS + '"]')) return;
+    if (document.querySelector('link[href^="' + SITE + 'pagefind/"]')) return;
     var link = document.createElement('link');
     link.rel  = 'stylesheet';
     link.href = PF_CSS;
@@ -49,9 +60,13 @@
       if (e.target === overlay || e.target.id === 'pf-bg') closeOverlay();
     });
 
-    /* 加载 pagefind-ui.js 并初始化 */
+    /* 加载 pagefind-ui.js 并初始化搜索 UI */
     var script = document.createElement('script');
     script.src = PF_JS;
+    script.onerror = function () {
+      var ui = document.getElementById('pf-ui');
+      if (ui) ui.innerHTML = '<p style="padding:12px;color:#555">搜索服务暂不可用（需先部署到 GitHub Pages）</p>';
+    };
     script.onload = function () {
       new PagefindUI({
         element: '#pf-ui',
@@ -63,7 +78,6 @@
           zero_results: '未找到相关内容'
         }
       });
-      loaded = true;
     };
     document.head.appendChild(script);
   }
@@ -73,7 +87,6 @@
     if (!overlay) buildOverlay();
     overlay.classList.add('pf-open');
     document.body.classList.add('pf-noscroll');
-    /* 等 UI 渲染后聚焦输入框 */
     setTimeout(function () {
       var inp = document.querySelector('#pf-ui input[type=text]');
       if (inp) inp.focus();
@@ -86,36 +99,36 @@
     document.body.classList.remove('pf-noscroll');
   }
 
-  /* ── 绑定事件 ── */
+  /* ── 绑定事件（幂等：用 __pf 标记防止重复绑定） ── */
   function init() {
     var btn = document.getElementById('pf-search-btn');
-    if (btn) btn.addEventListener('click', openOverlay);
+    if (btn && !btn.__pf) {
+      btn.addEventListener('click', openOverlay);
+      btn.__pf = true;
+    }
 
-    document.addEventListener('keydown', function (e) {
-      /* Escape */
-      if (e.key === 'Escape') { closeOverlay(); return; }
-
-      /* / 快捷键（非输入框） */
-      var tag = document.activeElement ? document.activeElement.tagName : '';
-      if (e.key === '/' && !e.ctrlKey && !e.metaKey &&
-          tag !== 'INPUT' && tag !== 'TEXTAREA' && tag !== 'SELECT') {
-        e.preventDefault();
-        openOverlay();
-        return;
-      }
-
-      /* Ctrl+K / Cmd+K */
-      if (e.key === 'k' && (e.ctrlKey || e.metaKey)) {
-        e.preventDefault();
-        openOverlay();
-      }
-    });
+    if (!document.__pfKeys) {
+      document.__pfKeys = true;
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { closeOverlay(); return; }
+        var tag = document.activeElement ? document.activeElement.tagName : '';
+        if (e.key === '/' && !e.ctrlKey && !e.metaKey &&
+            tag !== 'INPUT' && tag !== 'TEXTAREA' && tag !== 'SELECT') {
+          e.preventDefault(); openOverlay(); return;
+        }
+        if (e.key === 'k' && (e.ctrlKey || e.metaKey)) {
+          e.preventDefault(); openOverlay();
+        }
+      });
+    }
   }
 
-  /* Material SPA 模式下等 document$ */
+  /* ── 启动 ──────────────────────────────────────────────────────
+     extra_javascript 脚本在 <body> 底部无 defer 执行，DOM 此时
+     已 ready，直接调 init()。同时订阅 document$ 以覆盖 Material
+     SPA 跳转后的情形（仅当 navigation.instant 开启时有效）。    */
+  init();
   if (typeof document$ !== 'undefined') {
     document$.subscribe(init);
-  } else {
-    document.addEventListener('DOMContentLoaded', init);
   }
 })();
