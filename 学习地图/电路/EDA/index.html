@@ -13222,15 +13222,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,6 +13248,26 @@
 
 <h1 id="eda">EDA 工具</h1>
 <p>EDA(Electronic Design Automation)指<strong>用于设计、仿真、验证、流片芯片的软件工具</strong>。从 RTL 综合到布局布线、从模拟仿真到版图设计,所有 IC 设计的"工程产出"都借助 EDA 工具完成。Cadence、Synopsys、Siemens EDA 三家垄断了商业 EDA 市场,合称"EDA 三巨头"。</p>
+<pre class="mermaid"><code>graph LR
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E3A5F
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1E293B
+    vivado["Vivado 数字EDA入门"]:::beginner
+    cadence["Cadence Virtuoso 模拟EDA入门"]:::beginner
+    spice["器件模型与SPICE仿真"]:::beginner
+    dig_eda["数字集成电路设计自动化基础"]:::intermediate
+    ana_eda["模拟集成电路设计自动化基础"]:::intermediate
+    uiuc["UIUC VLSI CAD 算法"]:::intermediate
+    phys["VLSI物理设计数学方法"]:::advanced
+    sys["EDA系统软件方法学"]:::advanced
+    vivado --&gt; dig_eda
+    spice --&gt; cadence
+    cadence --&gt; ana_eda
+    dig_eda --&gt; uiuc
+    dig_eda --&gt; phys
+    uiuc --&gt; phys
+    dig_eda --&gt; sys
+    uiuc --&gt; sys</code></pre>
 <h2 id="_1">课程与工具</h2>
 <ul>
 <li><strong>复旦 2025 培养方案课程</strong>（占位骨架,欢迎补全）:<a href="FDU_ICSE30019/">数字EDA基础</a> · <a href="FDU_ICSE30018/">模拟EDA基础</a> · <a href="FDU_ICSE30026/">VLSI物理设计数学方法</a> · <a href="FDU_ICSE30028/">EDA系统软件方法学</a>；AI for EDA 课程见<a href="../../%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI%E4%BA%A4%E5%8F%89%E5%BA%94%E7%94%A8/FDU_ICSE40019/">人工智能/AI交叉应用</a></li>
@@ -13264,17 +13275,8 @@
 <li><strong><a href="cadence/">Cadence Virtuoso 入门</a></strong> — 模拟 IC 设计工业标准</li>
 <li><strong><a href="UIUC_VLSI_CAD/">UIUC VLSI CAD (Coursera)</a></strong> — 讲 EDA 工具背后的算法:逻辑综合、布局布线、时序分析</li>
 </ul>
-<h2 id="_2">学习路径建议</h2>
-<p>EDA 工具的学习<strong>强烈依赖具体方向</strong>:
-- 数字 IC / FPGA → Vivado(本科 FPGA 课通用)、Synopsys Design Compiler、Cadence Innovus
-- 模拟 IC → Cadence Virtuoso 全家桶(原理图 → 仿真 → 版图 → DRC/LVS)
-- 学术开源 → OpenLane / OpenROAD(基于 Yosys 等)</p>
-<p>工具是杠杆,不是目标。<strong>先把电路课学好,工具用起来才有意义</strong>。</p>
-<h2 id="_3">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — 这个方向本身就是研究 EDA 算法和工具</li>
-<li>任何 <a href="../">电路</a> 设计方向 — 工具是"流片"环节的必备,所有方向都用得到</li>
-</ul>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></p>
 
 
 

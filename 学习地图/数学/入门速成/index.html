@@ -13248,6 +13248,22 @@
 
 <h1 id="_1">入门速成</h1>
 <p>这里的课是多主题压缩课。学校开给工科生,目标是快速掌握公式和结论到能用的程度,而不是逐个主题从头建体系。把它们塞进任何单主题目录都只对一半,所以单独成组,放在数学板块的入口位置。先用速成课把要用的数学过一遍,之后哪一块不够,再去对应的主题目录深入。</p>
+<pre class="mermaid"><code>graph LR
+    classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef deepen fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    classDef alt fill:#FFF7ED,stroke:#F97316,color:#9A3412
+    FDU["工程数学及概率方法&lt;br/&gt;(复旦必修)"]:::intro
+    CS70["UCB CS70&lt;br/&gt;离散数学+概率论"]:::intro
+    MIT["MIT 6.042J&lt;br/&gt;Math for CS"]:::alt
+    COMPLEX["复变函数 / 积分变换&lt;br/&gt;(深入)"]:::deepen
+    PROB["概率与统计&lt;br/&gt;(深入)"]:::deepen
+    DISCRETE["离散数学&lt;br/&gt;(深入)"]:::deepen
+    FDU --&gt; COMPLEX
+    FDU --&gt; PROB
+    CS70 --&gt; PROB
+    CS70 --&gt; DISCRETE
+    MIT --&gt; PROB
+    MIT --&gt; DISCRETE</code></pre>
 <h2 id="_2">课程与覆盖范围</h2>
 <ul>
 <li><strong><a href="FDU_MICR130008/">工程数学及概率方法(复旦)</a></strong> — 复变函数、积分变换、概率论的工程子集;深入对应<a href="../%E5%88%86%E6%9E%90/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/XJTU_complex/">分析/复变函数</a>和<a href="../%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/ZJU_probability/">概率与统计</a></li>

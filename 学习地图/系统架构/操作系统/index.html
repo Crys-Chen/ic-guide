@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,23 +13239,24 @@
 
 <h1 id="_1">操作系统</h1>
 <p>操作系统研究<strong>软件如何管理硬件资源</strong>:进程调度、内存管理、文件系统、I/O 子系统、虚拟化、中断处理。它是系统类研究的"中间层":上接编译/应用,下连体系结构。</p>
-<p>对硬件方向的同学来说,操作系统是<strong>理解软硬件协同</strong>的关键——你设计的硬件特性(缓存替换策略、虚拟内存、加速器接口)最终都需要 OS 适配才能被应用使用。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="MIT_6.S081/">MIT 6.S081</a></strong> — MIT 经典 OS 课,xv6 教学操作系统(Unix 风格)读+写完整 ★</li>
-<li><strong><a href="UCB_CS162/">UCB CS162</a></strong> — Berkeley OS,Pintos 项目</li>
-<li><strong><a href="NJU_OS/">NJU OS</a></strong> — 南京大学 蒋炎岩 主讲,<strong>国内中文 OS 课的最高水平</strong> ★;深入讲并发、虚拟化等现代主题</li>
-<li><strong><a href="HIT_OS/">HIT OS</a></strong> — 哈工大李治军,Linux 0.11 内核精讲</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>入门:MIT 6.S081 或 NJU OS</strong> → 选一门完整做完 Lab/Project,读+写一遍内核代码,对 OS 的认知会有质变。</p>
-<p>国内同学强烈推荐 NJU OS——蒋老师讲法现代,Lab 设计精巧,中英文资料结合无障碍。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — OS 与体系结构的接口(内存管理、虚拟化)</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> — TEE / 内核安全</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — vLLM 借鉴 OS 虚拟内存做 KV Cache 管理,这种"OS-inspired ML systems"是热点</li>
-</ul>
+<p>对硬件方向的同学来说,操作系统是<strong>理解软硬件协同</strong>的关键——设计的硬件特性(缓存替换策略、虚拟内存、加速器接口)最终都需要 OS 适配才能被应用使用。</p>
+<pre class="mermaid"><code>graph LR
+    HIT["哈工大 OS&lt;br/&gt;入门首选"]
+    NJU["南大 NJU OS&lt;br/&gt;设计与实现"]
+    MIT["MIT 6.S081&lt;br/&gt;OS Engineering"]
+    UCB["UCB CS162&lt;br/&gt;Pintos 系统实战"]
+    HIT --&gt; NJU
+    HIT --&gt; MIT
+    NJU --&gt; UCB
+    MIT --&gt; UCB
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#166534
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155
+    class HIT beginner
+    class NJU,MIT intermediate
+    class UCB advanced</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a></p>
 
 
 

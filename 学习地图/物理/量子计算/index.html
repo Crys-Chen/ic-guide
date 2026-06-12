@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,17 +13239,16 @@
 
 <h1 id="_1">量子计算</h1>
 <p>前置是<a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a>,至少学到会用 Dirac 记号做计算。两门课一中一英,一个建算法框架,一个带代码实操。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="PKU_li_quantum/">北大李彤阳:量子计算</a></strong> — 量子算法系统课(Grover/Shor/量子复杂度)</li>
-<li><strong><a href="qiskit_watrous/">Qiskit: Understanding Quantum Information and Computation</a></strong> — IBM 官方课程,Watrous 主讲,公式推导配代码实操</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p>先李彤阳建框架,再用 Qiskit 把算法跑起来。微电子学生关心的低温控制电路、量子比特读出电路属于科研方向的内容,见下。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E4%B8%8E%E9%87%8F%E5%AD%90%E8%8A%AF%E7%89%87/">量子计算与量子芯片</a> — 算法层知识是理解"芯片要为谁服务"的前提</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    QM["量子力学&lt;br/&gt;Dirac 记号"]:::prereq
+    PKU["北大李彤阳&lt;br/&gt;量子计算&lt;br/&gt;算法推导+复杂性"]:::main
+    QK["Qiskit Watrous&lt;br/&gt;理论+代码实操"]:::main
+    QM --&gt; PKU
+    QM --&gt; QK
+    classDef prereq fill:#FEF9C3,stroke:#CA8A04,color:#78350F
+    classDef main fill:#EFF6FF,stroke:#3B82F6,color:#1E3A8A</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E4%B8%8E%E9%87%8F%E5%AD%90%E8%8A%AF%E7%89%87/">量子计算与量子芯片</a></p>
 
 
 

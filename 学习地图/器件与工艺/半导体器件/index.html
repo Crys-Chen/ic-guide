@@ -13213,15 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13248,19 +13239,32 @@
 
 <h1 id="_1">半导体器件</h1>
 <p>半导体器件研究<strong>由半导体材料(主要是硅)制成的电子元件的工作原理</strong>——PN 结、双极结型晶体管(BJT)、金属-氧化物-半导体场效应晶体管(MOSFET)。这些器件是构成所有集成电路的最基本积木:<strong>一颗手机芯片含上百亿个 MOSFET</strong>,每一个的工作原理都来自这门课。</p>
-<p>它是连接<a href="../../%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a>与<a href="../../%E7%94%B5%E8%B7%AF/">电路设计</a>的桥梁——半物给你"载流子和能带",这门课告诉你"如何用 PN 结+栅氧化层做出一个有用的开关"。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="FDU_MICR130006/">半导体器件原理(复旦)</a></strong> — 复旦微电子核心课</li>
-<li><strong><a href="Purdue_ECE606/">Purdue ECE 606: Solid State Devices</a></strong> — Mark Lundstrom 主讲,从量子力学严格推导到器件参数;内容以器件为主,从物理板块归入本目录</li>
-<li><strong><a href="%E8%A1%A5%E5%85%85%E8%B5%84%E6%BA%90/">补充资源</a></strong> — NPTEL、中国大学 MOOC 等其他参考</li>
-</ul>
-<h2 id="_3">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%85%88%E8%BF%9B%E5%B7%A5%E8%89%BA/">半导体器件与先进工艺</a> — 本方向的本体课</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a> — 没有器件物理就看不懂 SPICE 模型</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%AE%BD%E7%A6%81%E5%B8%A6%E5%99%A8%E4%BB%B6/">功率半导体与宽禁带器件</a>、<a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%89%E7%94%B5%E5%AD%90%E4%B8%8E%E7%A1%85%E5%85%89%E9%9B%86%E6%88%90/">光电子与硅光集成</a> — 都需要器件物理基础</li>
-</ul>
+<p>它是连接<a href="../../%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a>与<a href="../../%E7%94%B5%E8%B7%AF/">电路设计</a>的桥梁——半物给你"载流子和能带",这门课说明"如何用 PN 结+栅氧化层做出一个有用的开关"。</p>
+<pre class="mermaid"><code>graph LR
+    classDef prereq fill:#EFF6FF,stroke:#3B82F6,color:#1D4ED8
+    classDef core fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#374151
+    classDef supp fill:#FFF7ED,stroke:#F97316,color:#C2410C
+    SEMIPHYS["半导体物理"]:::prereq
+    QM["量子力学基础"]:::prereq
+    FDU["复旦：半导体器件原理&lt;br/&gt;ICSE30020"]:::core
+    PURDUE["Purdue ECE 606&lt;br/&gt;Solid State Devices"]:::core
+    NPTEL["NPTEL：器件到电路&lt;br/&gt;IIT Roorkee"]:::supp
+    MOOC["中国大学MOOC&lt;br/&gt;西电/东大配套课"]:::supp
+    ANALOG["模拟电路"]:::advanced
+    DIGITAL["数字集成电路"]:::advanced
+    SEMIPHYS --&gt; FDU
+    SEMIPHYS --&gt; PURDUE
+    QM --&gt; FDU
+    QM --&gt; PURDUE
+    FDU --&gt; ANALOG
+    FDU --&gt; DIGITAL
+    PURDUE --&gt; ANALOG
+    PURDUE --&gt; DIGITAL
+    FDU -.-&gt; NPTEL
+    FDU -.-&gt; MOOC</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%85%88%E8%BF%9B%E5%B7%A5%E8%89%BA/">半导体器件与先进工艺</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%AE%BD%E7%A6%81%E5%B8%A6%E5%99%A8%E4%BB%B6/">功率半导体与宽禁带器件</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%89%E7%94%B5%E5%AD%90%E4%B8%8E%E7%A1%85%E5%85%89%E9%9B%86%E6%88%90/">光电子与硅光集成</a></p>
 
 
 

@@ -13222,15 +13222,6 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13258,6 +13249,21 @@
 <h1 id="_1">编程入门</h1>
 <p>编程入门面向<strong>没有编程基础或想换语言的同学</strong>:Python(数据处理 / ML 框架 / 脚本)、C/C++(硬件仿真器 / EDA 工具 / 系统编程)、Rust(现代系统编程)。</p>
 <p>对 IC 学生来说,<strong>Python 和 C++ 是最高优先级</strong>:Python 几乎是所有 ML/数据处理工作的默认语言;C++ 是大型 EDA 工具(Yosys、OpenROAD)、体系结构仿真器(Gem5、GPGPU-Sim)的实现语言。</p>
+<pre class="mermaid"><code>graph LR
+    classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1D4ED8
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155
+    classDef tool fill:#FFF7ED,stroke:#EA580C,color:#9A3412
+    MIT["MIT Missing Semester&lt;br/&gt;命令行 / 工具链"]:::tool
+    Python["Python 语言&lt;br/&gt;CS61A · CS50P · 6.100L"]:::intro
+    C["C 语言&lt;br/&gt;CS50 · 郭炜 · 翁恺"]:::intro
+    Cpp["C++ 语言&lt;br/&gt;CS106L · 侯捷系列"]:::intermediate
+    Rust["Rust 语言&lt;br/&gt;CS110L · 令狐 · 杨旭"]:::advanced
+    MIT --&gt; Python
+    MIT --&gt; C
+    C --&gt; Cpp
+    Cpp --&gt; Rust
+    C --&gt; Rust</code></pre>
 <h2 id="_2">子目录</h2>
 <ul>
 <li><strong><a href="Python/">Python 语言</a></strong> — UCB CS61A、Harvard CS50P、MIT 6.100L</li>
@@ -13265,12 +13271,7 @@
 <li><strong><a href="cpp/Stanford_CS106L/">C++ 语言</a></strong> — Stanford CS106L/B/X、侯捷系列</li>
 <li><strong><a href="Rust/Stanford_CS110L/">Rust 语言</a></strong> — Stanford CS110L、令狐/杨旭中文系列</li>
 </ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>初学者第一门:Python</strong>(语法干净,反馈快,UCB CS61A 是公认的最佳入门课)</p>
-<p><strong>做硬件研究 / 仿真器开发:C++</strong>(掌握 Stanford CS106B/X 即可达到入门工程水平)</p>
-<p><strong>做系统研究:Rust</strong>(Stanford CS110L 用 Rust 重讲系统编程,是安全系统语言的最佳入门)</p>
-<p>辅助工具:<strong><a href="MIT_missing_semester/">MIT-Missing-Semester</a></strong> — Linux Shell + Git + Vim 等工具速成,<strong>所有编程入门同学都该看</strong>。</p>
-<h2 id="_4">对应的科研方向</h2>
+<h2 id="_3">对应的科研方向</h2>
 <p>任何方向都需要的基础。具体偏好:
 - AI / 算法研究 → Python(PyTorch / JAX 生态)
 - EDA 工具 / 硬件仿真器 → C++

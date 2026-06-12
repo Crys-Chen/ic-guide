@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,25 +13239,29 @@
 
 <h1 id="_1">计算机体系结构</h1>
 <p>体系结构(Computer Architecture)研究<strong>处理器及计算系统的设计</strong>:指令集架构(ISA)、流水线、超标量、缓存层次、内存系统、多核、加速器、GPU 等。这是与硬件设计交叉最深的 CS 子方向,也是 IC 研究生最常选择的"软硬交叉"方向之一。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="Coursera_nand2tetris/">Coursera: Nand2Tetris</a></strong> — 经典入门:<strong>从与门到操作系统的全栈课程</strong>,亲手实现一个简易 CPU</li>
-<li><strong><a href="UCB_CS61C/">UCB CS61C</a></strong> — Berkeley 体系结构入门,RISC-V ISA + 实战 Project</li>
-<li><strong><a href="ETH_DDCA/">ETHz: Digital Design and Computer Architecture (DDCA)</a></strong> — Onur Mutlu 主讲,YouTube 全公开;<strong>逻辑清晰、内容现代,新手最好的本科课</strong> ★</li>
-<li><strong><a href="ETH_CA/">ETHz: Computer Architecture</a></strong> — Onur Mutlu 的研究生进阶版,讲的是 ISCA/MICRO 级别的话题</li>
-<li><strong><a href="THU_computer_org/">清华:计算机组成原理</a></strong> — 中文计组体系课,57 讲完整搬运</li>
-<li><strong><a href="UCAS_hu_archbase/">国科大胡伟武:计算机体系结构</a></strong> — 龙芯首席科学家亲授,配套开源教材</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>入门:Nand2Tetris(动手) + CS61C(系统化) → 进阶:DDCA → 研究入门:Onur Mutlu CA + 配合 <a href="../../../%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/Gem5/">Gem5</a> / <a href="../../../%E5%B7%A5%E7%A8%8B%E5%B7%A5%E5%85%B7/GPGPUSIM/">GPGPU-Sim</a> 仿真器实操</strong>(两个仿真器在工程工具板块有速通页)</p>
-<p>想动手从零实现一个 RISC-V 处理器并流片,见<a href="../../../%E4%B8%93%E9%A2%98%E7%A4%BE%E5%8C%BA/">专题社区</a>的"一生一芯"。</p>
-<p>学完 DDCA + CA,你就能读懂大多数 ISCA / MICRO / HPCA 论文了。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — 本方向的核心前置</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a> — FPGA 是软核处理器的实验平台</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a> — 近存计算的根问题(memory wall)在体系结构中讲透</li>
-</ul>
+<pre class="mermaid"><code>graph TB
+    N2T["Nand2Tetris&lt;br/&gt;从与非门造计算机"]
+    DDCA["ETH DDCA&lt;br/&gt;数字设计与体系结构"]
+    THU["清华 计算机组成原理&lt;br/&gt;王诚/刘卫东"]
+    CS61C["UCB CS61C&lt;br/&gt;Great Ideas in CA"]
+    UCAS["中科大 胡伟武&lt;br/&gt;计算机体系结构（龙芯）"]
+    CA["ETH Computer Architecture&lt;br/&gt;Onur Mutlu 进阶课"]
+    N2T --&gt; THU
+    N2T --&gt; CS61C
+    DDCA --&gt; THU
+    DDCA --&gt; CS61C
+    DDCA --&gt; CA
+    THU --&gt; UCAS
+    CS61C --&gt; UCAS
+    CS61C --&gt; CA
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1e3a5f
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532d
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1e293b
+    class N2T,DDCA beginner
+    class THU,CS61C intermediate
+    class UCAS,CA advanced</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a></p>
 
 
 

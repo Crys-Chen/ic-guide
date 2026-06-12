@@ -13213,15 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13248,17 +13239,22 @@
 
 <h1 id="soc">嵌入式 SoC</h1>
 <p>嵌入式 SoC(Embedded System on a Chip)指<strong>把 CPU、内存、外设、加速器集成到单一芯片上,嵌入到特定设备执行专门任务</strong>。智能手机的主处理器、路由器的控制芯片、汽车 ECU、IoT 设备都依赖嵌入式 SoC。</p>
-<p>这是连接"芯片设计"与"系统应用"的桥梁:你写 RTL,但需要懂操作系统、外设驱动、实时性、低功耗设计才能设计一个真正能用的 SoC。</p>
-<h2 id="_1">推荐课程</h2>
-<ul>
-<li><strong><a href="FDU_hanjun/">嵌入式处理器与芯片系统设计(Bilibili,韩军)</a></strong> — 复旦微电子韩军老师课程的 B 站录像,<strong>复旦微电培养方案中唯一系统讲体系结构的课</strong></li>
-<li><strong><a href="Cornell_ECE4760/">Cornell ECE 4760: Designing with Microcontrollers</a></strong> — Cornell 的经典嵌入式课(Bruce Land 主讲),用 Pi Pico/AVR 教全栈嵌入式;<strong>国外名校嵌入式入门首选</strong></li>
-</ul>
-<h2 id="_2">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — SoC 是处理器架构的实际载体</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> — SoC 的安全模块(TEE、PUF、HSM)是研究热点</li>
-</ul>
+<p>这是连接"芯片设计"与"系统应用"的桥梁——仅会写 RTL 不够,还需要懂操作系统、外设驱动、实时性、低功耗设计,才能设计真正能用的 SoC。</p>
+<pre class="mermaid"><code>graph LR
+    A[数字逻辑基础] --&gt; B[Cornell ECE 4760&lt;br/&gt;微控制器系统设计]
+    A --&gt; C[复旦 ICSE20008&lt;br/&gt;嵌入式处理器与SoC设计]
+    D[C 语言] --&gt; B
+    D --&gt; C
+    B --&gt; E[实时系统与&lt;br/&gt;底层驱动开发]
+    C --&gt; F[处理器架构与&lt;br/&gt;芯片系统集成]
+    classDef prereq fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef course fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1E293B
+    class A,D prereq
+    class B,C course
+    class E,F advanced</code></pre>
+<h2 id="_1">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a></p>
 
 
 

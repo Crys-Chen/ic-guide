@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,21 +13239,23 @@
 
 <h1 id="_1">大语言模型</h1>
 <p>LLM 是当前 AI 系统研究的主要工作负载,训练和推理的算力规律直接决定加速器设计,因此从深度生成模型目录独立成组。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="OpenBMB_LLM/">清华刘知远 OpenBMB:大模型公开课</a></strong> — 中文入门,大模型全景</li>
-<li><strong><a href="limu_paper_reading/">李沐:深度学习论文精读</a></strong> — 经典论文逐篇精读,建立读论文的方法论</li>
-<li><strong><a href="Stanford_CS336/">Stanford CS336: Language Modeling from Scratch</a></strong> — 从零写出一个 LLM,动手深度最大</li>
-<li><strong><a href="CMU_11-711/">CMU 11-711: Advanced NLP</a></strong> — 研究生 NLP 全景课</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p>先有<a href="../%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a>基础,至少懂 Transformer。中文入门走 OpenBMB,想动手实现选 CS336。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — LLM 推理/训练系统是核心研究内容</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — Transformer 加速器设计</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a> — LLM 推理是典型的内存密集负载</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155
+    FDU["复旦 EST20001&lt;br/&gt;自然语言处理与大模型"]:::beginner
+    OpenBMB["清华/OpenBMB&lt;br/&gt;大模型公开课"]:::intermediate
+    CMU["CMU 11-711&lt;br/&gt;Advanced NLP"]:::intermediate
+    Limu["李沐&lt;br/&gt;论文精读"]:::intermediate
+    CS336["Stanford CS336&lt;br/&gt;从零实现 LLM"]:::advanced
+    FDU --&gt; OpenBMB
+    FDU --&gt; CMU
+    OpenBMB --&gt; Limu
+    OpenBMB --&gt; CS336
+    CMU --&gt; Limu
+    CMU --&gt; CS336</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a></p>
 
 
 

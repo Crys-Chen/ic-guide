@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,19 +13239,21 @@
 
 <h1 id="_1">强化学习</h1>
 <p>智能体在交互中学策略的一支,具身智能的控制核心,也用于 EDA 布局布线等决策问题。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="Westlake_zhao_RL/">西湖赵世钰:强化学习的数学原理</a></strong> — 中文,从数学原理推起,底子打得牢</li>
-<li><strong><a href="silver_RL/">David Silver: UCL Reinforcement Learning</a></strong> — 经典英文课,框架建得全</li>
-</ul>
-<p>深度强化学习课 <a href="../%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/UCB_CS285/">UCB CS285</a> 在深度学习目录。</p>
-<h2 id="_3">学习路径建议</h2>
-<p>先有<a href="../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>基础。赵世钰打数学底子,Silver 建经典框架,之后再去 CS285 接深度方法。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/">具身智能</a> — 机器人控制策略的核心算法</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — RL 用于布局布线决策</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    classDef prereq fill:#EFF6FF,stroke:#3B82F6,color:#1D4ED8
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1D4ED8
+    classDef advanced fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    P1[概率论]:::prereq
+    P2[线性代数]:::prereq
+    A[Silver：UCL RL 经典讲义]:::beginner
+    B[赵世钰：强化学习数学原理]:::advanced
+    P1 --&gt; A
+    P2 --&gt; A
+    P1 --&gt; B
+    P2 --&gt; B
+    A --&gt; B</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/">具身智能</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></p>
 
 
 

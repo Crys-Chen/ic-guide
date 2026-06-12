@@ -13213,15 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13248,19 +13239,22 @@
 
 <h1 id="_1">计算机系统基础</h1>
 <p>计算机系统基础是<strong>所有"系统类"研究的入口</strong>——它把"程序如何在硬件上运行"这件事讲清楚,涵盖汇编语言、内存模型、缓存层次、进程与线程、链接与加载、I/O 系统等核心概念。这是 <a href="../体系结构/">体系结构</a>、<a href="../操作系统/">操作系统</a>、<a href="../编译原理/">编译原理</a> 的共同前置。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="CMU_15-213/">CMU 15-213: CSAPP</a></strong> — <strong>公认最好的计算机系统课</strong> ★;教材《Computer Systems: A Programmer's Perspective》是经典中的经典,Lab(Bomb Lab、Buffer Lab、Malloc Lab、Shell Lab 等)的设计水平极高</li>
-<li><strong><a href="Stanford_CS110/">Stanford CS110</a></strong> — Stanford 系统编程课,与 CSAPP 互补</li>
-</ul>
-<h2 id="_3">对应的科研方向</h2>
-<p>入门级前置,<strong>所有<a href="../">系统架构</a>子方向都需要</strong>:
-- <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a>
-- <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a> — 内存层次的根问题
-- <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> — 系统漏洞分析的基础</p>
-<blockquote>
-<p><strong>强烈建议</strong>任何方向的同学,本科阶段一定要通学一遍 CSAPP——它建立的"系统观"是后续所有进阶课程的脚手架。</p>
-</blockquote>
+<pre class="mermaid"><code>graph LR
+    classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef advanced fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    A["CMU 15-213&lt;br/&gt;CSAPP"]:::intro
+    B["Stanford CS110&lt;br/&gt;计算机系统原理"]:::intro
+    C["体系结构"]:::advanced
+    D["操作系统"]:::advanced
+    E["编译原理"]:::advanced
+    A --&gt; C
+    A --&gt; D
+    A --&gt; E
+    B --&gt; C
+    B --&gt; D
+    B --&gt; E</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%AD%98%E7%AE%97%E4%B8%80%E4%BD%93%E4%B8%8E%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97/">存算一体与近存计算</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a></p>
 
 
 

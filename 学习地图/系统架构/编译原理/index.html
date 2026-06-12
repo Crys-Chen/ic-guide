@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13258,21 +13240,20 @@
 <h1 id="_1">编译原理</h1>
 <p>编译原理研究<strong>如何把高级语言翻译成可执行代码</strong>:词法分析、语法分析、中间表示(IR)、代码优化、目标代码生成。它是连接编程语言与硬件指令的桥梁。</p>
 <p>对硬件研究者来说,编译原理是 <strong>AI 编译器(TVM/MLIR)、EDA 综合工具、硬件描述语言研究</strong> 的直接前置。当今最热的领域如 AI 系统、领域特定语言(DSL)、加速器编译都依赖这门课的核心技能。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="Stanford_CS143/">Stanford CS143</a></strong> — Stanford 经典编译原理课,完整实现 COOL 语言编译器</li>
-<li><strong><a href="NJU_compilers/">NJU 编译原理</a></strong> — 南京大学 李樾、谭添 主讲,<strong>国内中文编译原理课首选</strong> ★</li>
-<li><strong><a href="USTC_compilers/">USTC 编译原理与技术</a></strong> — 中科大版本</li>
-<li><strong><a href="KAIST_CS420/">KAIST CS420</a></strong> — 韩国 KAIST 现代编译原理课,LLVM-based</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>入门:CS143 或 NJU 编译原理(选一门完整学)</strong> → <strong>进阶:实操 LLVM Pass 或 MLIR 教程</strong> → <strong>深入:KAIST CS420 + 读 ASPLOS/PLDI 论文</strong></p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — LLVM/MLIR/TVM 是核心</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — AI 编译器(TVM/MLC)是 AI 系统研究热点</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — 数字综合本质就是 HDL 编译</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    NJU["NJU 编译原理&lt;br/&gt;离散数学起步"]:::beginner
+    USTC["USTC 编译器&lt;br/&gt;C++ 实现"]:::intermediate
+    KAIST["KAIST CS420&lt;br/&gt;Rust 实现"]:::intermediate
+    Stanford["Stanford CS143&lt;br/&gt;完整编译器"]:::advanced
+    NJU --&gt; USTC
+    NJU --&gt; KAIST
+    USTC --&gt; Stanford
+    KAIST --&gt; Stanford
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E3A5F
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1E293B</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></p>
 
 
 

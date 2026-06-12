@@ -13222,15 +13222,6 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,6 +13248,17 @@
 
 <h1 id="_1">数字设计</h1>
 <p>数字电路处理<strong>离散二进制信号(0 和 1)</strong>:从最基础的逻辑门(与/或/非)、组合逻辑(加法器),到时序逻辑(触发器、状态机),再到把这些组合起来形成处理器、存储器、加速器等大型数字系统。它是所有数字芯片(CPU/GPU/FPGA/ASIC)的基础。本目录覆盖数字设计的完整链条,从逻辑门一路走到 GDSII。</p>
+<pre class="mermaid"><code>graph LR
+    A["数字逻辑基础"]:::beginner --&gt; B["HDL"]:::intermediate
+    A --&gt; C["数字集成电路"]:::intermediate
+    B --&gt; D["FPGA"]:::intermediate
+    B --&gt; E["数字验证"]:::intermediate
+    B --&gt; F["ASIC与数字后端"]:::advanced
+    C --&gt; F
+    C --&gt; G["低功耗设计"]:::advanced
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1D4ED8
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155</code></pre>
 <h2 id="_2">子目录</h2>
 <ul>
 <li><strong><a href="%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E5%9F%BA%E7%A1%80/FDU_MICR130003/">数字逻辑基础</a></strong> — 数电入门:逻辑门、布尔代数、组合/时序电路、状态机</li>
@@ -13267,16 +13269,8 @@
 <li><strong><a href="%E4%BD%8E%E5%8A%9F%E8%80%97%E8%AE%BE%E8%AE%A1/FDU_ICSE40005/">低功耗设计</a></strong> — 超低功耗 IC 设计专题(复旦 2025 选修)</li>
 <li><strong><a href="ASIC%E4%B8%8E%E6%95%B0%E5%AD%97%E5%90%8E%E7%AB%AF/FDU_INFO130094/">ASIC 与数字后端</a></strong> — 综合、布局布线、时序收敛,从 RTL 走到 GDSII;NPTEL 两门分别讲物理设计和综合的算法</li>
 </ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>数字逻辑基础 → 一门 HDL(<a href="HDL/Verilog/ZJU_digital_system/">Verilog</a>) → FPGA(在板上跑) → 数字集成电路(深入物理实现) → ASIC 与数字后端(走完流片流程)</strong></p>
-<p>是 IC 数字方向的标准成长路径。配合数字 EDA 工具(<a href="../EDA/vivado/">Vivado</a>)上手,你就能从"读 RTL"走到"流片设计"。</p>
-<p>HDL 内部怎么选:<strong>Verilog 是绕不开的起点</strong>,<a href="HDL/Verilog/ZJU_digital_system/">浙大课</a>系统入门,<a href="HDL/Verilog/HDLBits/">HDLBits</a> 在线刷题(像 LeetCode 的 Verilog 版)最快上手;进阶做学术研究或大型项目学 <a href="HDL/Chisel/chisel_bootcamp/">Chisel</a>(RISC-V Chipyard 生态);<a href="HDL/HLS/gaoyajun_hls/">HLS</a> 把 C/C++ 综合成 RTL,了解即可,优先级低于前两者。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — 数字电路是 CPU/GPU 实现的物理基础</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a> — FPGA 子目录的直接前置</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — 数字 EDA 工具直接服务于这条流程</li>
-</ul>
+<h2 id="_3">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></p>
 
 
 

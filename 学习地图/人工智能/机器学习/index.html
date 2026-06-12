@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,26 +13239,26 @@
 
 <h1 id="_1">机器学习</h1>
 <p>机器学习是现代 AI 的核心范式:<strong>让计算机从数据中学习规律</strong>,而不是手工编写规则。监督学习、非监督学习、概率模型、优化、泛化理论是这门课的主轴。</p>
-<p>对硬件研究者来说,机器学习是<strong>做 AI 硬件协同设计的数学基础</strong>——你设计加速器要先理解算子(矩阵乘、卷积、attention)是什么,数据流如何,怎么量化才不损失精度。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="Coursera_ML/">Coursera: Machine Learning(吴恩达)</a></strong> — 全球最有名的 ML 入门课,新版用 Python+TensorFlow</li>
-<li><strong><a href="Stanford_CS229/">Stanford CS229</a></strong> — 吴恩达 Stanford 课,<strong>理论严谨度高于 Coursera 版</strong> ★</li>
-<li><strong><a href="UCB_CS189/">UCB CS189</a></strong> — Berkeley 机器学习,数学要求更严</li>
-<li><strong><a href="UCB_Data100/">UCB Data100</a></strong> — Berkeley 数据科学(实战导向,Python + SQL,适合做数据驱动研究)</li>
-<li><strong><a href="NJU_zhou_ML/">南大周志华:机器学习导论</a></strong> — 西瓜书作者亲授,中文理论体系最完整</li>
-<li><strong><a href="../%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/NTU_lihongyi/">台大李宏毅:机器学习</a></strong> — 中文入门"百科全书",每年更新前沿;因内容以深度学习为主,收录在深度学习目录</li>
-<li><strong><a href="%E8%A1%A5%E5%85%85%E8%B5%84%E6%BA%90/">补充资源</a></strong> — 西瓜书 + 林轩田 + Murphy 等中英文教材推荐</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>入门:吴恩达 Coursera ML</strong>(轻量、入门友好)→ <strong>进阶:CS229</strong>(理论深化)→ <strong>数据实战:Data100</strong>(Python + 数据处理)</p>
-<p>学完后建议直接进 <a href="../深度学习/">深度学习</a> + <a href="../AI系统/">AI 系统</a>。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — ML 是该方向的算法层基础</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%B1%BB%E8%84%91%E8%8A%AF%E7%89%87/">类脑芯片</a> — SNN 与 ANN 的关系</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — ML for EDA 是 EDA 子领域,GNN/RL 用于布局布线</li>
-</ul>
+<p>对硬件研究者来说,机器学习是<strong>做 AI 硬件协同设计的数学基础</strong>——设计加速器要先理解算子(矩阵乘、卷积、attention)是什么,数据流如何,怎么量化才不损失精度。</p>
+<pre class="mermaid"><code>graph LR
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1e3a5f
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532d
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1e293b
+    D100["UCB Data100&lt;br/&gt;数据科学导论"]:::beginner
+    CML["Coursera ML&lt;br/&gt;吴恩达入门版"]:::beginner
+    FDU["复旦 ICSE30001&lt;br/&gt;机器学习算法"]:::intermediate
+    NJU["NJU 周志华&lt;br/&gt;西瓜书亲讲"]:::intermediate
+    CS229["Stanford CS229&lt;br/&gt;ML 研究生课"]:::advanced
+    CS189["UCB CS189&lt;br/&gt;ML 理论课"]:::advanced
+    D100 --&gt; CML
+    CML --&gt; NJU
+    CML --&gt; FDU
+    NJU --&gt; CS229
+    NJU --&gt; CS189
+    CML --&gt; CS229
+    CML --&gt; CS189</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%B1%BB%E8%84%91%E8%8A%AF%E7%89%87/">类脑芯片</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></p>
 
 
 

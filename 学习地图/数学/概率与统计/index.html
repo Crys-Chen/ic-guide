@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,21 +13239,20 @@
 
 <h1 id="_1">概率与统计</h1>
 <p>概率论是机器学习、随机信号、通信和良率分析的共同基础。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="ZJU_probability/">浙大:概率论与数理统计</a></strong> — 国内教材体系的中文配套课</li>
-<li><strong><a href="Harvard_Stat110/">Harvard Stat 110</a></strong> — Blitzstein 主讲,例题驱动,直觉建立得快</li>
-<li><strong><a href="MIT_6.041/">MIT 6.041</a></strong> — 概率系统分析,工程视角</li>
-<li><strong><a href="MIT_6.262/">MIT 6.262</a></strong> — 研究生随机过程;本站 17 个方向里直接用到它的很少,做通信/排队论建模再看</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><a href="../%E5%85%A5%E9%97%A8%E9%80%9F%E6%88%90/">入门速成</a>的工程数学及概率方法和 CS70 已覆盖工科够用的概率子集。要系统学,浙大或 Stat 110 选一门跟完即可。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — 机器学习的数学地基</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> — 随机性与信息论分析</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a> — 噪声分析、良率统计</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1E293B
+    ZJU["浙大：概率论与数理统计"]:::beginner
+    S110["Harvard Stat 110"]:::intermediate
+    M6041["MIT 6.041"]:::intermediate
+    M6262["MIT 6.262 随机过程"]:::advanced
+    ZJU --&gt; S110
+    ZJU --&gt; M6041
+    S110 --&gt; M6262
+    M6041 --&gt; M6262</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7IC/">模拟与混合信号 IC</a></p>
 
 
 

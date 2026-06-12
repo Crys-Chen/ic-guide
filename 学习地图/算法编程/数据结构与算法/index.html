@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,25 +13239,27 @@
 
 <h1 id="_1">数据结构与算法</h1>
 <p>数据结构与算法是<strong>所有计算机科学和工程的通用工具</strong>。从图算法、动态规划、复杂度分析,到具体的树/堆/哈希实现——这些是 EDA 算法研究、系统类研究、AI 系统优化的共同语言。</p>
-<p>对 IC 学生来说,这门课比"刷题面试"重要得多:做 EDA 时你会遇到 NP-hard 问题(布局布线、逻辑综合)需要近似算法;做体系结构时你会用图算法分析数据流图;做 AI 系统时你需要理解算子调度的图算法。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="FDU_MICR130009/">数据结构与算法(复旦)</a></strong> — 复旦校内课</li>
-<li><strong><a href="UCB_CS61B/">UCB CS61B</a></strong> — Berkeley 经典数据结构课,Java 实现,Project 系列(BYOW、Gitlet)是公认的好作业 ★</li>
-<li><strong><a href="Coursera_algorithms/">Coursera: Algorithms I &amp; II</a></strong> — Princeton 的 Sedgewick 主讲,经典中的经典</li>
-<li><strong><a href="MIT_6.006/">MIT 6.006</a></strong> — MIT 算法导论入门版</li>
-<li><strong><a href="MIT_6.046/">MIT 6.046</a></strong> — MIT 算法导论进阶版</li>
-<li><strong><a href="UCB_CS170/">UCB CS170</a></strong> — Berkeley 算法理论课</li>
-</ul>
-<h2 id="_3">学习路径建议</h2>
-<p><strong>入门:CS61B 或 6.006</strong>(任选其一,Project 实现完整)→ <strong>进阶:Algorithms I &amp; II 或 6.046</strong>(深入算法分析)。</p>
-<p>通常本科一遍 + 研究方向所需的特定算法(图、机器学习、优化)即可。<strong>不需要刷算法竞赛级的题</strong>——那是另一种技能,与做研究关联不大。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — EDA 本质是图算法 + 大型 C++ 工程</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — 编译优化的核心是数据流分析、寄存器分配等图算法</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — ML 模型可视为大型计算图,系统优化大量用图算法</li>
-</ul>
+<p>对 IC 学生来说,这门课比"刷题面试"重要得多:做 EDA 时会遇到 NP-hard 问题(布局布线、逻辑综合)需要近似算法;做体系结构时会用图算法分析数据流图;做 AI 系统时需要理解算子调度的图算法。</p>
+<pre class="mermaid"><code>graph LR
+    FDU["复旦 数据结构与算法"]
+    CS61B["UCB CS61B&lt;br/&gt;数据结构"]
+    Coursera["Coursera&lt;br/&gt;Algorithms I &amp; II"]
+    MIT6006["MIT 6.006&lt;br/&gt;算法导论"]
+    CS170["UCB CS170&lt;br/&gt;高效算法与难解问题"]
+    MIT6046["MIT 6.046&lt;br/&gt;算法设计与分析"]
+    FDU --&gt; MIT6006
+    CS61B --&gt; MIT6006
+    Coursera --&gt; MIT6006
+    MIT6006 --&gt; CS170
+    MIT6006 --&gt; MIT6046
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155
+    class FDU,CS61B,Coursera beginner
+    class MIT6006 intermediate
+    class CS170,MIT6046 advanced</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a></p>
 
 
 

@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,24 +13239,26 @@
 
 <h1 id="_1">大学物理</h1>
 <p>大学物理(力学 + 电磁学 + 光学 + 热力学)是所有理工科本科生的共同物理基础。对 IC 学生来说,大物的<strong>电磁学章节</strong>最直接相关——它是后续学习电路分析、信号传输、射频天线、半导体物理的物理底子;<strong>光学章节</strong>则是进入光电子/硅光方向的入门。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="FDU_PHYS120013-14/">大学物理 B(复旦)</a></strong> — 复旦校内课,知识点对照培养方案</li>
-<li><strong><a href="MIT_8.01-8.02/">MIT 8.01/8.02: Classical Mechanics &amp; Electromagnetism</a></strong> — Walter Lewin / Peter Dourmashkin 主讲,YouTube + B 站全公开,<strong>国外名校大物的标杆</strong></li>
-</ul>
-<h2 id="_3">学习建议</h2>
-<ul>
-<li>国内大物通常一学期讲完力学+电磁+热学+光学,深度不及 MIT 两学期;<strong>有志于做器件、模拟 IC、射频、光电子的同学,把 MIT 8.02(电磁)完整学完远比国内大物刷题更值</strong></li>
-<li>数学工具不熟:先看 <a href="../../%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/MIT_18.01-18.02/">数学分析</a>、<a href="../../%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/MIT_18.06/">线性代数</a></li>
-<li>光学章节内容浅尝辄止,要做硅光方向的同学请直接看 <a href="../%E5%85%89%E5%AD%A6/">光学板块</a></li>
-</ul>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li>力学 → <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/">具身智能</a>、<a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/MEMS%E4%B8%8E%E5%BE%AE%E7%BA%B3%E4%BC%A0%E6%84%9F%E5%99%A8/">MEMS 与微纳传感器</a></li>
-<li>电磁学 → <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%B0%84%E9%A2%91%E4%B8%8E%E6%AF%AB%E7%B1%B3%E6%B3%A2IC/">射频与毫米波 IC</a>、<a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%89%E7%94%B5%E5%AD%90%E4%B8%8E%E7%A1%85%E5%85%89%E9%9B%86%E6%88%90/">光电子与硅光集成</a></li>
-<li>光学 → <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%89%E7%94%B5%E5%AD%90%E4%B8%8E%E7%A1%85%E5%85%89%E9%9B%86%E6%88%90/">光电子与硅光集成</a></li>
-<li>热力学 → <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E4%B8%8E%E5%BC%82%E6%9E%84%E9%9B%86%E6%88%90/">先进封装与异构集成</a></li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef mid fill:#F0FDF4,stroke:#16A34A,color:#166534
+    classDef adv fill:#F8FAFC,stroke:#64748B,color:#334155
+    FDU["复旦 大学物理B&lt;br/&gt;力学·电磁·光学·热学"]
+    MIT["MIT 8.01/8.02&lt;br/&gt;经典力学 &amp; 电磁学"]
+    EM["电路分析 &amp; 半导体物理"]
+    OPT["光电子 &amp; 硅光"]
+    RF["射频 &amp; 高频电路"]
+    MEMS["MEMS &amp; 微纳传感器"]
+    FDU:::intro --&gt; EM:::mid
+    MIT:::intro --&gt; EM
+    FDU --&gt; OPT:::mid
+    MIT --&gt; RF:::adv
+    FDU --&gt; MEMS:::mid
+    MIT --&gt; MEMS
+    EM --&gt; RF
+    EM --&gt; OPT</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/">具身智能</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/MEMS%E4%B8%8E%E5%BE%AE%E7%BA%B3%E4%BC%A0%E6%84%9F%E5%99%A8/">MEMS 与微纳传感器</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%B0%84%E9%A2%91%E4%B8%8E%E6%AF%AB%E7%B1%B3%E6%B3%A2IC/">射频与毫米波 IC</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%89%E7%94%B5%E5%AD%90%E4%B8%8E%E7%A1%85%E5%85%89%E9%9B%86%E6%88%90/">光电子与硅光集成</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E4%B8%8E%E5%BC%82%E6%9E%84%E9%9B%86%E6%88%90/">先进封装与异构集成</a></p>
 
 
 

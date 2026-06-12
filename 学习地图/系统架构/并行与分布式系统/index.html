@@ -13213,24 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13258,21 +13240,18 @@
 <h1 id="_1">并行与分布式系统</h1>
 <p>并行与分布式系统研究<strong>如何让多个计算单元协同工作</strong>:GPU 并行编程、分布式一致性、消息传递、容错。这是现代 AI 训练(数千 GPU 集群)、大规模数据处理(Spark/Flink)、区块链(分布式共识)的共同基础。</p>
 <p>对硬件研究者来说,并行 + 分布式是<strong>理解 AI 系统、大规模计算的必备背景</strong>。GPU 内核、互联网络、HBM 内存协议——这些硬件细节最终都要为分布式负载服务。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="USTC_parallel/">中科大：并行计算</a></strong> — 中文，MPI + OpenMP + CUDA 编程模型，理论与实践兼顾 ★</li>
-<li><strong><a href="parallel101/">高性能并行编程（parallel101）</a></strong> — 中文实战课，CUDA / TBB / ISPC，适合快速上手 ★</li>
-<li><strong><a href="Stanford_CS149/">CMU 15-418 / Stanford CS149</a></strong> — 并行计算经典课，向量化、cache coherence、共享内存编程模型 ★</li>
-</ul>
-<p>GPU 硬件微架构（warp 调度、HBM、Tensor Core）见 <strong><a href="../GPU%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">GPU 体系结构</a></strong>。</p>
-<h2 id="_3">学习路径建议</h2>
-<p>并行编程入门从 parallel101 或中科大并行计算开始，建立 CUDA/MPI 编程直觉；CS149 系统讲并行计算模型和 cache coherence，是进阶必读。需要深入 GPU 硬件微架构，转到 GPU 体系结构板块。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> — Megatron / vLLM / DeepSpeed 都是分布式训练系统</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> — GPU 架构、互联网络是研究重点</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a> — FPGA 集群与异构并行</li>
-</ul>
+<pre class="mermaid"><code>graph LR
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#15803D
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#334155
+    USTC["中科大·并行计算&lt;br/&gt;国家精品"]:::beginner
+    P101["parallel101&lt;br/&gt;高性能并行编程"]:::intermediate
+    CS149["CMU 15-418 /&lt;br/&gt;Stanford CS149"]:::advanced
+    USTC --&gt; P101
+    USTC --&gt; CS149
+    P101 --&gt; CS149</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F/">处理器架构与编译系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8F%AF%E9%87%8D%E6%9E%84%E8%AE%A1%E7%AE%97%E4%B8%8EFPGA/">可重构计算与FPGA</a></p>
 
 
 

@@ -13222,15 +13222,6 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      学习路径建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13257,6 +13248,18 @@
 
 <h1 id="_1">代数</h1>
 <p>线性代数是 ML、EDA、信号处理的共同语言,必学。其余三门按方向选学。</p>
+<pre class="mermaid"><code>graph LR
+    LA[线性代数]:::beginner
+    HA[高等代数]:::beginner
+    MA[矩阵分析]:::intermediate
+    AA[抽象代数]:::advanced
+    LA --&gt; MA
+    HA --&gt; MA
+    LA --&gt; AA
+    HA --&gt; AA
+    classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1e40af
+    classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532d
+    classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1e293b</code></pre>
 <h2 id="_2">子目录</h2>
 <ul>
 <li><strong><a href="%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/MIT_18.06/">线性代数</a></strong> — 复旦、MIT 18.06(Gilbert Strang);向量空间、特征值、SVD</li>
@@ -13264,13 +13267,8 @@
 <li><strong><a href="%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90/MIT_18.065/">矩阵分析</a></strong> — MIT 18.065、哈工大严质彬;矩阵求导与分解,深度学习反向传播会用到</li>
 <li><strong><a href="%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/NJU_sunzhiwei/">抽象代数</a></strong> — 南大孙智伟、Harvard(Gross);密码学的前置</li>
 </ul>
-<h2 id="_3">学习路径建议</h2>
-<p>线性代数学完即可。做 ML 补矩阵分析;做硬件安全按"抽象代数 → <a href="../%E4%B8%93%E9%A2%98/%E5%AF%86%E7%A0%81%E5%AD%A6/BUPT_crypto/">密码学</a>"走;高等代数适合想把代数体系学严的人,不是工科必经。</p>
-<h2 id="_4">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a>、<a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> — 线性代数、矩阵分析</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a> — 抽象代数(经密码学)</li>
-</ul>
+<h2 id="_3">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E7%A1%AC%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97/">硬件安全与可信计算</a></p>
 
 
 

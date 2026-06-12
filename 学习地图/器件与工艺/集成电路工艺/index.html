@@ -13213,15 +13213,6 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐课程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
       对应的科研方向
     </span>
   </a>
@@ -13248,19 +13239,27 @@
 
 <h1 id="_1">集成电路工艺</h1>
 <p>集成电路工艺研究<strong>把芯片从设计图纸做成硅片的全过程</strong>——光刻、刻蚀、薄膜沉积、离子注入、CMP(化学机械抛光)等微纳加工技术。它是器件设计与电路设计的物理桥梁:工艺决定了器件的尺寸/参数,器件决定了电路的行为。</p>
-<p>学好这门课,你才能看懂 PDK(Process Design Kit)里的工艺规则文档,理解为什么数字 IC 设计有 DRC(Design Rule Check),以及为什么"7nm/5nm 节点"在工艺界是大事。</p>
-<h2 id="_2">推荐课程</h2>
-<ul>
-<li><strong><a href="FDU_MICR130007/">集成电路工艺原理(复旦)</a></strong> — 复旦微电子核心课</li>
-<li><strong><a href="HIT_micro_fab/">哈工大王蔚:微电子工艺(106 讲)</a></strong> — B 站讲数最全的中文工艺课,覆盖氧化/光刻/刻蚀/注入/薄膜全模块</li>
-<li><strong><a href="%E8%A1%A5%E5%85%85%E8%B5%84%E6%BA%90/">补充资源</a></strong> — NPTEL、中国大学 MOOC 等其他参考</li>
-</ul>
-<h2 id="_3">对应的科研方向</h2>
-<ul>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%85%88%E8%BF%9B%E5%B7%A5%E8%89%BA/">半导体器件与先进工艺</a> — 本方向的本体课</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E4%B8%8E%E5%BC%82%E6%9E%84%E9%9B%86%E6%88%90/">先进封装与异构集成</a> — 工艺创新的延伸方向(2.5D/3D 封装)</li>
-<li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/MEMS%E4%B8%8E%E5%BE%AE%E7%BA%B3%E4%BC%A0%E6%84%9F%E5%99%A8/">MEMS 与微纳传感器</a> — 与 CMOS 工艺共享技术栈</li>
-</ul>
+<p>学好这门课,才能看懂 PDK(Process Design Kit)里的工艺规则文档,理解为什么数字 IC 设计有 DRC(Design Rule Check),以及为什么"7nm/5nm 节点"在工艺界是大事。</p>
+<pre class="mermaid"><code>graph LR
+    A[集成电路工艺原理&lt;br/&gt;MICR130007]:::intro
+    B[哈工大 微电子工艺&lt;br/&gt;王蔚]:::intro
+    C[现代集成电路光刻技术导论&lt;br/&gt;ICSE30032]:::mid
+    D[集成电路制造仿真模拟&lt;br/&gt;ICSE30014]:::mid
+    E[集成电路纳米技术&lt;br/&gt;ICSE40003]:::adv
+    F[先进集成电路工艺技术&lt;br/&gt;ICSE40016]:::adv
+    A --&gt; C
+    A --&gt; D
+    B --&gt; C
+    B --&gt; D
+    C --&gt; E
+    D --&gt; E
+    C --&gt; F
+    D --&gt; F
+    classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1e3a5f
+    classDef mid fill:#F0FDF4,stroke:#16A34A,color:#14532d
+    classDef adv fill:#F8FAFC,stroke:#64748B,color:#1e293b</code></pre>
+<h2 id="_2">对应的科研方向</h2>
+<p><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%85%88%E8%BF%9B%E5%B7%A5%E8%89%BA/">半导体器件与先进工艺</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85%E4%B8%8E%E5%BC%82%E6%9E%84%E9%9B%86%E6%88%90/">先进封装与异构集成</a> · <a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/MEMS%E4%B8%8E%E5%BE%AE%E7%BA%B3%E4%BC%A0%E6%84%9F%E5%99%A8/">MEMS 与微纳传感器</a></p>
 
 
 
