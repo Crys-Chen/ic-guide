@@ -12765,16 +12765,52 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      为什么写这份教程
+      工具做了什么
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#word" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      如何用 Word 写毕业论文
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用流程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown 写法速查
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      格式定制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      已知限制
     </span>
   </a>
   
@@ -13269,16 +13305,52 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      为什么写这份教程
+      工具做了什么
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#word" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      如何用 Word 写毕业论文
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用流程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown 写法速查
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      格式定制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      已知限制
     </span>
   </a>
   
@@ -13302,22 +13374,146 @@
   
 
 
-<h1 id="_1">毕业论文</h1>
-<p><em>注：本课程页继承自 <a href="https://csdiy.wiki/%E5%BF%85%E5%AD%A6%E5%B7%A5%E5%85%B7/thesis/">CS自学指南</a>。</em></p>
-<h2 id="_2">为什么写这份教程</h2>
-<p>2022年，我本科毕业了。在开始动手写毕业论文的时候，我尴尬地发现，我对 Word 的掌握程度仅限于调节字体、保存导出这些傻瓜功能。曾想转战 Latex，但论文的段落格式要求调整起来还是用 Word 更为方便，经过一番痛苦缠斗之后，总算是有惊无险地完成了论文的写作和答辩。为了不让后来者重蹈覆辙，遂把相关资源整理成一份开箱即用的文档，供大家参考。</p>
-<h2 id="word">如何用 Word 写毕业论文</h2>
-<p>正如将大象装进冰箱需要三步，用 Word 写毕业论文也只需要简单三步：</p>
+<h1 id="_1">毕业论文排版</h1>
+<p>研究生毕业论文的格式要求极为繁琐：正文宋体 12 磅、标题黑体、三线表、图题居中、公式编号右对齐、每章另起一页……用 Word 手工维护这些格式既费时又容易在修改时崩掉。本页推荐本站作者开发的工具 <strong>md2thesis</strong>，只需用 Markdown 写论文正文，一条命令生成符合复旦大学集成电路与微纳电子创新学院格式要求的 <code>.docx</code> 文件。</p>
+<blockquote>
+<p><strong>仓库地址</strong>：<a href="https://github.com/Crys-Chen/Markdown2Docx">github.com/Crys-Chen/Markdown2Docx</a></p>
+</blockquote>
+<hr />
+<h2 id="_2">工具做了什么</h2>
+<p>用 Pandoc 将 Markdown 转换为 Word 文档，再用 python-docx 做格式后处理。所有排版细节自动完成：</p>
+<table>
+<thead>
+<tr>
+<th>自动处理项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>章节分页</td>
+<td>每个一级标题前插入分页符</td>
+</tr>
+<tr>
+<td>三线表</td>
+<td>自动添加顶线/表头线/底线，清除内部边框</td>
+</tr>
+<tr>
+<td>表题上移</td>
+<td>表格标题自动放置在表格上方</td>
+</tr>
+<tr>
+<td>公式编号右对齐</td>
+<td><code>\tag{}</code> 编号自动右对齐并与公式同行</td>
+</tr>
+<tr>
+<td>图题居中</td>
+<td>图片及标题自动居中排布</td>
+</tr>
+<tr>
+<td>封面/致谢/附录合并</td>
+<td>可选合并外部 <code>.docx</code> 与 Markdown 附录</td>
+</tr>
+</tbody>
+</table>
+<p>字体、字号、行距、缩进等参数全部集中在 <code>format.yaml</code>，不需要动主脚本。</p>
+<hr />
+<h2 id="_3">安装</h2>
+<p><strong>系统依赖</strong></p>
 <ul>
-<li>
-<p>确定论文的格式要求：通常学院都会下发毕业论文的格式要求（各级标题的字体字号、图例和引用的格式等等），如果更为贴心的话甚至会直接给出论文模版（如是此情况请直接跳转到下一步）。很不幸的是，我的学院并没有下发标准的论文格式要求，还提供了一份格式混乱几乎毫无用处的论文模版膈应我，被逼无奈之下我找到了北京大学研究生的<a href="https://github.com/PKUFlyingPig/Thesis-Template/blob/master/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97.pdf">论文格式要求</a>，并按照其要求制作了<a href="https://github.com/PKUFlyingPig/Thesis-Template/blob/master/%E8%AE%BA%E6%96%87%E6%A8%A1%E7%89%88.docx">一份模版</a>，大家需要的话自取，本人不承担无法毕业等任何责任。</p>
-</li>
-<li>
-<p>学习 Word 排版：到达这一步的童鞋分为两类，一是已经拥有了学院提供的标准模版，二是只有一份虚无缥缈的格式要求。那现在当务之急就是学习基础的 Word 排版技术，对于前者可以学会使用模版，对于后者则可以学会制作模版。此时切记不要雄心勃勃地选择一个十几个小时的 Word 教学视频开始头悬梁锥刺股，因为生产一份应付毕业的学术垃圾只要学半小时能上手就够了。我当时看的<a href="https://www.bilibili.com/video/BV1YQ4y1M73G?p=1&amp;vd_source=a4d76d1247665a7e7bec15d15fd12349">一个 B 站的教学视频</a>，短小精悍非常实用，全长半小时极速入门。</p>
-</li>
-<li>
-<p>生产学术垃圾：最容易的一步，大家八仙过海，各显神通吧，祝大家毕业顺利～～</p>
-</li>
+<li><a href="https://pandoc.org/installing.html">Pandoc</a> ≥ 3.0（用系统包管理器安装，不要用 pip）</li>
+<li>Python ≥ 3.9</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># macOS</span>
+brew<span class="w"> </span>install<span class="w"> </span>pandoc
+
+<span class="c1"># Ubuntu / Debian</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>pandoc
+</code></pre></div>
+<p><strong>Python 依赖</strong></p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Crys-Chen/Markdown2Docx.git
+<span class="nb">cd</span><span class="w"> </span>Markdown2Docx
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<p><code>requirements.txt</code> 包含：<code>python-docx</code>、<code>lxml</code>、<code>Pillow</code>、<code>docxcompose</code>、<code>pyyaml</code>。</p>
+<hr />
+<h2 id="_4">使用流程</h2>
+<p><strong>目录结构</strong></p>
+<div class="highlight"><pre><span></span><code>Markdown2Docx/
+├── md2thesis.py        # 主脚本
+├── format.yaml         # 格式参数
+├── pagebreak.lua       # Pandoc Lua 过滤器
+├── reference.docx      # Pandoc 样式模板（不要删）
+└── project/
+    ├── thesis_merged.md    ← 论文正文（唯一需要写的文件）
+    ├── figures/            ← 所有图片放这里
+    │   └── demo.png
+    ├── cover.docx          ← 可选：学院封面
+    └── thanks.docx         ← 可选：致谢页
+</code></pre></div>
+<p><strong>运行</strong></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>md2thesis.py
+</code></pre></div>
+<ul>
+<li>仅有 <code>thesis_merged.md</code>：输出 <code>project/thesis_draft.docx</code></li>
+<li>同时存在封面和致谢：输出 <code>project/thesis_final.docx</code></li>
+</ul>
+<hr />
+<h2 id="markdown">Markdown 写法速查</h2>
+<p><strong>章节标题</strong></p>
+<div class="highlight"><pre><span></span><code><span class="gh"># 第一章 绪论</span>
+
+<span class="gu">## 1.1 研究背景</span>
+
+<span class="gu">### 1.1.1 问题来源</span>
+</code></pre></div>
+<p><strong>图片</strong>（图题写在图片下方的紧接段落，以"图"开头）</p>
+<div class="highlight"><pre><span></span><code>![](figures/demo.png)
+
+图 1.1 系统整体架构
+</code></pre></div>
+<p><strong>表格</strong>（表题写在表格上方的紧接段落，以"表"开头）</p>
+<div class="highlight"><pre><span></span><code>表 2.1 各模块延迟对比
+
+| 模块 | 延迟 (ns) | 功耗 (mW) |
+|---|---|---|
+| ALU | 1.2 | 3.4 |
+| Cache | 0.8 | 1.1 |
+</code></pre></div>
+<p><strong>带编号公式</strong>（用 <code>\tag{}</code> 标注，脚本自动右对齐）</p>
+<div class="highlight"><pre><span></span><code>$$
+E = mc^2 \tag{1.1}
+$$
+</code></pre></div>
+<p><strong>参考文献</strong>（列表形式，放在文末）</p>
+<div class="highlight"><pre><span></span><code><span class="gu">## 参考文献</span>
+
+[1] 作者. 论文题目[J]. 期刊名, 年份, 卷(期): 页码.
+[2] Author. Title[C]. Conference, Year.
+</code></pre></div>
+<hr />
+<h2 id="_5">格式定制</h2>
+<p>所有格式参数在 <code>format.yaml</code> 中修改，无需改动脚本。常用项：</p>
+<div class="highlight"><pre><span></span><code><span class="nt">font</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">body_cjk</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;SimSun&quot;</span><span class="w">   </span><span class="c1"># 正文中文字体，改成&quot;FangSong&quot;即仿宋</span>
+<span class="w">  </span><span class="nt">heading_cjk</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;SimHei&quot;</span><span class="w">   </span><span class="c1"># 标题中文字体</span>
+
+<span class="nt">body</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">font_size_pt</span><span class="p">:</span><span class="w">         </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">  </span><span class="nt">line_spacing_pt</span><span class="p">:</span><span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w">   </span><span class="c1"># 固定行距 20 磅</span>
+<span class="w">  </span><span class="nt">first_line_indent_pt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24</span><span class="w">   </span><span class="c1"># 首行缩进</span>
+
+<span class="nt">heading1</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">font_size_pt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">16</span>
+<span class="w">  </span><span class="nt">bold</span><span class="p">:</span><span class="w">         </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<p>如果学院更新了格式规范，对照改 yaml 即可，一两分钟完成迁移。</p>
+<hr />
+<h2 id="_6">已知限制</h2>
+<ul>
+<li>目前格式预设针对复旦大学集成电路与微纳电子创新学院，其他学院需自行调整 <code>format.yaml</code>。</li>
+<li>封面页（含学校 Logo、签名线等）建议直接用学院提供的 Word 模板，通过 <code>cover.docx</code> 合并进来。</li>
+<li>复杂的跨行/跨列合并表格暂不支持，建议改用图片插入。</li>
 </ul>
 
 
@@ -13339,7 +13535,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-05-11
+    2026-06-12
   </span>
 
     
