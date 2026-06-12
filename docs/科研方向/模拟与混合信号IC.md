@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-设计让模拟世界与数字世界高速转换的"接口芯片"——ADC、DAC、锁相环、SerDes 是每块现代 SoC 都不可或缺的混合信号基础模块。
+设计让模拟世界与数字世界高速转换的"接口芯片"，ADC、DAC、锁相环、SerDes 是每块现代 SoC 都不可或缺的混合信号基础模块。
 
 <div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>

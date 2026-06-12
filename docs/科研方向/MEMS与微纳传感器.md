@@ -2,7 +2,7 @@
 hide:
   - navigation
 ---
-用半导体微加工工艺制造出与力学、热、声、化学等多物理场交互的微纳尺度器件——从手机里的加速度计到超声医学成像探头，MEMS 正是 IC 工艺与传感感知世界的交汇点。
+用半导体微加工工艺制造出与力学、热、声、化学等多物理场交互的微纳尺度器件，从手机里的加速度计到超声医学成像探头，MEMS 是 IC 工艺向传感世界延伸的核心技术。
 
 <div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>

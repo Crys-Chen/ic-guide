@@ -96,6 +96,7 @@ extra_javascript:
   - javascripts/orbit-galaxy.js
   - javascripts/hero-scroll.js
   - javascripts/stock-quote.js
+  - javascripts/search-cjk-highlight.js
   - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
 
 extra:

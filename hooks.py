@@ -65,44 +65,66 @@ def _hidden(text: str) -> str:
     return f'<span style="display:none">{text}</span>'
 
 
+def _cjk_tail(s: str, k: int) -> str:
+    """Trailing contiguous CJK run of s, up to k chars."""
+    t = ''
+    for ch in reversed(s):
+        if _CJK_CHAR.match(ch):
+            t = ch + t
+            if len(t) >= k:
+                break
+        else:
+            break
+    return t
+
+
 def _patch_text(text: str, max_n: int = 4) -> str:
-    """Insert cross-boundary n-grams as hidden spans at each ZWSP position."""
+    """Insert cross-boundary n-grams as hidden spans at each ZWSP position.
+
+    The left/right context spans MULTIPLE jieba segments, not just the two
+    adjacent ones. When jieba over-splits a 3-char name like '高鸣宇' into
+    单字 '高'/'鸣'/'宇', a per-boundary tail+head can only reach length 2, so
+    the 3-gram '高鸣宇' was never indexed and the name became unsearchable.
+    Accumulating the running CJK tail fixes 3- and 4-char phrases/names.
+    """
     if _ZWSP not in text:
         return text
 
     parts = text.split(_ZWSP)
     out = [parts[0]]
+    acc = _cjk_tail(parts[0], max_n - 1)  # running CJK tail of text joined so far
     for i in range(1, len(parts)):
-        prev, curr = parts[i - 1], parts[i]
-        # Tail of prev: last contiguous CJK run, up to max_n-1 chars.
-        tail = ''
-        for ch in reversed(prev):
-            if _CJK_CHAR.match(ch):
-                tail = ch + tail
-                if len(tail) >= max_n - 1:
+        curr = parts[i]
+        # Right context: leading CJK run starting at curr, extended across
+        # following fully-CJK segments until we have max_n-1 chars.
+        right = ''
+        j = i
+        while j < len(parts) and len(right) < max_n - 1:
+            part = parts[j]
+            seg = ''
+            for ch in part:
+                if _CJK_CHAR.match(ch):
+                    seg += ch
+                    if len(right) + len(seg) >= max_n - 1:
+                        break
+                else:
                     break
-            else:
+            right += seg
+            if len(seg) < len(part):  # run broke inside this segment
                 break
-        # Head of curr: first contiguous CJK run, up to max_n-1 chars.
-        head = ''
-        for ch in curr:
-            if _CJK_CHAR.match(ch):
-                head += ch
-                if len(head) >= max_n - 1:
-                    break
-            else:
-                break
-        # Generate cross-boundary n-grams of length 2..max_n.
+            j += 1
+        left = acc
         grams = set()
-        if tail and head:
+        if left and right:
             for L in range(2, max_n + 1):
                 for take_left in range(1, L):
                     take_right = L - take_left
-                    if take_left <= len(tail) and take_right <= len(head):
-                        grams.add(tail[-take_left:] + head[:take_right])
+                    if take_left <= len(left) and take_right <= len(right):
+                        grams.add(left[-take_left:] + right[:take_right])
         for g in sorted(grams):
             out.append(_hidden(g))
         out.append(curr)
+        acc = _cjk_tail(acc + curr, max_n - 1)
     return ''.join(out)
 
 

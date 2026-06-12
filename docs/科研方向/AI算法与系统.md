@@ -2,7 +2,7 @@
 hide:
   - navigation
 ---
-研究让机器"更聪明"的算法与系统基础——强化学习、大语言模型、AI Agent，以及让这些算法在真实系统上高效运行的软硬件基础设施。
+研究让机器更聪明的算法与系统基础，包括强化学习、大语言模型、AI Agent，以及让这些算法在真实系统上高效运行的软硬件基础设施。
 
 <div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>

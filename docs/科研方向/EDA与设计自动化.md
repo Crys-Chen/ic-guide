@@ -2,7 +2,7 @@
 hide:
   - navigation
 ---
-用算法和软件让芯片设计本身自动化——从逻辑综合、布局布线到用机器学习和大语言模型辅助设计决策。
+用算法和软件让芯片设计本身自动化，涵盖从逻辑综合、布局布线到用机器学习和大语言模型辅助设计决策的全流程。
 
 <div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>

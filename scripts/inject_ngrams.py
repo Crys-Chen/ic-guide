@@ -33,60 +33,65 @@ def _hidden(text: str) -> str:
     return f'<span style="display:none">{text}</span>'
 
 
-def patch_text(text: str, max_n: int = 4) -> str:
-    """Insert hidden n-gram spans at ZWSP boundaries inside the original text.
+def _cjk_tail(s: str, k: int) -> str:
+    """Trailing contiguous CJK run of s, up to k chars."""
+    t = ''
+    for ch in reversed(s):
+        if _CJK_CHAR.match(ch):
+            t = ch + t
+            if len(t) >= k:
+                break
+        else:
+            break
+    return t
 
-    Plus a trailing block of all unique CJK n-grams (covers cases where
-    original text is too short / disjoint to span boundaries).
+
+def patch_text(text: str, max_n: int = 4) -> str:
+    """Insert hidden cross-boundary n-gram spans at ZWSP positions.
+
+    Left/right context spans MULTIPLE jieba segments (running CJK tail), so
+    3- and 4-char names/phrases that jieba over-splits into 单字 (e.g.
+    '高鸣宇' → 高/鸣/宇) still get their full n-gram indexed. Without this,
+    such names were unsearchable.
     """
     if _ZWSP not in text:
         return text
 
-    # Split on ZWSP; rejoin with hidden cross-boundary n-gram spans.
     parts = text.split(_ZWSP)
     out = [parts[0]]
-    all_grams: set[str] = set()
+    acc = _cjk_tail(parts[0], max_n - 1)  # running CJK tail of text joined so far
     for i in range(1, len(parts)):
-        prev, curr = parts[i - 1], parts[i]
-        # Gather contiguous CJK tail of prev and head of curr.
-        # Tail of prev: last contiguous CJK chars (up to max_n-1).
-        tail = ''
-        for ch in reversed(prev):
-            if _CJK_CHAR.match(ch):
-                tail = ch + tail
-                if len(tail) >= max_n - 1:
+        curr = parts[i]
+        # Right context: leading CJK run from curr, extended across following
+        # fully-CJK segments until max_n-1 chars.
+        right = ''
+        j = i
+        while j < len(parts) and len(right) < max_n - 1:
+            part = parts[j]
+            seg = ''
+            for ch in part:
+                if _CJK_CHAR.match(ch):
+                    seg += ch
+                    if len(right) + len(seg) >= max_n - 1:
+                        break
+                else:
                     break
-            else:
+            right += seg
+            if len(seg) < len(part):
                 break
-        # Head of curr: first contiguous CJK chars (up to max_n-1).
-        head = ''
-        for ch in curr:
-            if _CJK_CHAR.match(ch):
-                head += ch
-                if len(head) >= max_n - 1:
-                    break
-            else:
-                break
-        # Generate cross-boundary n-grams of length 2..max_n.
+            j += 1
+        left = acc
         boundary_grams = set()
-        if tail and head:
+        if left and right:
             for L in range(2, max_n + 1):
                 for take_left in range(1, L):
                     take_right = L - take_left
-                    if take_left <= len(tail) and take_right <= len(head):
-                        boundary_grams.add(tail[-take_left:] + head[:take_right])
-        # Insert hidden spans at the boundary position (between prev and curr),
-        # so lunr's match position lands here — exactly between two visible CJK
-        # chars, which is what we want for excerpts.
+                    if take_left <= len(left) and take_right <= len(right):
+                        boundary_grams.add(left[-take_left:] + right[:take_right])
         for g in sorted(boundary_grams):
             out.append(_hidden(g))
-            all_grams.add(g)
         out.append(curr)
-    # Fallback: append all unique 2..max_n n-grams of contiguous CJK runs
-    # at the very end, in case some n-grams weren't covered by boundaries
-    # (e.g., n-grams entirely within one jieba-token are already a single
-    # chunk and never span ZWSP — but lunr already indexes those as the
-    # whole jieba token, so they're searchable as exact match).
+        acc = _cjk_tail(acc + curr, max_n - 1)
     return ''.join(out)
 
 
