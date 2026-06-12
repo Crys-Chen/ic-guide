@@ -7,7 +7,7 @@ site_description: >-
 repo_name: ic-guide
 repo_url: https://github.com/Crys-Chen/ic-guide
 
-copyright: Copyright &copy; 2021-present <a href="https://github.com/PKUFlyingPig" target="_blank" rel="noopener noreferrer">PKUFlyingPig</a>
+copyright: Copyright &copy; 2024-present <a href="https://github.com/Crys-Chen" target="_blank" rel="noopener noreferrer">Crys-Chen</a>
 
 theme:
   name: material
@@ -353,7 +353,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/pkuflyingpig/cs-self-learning/
+      link: https://github.com/Crys-Chen/ic-guide
   analytics:
     provider: google
     property: G-KJB4RXSKZG
