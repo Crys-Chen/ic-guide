@@ -5,17 +5,19 @@
 ## 子目录
 
 - **[数字逻辑基础](数字逻辑基础/FDU_MICR130003.md)** — 数电入门:逻辑门、布尔代数、组合/时序电路、状态机
-- **[硬件描述语言 (HDL)](HDL/index.md)** — Verilog / Chisel / HLS;像写代码一样描述硬件
+- **[硬件描述语言 (HDL)](HDL/Verilog/ZJU_digital_system.md)** — Verilog / Chisel / HLS;像写代码一样描述硬件
 - **[FPGA](FPGA/FDU_MICR130024.md)** — 半定制可编程数字芯片;既是教学平台也是研究方向
 - **[数字集成电路](数字集成电路/FDU_MICR130029.md)** — 在 CMOS 工艺层面把数字逻辑落到晶体管;关注延时/功耗/面积
 - **[数字验证](数字验证/index.md)** — testbench、断言、UVM(征集中)
-- **[ASIC 与数字后端](ASIC与数字后端/index.md)** — 综合、布局布线、时序收敛,从 RTL 走到 GDSII
+- **[ASIC 与数字后端](ASIC与数字后端/FDU_INFO130094.md)** — 综合、布局布线、时序收敛,从 RTL 走到 GDSII;NPTEL 两门分别讲物理设计和综合的算法
 
 ## 学习路径建议
 
 **数字逻辑基础 → 一门 HDL([Verilog](HDL/Verilog/ZJU_digital_system.md)) → FPGA(在板上跑) → 数字集成电路(深入物理实现) → ASIC 与数字后端(走完流片流程)**
 
 是 IC 数字方向的标准成长路径。配合数字 EDA 工具([Vivado](../EDA/vivado.md))上手,你就能从"读 RTL"走到"流片设计"。
+
+HDL 内部怎么选:**Verilog 是绕不开的起点**,[浙大课](HDL/Verilog/ZJU_digital_system.md)系统入门,[HDLBits](HDL/Verilog/HDLBits.md) 在线刷题(像 LeetCode 的 Verilog 版)最快上手;进阶做学术研究或大型项目学 [Chisel](HDL/Chisel/chisel_bootcamp.md)(RISC-V Chipyard 生态);[HLS](HDL/HLS/gaoyajun_hls.md) 把 C/C++ 综合成 RTL,了解即可,优先级低于前两者。
 
 ## 对应的科研方向
 
