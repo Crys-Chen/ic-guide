@@ -1827,14 +1827,32 @@
    short-circuits in setupGalaxy() at the same breakpoint so the
    rAF loop and stage sizing never run. */
 @media (max-width: 767px) {
-  .rg-root.rg-fullscreen {
-    margin: 1rem 0 !important;
-    width: auto;
+  /* 移动端：隐藏星图 hero 与文字 fallback，巡礼全景图直接成为方向入口 */
+  .rg-root.rg-fullscreen { display: none !important; }
+}
+
+/* ── 巡礼全景图：方块可点 + 移动端横向滚动 ───────────────── */
+.pano-fig { max-width: 100%; }
+.pano-fig a { cursor: pointer; }
+.pano-hint { display: none; }
+@media (max-width: 767px) {
+  .pano-fig {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -0.6rem; /* 抵消正文内边距，留足滑动宽度 */
   }
-  .rg-root.rg-fullscreen .rg-stage,
-  .rg-root .rg-center { display: none !important; }
-  .rg-fallback { display: block !important; }
-  .rg-fallback .dm-wrap { margin: 0; }
+  .pano-fig svg {
+    width: 760px !important;     /* 竖屏溢出横滑、横屏自然铺满，方块够大可点 */
+    max-width: none !important;
+    margin: 0.5rem auto !important;
+  }
+  .pano-hint {
+    display: block;
+    text-align: center;
+    font-size: 0.74rem;
+    color: #64748B;
+    margin: 0.2rem 0 0;
+  }
 }
 
 /* ════════════════════════════════════════════════════════
