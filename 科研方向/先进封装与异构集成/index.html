@@ -13779,6 +13779,7 @@
 <p>物理线（分析→大学物理→量子力学→固体→半导体→器件→工艺）通向封装本体，传热学管散热，电磁场与微波管高速互连的信号完整性，系统线（数字设计→EDA、体系结构）驱动 chiplet 设计分工。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     AN[分析] --&gt; PHY[大学物理]
+    AN --&gt; SIG[信号处理]
     PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
@@ -13786,10 +13787,12 @@
     PHY --&gt; HEAT[传热学]
     PHY --&gt; EM[电磁场与微波]
     MAT[材料] --&gt; PRO[集成电路工艺]
+    MAT --&gt; DEV
     DEV --&gt; PRO
     PRO --&gt; PKG[先进封装]
     MAT --&gt; PKG
-    SIG[信号处理] --&gt; MAS[模拟与射频]
+    SIG --&gt; MAS[模拟与射频]
+    DEV --&gt; MAS
     EM --&gt; MAS
     DIG[数字设计] --&gt; EDA[EDA]
     PKG --&gt; X[先进封装与异构集成]

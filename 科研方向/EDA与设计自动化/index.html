@@ -13685,21 +13685,29 @@
 <p>数学（离散 + 数值优化）和算法是内核，分析与代数是数值优化的前置，数字/模拟设计提供应用对象，器件模型支撑 SPICE 类仿真器，编译原理提供综合/HLS 理论，机器学习经 AI 交叉应用进场。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     AN[分析] --&gt; OPT[数值与优化]
+    AN --&gt; PROB[概率与统计]
     DS[代数] --&gt; OPT
+    DS --&gt; PROB
     DIS[离散数学] --&gt; DSA
+    DIS --&gt; DIG[数字设计]
     PY[编程入门] --&gt; DSA[数据结构与算法]
     DIS --&gt; X
     OPT --&gt; X[EDA与设计自动化]
     DSA --&gt; X
-    DIG[数字设计] --&gt; X
-    MAS[模拟与射频] --&gt; X
+    DSA --&gt; COM[编译原理]
+    DIG --&gt; X
+    DEV --&gt; MAS[模拟与射频]
+    MAS --&gt; X
     SP[半导体物理] --&gt; DEV[半导体器件]
     DEV --&gt; X
-    COM[编译原理] --&gt; X
+    COM --&gt; X
     EDAT[EDA] --&gt; X
-    PROB[概率与统计] --&gt; ML[机器学习]
+    PROB --&gt; ML[机器学习]
+    AN --&gt; ML
+    DS --&gt; ML
     ML --&gt; DL[深度学习]
-    DL --&gt; XAI[AI交叉应用]
+    ML --&gt; XAI[AI交叉应用]
+    DL --&gt; XAI
     XAI --&gt; X
 
     classDef math fill:#EBF4FF,stroke:#2C5282

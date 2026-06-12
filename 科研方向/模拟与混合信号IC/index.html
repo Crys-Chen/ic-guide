@@ -13754,6 +13754,7 @@
 <pre class="mermaid"><code>graph LR
     AN[分析] --&gt; PHY[大学物理]
     AN --&gt; SIG[信号处理]
+    AN --&gt; PROB[概率与统计]
     PROB[概率与统计] --&gt; SIG
     PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
@@ -13762,10 +13763,13 @@
     PHY --&gt; EM[电磁场与微波]
     EM --&gt; MAS[模拟与射频]
     DEV --&gt; MAS
+    DEV --&gt; PRO
     SIG --&gt; MAS
     PRO[集成电路工艺] --&gt; MAS
+    PRO --&gt; EDA
     MAS --&gt; X[模拟与混合信号IC]
     DIG[数字设计] --&gt; X
+    DIG --&gt; EDA
     EDA[EDA] --&gt; X
     TEST[测试与可靠性] --&gt; X
 

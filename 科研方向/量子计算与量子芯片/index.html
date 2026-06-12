@@ -14055,20 +14055,24 @@
 <p>量子力学和固体物理是理论基础，电磁场与微波是 IC 背景切入量子控制的关键，模拟/射频做读出电路，工艺和传热学决定芯片能否在极低温下工作。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     分析[分析] --&gt; QM
+    分析 --&gt; PHY[大学物理]
+    分析 --&gt; SIG[信号处理]
     代数[代数] --&gt; QM
-    PHY[大学物理] --&gt; QM[量子力学]
+    PHY --&gt; QM[量子力学]
+    PHY --&gt; EM[电磁场与微波]
+    PHY --&gt; HEAT[传热学]
     QM --&gt; QC[量子计算]
     INF[信息论] --&gt; QC
     QM --&gt; SS[固体物理]
     SS --&gt; Q
-    PHY --&gt; EM[电磁场与微波]
     EM --&gt; MAS[模拟与射频]
-    SIG[信号处理] --&gt; MAS
+    SIG --&gt; MAS
     MAS --&gt; Q[量子计算与量子芯片]
     QC --&gt; Q
     PRO[集成电路工艺] --&gt; Q
     MAT[材料] --&gt; Q
-    HEAT[传热学] --&gt; Q
+    MAT --&gt; PRO
+    HEAT --&gt; Q
 
     classDef math fill:#EBF4FF,stroke:#2C5282
     classDef phys fill:#FDE8D8,stroke:#C0530A

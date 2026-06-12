@@ -13661,8 +13661,10 @@
 <p>算法线（数学→ML→DL→SNN）提供神经形态计算模型，器件线（物理→半导体器件→前沿器件）提供忆阻器等新型存储单元，电路线与体系结构线决定芯片最终能实现什么。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     AN[分析] --&gt; PROB[概率与统计]
+    AN --&gt; PHY
     PROB --&gt; ML[机器学习]
     DS[代数] --&gt; ML
+    DS --&gt; PROB
     ML --&gt; DL[深度学习]
     DL --&gt; SNN[类脑与SNN]
     PHY[大学物理] --&gt; QM[量子力学]
@@ -13673,8 +13675,10 @@
     PRO[集成电路工艺] --&gt; FRO
     SYS[计算机系统基础] --&gt; ARCH[体系结构]
     DIG[数字设计] --&gt; ARCH
+    DIG --&gt; EDA
     SNN --&gt; X[类脑芯片]
     FRO --&gt; X
+    DEV --&gt; MAS
     MAS[模拟与射频] --&gt; X
     ARCH --&gt; X
     EDA[EDA] --&gt; X

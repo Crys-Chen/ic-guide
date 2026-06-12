@@ -13682,13 +13682,17 @@
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
-    MAT[材料] --&gt; PWR
+    MAT[材料] --&gt; DEV
+    MAT --&gt; PRO[集成电路工艺]
+    MAT --&gt; PWR
+    DEV --&gt; PRO
     DEV --&gt; PWR[功率半导体器件]
-    PRO[集成电路工艺] --&gt; PWR
+    DEV --&gt; MAS[模拟与射频]
+    PRO --&gt; PWR
     PHY --&gt; HEAT[传热学]
     PWR --&gt; X[功率半导体与宽禁带器件]
     HEAT --&gt; X
-    MAS[模拟与射频] --&gt; X
+    MAS --&gt; X
     TEST[测试与可靠性] --&gt; X
     EDA[EDA] --&gt; X
 

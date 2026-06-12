@@ -13668,7 +13668,9 @@
 <p>密码学线需要扎实的抽象代数（群/环/域）、数论（离散数学）和概率论（安全归约），ZKP/FHE 还需要格密码的优化背景；物理攻击线需要半导体器件和固体物理；后量子密码的动机来自量子力学。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     代数[代数] --&gt; CRY[密码学]
+    代数 --&gt; PROB
     DIS[离散数学] --&gt; CRY
+    DIS --&gt; DIG
     PROB[概率与统计] --&gt; CRY
     PROB --&gt; INF[信息论]
     OPT[数值与优化] --&gt; CRY
@@ -13683,6 +13685,7 @@
     DIG --&gt; SYS[计算机系统基础]
     EDA --&gt; ARCH[体系结构]
     SYS --&gt; ARCH
+    SYS --&gt; COM
     ARCH --&gt; OS[操作系统]
     ARCH --&gt; SEC
     OS --&gt; SEC

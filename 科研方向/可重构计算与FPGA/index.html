@@ -13793,20 +13793,27 @@
 <p>离散数学和编程打底，数字设计（含 HDL 和 FPGA 本体）是入口，EDA 是工具链，编译原理支撑 HLS，体系结构决定加速器设计空间，深度学习提供算法需求，操作系统和并行系统支撑运行时管理。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     DIS[离散数学] --&gt; DIG[数字设计]
-    PY[编程入门] --&gt; DSA[数据结构与算法]
+    DIS --&gt; DSA[数据结构与算法]
+    PY[编程入门] --&gt; DSA
+    PY --&gt; SYS[计算机系统基础]
     DIG --&gt; EDA[EDA]
+    DIG --&gt; SYS
     DSA --&gt; EDA
     DSA --&gt; COM[编译原理]
-    SYS[计算机系统基础] --&gt; ARCH[体系结构]
+    SYS --&gt; OS[操作系统]
+    SYS --&gt; COM
+    SYS --&gt; ARCH[体系结构]
     DIG --&gt; X[可重构计算与FPGA]
     EDA --&gt; X
     COM --&gt; X
     ARCH --&gt; ACC[AI加速器]
+    ARCH --&gt; PAR[并行与分布式系统]
     ML[机器学习] --&gt; DL[深度学习]
     DL --&gt; ACC
     ACC --&gt; X
-    OS[操作系统] --&gt; X
-    PAR[并行与分布式系统] --&gt; X
+    OS --&gt; PAR
+    OS --&gt; X
+    PAR --&gt; X
 
     classDef math fill:#F3E8FF,stroke:#553C9A
     classDef ckt fill:#FFFBEB,stroke:#B7791F
