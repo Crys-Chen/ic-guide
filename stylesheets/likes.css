@@ -1,4 +1,27 @@
 /* Professor like button styles */
+
+/* 卡片内点赞按钮固定到右上角，不占底部空间 */
+.md-typeset .grid.cards li,
+.md-typeset .grid.cards > ul > li,
+.grid.cards li {
+  position: relative !important;
+}
+
+.md-typeset .grid.cards li .like-btn,
+.md-typeset .grid.cards > ul > li .like-btn,
+.grid.cards li .like-btn {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  margin: 0 !important;
+}
+
+/* 给卡片首行（姓名行）留出按钮宽度，避免重叠 */
+.md-typeset .grid.cards li > p:first-of-type,
+.grid.cards li > p:first-of-type {
+  padding-right: 72px !important;
+}
+
 .like-th {
   width: 70px;
   text-align: center;
