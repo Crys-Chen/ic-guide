@@ -8,6 +8,5 @@ archive/
 *.docx
 *.xlsx.venv/
 /.claude/
-/.github/
 /__pycache__/
 todo.md
