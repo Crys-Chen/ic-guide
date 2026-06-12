@@ -92,8 +92,8 @@ hide:
   <text x="178" y="522" text-anchor="start" font-size="10.5" fill="#475569">模拟</text>
   <rect x="228" y="512" width="13" height="13" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.1"/>
   <text x="246" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字 / 模拟 交叉</text>
-  <rect x="298" y="269" width="104" height="116" rx="9" fill="#1E293B" opacity="0.16"/>
-  <rect x="296" y="266" width="104" height="116" rx="9" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.6"/>
+  <rect x="449" y="269" width="104" height="116" rx="9" fill="#1E293B" opacity="0.16"/>
+  <rect x="447" y="266" width="104" height="116" rx="9" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.6"/>
   <text x="499" y="317" text-anchor="middle" font-size="13" font-weight="bold" fill="#DC2626">射频与</text>
   <text x="499" y="332" text-anchor="middle" font-size="13" font-weight="bold" fill="#DC2626">毫米波IC</text>
 </svg></div>
