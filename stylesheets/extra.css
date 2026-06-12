@@ -2460,10 +2460,8 @@ html { scroll-behavior: smooth; }
 /* ════════════════════════════════════════════════════════════
    PageFind 搜索 overlay
    ════════════════════════════════════════════════════════════ */
-/* 滚动锁定 */
 body.pf-noscroll { overflow: hidden !important; }
 
-/* overlay 容器（默认隐藏；.pf-open 时显示） */
 #pf-overlay {
   display: none;
   position: fixed;
@@ -2471,68 +2469,114 @@ body.pf-noscroll { overflow: hidden !important; }
   z-index: 300;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 64px;
 }
 #pf-overlay.pf-open { display: flex; }
 
-/* 半透明背景幕 */
 #pf-bg {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, .45);
+  background: rgba(0, 0, 0, .54);
 }
 
-/* 搜索框容器 */
+/* 主搜索面板 — 贴近 Material 原生搜索的白色卡片风格 */
 #pf-box {
   position: relative;
   z-index: 1;
-  background: var(--md-default-bg-color, #fff);
-  border-radius: 10px;
-  width: min(660px, 92vw);
-  max-height: 76vh;
+  background: #fff;
+  border-radius: 4px;
+  width: min(700px, 94vw);
+  max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 10px 48px rgba(0, 0, 0, .28);
-  animation: pf-drop .15s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .30);
+  animation: pf-drop .12s ease;
+  /* 顶部复旦蓝细条，和 Material header 的下边线呼应 */
+  border-top: 3px solid #032168;
 }
 @keyframes pf-drop {
-  from { opacity: 0; transform: translateY(-8px); }
+  from { opacity: 0; transform: translateY(-6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-#pf-ui { padding: 16px 20px 20px; }
+#pf-ui { padding: 12px 16px 16px; }
 
-/* PageFind CSS 变量 — 对齐站点主题色 */
+/* PageFind CSS 变量 */
 #pf-ui {
-  --pagefind-ui-scale: 1;
+  --pagefind-ui-scale: 0.95;
   --pagefind-ui-primary: #032168;
-  --pagefind-ui-text: var(--md-default-fg-color, #1a1a1a);
-  --pagefind-ui-background: var(--md-default-bg-color, #fff);
-  --pagefind-ui-border: rgba(3, 33, 104, .15);
-  --pagefind-ui-tag: rgba(3, 33, 104, .08);
-  --pagefind-ui-border-radius: 6px;
+  --pagefind-ui-text: #1a1a1a;
+  --pagefind-ui-background: #fff;
+  --pagefind-ui-border: rgba(3, 33, 104, .18);
+  --pagefind-ui-tag: rgba(3, 33, 104, .07);
+  --pagefind-ui-border-radius: 3px;
   --pagefind-ui-font: 'Noto Sans SC', system-ui, sans-serif;
 }
 
-/* 搜索框输入边框 */
+/* 搜索输入框 — 更接近 Material 的 flat 风格 */
 .pagefind-ui__search-input {
-  border: 1.5px solid rgba(3, 33, 104, .25) !important;
+  border: 1.5px solid rgba(3, 33, 104, .22) !important;
+  border-radius: 3px !important;
+  font-size: 1rem !important;
+  padding-left: 2.6rem !important;
 }
 .pagefind-ui__search-input:focus {
   border-color: #032168 !important;
   outline: none !important;
-  box-shadow: 0 0 0 3px rgba(3, 33, 104, .12) !important;
+  box-shadow: 0 0 0 3px rgba(3, 33, 104, .10) !important;
 }
 
-/* 结果链接颜色 */
+/* 结果计数行 */
+.pagefind-ui__message {
+  font-size: .82rem !important;
+  color: #666 !important;
+  padding: 4px 0 8px !important;
+}
+
+/* 单条结果 */
+.pagefind-ui__result {
+  border-top: 1px solid rgba(3, 33, 104, .08) !important;
+  padding: 10px 0 !important;
+}
+.pagefind-ui__result:first-of-type { border-top: none !important; }
+
+/* 标题链接 */
 .pagefind-ui__result-link {
   color: #032168 !important;
+  font-weight: 600 !important;
+  font-size: .95rem !important;
+  text-decoration: none !important;
+  line-height: 1.4 !important;
 }
 .pagefind-ui__result-link:hover {
   text-decoration: underline !important;
+  text-underline-offset: 2px !important;
 }
 
-/* 移动端：overlay 顶部从 header 下方开始 */
+/* 摘要文本 */
+.pagefind-ui__result-excerpt {
+  font-size: .83rem !important;
+  color: #555 !important;
+  line-height: 1.65 !important;
+  margin-top: 4px !important;
+}
+
+/* 高亮词 — 蓝色底替换黄色 */
+.pagefind-ui mark,
+#pf-ui mark {
+  background: rgba(3, 33, 104, .13) !important;
+  color: #032168 !important;
+  border-radius: 2px !important;
+  padding: 0 1px !important;
+}
+
+/* 清除按钮 */
+.pagefind-ui__search-clear {
+  font-size: .8rem !important;
+  color: #888 !important;
+}
+
+/* 移动端 */
 @media screen and (max-width: 600px) {
-  #pf-overlay { padding-top: 56px; }
-  #pf-box { max-height: 85vh; }
+  #pf-overlay { padding-top: 48px; }
+  #pf-box { max-height: 88vh; border-radius: 0 0 4px 4px; }
 }
