@@ -57,4 +57,3 @@ graph LR
 - [功率半导体器件（SiC/GaN）](功率半导体器件/index.md)（待建）
 - [MEMS 器件与微纳加工](MEMS/index.md)（待建）
 - [先进封装与异构集成](先进封装/index.md)（待建）
-- [TCAD 器件仿真](TCAD仿真/index.md)（待建）
