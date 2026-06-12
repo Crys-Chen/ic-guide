@@ -9,3 +9,4 @@ archive/
 *.xlsx.venv/
 /.claude/
 /.github/
+/
