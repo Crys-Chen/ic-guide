@@ -343,6 +343,22 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[揭路](https://www.ime.tsinghua.edu.cn/info/1014/1813.htm)** <span class="badge-tsinghua">清华</span>
+
+    高精度ADC设计 · 混合架构数模转换 · 可重构混合信号电路
+
+-   **[潘思宁](https://www.ime.tsinghua.edu.cn/info/1014/1801.htm)** <span class="badge-tsinghua">清华</span>
+
+    精密传感器读出电路 · 频率基准电路 · 精密数据转换器
+
+-   **[王自强](https://www.ime.tsinghua.edu.cn/info/1014/1790.htm)** <span class="badge-tsinghua">清华</span>
+
+    高速串行接口PHY · CMOS模拟集成电路 · 传感器检测电路
+
+-   **[伍冬](https://www.ime.tsinghua.edu.cn/info/1015/1788.htm)** <span class="badge-tsinghua">清华</span>
+
+    图像传感器读出电路 · 非挥发存储阵列 · 模拟前端设计
+
 
 -   **[孙楠（Nan Sun）](https://www.nansunlab.com/)** <span class="badge-tsinghua">清华</span>
 

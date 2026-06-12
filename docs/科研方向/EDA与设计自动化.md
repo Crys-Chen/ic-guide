@@ -274,6 +274,10 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[苏菲](https://www.ime.tsinghua.edu.cn/info/1014/2266.htm)** <span class="badge-tsinghua">清华</span>
+
+    可测性设计 · Chiplet测试与诊断 · 硅生命周期管理
+
 
 -   **[喻文健](http://numbda.cs.tsinghua.edu.cn/~yuwj/)** <span class="badge-tsinghua">清华</span>
 

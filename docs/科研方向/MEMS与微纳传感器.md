@@ -271,6 +271,18 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[王晓红](https://www.ime.tsinghua.edu.cn/info/1015/1794.htm)** <span class="badge-tsinghua">清华</span>
+
+    MEMS振动能量收集 · 微型超级电容器 · 功率MEMS系统
+
+-   **[伍晓明](https://www.ime.tsinghua.edu.cn/info/1013/1785.htm)** <span class="badge-tsinghua">清华</span>
+
+    集成智能传感器 · MEMS能量收集 · 碳基纳电子器件
+
+-   **[杨轶](https://www.ime.tsinghua.edu.cn/info/1013/1779.htm)** <span class="badge-tsinghua">清华</span>
+
+    二维材料纳电子器件 · 柔性可穿戴传感 · 纳声学谐振器
+
 
 -   **[任天令](https://www.sic.tsinghua.edu.cn/info/1033/1545.htm)** <span class="badge-tsinghua">清华</span>
 

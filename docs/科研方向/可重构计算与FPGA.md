@@ -390,6 +390,14 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[方华军](https://www.ime.tsinghua.edu.cn/info/1014/1822.htm)** <span class="badge-tsinghua">清华</span>
+
+    可重构处理器架构 · 密码芯片设计 · 低功耗模数混合IC
+
+-   **[张春](https://www.ime.tsinghua.edu.cn/info/1014/1774.htm)** <span class="badge-tsinghua">清华</span>
+
+    FPGA深度学习加速 · 视觉SLAM协同设计 · 机器人实时计算
+
 
 -   **[尹首一](https://www.sic.tsinghua.edu.cn/info/1040/1567.htm) & [魏少军](https://www.sic.tsinghua.edu.cn/en/info/1083/1444.htm)** <span class="badge-tsinghua">清华</span>
 

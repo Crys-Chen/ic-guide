@@ -448,6 +448,18 @@ graph LR
 **境内**
 
 <div class="grid cards prof-collapse" markdown>
+-   **[付军](https://www.ime.tsinghua.edu.cn/info/1013/1821.htm)** <span class="badge-tsinghua">清华</span>
+
+    硅基毫米波射频IC · 异质结器件工艺 · 雷达与通信前端
+
+-   **[王燕](https://www.ime.tsinghua.edu.cn/info/1014/1793.htm)** <span class="badge-tsinghua">清华</span>
+
+    毫米波相控阵收发机 · CMOS射频前端 · 器件特性建模
+
+-   **[张雷](https://www.ime.tsinghua.edu.cn/info/1014/1773.htm)** <span class="badge-tsinghua">清华</span>
+
+    毫米波/太赫兹芯片 · 功率放大器设计 · 雷达收发机
+
 
 -   **[王志华](https://www.sic.tsinghua.edu.cn/info/1014/1791.htm)** <span class="badge-tsinghua">清华</span>
 
