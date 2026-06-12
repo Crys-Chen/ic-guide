@@ -2456,3 +2456,83 @@ html { scroll-behavior: smooth; }
 /* 巡礼正文（并入星图页下方）限宽居中；初始隐藏防止星图加载前闪现 */
 .rg-essay { max-width: 54rem; margin: 1.5rem auto 3rem; padding: 0 1rem; opacity: 0; }
 .rg-essay .md-typeset, .rg-essay { line-height: 1.95; }
+
+/* ════════════════════════════════════════════════════════════
+   PageFind 搜索 overlay
+   ════════════════════════════════════════════════════════════ */
+/* 滚动锁定 */
+body.pf-noscroll { overflow: hidden !important; }
+
+/* overlay 容器（默认隐藏；.pf-open 时显示） */
+#pf-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+}
+#pf-overlay.pf-open { display: flex; }
+
+/* 半透明背景幕 */
+#pf-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+}
+
+/* 搜索框容器 */
+#pf-box {
+  position: relative;
+  z-index: 1;
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 10px;
+  width: min(660px, 92vw);
+  max-height: 76vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 48px rgba(0, 0, 0, .28);
+  animation: pf-drop .15s ease;
+}
+@keyframes pf-drop {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#pf-ui { padding: 16px 20px 20px; }
+
+/* PageFind CSS 变量 — 对齐站点主题色 */
+#pf-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #032168;
+  --pagefind-ui-text: var(--md-default-fg-color, #1a1a1a);
+  --pagefind-ui-background: var(--md-default-bg-color, #fff);
+  --pagefind-ui-border: rgba(3, 33, 104, .15);
+  --pagefind-ui-tag: rgba(3, 33, 104, .08);
+  --pagefind-ui-border-radius: 6px;
+  --pagefind-ui-font: 'Noto Sans SC', system-ui, sans-serif;
+}
+
+/* 搜索框输入边框 */
+.pagefind-ui__search-input {
+  border: 1.5px solid rgba(3, 33, 104, .25) !important;
+}
+.pagefind-ui__search-input:focus {
+  border-color: #032168 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(3, 33, 104, .12) !important;
+}
+
+/* 结果链接颜色 */
+.pagefind-ui__result-link {
+  color: #032168 !important;
+}
+.pagefind-ui__result-link:hover {
+  text-decoration: underline !important;
+}
+
+/* 移动端：overlay 顶部从 header 下方开始 */
+@media screen and (max-width: 600px) {
+  #pf-overlay { padding-top: 56px; }
+  #pf-box { max-height: 85vh; }
+}
