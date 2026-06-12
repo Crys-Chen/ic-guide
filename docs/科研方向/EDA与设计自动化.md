@@ -84,13 +84,16 @@ hide:
   <text x="612" y="458" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">先进封装与系统集成</text>
   <rect x="92" y="472" width="1040" height="30" rx="5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2"/>
   <text x="612" y="491" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">半导体器件与先进工艺</text>
+  </g>
   <rect x="92" y="512" width="13" height="13" rx="2" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.1"/>
   <text x="110" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字</text>
   <rect x="160" y="512" width="13" height="13" rx="2" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.1"/>
   <text x="178" y="522" text-anchor="start" font-size="10.5" fill="#475569">模拟</text>
   <rect x="228" y="512" width="13" height="13" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.1"/>
   <text x="246" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字 / 模拟 交叉</text>
-  <rect x="88" y="404" width="1048" height="36" rx="8" fill="none" stroke="#0F172A" stroke-width="3.5"/>
+  <rect x="92" y="406" width="1040" height="40" rx="6" fill="#0F172A" opacity="0.12"/>
+  <rect x="92" y="402" width="1040" height="40" rx="6" fill="#F8FAFC" stroke="#334155" stroke-width="2.6"/>
+  <text x="612" y="427" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#1E293B">EDA 与设计自动化</text>
 </svg></div>
 
 ## 这个方向在研究什么

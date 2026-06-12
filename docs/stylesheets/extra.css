@@ -78,6 +78,14 @@
   background: rgba(3,33,104,.08);
 }
 
+/* ─── 正文重点句下划线（科研方向文章用 <u> 标注观点句） ── */
+.md-typeset u {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(3, 33, 104, .55);
+}
+
 /* ─── 表格 ──────────────────────────────────────────────── */
 .md-typeset table:not([class]) {
   display: table;
