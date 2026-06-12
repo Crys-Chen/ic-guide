@@ -4,9 +4,9 @@
 
 ## 推荐课程
 
-- **[UCB EE16A&B: Designing Information Devices and Systems](EE16.md)** — UC Berkeley 把电路+信号+线代+控制压成一门入门课,**国外最有名的"电路通识"课**
-- **[UCB EE120: Signals and Systems](../信号处理/信号与系统/EE120.md)** — Berkeley 信号与系统经典版
-- **[MIT 6.007: Signals and Systems](../信号处理/信号与系统/Signals_and_Systems_AVO.md)** — MIT 信号系统入门版
+- **[UCB EE16A&B: Designing Information Devices and Systems](UCB_EE16AB.md)** — UC Berkeley 把电路+信号+线代+控制压成一门入门课,**国外最有名的"电路通识"课**
+- **[UCB EE120: Signals and Systems](../信号处理/信号与系统/UCB_EE120.md)** — Berkeley 信号与系统经典版
+- **[MIT 6.007: Signals and Systems](../信号处理/信号与系统/MIT_6.007.md)** — MIT 信号系统入门版
 
 ## 对应的科研方向
 

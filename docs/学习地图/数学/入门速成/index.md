@@ -4,9 +4,9 @@
 
 ## 课程与覆盖范围
 
-- **[工程数学及概率方法(复旦)](MICR130008.md)** — 复变函数、积分变换、概率论的工程子集;深入对应[分析/复变函数](../分析/复变函数/XJTU_complex.md)和[概率与统计](../概率与统计/ZJU_probability.md)
-- **[UCB CS70: Discrete Math and Probability Theory](CS70.md)** — 离散数学 + 概率论,每个模块都对应实际算法;深入对应[离散数学](../离散数学/PKU_discrete.md)和[概率与统计](../概率与统计/ZJU_probability.md)
-- **[MIT 6.042J: Mathematics for Computer Science](6.042J.md)** — 同样是离散 + 概率的"math for CS"路线,与 CS70 二选一
+- **[工程数学及概率方法(复旦)](FDU_MICR130008.md)** — 复变函数、积分变换、概率论的工程子集;深入对应[分析/复变函数](../分析/复变函数/XJTU_complex.md)和[概率与统计](../概率与统计/ZJU_probability.md)
+- **[UCB CS70: Discrete Math and Probability Theory](UCB_CS70.md)** — 离散数学 + 概率论,每个模块都对应实际算法;深入对应[离散数学](../离散数学/PKU_discrete.md)和[概率与统计](../概率与统计/ZJU_probability.md)
+- **[MIT 6.042J: Mathematics for Computer Science](MIT_6.042J.md)** — 同样是离散 + 概率的"math for CS"路线,与 CS70 二选一
 
 ## 怎么选
 

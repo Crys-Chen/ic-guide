@@ -25,7 +25,7 @@ graph LR
 
 ### 1. 波动光学基础
 
-**[MIT 8.03: Vibrations and Waves](MIT8.03.md)** — Walter Lewin 主讲的 MIT 经典波动课;光的干涉、衍射、偏振讲得极其直观,YouTube + B 站全公开。
+**[MIT 8.03: Vibrations and Waves](MIT_8.03.md)** — Walter Lewin 主讲的 MIT 经典波动课;光的干涉、衍射、偏振讲得极其直观,YouTube + B 站全公开。
 
 > 如果你已学过大学物理的波动光学章节,可跳过此课直接进 #2。
 

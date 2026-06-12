@@ -5,12 +5,12 @@
 ## 子目录
 
 - **[Verilog](Verilog/ZJU_digital_system.md)** — 业界事实标准,语法类似 C 语言;**做数字 IC 必学的第一门 HDL**
-- **[Chisel](Chisel/chisel-bootcamp.md)** — 基于 Scala 的现代 HDL,参数化能力强,适合大型 SoC(RISC-V Rocket Chip 用此构建)
+- **[Chisel](Chisel/chisel_bootcamp.md)** — 基于 Scala 的现代 HDL,参数化能力强,适合大型 SoC(RISC-V Rocket Chip 用此构建)
 - **[HLS（高层次综合）](HLS/gaoyajun_hls.md)** — 把 C/C++ 直接综合成 RTL
 
 ## 学习路径建议
 
-**Verilog 是绕不开的起点**。[HDLBits](Verilog/HDLBits.md) 在线刷题(像 LeetCode 的 Verilog 版)是最快入门的方式;[Nandland](../FPGA/nandland.md) 的图文教程适合零基础(已归入 FPGA 目录);[UCB EECS151/251A](../数字集成电路/EECS151.md) 是含 RISC-V Project 的完整数字设计课(已归入数字集成电路目录)。
+**Verilog 是绕不开的起点**。[HDLBits](Verilog/HDLBits.md) 在线刷题(像 LeetCode 的 Verilog 版)是最快入门的方式;[Nandland](../FPGA/nandland.md) 的图文教程适合零基础(已归入 FPGA 目录);[UCB EECS151/251A](../数字集成电路/UCB_EECS151.md) 是含 RISC-V Project 的完整数字设计课(已归入数字集成电路目录)。
 
 进阶想做学术研究 / 大型项目,可学 Chisel(尤其做 RISC-V Chipyard 生态);HLS(高层次综合)也值得了解,但优先级低于 Verilog/Chisel。
 

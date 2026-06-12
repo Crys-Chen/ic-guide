@@ -6,8 +6,8 @@
 
 ## 推荐课程
 
-- **[嵌入式处理器与芯片系统设计(Bilibili,韩军)](junhan.md)** — 复旦微电子韩军老师课程的 B 站录像,**复旦微电培养方案中唯一系统讲体系结构的课**
-- **[Cornell ECE 4760: Designing with Microcontrollers](cornell_ece4760.md)** — Cornell 的经典嵌入式课(Bruce Land 主讲),用 Pi Pico/AVR 教全栈嵌入式;**国外名校嵌入式入门首选**
+- **[嵌入式处理器与芯片系统设计(Bilibili,韩军)](FDU_hanjun.md)** — 复旦微电子韩军老师课程的 B 站录像,**复旦微电培养方案中唯一系统讲体系结构的课**
+- **[Cornell ECE 4760: Designing with Microcontrollers](Cornell_ECE4760.md)** — Cornell 的经典嵌入式课(Bruce Land 主讲),用 Pi Pico/AVR 教全栈嵌入式;**国外名校嵌入式入门首选**
 
 ## 对应的科研方向
 

@@ -4,10 +4,10 @@
 
 ## 推荐课程
 
-- **[Coursera: Nand2Tetris](N2T.md)** — 经典入门:**从与门到操作系统的全栈课程**,亲手实现一个简易 CPU
-- **[UCB CS61C](CS61C.md)** — Berkeley 体系结构入门,RISC-V ISA + 实战 Project
-- **[ETHz: Digital Design and Computer Architecture (DDCA)](DDCA.md)** — Onur Mutlu 主讲,YouTube 全公开;**逻辑清晰、内容现代,新手最好的本科课** ★
-- **[ETHz: Computer Architecture](CA.md)** — Onur Mutlu 的研究生进阶版,讲的是 ISCA/MICRO 级别的话题
+- **[Coursera: Nand2Tetris](Coursera_nand2tetris.md)** — 经典入门:**从与门到操作系统的全栈课程**,亲手实现一个简易 CPU
+- **[UCB CS61C](UCB_CS61C.md)** — Berkeley 体系结构入门,RISC-V ISA + 实战 Project
+- **[ETHz: Digital Design and Computer Architecture (DDCA)](ETH_DDCA.md)** — Onur Mutlu 主讲,YouTube 全公开;**逻辑清晰、内容现代,新手最好的本科课** ★
+- **[ETHz: Computer Architecture](ETH_CA.md)** — Onur Mutlu 的研究生进阶版,讲的是 ISCA/MICRO 级别的话题
 - **[清华:计算机组成原理](THU_computer_org.md)** — 中文计组体系课,57 讲完整搬运
 - **[国科大胡伟武:计算机体系结构](UCAS_hu_archbase.md)** — 龙芯首席科学家亲授,配套开源教材
 

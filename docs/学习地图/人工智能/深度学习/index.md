@@ -6,14 +6,14 @@
 
 ## 推荐课程
 
-- **[Coursera: Deep Learning(吴恩达)](CS230.md)** — 5 课系列入门,口碑爆棚
-- **[Stanford CS231n](CS231.md)** — Stanford 计算机视觉与 CNN 经典 ★
-- **[Stanford CS224n](CS224n.md)** — Stanford NLP 与 Transformer 经典 ★
-- **[Stanford CS224w](CS224w.md)** — Stanford 图神经网络
-- **[李宏毅机器学习(国立台湾大学)](LHY.md)** — **中文圈最受欢迎的深度学习课**,讲法生动 ★
-- **[李沐:动手学深度学习 v2](d2l_limu.md)** — 中文 DL 实践课,Jupyter Notebook 把每个模型亲手搭一遍
-- **[UMich EECS 498-007: Deep Learning for Computer Vision](EECS498-007.md)** — Justin Johnson 主讲,Stanford CS231n 的扩展版
-- **[UCB CS285](CS285.md)** — Berkeley 深度强化学习
+- **[Coursera: Deep Learning(吴恩达)](Coursera_DL.md)** — 5 课系列入门,口碑爆棚
+- **[Stanford CS231n](Stanford_CS231n.md)** — Stanford 计算机视觉与 CNN 经典 ★
+- **[Stanford CS224n](Stanford_CS224n.md)** — Stanford NLP 与 Transformer 经典 ★
+- **[Stanford CS224w](Stanford_CS224w.md)** — Stanford 图神经网络
+- **[李宏毅机器学习(国立台湾大学)](NTU_lihongyi.md)** — **中文圈最受欢迎的深度学习课**,讲法生动 ★
+- **[李沐:动手学深度学习 v2](limu_d2l.md)** — 中文 DL 实践课,Jupyter Notebook 把每个模型亲手搭一遍
+- **[UMich EECS 498-007: Deep Learning for Computer Vision](UMich_EECS498-007.md)** — Justin Johnson 主讲,Stanford CS231n 的扩展版
+- **[UCB CS285](UCB_CS285.md)** — Berkeley 深度强化学习
 - **[补充资源](补充资源.md)** — 花书、d2l 等中英文教材推荐
 
 ## 学习路径建议

@@ -6,8 +6,8 @@
 
 ## 推荐课程
 
-- **[NJU 软件分析](NJU-SoftwareAnalysis.md)** — 南京大学谭添老师课程,**国内中文 PL 入门首选**
-- **[PKU 软件分析](PKU-SoftwareAnalysis.md)** — 北大版本
+- **[NJU 软件分析](NJU_software_analysis.md)** — 南京大学谭添老师课程,**国内中文 PL 入门首选**
+- **[PKU 软件分析](PKU_software_analysis.md)** — 北大版本
 
 ## 对应的科研方向
 

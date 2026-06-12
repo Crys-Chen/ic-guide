@@ -8,7 +8,7 @@
 
 - **[中科大：并行计算](USTC_parallel.md)** — 中文，MPI + OpenMP + CUDA 编程模型，理论与实践兼顾 ★
 - **[高性能并行编程（parallel101）](parallel101.md)** — 中文实战课，CUDA / TBB / ISPC，适合快速上手 ★
-- **[CMU 15-418 / Stanford CS149](CS149.md)** — 并行计算经典课，向量化、cache coherence、共享内存编程模型 ★
+- **[CMU 15-418 / Stanford CS149](Stanford_CS149.md)** — 并行计算经典课，向量化、cache coherence、共享内存编程模型 ★
 
 GPU 硬件微架构（warp 调度、HBM、Tensor Core）见 **[GPU 体系结构](../GPU体系结构/index.md)**。
 

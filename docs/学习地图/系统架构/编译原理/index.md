@@ -6,10 +6,10 @@
 
 ## 推荐课程
 
-- **[Stanford CS143](CS143.md)** — Stanford 经典编译原理课,完整实现 COOL 语言编译器
-- **[NJU 编译原理](NJU-Compilers.md)** — 南京大学 李樾、谭添 主讲,**国内中文编译原理课首选** ★
-- **[USTC 编译原理与技术](USTC-Compilers.md)** — 中科大版本
-- **[KAIST CS420](CS420.md)** — 韩国 KAIST 现代编译原理课,LLVM-based
+- **[Stanford CS143](Stanford_CS143.md)** — Stanford 经典编译原理课,完整实现 COOL 语言编译器
+- **[NJU 编译原理](NJU_compilers.md)** — 南京大学 李樾、谭添 主讲,**国内中文编译原理课首选** ★
+- **[USTC 编译原理与技术](USTC_compilers.md)** — 中科大版本
+- **[KAIST CS420](KAIST_CS420.md)** — 韩国 KAIST 现代编译原理课,LLVM-based
 
 ## 学习路径建议
 

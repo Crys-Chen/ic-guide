@@ -6,12 +6,12 @@
 
 ## 推荐课程
 
-- **[Coursera: Machine Learning(吴恩达)](ML.md)** — 全球最有名的 ML 入门课,新版用 Python+TensorFlow
-- **[Stanford CS229](CS229.md)** — 吴恩达 Stanford 课,**理论严谨度高于 Coursera 版** ★
-- **[UCB CS189](CS189.md)** — Berkeley 机器学习,数学要求更严
-- **[UCB Data100](Data100.md)** — Berkeley 数据科学(实战导向,Python + SQL,适合做数据驱动研究)
+- **[Coursera: Machine Learning(吴恩达)](Coursera_ML.md)** — 全球最有名的 ML 入门课,新版用 Python+TensorFlow
+- **[Stanford CS229](Stanford_CS229.md)** — 吴恩达 Stanford 课,**理论严谨度高于 Coursera 版** ★
+- **[UCB CS189](UCB_CS189.md)** — Berkeley 机器学习,数学要求更严
+- **[UCB Data100](UCB_Data100.md)** — Berkeley 数据科学(实战导向,Python + SQL,适合做数据驱动研究)
 - **[南大周志华:机器学习导论](NJU_zhou_ML.md)** — 西瓜书作者亲授,中文理论体系最完整
-- **[台大李宏毅:机器学习](../深度学习/LHY.md)** — 中文入门"百科全书",每年更新前沿;因内容以深度学习为主,收录在深度学习目录
+- **[台大李宏毅:机器学习](../深度学习/NTU_lihongyi.md)** — 中文入门"百科全书",每年更新前沿;因内容以深度学习为主,收录在深度学习目录
 - **[补充资源](补充资源.md)** — 西瓜书 + 林轩田 + Murphy 等中英文教材推荐
 
 ## 学习路径建议

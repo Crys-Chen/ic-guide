@@ -6,12 +6,12 @@
 
 ## 推荐课程
 
-- **[数据结构与算法(复旦)](MICR130009.md)** — 复旦校内课
-- **[UCB CS61B](CS61B.md)** — Berkeley 经典数据结构课,Java 实现,Project 系列(BYOW、Gitlet)是公认的好作业 ★
-- **[Coursera: Algorithms I & II](Algo.md)** — Princeton 的 Sedgewick 主讲,经典中的经典
-- **[MIT 6.006](6.006.md)** — MIT 算法导论入门版
-- **[MIT 6.046](6.046.md)** — MIT 算法导论进阶版
-- **[UCB CS170](CS170.md)** — Berkeley 算法理论课
+- **[数据结构与算法(复旦)](FDU_MICR130009.md)** — 复旦校内课
+- **[UCB CS61B](UCB_CS61B.md)** — Berkeley 经典数据结构课,Java 实现,Project 系列(BYOW、Gitlet)是公认的好作业 ★
+- **[Coursera: Algorithms I & II](Coursera_algorithms.md)** — Princeton 的 Sedgewick 主讲,经典中的经典
+- **[MIT 6.006](MIT_6.006.md)** — MIT 算法导论入门版
+- **[MIT 6.046](MIT_6.046.md)** — MIT 算法导论进阶版
+- **[UCB CS170](UCB_CS170.md)** — Berkeley 算法理论课
 
 ## 学习路径建议
 

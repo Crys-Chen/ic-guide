@@ -6,10 +6,10 @@
 
 ## 推荐课程
 
-- **[MIT 6.S081](MIT6.S081.md)** — MIT 经典 OS 课,xv6 教学操作系统(Unix 风格)读+写完整 ★
-- **[UCB CS162](CS162.md)** — Berkeley OS,Pintos 项目
-- **[NJU OS](NJUOS.md)** — 南京大学 蒋炎岩 主讲,**国内中文 OS 课的最高水平** ★;深入讲并发、虚拟化等现代主题
-- **[HIT OS](HITOS.md)** — 哈工大李治军,Linux 0.11 内核精讲
+- **[MIT 6.S081](MIT_6.S081.md)** — MIT 经典 OS 课,xv6 教学操作系统(Unix 风格)读+写完整 ★
+- **[UCB CS162](UCB_CS162.md)** — Berkeley OS,Pintos 项目
+- **[NJU OS](NJU_OS.md)** — 南京大学 蒋炎岩 主讲,**国内中文 OS 课的最高水平** ★;深入讲并发、虚拟化等现代主题
+- **[HIT OS](HIT_OS.md)** — 哈工大李治军,Linux 0.11 内核精讲
 
 ## 学习路径建议
 

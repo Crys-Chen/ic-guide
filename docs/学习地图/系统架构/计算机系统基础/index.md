@@ -4,9 +4,9 @@
 
 ## 推荐课程
 
-- **[计算机组成原理(复旦)](MICR130038.md)** — 复旦校内课
-- **[CMU 15-213: CSAPP](CSAPP.md)** — **公认最好的计算机系统课** ★;教材《Computer Systems: A Programmer's Perspective》是经典中的经典,Lab(Bomb Lab、Buffer Lab、Malloc Lab、Shell Lab 等)的设计水平极高
-- **[Stanford CS110](CS110.md)** — Stanford 系统编程课,与 CSAPP 互补
+- **[计算机组成原理(复旦)](FDU_MICR130038.md)** — 复旦校内课
+- **[CMU 15-213: CSAPP](CMU_15-213.md)** — **公认最好的计算机系统课** ★;教材《Computer Systems: A Programmer's Perspective》是经典中的经典,Lab(Bomb Lab、Buffer Lab、Malloc Lab、Shell Lab 等)的设计水平极高
+- **[Stanford CS110](Stanford_CS110.md)** — Stanford 系统编程课,与 CSAPP 互补
 
 ## 对应的科研方向
 

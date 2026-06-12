@@ -460,8 +460,8 @@
 
 /* ─── A: 嵌套列表左侧竖线 ───────────────────────────────── */
 .md-nav--primary .md-nav .md-nav__list {
-  padding-left: .5rem;
-  margin-left: .5rem;
+  padding-left: .3rem;
+  margin-left: .35rem;
   border-left: 1px solid var(--md-default-fg-color--lightest);
 }
 
@@ -472,8 +472,12 @@
 /* ─── C: 链接基础：圆角 + 过渡（桌面端才有 hover 动效） ─── */
 .md-nav--primary .md-nav__link {
   border-radius: 4px;
-  font-size: .8rem;
+  font-size: .75rem;
+  line-height: 1.3;
 }
+
+/* 课程名常多行换行：收紧行内行高、拉开条目间距，与「下一门课」区分开 */
+.md-nav--primary .md-nav__item { margin-top: .12rem; }
 
 @media screen and (min-width: 76.25em) {
   .md-nav--primary .md-nav__link {

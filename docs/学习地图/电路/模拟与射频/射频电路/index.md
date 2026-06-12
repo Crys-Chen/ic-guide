@@ -7,15 +7,15 @@
 先学板级,再上片:
 
 1. **高频电子线路(板级)** — 传输线、S 参数、阻抗匹配、寄生效应;进入 GHz 频段的基本工具
-    - [西电:高频电子线路](Xidian_high_freq.md)
+    - [西电:高频电子线路](XDU_high_freq.md)
     - [川大刘长军:射频通信电路](SCU_RF_comm.md)
 2. **射频集成电路(片上)** — LNA、PA、混频器、VCO、PLL;无线通信收发机的核心模块
     - [复旦殷韵:射频电路设计](FDU_yin_RFIC.md)
     - [成电:射频集成电路](UESTC_RFIC.md)
     - [Razavi RF Microelectronics (UCLA EE164)](razavi_rf.md)
-    - [UCB EE142: IC for Communications](EE142.md)
+    - [UCB EE142: IC for Communications](UCB_EE142.md)
 
-先修是[模拟电子线路](../模拟电子线路/MICR130002.md)和[模拟集成电路](../模拟集成电路/MICR130030.md);信号侧基础见[信号与系统](../../信号处理/信号与系统/MICR130004.md)。
+先修是[模拟电子线路](../模拟电子线路/FDU_MICR130002.md)和[模拟集成电路](../模拟集成电路/FDU_MICR130030.md);信号侧基础见[信号与系统](../../信号处理/信号与系统/FDU_MICR130004.md)。
 
 ## 对应的科研方向
 

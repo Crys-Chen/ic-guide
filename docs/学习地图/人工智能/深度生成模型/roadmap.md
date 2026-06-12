@@ -8,13 +8,13 @@
 
 覆盖 VAE、GAN、Flow、Diffusion 等主流架构，推荐按顺序选择：
 
-- [MIT 6.S184](MIT6.S184.md) — 以微分方程视角讲解 Flow Matching 与 Diffusion，数学严谨，有配套小实验
-- [UCB CS294-158: Deep Unsupervised Learning](CS294-158.md) — Pieter Abbeel 主讲，内容最全面，作业需从头实现模型，极为硬核
+- [MIT 6.S184](MIT_6.S184.md) — 以微分方程视角讲解 Flow Matching 与 Diffusion，数学严谨，有配套小实验
+- [UCB CS294-158: Deep Unsupervised Learning](UCB_CS294-158.md) — Pieter Abbeel 主讲，内容最全面，作业需从头实现模型，极为硬核
 
 ## 大语言模型
 
-- [Stanford CS336: Language Modeling from Scratch](../大语言模型/CS336.md) — 从零构建 LLM 全链路，最硬核，推荐有系统能力追求的同学
-- [CMU 11-711: Advanced NLP](../大语言模型/CMU11-711.md) — 各子方向广泛覆盖，适合建立宏观认知
+- [Stanford CS336: Language Modeling from Scratch](../大语言模型/Stanford_CS336.md) — 从零构建 LLM 全链路，最硬核，推荐有系统能力追求的同学
+- [CMU 11-711: Advanced NLP](../大语言模型/CMU_11-711.md) — 各子方向广泛覆盖，适合建立宏观认知
 
 ## 延伸阅读
 

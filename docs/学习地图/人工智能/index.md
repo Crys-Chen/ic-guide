@@ -42,9 +42,9 @@ graph TB
 
 **[深度生成模型](深度生成模型/)** — VAE、GAN、扩散模型；了解 AI 前沿模型的工作原理与计算需求。
 
-**[大语言模型](大语言模型/CS336.md)** — CS336 from scratch、CMU 11-711、OpenBMB；LLM 的训练与推理，当前 AI 系统研究的主要工作负载。
+**[大语言模型](大语言模型/Stanford_CS336.md)** — CS336 from scratch、CMU 11-711、OpenBMB；LLM 的训练与推理，当前 AI 系统研究的主要工作负载。
 
-**[强化学习](强化学习/xhu_zhao_RL.md)** — 赵世钰数学原理 + David Silver 经典；ML for EDA / 机器人控制策略的核心算法。
+**[强化学习](强化学习/Westlake_zhao_RL.md)** — 赵世钰数学原理 + David Silver 经典；ML for EDA / 机器人控制策略的核心算法。
 
 **[类脑与SNN](类脑与SNN/index.md)** — 脉冲神经网络基础资源；目前无完整公开课，收录 EPFL Gerstner / snnTorch 等次优资源。
 

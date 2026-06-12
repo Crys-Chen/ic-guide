@@ -7,8 +7,8 @@
 ## 推荐课程
 
 - **[学习路线图(Yao Fu)](roadmap.md)** — 进阶机器学习理论的完整学习路径
-- **[CMU 10-708: Probabilistic Graphical Models](CMU10-708.md)** — CMU 概率图模型经典课 ★
-- **[Stanford CS229M](CS229M.md)** — Stanford 机器学习理论(Tengyu Ma 主讲)
+- **[CMU 10-708: Probabilistic Graphical Models](CMU_10-708.md)** — CMU 概率图模型经典课 ★
+- **[Stanford CS229M](Stanford_CS229M.md)** — Stanford 机器学习理论(Tengyu Ma 主讲)
 
 ## 对应的科研方向
 
