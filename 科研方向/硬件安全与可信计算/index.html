@@ -11804,7 +11804,7 @@
   <text x="640" y="252" text-anchor="middle" font-size="12" fill="#15803D">验证者只学到一个事实："这件事为真"</text>
 </svg></div>
 
-<p>FHE 和 ZKP 在硬件上都有一大瓶颈——算力不足。这两种密码学算法都需要 <strong>NTT（数论变换）</strong>、大整数模乘和 <strong>MSM（多标量乘法）</strong> 等复杂算子。纯软件实现比明文慢上万倍，靠数学走不动，必须靠硅。专用加速器随之冒头：MIT、Intel 都做了 FHE 加速器原型；ZK 方向有 <strong>Cysic</strong>（中国）、<strong>Ingonyama</strong> 这类 2022 年后涌现的初创公司，专门加速 prover。这条路彻底改写了硬件在安全里的角色，不再是信任之根，而是高性能的密码协处理器。</p>
+<p>FHE 和 ZKP 在硬件上都有一大瓶颈——算力不足。这两种密码学算法都需要 <strong>NTT（数论变换）</strong>、大整数模乘和 <strong>MSM（多标量乘法）</strong> 等复杂算子。纯软件实现比明文慢上万倍，靠数学走不动，必须有专用的硬件加速。于是面向密码学的专用加速器近年来也开始出现。MIT、Intel 都做了 FHE 加速器原型；ZK 方向有 <strong>Cysic</strong>（中国）、<strong>Ingonyama</strong> 这类 2022 年后涌现的初创公司，专门加速 prover。</p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>侧信道攻击与防护</strong>：加密时功耗、电磁、时序都在出卖密钥（SPA/DPA/EMA），如今连 NPU 权重都能从功耗曲线反推，掩码和恒时执行这些消噪手段不断被新的测量方法追赶。</li>
