@@ -13836,22 +13836,31 @@
 <li><strong>安全、可靠与抗辐射</strong>：比特流不加密就能被复制，多租户要隔离防侧信道，航天场景要抗辐射加固，这些约束贯穿从器件到系统的每一层。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>数字设计是入口，EDA 是工具链，体系结构决定加速器的设计空间。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>数字设计是入口，EDA 是工具链，编译原理支撑 HLS，体系结构决定加速器设计空间，深度学习提供算法需求，操作系统和并行系统支撑运行时管理。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    DIG[数字设计] --&gt; ARCH[体系结构]
-    DIG --&gt; EDA[EDA]
+    DIG[数字设计] --&gt; EDA[EDA]
+    DIG --&gt; ARCH[体系结构]
     DSA[数据结构与算法] --&gt; EDA
+    COM[编译原理] --&gt; EDA
     ARCH --&gt; ACC[AI加速器]
     EDA --&gt; ACC
+    DL[深度学习] --&gt; ACC
+    OS[操作系统] --&gt; ACC
+    PAR[并行与分布式系统] --&gt; ACC
+    GPU[GPU体系结构] --&gt; ACC
+    ML[机器学习] --&gt; DL
 
     classDef ckt fill:#FFFBEB,stroke:#B7791F
     classDef sys fill:#EBF4FF,stroke:#2C5282
+    classDef ai fill:#F0FDF4,stroke:#16A34A
     class DIG,EDA ckt
-    class ARCH,ACC,DSA sys</code></pre>
+    class ARCH,ACC,OS,PAR,GPU,COM sys
+    class DSA,ML,DL ai</code></pre>
 <ul>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
-<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a>（待建）</li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a>（HLS 高层次综合） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/GPU%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">GPU体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/">并行与分布式系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a>（待建）</li>
 <li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合想做硬件但等不起流片的人。一个架构改动几小时就能上板看到结果，一块几百块的开发板就能开工，本科生积累第一段硬件科研经历，常常就从这里起步。数字逻辑和 Verilog 过关就能进场，想往工具侧走再补算法，布局布线本质是组合优化。日常主要围绕板子，写 RTL、等综合布线、上板抓波形。要认清 FPGA 比 ASIC 慢四倍、大三十倍，它的价值在灵活和低延迟，用它追求峰值算力是用错了方向。</p>

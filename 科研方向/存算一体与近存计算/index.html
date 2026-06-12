@@ -13713,25 +13713,35 @@
 <li><strong>感存算一体</strong>：让传感、存储、计算在同一阵列里合一，信号刚被感知就地处理，免去从传感器到芯片的搬运，仿视网膜的事件视觉是典型应用。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>器件提供存储单元，模拟/数字电路实现原位计算，体系结构决定系统效益。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>器件线（物理→存储器）提供存储单元，数字/模拟电路实现原位计算，AI 和体系结构线提供算法需求，三路在加速器汇合。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    SP[半导体物理] --&gt; MEM[存储器]
-    DEV[半导体器件] --&gt; MEM
-    MEM --&gt; ACC[AI加速器]
+    QM[量子力学] --&gt; SS[固体物理]
+    SS --&gt; SP[半导体物理]
+    SP --&gt; DEV[半导体器件]
+    MAT[材料] --&gt; MEM[存储器]
+    DEV --&gt; MEM
+    DIG[数字设计] --&gt; ACC[AI加速器]
     MAS[模拟与射频] --&gt; ACC
+    MEM --&gt; ACC
     ARCH[体系结构] --&gt; ACC
+    ML[机器学习] --&gt; DL[深度学习]
+    DL --&gt; ACC
+    COM[编译原理] --&gt; ACC
 
     classDef phys fill:#EBF4FF,stroke:#2C5282
     classDef dev fill:#FDE8D8,stroke:#C0530A
     classDef sys fill:#FFFBEB,stroke:#B7791F
-    class SP phys
-    class DEV,MEM dev
-    class MAS,ARCH,ACC sys</code></pre>
+    classDef ai fill:#F0FDF4,stroke:#16A34A
+    class QM,SS,SP phys
+    class DEV,MAT,MEM dev
+    class DIG,MAS,ARCH,ACC,COM sys
+    class ML,DL ai</code></pre>
 <ul>
-<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
-<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%AD%98%E5%82%A8%E5%99%A8/">存储器</a>（待建）</li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a></li>
-<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a>（待建）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%AD%98%E5%82%A8%E5%99%A8/">存储器</a>（待建）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a>（待建）</li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>这个方向天然跨层，器件、电路、架构、算法相互牵制，适合愿意同时兼顾多个层面的人。几条技术路线对应不同的专长。偏体系结构与系统的，可以研究近存计算的架构与编程模型，让上层应用高效利用近存算力；擅长数字电路与 EDA 的，适合数字存内（SRAM-CIM），在精度可控的前提下提升能效；对模拟电路与器件感兴趣的，可以做 RRAM 交叉阵列，处理其中的噪声、ADC 开销与温度漂移。微电子本科在计算机组成、数字电路、模拟电路、器件物理中任意一门有扎实基础，都能找到对应的切入点。需要提醒的是，真正的难点常在跨层协同而非单一层面，更适合愿意理解相邻层约束、不排斥系统与物理工程细节的人。</p>

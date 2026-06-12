@@ -13728,25 +13728,35 @@
 <li><strong>3D 集成的设计自动化与热仿真</strong>：芯片走向 3D 堆叠后，布局布线要跨 die 协同，chiplet 与先进封装的流程要重做；夹在中层的热无处可逃，精确的热仿真模型和热感知布局成了绕不开的一环。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>数学（离散 + 优化）和算法是内核，数字设计提供应用对象，机器学习是新工具。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>数学（离散 + 优化）和算法是内核，数字设计 + 体系结构提供应用对象，编译原理提供综合/HLS 理论，机器学习是新工具。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
     DIS[离散数学] --&gt; EDA[EDA]
     OPT[数值与优化] --&gt; EDA
     DSA[数据结构与算法] --&gt; EDA
     DIG[数字设计] --&gt; EDA
+    SP[半导体物理] --&gt; DEV[半导体器件]
+    DEV --&gt; EDA
+    COM[编译原理] --&gt; EDA
+    ARCH[体系结构] --&gt; EDA
     ML[机器学习] --&gt; EDA
+    DL[深度学习] --&gt; EDA
 
     classDef math fill:#EBF4FF,stroke:#2C5282
     classDef ckt fill:#FFFBEB,stroke:#B7791F
     classDef ai fill:#F0FDF4,stroke:#16A34A
+    classDef sys fill:#FDE8D8,stroke:#C0530A
     class DIS,OPT math
     class DSA,DIG,EDA ckt
-    class ML ai</code></pre>
+    class ML,DL ai
+    class SP,DEV,COM,ARCH sys</code></pre>
 <ul>
 <li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%80%BC%E4%B8%8E%E4%BC%98%E5%8C%96/">数值与优化</a></li>
 <li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a></li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
-<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a>（综合/HLS 理论基础）</li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢写程序、又想留在芯片行业的人。这个方向不进实验室也不画版图，日常就是写代码、跑实验，解的却全是源自真实芯片流程的 NP 难问题，布局、布线、时序收敛个个如此。课程上要学数据结构与算法、图论和机器学习，微电子出身的优势在领域直觉，我们知道时序为什么难收敛、模拟为什么没有单一标尺，这是纯算法出身一时补不上的。它也是少数一个好算法真能改变整个行业的方向，做出来的东西每个芯片设计师都会用到。</p>
