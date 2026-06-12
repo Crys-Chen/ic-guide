@@ -331,7 +331,7 @@ graph LR
 
     数字芯片物理设计 · 工艺-设计协同优化
 
--   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
+-   **[梁云](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     硬件综合与 EDA · FPGA 可重构计算 · AI 芯片硬件软件协同
 
@@ -343,7 +343,7 @@ graph LR
 
     芯片布局 · 布线与时序优化 · AI 辅助物理设计
 
--   **[李萌（Meng Li）](https://mengli.me/)** <span class="badge-pku">北大</span>
+-   **[李萌](https://mengli.me/)** <span class="badge-pku">北大</span>
 
     算法硬件协同设计 · 神经网络加速器优化 · 隐私保护 AI 推理
 
@@ -351,11 +351,11 @@ graph LR
 
     高层次综合 · 神经网络加速器架构 · 物理设计时序预测
 
--   **[王杰（Jie Wang）](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
+-   **[王杰](https://miralab.ai/publication/)** <span class="badge-other">中科大</span>
 
     AI 辅助芯片布局 · 神经逻辑综合 · 强化学习优化
 
--   **[郭新飞（Xinfei Guo）](https://sites.gc.sjtu.edu.cn/xinfei-guo/)** <span class="badge-other">交大</span>
+-   **[郭新飞](https://sites.gc.sjtu.edu.cn/xinfei-guo/)** <span class="badge-other">交大</span>
 
     AI 辅助 EDA · 低功耗设计 · FPGA 加速器
 
@@ -363,7 +363,7 @@ graph LR
 
     ML 辅助芯片设计 · 存算一体架构 · AI 加速器物理实现
 
--   **[严骏驰（Junchi Yan）](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
+-   **[严骏驰](https://thinklab.sjtu.edu.cn/)** <span class="badge-other">交大</span>
 
     ML for EDA · 组合优化求解器与逻辑综合 · 图学习驱动布局布线/时序预测
 
@@ -371,7 +371,7 @@ graph LR
 
     演化计算与黑盒优化 · AI 驱动芯片布局 · 时序驱动物理设计
 
--   **[杜源（Yuan Du）](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
+-   **[杜源](https://ese.nju.edu.cn/dy/list.htm)** <span class="badge-other">南大</span>
 
     LLM 辅助模拟电路设计 · 晶体管级版图自动生成 · 电路图转网表
 
@@ -383,7 +383,7 @@ graph LR
 
     LLM 辅助设计综合 · 智能体 EDA 流程 · 低功耗芯片自动化
 
--   **[孙奇（Qi Sun）](https://qisunchn.top/)** <span class="badge-other">浙大</span>
+-   **[孙奇](https://qisunchn.top/)** <span class="badge-other">浙大</span>
 
     ML for EDA · LLM 辅助设计与 DTCO · 设计空间探索
 

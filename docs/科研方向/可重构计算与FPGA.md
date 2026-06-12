@@ -423,7 +423,7 @@ graph LR
 
     FPGA 神经网络加速器 · 可编程深度学习平台
 
--   **[梁云（Eric Liang）](https://ericlyun.me/)** <span class="badge-pku">北大</span>
+-   **[梁云](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     FPGA HLS 编译优化 · 张量加速器自动生成 · 硬件软件协同设计
 
@@ -451,11 +451,11 @@ graph LR
 
     可重构计算 · 众核处理器体系结构 · 三维片上网络（3D NoC）
 
--   **[王则可（Zeke Wang）](https://wangzeke.github.io/)** <span class="badge-other">浙大</span>
+-   **[王则可](https://wangzeke.github.io/)** <span class="badge-other">浙大</span>
 
     FPGA 加速器设计 · SmartNIC 网络卸载 · FPGA/P4/GPU 异构平台
 
--   **[卢丽强（Liqiang Lu）](https://person.zju.edu.cn/liqianglu)** <span class="badge-other">浙大</span>
+-   **[卢丽强](https://person.zju.edu.cn/liqianglu)** <span class="badge-other">浙大</span>
 
     FPGA 神经网络加速器 · 注意力机制与低精度计算 · AI 芯片软硬件协同
 

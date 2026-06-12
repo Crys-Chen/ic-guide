@@ -360,7 +360,7 @@ graph LR
     图像传感器读出电路 · 非挥发存储阵列 · 模拟前端设计
 
 
--   **[孙楠（Nan Sun）](https://www.nansunlab.com/)** <span class="badge-tsinghua">清华</span>
+-   **[孙楠](https://www.nansunlab.com/)** <span class="badge-tsinghua">清华</span>
 
     VCO-based 新型 ADC 架构 · 低功耗噪声整形数据转换器 · 磁传感器读出电路
 
@@ -368,7 +368,7 @@ graph LR
 
     高速流水线 ADC · 混合信号 IC · RFID 芯片系统
 
--   **[李宇根（Woogeun Rhee）](https://www.sic.tsinghua.edu.cn/info/1045/2240.htm)** <span class="badge-tsinghua">清华</span>
+-   **[李宇根](https://www.sic.tsinghua.edu.cn/info/1045/2240.htm)** <span class="badge-tsinghua">清华</span>
 
     低压混合型 PLL · 小数分频频率合成 · BLE 射频收发前端
 

@@ -465,7 +465,7 @@ graph LR
 
     射频与混合信号 IC · 毫米波雷达收发机 · 高速 ADC 芯片
 
--   **[李宇根（Woogeun Rhee）](https://www.sic.tsinghua.edu.cn/info/1045/2240.htm)** <span class="badge-tsinghua">清华</span>
+-   **[李宇根](https://www.sic.tsinghua.edu.cn/info/1045/2240.htm)** <span class="badge-tsinghua">清华</span>
 
     PLL 与频率综合器 · 超低功耗 UWB 收发机 · IoT 无线射频 IC
 
