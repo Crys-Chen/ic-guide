@@ -15,6 +15,5 @@
 
 ## 学习地图
 
-- 教师主页：[殷韵（复旦微电子学院）](https://sme.fudan.edu.cn/60/5a/c31133a352346/page.htm)
 - 课程视频：[B 站合集（噪声章节）](https://www.bilibili.com/video/BV1ze4y1A7kD/)
 - 配套教材：Behzad Razavi, *RF Microelectronics* (2nd ed.)

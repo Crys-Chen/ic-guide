@@ -16,4 +16,3 @@
 ## 学习地图
 
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/av24367356/)
-- 教师主页：[张志华北大主页](https://www.math.pku.edu.cn/teachers/zhzhang/)

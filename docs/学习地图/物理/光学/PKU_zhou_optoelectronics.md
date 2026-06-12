@@ -25,7 +25,6 @@
 - 课程视频:
   - B 站:[北京大学 光电子学 周治平 全 32 讲](https://www.bilibili.com/video/BV1c741147hp/)
   - 另一版本:[B 站 BV1ox41157UQ](https://www.bilibili.com/video/BV1ox41157UQ/)
-- 教师主页:<https://eecs.pku.edu.cn/xxkxjsxy/info/1334/5927.htm>
 - 配套教材:周治平《硅基光电子学》(科学出版社)——讲义同名,内容互补
 - 推荐参考:Saleh & Teich《Fundamentals of Photonics》前 8 章
 

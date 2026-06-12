@@ -15,5 +15,4 @@
 
 ## 学习地图
 
-- 学院教学页：[北大人工智能学院](https://ai.pku.edu.cn/jx/index.htm)
 - 课程视频（北京大学 B 站官方账号）：[第一讲：人工智能的现状、趋势与战略（朱松纯）](https://www.bilibili.com/video/BV1wX4y1t7Sw/)、[第十讲：人工智能在北大](https://www.bilibili.com/video/BV1WM4y1E7pw/)，其余各讲见 [北京大学 B 站官方账号](https://space.bilibili.com/434346657)
