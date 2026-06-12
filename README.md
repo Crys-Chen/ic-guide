@@ -2,11 +2,11 @@
   <img src="docs/images/logo.png" width="160" alt="IC Guide"/>
 </p>
 
-# IC Guide — 集成电路与微电子自学指南
+# IC Guide — 集成电路自学指南
 
 **[https://crys-chen.github.io/ic-guide/](https://crys-chen.github.io/ic-guide/)**
 
-面向 EE / ME 本科生和研究生的集成电路自学路径。站内有 17 个科研方向导览、分学科的课程地图和工程工具教程。内容由有实际经历的人写，持续更新。
+一份来自复旦大学集成电路（微电子）的自学指南。站内有 17 个科研方向导览、分学科的课程地图和工程工具教程。持续更新，也欢迎屏幕前的你参与建设。
 
 ---
 
@@ -16,9 +16,9 @@
 
 ### 目前最缺
 
-#### 科研方向教授 / 企业
+#### 科研方向页
 
-以下是全部 17 个方向的教授/企业信息置信度。**低置信度方向最需要补充**，[填写表单 →](https://github.com/Crys-Chen/ic-guide/issues/new?template=add_entry.yml)
+以下是各方向的内容完善情况，置信度越低代表越需要补充。
 
 <details>
 <summary>低置信度（8 个方向，最需要补充）</summary>
