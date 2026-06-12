@@ -823,6 +823,15 @@
   line-height: 1.85;
 }
 
+/* ─── 连续全角标点压缩：引号+逗号/句号相邻时收紧叠加空白 ── */
+body .md-typeset,
+.md-content .md-typeset,
+.md-typeset p,
+.md-typeset li {
+  font-feature-settings: "chws" 1 !important;
+  text-spacing-trim: normal !important;
+}
+
 /* ─── 标题：加粗、加大、颜色饱满 ────────────────────────── */
 .md-typeset h1,
 .md-typeset h2,
