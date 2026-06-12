@@ -2577,3 +2577,91 @@ body.pf-noscroll { overflow: hidden !important; }
   #pf-overlay { padding-top: 48px; }
   #pf-box { max-height: 88vh; border-radius: 0 0 4px 4px; }
 }
+
+/* ════════════════════════════════════════════════════════
+   VIDEO CARDS  .vc-grid / .vc-card
+   ════════════════════════════════════════════════════════ */
+.vc-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+  gap: .75rem !important;
+  margin: 1rem 0 2rem !important;
+}
+.vc-card {
+  display: flex !important;
+  flex-direction: column !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  transition: transform .15s, box-shadow .15s !important;
+}
+[data-md-color-scheme="slate"] .vc-card {
+  background: rgba(255,255,255,.05) !important;
+  border: 1px solid rgba(255,255,255,.09) !important;
+}
+[data-md-color-scheme="default"] .vc-card {
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,.08) !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05) !important;
+}
+.vc-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,.16) !important;
+}
+.vc-thumb {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 16/9 !important;
+  overflow: hidden !important;
+  display: block !important;
+  background: #111 !important;
+}
+.vc-thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform .2s !important;
+}
+.vc-card:hover .vc-thumb img {
+  transform: scale(1.03) !important;
+}
+.vc-plat {
+  position: absolute !important;
+  bottom: 5px !important;
+  right: 6px !important;
+  font-size: .60rem !important;
+  font-weight: 700 !important;
+  padding: 1px 5px !important;
+  border-radius: 3px !important;
+  letter-spacing: .05em !important;
+  line-height: 1.6 !important;
+}
+.vc-plat.bili { background: #00a1d6 !important; color: #fff !important; }
+.vc-plat.yt   { background: #f00 !important;    color: #fff !important; }
+.vc-body {
+  padding: .55rem .7rem .65rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: .2rem !important;
+  flex: 1 !important;
+}
+.vc-title {
+  font-size: .80rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+[data-md-color-scheme="slate"] .vc-title { color: #e2e2e8 !important; }
+[data-md-color-scheme="default"] .vc-title { color: #1a1a1a !important; }
+.vc-meta {
+  font-size: .70rem !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+}
+[data-md-color-scheme="slate"] .vc-meta { color: rgba(226,226,232,.50) !important; }
+[data-md-color-scheme="default"] .vc-meta { color: rgba(10,7,6,.48) !important; }

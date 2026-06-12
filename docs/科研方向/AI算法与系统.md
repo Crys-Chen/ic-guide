@@ -245,9 +245,9 @@ hide:
 
 到这里为止，所有打法都还在 LLM 这一条路上。但这条路对不对，本身就有人怀疑。Yann LeCun 长期质疑，模型逐字预测下一个词，学不到物理世界的规律。他主推的 **JEPA**（Joint-Embedding Predictive Architecture，联合嵌入预测架构）让模型去预测视频里被遮住部分的高层含义("这是个球，正在落地")，而不是逐像素还原。**神经符号**（Neuro-symbolic）则想把神经网络的模糊感知和符号系统的严格推理接起来。这些都是在 LLM 之外另起的路线，胜负未分。
 
-还有一件事和能力同样要紧。把越来越多的决策交给模型，前提是能解释它的行为，也能约束它的边界。2026 年 2 月的中东战事里，Claude 把伊朗的一所小学误标成军火库，导致美军误炸，156 条无辜生命遇难。同类的还有越狱攻击、ChatGPT 写法律文书时引用根本不存在的判例被法庭处罚。**AI 安全**就是给模型划一条可控的行为边界，比如 Anthropic 的**宪法 AI**(Constitutional AI)让模型按一组原则边生成边自检。**可解释性**则要搞清楚模型内部到底在做什么，人类其实至今都没有理解 LLM 为什么能这么厉害。输入在模型内部的每一次乘法加法到底意味着什么，我们至今没有完全弄明白，LLM 对人类来说还是一个黑盒。但还是有一些计算意图能被识别，比如稀疏自编码器（Sparse Autoencoder, SAE）能从大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。
+AI 安全同样很重要。把越来越多的决策交给模型，前提是能解释它的行为，也能约束它的边界。2026 年 2 月的中东战事里，Claude 把伊朗的一所小学误标成军火库，导致美军误炸，156 条无辜生命遇难。同类的还有越狱攻击、ChatGPT 写法律文书时引用根本不存在的判例被法庭处罚。**AI 安全**就是给模型划一条可控的行为边界，比如 Anthropic 的**宪法 AI**(Constitutional AI)让模型按一组原则边生成边自检。**可解释性**则要搞清楚模型内部到底在做什么，人类其实至今都没有理解 LLM 为什么能这么厉害。输入在模型内部的每一次乘法加法到底意味着什么，我们至今没有完全弄明白，LLM 对人类来说还是一个黑盒。但还是有一些计算意图能被识别，比如稀疏自编码器（Sparse Autoencoder, SAE）能从大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。
 
-最后说说格局。前沿大模型的训练已经被大厂垄断。表面看是钱，单次训练 1 亿美元起步。但更硬的壁垒是数据和算力。开放互联网的数据大家都能用，可 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类高质量私有数据只有它们自己有，这才决定模型在真实任务上的天花板。算力也一样，一个顶级大模型要万卡级的数据中心，背后是电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有因此被边缘化，反而和工业界形成一种对称依赖。大厂把训好的底座开源放出来，比如 Llama、DeepSeek。学术界拿去做后训练、推理优化、可解释性研究，再反哺工业。Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作后来都被大厂的推理引擎采用。学术界真正的机会，不在跟大厂拼规模，而在那些能让所有模型都用得更好的算法、系统和数据方法上。
+在目前的产业格局上，前沿大模型的训练已经被大厂垄断。表面看是钱，单次训练 1 亿美元起步。但更硬的壁垒是数据和算力。开放互联网的数据大家都能用，可 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类高质量私有数据只有它们自己有，这才决定模型在真实任务上的天花板。算力也一样，一个顶级大模型要万卡级的数据中心，背后是电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有因此被边缘化，反而和工业界形成一种对称依赖。大厂把训好的底座开源放出来，比如 Llama、DeepSeek。学术界拿去做后训练、推理优化、可解释性研究，再反哺工业。Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作后来都被大厂的推理引擎采用。学术界真正的机会，不在跟大厂拼规模，而在那些能让所有模型都用得更好的算法、系统和数据方法上。
 
 ### 核心研究问题
 
@@ -564,4 +564,39 @@ graph LR
     <a class="dm-chip" href="https://hai.stanford.edu" title="基础模型评测（HELM）· 以人为本 AI · AI Index">Stanford HAI</a>
     <a class="dm-chip" href="https://allenai.org" title="全开源大模型（OLMo）· AI for Science">Allen Institute for AI（Ai2）</a>
   </span></div>
+</div>
+
+## 相关科普
+
+<div class="vc-grid">
+  <a class="vc-card" href="https://www.bilibili.com/video/BV1vuoCBsEeb" target="_blank" rel="noopener">
+    <span class="vc-thumb">
+      <img src="http://i2.hdslb.com/bfs/archive/8fa1cc48d50a2684f828d0c633ad0aa0acf46496.jpg" alt="AI芯片不只是英伟达" loading="lazy">
+      <span class="vc-plat bili">B站</span>
+    </span>
+    <span class="vc-body">
+      <span class="vc-title">AI芯片不只是英伟达！我研究了5大架构，发现一个很离谱的事</span>
+      <span class="vc-meta">小Lin说</span>
+    </span>
+  </a>
+  <a class="vc-card" href="https://www.bilibili.com/video/BV1xE421j7Uv" target="_blank" rel="noopener">
+    <span class="vc-thumb">
+      <img src="http://i1.hdslb.com/bfs/archive/ef3c7096672783c68756e382c121c99d0979abdc.jpg" alt="从零开始认识显卡" loading="lazy">
+      <span class="vc-plat bili">B站</span>
+    </span>
+    <span class="vc-body">
+      <span class="vc-title">【硬核科普】从零开始认识显卡</span>
+      <span class="vc-meta">硬件茶谈 · 514万播放</span>
+    </span>
+  </a>
+  <a class="vc-card" href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" rel="noopener">
+    <span class="vc-thumb">
+      <img src="https://img.youtube.com/vi/aircAruvnKk/mqdefault.jpg" alt="But what is a neural network?" loading="lazy">
+      <span class="vc-plat yt">YouTube</span>
+    </span>
+    <span class="vc-body">
+      <span class="vc-title">But what is a neural network?</span>
+      <span class="vc-meta">3Blue1Brown</span>
+    </span>
+  </a>
 </div>
