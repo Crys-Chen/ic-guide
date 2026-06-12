@@ -13711,31 +13711,42 @@
 <li><strong>后量子密码的硬件实现</strong>：量子计算逼着 RSA、ECC 全面换成格密码等新算法，这些算法运算量大、又自带新的侧信道与故障注入面，要做成高效又抗攻击的电路。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>数字电路提供攻防的物理基础，EDA 工具链是攻击面之一，体系结构和操作系统是主战场，编译原理提供软件防御手段，密码学是独立武器库。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>密码学线需要扎实的抽象代数（群/环/域）、数论（离散数学）和概率论（安全归约），ZKP/FHE 还需要格密码的优化背景；物理攻击线需要半导体器件和固体物理；后量子密码的动机来自量子力学。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
+    代数[代数] --&gt; CRYPTO[专题]
+    DIS[离散数学] --&gt; CRYPTO
+    PROB[概率与统计] --&gt; CRYPTO
+    OPT[数值与优化] --&gt; CRYPTO
+    QM[量子力学] --&gt; QC[量子计算]
+    QC --&gt; SEC[硬件安全]
+    CRYPTO --&gt; SEC
+    SS[固体物理] --&gt; SP[半导体物理]
+    SP --&gt; DEV[半导体器件]
+    DEV --&gt; SEC
     DIG[数字设计] --&gt; EDA[EDA]
     DIG --&gt; SYS[计算机系统基础]
     EDA --&gt; ARCH[体系结构]
     SYS --&gt; ARCH
     ARCH --&gt; OS[操作系统]
-    ARCH --&gt; SEC[硬件安全]
+    ARCH --&gt; SEC
     OS --&gt; SEC
     COM[编译原理] --&gt; SEC
-    PAR[并行与分布式系统] --&gt; SEC
-    CRYPTO[专题] --&gt; SEC
-    DSA[数据结构与算法] --&gt; COM
 
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#FDE8D8,stroke:#C0530A
     classDef ckt fill:#FFFBEB,stroke:#B7791F
-    classDef sys fill:#EBF4FF,stroke:#2C5282
-    classDef math fill:#F0FDF4,stroke:#16A34A
-    class DIG,EDA ckt
-    class SYS,ARCH,OS,PAR,SEC sys
-    class COM,DSA,CRYPTO math</code></pre>
+    classDef sys fill:#F0FDF4,stroke:#16A34A
+    class 代数,DIS,PROB,OPT math
+    class QM,QC,SS,SP phys
+    class DEV,DIG,EDA ckt
+    class SYS,ARCH,OS,COM,CRYPTO,SEC sys</code></pre>
 <ul>
-<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">专题</a>（密码学）</li>
-<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（抽象代数：群/环/域，椭圆曲线） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>（数论、模运算） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a>（安全归约、随机预言机） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%80%BC%E4%B8%8E%E4%BC%98%E5%8C%96/">数值与优化</a>（格密码、NTT） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">专题</a>（密码学）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/">量子计算</a>（Shor 算法动机，后量子密码背景） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a>（功耗/EM 侧信道物理机制）</li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（工具链安全）</li>
-<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/">并行与分布式系统</a></li>
+<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合看到任何系统都先想它会从哪里被攻破的人。这一行的乐趣在博弈，自己设计的防御等着别人来打，别人的系统等着自己找漏洞，一篇论文往往就是一次完整的攻击演示。课程上数字电路和计算机组成是底子，微架构攻击全长在缓存和投机执行这些细节里；往 FHE 和 ZKP 加速器走，还得补密码学和数论。日常分攻防两头，道高一尺，魔高一丈，这场猫鼠游戏永无终局。</p>
