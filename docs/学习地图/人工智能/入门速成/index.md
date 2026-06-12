@@ -4,7 +4,7 @@
 
 ## 推荐课程
 
-- **[Neural Networks: Zero to Hero](Neural Networks：Zero to Hero.md)** — Andrej Karpathy(前 Tesla AI 总监)主讲 ★;**从零手写 GPT-2**,代码量小但每行都讲清原理,**LLM 入门最高效路径**
+- **[Neural Networks: Zero to Hero](karpathy_zero2hero.md)** — Andrej Karpathy(前 Tesla AI 总监)主讲 ★;**从零手写 GPT-2**,代码量小但每行都讲清原理,**LLM 入门最高效路径**
 - **[Harvard CS50 AI](Harvard_CS50AI.md)** — Harvard CS50 系列的 AI 分支,搜索、知识表示、机器学习入门
 - **[UCB CS188](UCB_CS188.md)** — Berkeley 经典 AI 入门课,Pacman 系列 Project 趣味性强
 
