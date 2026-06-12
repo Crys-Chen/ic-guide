@@ -26,9 +26,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
-    - search.highlight
-    - search.share
-    - search.suggest
     - content.code.annotate
     - content.tooltips
     - toc.follow
@@ -66,8 +63,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-plugins:
-  - search:
+##SEARCH_PLACEHOLDER##
       # 显式只用 en stemmer——避免 Material 对 zh 自动加载 TinySegmenter
       # (一个日语分词器,对中文 query 切分错误)。中文匹配完全靠 separator
       # + scripts/inject_ngrams.py 注入的 n-gram tokens。

@@ -3,6 +3,8 @@
 {% block scripts %}
   {{ super() }}
   <script>
+    /* 供 search-pagefind.js 计算 pagefind/ 绝对路径 */
+    window.__mkdocs_site = "{{ config.site_url }}";
     /* 科研方向页面注入 .is-research-page，供 CSS 切换宋体正文 */
     document$.subscribe(function () {
       var el = document.querySelector('.md-content__inner');

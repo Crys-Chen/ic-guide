@@ -7,3 +7,4 @@ mkdocs-open-in-new-tab==1.0.8
 pymdown-extensions>=10.0
 jieba
 mkdocs-redirects
+pagefind
