@@ -72,10 +72,11 @@ plugins:
   - open-in-new-tab:
   - redirects:
       redirect_maps:
+        '学习地图/系统架构/AI加速器/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/index.md'
         '学习地图/系统架构/体系结构/FDU_ICSE40002.md': '学习地图/系统架构/AI加速器/FDU_ICSE40002.md'
         '学习地图/系统架构/体系结构/FDU_ICSE30036.md': '学习地图/系统架构/AI加速器/FDU_ICSE30036.md'
         '学习地图/电路/数字设计/FPGA/FDU_ICSE40018.md': '学习地图/系统架构/AI加速器/FDU_ICSE40018.md'
-        '学习地图/系统架构/体系结构/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/FDU_ICSE40007.md'
+        '学习地图/系统架构/体系结构/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/index.md'
         '学习地图/电路/EDA/FDU_ICSE40019.md': '学习地图/人工智能/AI交叉应用/FDU_ICSE40019.md'
         '学习地图/器件与工艺/集成电路工艺/FDU_ICSE30035.md': '学习地图/人工智能/AI交叉应用/FDU_ICSE30035.md'
         '学习地图/人工智能/机器人学/FDU_AIT410017.md': '学习地图/人工智能/AI交叉应用/FDU_AIT410017.md'
@@ -676,7 +677,6 @@ nav:
         - "复旦 AI处理器架构": "学习地图/系统架构/AI加速器/FDU_ICSE40002.md"
         - "复旦 AI芯片设计": "学习地图/系统架构/AI加速器/FDU_ICSE30036.md"
         - "复旦 FPGA加速AI": "学习地图/系统架构/AI加速器/FDU_ICSE40018.md"
-        - "复旦 新型计算范式": "学习地图/系统架构/AI加速器/FDU_ICSE40007.md"
       - 编译原理:
         - 学习地图/系统架构/编译原理/index.md
         - "Stanford CS143": "学习地图/系统架构/编译原理/Stanford_CS143.md"
