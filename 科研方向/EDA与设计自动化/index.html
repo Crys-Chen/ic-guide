@@ -13710,25 +13710,25 @@
 <li><strong>3D 集成的设计自动化与热仿真</strong>：芯片走向 3D 堆叠后，布局布线要跨 die 协同，chiplet 与先进封装的流程要重做；夹在中层的热无处可逃，精确的热仿真模型和热感知布局成了绕不开的一环。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>数学（离散 + 优化）和算法是内核，数字设计提供应用对象，机器学习是新工具。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    M["数学基础\n优化·图论·线代"] --&gt; ALG["数据结构与算法\n组合优化·启发式"]
-    DIG["数字电路\nRTL·门级网表"] --&gt; EDA["EDA 核心算法\n综合·布局布线·STA"]
-    ALG --&gt; EDA
-    M --&gt; EDA
-    ML["机器学习基础"] --&gt; AIE["ML / LLM for EDA\nRL布局·GNN预测·RTL生成"]
-    EDA --&gt; AIE
+    DIS[离散数学] --&gt; EDA[EDA]
+    OPT[数值与优化] --&gt; EDA
+    DSA[数据结构与算法] --&gt; EDA
+    DIG[数字设计] --&gt; EDA
+    ML[机器学习] --&gt; EDA
 
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class DIG,EDA,AIE core
-    class M,ALG,ML supp</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef ai fill:#F0FDF4,stroke:#16A34A
+    class DIS,OPT math
+    class DSA,DIG,EDA ckt
+    class ML ai</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/">数学基础（优化·图论·线性代数）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法（组合优化的算法内核）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">电路（数字方向，理解 RTL 与综合对象）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA（综合·物理设计·时序分析专题）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">人工智能（机器学习，ML/LLM for EDA 的根基）</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%80%BC%E4%B8%8E%E4%BC%98%E5%8C%96/">数值与优化</a></li>
+<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢写程序、又想留在芯片行业的人。这个方向不进实验室也不画版图，日常就是写代码、跑实验，解的却全是源自真实芯片流程的 NP 难问题，布局、布线、时序收敛个个如此。课程上要学数据结构与算法、图论和机器学习，微电子出身的优势在领域直觉，我们知道时序为什么难收敛、模拟为什么没有单一标尺，这是纯算法出身一时补不上的。它也是少数一个好算法真能改变整个行业的方向，做出来的东西每个芯片设计师都会用到。</p>
@@ -13909,17 +13909,17 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="设计自动化大会（Design Automation Conference）">DAC</span>
-    <span class="dm-chip dm-chip--static" title="国际计算机辅助设计会议（International Conference on Computer-Aided Design）">ICCAD</span>
-    <span class="dm-chip dm-chip--static" title="欧洲设计、自动化与测试会议（Design, Automation and Test in Europe）">DATE</span>
-    <span class="dm-chip dm-chip--static" title="亚太设计自动化会议（Asia and South Pacific Design Automation Conference）">ASP-DAC</span>
-    <span class="dm-chip dm-chip--static" title="国际物理设计研讨会（International Symposium on Physical Design）">ISPD</span>
+    <span class="dm-chip dm-chip--static">DAC</span>
+    <span class="dm-chip dm-chip--static">ICCAD</span>
+    <span class="dm-chip dm-chip--static">DATE</span>
+    <span class="dm-chip dm-chip--static">ASP-DAC</span>
+    <span class="dm-chip dm-chip--static">ISPD</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="计算机辅助设计，本领域旗舰">IEEE TCAD</span>
-    <span class="dm-chip dm-chip--static" title="超大规模集成系统">IEEE TVLSI</span>
-    <span class="dm-chip dm-chip--static" title="设计自动化">ACM TODAES</span>
-    <span class="dm-chip dm-chip--static" title="计算机汇刊">IEEE TC</span>
+    <span class="dm-chip dm-chip--static">IEEE TCAD</span>
+    <span class="dm-chip dm-chip--static">IEEE TVLSI</span>
+    <span class="dm-chip dm-chip--static">ACM TODAES</span>
+    <span class="dm-chip dm-chip--static">IEEE TC</span>
   </span></div>
 </div>
 
@@ -13943,12 +13943,12 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.ime.ac.cn/eda/" title="设计方法学与国产 EDA 工具研发">中科院微电子所 EDA 中心</a>
-    <a class="dm-chip" href="https://www.pcl.ac.cn/" title="大规模算力支撑的 EDA 算法加速">鹏城实验室</a>
+    <a class="dm-chip" href="https://www.ime.ac.cn/eda/">中科院微电子所 EDA 中心</a>
+    <a class="dm-chip" href="https://www.pcl.ac.cn/">鹏城实验室</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://theopenroadproject.org/" title="开源 RTL-to-GDS 数字后端流程，AI for EDA 标准实验平台">OpenROAD（UCSD VLSI CAD 实验室主导）</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en" title="DTCO/工艺-设计协同与先进节点设计方法学">imec</a>
+    <a class="dm-chip" href="https://theopenroadproject.org/">OpenROAD（UCSD VLSI CAD 实验室主导）</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en">imec</a>
   </span></div>
 </div>
 

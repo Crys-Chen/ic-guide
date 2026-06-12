@@ -13693,27 +13693,24 @@
 <li><strong>后量子密码的硬件实现</strong>：量子计算逼着 RSA、ECC 全面换成格密码等新算法，这些算法运算量大、又自带新的侧信道与故障注入面，要做成高效又抗攻击的电路。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>数字电路提供攻防的物理基础，体系结构和操作系统是主战场，密码学是独立武器库。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["数字电路 / HDL\n功耗·时序的物理来源"] --&gt; B["ASIC 设计流程\n木马·工艺偏差在哪产生"]
-    B --&gt; C["体系结构 / 微架构\n投机执行·侧信道·TEE"]
-    C --&gt; D["系统安全 / 操作系统\nTrustZone·PMP·内核权限"]
-    D --&gt; E["硬件安全与可信计算\n攻防博弈"]
+    DIG[数字设计] --&gt; ARCH[体系结构]
+    ARCH --&gt; OS[操作系统]
+    ARCH --&gt; SEC[硬件安全]
+    OS --&gt; SEC
+    CRYPTO[专题] --&gt; SEC
 
-    F["密码学\nAES·RSA · MPC/FHE/ZKP"] --&gt; E
-    F --&gt; G["密码加速器\nNTT·MSM·盲算硅"]
-    G --&gt; E
-
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,D,E core
-    class F,G supp</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef sys fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#F0FDF4,stroke:#16A34A
+    class DIG ckt
+    class ARCH,OS,SEC sys
+    class CRYPTO math</code></pre>
 <ul>
-<li>数字电路 / HDL → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">电路（数字）</a>、<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路总览</a></li>
-<li>ASIC 设计流程 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/ASIC%E4%B8%8E%E6%95%B0%E5%AD%97%E5%90%8E%E7%AB%AF/FDU_INFO130094/">电路 · ASIC 设计</a></li>
-<li>体系结构 / 微架构 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">系统架构 · 体系结构</a></li>
-<li>操作系统 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">系统架构 · 操作系统</a></li>
-<li>密码学（含 MPC/FHE/ZKP 与加速器的数学底座）→ <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/%E5%AF%86%E7%A0%81%E5%AD%A6/Stanford_crypto/">数学进阶 · 密码学（Stanford）</a>、<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/">数学进阶</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">专题</a>（密码学）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合看到任何系统都先想它会从哪里被攻破的人。这一行的乐趣在博弈，自己设计的防御等着别人来打，别人的系统等着自己找漏洞，一篇论文往往就是一次完整的攻击演示。课程上数字电路和计算机组成是底子，微架构攻击全长在缓存和投机执行这些细节里；往 FHE 和 ZKP 加速器走，还得补密码学和数论。日常分攻防两头，道高一尺，魔高一丈，这场猫鼠游戏永无终局。</p>
@@ -13838,20 +13835,20 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="硬件安全专属">HOST</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 安全与隐私研讨会（Oakland）">IEEE S&P</span>
-    <span class="dm-chip dm-chip--static" title="ACM 计算机与通信安全会议">ACM CCS</span>
-    <span class="dm-chip dm-chip--static" title="USENIX 安全研讨会">USENIX Security</span>
-    <span class="dm-chip dm-chip--static" title="网络与分布式系统安全研讨会">NDSS</span>
-    <span class="dm-chip dm-chip--static" title="设计自动化大会">DAC</span>
-    <span class="dm-chip dm-chip--static" title="密码硬件与嵌入式">CHES</span>
+    <span class="dm-chip dm-chip--static">HOST</span>
+    <span class="dm-chip dm-chip--static">IEEE S&P</span>
+    <span class="dm-chip dm-chip--static">ACM CCS</span>
+    <span class="dm-chip dm-chip--static">USENIX Security</span>
+    <span class="dm-chip dm-chip--static">NDSS</span>
+    <span class="dm-chip dm-chip--static">DAC</span>
+    <span class="dm-chip dm-chip--static">CHES</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="信息取证与安全">IEEE TIFS</span>
-    <span class="dm-chip dm-chip--static" title="可信与安全计算">IEEE TDSC</span>
-    <span class="dm-chip dm-chip--static" title="IACR 密码硬件与嵌入式系统汇刊">IACR TCHES</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 超大规模集成系统汇刊">IEEE TVLSI</span>
-    <span class="dm-chip dm-chip--static" title="ACM 电子系统设计自动化汇刊">ACM TODAES</span>
+    <span class="dm-chip dm-chip--static">IEEE TIFS</span>
+    <span class="dm-chip dm-chip--static">IEEE TDSC</span>
+    <span class="dm-chip dm-chip--static">IACR TCHES</span>
+    <span class="dm-chip dm-chip--static">IEEE TVLSI</span>
+    <span class="dm-chip dm-chip--static">ACM TODAES</span>
   </span></div>
 </div>
 
@@ -13884,15 +13881,15 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="http://www.iie.ac.cn/" title="网络空间安全防御全国重点实验室、处理器安全架构与国产 CPU 安全">中科院信息工程研究所（信工所）</a>
-    <a class="dm-chip" href="https://www.sic.tsinghua.edu.cn/" title="可重构密码芯片、PUF/TRNG、后量子密码芯片">清华大学集成电路学院</a>
-    <a class="dm-chip" href="https://loccs.sjtu.edu.cn/" title="密码工程、侧信道分析、密态计算">上海交大密码与计算机安全实验室（LoCCS）</a>
+    <a class="dm-chip" href="http://www.iie.ac.cn/">中科院信息工程研究所（信工所）</a>
+    <a class="dm-chip" href="https://www.sic.tsinghua.edu.cn/">清华大学集成电路学院</a>
+    <a class="dm-chip" href="https://loccs.sjtu.edu.cn/">上海交大密码与计算机安全实验室（LoCCS）</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.csail.mit.edu/" title="硅基 PUF、AEGIS 安全处理器（Devadas 组）">MIT CSAIL</a>
-    <a class="dm-chip" href="https://fics.institute.ufl.edu/" title="硬件木马、IC 供应链安全">佛罗里达大学 FICS Research</a>
-    <a class="dm-chip" href="https://www.mpi-sp.org/" title="嵌入式安全、硬件逆向工程">马普安全与隐私研究所（MPI-SP）</a>
-    <a class="dm-chip" href="https://www.iaik.tugraz.at/" title="微架构侧信道（Meltdown/Spectre 发现地之一）">TU Graz IAIK</a>
+    <a class="dm-chip" href="https://www.csail.mit.edu/">MIT CSAIL</a>
+    <a class="dm-chip" href="https://fics.institute.ufl.edu/">佛罗里达大学 FICS Research</a>
+    <a class="dm-chip" href="https://www.mpi-sp.org/">马普安全与隐私研究所（MPI-SP）</a>
+    <a class="dm-chip" href="https://www.iaik.tugraz.at/">TU Graz IAIK</a>
   </span></div>
 </div>
 

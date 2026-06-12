@@ -13804,22 +13804,25 @@
 <li><strong>异质材料与光电 I/O 集成</strong>：III-V、玻璃基板、片上光互连各有所长，却和硅热膨胀失配、工艺互相污染，要把它们缝进同一个封装而不牺牲可靠性。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>工艺线（器件 + 工艺）提供物理基础，系统线（体系结构 + EDA）驱动 chiplet 设计需求，传热是贯穿始终的约束。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["半导体器件与IC工艺\nTSV·微凸块·混合键合·KGD"] --&gt; C["信号/电源完整性\n传输线·串扰·D2D互联"]
-    A --&gt; D["传热学\n热阻·1000W/cm²热流"]
-    A --&gt; H["异质材料集成\nIII-V·CTE失配·工艺隔离"]
-    G["EDA与优化算法\n多Die时序·布图·热感知布局"] --&gt; E["先进封装系统\n2.5D/3D/3.5D·UCIe·CPO"]
-    C &amp; D &amp; H --&gt; E
+    DEV[半导体器件] --&gt; PKG[先进封装]
+    PRO[集成电路工艺] --&gt; PKG
+    HEAT[传热学] --&gt; PKG
+    ARCH[体系结构] --&gt; PKG
+    EDA[EDA] --&gt; PKG
 
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    class A,C,D,E,G,H core</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    classDef sys fill:#FFFBEB,stroke:#B7791F
+    class HEAT phys
+    class DEV,PRO,PKG dev
+    class ARCH,EDA sys</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a>（半导体器件原理 · IC 工艺基础 → TSV、微凸块、混合键合、KGD 都从这里来）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路</a>（高频/射频电路 → 信号与电源完整性、Die-to-Die 互联的电磁本钱）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA 工具链</a>（仿真 · 版图 → 多 Die 联合时序、布图规划、热感知布局的落地工具）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a>（热阻 · 热流分析 → 3D 堆叠散热的物理底座）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/">算法编程</a>（数据结构与优化 → 把物理约束翻译成目标函数、求解大规模布图/布局问题）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/">先进封装</a>（待建）</li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢全系统协同优化的人。不需要某一门课特别拔尖，而是要能同时兼顾各方各面。封装里没有单点的最优解，每个方案都是良率、带宽、散热、成本之间的讨价还价，最终的方案往往来源于极致的权衡。这个方向有两拨人在合作，一拨是做工艺的，基本上要泡超净间；另一波是做设计的，日常工作和做架构的差不多，就是设计电路和做仿真。</p>
@@ -13928,17 +13931,17 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="电子元件与技术大会">ECTC</span>
-    <span class="dm-chip dm-chip--static" title="三维集成会议">IEEE 3DIC</span>
-    <span class="dm-chip dm-chip--static" title="国际电子器件大会（International Electron Devices Meeting）">IEDM</span>
-    <span class="dm-chip dm-chip--static" title="设计自动化大会（Design Automation Conference）">DAC</span>
-    <span class="dm-chip dm-chip--static" title="国际计算机辅助设计会议（International Conference on Computer-Aided Design）">ICCAD</span>
+    <span class="dm-chip dm-chip--static">ECTC</span>
+    <span class="dm-chip dm-chip--static">IEEE 3DIC</span>
+    <span class="dm-chip dm-chip--static">IEDM</span>
+    <span class="dm-chip dm-chip--static">DAC</span>
+    <span class="dm-chip dm-chip--static">ICCAD</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="Components, Packaging and Manufacturing Technology">IEEE T-CPMT</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 超大规模集成系统汇刊（Transactions on Very Large Scale Integration Systems）">IEEE T-VLSI Systems</span>
-    <span class="dm-chip dm-chip--static" title="Computer-Aided Design">IEEE T-CAD</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 电子器件快报（Electron Device Letters）">IEEE EDL</span>
+    <span class="dm-chip dm-chip--static">IEEE T-CPMT</span>
+    <span class="dm-chip dm-chip--static">IEEE T-VLSI Systems</span>
+    <span class="dm-chip dm-chip--static">IEEE T-CAD</span>
+    <span class="dm-chip dm-chip--static">IEEE EDL</span>
   </span></div>
 </div>
 
@@ -13974,13 +13977,13 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.ime.cas.cn" title="TSV/晶圆级封装与三维异构集成工艺">中科院微电子研究所</a>
+    <a class="dm-chip" href="https://www.ime.cas.cn">中科院微电子研究所</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://sites.gatech.edu/ien-prc/" title="2.5D/3D 异构集成与玻璃基板封装">Georgia Tech 3D Systems Packaging Research Center（PRC）</a>
-    <a class="dm-chip" href="https://www.izm.fraunhofer.de/en.html" title="电子封装与系统集成、可靠性">Fraunhofer IZM</a>
-    <a class="dm-chip" href="https://www.a-star.edu.sg/ime" title="先进封装与异构集成">A*STAR IME（新加坡微电子所）</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en" title="3D 集成、混合键合与 chiplet 互连">imec</a>
+    <a class="dm-chip" href="https://sites.gatech.edu/ien-prc/">Georgia Tech 3D Systems Packaging Research Center（PRC）</a>
+    <a class="dm-chip" href="https://www.izm.fraunhofer.de/en.html">Fraunhofer IZM</a>
+    <a class="dm-chip" href="https://www.a-star.edu.sg/ime">A*STAR IME（新加坡微电子所）</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en">imec</a>
   </span></div>
 </div>
 

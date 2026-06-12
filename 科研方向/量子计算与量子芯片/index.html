@@ -14080,27 +14080,26 @@
 <li><strong>量子算法与编译</strong>：可编程量子模拟、量子机器学习，以及把算法映射到芯片连接拓扑、压缩操作次数的编译问题，在 NISQ（Noisy Intermediate-Scale Quantum，含噪中等规模量子）协处理器范式下既要贴硬件又要有实用价值。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>量子力学和固体物理是理论基础，模拟/射频是 IC 背景的主战场，工艺线决定芯片能否造出来。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["量子力学\n（叠加 · 测量坍缩 · 干涉）"] --&gt; C["量子比特与量子门\n（量子算法 · 量子纠错）"]
-    B["固体物理\n（超导 · 约瑟夫森结）"] --&gt; C
-    C --&gt; D["量子芯片\n（超导 transmon · 表面码 · 可扩展架构）"]
+    代数[代数] --&gt; QM[量子力学]
+    QM --&gt; QC[量子计算]
+    SS[固体物理] --&gt; QC
+    QC --&gt; Q[量子计算与量子芯片]
+    MAS[模拟与射频] --&gt; Q
+    PRO[集成电路工艺] --&gt; Q
 
-    E["模拟 / 射频电路\n（微波收发 · 低噪声放大）"] --&gt; F["低温控制电子学\n（4 K cryo-CMOS · 器件重标定）"]
-    F --&gt; D
-    G["微纳加工 / 半导体工艺\n（约瑟夫森结制备 · 互连密度）"] --&gt; D
-    M["数学\n（线性代数 · 概率）"] --&gt; A
-
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,D core
-    class E,F,G,M supp</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#FDE8D8,stroke:#C0530A
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    class 代数 math
+    class QM,SS,QC phys
+    class MAS,PRO,Q ckt</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学（叠加、测量、干涉）</a> —— 理解任何量子比特"为什么有效"的前提</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理（超导、约瑟夫森结）</a> —— 看懂超导 transmon 的非线性能级从何而来</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟 / 射频电路</a> —— 微波操控与读取、cryo-CMOS 控制链路，IC 背景的主战场</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">微纳加工 / 半导体工艺</a> —— 约瑟夫森结一致性与百万比特级互连密度</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/">数学（线性代数、概率）</a> —— 量子态、幺正演化与概率幅干涉的语言</li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（线性代数）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/">量子计算</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合愿意做长线的人，容错量子计算机最乐观也要 2035 年以后，迭代周期长。课程上量子力学和固体物理是必修，完全想回避物理的人不适合。微电子出身有一个切口在测控那一侧，做 4 K 低温 CMOS 和微波链路，标准 CMOS 一冷到 4 K 器件模型全部失效，得从头标定。日常主要围绕稀释制冷机，接微波线缆、标定器件、跑测试，降一次温要好几天，实验节奏被制冷机的排期管着，适合被极限条件下的工程吸引、又耐得住的人。</p>
@@ -14277,18 +14276,18 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="量子信息处理">QIP</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 国际量子计算与工程大会（Quantum Week）">IEEE QCE</span>
-    <span class="dm-chip dm-chip--static" title="国际固态电路会议 / IEEE 固态电路期刊（低温控制芯片）">ISSCC / JSSC</span>
-    <span class="dm-chip dm-chip--static" title="美国物理学会三月会议">APS March Meeting</span>
+    <span class="dm-chip dm-chip--static">QIP</span>
+    <span class="dm-chip dm-chip--static">IEEE QCE</span>
+    <span class="dm-chip dm-chip--static">ISSCC / JSSC</span>
+    <span class="dm-chip dm-chip--static">APS March Meeting</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="自然">Nature</span>
-    <span class="dm-chip dm-chip--static" title="科学">Science</span>
-    <span class="dm-chip dm-chip--static" title="自然·物理学">Nature Physics</span>
-    <span class="dm-chip dm-chip--static" title="美国物理学会量子信息旗舰期刊">PRX Quantum</span>
-    <span class="dm-chip dm-chip--static" title="Physical Review Letters，物理评论快报">PRL</span>
-    <span class="dm-chip dm-chip--static" title="npj 量子信息">npj Quantum Information</span>
+    <span class="dm-chip dm-chip--static">Nature</span>
+    <span class="dm-chip dm-chip--static">Science</span>
+    <span class="dm-chip dm-chip--static">Nature Physics</span>
+    <span class="dm-chip dm-chip--static">PRX Quantum</span>
+    <span class="dm-chip dm-chip--static">PRL</span>
+    <span class="dm-chip dm-chip--static">npj Quantum Information</span>
   </span></div>
 </div>
 
@@ -14328,18 +14327,18 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="http://www.quantumcas.ac.cn/" title="依托中国科大，&quot;九章&quot;光量子与&quot;祖冲之&quot;超导量子优越性">中国科学院量子信息与量子科技创新研究院</a>
-    <a class="dm-chip" href="https://quantum.ustc.edu.cn/" title="潘建伟团队，国内量子计算旗舰">中国科学技术大学·量子物理与量子信息研究部</a>
-    <a class="dm-chip" href="https://www.zhejianglab.org/" title="量子精密测量大科学装置、抗量子隐私计算">之江实验室</a>
-    <a class="dm-chip" href="https://www.baqis.ac.cn/" title="超导量子比特、量子材料与低温测控">北京量子信息科学研究院（BAQIS）</a>
+    <a class="dm-chip" href="http://www.quantumcas.ac.cn/">中国科学院量子信息与量子科技创新研究院</a>
+    <a class="dm-chip" href="https://quantum.ustc.edu.cn/">中国科学技术大学·量子物理与量子信息研究部</a>
+    <a class="dm-chip" href="https://www.zhejianglab.org/">之江实验室</a>
+    <a class="dm-chip" href="https://www.baqis.ac.cn/">北京量子信息科学研究院（BAQIS）</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://qutech.nl/" title="硅自旋/超导量子比特与低温控制电子学">QuTech（代尔夫特理工 + TNO）</a>
-    <a class="dm-chip" href="https://equs.mit.edu/" title="超导量子电路与约瑟夫森结">MIT 量子工程组（EQuS / RLE）</a>
-    <a class="dm-chip" href="https://quantum.harvard.edu/" title="中性原子/里德堡阵列（Lukin 组，QuEra 源头）">Harvard Quantum Initiative（HQI）</a>
-    <a class="dm-chip" href="https://www.bristol.ac.uk/qet-labs/" title="集成光量子芯片与硅光量子（PsiQuantum 源头）">Bristol QET Labs</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en" title="硅基量子比特量产工艺与低温 CMOS">imec</a>
-    <a class="dm-chip" href="https://quantuminstitute.yale.edu/" title="超导量子电路（circuit QED 发源地）">Yale Quantum Institute</a>
+    <a class="dm-chip" href="https://qutech.nl/">QuTech（代尔夫特理工 + TNO）</a>
+    <a class="dm-chip" href="https://equs.mit.edu/">MIT 量子工程组（EQuS / RLE）</a>
+    <a class="dm-chip" href="https://quantum.harvard.edu/">Harvard Quantum Initiative（HQI）</a>
+    <a class="dm-chip" href="https://www.bristol.ac.uk/qet-labs/">Bristol QET Labs</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en">imec</a>
+    <a class="dm-chip" href="https://quantuminstitute.yale.edu/">Yale Quantum Institute</a>
   </span></div>
 </div>
 

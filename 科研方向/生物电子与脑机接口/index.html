@@ -13685,23 +13685,21 @@
 <li><strong>柔性电极与长期寿命</strong>：硬硅探针插进软脑组织会被胶质瘢痕裹住、信号逐月衰减，出路是把电极做得更柔更细、用纳米薄膜贴合脑回。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>模拟前端是核心，信号处理做链路，机器学习做解码。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    P["神经电生理\n动作电位·场电位"] --&gt; A["低噪声模拟前端\nLNA·NEF·噪声分析"]
-    A --&gt; B["数据转换\nADC/DAC·神经信号数字化"]
-    B --&gt; C["神经信号处理\nspike检测·特征提取"]
-    C --&gt; D["神经解码\n实时低延迟模型"]
-    D --&gt; E["BCI 芯片系统\n闭环刺激·无线供能集成"]
+    DEV[半导体器件] --&gt; MAS[模拟与射频]
+    SIG[信号处理] --&gt; MAS
+    MAS --&gt; BIO[生物电子]
+    ML[机器学习] --&gt; BIO
 
-    classDef core fill:#E6FFEC,stroke:#276749,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,E core
-    class P,D supp</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    classDef ai fill:#EBF4FF,stroke:#2C5282
+    class DEV,MAS,SIG,BIO ckt
+    class ML ai</code></pre>
 <ul>
-<li>神经电生理 / 信号源直觉 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/">物理</a>（理解动作电位、场电位与电极界面的物理本质）</li>
-<li>低噪声模拟前端、数据转换、刺激器前端 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">电路（模拟）</a>（LNA、NEF、ADC、混合信号 IC 的硬核内容）</li>
-<li>spike 检测与特征提取 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">电路（信号处理）</a>（生物信号的滤波、频谱与片上实时处理）</li>
-<li>实时神经解码 → <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>（把神经活动映射成意图/指令的解码模型）</li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E7%94%9F%E7%89%A9%E7%94%B5%E5%AD%90/">生物电子</a>（待建）</li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合愿意跨界、有使命感的人。电路上这是一份把约束压到极限的工作，几十微伏的信号、每通道几微瓦的功耗，超了就灼伤脑组织，指标背后直接是人。但只懂电路走不远，神经科学的常识要自己学，解码要补机器学习，实验得跟医生合作，排期和审批都不在自己手里。反馈也很慢，动物到人隔着以年计的鸿沟，光有好奇心难以坚持那么久。</p>
@@ -13806,18 +13804,18 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="国际固态电路会议（IEEE International Solid-State Circuits Conference）">ISSCC</span>
-    <span class="dm-chip dm-chip--static" title="欧洲固态电路会议（European Solid-State Circuits Conference）">ESSCIRC</span>
-    <span class="dm-chip dm-chip--static" title="VLSI 技术与电路研讨会（IEEE Symposium on VLSI Technology and Circuits）">VLSI Symposium</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 国际医学与生物工程大会（International Conference of the IEEE Engineering in Medicine and Biology Society）">IEEE EMBC</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 生物医学电路与系统会议（Biomedical Circuits and Systems Conference）">IEEE BioCAS</span>
+    <span class="dm-chip dm-chip--static">ISSCC</span>
+    <span class="dm-chip dm-chip--static">ESSCIRC</span>
+    <span class="dm-chip dm-chip--static">VLSI Symposium</span>
+    <span class="dm-chip dm-chip--static">IEEE EMBC</span>
+    <span class="dm-chip dm-chip--static">IEEE BioCAS</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="Journal of Solid-State Circuits">IEEE JSSC</span>
-    <span class="dm-chip dm-chip--static" title="Transactions on Biomedical Circuits and Systems">IEEE TBioCAS</span>
-    <span class="dm-chip dm-chip--static" title="Transactions on Biomedical Engineering">IEEE TBME</span>
-    <span class="dm-chip dm-chip--static" title="Transactions on Neural Systems and Rehabilitation Engineering">IEEE TNSRE</span>
-    <span class="dm-chip dm-chip--static" title="生物医学工程领域顶级期刊">Nature Biomedical Engineering</span>
+    <span class="dm-chip dm-chip--static">IEEE JSSC</span>
+    <span class="dm-chip dm-chip--static">IEEE TBioCAS</span>
+    <span class="dm-chip dm-chip--static">IEEE TBME</span>
+    <span class="dm-chip dm-chip--static">IEEE TNSRE</span>
+    <span class="dm-chip dm-chip--static">Nature Biomedical Engineering</span>
   </span></div>
 </div>
 
@@ -13846,16 +13844,16 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.sim.cas.cn/" title="柔性神经电极与神经接口微系统">中科院上海微系统与信息技术研究所</a>
-    <a class="dm-chip" href="http://fit.zju.edu.cn/" title="侵入式脑机接口、脑机融合与神经记录芯片">浙江大学脑机智能全国重点实验室</a>
-    <a class="dm-chip" href="https://www.shibs.cn/" title="神经接口新技术与脑疾病诊疗">深港脑科学创新研究院</a>
-    <a class="dm-chip" href="https://cenbrain.westlake.edu.cn/" title="植入式神经接口 ASIC 与闭环神经调控">西湖大学神经接口与脑机交互实验室</a>
+    <a class="dm-chip" href="https://www.sim.cas.cn/">中科院上海微系统与信息技术研究所</a>
+    <a class="dm-chip" href="http://fit.zju.edu.cn/">浙江大学脑机智能全国重点实验室</a>
+    <a class="dm-chip" href="https://www.shibs.cn/">深港脑科学创新研究院</a>
+    <a class="dm-chip" href="https://cenbrain.westlake.edu.cn/">西湖大学神经接口与脑机交互实验室</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.braingate.org/" title="多机构侵入式 BCI 临床试验（Brown/Stanford/MGH 等）">BrainGate 联盟</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en/expertise/health-technologies/neural-probes" title="Neuropixels 高密度神经探针的设计与流片">imec 神经探针</a>
-    <a class="dm-chip" href="https://neuro-x.epfl.ch/en/" title="神经假体、闭环神经调控与神经技术转化">EPFL Neuro·X</a>
-    <a class="dm-chip" href="https://mcgovern.mit.edu/" title="神经环路工具与脑机接口神经科学">MIT McGovern Institute</a>
+    <a class="dm-chip" href="https://www.braingate.org/">BrainGate 联盟</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en/expertise/health-technologies/neural-probes">imec 神经探针</a>
+    <a class="dm-chip" href="https://neuro-x.epfl.ch/en/">EPFL Neuro·X</a>
+    <a class="dm-chip" href="https://mcgovern.mit.edu/">MIT McGovern Institute</a>
   </span></div>
 </div>
 

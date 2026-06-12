@@ -13955,30 +13955,22 @@
 <li><strong>开源处理器与微架构</strong>：RISC-V 把指令集开源后，学术组也能造芯片，从香山这样的高性能核到流水线、分支预测、缓存层次，每个微架构细节都是独立课题。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>数字设计打底，体系结构是核心，编译原理和操作系统向上延伸。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["数字逻辑基础"] --&gt; B["计算机组成原理"]
-    B --&gt; C["HDL / Verilog · Chisel"]
-    C --&gt; D["微架构与存储层次\n流水线·分支预测·Cache"]
-    D --&gt; M["ISA / 处理器与\nDSA 加速器研究"]
+    DIG[数字设计] --&gt; SYS[计算机系统基础]
+    SYS --&gt; ARCH[体系结构]
+    ARCH --&gt; OS[操作系统]
+    ARCH --&gt; COM[编译原理]
+    DSA[数据结构与算法] --&gt; COM
 
-    G["数据结构与算法"] --&gt; H["机器学习基础"]
-    H --&gt; J["编译器与调度\nLLVM · MLIR · TVM"]
-    J --&gt; M
-    H --&gt; M
-
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    classDef comp fill:#E6FFEC,stroke:#276749,stroke-width:1.5px
-    class A,B,C,D core
-    class G,H supp
-    class J comp
-    class M core</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef sys fill:#EBF4FF,stroke:#2C5282
+    class DIG ckt
+    class SYS,ARCH,OS,COM,DSA sys</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/">系统架构（计算机体系结构 · 微架构 · 存储层次 · 编译原理）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">电路（数字方向：HDL/Verilog · 数字 IC 设计）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/">算法编程（数据结构 · 算法 · 编译器实现）</a></li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能（神经网络与 AI 系统，理解加速器要服务的负载）</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a></li>
+<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢写代码、又不满足于只调 API 的人。这个方向的日常和程序员几乎没有区别，写 RTL、跑仿真、给编译器写 pass，改完代码当天就有数据，不用等流片。课程上数字逻辑和计算机组成是底子，学到流水线和缓存觉得有意思而不是负担的人合适。另外要有读大代码库的耐心，gem5、LLVM 都是百万行的开源工程，进组第一件事常是在别人的代码里花几个月。这个领域看重实现，想法再好也得先复现 baseline 才有资格比较。</p>
@@ -14239,21 +14231,21 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="国际计算机体系结构研讨会（架构侧）">ISCA</span>
-    <span class="dm-chip dm-chip--static" title="IEEE/ACM 国际微体系结构研讨会（架构侧）">MICRO</span>
-    <span class="dm-chip dm-chip--static" title="国际高性能计算机体系结构研讨会（架构侧）">HPCA</span>
-    <span class="dm-chip dm-chip--static" title="编程语言与操作系统的体系结构支持国际会议（架构侧）">ASPLOS</span>
-    <span class="dm-chip dm-chip--static" title="ACM 编程语言设计与实现会议（编译侧）">PLDI</span>
-    <span class="dm-chip dm-chip--static" title="国际代码生成与优化研讨会（编译侧）">CGO</span>
-    <span class="dm-chip dm-chip--static" title="面向对象编程、系统、语言与应用会议（编译侧）">OOPSLA</span>
-    <span class="dm-chip dm-chip--static" title="高性能芯片研讨会">Hot Chips</span>
+    <span class="dm-chip dm-chip--static">ISCA</span>
+    <span class="dm-chip dm-chip--static">MICRO</span>
+    <span class="dm-chip dm-chip--static">HPCA</span>
+    <span class="dm-chip dm-chip--static">ASPLOS</span>
+    <span class="dm-chip dm-chip--static">PLDI</span>
+    <span class="dm-chip dm-chip--static">CGO</span>
+    <span class="dm-chip dm-chip--static">OOPSLA</span>
+    <span class="dm-chip dm-chip--static">Hot Chips</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="IEEE J. Solid-State Circuits">JSSC</span>
-    <span class="dm-chip dm-chip--static" title="IEEE Trans. Computers">TC</span>
-    <span class="dm-chip dm-chip--static" title="IEEE Trans. CAD of ICs">TCAD</span>
-    <span class="dm-chip dm-chip--static" title="ACM Trans. Architecture and Code Optimization">TACO</span>
-    <span class="dm-chip dm-chip--static" title="ACM Trans. Programming Languages and Systems">TOPLAS</span>
+    <span class="dm-chip dm-chip--static">JSSC</span>
+    <span class="dm-chip dm-chip--static">TC</span>
+    <span class="dm-chip dm-chip--static">TCAD</span>
+    <span class="dm-chip dm-chip--static">TACO</span>
+    <span class="dm-chip dm-chip--static">TOPLAS</span>
   </span></div>
 </div>
 
@@ -14285,13 +14277,13 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.ict.ac.cn" title="处理器芯片重点实验室 · 开源 RISC-V（香山）· 智能处理器">中科院计算技术研究所</a>
-    <a class="dm-chip" href="https://www.pcl.ac.cn" title="&quot;鹏城云脑&quot;大科学装置 · AI 算力基础设施">鹏城实验室</a>
+    <a class="dm-chip" href="https://www.ict.ac.cn">中科院计算技术研究所</a>
+    <a class="dm-chip" href="https://www.pcl.ac.cn">鹏城实验室</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.csail.mit.edu" title="稀疏张量加速器 · 高效深度学习硬件">MIT CSAIL</a>
-    <a class="dm-chip" href="https://bar.eecs.berkeley.edu" title="敏捷 VLSI · 领域专用加速器 · RISC-V">UC Berkeley（Chipyard/Gemmini）</a>
-    <a class="dm-chip" href="https://pulp-platform.org" title="开源 RISC-V · 超低功耗并行架构">ETH Zürich（PULP 平台）</a>
+    <a class="dm-chip" href="https://www.csail.mit.edu">MIT CSAIL</a>
+    <a class="dm-chip" href="https://bar.eecs.berkeley.edu">UC Berkeley（Chipyard/Gemmini）</a>
+    <a class="dm-chip" href="https://pulp-platform.org">ETH Zürich（PULP 平台）</a>
   </span></div>
 </div>
 

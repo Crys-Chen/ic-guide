@@ -13713,22 +13713,25 @@
 <li><strong>CMOS-MEMS 集成与读出电路</strong>：微弱的电容差被寄生和热噪声淹没，要把读出 ASIC 和 MEMS 结构单片或近距集成，封装、应力、工艺兼容每一处都决定器件能不能量产。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>器件线（物理→工艺→MEMS）与电路线（信号处理 + 模拟接口）两路并进，控制理论串联传感与执行。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["固体力学\n梁·薄膜·振动·热涨落"] --&gt; B["MEMS器件原理\n换能机制·等效电路"]
-    C["半导体物理\n材料·掺杂"] --&gt; D["微加工工艺\n光刻·刻蚀·薄膜沉积·释放"]
-    D --&gt; B
-    M["结构材料\nPDMS·水凝胶·二维薄膜"] --&gt; D
-    E["接口电路\n放大器·ADC·读出电路"] --&gt; F["MEMS系统集成\nCMOS-MEMS·封装"]
-    B --&gt; F
-    A --&gt; F
+    SS[固体物理] --&gt; SP[半导体物理]
+    SP --&gt; MEMS[MEMS]
+    PRO[集成电路工艺] --&gt; MEMS
+    SIG[信号处理] --&gt; MEMS
+    MAS[模拟与射频] --&gt; MEMS
+    CTRL[控制与机器人] --&gt; MEMS
 
-    classDef core fill:#FDE8D8,stroke:#C0530A,stroke-width:2px
-    class A,B,C,D,E,F,M core</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    class SS,SP phys
+    class MEMS,PRO dev
+    class SIG,MAS,CTRL ckt</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/">物理基础</a>（固体物理·半导体物理——梁与薄膜的力学、热涨落、材料与掺杂）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a>（器件原理·IC工艺原理——换能机制与光刻/刻蚀/沉积/释放工艺）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路</a>（模拟电路·接口电路方向——电容差读出、热噪声与 CMOS-MEMS 集成）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/MEMS/">MEMS</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%8E%A7%E5%88%B6%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA/">控制与机器人</a>（待建）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢动手做实物的人。这个方向横跨力学和电学，梁的刚度、振动、阻尼这套力学，加上模拟电路的噪声分析，是别处用不上、这里天天要用的能力。日常从仿真、超净间工艺到探针台测试走全流程，结构是悬空的，粘连和应力随时让一批片子报废，一圈下来常要几个月。这一行认的是真器件量出来的曲线，仿真图没有说服力，所以得耐得住长闭环；回报是亲手让一个微米级的机械结构真的动起来。</p>
@@ -13889,18 +13892,18 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="国际固态传感器、执行器与微系统大会">Transducers</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 国际微机电系统大会">IEEE MEMS</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 国际传感器大会">IEEE Sensors</span>
-    <span class="dm-chip dm-chip--static" title="希尔顿黑德固态传感器、执行器与微系统研讨会">Hilton Head Workshop</span>
-    <span class="dm-chip dm-chip--static" title="国际电子器件大会（器件级）">IEDM</span>
+    <span class="dm-chip dm-chip--static">Transducers</span>
+    <span class="dm-chip dm-chip--static">IEEE MEMS</span>
+    <span class="dm-chip dm-chip--static">IEEE Sensors</span>
+    <span class="dm-chip dm-chip--static">Hilton Head Workshop</span>
+    <span class="dm-chip dm-chip--static">IEDM</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="IEEE/ASME Journal of Microelectromechanical Systems（微机电系统汇刊）">JMEMS</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 传感器期刊">IEEE Sensors Journal</span>
-    <span class="dm-chip dm-chip--static" title="传感器与执行器期刊 A/B 辑">Sensors and Actuators A/B</span>
-    <span class="dm-chip dm-chip--static" title="微系统与纳米工程">Microsystems & Nanoengineering</span>
-    <span class="dm-chip dm-chip--static" title="IEEE Transactions on Electron Devices（电子器件汇刊）">IEEE TED</span>
+    <span class="dm-chip dm-chip--static">JMEMS</span>
+    <span class="dm-chip dm-chip--static">IEEE Sensors Journal</span>
+    <span class="dm-chip dm-chip--static">Sensors and Actuators A/B</span>
+    <span class="dm-chip dm-chip--static">Microsystems & Nanoengineering</span>
+    <span class="dm-chip dm-chip--static">IEEE TED</span>
   </span></div>
 </div>
 
@@ -13930,16 +13933,16 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.sim.cas.cn/" title="传感技术全国重点实验室，硅微机械加工与微系统">中科院上海微系统与信息技术研究所</a>
-    <a class="dm-chip" href="http://sinano.cas.cn/" title="MEMS 中试/代工平台与微纳加工">中科院苏州纳米技术与纳米仿生研究所</a>
-    <a class="dm-chip" href="https://www.ime.ac.cn/" title="MEMS 工艺平台与传感器集成">中科院微电子研究所</a>
+    <a class="dm-chip" href="https://www.sim.cas.cn/">中科院上海微系统与信息技术研究所</a>
+    <a class="dm-chip" href="http://sinano.cas.cn/">中科院苏州纳米技术与纳米仿生研究所</a>
+    <a class="dm-chip" href="https://www.ime.ac.cn/">中科院微电子研究所</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://bsac.berkeley.edu/" title="全球顶尖高校 MEMS 研究中心">Berkeley Sensor & Actuator Center (BSAC)</a>
-    <a class="dm-chip" href="https://lnf.umich.edu/" title="惯性传感器、晶圆级封装、神经接口">Michigan 集成传感器中心（WIMS²/Lurie Nanofab）</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en" title="硅基传感器与超声 MEMS 工艺">imec</a>
-    <a class="dm-chip" href="https://www.nist.gov/pml/time-and-frequency-division" title="芯片级原子钟发源地、NEMS 精密测量">NIST 时间频率部</a>
-    <a class="dm-chip" href="https://www.isit.fraunhofer.de/" title="MEMS 工艺与微系统量产化（欧洲）">Fraunhofer ISIT</a>
+    <a class="dm-chip" href="https://bsac.berkeley.edu/">Berkeley Sensor & Actuator Center (BSAC)</a>
+    <a class="dm-chip" href="https://lnf.umich.edu/">Michigan 集成传感器中心（WIMS²/Lurie Nanofab）</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en">imec</a>
+    <a class="dm-chip" href="https://www.nist.gov/pml/time-and-frequency-division">NIST 时间频率部</a>
+    <a class="dm-chip" href="https://www.isit.fraunhofer.de/">Fraunhofer ISIT</a>
   </span></div>
 </div>
 

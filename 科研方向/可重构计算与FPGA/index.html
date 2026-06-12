@@ -13818,29 +13818,22 @@
 <li><strong>安全、可靠与抗辐射</strong>：比特流不加密就能被复制，多租户要隔离防侧信道，航天场景要抗辐射加固，这些约束贯穿从器件到系统的每一层。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>数字设计是入口，EDA 是工具链，体系结构决定加速器的设计空间。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["数字逻辑基础\nLUT·触发器·时序分析"] --&gt; B["HDL / Verilog\n硬件描述与仿真"]
-    B --&gt; C["FPGA 开发工具\nVivado·Quartus·比特流"]
-    C --&gt; D["数字IC设计原理\n时序收敛·功耗优化"]
-    D --&gt; E["FPGA 加速研究\n布局布线·神经网络映射"]
+    DIG[数字设计] --&gt; ARCH[体系结构]
+    DIG --&gt; EDA[EDA]
+    DSA[数据结构与算法] --&gt; EDA
+    ARCH --&gt; ACC[AI加速器]
+    EDA --&gt; ACC
 
-    F["算法 / C·C++\n数据结构·组合优化"] --&gt; G["高层次综合 HLS\nC转RTL·Pragma·流水线"]
-    G --&gt; E
-    F --&gt; H["布局布线算法\nNP难优化·ML for EDA"]
-    H --&gt; E
-    I["量化与DNN映射\nDSP/LUT铺算子"] --&gt; E
-
-    classDef core fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef supp fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
-    class A,B,C,D,E core
-    class F,G,H,I supp</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef sys fill:#EBF4FF,stroke:#2C5282
+    class DIG,EDA ckt
+    class ARCH,ACC,DSA sys</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">电路 · 数字方向（数字逻辑·数字IC设计·FPGA）</a>（节点 A·C·D）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/HDL/Verilog/ZJU_digital_system/">硬件描述语言 HDL（Verilog·HLS）</a>（节点 B·G）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">算法编程 · 数据结构与算法（组合优化）</a>（节点 F·H，布局布线的优化底座）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">系统架构 · 编译原理</a>（HLS / 比特流生成的编译视角）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>（节点 I：DNN 量化与 FPGA 映射）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a>（待建）</li>
+<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合想做硬件但等不起流片的人。一个架构改动几小时就能上板看到结果，一块几百块的开发板就能开工，本科生积累第一段硬件科研经历，常常就从这里起步。数字逻辑和 Verilog 过关就能进场，想往工具侧走再补算法，布局布线本质是组合优化。日常主要围绕板子，写 RTL、等综合布线、上板抓波形。要认清 FPGA 比 ASIC 慢四倍、大三十倍，它的价值在灵活和低延迟，用它追求峰值算力是用错了方向。</p>
@@ -13977,19 +13970,19 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="ACM/SIGDA 现场可编程门阵列国际研讨会">FPGA</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 现场可编程定制计算机国际研讨会">FCCM</span>
-    <span class="dm-chip dm-chip--static" title="现场可编程逻辑与应用国际会议">FPL</span>
-    <span class="dm-chip dm-chip--static" title="设计自动化大会">DAC</span>
-    <span class="dm-chip dm-chip--static" title="国际计算机辅助设计大会">ICCAD</span>
-    <span class="dm-chip dm-chip--static" title="IEEE/ACM 国际微体系结构研讨会">MICRO</span>
-    <span class="dm-chip dm-chip--static" title="编程语言和操作系统的体系结构支持国际会议">ASPLOS</span>
+    <span class="dm-chip dm-chip--static">FPGA</span>
+    <span class="dm-chip dm-chip--static">FCCM</span>
+    <span class="dm-chip dm-chip--static">FPL</span>
+    <span class="dm-chip dm-chip--static">DAC</span>
+    <span class="dm-chip dm-chip--static">ICCAD</span>
+    <span class="dm-chip dm-chip--static">MICRO</span>
+    <span class="dm-chip dm-chip--static">ASPLOS</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="计算机辅助设计汇刊">IEEE TCAD</span>
-    <span class="dm-chip dm-chip--static" title="超大规模集成系统汇刊">IEEE TVLSI</span>
-    <span class="dm-chip dm-chip--static" title="可重构技术与系统汇刊">ACM TRETS</span>
-    <span class="dm-chip dm-chip--static" title="计算机汇刊">IEEE TC</span>
+    <span class="dm-chip dm-chip--static">IEEE TCAD</span>
+    <span class="dm-chip dm-chip--static">IEEE TVLSI</span>
+    <span class="dm-chip dm-chip--static">ACM TRETS</span>
+    <span class="dm-chip dm-chip--static">IEEE TC</span>
   </span></div>
 </div>
 
@@ -14017,10 +14010,10 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="http://www.ict.ac.cn/" title="可重构计算与领域专用加速器">中科院计算所</a>
+    <a class="dm-chip" href="http://www.ict.ac.cn/">中科院计算所</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://vast.cs.ucla.edu/" title="HLS 与 FPGA 设计自动化">UCLA VAST 实验室</a>
+    <a class="dm-chip" href="https://vast.cs.ucla.edu/">UCLA VAST 实验室</a>
   </span></div>
 </div>
 

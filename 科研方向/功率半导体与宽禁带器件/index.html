@@ -13702,22 +13702,26 @@
 <li><strong>功率 IC 与电路-器件协同</strong>：宽禁带器件开关快到纳秒级，几纳亨寄生电感就能激起上百伏过电压，门极驱动、保护与开关贴着器件特性单片集成成功率 IC，性能才能兑现。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
+<p>物理线决定器件性能上限，传热线决定系统能用多大功率。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    A["量子力学\n能带·载流子"] --&gt; B["固体物理\n禁带·声子·迁移率"]
-    B --&gt; C["半导体物理\nSiC/GaN 宽禁带特性"]
-    C --&gt; D["半导体器件原理\nMOSFET·HEMT·IGBT"]
-    D --&gt; E["IC工艺原理\n外延·离子注入·金属化"]
-    D --&gt; G["功率电路\n门极驱动·封装·寄生参数"]
-    E --&gt; F["宽禁带器件\n研究·设计·可靠性"]
-    G --&gt; F
+    QM[量子力学] --&gt; SS[固体物理]
+    SS --&gt; SP[半导体物理]
+    SP --&gt; PWR[功率半导体器件]
+    MAT[材料] --&gt; PWR
+    PRO[集成电路工艺] --&gt; PWR
+    HEAT[传热学] --&gt; PWR
+    MAS[模拟与射频] --&gt; PWR
 
-    classDef core fill:#FDE8D8,stroke:#C0530A,stroke-width:2px
-    class A,B,C,D,E,F,G core</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    class QM,SS,SP,HEAT phys
+    class PWR,MAT,PRO dev
+    class MAS ckt</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/">物理基础</a>（量子力学·固体物理·半导体物理——理解能带、载流子传输与宽禁带材料的根基）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/">器件与工艺</a>（半导体器件原理·IC 工艺原理——MOSFET/HEMT 结构与外延、离子注入、金属化）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/">电路</a>（模拟电路·功率电路方向——门极驱动、封装版图与寄生参数协同设计）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">功率半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（功率电子、栅驱动）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢跟实际的材料与电学打交道的人。课程上学固体物理、半导体物理和模拟电路，看到 I-V 曲线异常就想深入查是哪层物理出了问题，这种人很合适。这里也是两拨人，做器件的在 TCAD（Technology Computer-Aided Design）仿真和高压测试台之间来回，做电路的围绕门极驱动和纳秒级开关来设计功率 IC。节奏偏慢，一颗器件从设计到敢说可靠常以季度甚至年计，而且高压大电流的实验是真有危险，胆大心细缺一不可。</p>
@@ -13862,17 +13866,17 @@
 <h3 id="_7">学术会议与期刊</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">会议</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="国际电子器件会议">IEDM</span>
-    <span class="dm-chip dm-chip--static" title="功率半导体器件国际研讨会">ISPSD</span>
-    <span class="dm-chip dm-chip--static" title="应用功率电子大会">APEC</span>
-    <span class="dm-chip dm-chip--static" title="IEEE 能量转换大会与博览会（Energy Conversion Congress and Exposition）">ECCE</span>
-    <span class="dm-chip dm-chip--static" title="欧洲电力电子与应用大会（European Conference on Power Electronics and Applications）">EPE</span>
+    <span class="dm-chip dm-chip--static">IEDM</span>
+    <span class="dm-chip dm-chip--static">ISPSD</span>
+    <span class="dm-chip dm-chip--static">APEC</span>
+    <span class="dm-chip dm-chip--static">ECCE</span>
+    <span class="dm-chip dm-chip--static">EPE</span>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">期刊</span><span class="dm-chips">
-    <span class="dm-chip dm-chip--static" title="Transactions on Electron Devices">IEEE T-ED</span>
-    <span class="dm-chip dm-chip--static" title="Electron Device Letters">IEEE EDL</span>
-    <span class="dm-chip dm-chip--static" title="IEEE Transactions on Power Electronics（电力电子汇刊）">IEEE T-Power Electronics</span>
-    <span class="dm-chip dm-chip--static" title="IEEE Transactions on Industrial Electronics（工业电子汇刊）">IEEE T-Industrial Electronics</span>
+    <span class="dm-chip dm-chip--static">IEEE T-ED</span>
+    <span class="dm-chip dm-chip--static">IEEE EDL</span>
+    <span class="dm-chip dm-chip--static">IEEE T-Power Electronics</span>
+    <span class="dm-chip dm-chip--static">IEEE T-Industrial Electronics</span>
   </span></div>
 </div>
 
@@ -13904,15 +13908,15 @@
 <h3 id="_10">科研院所</h3>
 <div class="dm-wrap chip-block">
   <div class="dm-row dm-device"><span class="dm-lbl">国内</span><span class="dm-chips">
-    <a class="dm-chip" href="https://nercwbs.xidian.edu.cn/" title="SiC/GaN 器件，GaN 专利全球第一">宽禁带半导体国家工程研究中心（西安电子科技大学）</a>
-    <a class="dm-chip" href="https://semi.cas.cn" title="宽禁带半导体材料与器件研发">中科院半导体研究所</a>
-    <a class="dm-chip" href="https://www.cetc13.cn" title="化合物半导体器件与功率/射频器件">中国电科 13 所（产业基础研究院）</a>
-    <a class="dm-chip" href="http://www.cetc55.com" title="固态功率/射频器件与第三代半导体">中国电科 55 所</a>
+    <a class="dm-chip" href="https://nercwbs.xidian.edu.cn/">宽禁带半导体国家工程研究中心（西安电子科技大学）</a>
+    <a class="dm-chip" href="https://semi.cas.cn">中科院半导体研究所</a>
+    <a class="dm-chip" href="https://www.cetc13.cn">中国电科 13 所（产业基础研究院）</a>
+    <a class="dm-chip" href="http://www.cetc55.com">中国电科 55 所</a>
   </span></div>
   <div class="dm-row dm-arch"><span class="dm-lbl">国外</span><span class="dm-chips">
-    <a class="dm-chip" href="https://www.iisb.fraunhofer.de/" title="欧洲领先的宽禁带功率电子研究机构">Fraunhofer IISB</a>
-    <a class="dm-chip" href="https://www.imec-int.com/en" title="GaN-on-Si 功率器件与工艺">imec</a>
-    <a class="dm-chip" href="https://www.a-star.edu.sg/ime" title="SiC 与 mmWave GaN 研发">A*STAR IME（新加坡微电子所）</a>
+    <a class="dm-chip" href="https://www.iisb.fraunhofer.de/">Fraunhofer IISB</a>
+    <a class="dm-chip" href="https://www.imec-int.com/en">imec</a>
+    <a class="dm-chip" href="https://www.a-star.edu.sg/ime">A*STAR IME（新加坡微电子所）</a>
   </span></div>
 </div>
 
