@@ -78,6 +78,10 @@
   background: rgba(3,33,104,.08);
 }
 
+/* 首页 hero 用 fixed + z-index:5 固定，会盖住搜索下拉框。
+   把 header（搜索面板挂在它里面）抬到 hero 之上。 */
+.md-header { z-index: 10 !important; }
+
 /* ─── 正文重点句下划线（科研方向文章用 <u> 标注观点句） ── */
 .md-typeset u {
   text-decoration: underline;

@@ -11604,7 +11604,7 @@
 
   <h1>可重构计算与FPGA</h1>
 
-<p>在软件的灵活性和专用硬件的性能之间寻找最优平衡——FPGA 既是芯片设计的验证平台，也是数据中心和边缘计算的可编程加速器，而可重构计算研究的是如何让这套机制更高效、更易用。</p>
+<p>在软件的灵活性和专用硬件的性能之间寻找最优平衡。FPGA 既是芯片设计的验证平台，也是数据中心和边缘计算的可编程加速器；可重构计算研究的是如何让这套机制更高效、更易用。</p>
 <div><svg viewBox="0 0 1140 532" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1140px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <rect width="1140" height="532" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
   <text x="570" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1E293B">集成电路科研方向全景图</text>
@@ -11833,8 +11833,8 @@
   <text x="430" y="320" text-anchor="middle" font-size="12" fill="#475569">数据流过即出结果，延迟低而确定，还能按模型精度（int8/int4）量身定制每一级。</text>
 </svg></div>
 
-<p>FPGA 一旦进了机架，要同时服务多个租户、应付多变的负载，<strong>部分重构</strong>就成了关键——在不停机的前提下，只把芯片的一块区域换成另一个加速器。这才把"可重构"从一次性的编译能力，变成了运行时随需应变的真本事。</p>
-<p>软件再聪明，也只能在既定的硅片上榨，可那一半以上的连线浪费是 fabric 本身定死的。要再往下压，就只能修改硬件了。FPGA 架构师最核心的问题就一句话——<u>哪些功能该硬化成专用电路，硬到什么程度，占多少芯片面积？</u> 这是一场赌博：把一个功能焊进硅里，用得上它的应用立刻更小更快更省电；可一旦某块芯片碰上的应用根本用不到它，这块硅就白占了本该留给通用逻辑的地盘。</p>
+<p>FPGA 一旦进了机架，要同时服务多个租户、应付多变的负载，<strong>部分重构</strong>就成了关键，即在不停机的前提下，只把芯片的一块区域换成另一个加速器。这才把"可重构"从一次性的编译能力，变成了运行时随需应变的真本事。</p>
+<p>软件再聪明，也只能在既定的硅片上榨，可那一半以上的连线浪费是 fabric 本身定死的。要再往下压，就只能修改硬件了。FPGA 架构师面临的核心问题是：<u>哪些功能该硬化成专用电路，硬到什么程度，占多少芯片面积？</u> 这是一场赌博：把一个功能焊进硅里，用得上它的应用立刻更小更快更省电；可一旦某块芯片碰上的应用根本用不到它，这块硅就白占了本该留给通用逻辑的地盘。</p>
 <p>FPGA 这三十年的演化，就是一连串赌赢了的硬化。最早的芯片只有查找表和连线，之后才一样样往里加硬块。人们发现几乎每个设计都在做加法，就把进位链硬化进逻辑块；信号处理和 AI 离不开乘累加，于是有了专门的 <strong>DSP 块</strong>（Digital Signal Processing，数字信号处理）；数据总要在片上缓存，<strong>BRAM</strong>（Block RAM，块状随机存取存储器）也嵌了进来。到了深度学习时代，DSP 又长出按 int8、int4 拆分的张量模式。连最难啃的连线本身都在被硬化——长线延迟既然不随工艺改善，新一代器件干脆把一张<strong>硬核片上网络</strong>（Network-on-Chip, NoC）做进芯片，比用可编程逻辑搭出来的软 NoC 省 23 倍面积、快 6 倍；单块芯片大到良率扛不住，就用 <strong>interposer</strong>（中介层）把好几块裸片拼进一个封装。今天的高端器件（如 AMD Versal）已经是「可编程逻辑 + AI 引擎 + ARM 处理器 + 硬核 NoC」的异构平台，纯查找表只剩其中一小块。</p>
 <div><svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:1.5rem auto;">
   <rect width="900" height="360" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
@@ -12333,6 +12333,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <script src="../../javascripts/hero-scroll.js"></script>
       
         <script src="../../javascripts/stock-quote.js"></script>
+      
+        <script src="../../javascripts/search-cjk-highlight.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
       
