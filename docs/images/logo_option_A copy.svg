@@ -6,10 +6,6 @@
 
       .bg-blue { fill: #0D3692; }
 
-      .bg-light-blue { fill: #144CC7; }
-
-      .bg-dark-blue { fill: #08215C; }
-
       .stroke-blue { stroke: #0D3692; }
 
       .bg-teal { fill: #1A9C8E; }
@@ -36,9 +32,11 @@
 
 
 
-  <polygon points="164,36 106,106 36,164 100,100" class="bg-dark-blue"/>
+  <polygon points="100,6 120,38 107,38 107,65 93,65 93,38 80,38" class="bg-blue" transform="rotate(45,100,100)"/>
 
-  <polygon points="164,36 100,100 36,164 94,94" class="bg-light-blue"/>
+  
+
+  <line x1="100" y1="135" x2="100" y2="160" class="stroke-blue" stroke-width="12" transform="rotate(45,100,100)"/>
 
 
 
