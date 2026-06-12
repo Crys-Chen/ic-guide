@@ -8,7 +8,7 @@
 - **[硬件描述语言 (HDL)](HDL/Verilog/ZJU_digital_system.md)** — Verilog / Chisel / HLS;像写代码一样描述硬件
 - **[FPGA](FPGA/FDU_MICR130024.md)** — 半定制可编程数字芯片;既是教学平台也是研究方向
 - **[数字集成电路](数字集成电路/FDU_MICR130029.md)** — 在 CMOS 工艺层面把数字逻辑落到晶体管;关注延时/功耗/面积
-- **[数字验证](数字验证/index.md)** — testbench、断言、UVM(征集中)
+- **[数字验证](数字验证/index.md)** — testbench、断言、UVM(待建)
 - **[低功耗设计](低功耗设计/FDU_ICSE40005.md)** — 超低功耗 IC 设计专题(复旦 2025 选修)
 - **[ASIC 与数字后端](ASIC与数字后端/FDU_INFO130094.md)** — 综合、布局布线、时序收敛,从 RTL 走到 GDSII;NPTEL 两门分别讲物理设计和综合的算法
 

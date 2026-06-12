@@ -30,7 +30,7 @@
 - 定位：神经形态计算社区，整理了 Loihi / TrueNorth / SpiNNaker 的论文、教程和 workshop 录像
 - 链接：[open-neuromorphic.org](https://open-neuromorphic.org/)
 
-## 征集中
+## 待补充
 
 如果你正在做 SNN 或神经形态芯片方向，有推荐的系统性课程或学习路径，欢迎通过[参与建设](../../../参与建设.md)补充。目前最缺的是：
 
