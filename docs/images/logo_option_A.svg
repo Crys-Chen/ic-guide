@@ -38,8 +38,6 @@
 
   <line x1="100" y1="135" x2="100" y2="160" class="stroke-blue" stroke-width="12" transform="rotate(45,100,100)"/>
 
-  <circle cx="100" cy="172" r="8" fill="none" class="stroke-teal" stroke-width="5" transform="rotate(45,100,100)"/>
-
 
 
   <g class="bg-teal">
