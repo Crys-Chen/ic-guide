@@ -58,6 +58,6 @@ graph LR
 
 - **Lumerical FDTD/MODE**(Ansys 旗下)— 光波导/器件仿真工业标准
 - **KLayout** — 开源光子布局工具(同时也用于电子 layout)
-- **SiEPIC** — UBC 团队维护的开源硅光设计工具链 + 教程,<https://siepic.ubc.ca/>
+- **SiEPIC** — UBC 团队维护的开源硅光设计工具链 + 教程,<https://github.com/SiEPIC>
 
 > 想深入纳米光子学(光子晶体、超表面、量子光学)的同学,可参考 Stanford EE 236C / EE 336 公开材料,或 Caltech、UCSB 等校的相关课程——**但这超出了"硅光集成入门"的需求范围**,不在本板块的核心推荐内。
