@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+git-revision-date = mkdocs_git_revision_date_plugin.plugin:GitRevisionDatePlugin
+

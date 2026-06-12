@@ -1,0 +1,20 @@
+# Stanford CS336: Language Modeling from Scratch
+
+## 课程简介
+
+- 所属大学：斯坦福大学（Stanford University）
+- 先修要求：深度学习（Transformer）、分布式系统基础、能阅读 PyTorch 源码
+- 编程语言：Python / PyTorch / Triton（CUDA 内核）
+- 课程难度：🌟🌟🌟🌟🌟
+- 预计学时：200+ 小时
+
+Stanford CS336 要求学生从零实现大语言模型的所有核心组件：BPE 分词器、Transformer 架构（含 Flash Attention 手写实现）、分布式训练（张量并行/数据并行）、Triton 底层算子、预训练数据清洗流程，以及指令微调（SFT）与偏好优化（DPO）。每次作业 handout 达 40–50 页，要求在无框架封装的情况下彻底理解每个细节。
+
+这是目前最硬核的 LLM 课程，适合以系统能力为导向、希望真正掌握 LLM 内部实现全栈的同学。完成后可独立从头复现 GPT-2/LLaMA 级别模型的训练全流程。
+
+## 课程资源
+
+- 课程主页：<https://stanford-cs336.github.io/spring2025/index.html>
+- 课程视频：[Stanford CS336 Language Modeling from Scratch (Spring 2025) - YouTube](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
+- 课程教材：无指定教材（以 handout 为主）
+- 课程作业：参见课程主页（每次作业 40–50 页 handout）

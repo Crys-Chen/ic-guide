@@ -1,0 +1,21 @@
+<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- B: 定位芯片 — map-pin silhouette whose body IS a chip die -->
+  <!-- pin body: rounded rect top + pointed bottom -->
+  <path d="M40,97 L8,60 L8,13 Q8,5 16,5 L64,5 Q72,5 72,13 L72,60 Z" fill="#032168"/>
+  <!-- inner die border -->
+  <rect x="17" y="14" width="46" height="38" rx="1" fill="none" stroke="white" stroke-width="1.5"/>
+  <!-- floorplan grid -->
+  <line x1="32" y1="14" x2="32" y2="52" stroke="white" stroke-width="1" opacity="0.55"/>
+  <line x1="48" y1="14" x2="48" y2="52" stroke="white" stroke-width="1" opacity="0.55"/>
+  <line x1="17" y1="28" x2="63" y2="28" stroke="white" stroke-width="1" opacity="0.55"/>
+  <line x1="17" y1="40" x2="63" y2="40" stroke="white" stroke-width="1" opacity="0.55"/>
+  <!-- top pads -->
+  <rect x="26" y="3" width="7" height="4" rx="1" fill="white"/>
+  <rect x="47" y="3" width="7" height="4" rx="1" fill="white"/>
+  <!-- side pads left -->
+  <rect x="3" y="19" width="6" height="6" rx="1" fill="white"/>
+  <rect x="3" y="36" width="6" height="6" rx="1" fill="white"/>
+  <!-- side pads right -->
+  <rect x="71" y="19" width="6" height="6" rx="1" fill="white"/>
+  <rect x="71" y="36" width="6" height="6" rx="1" fill="white"/>
+</svg>

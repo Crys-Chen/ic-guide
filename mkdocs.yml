@@ -1,0 +1,829 @@
+site_name: IC自学指南
+site_url: https://crys-chen.github.io/ic-guide/
+site_author: Crys-Chen
+site_description: >-
+  IC自学指南
+
+repo_name: ic-guide
+repo_url: https://github.com/Crys-Chen/ic-guide
+
+copyright: Copyright &copy; 2021-present <a href="https://github.com/PKUFlyingPig" target="_blank" rel="noopener noreferrer">PKUFlyingPig</a>
+
+theme:
+  name: material
+  language: zh
+  static_templates:
+    - 404.html
+  favicon: images/favicon.ico
+  apple-touch-icon-precomposed: images/mobile_icon.png
+  include_search_page: false
+  search_index_only: true
+
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.code.annotate
+    - content.tooltips
+    - toc.follow
+
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+  custom_dir: overrides
+
+hooks:
+  - hooks.py
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - git-revision-date:
+  - minify:
+      minify_html: false
+      minify_css: true
+      minify_js: true
+  - open-in-new-tab:
+  - redirects:
+      redirect_maps:
+        '学习地图/系统架构/计算机系统基础/FDU_MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
+        '学习地图/系统架构/AI加速器/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/index.md'
+        '学习地图/系统架构/体系结构/FDU_ICSE40002.md': '学习地图/系统架构/AI加速器/FDU_ICSE40002.md'
+        '学习地图/系统架构/体系结构/FDU_ICSE30036.md': '学习地图/系统架构/AI加速器/FDU_ICSE30036.md'
+        '学习地图/电路/数字设计/FPGA/FDU_ICSE40018.md': '学习地图/系统架构/AI加速器/FDU_ICSE40018.md'
+        '学习地图/系统架构/体系结构/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/index.md'
+        '学习地图/电路/EDA/FDU_ICSE40019.md': '学习地图/人工智能/AI交叉应用/FDU_ICSE40019.md'
+        '学习地图/器件与工艺/集成电路工艺/FDU_ICSE30035.md': '学习地图/人工智能/AI交叉应用/FDU_ICSE30035.md'
+        '学习地图/人工智能/机器人学/FDU_AIT410017.md': '学习地图/人工智能/AI交叉应用/FDU_AIT410017.md'
+        '学习地图/人工智能/机器人学/index.md': '学习地图/电路/控制与机器人/index.md'
+        '学习地图/电路/自动控制/index.md': '学习地图/电路/控制与机器人/index.md'
+        '学习地图/器件与工艺/TCAD仿真/index.md': '学习地图/器件与工艺/集成电路工艺/index.md'
+        '学习地图/器件与工艺/TCAD仿真/FDU_ICSE30014.md': '学习地图/器件与工艺/集成电路工艺/FDU_ICSE30014.md'
+        '学习地图/器件与工艺/TCAD仿真/FDU_ICSE30002.md': '学习地图/电路/EDA/FDU_ICSE30002.md'
+        '学习地图/数学/分析/数理方程/index.md': '学习地图/数学/分析/index.md'
+        '学习地图/数学/分析/数理方程/FDU_PHYS20006.md': '学习地图/数学/分析/index.md'
+        '学习地图/算法编程/编程入门/FDU_EST30001.md': '学习地图/人工智能/AI交叉应用/FDU_EST30001.md'
+        '学习地图/电路/模拟与射频/FDU_ICSE30003.md': '学习地图/电路/测试与可靠性/FDU_ICSE30003.md'
+        '学习地图/电路/模拟与射频/FDU_ICSE30033.md': '学习地图/电路/测试与可靠性/FDU_ICSE30033.md'
+        '学习地图/电路/模拟与射频/射频电路/FDU_ICSE40010.md': '学习地图/电路/测试与可靠性/FDU_ICSE40010.md'
+        '学习地图/器件与工艺/半导体器件/FDU_ICSE50008.md': '学习地图/电路/测试与可靠性/FDU_ICSE50008.md'
+        '学习地图/器件与工艺/半导体器件/FDU_ICSE30031.md': '学习地图/器件与工艺/前沿器件/FDU_ICSE30031.md'
+        '学习地图/器件与工艺/半导体器件/FDU_ICSE30012.md': '学习地图/器件与工艺/前沿器件/FDU_ICSE30012.md'
+        '学习地图/物理/半导体物理/FDU_ICSE30029.md': '学习地图/器件与工艺/前沿器件/FDU_ICSE30029.md'
+        '学习地图/电路/数字设计/数字集成电路/FDU_ICSE40005.md': '学习地图/电路/数字设计/低功耗设计/FDU_ICSE40005.md'
+        '学习地图/电路/数字设计/HDL/FDU_ICSE20016.md': '学习地图/电路/数字设计/ASIC与数字后端/FDU_ICSE20016.md'
+        '学习地图/电路/EDA/FDU_MICR130035.md': '学习地图/电路/EDA/index.md'
+        '学习地图/电路/其他/index.md': '学习地图/电路/电路实验/index.md'
+        '学习地图/电路/数字设计/HDL/index.md': '学习地图/电路/数字设计/index.md'
+        '学习地图/电路/数字设计/ASIC与数字后端/index.md': '学习地图/电路/数字设计/index.md'
+        '学习地图/电路/模拟与射频/射频电路/index.md': '学习地图/电路/模拟与射频/index.md'
+        '学习地图/数学/入门速成/MICR130008.md': '学习地图/数学/入门速成/FDU_MICR130008.md'
+        '学习地图/数学/入门速成/CS70.md': '学习地图/数学/入门速成/UCB_CS70.md'
+        '学习地图/数学/入门速成/6.042J.md': '学习地图/数学/入门速成/MIT_6.042J.md'
+        '学习地图/数学/分析/数学分析/MITmaths.md': '学习地图/数学/分析/数学分析/MIT_18.01-18.02.md'
+        '学习地图/数学/分析/复变函数/bilibili.md': '学习地图/数学/分析/复变函数/gaoshushu_complex.md'
+        '学习地图/数学/代数/线性代数/COMP120004.md': '学习地图/数学/代数/线性代数/FDU_COMP120004.md'
+        '学习地图/数学/代数/线性代数/MITLA.md': '学习地图/数学/代数/线性代数/MIT_18.06.md'
+        '学习地图/数学/代数/高等代数/pku.md': '学习地图/数学/代数/高等代数/PKU_qiuweisheng.md'
+        '学习地图/数学/代数/矩阵分析/MIT18.065.md': '学习地图/数学/代数/矩阵分析/MIT_18.065.md'
+        '学习地图/数学/代数/矩阵分析/HIT.md': '学习地图/数学/代数/矩阵分析/HIT_yanzhibin.md'
+        '学习地图/数学/代数/抽象代数/NJU_sun_algebra.md': '学习地图/数学/代数/抽象代数/NJU_sunzhiwei.md'
+        '学习地图/数学/代数/抽象代数/harvard.md': '学习地图/数学/代数/抽象代数/Harvard_gross.md'
+        '学习地图/数学/概率与统计/MIT6.041.md': '学习地图/数学/概率与统计/MIT_6.041.md'
+        '学习地图/数学/概率与统计/MIT6.262.md': '学习地图/数学/概率与统计/MIT_6.262.md'
+        '学习地图/数学/数值与优化/数值分析/numerical.md': '学习地图/数学/数值与优化/数值分析/MIT_18.330.md'
+        '学习地图/数学/数值与优化/凸优化/convex.md': '学习地图/数学/数值与优化/凸优化/Stanford_EE364A.md'
+        '学习地图/数学/专题/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md': '学习地图/数学/专题/信息论/MacKay_infotheory.md'
+        '学习地图/数学/专题/密码学/MIT6.875.md': '学习地图/数学/专题/密码学/MIT_6.875.md'
+        '学习地图/数学/专题/密码学/StandfordCrypto.md': '学习地图/数学/专题/密码学/Stanford_crypto.md'
+        '学习地图/物理/大学物理/PHYS120013-14.md': '学习地图/物理/大学物理/FDU_PHYS120013-14.md'
+        '学习地图/物理/大学物理/MIT8.01-8.02.md': '学习地图/物理/大学物理/MIT_8.01-8.02.md'
+        '学习地图/物理/物理实验/PHYS120015.md': '学习地图/物理/物理实验/FDU_PHYS120015.md'
+        '学习地图/物理/量子力学/MICR130015.md': '学习地图/物理/量子力学/FDU_MICR130015.md'
+        '学习地图/物理/量子力学/MIT8.04.md': '学习地图/物理/量子力学/MIT_8.04.md'
+        '学习地图/物理/固体物理/MICR130013.md': '学习地图/物理/固体物理/FDU_MICR130013.md'
+        '学习地图/物理/半导体物理/MICR130005.md': '学习地图/物理/半导体物理/FDU_MICR130005.md'
+        '学习地图/物理/半导体物理/xidian_semiconductor.md': '学习地图/物理/半导体物理/XDU_semiconductor.md'
+        '学习地图/物理/光学/MIT8.03.md': '学习地图/物理/光学/MIT_8.03.md'
+        '学习地图/器件与工艺/半导体器件/MICR130006.md': '学习地图/器件与工艺/半导体器件/FDU_MICR130006.md'
+        '学习地图/器件与工艺/半导体器件/purdue_ece606.md': '学习地图/器件与工艺/半导体器件/Purdue_ECE606.md'
+        '学习地图/器件与工艺/集成电路工艺/MICR130007.md': '学习地图/器件与工艺/集成电路工艺/FDU_MICR130007.md'
+        '学习地图/电路/入门速成/EE16.md': '学习地图/电路/入门速成/UCB_EE16AB.md'
+        '学习地图/电路/数字设计/数字逻辑基础/MICR130003.md': '学习地图/电路/数字设计/数字逻辑基础/FDU_MICR130003.md'
+        '学习地图/电路/数字设计/数字逻辑基础/MIT6.004.md': '学习地图/电路/数字设计/数字逻辑基础/MIT_6.004.md'
+        '学习地图/电路/数字设计/HDL/Chisel/chisel-bootcamp.md': '学习地图/电路/数字设计/HDL/Chisel/chisel_bootcamp.md'
+        '学习地图/电路/数字设计/HDL/HLS/lehigh_hls.md': '学习地图/电路/数字设计/HDL/HLS/Lehigh_hls.md'
+        '学习地图/电路/数字设计/FPGA/MICR130024.md': '学习地图/电路/数字设计/FPGA/FDU_MICR130024.md'
+        '学习地图/电路/数字设计/FPGA/coursera_fpga.md': '学习地图/电路/数字设计/FPGA/Coursera_fpga.md'
+        '学习地图/电路/数字设计/数字集成电路/MICR130029.md': '学习地图/电路/数字设计/数字集成电路/FDU_MICR130029.md'
+        '学习地图/电路/数字设计/数字集成电路/EECS151.md': '学习地图/电路/数字设计/数字集成电路/UCB_EECS151.md'
+        '学习地图/电路/数字设计/数字集成电路/VLSI_design.md': '学习地图/电路/数字设计/数字集成电路/NPTEL_vlsi_design.md'
+        '学习地图/电路/数字设计/ASIC与数字后端/INFO130094.md': '学习地图/电路/数字设计/ASIC与数字后端/FDU_INFO130094.md'
+        '学习地图/电路/模拟与射频/电路分析基础/tingyi.md': '学习地图/电路/模拟与射频/电路分析基础/FDU_yiting.md'
+        '学习地图/电路/模拟与射频/模拟电子线路/MICR130002.md': '学习地图/电路/模拟与射频/模拟电子线路/FDU_MICR130002.md'
+        '学习地图/电路/模拟与射频/模拟电子线路/qinghua_analog.md': '学习地图/电路/模拟与射频/模拟电子线路/THU_huachengying.md'
+        '学习地图/电路/模拟与射频/模拟电子线路/uestc_analog.md': '学习地图/电路/模拟与射频/模拟电子线路/UESTC_analog.md'
+        '学习地图/电路/模拟与射频/模拟集成电路/MICR130030.md': '学习地图/电路/模拟与射频/模拟集成电路/FDU_MICR130030.md'
+        '学习地图/电路/模拟与射频/模拟集成电路/xjtu_analog_ic.md': '学习地图/电路/模拟与射频/模拟集成电路/XJTU_zhanghong.md'
+        '学习地图/电路/模拟与射频/模拟集成电路/EE613.md': '学习地图/电路/模拟与射频/模拟集成电路/IITK_EE613.md'
+        '学习地图/电路/模拟与射频/数模模数转换器/INFO130270.md': '学习地图/电路/模拟与射频/数模模数转换器/FDU_INFO130270.md'
+        '学习地图/电路/模拟与射频/射频电路/Xidian_high_freq.md': '学习地图/电路/模拟与射频/射频电路/XDU_high_freq.md'
+        '学习地图/电路/模拟与射频/射频电路/EE142.md': '学习地图/电路/模拟与射频/射频电路/UCB_EE142.md'
+        '学习地图/电路/信号处理/信号与系统/MICR130004.md': '学习地图/电路/信号处理/信号与系统/FDU_MICR130004.md'
+        '学习地图/电路/信号处理/信号与系统/MIT6.003.md': '学习地图/电路/信号处理/信号与系统/MIT_6.003.md'
+        '学习地图/电路/信号处理/信号与系统/Signals_and_Systems_AVO.md': '学习地图/电路/信号处理/信号与系统/MIT_6.007.md'
+        '学习地图/电路/信号处理/信号与系统/EE120.md': '学习地图/电路/信号处理/信号与系统/UCB_EE120.md'
+        '学习地图/电路/信号处理/数字信号处理/INFO130010.md': '学习地图/电路/信号处理/数字信号处理/FDU_INFO130010.md'
+        '学习地图/电路/信号处理/数字信号处理/epfl_dsp.md': '学习地图/电路/信号处理/数字信号处理/EPFL_dsp.md'
+        '学习地图/电路/EDA/MICR130035.md': '学习地图/电路/EDA/index.md'
+        '学习地图/电路/嵌入式SoC/junhan.md': '学习地图/电路/嵌入式SoC/FDU_hanjun.md'
+        '学习地图/电路/嵌入式SoC/cornell_ece4760.md': '学习地图/电路/嵌入式SoC/Cornell_ECE4760.md'
+        '学习地图/系统架构/计算机系统基础/MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
+        '学习地图/系统架构/计算机系统基础/CSAPP.md': '学习地图/系统架构/计算机系统基础/CMU_15-213.md'
+        '学习地图/系统架构/计算机系统基础/CS110.md': '学习地图/系统架构/计算机系统基础/Stanford_CS110.md'
+        '学习地图/系统架构/体系结构/N2T.md': '学习地图/系统架构/体系结构/Coursera_nand2tetris.md'
+        '学习地图/系统架构/体系结构/CS61C.md': '学习地图/系统架构/体系结构/UCB_CS61C.md'
+        '学习地图/系统架构/体系结构/DDCA.md': '学习地图/系统架构/体系结构/ETH_DDCA.md'
+        '学习地图/系统架构/体系结构/CA.md': '学习地图/系统架构/体系结构/ETH_CA.md'
+        '学习地图/系统架构/操作系统/MIT6.S081.md': '学习地图/系统架构/操作系统/MIT_6.S081.md'
+        '学习地图/系统架构/操作系统/CS162.md': '学习地图/系统架构/操作系统/UCB_CS162.md'
+        '学习地图/系统架构/操作系统/NJUOS.md': '学习地图/系统架构/操作系统/NJU_OS.md'
+        '学习地图/系统架构/操作系统/HITOS.md': '学习地图/系统架构/操作系统/HIT_OS.md'
+        '学习地图/系统架构/并行与分布式系统/CS149.md': '学习地图/系统架构/并行与分布式系统/Stanford_CS149.md'
+        '学习地图/系统架构/编译原理/CS143.md': '学习地图/系统架构/编译原理/Stanford_CS143.md'
+        '学习地图/系统架构/编译原理/NJU-Compilers.md': '学习地图/系统架构/编译原理/NJU_compilers.md'
+        '学习地图/系统架构/编译原理/CS420.md': '学习地图/系统架构/编译原理/KAIST_CS420.md'
+        '学习地图/系统架构/编译原理/USTC-Compilers.md': '学习地图/系统架构/编译原理/USTC_compilers.md'
+        '学习地图/算法编程/编程入门/MIT-Missing-Semester.md': '学习地图/算法编程/编程入门/MIT_missing_semester.md'
+        '学习地图/算法编程/编程入门/DeCal.md': '学习地图/算法编程/编程入门/UCB_DeCal.md'
+        '学习地图/算法编程/编程入门/Python/CS61A.md': '学习地图/算法编程/编程入门/Python/UCB_CS61A.md'
+        '学习地图/算法编程/编程入门/Python/CS50P.md': '学习地图/算法编程/编程入门/Python/Harvard_CS50P.md'
+        '学习地图/算法编程/编程入门/Python/MIT6.100L.md': '学习地图/算法编程/编程入门/Python/MIT_6.100L.md'
+        '学习地图/算法编程/编程入门/C/CS50.md': '学习地图/算法编程/编程入门/C/Harvard_CS50.md'
+        '学习地图/算法编程/编程入门/C/Duke-Coursera-Intro-C.md': '学习地图/算法编程/编程入门/C/Duke_intro_c.md'
+        '学习地图/算法编程/编程入门/cpp/CS106L.md': '学习地图/算法编程/编程入门/cpp/Stanford_CS106L.md'
+        '学习地图/算法编程/编程入门/cpp/CS106B_CS106X.md': '学习地图/算法编程/编程入门/cpp/Stanford_CS106BX.md'
+        '学习地图/算法编程/编程入门/Rust/CS110L.md': '学习地图/算法编程/编程入门/Rust/Stanford_CS110L.md'
+        '学习地图/算法编程/编程入门/Rust/cs431.md': '学习地图/算法编程/编程入门/Rust/KAIST_CS431.md'
+        '学习地图/算法编程/数据结构与算法/MICR130009.md': '学习地图/算法编程/数据结构与算法/FDU_MICR130009.md'
+        '学习地图/算法编程/数据结构与算法/CS61B.md': '学习地图/算法编程/数据结构与算法/UCB_CS61B.md'
+        '学习地图/算法编程/数据结构与算法/Algo.md': '学习地图/算法编程/数据结构与算法/Coursera_algorithms.md'
+        '学习地图/算法编程/数据结构与算法/6.006.md': '学习地图/算法编程/数据结构与算法/MIT_6.006.md'
+        '学习地图/算法编程/数据结构与算法/6.046.md': '学习地图/算法编程/数据结构与算法/MIT_6.046.md'
+        '学习地图/算法编程/数据结构与算法/CS170.md': '学习地图/算法编程/数据结构与算法/UCB_CS170.md'
+        '学习地图/算法编程/编程语言设计与分析/NJU-SoftwareAnalysis.md': '学习地图/算法编程/编程语言设计与分析/NJU_software_analysis.md'
+        '学习地图/算法编程/编程语言设计与分析/PKU-SoftwareAnalysis.md': '学习地图/算法编程/编程语言设计与分析/PKU_software_analysis.md'
+        '学习地图/人工智能/入门速成/Neural Networks：Zero to Hero.md': '学习地图/人工智能/入门速成/karpathy_zero2hero.md'
+        '学习地图/人工智能/入门速成/CS50.md': '学习地图/人工智能/入门速成/Harvard_CS50AI.md'
+        '学习地图/人工智能/入门速成/CS188.md': '学习地图/人工智能/入门速成/UCB_CS188.md'
+        '学习地图/人工智能/机器学习/ML.md': '学习地图/人工智能/机器学习/Coursera_ML.md'
+        '学习地图/人工智能/机器学习/CS229.md': '学习地图/人工智能/机器学习/Stanford_CS229.md'
+        '学习地图/人工智能/机器学习/CS189.md': '学习地图/人工智能/机器学习/UCB_CS189.md'
+        '学习地图/人工智能/机器学习/Data100.md': '学习地图/人工智能/机器学习/UCB_Data100.md'
+        '学习地图/人工智能/深度学习/d2l_limu.md': '学习地图/人工智能/深度学习/limu_d2l.md'
+        '学习地图/人工智能/深度学习/CS230.md': '学习地图/人工智能/深度学习/Coursera_DL.md'
+        '学习地图/人工智能/深度学习/LHY.md': '学习地图/人工智能/深度学习/NTU_lihongyi.md'
+        '学习地图/人工智能/深度学习/EECS498-007.md': '学习地图/人工智能/深度学习/UMich_EECS498-007.md'
+        '学习地图/人工智能/深度学习/CS231.md': '学习地图/人工智能/深度学习/Stanford_CS231n.md'
+        '学习地图/人工智能/深度学习/CS224n.md': '学习地图/人工智能/深度学习/Stanford_CS224n.md'
+        '学习地图/人工智能/深度学习/CS224w.md': '学习地图/人工智能/深度学习/Stanford_CS224w.md'
+        '学习地图/人工智能/深度学习/CS285.md': '学习地图/人工智能/深度学习/UCB_CS285.md'
+        '学习地图/人工智能/深度生成模型/MIT6.S184.md': '学习地图/人工智能/深度生成模型/MIT_6.S184.md'
+        '学习地图/人工智能/深度生成模型/CS294-158.md': '学习地图/人工智能/深度生成模型/UCB_CS294-158.md'
+        '学习地图/人工智能/大语言模型/CS336.md': '学习地图/人工智能/大语言模型/Stanford_CS336.md'
+        '学习地图/人工智能/大语言模型/CMU11-711.md': '学习地图/人工智能/大语言模型/CMU_11-711.md'
+        '学习地图/人工智能/强化学习/xhu_zhao_RL.md': '学习地图/人工智能/强化学习/Westlake_zhao_RL.md'
+        '学习地图/人工智能/AI系统/CMU10-414.md': '学习地图/人工智能/AI系统/CMU_10-414.md'
+        '学习地图/人工智能/AI系统/EML.md': '学习地图/人工智能/AI系统/MIT_6.5940.md'
+        '学习地图/人工智能/AI系统/MLC_chen.md': '学习地图/人工智能/AI系统/chentianqi_mlc.md'
+        '学习地图/人工智能/机器学习理论/CMU10-708.md': '学习地图/人工智能/机器学习理论/CMU_10-708.md'
+        '学习地图/人工智能/机器学习理论/CS229M.md': '学习地图/人工智能/机器学习理论/Stanford_CS229M.md'
+        '工程工具/MATLAB/MICR130022.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '工程工具/MATLAB/FDU_MICR130022.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '工程工具/MATLAB/vanderbilt_matlab.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '工程工具/MATLAB/Vanderbilt_matlab.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '学习地图/数学/分析/数学分析/MATH120016-17-1.md': '学习地图/数学/分析/数学分析/FDU_MATH120016-17.md'
+        '学习地图/数学/分析/数学分析/MATH120016-17-2.md': '学习地图/数学/分析/数学分析/FDU_MATH120016-17.md'
+        '学习地图/数学/数学进阶/入门速成/MICR130008.md': '学习地图/数学/入门速成/FDU_MICR130008.md'
+        '学习地图/数学/数学进阶/入门速成/CS70.md': '学习地图/数学/入门速成/UCB_CS70.md'
+        '学习地图/数学/数学进阶/入门速成/6.042J.md': '学习地图/数学/入门速成/MIT_6.042J.md'
+        '学习地图/数学/数学基础/数学分析/MATH120016-17-1.md': '学习地图/数学/分析/数学分析/FDU_MATH120016-17.md'
+        '学习地图/数学/数学基础/数学分析/MATH120016-17-2.md': '学习地图/数学/分析/数学分析/FDU_MATH120016-17.md'
+        '学习地图/数学/数学基础/数学分析/MITmaths.md': '学习地图/数学/分析/数学分析/MIT_18.01-18.02.md'
+        '学习地图/数学/数学基础/数学分析/补充资源.md': '学习地图/数学/分析/数学分析/补充资源.md'
+        '学习地图/数学/数学进阶/复变函数/XJTU_complex.md': '学习地图/数学/分析/复变函数/XJTU_complex.md'
+        '学习地图/数学/数学进阶/复变函数/bilibili.md': '学习地图/数学/分析/复变函数/gaoshushu_complex.md'
+        '学习地图/数学/数学进阶/数理方程/index.md': '学习地图/数学/分析/index.md'
+        '学习地图/数学/分析/数理方程/index.md': '学习地图/数学/分析/index.md'
+        '学习地图/数学/分析/数理方程/FDU_PHYS20006.md': '学习地图/数学/分析/index.md'
+        '学习地图/数学/数学基础/线性代数/COMP120004.md': '学习地图/数学/代数/线性代数/FDU_COMP120004.md'
+        '学习地图/数学/数学基础/线性代数/MITLA.md': '学习地图/数学/代数/线性代数/MIT_18.06.md'
+        '学习地图/数学/数学进阶/高等代数/pku.md': '学习地图/数学/代数/高等代数/PKU_qiuweisheng.md'
+        '学习地图/数学/数学进阶/高等代数/Axler_LADR.md': '学习地图/数学/代数/高等代数/Axler_LADR.md'
+        '学习地图/数学/数学进阶/矩阵分析/MIT18.065.md': '学习地图/数学/代数/矩阵分析/MIT_18.065.md'
+        '学习地图/数学/数学进阶/矩阵分析/HIT.md': '学习地图/数学/代数/矩阵分析/HIT_yanzhibin.md'
+        '学习地图/数学/数学进阶/抽象代数/NJU_sun_algebra.md': '学习地图/数学/代数/抽象代数/NJU_sunzhiwei.md'
+        '学习地图/数学/数学进阶/抽象代数/harvard.md': '学习地图/数学/代数/抽象代数/Harvard_gross.md'
+        '学习地图/数学/数学进阶/概率统计/ZJU_probability.md': '学习地图/数学/概率与统计/ZJU_probability.md'
+        '学习地图/数学/数学进阶/概率统计/Harvard_Stat110.md': '学习地图/数学/概率与统计/Harvard_Stat110.md'
+        '学习地图/数学/数学进阶/概率统计/MIT6.041.md': '学习地图/数学/概率与统计/MIT_6.041.md'
+        '学习地图/数学/数学进阶/概率统计/MIT6.262.md': '学习地图/数学/概率与统计/MIT_6.262.md'
+        '学习地图/数学/数学进阶/离散数学/PKU_discrete.md': '学习地图/数学/离散数学/PKU_discrete.md'
+        '学习地图/数学/数学进阶/数值分析/FDU_wu_numerical.md': '学习地图/数学/数值与优化/数值分析/FDU_wu_numerical.md'
+        '学习地图/数学/数学进阶/数值分析/USTC_numerical.md': '学习地图/数学/数值与优化/数值分析/USTC_numerical.md'
+        '学习地图/数学/数学进阶/数值分析/numerical.md': '学习地图/数学/数值与优化/数值分析/MIT_18.330.md'
+        '学习地图/数学/数学进阶/数值分析/补充资源.md': '学习地图/数学/数值与优化/数值分析/补充资源.md'
+        '学习地图/数学/数学进阶/凸优化/USTC_ling_convex.md': '学习地图/数学/数值与优化/凸优化/USTC_ling_convex.md'
+        '学习地图/数学/数学进阶/凸优化/convex.md': '学习地图/数学/数值与优化/凸优化/Stanford_EE364A.md'
+        '学习地图/数学/数学进阶/凸优化/补充资源.md': '学习地图/数学/数值与优化/凸优化/补充资源.md'
+        '学习地图/数学/数学进阶/信息论/The_Information_Theory_Pattern_Recognition_and_Neural_Networks.md': '学习地图/数学/专题/信息论/MacKay_infotheory.md'
+        '学习地图/数学/数学进阶/密码学/BUPT_crypto.md': '学习地图/数学/专题/密码学/BUPT_crypto.md'
+        '学习地图/数学/数学进阶/密码学/MIT6.875.md': '学习地图/数学/专题/密码学/MIT_6.875.md'
+        '学习地图/数学/数学进阶/密码学/StandfordCrypto.md': '学习地图/数学/专题/密码学/Stanford_crypto.md'
+        '学习地图/物理/其他/index.md': '学习地图/物理/物理实验/index.md'
+        '学习地图/物理/其他/PHYS120015.md': '学习地图/物理/物理实验/FDU_PHYS120015.md'
+        '学习地图/物理/半导体物理/purdue_ece606.md': '学习地图/器件与工艺/半导体器件/Purdue_ECE606.md'
+        '学习地图/电路/入门速成/Signals_and_Systems_AVO.md': '学习地图/电路/信号处理/信号与系统/MIT_6.007.md'
+        '学习地图/电路/数字/index.md': '学习地图/电路/数字设计/index.md'
+        '学习地图/电路/数字/数字逻辑基础/数字逻辑基础_FDU/MICR130003.md': '学习地图/电路/数字设计/数字逻辑基础/FDU_MICR130003.md'
+        '学习地图/电路/数字/数字逻辑基础/MIT6.004.md': '学习地图/电路/数字设计/数字逻辑基础/MIT_6.004.md'
+        '学习地图/电路/数字/数字逻辑基础/neso_digital.md': '学习地图/电路/数字设计/数字逻辑基础/neso_digital.md'
+        '学习地图/电路/硬件描述语言(HDL)/index.md': '学习地图/电路/数字设计/index.md'
+        '学习地图/电路/硬件描述语言(HDL)/Verilog/ZJU_digital_system.md': '学习地图/电路/数字设计/HDL/Verilog/ZJU_digital_system.md'
+        '学习地图/电路/硬件描述语言(HDL)/Verilog/HDLBits.md': '学习地图/电路/数字设计/HDL/Verilog/HDLBits.md'
+        '学习地图/电路/硬件描述语言(HDL)/Chisel/chisel-bootcamp.md': '学习地图/电路/数字设计/HDL/Chisel/chisel_bootcamp.md'
+        '学习地图/电路/硬件描述语言(HDL)/HLS/gaoyajun_hls.md': '学习地图/电路/数字设计/HDL/HLS/gaoyajun_hls.md'
+        '学习地图/电路/硬件描述语言(HDL)/HLS/lehigh_hls.md': '学习地图/电路/数字设计/HDL/HLS/Lehigh_hls.md'
+        '学习地图/电路/硬件描述语言(HDL)/Verilog/xiaomeige_fpga.md': '学习地图/电路/数字设计/FPGA/xiaomeige_fpga.md'
+        '学习地图/电路/硬件描述语言(HDL)/Verilog/nandland.md': '学习地图/电路/数字设计/FPGA/nandland.md'
+        '学习地图/电路/数字/FPGA/MICR130024.md': '学习地图/电路/数字设计/FPGA/FDU_MICR130024.md'
+        '学习地图/电路/数字/FPGA/coursera_fpga.md': '学习地图/电路/数字设计/FPGA/Coursera_fpga.md'
+        '学习地图/电路/硬件描述语言(HDL)/Verilog/EECS151.md': '学习地图/电路/数字设计/数字集成电路/UCB_EECS151.md'
+        '学习地图/电路/数字/数字集成电路/数字集成电路设计原理_FDU/MICR130029.md': '学习地图/电路/数字设计/数字集成电路/FDU_MICR130029.md'
+        '学习地图/电路/数字/数字集成电路/VLSI_design.md': '学习地图/电路/数字设计/数字集成电路/NPTEL_vlsi_design.md'
+        '学习地图/电路/数字/数字验证/index.md': '学习地图/电路/数字设计/数字验证/index.md'
+        '学习地图/电路/ASIC/index.md': '学习地图/电路/数字设计/index.md'
+        '学习地图/电路/ASIC/INFO130094.md': '学习地图/电路/数字设计/ASIC与数字后端/FDU_INFO130094.md'
+        '学习地图/电路/ASIC/NPTEL_physical_design.md': '学习地图/电路/数字设计/ASIC与数字后端/NPTEL_physical_design.md'
+        '学习地图/电路/ASIC/NPTEL_synthesis.md': '学习地图/电路/数字设计/ASIC与数字后端/NPTEL_synthesis.md'
+        '学习地图/电路/ASIC/数字后端.md': '学习地图/电路/数字设计/ASIC与数字后端/数字后端.md'
+        '学习地图/电路/ASIC/补充资源.md': '学习地图/电路/数字设计/ASIC与数字后端/补充资源.md'
+        '学习地图/电路/ASIC/UIUC_VLSI_CAD.md': '学习地图/电路/EDA/UIUC_VLSI_CAD.md'
+        '学习地图/电路/模拟/index.md': '学习地图/电路/模拟与射频/index.md'
+        '学习地图/电路/模拟/电路分析基础/tingyi.md': '学习地图/电路/模拟与射频/电路分析基础/FDU_yiting.md'
+        '学习地图/电路/模拟/电路分析基础/THU_yu_circuit.md': '学习地图/电路/模拟与射频/电路分析基础/THU_yu_circuit.md'
+        '学习地图/电路/模拟/模拟电子线路/MICR130002.md': '学习地图/电路/模拟与射频/模拟电子线路/FDU_MICR130002.md'
+        '学习地图/电路/模拟/模拟电子线路/razavi_e1.md': '学习地图/电路/模拟与射频/模拟电子线路/razavi_e1.md'
+        '学习地图/电路/模拟/模拟电子线路/razavi_e2.md': '学习地图/电路/模拟与射频/模拟电子线路/razavi_e2.md'
+        '学习地图/电路/模拟/模拟电子线路/qinghua_analog.md': '学习地图/电路/模拟与射频/模拟电子线路/THU_huachengying.md'
+        '学习地图/电路/模拟/模拟电子线路/SJTU_zheng_analog.md': '学习地图/电路/模拟与射频/模拟电子线路/SJTU_zheng_analog.md'
+        '学习地图/电路/模拟/模拟电子线路/uestc_analog.md': '学习地图/电路/模拟与射频/模拟电子线路/UESTC_analog.md'
+        '学习地图/电路/模拟/模拟集成电路/MICR130030.md': '学习地图/电路/模拟与射频/模拟集成电路/FDU_MICR130030.md'
+        '学习地图/电路/模拟/模拟集成电路/SEU_wujin.md': '学习地图/电路/模拟与射频/模拟集成电路/SEU_wujin.md'
+        '学习地图/电路/模拟/模拟集成电路/xjtu_analog_ic.md': '学习地图/电路/模拟与射频/模拟集成电路/XJTU_zhanghong.md'
+        '学习地图/电路/模拟/高频电子线路/EE613.md': '学习地图/电路/模拟与射频/模拟集成电路/IITK_EE613.md'
+        '学习地图/电路/模拟/高频电子线路/Xidian_high_freq.md': '学习地图/电路/模拟与射频/射频电路/XDU_high_freq.md'
+        '学习地图/电路/模拟/高频电子线路/SCU_RF_comm.md': '学习地图/电路/模拟与射频/射频电路/SCU_RF_comm.md'
+        '学习地图/电路/模拟/射频集成电路/FDU_yin_RFIC.md': '学习地图/电路/模拟与射频/射频电路/FDU_yin_RFIC.md'
+        '学习地图/电路/模拟/射频集成电路/UESTC_RFIC.md': '学习地图/电路/模拟与射频/射频电路/UESTC_RFIC.md'
+        '学习地图/电路/模拟/射频集成电路/razavi_rf.md': '学习地图/电路/模拟与射频/射频电路/razavi_rf.md'
+        '学习地图/电路/模拟/射频集成电路/EE142.md': '学习地图/电路/模拟与射频/射频电路/UCB_EE142.md'
+        '学习地图/电路/模拟/功率电子/index.md': '学习地图/电路/模拟与射频/功率电子/index.md'
+        '学习地图/电路/模拟/版图设计/index.md': '学习地图/电路/模拟与射频/版图设计/index.md'
+        '学习地图/电路/信号处理/数模模数转换器/INFO130270.md': '学习地图/电路/模拟与射频/数模模数转换器/FDU_INFO130270.md'
+        '学习地图/电路/信号处理/数模模数转换器/NPTEL_data_converters.md': '学习地图/电路/模拟与射频/数模模数转换器/NPTEL_data_converters.md'
+        '学习地图/电路/信号处理/MATLAB/MICR130022.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '学习地图/电路/信号处理/MATLAB/mathworks_matlab.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '学习地图/电路/信号处理/MATLAB/vanderbilt_matlab.md': '工程工具/MATLAB/mathworks_matlab.md'
+        '学习地图/系统架构/入门速成/index.md': '学习地图/系统架构/计算机系统基础/index.md'
+        '学习地图/系统架构/入门速成/MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
+        '学习地图/系统架构/入门速成/CSAPP.md': '学习地图/系统架构/计算机系统基础/CMU_15-213.md'
+        '学习地图/系统架构/入门速成/CS110.md': '学习地图/系统架构/计算机系统基础/Stanford_CS110.md'
+        '学习地图/人工智能/AI系统/d2l_limu.md': '学习地图/人工智能/深度学习/limu_d2l.md'
+        '学习地图/人工智能/深度生成模型/大语言模型/OpenBMB_LLM.md': '学习地图/人工智能/大语言模型/OpenBMB_LLM.md'
+        '学习地图/人工智能/深度生成模型/大语言模型/limu_paper_reading.md': '学习地图/人工智能/大语言模型/limu_paper_reading.md'
+        '学习地图/人工智能/深度生成模型/大语言模型/CS336.md': '学习地图/人工智能/大语言模型/Stanford_CS336.md'
+        '学习地图/人工智能/深度生成模型/大语言模型/CMU11-711.md': '学习地图/人工智能/大语言模型/CMU_11-711.md'
+        '学习地图/数学/数学基础/index.md': '学习地图/数学/index.md'
+        '学习地图/器件与工艺/半导体器件/半导体器件原理_FDU/MICR130006.md': '学习地图/器件与工艺/半导体器件/FDU_MICR130006.md'
+        '学习地图/器件与工艺/半导体器件/半导体器件原理_FDU/补充资源.md': '学习地图/器件与工艺/半导体器件/补充资源.md'
+        '学习地图/器件与工艺/集成电路工艺/集成电路工艺原理_FDU/MICR130007.md': '学习地图/器件与工艺/集成电路工艺/FDU_MICR130007.md'
+        '学习地图/数学/数学进阶/index.md': '学习地图/数学/index.md'
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/likes.css
+  - stylesheets/pending.css
+
+extra_javascript:
+  - javascripts/likes.js
+  - javascripts/prof-collapse.js
+  - javascripts/orbit-galaxy.js
+  - javascripts/hero-scroll.js
+  - javascripts/stock-quote.js
+  - javascripts/search-pagefind.js
+  - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pkuflyingpig/cs-self-learning/
+  analytics:
+    provider: google
+    property: G-KJB4RXSKZG
+
+nav:
+  - 首页: index.md
+  - 科研方向:
+    - 科研方向/index.md
+    - 器件与制造:
+      - 半导体器件与先进工艺: "科研方向/半导体器件与先进工艺.md"
+      - 功率半导体与宽禁带器件: "科研方向/功率半导体与宽禁带器件.md"
+      - 光电子与硅光集成: "科研方向/光电子与硅光集成.md"
+      - MEMS与微纳传感器: "科研方向/MEMS与微纳传感器.md"
+      - 先进封装与异构集成: "科研方向/先进封装与异构集成.md"
+    - 模拟与射频电路:
+      - 模拟与混合信号IC: "科研方向/模拟与混合信号IC.md"
+      - 射频与毫米波IC: "科研方向/射频与毫米波IC.md"
+      - 生物电子与脑机接口: "科研方向/生物电子与脑机接口.md"
+    - 计算架构:
+      - 处理器架构与编译系统: "科研方向/处理器架构与编译系统.md"
+      - 可重构计算与FPGA: "科研方向/可重构计算与FPGA.md"
+      - 存算一体与近存计算: "科研方向/存算一体与近存计算.md"
+    - 设计工具与安全:
+      - EDA与设计自动化: "科研方向/EDA与设计自动化.md"
+      - 硬件安全与可信计算: "科研方向/硬件安全与可信计算.md"
+    - 交叉前沿:
+      - AI算法与系统: "科研方向/AI算法与系统.md"
+      - 具身智能: "科研方向/具身智能.md"
+      - 量子计算与量子芯片: "科研方向/量子计算与量子芯片.md"
+      - 类脑芯片: "科研方向/类脑芯片.md"
+  - 学习地图:
+    - 导言: "学习地图/index.md"
+    - 数学:
+      - 导言: "学习地图/数学/index.md"
+      - 入门速成:
+        - "学习地图/数学/入门速成/index.md"
+        - "复旦 工程数学": "学习地图/数学/入门速成/FDU_MICR130008.md"
+        - "UCB CS70": "学习地图/数学/入门速成/UCB_CS70.md"
+        - "MIT 6.042J": "学习地图/数学/入门速成/MIT_6.042J.md"
+      - 分析:
+        - 学习地图/数学/分析/index.md
+        - 数学分析:
+          - "复旦 高数A": "学习地图/数学/分析/数学分析/FDU_MATH10015-16.md"
+          - "复旦 数分B": "学习地图/数学/分析/数学分析/FDU_MATH120016-17.md"
+          - "MIT 18.01/18.02": "学习地图/数学/分析/数学分析/MIT_18.01-18.02.md"
+          - 补充资源: "学习地图/数学/分析/数学分析/补充资源.md"
+        - 复变函数:
+          - "西交": "学习地图/数学/分析/复变函数/XJTU_complex.md"
+          - "高数叔": "学习地图/数学/分析/复变函数/gaoshushu_complex.md"
+
+      - 代数:
+        - 学习地图/数学/代数/index.md
+        - 线性代数:
+          - "复旦": "学习地图/数学/代数/线性代数/FDU_COMP120004.md"
+          - "MIT 18.06": "学习地图/数学/代数/线性代数/MIT_18.06.md"
+        - 高等代数:
+          - "北大 丘维声": "学习地图/数学/代数/高等代数/PKU_qiuweisheng.md"
+          - "Axler": "学习地图/数学/代数/高等代数/Axler_LADR.md"
+        - 矩阵分析:
+          - "MIT 18.065": "学习地图/数学/代数/矩阵分析/MIT_18.065.md"
+          - "哈工大 严质彬": "学习地图/数学/代数/矩阵分析/HIT_yanzhibin.md"
+        - 抽象代数:
+          - "南大 孙智伟": "学习地图/数学/代数/抽象代数/NJU_sunzhiwei.md"
+          - "Harvard Gross": "学习地图/数学/代数/抽象代数/Harvard_gross.md"
+      - 概率与统计:
+        - 学习地图/数学/概率与统计/index.md
+        - "浙大": "学习地图/数学/概率与统计/ZJU_probability.md"
+        - "Harvard Stat110": "学习地图/数学/概率与统计/Harvard_Stat110.md"
+        - "MIT 6.041": "学习地图/数学/概率与统计/MIT_6.041.md"
+        - "MIT 6.262": "学习地图/数学/概率与统计/MIT_6.262.md"
+      - 离散数学:
+        - 学习地图/数学/离散数学/index.md
+        - "北大 屈婉玲": "学习地图/数学/离散数学/PKU_discrete.md"
+      - 数值与优化:
+        - 学习地图/数学/数值与优化/index.md
+        - 数值分析:
+          - "复旦 吴宗敏": "学习地图/数学/数值与优化/数值分析/FDU_wu_numerical.md"
+          - "复旦 计算物理": "学习地图/数学/数值与优化/数值分析/FDU_PHYS20009.md"
+          - "中科大": "学习地图/数学/数值与优化/数值分析/USTC_numerical.md"
+          - "MIT 18.330": "学习地图/数学/数值与优化/数值分析/MIT_18.330.md"
+          - 补充资源: "学习地图/数学/数值与优化/数值分析/补充资源.md"
+        - 凸优化:
+          - "中科大 凌青": "学习地图/数学/数值与优化/凸优化/USTC_ling_convex.md"
+          - "Stanford EE364A": "学习地图/数学/数值与优化/凸优化/Stanford_EE364A.md"
+          - 补充资源: "学习地图/数学/数值与优化/凸优化/补充资源.md"
+      - 专题:
+        - 学习地图/数学/专题/index.md
+        - 信息论:
+          - "MacKay": "学习地图/数学/专题/信息论/MacKay_infotheory.md"
+        - 密码学:
+          - "北邮": "学习地图/数学/专题/密码学/BUPT_crypto.md"
+          - "MIT 6.875": "学习地图/数学/专题/密码学/MIT_6.875.md"
+          - "Stanford": "学习地图/数学/专题/密码学/Stanford_crypto.md"
+    - 物理:
+      - 导言: "学习地图/物理/index.md"
+      - 大学物理:
+        - 学习地图/物理/大学物理/index.md
+        - "复旦": "学习地图/物理/大学物理/FDU_PHYS120013-14.md"
+        - "MIT 8.01/8.02": "学习地图/物理/大学物理/MIT_8.01-8.02.md"
+      - 物理实验:
+        - 学习地图/物理/物理实验/index.md
+        - "复旦": "学习地图/物理/物理实验/FDU_PHYS120015.md"
+      - 电磁场与微波(待建):
+        - 学习地图/物理/电磁场与微波/index.md
+        - "复旦 电磁场与电磁波": "学习地图/物理/电磁场与微波/FDU_ICE50009.md"
+      - 量子力学:
+        - 学习地图/物理/量子力学/index.md
+        - "复旦": "学习地图/物理/量子力学/FDU_MICR130015.md"
+        - "MIT 8.04": "学习地图/物理/量子力学/MIT_8.04.md"
+      - 量子计算:
+        - 学习地图/物理/量子计算/index.md
+        - "北大 李彤阳": "学习地图/物理/量子计算/PKU_li_quantum.md"
+        - "Qiskit": "学习地图/物理/量子计算/qiskit_watrous.md"
+      - 热力学与统计物理(待建):
+        - 学习地图/物理/热力学与统计物理/index.md
+        - "复旦 热统I": "学习地图/物理/热力学与统计物理/FDU_PHYS20013.md"
+      - 固体物理:
+        - 学习地图/物理/固体物理/index.md
+        - "复旦": "学习地图/物理/固体物理/FDU_MICR130013.md"
+        - "复旦 物理系": "学习地图/物理/固体物理/FDU_PHYS30011.md"
+        - "山大 赵明文": "学习地图/物理/固体物理/SDU_zhaomw.md"
+      - 半导体物理:
+        - 学习地图/物理/半导体物理/index.md
+        - "复旦": "学习地图/物理/半导体物理/FDU_MICR130005.md"
+        - "西电 柴常春": "学习地图/物理/半导体物理/XDU_semiconductor.md"
+      - 光学:
+        - 导言: "学习地图/物理/光学/index.md"
+        - "MIT 8.03": "学习地图/物理/光学/MIT_8.03.md"
+        - "MITx 集成光子学": "学习地图/物理/光学/MITx_integrated_photonics.md"
+        - "北大 周治平": "学习地图/物理/光学/PKU_zhou_optoelectronics.md"
+        - "复旦 光电子器件": "学习地图/物理/光学/FDU_ICSE30008.md"
+        - "复旦 光电集成": "学习地图/物理/光学/FDU_ICSE30004.md"
+      - 传热学:
+        - 导言: "学习地图/物理/传热学/index.md"
+        - "西交 陶文铨": "学习地图/物理/传热学/XJTU_taowq.md"
+        - "上交": "学习地图/物理/传热学/SJTU_heat_transfer.md"
+    - 器件与工艺:
+      - 导言: "学习地图/器件与工艺/index.md"
+      - 半导体器件:
+        - 学习地图/器件与工艺/半导体器件/index.md
+        - "复旦": "学习地图/器件与工艺/半导体器件/FDU_MICR130006.md"
+        - "Purdue ECE606": "学习地图/器件与工艺/半导体器件/Purdue_ECE606.md"
+        - 补充资源: "学习地图/器件与工艺/半导体器件/补充资源.md"
+      - 前沿器件:
+        - 学习地图/器件与工艺/前沿器件/index.md
+        - "复旦 超低功耗器件": "学习地图/器件与工艺/前沿器件/FDU_ICSE30031.md"
+        - "复旦 微纳器件": "学习地图/器件与工艺/前沿器件/FDU_ICSE30012.md"
+        - "复旦 表面界面": "学习地图/器件与工艺/前沿器件/FDU_ICSE30029.md"
+      - 集成电路工艺:
+        - 学习地图/器件与工艺/集成电路工艺/index.md
+        - "复旦": "学习地图/器件与工艺/集成电路工艺/FDU_MICR130007.md"
+        - "哈工大 王蔚": "学习地图/器件与工艺/集成电路工艺/HIT_micro_fab.md"
+        - "复旦 光刻": "学习地图/器件与工艺/集成电路工艺/FDU_ICSE30032.md"
+        - "复旦 纳米技术": "学习地图/器件与工艺/集成电路工艺/FDU_ICSE40003.md"
+        - "复旦 先进工艺": "学习地图/器件与工艺/集成电路工艺/FDU_ICSE40016.md"
+        - 补充资源: "学习地图/器件与工艺/集成电路工艺/补充资源.md"
+        - "复旦 制造仿真": "学习地图/器件与工艺/集成电路工艺/FDU_ICSE30014.md"
+      - 存储器:
+        - 学习地图/器件与工艺/存储器/index.md
+        - "复旦 存储器技术": "学习地图/器件与工艺/存储器/FDU_ICSE30005.md"
+        - "复旦 闪存": "学习地图/器件与工艺/存储器/FDU_ICSE30024.md"
+        - "复旦 存储器电路": "学习地图/器件与工艺/存储器/FDU_ICSE30025.md"
+      - 材料:
+        - 学习地图/器件与工艺/材料/index.md
+        - "复旦 半导体材料": "学习地图/器件与工艺/材料/FDU_ICSE20003.md"
+        - "复旦 材料科学导论": "学习地图/器件与工艺/材料/FDU_MASE20002.md"
+        - "复旦 薄膜技术": "学习地图/器件与工艺/材料/FDU_MASE30019.md"
+        - "复旦 材料分析": "学习地图/器件与工艺/材料/FDU_MASE30023.md"
+        - "复旦 电子材料分析": "学习地图/器件与工艺/材料/FDU_MASE30015.md"
+        - "复旦 薄膜表征": "学习地图/器件与工艺/材料/FDU_ICSE40017.md"
+        - "复旦 有机微电子": "学习地图/器件与工艺/材料/FDU_ICSE40011.md"
+      - 功率半导体器件(待建):
+        - 学习地图/器件与工艺/功率半导体器件/index.md
+        - "复旦 功率工艺": "学习地图/器件与工艺/功率半导体器件/FDU_ICSE20012.md"
+      - MEMS器件与微纳加工(待建):
+        - 学习地图/器件与工艺/MEMS/index.md
+        - "复旦 MEMS应用": "学习地图/器件与工艺/MEMS/FDU_ICSE40015.md"
+        - "复旦 传感器": "学习地图/器件与工艺/MEMS/FDU_ICSE30023.md"
+      - 先进封装(待建):
+        - 学习地图/器件与工艺/先进封装/index.md
+        - "复旦 封装与测试": "学习地图/器件与工艺/先进封装/FDU_ICSE40004.md"
+        - "复旦 先进封装": "学习地图/器件与工艺/先进封装/FDU_ICSE40006.md"
+        - "复旦 封装材料": "学习地图/器件与工艺/先进封装/FDU_ICSE30013.md"
+    - 电路:
+      - 导言: "学习地图/电路/index.md"
+      - 入门速成:
+        - 学习地图/电路/入门速成/index.md
+        - "UCB EE16A&B": "学习地图/电路/入门速成/UCB_EE16AB.md"
+      - 数字设计:
+        - 学习地图/电路/数字设计/index.md
+        - 数字逻辑基础:
+          - "复旦": "学习地图/电路/数字设计/数字逻辑基础/FDU_MICR130003.md"
+          - "MIT 6.004": "学习地图/电路/数字设计/数字逻辑基础/MIT_6.004.md"
+          - "Neso Academy": "学习地图/电路/数字设计/数字逻辑基础/neso_digital.md"
+        - 硬件描述语言(HDL):
+          - Verilog:
+            - "浙大": "学习地图/电路/数字设计/HDL/Verilog/ZJU_digital_system.md"
+            - "HDLBits": "学习地图/电路/数字设计/HDL/Verilog/HDLBits.md"
+          - Chisel:
+            - "Chisel Bootcamp": "学习地图/电路/数字设计/HDL/Chisel/chisel_bootcamp.md"
+          - HLS:
+            - "高亚军": "学习地图/电路/数字设计/HDL/HLS/gaoyajun_hls.md"
+            - "Lehigh": "学习地图/电路/数字设计/HDL/HLS/Lehigh_hls.md"
+          - "复旦 高级HDL": "学习地图/电路/数字设计/HDL/FDU_ICSE30027.md"
+        - FPGA:
+          - "复旦": "学习地图/电路/数字设计/FPGA/FDU_MICR130024.md"
+          - "小梅哥": "学习地图/电路/数字设计/FPGA/xiaomeige_fpga.md"
+          - "Nandland": "学习地图/电路/数字设计/FPGA/nandland.md"
+          - "Coursera": "学习地图/电路/数字设计/FPGA/Coursera_fpga.md"
+        - 数字集成电路:
+          - "复旦": "学习地图/电路/数字设计/数字集成电路/FDU_MICR130029.md"
+          - "UCB EECS151": "学习地图/电路/数字设计/数字集成电路/UCB_EECS151.md"
+          - "NPTEL": "学习地图/电路/数字设计/数字集成电路/NPTEL_vlsi_design.md"
+        - 低功耗设计:
+          - "复旦 超低功耗IC": "学习地图/电路/数字设计/低功耗设计/FDU_ICSE40005.md"
+        - 数字验证(待建): "学习地图/电路/数字设计/数字验证/index.md"
+        - ASIC与数字后端:
+          - "复旦": "学习地图/电路/数字设计/ASIC与数字后端/FDU_INFO130094.md"
+          - "复旦 逻辑综合概论": "学习地图/电路/数字设计/ASIC与数字后端/FDU_ICSE20016.md"
+          - "NPTEL 物理设计": "学习地图/电路/数字设计/ASIC与数字后端/NPTEL_physical_design.md"
+          - "NPTEL 综合": "学习地图/电路/数字设计/ASIC与数字后端/NPTEL_synthesis.md"
+          - 数字后端(待建): "学习地图/电路/数字设计/ASIC与数字后端/数字后端.md"
+          - 补充资源: "学习地图/电路/数字设计/ASIC与数字后端/补充资源.md"
+      - 模拟与射频:
+        - 学习地图/电路/模拟与射频/index.md
+        - 电路分析基础:
+          - "复旦": "学习地图/电路/模拟与射频/电路分析基础/FDU_yiting.md"
+          - "清华 于歆杰": "学习地图/电路/模拟与射频/电路分析基础/THU_yu_circuit.md"
+        - 模拟电子线路:
+          - "复旦": "学习地图/电路/模拟与射频/模拟电子线路/FDU_MICR130002.md"
+          - "Razavi 1": "学习地图/电路/模拟与射频/模拟电子线路/razavi_e1.md"
+          - "Razavi 2": "学习地图/电路/模拟与射频/模拟电子线路/razavi_e2.md"
+          - "清华 华成英": "学习地图/电路/模拟与射频/模拟电子线路/THU_huachengying.md"
+          - "上交 郑益慧": "学习地图/电路/模拟与射频/模拟电子线路/SJTU_zheng_analog.md"
+          - "成电": "学习地图/电路/模拟与射频/模拟电子线路/UESTC_analog.md"
+        - 模拟集成电路:
+          - "复旦": "学习地图/电路/模拟与射频/模拟集成电路/FDU_MICR130030.md"
+          - "东南 吴金": "学习地图/电路/模拟与射频/模拟集成电路/SEU_wujin.md"
+          - "西交 张鸿": "学习地图/电路/模拟与射频/模拟集成电路/XJTU_zhanghong.md"
+          - "IITK EE613": "学习地图/电路/模拟与射频/模拟集成电路/IITK_EE613.md"
+        - 数模模数转换器:
+          - "复旦": "学习地图/电路/模拟与射频/数模模数转换器/FDU_INFO130270.md"
+          - "NPTEL": "学习地图/电路/模拟与射频/数模模数转换器/NPTEL_data_converters.md"
+        - 射频电路:
+          - "西电 高频": "学习地图/电路/模拟与射频/射频电路/XDU_high_freq.md"
+          - "川大 刘长军": "学习地图/电路/模拟与射频/射频电路/SCU_RF_comm.md"
+          - "复旦 高频A": "学习地图/电路/模拟与射频/射频电路/FDU_ICSE20001.md"
+          - "复旦 殷韵": "学习地图/电路/模拟与射频/射频电路/FDU_yin_RFIC.md"
+          - "成电 RFIC": "学习地图/电路/模拟与射频/射频电路/UESTC_RFIC.md"
+          - "Razavi RF": "学习地图/电路/模拟与射频/射频电路/razavi_rf.md"
+          - "UCB EE142": "学习地图/电路/模拟与射频/射频电路/UCB_EE142.md"
+        - 功率电子(待建): "学习地图/电路/模拟与射频/功率电子/index.md"
+        - 版图设计(待建):
+          - 学习地图/电路/模拟与射频/版图设计/index.md
+          - "复旦 版图基础": "学习地图/电路/模拟与射频/版图设计/FDU_ICSE20015.md"
+      - 信号处理:
+        - 学习地图/电路/信号处理/index.md
+        - 信号与系统:
+          - "复旦": "学习地图/电路/信号处理/信号与系统/FDU_MICR130004.md"
+          - "MIT 6.003": "学习地图/电路/信号处理/信号与系统/MIT_6.003.md"
+          - "MIT 6.007": "学习地图/电路/信号处理/信号与系统/MIT_6.007.md"
+          - "UCB EE120": "学习地图/电路/信号处理/信号与系统/UCB_EE120.md"
+        - 数字信号处理:
+          - "复旦": "学习地图/电路/信号处理/数字信号处理/FDU_INFO130010.md"
+          - "MIT Oppenheim": "学习地图/电路/信号处理/数字信号处理/MIT_DSP.md"
+          - "EPFL": "学习地图/电路/信号处理/数字信号处理/EPFL_dsp.md"
+          - 补充资源: "学习地图/电路/信号处理/数字信号处理/补充资源.md"
+        - "复旦 模拟信号处理": "学习地图/电路/信号处理/FDU_ICSE30030.md"
+      - EDA:
+        - 学习地图/电路/EDA/index.md
+        - "复旦 数字EDA": "学习地图/电路/EDA/FDU_ICSE30019.md"
+        - "复旦 模拟EDA": "学习地图/电路/EDA/FDU_ICSE30018.md"
+        - "复旦 物理设计数学": "学习地图/电路/EDA/FDU_ICSE30026.md"
+        - "复旦 EDA软件方法学": "学习地图/电路/EDA/FDU_ICSE30028.md"
+        - "Vivado": "学习地图/电路/EDA/vivado.md"
+        - "Cadence Virtuoso": "学习地图/电路/EDA/cadence.md"
+        - "UIUC VLSI CAD": "学习地图/电路/EDA/UIUC_VLSI_CAD.md"
+        - "复旦 SPICE仿真": "学习地图/电路/EDA/FDU_ICSE30002.md"
+      - 测试与可靠性:
+        - 学习地图/电路/测试与可靠性/index.md
+        - "复旦 模拟电路测试": "学习地图/电路/测试与可靠性/FDU_ICSE30003.md"
+        - "复旦 模拟测试与设计": "学习地图/电路/测试与可靠性/FDU_ICSE30033.md"
+        - "复旦 射频测试": "学习地图/电路/测试与可靠性/FDU_ICSE40010.md"
+        - "复旦 器件可靠性": "学习地图/电路/测试与可靠性/FDU_ICSE50008.md"
+      - 嵌入式SoC:
+        - 学习地图/电路/嵌入式SoC/index.md
+        - "复旦 韩军": "学习地图/电路/嵌入式SoC/FDU_hanjun.md"
+        - "Cornell ECE4760": "学习地图/电路/嵌入式SoC/Cornell_ECE4760.md"
+      - 电路实验:
+        - 学习地图/电路/电路实验/index.md
+        - "复旦 模数电实验": "学习地图/电路/电路实验/FDU_EST40012.md"
+        - "复旦 IC设计实验": "学习地图/电路/电路实验/FDU_ICSE40014.md"
+        - "复旦 IC实验(上)": "学习地图/电路/电路实验/FDU_ICSE40008.md"
+        - "复旦 IC实验(下)": "学习地图/电路/电路实验/FDU_ICSE40009.md"
+      - 生物电子接口(待建): "学习地图/电路/生物电子/index.md"
+      - 控制与机器人(待建): "学习地图/电路/控制与机器人/index.md"
+    - 系统架构:
+      - 导言: "学习地图/系统架构/index.md"
+      - 计算机系统基础:
+        - 学习地图/系统架构/计算机系统基础/index.md
+        - "CMU 15-213": "学习地图/系统架构/计算机系统基础/CMU_15-213.md"
+        - "Stanford CS110": "学习地图/系统架构/计算机系统基础/Stanford_CS110.md"
+      - 体系结构:
+        - 学习地图/系统架构/体系结构/index.md
+        - "清华": "学习地图/系统架构/体系结构/THU_computer_org.md"
+        - "国科大 胡伟武": "学习地图/系统架构/体系结构/UCAS_hu_archbase.md"
+        - "Nand2Tetris": "学习地图/系统架构/体系结构/Coursera_nand2tetris.md"
+        - "UCB CS61C": "学习地图/系统架构/体系结构/UCB_CS61C.md"
+        - "ETH DDCA": "学习地图/系统架构/体系结构/ETH_DDCA.md"
+        - "ETH CA": "学习地图/系统架构/体系结构/ETH_CA.md"
+      - 操作系统:
+        - 学习地图/系统架构/操作系统/index.md
+        - "MIT 6.S081": "学习地图/系统架构/操作系统/MIT_6.S081.md"
+        - "UCB CS162": "学习地图/系统架构/操作系统/UCB_CS162.md"
+        - "南大 蒋炎岩": "学习地图/系统架构/操作系统/NJU_OS.md"
+        - "哈工大 李治军": "学习地图/系统架构/操作系统/HIT_OS.md"
+      - 并行与分布式系统:
+        - 学习地图/系统架构/并行与分布式系统/index.md
+        - "中科大": "学习地图/系统架构/并行与分布式系统/USTC_parallel.md"
+        - "parallel101": "学习地图/系统架构/并行与分布式系统/parallel101.md"
+        - "Stanford CS149": "学习地图/系统架构/并行与分布式系统/Stanford_CS149.md"
+      - GPU体系结构:
+        - 学习地图/系统架构/GPU体系结构/index.md
+        - "NPTEL": "学习地图/系统架构/GPU体系结构/NPTEL_GPU.md"
+        - "ETH HetSys": "学习地图/系统架构/GPU体系结构/ETH_HetSys.md"
+        - "ZOMI酱": "学习地图/系统架构/GPU体系结构/ZOMI_GPU.md"
+      - AI加速器:
+        - 学习地图/系统架构/AI加速器/index.md
+        - "复旦 AI处理器架构": "学习地图/系统架构/AI加速器/FDU_ICSE40002.md"
+        - "复旦 AI芯片设计": "学习地图/系统架构/AI加速器/FDU_ICSE30036.md"
+        - "复旦 FPGA加速AI": "学习地图/系统架构/AI加速器/FDU_ICSE40018.md"
+      - 编译原理:
+        - 学习地图/系统架构/编译原理/index.md
+        - "Stanford CS143": "学习地图/系统架构/编译原理/Stanford_CS143.md"
+        - "南大": "学习地图/系统架构/编译原理/NJU_compilers.md"
+        - "KAIST CS420": "学习地图/系统架构/编译原理/KAIST_CS420.md"
+        - "中科大": "学习地图/系统架构/编译原理/USTC_compilers.md"
+    - 算法编程:
+      - 导言: "学习地图/算法编程/index.md"
+      - 编程入门:
+        - 学习地图/算法编程/编程入门/index.md
+        - "Missing Semester": "学习地图/算法编程/编程入门/MIT_missing_semester.md"
+        - "UCB DeCal": "学习地图/算法编程/编程入门/UCB_DeCal.md"
+        - "复旦 程序设计": "学习地图/算法编程/编程入门/FDU_CS10004.md"
+        - "复旦 软件基础": "学习地图/算法编程/编程入门/FDU_ICSE20014.md"
+        - "复旦 Perl": "学习地图/算法编程/编程入门/FDU_ICSE20002.md"
+        - Python:
+          - "北理工 嵩天": "学习地图/算法编程/编程入门/Python/BIT_songtian.md"
+          - "北大 陈斌": "学习地图/算法编程/编程入门/Python/PKU_chenbin_python.md"
+          - "UCB CS61A": "学习地图/算法编程/编程入门/Python/UCB_CS61A.md"
+          - "Harvard CS50P": "学习地图/算法编程/编程入门/Python/Harvard_CS50P.md"
+          - "MIT 6.100L": "学习地图/算法编程/编程入门/Python/MIT_6.100L.md"
+        - C:
+          - "浙大 翁恺": "学习地图/算法编程/编程入门/C/ZJU_wengkai.md"
+          - "北大 郭炜": "学习地图/算法编程/编程入门/C/PKU_guowei_C.md"
+          - "Harvard CS50": "学习地图/算法编程/编程入门/C/Harvard_CS50.md"
+          - "Duke": "学习地图/算法编程/编程入门/C/Duke_intro_c.md"
+        - "C++":
+          - "北大 郭炜": "学习地图/算法编程/编程入门/cpp/PKU_guowei_cpp.md"
+          - "侯捷": "学习地图/算法编程/编程入门/cpp/houjie_cpp.md"
+          - "Stanford CS106L": "学习地图/算法编程/编程入门/cpp/Stanford_CS106L.md"
+          - "Stanford CS106B/X": "学习地图/算法编程/编程入门/cpp/Stanford_CS106BX.md"
+        - Rust:
+          - "杨旭": "学习地图/算法编程/编程入门/Rust/yangxu_rust.md"
+          - "令狐壹冲": "学习地图/算法编程/编程入门/Rust/linghu_rust.md"
+          - "Stanford CS110L": "学习地图/算法编程/编程入门/Rust/Stanford_CS110L.md"
+          - "KAIST CS431": "学习地图/算法编程/编程入门/Rust/KAIST_CS431.md"
+      - 数据结构与算法:
+        - 学习地图/算法编程/数据结构与算法/index.md
+        - "复旦": "学习地图/算法编程/数据结构与算法/FDU_MICR130009.md"
+        - "UCB CS61B": "学习地图/算法编程/数据结构与算法/UCB_CS61B.md"
+        - "Coursera Algorithms": "学习地图/算法编程/数据结构与算法/Coursera_algorithms.md"
+        - "MIT 6.006": "学习地图/算法编程/数据结构与算法/MIT_6.006.md"
+        - "MIT 6.046": "学习地图/算法编程/数据结构与算法/MIT_6.046.md"
+        - "UCB CS170": "学习地图/算法编程/数据结构与算法/UCB_CS170.md"
+      - 编程语言设计与分析:
+        - 学习地图/算法编程/编程语言设计与分析/index.md
+        - "南大": "学习地图/算法编程/编程语言设计与分析/NJU_software_analysis.md"
+        - "北大": "学习地图/算法编程/编程语言设计与分析/PKU_software_analysis.md"
+    - 人工智能:
+      - 导言: "学习地图/人工智能/index.md"
+      - 入门速成:
+        - 学习地图/人工智能/入门速成/index.md
+        - "浙大 吴飞": "学习地图/人工智能/入门速成/ZJU_wufei_AI.md"
+        - "北大 微课十讲": "学习地图/人工智能/入门速成/PKU_AI_micro.md"
+        - "Karpathy": "学习地图/人工智能/入门速成/karpathy_zero2hero.md"
+        - "Harvard CS50AI": "学习地图/人工智能/入门速成/Harvard_CS50AI.md"
+        - "UCB CS188": "学习地图/人工智能/入门速成/UCB_CS188.md"
+        - "复旦 AI导论": "学习地图/人工智能/入门速成/FDU_EST10001.md"
+      - 机器学习:
+        - 学习地图/人工智能/机器学习/index.md
+        - "南大 周志华": "学习地图/人工智能/机器学习/NJU_zhou_ML.md"
+        - "Coursera ML": "学习地图/人工智能/机器学习/Coursera_ML.md"
+        - "Stanford CS229": "学习地图/人工智能/机器学习/Stanford_CS229.md"
+        - "UCB CS189": "学习地图/人工智能/机器学习/UCB_CS189.md"
+        - "UCB Data100": "学习地图/人工智能/机器学习/UCB_Data100.md"
+        - "复旦 机器学习算法": "学习地图/人工智能/机器学习/FDU_ICSE30001.md"
+        - 补充资源: "学习地图/人工智能/机器学习/补充资源.md"
+      - 深度学习:
+        - 学习地图/人工智能/深度学习/index.md
+        - "李沐 d2l": "学习地图/人工智能/深度学习/limu_d2l.md"
+        - "Coursera DL": "学习地图/人工智能/深度学习/Coursera_DL.md"
+        - "李宏毅": "学习地图/人工智能/深度学习/NTU_lihongyi.md"
+        - "UMich 498-007": "学习地图/人工智能/深度学习/UMich_EECS498-007.md"
+        - "Stanford CS231n": "学习地图/人工智能/深度学习/Stanford_CS231n.md"
+        - "Stanford CS224n": "学习地图/人工智能/深度学习/Stanford_CS224n.md"
+        - "Stanford CS224w": "学习地图/人工智能/深度学习/Stanford_CS224w.md"
+        - "UCB CS285": "学习地图/人工智能/深度学习/UCB_CS285.md"
+        - 补充资源: "学习地图/人工智能/深度学习/补充资源.md"
+      - 深度生成模型:
+        - 学习地图/人工智能/深度生成模型/index.md
+        - 学习路线图: "学习地图/人工智能/深度生成模型/roadmap.md"
+        - "MIT 6.S184": "学习地图/人工智能/深度生成模型/MIT_6.S184.md"
+        - "UCB CS294-158": "学习地图/人工智能/深度生成模型/UCB_CS294-158.md"
+      - 大语言模型:
+        - 学习地图/人工智能/大语言模型/index.md
+        - "OpenBMB 刘知远": "学习地图/人工智能/大语言模型/OpenBMB_LLM.md"
+        - "李沐 论文精读": "学习地图/人工智能/大语言模型/limu_paper_reading.md"
+        - "Stanford CS336": "学习地图/人工智能/大语言模型/Stanford_CS336.md"
+        - "CMU 11-711": "学习地图/人工智能/大语言模型/CMU_11-711.md"
+        - "复旦 NLP与大模型": "学习地图/人工智能/大语言模型/FDU_EST20001.md"
+      - 强化学习:
+        - 学习地图/人工智能/强化学习/index.md
+        - "西湖 赵世钰": "学习地图/人工智能/强化学习/Westlake_zhao_RL.md"
+        - "David Silver": "学习地图/人工智能/强化学习/silver_RL.md"
+      - AI系统:
+        - 学习地图/人工智能/AI系统/index.md
+        - "智能计算系统": "学习地图/人工智能/AI系统/AICS.md"
+        - "陈天奇 MLC": "学习地图/人工智能/AI系统/chentianqi_mlc.md"
+        - "CMU 10-414": "学习地图/人工智能/AI系统/CMU_10-414.md"
+        - "MIT 6.5940": "学习地图/人工智能/AI系统/MIT_6.5940.md"
+        - 补充资源: "学习地图/人工智能/AI系统/补充资源.md"
+      - AI交叉应用:
+        - 学习地图/人工智能/AI交叉应用/index.md
+        - "复旦 AI for EDA": "学习地图/人工智能/AI交叉应用/FDU_ICSE40019.md"
+        - "复旦 AI制造": "学习地图/人工智能/AI交叉应用/FDU_ICSE30035.md"
+        - "复旦 自动驾驶": "学习地图/人工智能/AI交叉应用/FDU_AIT410017.md"
+        - "复旦 AI软件基础": "学习地图/人工智能/AI交叉应用/FDU_EST30001.md"
+      - 机器学习理论:
+        - 学习地图/人工智能/机器学习理论/index.md
+        - "张志华 统计": "学习地图/人工智能/机器学习理论/zhangzhihua_statML.md"
+        - "张志华 导论": "学习地图/人工智能/机器学习理论/zhangzhihua_introML.md"
+        - 学习路线图: "学习地图/人工智能/机器学习理论/roadmap.md"
+        - "CMU 10-708": "学习地图/人工智能/机器学习理论/CMU_10-708.md"
+        - "Stanford CS229M": "学习地图/人工智能/机器学习理论/Stanford_CS229M.md"
+      - 类脑与SNN: "学习地图/人工智能/类脑与SNN/index.md"
+  - 工程工具:
+      - 工程工具/index.md
+      - 通用工具:
+          - 翻墙: "工程工具/翻墙.md"
+          - Git: "工程工具/Git.md"
+          - GitHub: "工程工具/GitHub.md"
+          - LaTeX: "工程工具/LaTeX.md"
+          - Vim: "工程工具/Vim.md"
+          - 日常学习工作流: "工程工具/workflow.md"
+          - 实用工具箱: "工程工具/tools.md"
+          - 信息检索: "工程工具/信息检索.md"
+          - 毕业论文: "工程工具/thesis.md"
+      - EE 专用工具:
+          - MATLAB 与科学计算: "工程工具/科学计算.md"
+          - MATLAB 学习资源: "工程工具/MATLAB/mathworks_matlab.md"
+          - LTspice 电路仿真: "工程工具/LTspice.md"
+          - KiCad PCB 设计: "工程工具/KiCad.md"
+          - ModelSim HDL仿真: "工程工具/ModelSim.md"
+          - Gem5 体系结构仿真: "工程工具/Gem5.md"
+          - GPGPU-Sim GPU 仿真: "工程工具/GPGPUSIM.md"
+      - 构建与开发:
+          - Docker: "工程工具/Docker.md"
+          - "GNU Make": "工程工具/GNU_Make.md"
+          - CMake: "工程工具/CMake.md"
+          - Scoop: "工程工具/Scoop.md"
+          - Emacs: "工程工具/Emacs.md"
+  - 专题社区: "专题社区/index.md"

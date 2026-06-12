@@ -1,0 +1,13 @@
+# STATS214 / CS229M: Machine Learning Theory
+
+*注：本课程页继承自 [CS自学指南](https://csdiy.wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%BF%9B%E9%98%B6/CS229M/)。*
+
+## 课程简介
+
+- 所属大学：Stanford
+- 先修要求：Machine Learning, Deep Learning, Statistics
+- 课程难度：🌟🌟🌟🌟🌟🌟
+- 课程网站：<http://web.stanford.edu/class/stats214/>
+- 课程视频：[YouTube：Stanford Online 官方播放列表（Fall 2021，Tengyu Ma 主讲）](https://www.youtube.com/playlist?list=PLoROMvodv4rP8nAmISxFINlGKSK4rbLKh)
+
+经典学习理论 + 最新深度学习理论，非常硬核。授课老师之前是 Percy Liang，现在是 Tengyu Ma。

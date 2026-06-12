@@ -1,0 +1,81 @@
+name: 补充教授 / 企业
+description: 在科研方向页补充相关课题组或代表性企业
+title: "[补充] "
+labels: ["contribution/add-entry"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 类型
+      options:
+        - 学术课题组（教授 / 实验室）
+        - 企业
+    validations:
+      required: true
+
+  - type: dropdown
+    id: direction
+    attributes:
+      label: 归属科研方向
+      options:
+        - EDA与设计自动化
+        - 先进封装与异构集成
+        - 光电子与硅光集成
+        - 具身智能
+        - 功率半导体与宽禁带器件
+        - 半导体器件与先进工艺
+        - 处理器架构与编译系统
+        - 存算一体与近存计算
+        - 生物电子与脑机接口
+        - 硬件安全与可信计算
+        - 类脑芯片
+        - 量子计算与量子芯片
+        - AI算法与系统
+        - 可重构计算与FPGA
+        - 射频与毫米波IC
+        - 模拟与混合信号IC
+        - MEMS与微纳传感器
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: 姓名 / 企业名称
+      placeholder: "教授：张三（Zhang San）；企业：某某科技"
+    validations:
+      required: true
+
+  - type: input
+    id: affiliation
+    attributes:
+      label: 所属机构 / 总部所在地
+      placeholder: "教授：清华大学微电子学研究所；企业：上海"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: 主页 URL
+      description: 老师个人主页or课题组门户页or企业官网
+      placeholder: "https://"
+    validations:
+      required: true
+
+  - type: textarea
+    id: subdirection
+    attributes:
+      label: 子方向 / 主营业务
+      description: 2-3 个关键词或一句话。必须来自主页 / Google Scholar / 官网可见内容，不要自行概括
+      placeholder: "教授：低功耗数字电路设计、近阈值计算；企业：EDA 工具（布局布线）"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 填写的 URL 我已打开验证，可正常访问，且确实是本人 / 本公司的页面
+          required: true

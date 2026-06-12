@@ -1,0 +1,11 @@
+.DS_Store
+.vscode/
+archive/
+/venv
+/site
+/old_docs
+*.pdf
+*.docx
+*.xlsx.venv/
+/.claude/
+/.github/

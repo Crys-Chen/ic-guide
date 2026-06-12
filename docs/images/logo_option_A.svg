@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A: 电路罗盘 — compass arms are PCB traces, center is a chip die -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#032168" stroke-width="1.5"/>
+  <!-- center chip die -->
+  <rect x="44" y="44" width="12" height="12" fill="#032168"/>
+  <!-- N arm + arrowhead (bold = guide direction) -->
+  <rect x="47.5" y="14" width="5" height="30" fill="#032168"/>
+  <polygon points="50,5 43.5,17 56.5,17" fill="#032168"/>
+  <!-- S arm -->
+  <rect x="47.5" y="56" width="5" height="30" fill="#1a48a8"/>
+  <rect x="45" y="84" width="10" height="4" fill="#1a48a8"/>
+  <!-- E arm -->
+  <rect x="56" y="47.5" width="30" height="5" fill="#1a48a8"/>
+  <rect x="84" y="45" width="4" height="10" fill="#1a48a8"/>
+  <!-- W arm -->
+  <rect x="14" y="47.5" width="30" height="5" fill="#1a48a8"/>
+  <rect x="12" y="45" width="4" height="10" fill="#1a48a8"/>
+  <!-- 45° tick marks -->
+  <line x1="62" y1="38" x2="69" y2="31" stroke="#032168" stroke-width="2" stroke-linecap="square"/>
+  <line x1="62" y1="62" x2="69" y2="69" stroke="#032168" stroke-width="2" stroke-linecap="square"/>
+  <line x1="38" y1="38" x2="31" y2="31" stroke="#032168" stroke-width="2" stroke-linecap="square"/>
+  <line x1="38" y1="62" x2="31" y2="69" stroke="#032168" stroke-width="2" stroke-linecap="square"/>
+</svg>
