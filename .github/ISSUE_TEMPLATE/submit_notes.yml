@@ -1,0 +1,55 @@
+name: 投稿笔记
+description: 分享课程笔记或学习资料
+title: "[笔记] "
+labels: ["contribution/notes"]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: 对应课程或方向
+      placeholder: "MIT 6.004 / EDA与设计自动化 / 线性代数"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: notes_type
+    attributes:
+      label: 笔记类型
+      options:
+        - 个人整理
+        - 课堂笔记
+        - 习题解答
+        - 其他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: copyright
+    attributes:
+      label: 版权说明
+      options:
+        - 原创内容，本人持有版权
+        - 整理自公开资料（教材、讲义等），已注明来源
+        - 经原作者授权转载
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 简介
+      description: 简单说明内容范围和适合谁看
+      placeholder: "覆盖 Lec 1-8，重点整理了流水线和缓存部分，配有自己画的图"
+
+  - type: input
+    id: link
+    attributes:
+      label: 外链（选填）
+      description: 如果笔记放在自己的网盘或仓库，填链接即可，不需要上传文件
+      placeholder: "https://"
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **上传文件**：将文件（PDF / zip，单个 ≤ 25 MB）直接拖进下方评论框提交。外链和上传文件填一个即可。
