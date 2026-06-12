@@ -2462,35 +2462,33 @@ html { scroll-behavior: smooth; }
    ════════════════════════════════════════════════════════════ */
 body.pf-noscroll { overflow: hidden !important; }
 
-/* 全屏容器：backdrop 铺满，pf-box 钉在顶部 */
+/* 全屏 backdrop + 右对齐下拉框 */
 #pf-overlay {
   display: none;
   position: fixed;
   inset: 0;
   z-index: 300;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end; /* 贴右侧，和 header 搜索按钮对齐 */
 }
 #pf-overlay.pf-open { display: flex; }
 
-/* 半透明背景幕（在 pf-box 后面） */
 #pf-bg {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .54);
 }
 
-/* 搜索面板：全宽，从顶部自然下拉 */
+/* 搜索面板：紧凑下拉框，从 header 右侧自然垂下 */
 #pf-box {
   position: relative;
   z-index: 1;
   background: #fff;
-  width: 100%;
+  width: min(640px, 100%);
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .28);
-  border-radius: 0;
-  border-bottom: 1px solid rgba(3, 33, 104, .12);
+  border-radius: 0 0 4px 4px;
   animation: pf-drop .14s ease;
 }
 @keyframes pf-drop {
@@ -2498,12 +2496,7 @@ body.pf-noscroll { overflow: hidden !important; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* 内容居中限宽（同 Material 正文区宽度） */
-#pf-ui {
-  max-width: 61rem;
-  margin: 0 auto;
-  padding: 10px 1.2rem 16px;
-}
+#pf-ui { padding: 10px 14px 16px; }
 
 /* PageFind CSS 变量 */
 #pf-ui {
