@@ -72,6 +72,7 @@ plugins:
   - open-in-new-tab:
   - redirects:
       redirect_maps:
+        '学习地图/系统架构/计算机系统基础/FDU_MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
         '学习地图/系统架构/AI加速器/FDU_ICSE40007.md': '学习地图/系统架构/AI加速器/index.md'
         '学习地图/系统架构/体系结构/FDU_ICSE40002.md': '学习地图/系统架构/AI加速器/FDU_ICSE40002.md'
         '学习地图/系统架构/体系结构/FDU_ICSE30036.md': '学习地图/系统架构/AI加速器/FDU_ICSE30036.md'
@@ -156,7 +157,7 @@ plugins:
         '学习地图/电路/EDA/MICR130035.md': '学习地图/电路/EDA/index.md'
         '学习地图/电路/嵌入式SoC/junhan.md': '学习地图/电路/嵌入式SoC/FDU_hanjun.md'
         '学习地图/电路/嵌入式SoC/cornell_ece4760.md': '学习地图/电路/嵌入式SoC/Cornell_ECE4760.md'
-        '学习地图/系统架构/计算机系统基础/MICR130038.md': '学习地图/系统架构/计算机系统基础/FDU_MICR130038.md'
+        '学习地图/系统架构/计算机系统基础/MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
         '学习地图/系统架构/计算机系统基础/CSAPP.md': '学习地图/系统架构/计算机系统基础/CMU_15-213.md'
         '学习地图/系统架构/计算机系统基础/CS110.md': '学习地图/系统架构/计算机系统基础/Stanford_CS110.md'
         '学习地图/系统架构/体系结构/N2T.md': '学习地图/系统架构/体系结构/Coursera_nand2tetris.md'
@@ -310,7 +311,7 @@ plugins:
         '学习地图/电路/信号处理/MATLAB/mathworks_matlab.md': '工程工具/MATLAB/mathworks_matlab.md'
         '学习地图/电路/信号处理/MATLAB/vanderbilt_matlab.md': '工程工具/MATLAB/Vanderbilt_matlab.md'
         '学习地图/系统架构/入门速成/index.md': '学习地图/系统架构/计算机系统基础/index.md'
-        '学习地图/系统架构/入门速成/MICR130038.md': '学习地图/系统架构/计算机系统基础/FDU_MICR130038.md'
+        '学习地图/系统架构/入门速成/MICR130038.md': '学习地图/系统架构/计算机系统基础/index.md'
         '学习地图/系统架构/入门速成/CSAPP.md': '学习地图/系统架构/计算机系统基础/CMU_15-213.md'
         '学习地图/系统架构/入门速成/CS110.md': '学习地图/系统架构/计算机系统基础/Stanford_CS110.md'
         '学习地图/人工智能/AI系统/d2l_limu.md': '学习地图/人工智能/深度学习/limu_d2l.md'
@@ -646,7 +647,6 @@ nav:
       - 导言: "学习地图/系统架构/index.md"
       - 计算机系统基础:
         - 学习地图/系统架构/计算机系统基础/index.md
-        - "复旦 计组": "学习地图/系统架构/计算机系统基础/FDU_MICR130038.md"
         - "CMU 15-213": "学习地图/系统架构/计算机系统基础/CMU_15-213.md"
         - "Stanford CS110": "学习地图/系统架构/计算机系统基础/Stanford_CS110.md"
       - 体系结构:
