@@ -23,7 +23,7 @@ Chisel Bootcamp 是官方推荐的入门材料，以 **Jupyter Notebook** 形式
 
 - 课程仓库：<https://github.com/freechipsproject/chisel-bootcamp>
 - 在线运行（Google Colab）：点击仓库 README 中的 launch 徽章即可直接运行
-- Chisel 官方文档：<https://www.chisel-lang.org/docs/>
+- Chisel 官方文档：<https://www.chisel-lang.org/docs>
 - 相关实践项目（Rocket Chip）：<https://github.com/chipsalliance/rocket-chip>
 - Chipyard SoC 框架：<https://github.com/ucb-bar/chipyard>
 - 课程视频：无（以 Notebook 形式自学）

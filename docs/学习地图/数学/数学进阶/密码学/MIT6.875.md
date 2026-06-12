@@ -15,7 +15,7 @@
 
 ## 学习地图
 
-- 课程网站：[mit6875.org](http://mit6875.org/)
+- 课程网站：[mit6875.github.io](https://mit6875.github.io/)
 - 课程视频：[YouTube playlist (Spring 2018)](https://www.youtube.com/playlist?list=PL6ogFv-ieghe8MOIcpD6UDtdK-UMHG8oH)
 - 课程教材：Goldreich, *Foundations of Cryptography* (Vol. 1 & 2)
 - 课程作业：课程网站发布

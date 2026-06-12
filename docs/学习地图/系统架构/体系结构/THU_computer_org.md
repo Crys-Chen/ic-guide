@@ -16,5 +16,4 @@
 ## 学习地图
 
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/BV1jE41177sS/)
-- 课程网站：[清华 CS 计算机组成原理](https://www.cs.tsinghua.edu.cn/info/1126/3586.htm)
 - 课程教材：王诚《计算机组成原理》（清华大学出版社）

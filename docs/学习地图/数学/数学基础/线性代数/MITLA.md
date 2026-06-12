@@ -18,7 +18,7 @@
 
 ## 学习地图
 
-- 课程网站：[fall2011](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/syllabus/)
+- 课程网站：[fall2011](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/syllabus/)
 - 课程视频：参见课程网站
 - 课程教材：Introduction to Linear Algebra. Gilbert Strang
 - 课程作业：参见课程网站

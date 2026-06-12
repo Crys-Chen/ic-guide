@@ -13,5 +13,5 @@
 
 ## 学习地图
 
-- 课程视频：[B 站 UP chbpku](https://www.bilibili.com/video/BV1h7411m7BK/)
+- 课程视频：[B 站 UP chbpku（慕课+课堂实录，113P）](https://www.bilibili.com/video/BV1gy4y1E7M5/)
 - 课程网站：[中国大学 MOOC PKU](https://www.icourse163.org/course/PKU-1206689803)

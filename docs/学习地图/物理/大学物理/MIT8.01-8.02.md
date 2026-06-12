@@ -16,11 +16,14 @@ MIT 大学物理是面向全校理工科一年级新生的两学期序列：**8.
 ## 学习地图
 
 - 课程网站：
-  - 8.01(Lewin 版): <https://ocw.mit.edu/courses/8-01-physics-i-classical-mechanics-fall-1999/>
-  - 8.02(Lewin 版): <https://ocw.mit.edu/courses/8-02-electricity-and-magnetism-spring-2002/>
   - 8.01x(Dourmashkin 新版): <https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/>
   - 8.02x(Dourmashkin 新版): <https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/>
-- 课程视频：MIT OCW 全套,B 站亦有完整中字版(搜"MIT 8.01 沃尔特")
+  - Lewin 版课程页已从 OCW 下架，视频见下方 YouTube/B 站链接
+- 课程视频：
+  - 8.01 Lewin 版(YouTube 官方): [8.01x Classical Mechanics](https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e)
+  - 8.02 Lewin 版(YouTube 官方): [8.02x Electricity and Magnetism](https://www.youtube.com/playlist?list=PLyQSN7X0ro2314mKyUiOILaOC2hk6Pc3j)
+  - 8.01 中字: [B 站 40 讲](https://www.bilibili.com/video/BV1NMk7BFE3n/)
+  - 8.02 中字: [B 站 36 讲(1080p 修复)](https://www.bilibili.com/video/BV1bM4y1879r/)
 - 课程教材：
   - Halliday/Resnick《Fundamentals of Physics》(国内通称"哈里德")——中译本广泛流传
   - Young & Freedman《University Physics》——另一本主流教材,推导更细
