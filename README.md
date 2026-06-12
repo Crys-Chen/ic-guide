@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/logo.png" width="160" alt="IC Guide"/>
+</p>
+
 # IC Guide — 集成电路与微电子自学指南
 
 **[https://crys-chen.github.io/ic-guide/](https://crys-chen.github.io/ic-guide/)**
@@ -206,7 +210,7 @@
 
 #### 完善现有页面某一节
 
-某方向的"核心研究问题"有问题、某课程页只有壳没有内容——[开 Issue 说一句](https://github.com/Crys-Chen/ic-guide/issues/new)你想改哪节、改成什么，或者直接发 PR。按页面已有结构写就行，不需要提前对齐。
+发现某一节有问题或缺失——[开 Issue 说一句](https://github.com/Crys-Chen/ic-guide/issues/new)你想改哪节、改成什么，或者直接发 PR。按页面已有结构写就行，不需要提前对齐。
 
 #### 新建课程页
 
