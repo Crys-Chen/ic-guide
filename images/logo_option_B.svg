@@ -1,21 +1,35 @@
-<svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- B: 定位芯片 — map-pin silhouette whose body IS a chip die -->
-  <!-- pin body: rounded rect top + pointed bottom -->
-  <path d="M40,97 L8,60 L8,13 Q8,5 16,5 L64,5 Q72,5 72,13 L72,60 Z" fill="#032168"/>
-  <!-- inner die border -->
-  <rect x="17" y="14" width="46" height="38" rx="1" fill="none" stroke="white" stroke-width="1.5"/>
-  <!-- floorplan grid -->
-  <line x1="32" y1="14" x2="32" y2="52" stroke="white" stroke-width="1" opacity="0.55"/>
-  <line x1="48" y1="14" x2="48" y2="52" stroke="white" stroke-width="1" opacity="0.55"/>
-  <line x1="17" y1="28" x2="63" y2="28" stroke="white" stroke-width="1" opacity="0.55"/>
-  <line x1="17" y1="40" x2="63" y2="40" stroke="white" stroke-width="1" opacity="0.55"/>
-  <!-- top pads -->
-  <rect x="26" y="3" width="7" height="4" rx="1" fill="white"/>
-  <rect x="47" y="3" width="7" height="4" rx="1" fill="white"/>
-  <!-- side pads left -->
-  <rect x="3" y="19" width="6" height="6" rx="1" fill="white"/>
-  <rect x="3" y="36" width="6" height="6" rx="1" fill="white"/>
-  <!-- side pads right -->
-  <rect x="71" y="19" width="6" height="6" rx="1" fill="white"/>
-  <rect x="71" y="36" width="6" height="6" rx="1" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <defs>
+    <style>
+      .bg-blue { fill: #0D3692; }
+      .bg-light-blue { fill: #144CC7; }
+      .bg-dark-blue { fill: #08215C; }
+      .stroke-blue { stroke: #0D3692; }
+      .bg-teal { fill: #1A9C8E; }
+      .stroke-teal { stroke: #1A9C8E; }
+    </style>
+  </defs>
+
+  <rect width="200" height="200" fill="#ffffff"/>
+
+  <circle cx="100" cy="100" r="88" fill="none" class="stroke-teal" stroke-width="4"/>
+
+  <circle cx="100" cy="100" r="72" fill="none" class="stroke-teal" stroke-width="2" stroke-dasharray="18 12"/>
+
+  <circle cx="100" cy="100" r="48" class="bg-blue"/>
+
+  <line x1="100" y1="58" x2="100" y2="68" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="132" x2="100" y2="142" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="58" y1="100" x2="68" y2="100" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="132" y1="100" x2="142" y2="100" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+
+  <line x1="100" y1="12" x2="100" y2="28" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="172" x2="100" y2="188" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="12" y1="100" x2="28" y2="100" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+  <line x1="172" y1="100" x2="188" y2="100" class="stroke-teal" stroke-width="3" stroke-linecap="round"/>
+
+  <polygon points="164,36 106,106 36,164 100,100" class="bg-dark-blue"/>
+  <polygon points="164,36 100,100 36,164 94,94" class="bg-light-blue"/>
+
+  <text x="100" y="112" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="1">IC</text>
 </svg>
