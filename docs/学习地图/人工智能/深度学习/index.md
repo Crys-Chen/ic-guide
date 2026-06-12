@@ -11,6 +11,7 @@
 - **[Stanford CS224n](CS224n.md)** — Stanford NLP 与 Transformer 经典 ★
 - **[Stanford CS224w](CS224w.md)** — Stanford 图神经网络
 - **[李宏毅机器学习(国立台湾大学)](LHY.md)** — **中文圈最受欢迎的深度学习课**,讲法生动 ★
+- **[李沐:动手学深度学习 v2](d2l_limu.md)** — 中文 DL 实践课,Jupyter Notebook 把每个模型亲手搭一遍
 - **[UMich EECS 498-007: Deep Learning for Computer Vision](EECS498-007.md)** — Justin Johnson 主讲,Stanford CS231n 的扩展版
 - **[UCB CS285](CS285.md)** — Berkeley 深度强化学习
 - **[补充资源](补充资源.md)** — 花书、d2l 等中英文教材推荐

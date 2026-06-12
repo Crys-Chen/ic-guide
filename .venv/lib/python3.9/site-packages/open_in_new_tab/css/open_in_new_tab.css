@@ -1,0 +1,16 @@
+/*
+ * Materialize external links that open in a new window with a right-up arrow icon
+ * (except those in the header and footer).
+ * Works with the material and readthedocs themes.
+ * Author: @ebouchut (https://github.com/ebouchut)
+ * https://github.com/JakubAndrysek/mkdocs-open-in-new-tab/issues/4
+ */
+
+ .md-main a[target="_blank"]::after,
+ .document a[target="_blank"]::after {
+   content: "↗";
+   display: inline-block;
+   margin-left: 0.2em;
+   width: 1em;
+   height: 1em;
+}

@@ -6,3 +6,4 @@ mkdocs-static-i18n==1.2.0
 mkdocs-open-in-new-tab==1.0.8
 pymdown-extensions>=10.0
 jieba
+mkdocs-redirects

@@ -9,13 +9,13 @@
 - **[学习路线图](roadmap.md)** — 深度生成模型的总体学习路径
 - **[MIT 6.S184](MIT6.S184.md)** — MIT 深度生成模型新课
 - **[UCB CS294-158: Deep Unsupervised Learning](CS294-158.md)** — Berkeley 经典深度生成模型课 ★
-- **[大语言模型/](大语言模型/CS336.md)** — LLM 子目录,含 CS336、CMU 11-711 等专门课程
+- **[大语言模型](../大语言模型/CS336.md)** — LLM 已是人工智能板块的独立目录,含 CS336、CMU 11-711 等专门课程
 
 ## 学习路径建议
 
 **入门:UCB CS294-158**(从 GAN 到 diffusion 全覆盖)
 
-**专攻 LLM:进入[大语言模型](大语言模型/)子目录**(CS336 是 LLM from scratch 的最佳选择)
+**专攻 LLM:进入[大语言模型](../大语言模型/CS336.md)目录**(CS336 是 LLM from scratch 的最佳选择)
 
 ## 对应的科研方向
 

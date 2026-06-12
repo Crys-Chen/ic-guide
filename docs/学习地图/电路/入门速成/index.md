@@ -6,11 +6,11 @@
 
 - **[UCB EE16A&B: Designing Information Devices and Systems](EE16.md)** — UC Berkeley 把电路+信号+线代+控制压成一门入门课,**国外最有名的"电路通识"课**
 - **[UCB EE120: Signals and Systems](../信号处理/信号与系统/EE120.md)** — Berkeley 信号与系统经典版
-- **[MIT 6.007: Signals and Systems](Signals_and_Systems_AVO.md)** — MIT 信号系统入门版
+- **[MIT 6.007: Signals and Systems](../信号处理/信号与系统/Signals_and_Systems_AVO.md)** — MIT 信号系统入门版
 
 ## 对应的科研方向
 
 入门速成的本质是为后续专业课打基础,**不直接对应某个研究方向**。但学完它你能:
 - 看懂大部分 IC 论文中的电路框图和信号流图
-- 决定要不要深入 [模拟](../模拟/) 或 [信号处理](../信号处理/) 方向
+- 决定要不要深入 [模拟与射频](../模拟与射频/index.md) 或 [信号处理](../信号处理/index.md) 方向
 - 与 EE 同事沟通时不被基础术语绊倒

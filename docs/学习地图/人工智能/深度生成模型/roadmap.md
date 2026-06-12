@@ -13,8 +13,8 @@
 
 ## 大语言模型
 
-- [Stanford CS336: Language Modeling from Scratch](大语言模型/CS336.md) — 从零构建 LLM 全链路，最硬核，推荐有系统能力追求的同学
-- [CMU 11-711: Advanced NLP](大语言模型/CMU11-711.md) — 各子方向广泛覆盖，适合建立宏观认知
+- [Stanford CS336: Language Modeling from Scratch](../大语言模型/CS336.md) — 从零构建 LLM 全链路，最硬核，推荐有系统能力追求的同学
+- [CMU 11-711: Advanced NLP](../大语言模型/CMU11-711.md) — 各子方向广泛覆盖，适合建立宏观认知
 
 ## 延伸阅读
 

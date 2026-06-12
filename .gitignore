@@ -6,4 +6,4 @@ archive/
 /old_docs
 *.pdf
 *.docx
-*.xlsx
+*.xlsx.venv/

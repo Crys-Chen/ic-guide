@@ -7,6 +7,7 @@ EDA(Electronic Design Automation)指**用于设计、仿真、验证、流片芯
 - **[EDA 工具(复旦)](MICR130035.md)** — 复旦微电子综合 EDA 课
 - **[Vivado 入门](vivado.md)** — AMD/Xilinx FPGA EDA 工具入口
 - **[Cadence Virtuoso 入门](cadence.md)** — 模拟 IC 设计工业标准
+- **[UIUC VLSI CAD (Coursera)](UIUC_VLSI_CAD.md)** — 讲 EDA 工具背后的算法:逻辑综合、布局布线、时序分析
 
 ## 学习路径建议
 

@@ -10,24 +10,25 @@
 graph TB
     A["入门速成<br/>Karpathy · CS50 AI · CS188"] --> B["机器学习<br/>CS229 · CS189 · Data100"]
     B --> C["深度学习<br/>CS231n · CS224n · LHY"]
-    C --> D["深度生成模型<br/>扩散 · LLM · CS336"]
+    C --> D["深度生成模型<br/>扩散模型 · CS294-158"]
+    D --> L["大语言模型<br/>CS336 · 11-711"]
     B --> E["机器学习理论<br/>PGM · 统计学习理论"]
     B --> G["强化学习<br/>赵世钰 · Silver"]
     C --> H["类脑与SNN"]
     C --> F["AI 系统<br/>10-414 · TinyML · MLC"]
-    D --> F
+    L --> F
 
     classDef intro fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef algo fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
     classDef sys fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
     classDef theory fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     class A intro
-    class B,C,D algo
+    class B,C,D,L algo
     class F sys
     class E,G,H theory
 ```
 
-主链是算法层，入门 → 机器学习 → 深度学习 → 生成模型前沿。AI 系统在算法层之上，讲怎么把模型高效跑起来，是芯片研究者最该投入的一层。机器学习理论、强化学习、类脑与SNN 是从主链分出的三个专题方向，按研究需要选学。
+主链是算法层，入门 → 机器学习 → 深度学习 → 深度生成模型 → 大语言模型。AI 系统在算法层之上，讲怎么把模型高效跑起来，是芯片研究者最该投入的一层。机器学习理论、强化学习、类脑与SNN 是从主链分出的三个专题方向，按研究需要选学。
 
 ---
 
@@ -39,9 +40,11 @@ graph TB
 
 **[深度学习](深度学习/)** — CS231n、CS224n、李宏毅机器学习；神经网络的主流模型（CNN、Transformer）及训练技术。
 
-**[深度生成模型](深度生成模型/)** — 扩散模型、LLM 训练与推理；了解 AI 前沿模型的工作原理与计算需求。
+**[深度生成模型](深度生成模型/)** — VAE、GAN、扩散模型；了解 AI 前沿模型的工作原理与计算需求。
 
-**[强化学习](强化学习/)** — 赵世钰数学原理 + David Silver 经典；ML for EDA / 机器人控制策略的核心算法。
+**[大语言模型](大语言模型/CS336.md)** — CS336 from scratch、CMU 11-711、OpenBMB；LLM 的训练与推理，当前 AI 系统研究的主要工作负载。
+
+**[强化学习](强化学习/xhu_zhao_RL.md)** — 赵世钰数学原理 + David Silver 经典；ML for EDA / 机器人控制策略的核心算法。
 
 **[类脑与SNN](类脑与SNN/index.md)** — 脉冲神经网络基础资源；目前无完整公开课，收录 EPFL Gerstner / snnTorch 等次优资源。
 
@@ -51,7 +54,7 @@ graph TB
 
 | 对应科研方向 | 推荐子板块 | 为什么 |
 |---|---|---|
-| [AI 算法与系统](../../科研方向/AI算法与系统.md) | AI 系统 + 深度学习 + 深度生成模型 | 这是本方向的本体——量化、推理优化、LLM serving 都来自这里 |
+| [AI 算法与系统](../../科研方向/AI算法与系统.md) | AI 系统 + 深度学习 + 大语言模型 | 这是本方向的本体——量化、推理优化、LLM serving 都来自这里 |
 | [处理器架构与编译系统](../../科研方向/处理器架构与编译系统.md) | AI 系统 (TVM/MLC) | AI 编译器是当前体系结构最热的研究分支之一 |
 | [存算一体与近存计算](../../科研方向/存算一体与近存计算.md) | 入门速成 + AI 系统 | 至少要看懂 attention、MAC 在做什么,才能设计 PIM 加速器 |
 | [类脑芯片](../../科研方向/类脑芯片.md) | 机器学习 + 深度学习 | SNN 与 ANN 共享反向传播框架 |

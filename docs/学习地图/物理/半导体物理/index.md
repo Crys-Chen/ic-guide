@@ -7,7 +7,7 @@
 ## 推荐课程
 
 - **[半导体物理(复旦)](MICR130005.md)** — 复旦微电子专业必修
-- **[Purdue ECE 606: Solid State Devices](purdue_ece606.md)** — Purdue 经典在线课,Mark Lundstrom 主讲,从量子力学严格推导到器件参数,**国外名校半导体物理首选**
+- **[Purdue ECE 606: Solid State Devices](../../器件与工艺/半导体器件/purdue_ece606.md)** — Purdue 经典在线课,Mark Lundstrom 主讲,从量子力学严格推导到器件参数,**国外名校半导体物理首选**
 - **[西安电子科技大学:半导体物理(柴常春)](xidian_semiconductor.md)** — 国内中文公开课,与刘恩科教材配套
 
 ## 对应的科研方向
