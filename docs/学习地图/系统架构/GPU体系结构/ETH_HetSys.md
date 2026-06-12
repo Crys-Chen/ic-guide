@@ -12,7 +12,7 @@
 
 配合 CS149（并行编程模型）食用：CS149 教怎么写 CUDA，这门课教写的代码在硬件里究竟发生了什么。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube 2023）：[HetSys 2023 Playlist](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi-qSKahS4ofaEwYl7_qp9mw)
 - 课程主页：[SAFARI P&S Heterogeneous Systems (Spring 2023)](https://safari.ethz.ch/projects_and_seminars/spring2023/doku.php?id=heterogeneous_systems)

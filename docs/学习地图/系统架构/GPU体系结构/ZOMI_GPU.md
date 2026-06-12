@@ -11,7 +11,7 @@
 
 优点：中文、覆盖面广、代际演进叙事清晰。局限：面向 AI 系统方向，对底层微架构（warp 调度的流水线细节）不如 ETH HetSys 深。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站，从第一集开始）：[GPU 架构原理 01](https://www.bilibili.com/video/BV1bm4y1m7Ki)，后续各集见 [ZOMI 酱 B 站主页](https://space.bilibili.com/517221395)
 - 配套讲义（开源）：[AISystem GitHub](https://github.com/chenzomi12/AISystem)

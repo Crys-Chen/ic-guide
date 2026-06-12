@@ -16,7 +16,7 @@
 
 这门课的后半部分关注在并发（concurrency）这一主题上，你将会系统地掌握多进程、多线程、基于事件驱动的并发等若干并发技术，并在第二个 Project 中比较它们各自的优劣。Rust 中 “futures” 的概念非常有趣和优雅，这些基础知识对你后续对计算机系统相关课程的学习很有帮助。另外，清华大学的操统实验 rCore 就是基于 Rust 编写的，具体参见[文档](https://rcore-os.github.io/rCore-Tutorial-Book-v3/index.html)。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://reberhardt.com/cs110l/spring-2020/>
 - 课程视频：<https://youtu.be/j7AQrtLevUE>

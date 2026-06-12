@@ -13,7 +13,7 @@
 
 是国内 LLM 方向最权威的中文公开课，与 Stanford CS336 互补——CS336 从零搭语言模型，OpenBMB 偏应用与工程。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/BV1UG411p7zv/)
 - 课程网站：[OpenBMB 社区课程](https://www.openbmb.cn/community/course)

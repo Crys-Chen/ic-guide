@@ -25,7 +25,7 @@
 作业主要是实现课上的伪代码算法，从而更好的帮助你理解课上所讲的知识。我感觉难度并不是特别大，特别适合在上完课后完成对应的实验来检验自己对课上知识的掌握程度。
 不过想要通过每个作业的所有测试点还是很有难度的。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[主页](https://tai-e.pascal-lab.net/lectures.html)
 - 课程视频：[Bilibili](https://www.bilibili.com/video/BV1b7411K7P4/?spm_id_from=333.999.0.0&vd_source=b58da8cd0259ee873ef3dc2c9aa36d74)

@@ -17,7 +17,7 @@
 - 课程实验循序渐进，逐渐增加难度，能让不同基础的学生都有收获。
 - 课程实验中Lab1使用Flex和Bison实现编译器前端，Lab2实现LightIR(LLVM子集)中间代码生成，Lab3实现后端代码生成龙芯汇编语言，Lab4实现中间代码优化，Lab5实现机器无关优化，Lab6实现寄存器分配。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://ustc-compiler-principles.github.io/2023>
 - 课程视频：<https://www.bilibili.com/video/BV1D7421N7c4>

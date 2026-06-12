@@ -13,7 +13,7 @@
 
 与 Stanford Boneh 课形成"应用 vs 理论"互补：Boneh 讲"如何用"，Goldwasser 讲"为什么这是安全的"。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[mit6875.github.io](https://mit6875.github.io/)
 - 课程视频：[YouTube playlist (Spring 2018)](https://www.youtube.com/playlist?list=PL6ogFv-ieghe8MOIcpD6UDtdK-UMHG8oH)

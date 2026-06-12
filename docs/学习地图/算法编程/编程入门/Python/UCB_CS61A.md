@@ -24,7 +24,7 @@ CS61B 和 CS61C 在本书中均有收录。
 
 注意：如果此前完全没有编程基础，直接上手 CS61A 需要一定的学习能力和自律要求。为避免课程难度过高而导致的信心挫折，可以选择一个更为友好的入门编程课程。例如伯克利的 [CS10](https://cs10.org/sp22/) 或者哈佛大学的 [CS50](https://csdiy.wiki/编程入门/C/CS50/)。
 
-## 学习地图
+## 课程资源
 
 - [课程网站](https://cs61a.org)
 - 课程网站 (页面备份): [fall2024](https://insideempire.github.io/CS61A-Website-Archive/), [spring2022](https://cs61a.vercel.app/), [fall2022](https://web.archive.org/web/20220913035803/http://cs61a.org/), [fall2020](https://web.archive.org/web/20201219202644/https://cs61a.org/)

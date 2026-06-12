@@ -13,7 +13,7 @@
 
 适合学完基础 C++ 后想真正吃透面向对象的同学。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站合集](https://www.bilibili.com/video/BV1r6h5zgE2i/)
 - 课程网站：[博览网 侯捷专区](https://boolan.com/jjhou)

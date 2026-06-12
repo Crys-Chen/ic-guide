@@ -24,7 +24,7 @@
 
 北大 2022 年春季学期的操作系统实验班也将会首次引入 Pintos 作为课程 Project。我和该课程的[另一位助教](https://github.com/AlfredThiel)整理并完善了 Pintos 的[实验文档](https://pkuflyingpig.gitbook.io/pintos)，并利用 Docker 配置了跨平台的实验环境，想自学的同学可以按文档自行学习。在毕业前的最后一个学期，希望能用这样的尝试，让更多人爱上系统领域，为国内的系统研究添砖加瓦。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://cs162.org/>
 - 课程视频：<https://www.youtube.com/watch?v=YfHY0pvpRkk>，每节课的链接参见课程网站

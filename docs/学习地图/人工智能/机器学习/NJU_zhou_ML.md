@@ -11,7 +11,7 @@
 
 周志华院士亲自讲解的《西瓜书》官方慕课。覆盖**模型评估 / 线性模型 / 决策树 / SVM / 神经网络 / 贝叶斯 / 集成学习 / 聚类**。中文 ML 教材作者亲讲的最权威版本。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站 52 讲完整版](https://www.bilibili.com/video/BV1qFsSeWEhN/)
 - 课程网站：[学堂在线 nju0802bt](https://www.xuetangx.com/course/nju0802bt)

@@ -11,7 +11,7 @@
 
 游飞团队建设的成电 RFIC 慕课，结构完全对标 Razavi RFIC——CMOS 工艺/器件 → 单级放大 → 噪声 → 收发机 → LNA → Mixer → 无源器件 → PA。国内 RF/MMW 团队的代表性课程，与复旦殷韵版互为补充。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[成电 RFIC 慕课](https://study.uestc.edu.cn/mooc/index.aspx?courseId=1237)
 - 课程教学课件：[UESTC RFIC 课件](https://i.study.uestc.edu.cn/RFIC/menu/teaching-courseware)

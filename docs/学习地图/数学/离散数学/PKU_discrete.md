@@ -13,7 +13,7 @@
 
 国内离散数学最权威的中文公开课，与 UCB CS70 / CS126 互为对照——北大版偏向数学严谨性，CS70 偏向 CS 应用，结合学效果最佳。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[中国大学 MOOC](https://www.icourse163.org/course/PKU-1002525004)
 - 课程视频：[B 站 134 集完整版](https://www.bilibili.com/video/BV1WfXaYME3Y/)

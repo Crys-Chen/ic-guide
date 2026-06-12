@@ -11,7 +11,7 @@
 
 李沐"跟李沐学 AI"系列直播全集。每章节既讲模型原理也手把手 PyTorch 实现，从 **MLP / CNN / RNN / Attention** 到 CV 与 NLP 实战。中文圈"模型 + 系统 + 工程"耦合最紧的实践课，与 d2l 教材配套。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站直播合集](https://www.bilibili.com/video/BV1if4y147hS/)
 - 配套教材：[d2l.ai 中文版](https://courses.d2l.ai/zh-v2/)

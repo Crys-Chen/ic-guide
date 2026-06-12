@@ -13,7 +13,7 @@
 
 对微电子学生来说，这是通信与随机信号方向的进阶课，不是人人必修。如果你的方向涉及通信系统、网络排队建模、存储与信道编码，或者想读懂信息论与排队论文献，这门课提供的马尔可夫链与更新理论功底是绕不开的。先修概率课没学透的话不要硬上。
 
-## 学习地图
+## 课程资源
 
 - 课程网站（OCW，含讲义与习题）：<https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/>
 - 课程视频（YouTube，MIT OpenCourseWare 官方频道，25 讲）：<https://www.youtube.com/playlist?list=PLEEF5322B331C1B98>

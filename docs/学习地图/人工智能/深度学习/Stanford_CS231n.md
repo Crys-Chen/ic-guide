@@ -12,7 +12,7 @@
 
 Stanford 的 CV 入门课，由计算机领域的巨佬李飞飞院士领衔教授（CV 领域划时代的著名数据集 ImageNet 的研究团队），但其内容相对基础且友好，如果上过 CS230 的话可以直接上手 Project 作为练习。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://cs231n.stanford.edu/>
 - 课程视频：<https://www.bilibili.com/video/BV1nJ411z7fe>

@@ -10,7 +10,7 @@
 
 复旦微电子学生在学完数学分析和线性代数后唯一一门也是最后一门数学课，讲得比较简单，也比较枯燥，但很有用。其中涉及到的复变函数和积分变换是信号处理的基础，而概率论则是打开机器学习和深度学习大门的钥匙。
 
-## 学习地图
+## 课程资源
 
 - 笔记：[笔记](https://github.com/Crys-Chen/Fudan-ME/tree/resources/Fudan/%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%8F%8A%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95/%E7%AC%94%E8%AE%B01)
 - 讲义：[讲义](https://github.com/Crys-Chen/Fudan-ME/tree/resources/Fudan/%E5%B7%A5%E7%A8%8B%E6%95%B0%E5%AD%A6%E5%8F%8A%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95/%E8%AE%B2%E4%B9%89)

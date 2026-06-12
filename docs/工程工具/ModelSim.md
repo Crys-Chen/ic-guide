@@ -46,7 +46,7 @@ vsim -c tb_top -do "run -all; quit"  # 命令行跑仿真
 3. Simulate → Start Simulation → 选择 testbench 顶层
 4. 在 Wave 窗口拖入需要观察的信号 → Run All
 
-## 学习资源
+## 课程资源
 
 - **Verification Guide**（免费电子书，系统介绍 SystemVerilog + UVM）：[verificationguide.com](https://www.verificationguide.com/)
 - **Doulos Verilog/SystemVerilog 教程**：工业界质量的免费教程

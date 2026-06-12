@@ -18,7 +18,7 @@
 
 总的来讲这门课并不难，但是信息量很大，需要你在之后的开发实践中反复巩固。Stanford 之所以单开一门 C++ 的编程课，是因为它后续的很多 CS 课程 Project 都是基于 C++的。例如 CS144 计算机网络和 CS143 编译器。这两门课在本书中均有收录。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://web.stanford.edu/class/cs106l/>
 - 课程视频：<https://www.youtube.com/channel/UCSqr6y-eaQT_qZJVUm_4QxQ/playlists>

@@ -11,6 +11,6 @@
 
 与 ETH HetSys 的关系：这门课是入门，HetSys 是进阶。先学本课建立基础概念，再用 HetSys 做深度拓展。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube 官方）：[GPU Architectures and Programming Playlist](https://www.youtube.com/playlist?list=PLbRMhDVUMngfj_NXI7jqMYLnhcRhRKAGq)

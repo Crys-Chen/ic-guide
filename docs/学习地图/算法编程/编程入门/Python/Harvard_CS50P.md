@@ -14,7 +14,7 @@ CS50的番外篇，依旧由 David J. Malan 授课。在该课程中你将学会
 
 该课程无需任何编程基础，且相对平易近人。适合所有想要快速入门 Python 语言的各阶段学生。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[2022](https://cs50.harvard.edu/python/2022/)
 - 课程视频：[2022](https://www.bilibili.com/video/BV1z5411X7wX)

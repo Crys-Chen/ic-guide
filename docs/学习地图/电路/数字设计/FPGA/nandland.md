@@ -14,7 +14,7 @@ Nandland 是由 Russell Merrick 创建的 FPGA 入门教育平台，以"让 FPGA
 
 推荐作为 HDLBits 刷题前的前置热身，或与 HDLBits 交替使用——Nandland 帮助理解"为什么这样写"，HDLBits 提供大量"动手练"的机会。
 
-## 学习地图
+## 课程资源
 
 - 平台主页：<https://nandland.com>
 - FPGA 入门课程：<https://nandland.com/fpga-101/>

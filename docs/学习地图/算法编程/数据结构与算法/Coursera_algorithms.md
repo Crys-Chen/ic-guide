@@ -27,7 +27,7 @@
 最后，就是这门课最激动人心的部分了，10 个高质量的 Project，并且全都有实际问题的背景描述，丰富的测试样例，自动的评分系统（代码风格也是评分的一环）。让你在实际生活中
 领略算法的魅力。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[Algorithm I](https://www.coursera.org/learn/algorithms-part1), [Algorithm II](https://www.coursera.org/learn/algorithms-part2)
 - 课程视频：详见课程网站

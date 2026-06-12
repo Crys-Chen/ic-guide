@@ -13,7 +13,7 @@
 
 除了 MIT 官方的学习资料外，北京大学图灵班开设的前沿计算实践中也开设了相关课程，资料位于[这个网站](http://vcl.pku.edu.cn/course/PFCII/2021-spring/index.html)下，供大家参考。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://missing.csail.mit.edu/2020/>
 - 课程中文网站: <https://missing-semester-cn.github.io/>

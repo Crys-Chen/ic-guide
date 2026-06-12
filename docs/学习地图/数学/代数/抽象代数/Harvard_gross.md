@@ -10,7 +10,7 @@
 
 抽象代数经典课程
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[Harvard](https://www.youtube.com/playlist?list=PLzVTusWerVcIzewg9dQxOKl9_62kTgOgI)
 - 课程视频：参见课程网站

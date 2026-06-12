@@ -14,7 +14,7 @@ MIT 的微积分课由 MIT18.01: Single Variable Calculus 和 MIT18.02: Multivar
 
 配合油管数学网红 **3Blue1Brown** 的[微积分的本质](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)系列视频食用更佳。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[18.01](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/), [18.02](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/)
 - 课程视频：参见课程网站

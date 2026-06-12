@@ -10,7 +10,7 @@
 
 科罗拉多大学在 Coursera 上的 FPGA 专项课程，共四门子课程，系统覆盖 FPGA 嵌入式设计全流程：HDL 设计方法与验证、时序约束与静态时序分析、嵌入式处理器集成（MicroBlaze/ARM Cortex-M）及 IP 核应用。每门课均有在 Xilinx Vivado 工具链中完成的编程作业，与复旦 FPGA 课程使用的工具环境高度一致。审计模式免费。
 
-## 学习地图
+## 课程资源
 
 - 课程主页（Coursera 专项）：<https://www.coursera.org/specializations/fpga-design>
 - 课程视频：参见 Coursera 平台（审计模式免费）

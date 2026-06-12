@@ -22,7 +22,7 @@
 
 课程 notes 也写得非常深入浅出，公式推导与实际例子星罗棋布，阅读体验很好。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://www.eecs70.org/>
 - 课程视频：[YouTube（Spring 2015 录像合集）](https://www.youtube.com/playlist?list=PLzAv_uHZw7dTI2e0F8-lxxOWV9zXMzwNE)；[B站搬运（Spring 2015，25 讲）](https://www.bilibili.com/video/BV1SW411L7oY/)

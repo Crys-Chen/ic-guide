@@ -11,6 +11,6 @@
 
 注意：基于 Vivado HLS（旧工具链），原理与 Vitis HLS 通用，界面有差异。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站）：[跟 Xilinx SAE 学 HLS — 25P](https://www.bilibili.com/video/BV1bt41187RW)

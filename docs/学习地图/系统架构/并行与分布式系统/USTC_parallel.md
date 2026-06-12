@@ -11,7 +11,7 @@
 
 国家级精品课，把**并行机体系结构 / 并行数值算法 / 并行编程**（MPI/OpenMP）三者有机整合，是国内最经典的并行计算入门课。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/BV1U7411N78e/)
 - 课程网站：[中科大徐云教授并行课](http://staff.ustc.edu.cn/~xuyun/pc.htm)

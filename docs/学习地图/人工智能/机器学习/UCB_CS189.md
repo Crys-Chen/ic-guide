@@ -12,7 +12,7 @@
 
 这门课我没有系统上过，只是把它的课程 notes 作为工具书查阅。不过从课程网站上来看，它比 CS229 好的是开源了所有 homework 的代码以及 gradescope 的 autograder。同样，这门课讲得相当理论且深入。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://www.eecs189.org/>
 - 课程视频：<https://www.youtube.com/playlist?list=PLOOm2AoWIPEyZazQVnIcaK2KnezpGZV-X>

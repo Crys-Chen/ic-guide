@@ -13,7 +13,7 @@
 
 是中文世界最权威的电路入门课，对标 UCB EE16A&B 的中文替代。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[学堂在线](https://www.xuetangx.com/course/THU08061000294) · [中国大学 MOOC](https://www.icourse163.org/course/detail.htm?cid=1002960001)
 - 课程视频：见课程网站

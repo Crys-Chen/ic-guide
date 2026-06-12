@@ -11,7 +11,7 @@
 
 严老师的矩阵分析可能是内地最好的矩阵分析课程了，但对基础要求比较高，建议读过Roger的《Matrix Analysis》后再上。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[HIT](https://www.bilibili.com/video/BV19x411878L/?spm_id_from=333.337.search-card.all.click)
 - 课程视频：参见课程网站

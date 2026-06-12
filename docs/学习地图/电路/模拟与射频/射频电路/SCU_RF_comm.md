@@ -13,7 +13,7 @@
 
 适合在西电高频之后、进入射频 IC 之前作为过渡。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[中国大学 MOOC SCU](http://www.icourse163.org/spoc/course/SCU-1454978177)
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/BV1zK411p7DC/)

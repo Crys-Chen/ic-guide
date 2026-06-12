@@ -14,7 +14,7 @@
 
 对于以中文为母语、希望在进入复旦《模拟集成电路设计原理》（MICR130030）前夯实基础的学生，本课程是衔接模拟电子线路与模拟IC设计的最佳中文桥梁。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站）：<https://www.bilibili.com/video/BV1E54y187et/>
 - 课程教材：《Design of Analog CMOS Integrated Circuits》Behzad Razavi，第 2 版（McGraw-Hill）

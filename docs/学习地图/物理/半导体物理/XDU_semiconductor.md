@@ -12,7 +12,7 @@
 
 86 讲完整课程录像在 B 站有高播放量搬运，是非复旦学生自学半导体物理的首选中文资料。配合 Purdue ECE 606（Mark Lundstrom，英文）交叉对照，可同时兼顾直觉理解与严格推导。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站，完整 86 讲）：<https://www.bilibili.com/video/BV1fp4y1z7oF/>
 - 课程视频（B 站，104P 补齐版，备选）：<https://www.bilibili.com/video/BV1Ce4y1K7fv/>

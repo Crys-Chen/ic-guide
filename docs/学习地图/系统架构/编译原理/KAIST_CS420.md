@@ -16,7 +16,7 @@
 - 该课程注重实用性，对编译器前端理论涉及很少，第一个实验也是直接从抽象语法树的遍历开始，并不要求你手动完成前端。课程重点关注于 IR 的设计、生成和优化，以及 RISC-V 汇编代码生成。本课程对于理解和学习 LLVM 也很有帮助。
 - 课程配套视频有详细的代码讲解，对初学者友好。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://github.com/kaist-cp/cs420>
 - 课程视频：<https://www.youtube.com/playlist?list=PL5aMzERQ_OZ8RWqn-XiZLXm1IJuaQbXp0>

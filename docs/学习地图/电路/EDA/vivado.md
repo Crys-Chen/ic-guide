@@ -10,7 +10,7 @@
 
 Vivado 是 AMD（原 Xilinx）为 FPGA/SoC 设计提供的主流 EDA 套件，覆盖数字设计的完整流程：RTL 设计输入 → 逻辑综合（Synthesis）→ 实现（Implementation：布局布线）→ 静态时序分析（Timing Analysis）→ 在线调试（ILA Chipscope）→ 比特流生成与 FPGA 烧录（Bitstream）。学会 Vivado 是数字 IC 工程师的基本技能，也是高校 FPGA 实验课（含复旦 MICR130024）的核心工具。
 
-## 学习资源
+## 课程资源
 
 ### 官方文档（入门必读）
 

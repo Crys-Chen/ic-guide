@@ -13,7 +13,7 @@
 
 不是"系统课"而是"读论文方法论"——学完知道怎么读 NeurIPS / ICML / ICLR 的论文。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站系列合集](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=398820)
 - 配套仓库：[mli/paper-reading](https://github.com/mli/paper-reading)

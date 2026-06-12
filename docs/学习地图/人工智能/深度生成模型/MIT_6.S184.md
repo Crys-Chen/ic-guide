@@ -14,7 +14,7 @@
 
 课程配套的教材笔记写得非常好，推荐仔细阅读。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：https://diffusion.csail.mit.edu/
 - 课程视频：[YouTube 官方播放列表（IAP 2025 全 6 讲）](https://www.youtube.com/playlist?list=PL_1TbuIu65A9rac2dMLkvXvPS5YHtADRF)

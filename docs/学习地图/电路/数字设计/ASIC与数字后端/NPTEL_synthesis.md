@@ -12,6 +12,6 @@
 
 与《VLSI Physical Design》互补：一门讲综合，一门讲布局布线，合在一起构成 EDA 算法全栈。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube 官方）：[Synthesis of Digital Systems Playlist](https://www.youtube.com/playlist?list=PLp6ek2hDcoNDXTXRjXlW5HMjBXMqKrGDd)

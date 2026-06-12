@@ -14,7 +14,7 @@ MIT 数字信号处理课程由 Alan V. Oppenheim 主讲，其配套教材《Dis
 
 国内各顶校同样开设数字信号处理课程，中国大学 MOOC 上有东南大学、西安电子科技大学等版本（直链见本目录《补充资源》），可与 MIT 版本对照学习。EPFL 的 Coursera DSP 课程（Paolo Prandoni 主讲）英语现代化表述更清晰，适合与 Oppenheim 教材搭配作为入门阶梯。
 
-## 学习地图
+## 课程资源
 
 - 课程网站（OCW · 6.341，含讲义/习题/考试）：<https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/>
 - 课程视频（OCW · RES.6-008，Oppenheim 原版 DSP 录像）：<https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/>

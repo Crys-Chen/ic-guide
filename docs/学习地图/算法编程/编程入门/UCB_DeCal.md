@@ -16,7 +16,7 @@
 
 为弥补无法使用远程服务器的不足以及熟悉 linux 命令行的需求，在此推荐 [bandit](https://overthewire.org/wargames/bandit/) 。bandit 是一款来自OverTheWire 网站的 Wargame，为 CTF 爱好者提供免费的练习靶场。bandit 的前 15 个 level 都是基础的 linux 操作而不涉及任何 CTF 知识。这些练习也正好弥补了 DeCal 外校无法访问的部分（主要是远程链接、文件权限）等内容。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[官网](https://decal.ocf.berkeley.edu/)
 - 课程视频：原版视频见课程官网，[B站](https://space.bilibili.com/483435468/video)也有搬运。

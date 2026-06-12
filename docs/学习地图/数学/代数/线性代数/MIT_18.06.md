@@ -16,7 +16,7 @@
 
 配合油管数学网红 **3Blue1Brown** 的[线性代数的本质](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)系列视频食用更佳。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[fall2011](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/syllabus/)
 - 课程视频：参见课程网站

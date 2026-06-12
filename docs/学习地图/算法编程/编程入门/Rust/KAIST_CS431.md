@@ -16,7 +16,7 @@ CS431是一门讨论并发编程的课程，主要使用 Rust 语言。课程内
 
 这门课程比我预想的要深入的多，我所知晓的关于自旋锁，互斥锁的知识在该门课程中都是最基础的，而对于 promising semantics, 访存模型和无锁数据结构的介绍让我对并发和 Rust 都有更深入的理解。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[Website](https://github.com/kaist-cp/cs431)
 - 课程视频：[Youtube](https://www.youtube.com/playlist?list=PL5aMzERQ_OZ9j40DJNlsem2qAGoFbfwb4)

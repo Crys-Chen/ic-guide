@@ -13,7 +13,7 @@
 
 是中文圈"工业一线视角"讲体系结构的代表课，与学院派课程互补。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站 2022 秋全集](https://www.bilibili.com/video/BV1YP411u7me/)
 - 教材在线版：[archbase GitBook](https://foxsen.github.io/archbase/)

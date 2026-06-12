@@ -10,7 +10,7 @@
 
 可能是国内最经典的高等代数课程
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[PKU](https://www.bilibili.com/video/BV1jR4y1M78W/?spm_id_from=333.337.search-card.all.click&vd_source=9d2bce86b7ac9d09d427b27dd6f02b28)
 - 课程视频：参见课程网站

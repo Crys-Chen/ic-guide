@@ -12,7 +12,7 @@
 
 吴恩达在 Coursera 开设的另一门网红课程，学习者无数，堪称圣经级的深度学习入门课。深入浅出的讲解，眼花缭乱的 Project。从最基础的神经网络，到 CNN, RNN，再到最近大热的 Transformer。学完这门课，你将初步掌握深度学习领域必备的知识和技能，并且可以在 [Kaggle](https://www.kaggle.com/) 中参加自己感兴趣的比赛，在实践中锻炼自己。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://www.coursera.org/specializations/deep-learning>
 - 课程视频：<https://www.coursera.org/specializations/deep-learning>，B站有搬运

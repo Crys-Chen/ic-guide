@@ -14,7 +14,7 @@ NPTEL（印度国家技术增强学习计划）是全球最早免费开放工程
 
 与 Weste & Harris《CMOS VLSI Design》教材（数字集成电路方向全球标准教材）结合使用效果最佳。两者在 CMOS 逻辑家族、时序分析与存储器设计章节几乎一一对应，课程结束后可直接过渡到芯片后端设计与综合工具链学习。
 
-## 学习地图
+## 课程资源
 
 - 课程网站（NPTEL 官网，含全部 40 讲视频与章节说明）：<https://nptel.ac.in/courses/108107129>
 - 课程视频（YouTube 官方播放列表，IIT Roorkee，41 个视频）：<https://www.youtube.com/playlist?list=PLLy_2iUCG87Bdulp9brz9AcvW_TnFCUmM>

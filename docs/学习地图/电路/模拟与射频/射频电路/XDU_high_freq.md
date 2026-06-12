@@ -13,7 +13,7 @@
 
 是 EE613 / MIT 6.776 的中文对应入门课。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[中国大学 MOOC](https://www.icourse163.org/course/XIDIAN-1002199009)
 - 课程视频：[B 站 98 讲完整版](https://www.bilibili.com/video/BV1p441197Xp/)

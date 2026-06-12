@@ -17,7 +17,7 @@ MIT 6.003 是信号与系统领域最权威的教学资源之一，与 Alan V. O
 
 国内高校普遍使用**郑君里版《信号与系统》**（高等教育出版社）作为教材，B 站有配套讲授（北邮版本，25 集）：<https://www.bilibili.com/video/BV1w5411h7hR/>
 
-## 学习地图
+## 课程资源
 
 - 课程网站（OCW，含讲义/习题/考试）：<https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/>
 - 课程视频（B 站·英文原版）：<https://www.bilibili.com/video/BV1CZ4y1j7hs/>

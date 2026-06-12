@@ -12,7 +12,7 @@ Behzad Razavi 是模拟与射频集成电路设计领域最具影响力的学者
 
 课程内容完整覆盖射频 IC 设计的全链路：收发机系统架构（超外差、零中频）→ 噪声与非线性分析（噪声系数 NF、IIP3、IIP2）→ 低噪声放大器（LNA）设计 → 混频器（无源/有源）→ 振荡器与 VCO（相位噪声建模）→ 功率放大器（PA，A/B/C 类）→ 锁相环（PLL）与频率合成器。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube 播放列表）：<https://www.youtube.com/playlist?list=PLv6HHIgiTCb67V-Leh2Wk0v2fCgRCEj-r>
 - Razavi YouTube 频道：<https://www.youtube.com/@b_razavi>

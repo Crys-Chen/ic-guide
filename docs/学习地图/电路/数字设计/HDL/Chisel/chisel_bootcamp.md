@@ -19,7 +19,7 @@ Chisel Bootcamp 是官方推荐的入门材料，以 **Jupyter Notebook** 形式
 
 所有 Notebook 均可通过 **Google Colab** 在浏览器中直接运行，无需在本地安装 Scala 或 EDA 工具即可验证代码，极大降低了上手门槛。
 
-## 学习地图
+## 课程资源
 
 - 课程仓库：<https://github.com/freechipsproject/chisel-bootcamp>
 - 在线运行（Google Colab）：点击仓库 README 中的 launch 徽章即可直接运行

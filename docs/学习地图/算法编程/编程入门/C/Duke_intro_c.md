@@ -19,7 +19,7 @@
 - 虽然可能需要付费，但我觉得值。
 - 虽说课名是入门，但兼具广度和深度。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://www.coursera.org/specializations/c-programming>
 - 课程视频：同上

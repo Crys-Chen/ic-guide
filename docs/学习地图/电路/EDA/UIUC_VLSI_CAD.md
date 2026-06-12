@@ -14,7 +14,7 @@ UIUC VLSI CAD 系列由 Rob A. Rutenbar 教授主讲，是 Coursera 上少数完
 
 国内在 ASIC 设计方向的培训资源日益丰富，中国大学 MOOC 有"超大规模集成电路设计"相关课程，B 站也有来自清华、浙大、中科大等高校的数字 IC 设计流程录像。复旦本校的相关课程（如 INFO130094）可与本课程内容互相印证、加深理解。
 
-## 学习地图
+## 课程资源
 
 - 课程主页（Part I · Logic）：<https://www.coursera.org/learn/vlsi-cad-logic>
 - 课程说明（Part I）：Rob A. Rutenbar 主讲，共 6 模块，审计模式免费；4.6/5 评分（557 条评价）

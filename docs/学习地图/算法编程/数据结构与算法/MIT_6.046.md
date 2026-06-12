@@ -16,7 +16,7 @@
 
 在该门课程后还有一门 6.854 高级算法，但对于绝大多数考试以及应聘来说，学完该课程基本上已经能覆盖99%的题目了。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[Spring 2015](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/)
 - 课程视频：[Spring 2015](https://www.bilibili.com/video/BV1A7411E737)

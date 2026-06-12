@@ -19,7 +19,7 @@
 
 总而言之，这是个人上过的最好的计算机体系结构的课程。
 
-## 学习地图
+## 课程资源
 
 - [课程网站](https://cs61c.org/)
 - 课程网站 (页面备份): [Fa24-WayBack Machine](https://web.archive.org/web/20241219154359/https://cs61c.org/fa24/), [Fa20-WayBack Machine](https://web.archive.org/web/20220120134001/https://inst.eecs.berkeley.edu/~cs61c/fa20/), [Fa20-备份](https://www.learncs.site/docs/curriculum-resource/cs61c/syllabus)

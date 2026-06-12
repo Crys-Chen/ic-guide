@@ -13,7 +13,7 @@
 
 与 Stanford Boneh 课形成"中文系统讲解 vs 英文权威讲解"的互补。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：暂无（原爱课程平台页面已下线）
 - 课程视频：[B 站完整版（97 讲）](https://www.bilibili.com/video/BV16E411j7WA/)

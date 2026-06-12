@@ -12,7 +12,7 @@
 
 UC Berkeley 电子系学生的大一入门课，通过电路基础知识的讲授，配合各类动手实操的 lab，让学生体验通过电路从环境中收集信息并进行分析，作出预测和反馈。由于疫情的缘故，所有 lab 都有远程在线版，非常适合大家在家自学。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[EE16A](https://inst.eecs.berkeley.edu/~ee16a/su20/), [EE16B](https://eecs16b.org/)
 - 课程视频（YouTube 官方，EECS 16A Fall 2022 全套讲座）：<https://www.youtube.com/playlist?list=PLsNggES3qC0wGSzVXhket0O_0K7JF0TQp>

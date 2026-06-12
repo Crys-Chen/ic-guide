@@ -14,7 +14,7 @@
 
 这门课会带你深入理解现代并行计算架构的设计原则与必要权衡，并学会如何充分利用硬件资源以及软件编程框架（例如 CUDA，MPI，OpenMP 等）编写高性能的并行程序。由于并行计算架构的复杂性，这门课会涉及诸多高级体系结构与网络通信的内容，知识点相当底层且硬核。与此同时，5 个编程作业则是从软件的层面培养学生对上层抽象的理解与运用，具体会让你分析并行程序的瓶颈、编写多线程同步代码、学习 CUDA 编程、OpenMP 编程以及前段时间大热的 Spark 框架等等。真正意义上将理论与实践完美地结合在了一起。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[CMU15418](https://www.cs.cmu.edu/afs/cs/academic/class/15418-s18/www/index.html), [CS149](https://gfxcourses.stanford.edu/cs149/fall21)
 - 课程视频：[CMU15418](https://www.cs.cmu.edu/afs/cs/academic/class/15418-s18/www/schedule.html), [CS149](https://youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp&si=txtQiRDZ9ZZUzyRn)

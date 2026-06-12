@@ -12,7 +12,7 @@
 
 Stanford 的图神经网络入门课，这门课我没有上过，但众多做 GNN 的朋友都向我力荐过这门课，想必 Stanford 的课质量还是一如既往地有保证的。另外就是这门课的授课老师非常年轻帅气:)
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://web.stanford.edu/class/cs224w/>
 - 课程视频：<https://www.youtube.com/watch?v=JAB_plj2rbA>

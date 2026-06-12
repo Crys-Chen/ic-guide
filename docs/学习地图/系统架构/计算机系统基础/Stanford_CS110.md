@@ -18,7 +18,7 @@
 
 除了实验外，课程还包括旨在提供大量编程实践经验并加深对课程材料理解的项目作业。每项作业配有完整的测试框架。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[winter20](https://web.stanford.edu/class/archive/cs/cs110/cs110.1204/)
 - 课程视频：[spring19](https://www.youtube.com/playlist?list=PLai-xIlqf4JmTNR9aPCwIAOySs1GOm8sQ)

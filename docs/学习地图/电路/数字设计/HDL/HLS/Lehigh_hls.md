@@ -12,6 +12,6 @@
 
 讲师背景来自 UCLA Jason Cong 组（HLS 领域顶级研究团队），工程质量有保障。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube）：[HLS Programming with FPGAs Playlist](https://www.youtube.com/playlist?list=PLf4U4tpbjjz7x_bsG3sBEuXgVQPZfWJgW)

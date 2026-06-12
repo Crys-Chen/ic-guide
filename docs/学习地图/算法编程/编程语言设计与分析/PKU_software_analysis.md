@@ -20,7 +20,7 @@
 
 而本实验的的课程项目是实现一个Java上的指针分析系统和一个程序合成工具，也是十分有趣的实践。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[主页](https://xiongyingfei.github.io/SA/2020/main.htm) 这是 2020 年的课程主页，在[熊老师的主页](https://xiongyingfei.github.io/)上可以找到更多年份的课程内容。
 - 课程视频：[2020 燕云直播](https://liveclass.org.cn/cloudCourse/#/courseDetail/8mI06L2eRqk8GcsW)

@@ -13,7 +13,7 @@
 
 与"智能计算系统"主题互补——AICS 讲完整软硬栈，MLC 聚焦编译器抽象。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[MLC.ai 中文版（2022 夏）](https://mlc.ai/summer22-zh/)
 - 课程视频：[第 1 讲 · 机器学习编译概述 - bilibili](https://www.bilibili.com/video/BV15v4y1g7EU/)，后续各讲见[陈天奇机器学习 B 站官方账号](https://space.bilibili.com/1663273796)

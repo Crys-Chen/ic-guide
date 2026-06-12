@@ -12,7 +12,7 @@
 
 与北大李彤阳课的关系：Watrous 课理论 + Qiskit 实操并重，李彤阳课侧重算法推导和复杂性；两门选一入门即可，有余力可互补。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube）：[Understanding Quantum Information and Computation — 15P](https://www.youtube.com/playlist?list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO)
 - 配套教材（IBM Quantum Learning）：[learning.quantum.ibm.com](https://learning.quantum.ibm.com/)

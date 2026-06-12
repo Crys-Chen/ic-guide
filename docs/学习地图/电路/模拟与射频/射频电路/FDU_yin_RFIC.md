@@ -13,7 +13,7 @@
 
 适合 EE/微电子研究生或本科高年级，已学过模拟集成电路的同学。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站合集（噪声章节）](https://www.bilibili.com/video/BV1ze4y1A7kD/)
 - 配套教材：Behzad Razavi, *RF Microelectronics* (2nd ed.)

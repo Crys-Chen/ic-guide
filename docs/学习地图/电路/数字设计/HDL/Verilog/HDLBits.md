@@ -14,7 +14,7 @@ HDLBits 是学习 Verilog 最常被推荐的在线刷题平台，常被称为"Ve
 
 完成 HDLBits 全部题目后，基本掌握 RTL 编码所需的全部 Verilog 语法，可以直接进入 FPGA 工具流（Vivado）或 ASIC 设计实践。
 
-## 学习地图
+## 课程资源
 
 - 平台网站：<https://hdlbits.01xz.net/wiki/Main_Page>
 - 课程视频：无（纯练习平台，每道题附有详细题面说明和真值表/波形示意图）

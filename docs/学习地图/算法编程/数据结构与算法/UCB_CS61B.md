@@ -20,7 +20,7 @@
 这门课的作业质量也是绝绝子。14 个 lab 会让你自己实现课上所讲的绝大部分数据结构，10 个 Homework 会让你运用数据结构和算法解决实际问题，
 另外还有 3 个 Project 更是让你有机会接触上千行的工程代码，在实战中磨练自己的 Java 能力。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[spring2024](https://sp24.datastructur.es/), [fall2023](https://fa23.datastructur.es/), [spring2023](https://sp23.datastructur.es/), [spring2018](https://sp18.datastructur.es/)
 - 课程视频：原版视频参见课程网站，B 站双语字幕搬运：[CS 61B Spring 2021 整合版（40 讲）](https://www.bilibili.com/video/BV1q3411V7rS/)

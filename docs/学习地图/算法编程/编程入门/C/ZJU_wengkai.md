@@ -11,7 +11,7 @@
 
 翁恺老师中国大学 MOOC 上选课人数最多的 C 语言课程之一，从零基础到指针/文件全覆盖。例子生动、思路清晰，是国内 C 入门的事实标杆。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[中国大学 MOOC zju-199001](https://www.icourse163.org/course/zju-199001)
 - 课程视频：[B 站完整版](https://www.bilibili.com/video/BV1YW411x7eN/)

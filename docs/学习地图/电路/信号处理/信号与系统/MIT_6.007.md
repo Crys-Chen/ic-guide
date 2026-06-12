@@ -14,7 +14,7 @@
 
 好的，上这门课的理由已经足够了。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/>
 - 课程视频：<https://www.bilibili.com/video/BV1CZ4y1j7hs>

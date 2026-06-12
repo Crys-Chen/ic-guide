@@ -14,7 +14,7 @@
 很多体系结构领域最新的研究进展。课程共有 9 个 lab，使用 Basys 3 FPGA 开发板（可自行购买）和 Xilinx 公司的  [Vivado 软件](https://china.xilinx.com/products/design-tools/vivado.html)（可在官网免费下载使用）进行电路设计，从组合电路
 和时序电路开始，一直到最后部署一个完整的 CPU。课程资料除了 lab 答案和当期考试答案之外全部开源，学完之后你可以掌握计算机相关的数字电路，Verilog 硬件描述语言，MIPS 与 C 之间的转换关系，MIPS 单周期多周期流水线 CPU 的设计和性能分析，缓存，虚拟内存等重要概念。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[2020](https://safari.ethz.ch/digitaltechnik/spring2020/),[2023](https://safari.ethz.ch/digitaltechnik/spring2023/)
 - 课程视频：[youtube](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_FRrloMa2fUYWPGiZUBQo2), [B站2020年版本搬运](https://www.bilibili.com/video/BV1MA411s7qq/?vd_source=77d47fcb2bac41ab4ad02f265b3273cf)

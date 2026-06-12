@@ -12,7 +12,7 @@ Paolo Prandoni 主讲的 Coursera DSP 是目前英语数字信号处理入门质
 
 审计模式免费，与 Oppenheim 教材配套使用效果极佳。
 
-## 学习地图
+## 课程资源
 
 - 课程主页（Coursera）：<https://www.coursera.org/learn/dsp1>（原合并课已拆分为 DSP1–4，此为第一门）
 - 课程视频：参见 Coursera 平台（审计模式免费）

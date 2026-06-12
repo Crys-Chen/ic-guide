@@ -16,7 +16,7 @@
 
 这门课的设计者还编写了配套的开源教材（参见下方链接），里面有丰富的 Julia 实例。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://github.com/mitmath/18330>
 - 课程视频：[2020 春季官方课堂屏幕录像（Dropbox 公开文件夹，可在线观看或打包下载）](https://www.dropbox.com/sh/ubkqwrqxnukgllc/AAA2cH9r7YQL7WmYVt-bblxta?dl=0)

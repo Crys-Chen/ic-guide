@@ -16,7 +16,7 @@ Stanford 的 NLP 入门课程，由自然语言处理领域的巨佬 Chris Manni
 
 最终的大作业是在 Stanford 著名的 SQuAD 数据集上训练 QA 模型，有学生的大作业甚至直接发表了顶会论文。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://web.stanford.edu/class/cs224n/index.html>
 - 课程视频：[Stanford Online 官方 YouTube 播放列表（Winter 2021）](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ)；B 站中英字幕搬运：[斯坦福 CS224N（2021）](https://www.bilibili.com/video/BV18Y411p79k/)

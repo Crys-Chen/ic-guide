@@ -42,7 +42,7 @@ UMich 的 Computer Vision 课，课程视频和作业质量极高，涵盖的主
 
 最后，我推荐每一个 Enroll 这门课的同学都去看一看 Youtube 上面的 Lectures，Justin Johnson 的讲课方式和内容都非常清晰和易懂，是非常棒的参考。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<https://web.eecs.umich.edu/~justincj/teaching/eecs498/WI2022/>
 - 课程视频：<https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r>

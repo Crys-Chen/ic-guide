@@ -13,7 +13,7 @@
 
 对微电子学生来说，这门课是复旦《集成电路工艺原理》（MICR130007）最对口的中文视频补充。课内讲义跟不上或想反复听某个工艺模块时，可以按分 P 标题精确定位到对应工序。学完后再去读 IEDM 或 VLSI Symposium 的先进工艺论文，对 FinFET/GAA 流程的理解会顺很多。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站，106 讲）：<https://www.bilibili.com/video/BV1Zu4y1S7NA/>
 - 配套阅读：Plummer, Deal & Griffin《Silicon VLSI Technology》；施敏《半导体器件物理与工艺》

@@ -14,7 +14,7 @@
 
 在实际运用当中，你会深刻体会到对于同一个问题，建模过程中一个细小的改变，其方程的求解难度会有天壤之别，如何让你建模的方程是“凸”的，是一门艺术。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：<http://stanford.edu/class/ee364a/index.html>
 - 课程视频：<https://www.bilibili.com/video/BV1aD4y1Q7aW>

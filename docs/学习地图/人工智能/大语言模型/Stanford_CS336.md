@@ -12,7 +12,7 @@ Stanford CS336 要求学生从零实现大语言模型的所有核心组件：BP
 
 这是目前最硬核的 LLM 课程，适合以系统能力为导向、希望真正掌握 LLM 内部实现全栈的同学。完成后可独立从头复现 GPT-2/LLaMA 级别模型的训练全流程。
 
-## 学习地图
+## 课程资源
 
 - 课程主页：<https://stanford-cs336.github.io/spring2025/index.html>
 - 课程视频：[Stanford CS336 Language Modeling from Scratch (Spring 2025) - YouTube](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)

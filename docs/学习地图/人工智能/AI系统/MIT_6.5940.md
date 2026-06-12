@@ -16,7 +16,7 @@
 
 课程内容和资源都可以在课程网站上找到，视频在油管上有官方版本，B站也有生肉和熟肉搬运，可以自行查找。课程作业一共有5个，前三个分别考察了量化、剪枝和 NAS，后两个主要是对大语言模型的压缩和高效部署，总体难度相对简单，但能很好地巩固核心知识。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[2024fall](https://hanlab.mit.edu/courses/2024-fall-65940), [2023fall](https://hanlab.mit.edu/courses/2023-fall-65940)
 - 课程视频：[2024fall](https://www.youtube.com/playlist?list=PL80kAHvQbh-qGtNc54A6KW4i4bkTPjiRF), [2023fall](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB)

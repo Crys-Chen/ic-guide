@@ -13,7 +13,7 @@
 
 对微电子学生来说，这门课是随机信号处理与通信原理的直接前置。噪声建模、信道误码率、排队与到达过程，全部建立在这门课的语言之上。贝叶斯推断那几讲也是机器学习的标准入口。如果你偏好工程系而非统计系的讲法，6.041 和 Stat 110 二选一即可。
 
-## 学习地图
+## 课程资源
 
 - 课程网站（OCW 6.041SC，含讲座与习题课视频、作业与解答）：<https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/>
 - 课程视频（YouTube，MIT OpenCourseWare 官方频道，25 讲）：<https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8>

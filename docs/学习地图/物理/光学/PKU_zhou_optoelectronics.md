@@ -20,7 +20,7 @@
 - 光波导基础(slab/strip/rib)
 - 集成光路与硅基集成
 
-## 学习地图
+## 课程资源
 
 - 课程视频:
   - B 站:[北京大学 光电子学 周治平 全 32 讲](https://www.bilibili.com/video/BV1c741147hp/)

@@ -11,7 +11,7 @@
 
 国内 Rust 中文社区高人气讲师，覆盖基础语法到网络编程、WebAssembly 与区块链项目实战。是杨旭课之外最常被推荐的系统性中文 Rust 教程。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站 基础](https://www.bilibili.com/video/BV1xJ411B79h/)
 - 代码仓库：[anonymousGiga/learn_rust](https://github.com/anonymousGiga/learn_rust)

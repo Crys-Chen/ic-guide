@@ -10,7 +10,7 @@
 
 对于工科生来说复变函数和积分变换的应用没那么广，也就做信号处理时会用到，因此不需要学得那么高深，看华科大李红老师的那本教材自学都可以，不懂的上网搜一下对应讲解就行。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[Bilibili](https://www.bilibili.com/video/BV1hV411v7KB/?spm_id_from=333.337.search-card.all.click&vd_source=9d2bce86b7ac9d09d427b27dd6f02b28)
 - 课程视频：参见课程网站

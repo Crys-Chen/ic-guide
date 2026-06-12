@@ -12,7 +12,7 @@
 
 一门非常基础的 AI 入门课，让人眼前一亮的是 12 个设计精巧的编程作业，都会用学到的 AI 知识去实现一个简易的游戏 AI，比如用强化学习训练一个 Nim 游戏的 AI，用 alpha-beta 剪枝去扫雷等等，非常适合新手入门或者大佬休闲。
 
-## 学习地图
+## 课程资源
 
 - 课程网站：[2024](https://cs50.harvard.edu/ai/2024/)、[2020](https://cs50.harvard.edu/ai/2020/)
 - 课程视频：[2024](https://cs50.harvard.edu/ai/2024/)、[2020](https://cs50.harvard.edu/ai/2020/)

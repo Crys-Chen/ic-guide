@@ -12,7 +12,7 @@
 
 配套开源教材《数学基础强化学习》（[GitHub](https://github.com/MathFoundationRL/Book-Mathmatical-Foundation-of-Reinforcement-Learning)）推导完整，与视频一一对应，是罕见能做到"看完就能读理论论文"的中文课程。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（B 站官方）：[强化学习的数学原理 — 54P](https://www.bilibili.com/video/BV1sd4y167NS)
 - 配套教材（开源）：[MathFoundationRL GitHub](https://github.com/MathFoundationRL/Book-Mathmatical-Foundation-of-Reinforcement-Learning)

@@ -9,7 +9,7 @@
 
 Cadence Virtuoso 是模拟/混合信号 IC 设计领域的工业标准 EDA 平台，其原理图编辑器（Schematic Editor）、Spectre 仿真器和 Layout 版图编辑器构成了模拟 IC 工程师的核心日常工具链，在行业内几乎无可替代。典型工作流程为：编写原理图（Schematic）→ 仿真验证（DC/AC/Transient/Noise 等）→ 版图绘制（Layout）→ 物理验证（DRC 设计规则检查 / LVS 版图网表一致性检查）→ 后仿真（Post-layout Simulation）。
 
-## 学习资源
+## 课程资源
 
 ### Bilibili 中文教程（推荐从这里开始）
 

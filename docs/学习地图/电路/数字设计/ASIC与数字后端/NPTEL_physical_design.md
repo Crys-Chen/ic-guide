@@ -12,7 +12,7 @@
 
 配合 B 站双语字幕版，中文理解障碍几乎为零。
 
-## 学习地图
+## 课程资源
 
 - 课程视频（YouTube 官方）：[NPTEL VLSI Physical Design Playlist](https://www.youtube.com/playlist?list=PLzBynYJnzI5kA05fRGrVlen5WSu12amj3)
 - 课程视频（B 站，中英双字）：[VLSI 物理设计 — 64P](https://www.bilibili.com/video/BV15b4y197Jo)

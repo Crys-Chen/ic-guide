@@ -13,7 +13,7 @@
 
 模块化设计:从"光学材料导论"到"集成光子器件概览",再到"光链路设计与系统驱动"。课程后半部分介绍如何用 PDK(Process Design Kit)在代工厂(如 AIM Photonics)上设计一个 Mach-Zehnder 调制器(MZM)——**这就是硅光研究的"hello world"**。
 
-## 学习地图
+## 课程资源
 
 - 主页:<https://www.classcentral.com/course/fundamentals-of-integrated-photonics-48121>
 - edX 入口:在 edX 搜索 "MITx Photonics" 系列

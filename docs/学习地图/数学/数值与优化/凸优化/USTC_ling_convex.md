@@ -13,7 +13,7 @@ B 站中文凸优化课程的事实标杆。凌青老师讲授，内容编排与
 
 视频已 4K 修复，CSDN 有 55 篇完整学习笔记可对照。
 
-## 学习地图
+## 课程资源
 
 - 课程视频：[B 站 4K 修复全集](https://www.bilibili.com/video/BV19M411T7S7/)
 - 课程教材：Boyd & Vandenberghe, *Convex Optimization*（[免费 PDF](https://web.stanford.edu/~boyd/cvxbook/)）

@@ -13,7 +13,7 @@ GPU 架构论文(ISCA、MICRO、HPCA、ASPLOS 上的 GPU section)很大一部分
 - **做 GPU 内存系统的同学**:HBM 控制器、L2 cache 替换策略、prefetching 都是常见研究点
 - **做 GPU 编程/CUDA 优化的同学**:用 visualizer 看 occupancy、stall 原因,反过来指导 kernel 调优
 
-## 学习资源
+## 课程资源
 
 ### 官方入口
 
