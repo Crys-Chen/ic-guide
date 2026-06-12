@@ -611,23 +611,23 @@ nav:
         - 学习地图/算法编程/编程入门/index.md
         - "Missing Semester": "学习地图/算法编程/编程入门/MIT_missing_semester.md"
         - "UCB DeCal": "学习地图/算法编程/编程入门/UCB_DeCal.md"
-        - Python 语言:
+        - Python:
           - "北理工 嵩天": "学习地图/算法编程/编程入门/Python/BIT_songtian.md"
           - "北大 陈斌": "学习地图/算法编程/编程入门/Python/PKU_chenbin_python.md"
           - "UCB CS61A": "学习地图/算法编程/编程入门/Python/UCB_CS61A.md"
           - "Harvard CS50P": "学习地图/算法编程/编程入门/Python/Harvard_CS50P.md"
           - "MIT 6.100L": "学习地图/算法编程/编程入门/Python/MIT_6.100L.md"
-        - C 语言:
+        - C:
           - "浙大 翁恺": "学习地图/算法编程/编程入门/C/ZJU_wengkai.md"
           - "北大 郭炜": "学习地图/算法编程/编程入门/C/PKU_guowei_C.md"
           - "Harvard CS50": "学习地图/算法编程/编程入门/C/Harvard_CS50.md"
           - "Duke": "学习地图/算法编程/编程入门/C/Duke_intro_c.md"
-        - C++ 语言:
+        - "C++":
           - "北大 郭炜": "学习地图/算法编程/编程入门/cpp/PKU_guowei_cpp.md"
           - "侯捷": "学习地图/算法编程/编程入门/cpp/houjie_cpp.md"
           - "Stanford CS106L": "学习地图/算法编程/编程入门/cpp/Stanford_CS106L.md"
           - "Stanford CS106B/X": "学习地图/算法编程/编程入门/cpp/Stanford_CS106BX.md"
-        - Rust 语言:
+        - Rust:
           - "杨旭": "学习地图/算法编程/编程入门/Rust/yangxu_rust.md"
           - "令狐壹冲": "学习地图/算法编程/编程入门/Rust/linghu_rust.md"
           - "Stanford CS110L": "学习地图/算法编程/编程入门/Rust/Stanford_CS110L.md"
