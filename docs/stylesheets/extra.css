@@ -1830,8 +1830,10 @@
    list — same destinations, no overflow. orbit-galaxy.js
    short-circuits in setupGalaxy() at the same breakpoint so the
    rAF loop and stage sizing never run. */
-@media (max-width: 767px) {
-  /* 移动端：隐藏星图 hero 与文字 fallback，巡礼全景图直接成为方向入口 */
+/* 移动端：隐藏星图 hero 与文字 fallback，巡礼全景图直接成为方向入口。
+   竖屏按宽度命中；横屏手机宽度会超 767px，改用「矮屏」特征捕捉，
+   不误伤平板/桌面（它们横屏高度远大于 500px）。 */
+@media (max-width: 767px), (orientation: landscape) and (max-height: 500px) {
   .rg-root.rg-fullscreen { display: none !important; }
 }
 
