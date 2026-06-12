@@ -4,7 +4,7 @@
 
 LTspice 是 Analog Devices（原 Linear Technology）发布的**免费 SPICE 仿真器**，业界最广泛使用的模拟电路仿真工具之一。支持 Windows 和 macOS，无需授权，启动即用。
 
-对 ECE/EE 学生来说，LTspice 几乎是"必装软件"——不管做模拟电路、电源管理还是射频前端，都少不了它。
+对 IC/EE 学生来说，LTspice 几乎是"必装软件"——不管做模拟电路、电源管理还是射频前端，都少不了它。
 
 ## 能做什么
 

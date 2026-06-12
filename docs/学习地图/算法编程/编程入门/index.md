@@ -2,7 +2,7 @@
 
 编程入门面向**没有编程基础或想换语言的同学**:Python(数据处理 / ML 框架 / 脚本)、C/C++(硬件仿真器 / EDA 工具 / 系统编程)、Rust(现代系统编程)。
 
-对 ECE 学生来说,**Python 和 C++ 是最高优先级**:Python 几乎是所有 ML/数据处理工作的默认语言;C++ 是大型 EDA 工具(Yosys、OpenROAD)、体系结构仿真器(Gem5、GPGPU-Sim)的实现语言。
+对 IC 学生来说,**Python 和 C++ 是最高优先级**:Python 几乎是所有 ML/数据处理工作的默认语言;C++ 是大型 EDA 工具(Yosys、OpenROAD)、体系结构仿真器(Gem5、GPGPU-Sim)的实现语言。
 
 ## 子目录
 
