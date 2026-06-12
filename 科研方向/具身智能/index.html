@@ -13884,31 +13884,30 @@
 <li><strong>端侧实时推理</strong>：要在十几瓦的功耗预算里、几十毫秒内跑通几十亿参数的 VLA 模型，对芯片架构和能效是直接的考验。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>具身智能是个真正的交叉出口：IC 背景的人通常从<strong>感知硬件</strong>和<strong>边缘计算</strong>切入，与从算法侧切入的人在"系统"这一层汇合，共同支撑起感知→决策→执行的闭环。下图是这条知识依赖链：</p>
+<p>IC 背景的人从硬件线（传感、控制器、端侧芯片）切入，算法背景的人走算法线，两条线在系统层汇合。节点都是<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    M["数学基础\n控制·优化·概率"] --&gt; SIG["传感前端\n触觉/视觉信号处理"]
-    M --&gt; RL["强化学习·策略优化\nPPO/SAC·模仿学习"]
-    SIG --&gt; SOC["嵌入式SoC\n微秒级力矩控制"]
-    SOC --&gt; EDGE["边缘AI推理\n十几瓦功耗预算"]
-    DL["深度学习\n视觉·语言表示"] --&gt; RL
-    RL --&gt; VLA["视觉-语言-动作模型\nRT-2/π0·Sim-to-Real"]
-    DL --&gt; EDGE
-    EDGE --&gt; SYS["具身智能系统\n感知→决策→执行闭环"]
-    VLA --&gt; SYS
+    PROB[概率与统计] --&gt; ML[机器学习]
+    ML --&gt; DL[深度学习]
+    DL --&gt; RL[强化学习]
+    DL --&gt; LLM[大语言模型]
+    RL --&gt; ROB[机器人学]
+    LLM --&gt; ROB
+    SIG[信号处理] --&gt; SOC[嵌入式SoC]
+    SOC --&gt; ACC[AI加速器]
+    ROB --&gt; E[具身智能]
+    ACC --&gt; E
 
     classDef hw fill:#FFFBEB,stroke:#B7791F
     classDef sw fill:#EBF4FF,stroke:#2C5282
     classDef base fill:#F1F5F9,stroke:#64748B
-    class SIG,SOC,EDGE hw
-    class DL,RL,VLA sw
-    class M,SYS base</code></pre>
-<p>图中节点对应以下知识板块（按需选修）：</p>
+    class SIG,SOC,ACC hw
+    class ML,DL,RL,LLM,ROB sw
+    class PROB,E base</code></pre>
 <ul>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/">数学 → 数学基础</a>：控制、优化与概率，是力控、运动规划和强化学习共同的地基</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">电路 → 信号处理</a>：触觉/视觉传感前端的采样与信号链</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E5%B5%8C%E5%85%A5%E5%BC%8FSoC/">电路 → 嵌入式SoC</a>：电机驱动与力矩控制的微秒级实时控制器</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">人工智能 → 深度学习</a>：视觉/语言表示、强化学习与模仿学习（VLA 的算法底座）</li>
-<li><a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI%E7%B3%BB%E7%BB%9F/">人工智能 → AI系统</a>：把视觉-语言-动作模型压进十几瓦功耗预算的端侧推理与部署</li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a></li>
+<li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/">大语言模型</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/">机器人学</a>（待建）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E5%B5%8C%E5%85%A5%E5%BC%8FSoC/">嵌入式SoC</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/AI%E5%8A%A0%E9%80%9F%E5%99%A8/">AI加速器</a></li>
 </ul>
 <blockquote>
 <p>想做硬件视角(边缘 AI 芯片、机器人 SoC、传感器 IC、TinyML/SNN)与完整全栈学习(VLA / SLAM / 控制 / 仿真),请见 <a href="../../%E4%B8%93%E9%A2%98%E7%A4%BE%E5%8C%BA/">专题社区</a> 中收录的 Embodied-AI-Guide。</p>

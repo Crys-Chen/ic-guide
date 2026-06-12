@@ -2462,29 +2462,28 @@ html { scroll-behavior: smooth; }
    ════════════════════════════════════════════════════════════ */
 body.pf-noscroll { overflow: hidden !important; }
 
-/* 全屏 backdrop + 右对齐下拉框 */
+/* 全屏 backdrop；#pf-box 由 JS 绝对定位到 header 标题与搜索按钮之间 */
 #pf-overlay {
   display: none;
   position: fixed;
   inset: 0;
   z-index: 300;
-  align-items: flex-start;
-  justify-content: flex-end; /* 贴右侧，和 header 搜索按钮对齐 */
 }
-#pf-overlay.pf-open { display: flex; }
+#pf-overlay.pf-open { display: block; }
 
 #pf-bg {
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: rgba(0, 0, 0, .54);
 }
 
-/* 搜索面板：紧凑下拉框，从 header 右侧自然垂下 */
+/* 搜索面板：绝对定位，left/right 由 JS 计算 */
 #pf-box {
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 1;
   background: #fff;
-  width: min(640px, 100%);
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .28);

@@ -82,9 +82,27 @@
     document.head.appendChild(script);
   }
 
+  /* ── 定位 #pf-box 到 header 标题右边缘 → 搜索按钮右边缘之间 ── */
+  function positionBox() {
+    var box  = document.getElementById('pf-box');
+    var title = document.querySelector('.md-header__title');
+    var btn  = document.getElementById('pf-search-btn');
+    if (!box) return;
+    if (title && btn) {
+      var tRect = title.getBoundingClientRect();
+      var bRect = btn.getBoundingClientRect();
+      box.style.left  = tRect.left + 'px';
+      box.style.right = (window.innerWidth - bRect.right) + 'px';
+    } else {
+      box.style.left  = '12rem';
+      box.style.right = '12rem';
+    }
+  }
+
   /* ── 打开 ── */
   function openOverlay() {
     if (!overlay) buildOverlay();
+    positionBox();
     overlay.classList.add('pf-open');
     document.body.classList.add('pf-noscroll');
     setTimeout(function () {
@@ -122,6 +140,11 @@
       });
     }
   }
+
+  /* ── 窗口 resize 时重新定位（overlay 打开状态下） ── */
+  window.addEventListener('resize', function () {
+    if (overlay && overlay.classList.contains('pf-open')) positionBox();
+  });
 
   /* ── 启动 ──────────────────────────────────────────────────────
      extra_javascript 脚本在 <body> 底部无 defer 执行，DOM 此时
