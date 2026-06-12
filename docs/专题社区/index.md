@@ -66,7 +66,7 @@ hide:
 
     > 对应方向: [AI算法与系统](../科研方向/AI算法与系统.md)、[具身智能](../科研方向/具身智能.md)
 
--   :material-trophy: __[全国大学生集成电路创新创业大赛(集创赛)](http://univ.ciciec.com/){target="_blank"}__
+-   :material-trophy: __[全国大学生集成电路创新创业大赛](http://univ.ciciec.com/){target="_blank"}__
 
     工信部主办的**国家 A 类**集成电路赛事。8 大赛道覆盖芯片设计、芯片应用、芯创成果全产业链,**250+ 高校 3000+ 队伍**参赛。
 
