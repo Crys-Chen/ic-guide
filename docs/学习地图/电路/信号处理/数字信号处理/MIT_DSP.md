@@ -10,7 +10,7 @@
 
 MIT 数字信号处理课程由 Alan V. Oppenheim 主讲，其配套教材《Discrete-Time Signal Processing》（Oppenheim & Schafer，第 3 版，Prentice Hall）是全球 DSP 领域的事实标准教材，被国内外几乎所有一流高校采用。RES.6-008 是 Oppenheim 本人 1975 年录制、后经 OCW 整理公开的完整 DSP 视频系列，画质虽属时代产物，但讲授深度与清晰度至今无可替代；6.341 是研究生层次的进阶版本（无视频），OCW 上开放了完整讲义、习题集与历年考试。
 
-课程核心内容覆盖：离散时间信号与 LTI 系统的基础分析 → Z 变换（收敛域、极零点）→ 离散傅里叶变换（DFT）与快速算法（FFT、Radix-2 Cooley-Tukey）→ 频率选择性数字滤波器设计（FIR 窗函数法、最优等波纹 Parks-McClellan 法；IIR Butterworth、Chebyshev、椭圆逼近）→ 多采样率信号处理（抽取与内插、多相滤波器组）→ 谱分析与功率谱估计。内容严密、题目经典，是所有志在微电子信号链方向（ADC/DAC、无线接收机、DSP 芯片架构）同学不可跳过的核心课程。
+课程核心内容覆盖：离散时间信号与 LTI 系统的基础分析 → Z 变换（收敛域、极零点）→ 离散傅里叶变换（DFT）与快速算法（FFT、Radix-2 Cooley-Tukey）→ 频率选择性数字滤波器设计（FIR 窗函数法、最优等波纹 Parks-McClellan 法；IIR Butterworth、Chebyshev、椭圆逼近）→ 多采样率信号处理（抽取与内插、多相滤波器组）→ 谱分析与功率谱估计。内容严密、题目经典，是所有志在微电子信号链方向（ADC/DAC、无线接收机、DSP 芯片架构）同学的核心基础课程。
 
 国内各顶校同样开设数字信号处理课程，中国大学 MOOC 上有东南大学、西安电子科技大学等版本（直链见本目录《补充资源》），可与 MIT 版本对照学习。EPFL 的 Coursera DSP 课程（Paolo Prandoni 主讲）英语现代化表述更清晰，适合与 Oppenheim 教材搭配作为入门阶梯。
 

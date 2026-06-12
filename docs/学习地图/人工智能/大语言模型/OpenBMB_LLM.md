@@ -11,7 +11,7 @@
 
 国内最系统的中文 LLM 公开课，**9 大章节**涵盖基础知识、关键技术、交叉应用。从 PyTorch / HuggingFace 到 **Prompt / Delta Tuning / RAG / MoE / Scaling Law**，由 OpenBMB 团队精剪并提供字幕。
 
-是国内 LLM 方向最权威的中文公开课，与 Stanford CS336 互补——CS336 从零搭语言模型，OpenBMB 偏应用与工程。
+与 Stanford CS336 互补——CS336 从零搭语言模型，OpenBMB 偏应用与工程。
 
 ## 课程资源
 

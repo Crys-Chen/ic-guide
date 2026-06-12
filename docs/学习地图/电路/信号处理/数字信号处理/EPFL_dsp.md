@@ -8,9 +8,9 @@
 - 课程难度：🌟🌟🌟🌟
 - 预计学时：50 小时
 
-Paolo Prandoni 主讲的 Coursera DSP 是目前英语数字信号处理入门质量最高的 MOOC 之一。相较于 Oppenheim 经典教材的严谨推导，本课以现代化表述和 Python 实验为主，更适合作为入门阶梯。课程覆盖离散时间信号基础、Z 变换、DFT 与 FFT、FIR/IIR 滤波器设计，每章附 Jupyter Notebook 交互作业，可直观验证算法效果。
+Paolo Prandoni 主讲的 Coursera DSP 是目前英语数字信号处理入门覆盖最完整的 MOOC 之一。相较于 Oppenheim 经典教材的严谨推导，本课以现代化表述和 Python 实验为主，更适合作为入门阶梯。课程覆盖离散时间信号基础、Z 变换、DFT 与 FFT、FIR/IIR 滤波器设计，每章附 Jupyter Notebook 交互作业，可直观验证算法效果。
 
-审计模式免费，与 Oppenheim 教材配套使用效果极佳。
+审计模式免费。
 
 ## 课程资源
 

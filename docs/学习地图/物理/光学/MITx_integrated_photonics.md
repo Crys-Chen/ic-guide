@@ -33,6 +33,6 @@
 
 ## 备注
 
-- **不要被“PhD course”标签吓到**——这门课的设计目标就是让本科生 / 行业工程师能跟上,数学要求不高
+- 课程设计目标是让本科生 / 行业工程师能跟上,数学要求不高,不必因 “PhD course” 标签却步
 - 课程后续的 **Photonic Integrated Circuits 1** 才是更深入的器件物理,可选
 - 想接触实际设计:配合 UBC 的 [SiEPIC 开源工具](https://github.com/SiEPIC) 走一遍 MZM 设计流程,**0 成本就能实战**

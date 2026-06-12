@@ -23,7 +23,7 @@
 ## 备注
 
 - **中文传热学课程公认天花板**——如果你只看一门中文传热学,选这门没错
-- 工科范式讲法,推导扎实,**做研究方向后回头看仍然受益**
+- 工科范式讲法,推导扎实
 - 学完后建议:
   - 跑 [COMSOL](https://www.comsol.com/) 或 [ANSYS Icepak](https://www.ansys.com/products/electronics/ansys-icepak) 入门教程
   - 配合 [先进封装与异构集成](../../../科研方向/先进封装与异构集成.md) 方向的研究论文(ECTC、3DIC 会议)

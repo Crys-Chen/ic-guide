@@ -9,7 +9,7 @@
 - 课程难度：🌟🌟🌟🌟
 - 预计学时：30+ 期
 
-李沐**逐段精读 Transformer / BERT / GPT-3 / CLIP / Llama 3.1** 等里程碑论文，被誉为“B 站学习区肝帝”。是研究生入门 LLM 前沿论文阅读方法论的中文首选。
+李沐**逐段精读 Transformer / BERT / GPT-3 / CLIP / Llama 3.1** 等里程碑论文。是研究生入门 LLM 前沿论文阅读方法论的中文首选。
 
 不是“系统课”而是“读论文方法论”——学完知道怎么读 NeurIPS / ICML / ICLR 的论文。
 
