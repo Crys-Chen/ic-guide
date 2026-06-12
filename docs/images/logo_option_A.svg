@@ -10,6 +10,10 @@
 
       .bg-dark-blue { fill: #08215C; }
 
+      .bg-light-red { fill: #D42B2B; }
+
+      .bg-dark-red { fill: #8B1A1A; }
+
       .stroke-blue { stroke: #0D3692; }
 
       .bg-teal { fill: #1A9C8E; }
@@ -36,9 +40,9 @@
 
 
 
-  <polygon points="164,36 106,106 36,164 100,100" class="bg-dark-blue"/>
+  <polygon points="164,36 110,110 36,164 100,100" class="bg-dark-red"/>
 
-  <polygon points="164,36 100,100 36,164 94,94" class="bg-light-blue"/>
+  <polygon points="164,36 100,100 36,164 90,90" class="bg-light-red"/>
 
 
 
