@@ -4,7 +4,7 @@ EDA(Electronic Design Automation)指**用于设计、仿真、验证、流片芯
 
 ## 课程与工具
 
-- **复旦 2025 培养方案课程**（占位骨架,欢迎补全）:[数字EDA基础](FDU_ICSE30019.md) · [模拟EDA基础](FDU_ICSE30018.md) · [VLSI物理设计数学方法](FDU_ICSE30026.md) · [EDA系统软件方法学](FDU_ICSE30028.md) · [AI算法在EDA的应用](FDU_ICSE40019.md)
+- **复旦 2025 培养方案课程**（占位骨架,欢迎补全）:[数字EDA基础](FDU_ICSE30019.md) · [模拟EDA基础](FDU_ICSE30018.md) · [VLSI物理设计数学方法](FDU_ICSE30026.md) · [EDA系统软件方法学](FDU_ICSE30028.md)；AI for EDA 课程见[人工智能/AI交叉应用](../../人工智能/AI交叉应用/FDU_ICSE40019.md)
 - **[Vivado 入门](vivado.md)** — AMD/Xilinx FPGA EDA 工具入口
 - **[Cadence Virtuoso 入门](cadence.md)** — 模拟 IC 设计工业标准
 - **[UIUC VLSI CAD (Coursera)](UIUC_VLSI_CAD.md)** — 讲 EDA 工具背后的算法:逻辑综合、布局布线、时序分析
