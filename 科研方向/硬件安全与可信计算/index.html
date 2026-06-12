@@ -13667,13 +13667,15 @@
 <h3 id="_3">知识路径</h3>
 <p>密码学线需要扎实的抽象代数（群/环/域）、数论（离散数学）和概率论（安全归约），ZKP/FHE 还需要格密码的优化背景；物理攻击线需要半导体器件和固体物理；后量子密码的动机来自量子力学。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    代数[代数] --&gt; CRYPTO[专题]
-    DIS[离散数学] --&gt; CRYPTO
-    PROB[概率与统计] --&gt; CRYPTO
-    OPT[数值与优化] --&gt; CRYPTO
+    代数[代数] --&gt; CRY[密码学]
+    DIS[离散数学] --&gt; CRY
+    PROB[概率与统计] --&gt; CRY
+    PROB --&gt; INF[信息论]
+    OPT[数值与优化] --&gt; CRY
     QM[量子力学] --&gt; QC[量子计算]
-    QC --&gt; SEC[硬件安全]
-    CRYPTO --&gt; SEC
+    QC --&gt; SEC[硬件安全与可信计算]
+    CRY --&gt; SEC
+    INF --&gt; SEC
     SS[固体物理] --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
     DEV --&gt; SEC
@@ -13690,12 +13692,14 @@
     classDef phys fill:#FDE8D8,stroke:#C0530A
     classDef ckt fill:#FFFBEB,stroke:#B7791F
     classDef sys fill:#F0FDF4,stroke:#16A34A
-    class 代数,DIS,PROB,OPT math
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class 代数,DIS,PROB,OPT,CRY,INF math
     class QM,QC,SS,SP phys
     class DEV,DIG,EDA ckt
-    class SYS,ARCH,OS,COM,CRYPTO,SEC sys</code></pre>
+    class SYS,ARCH,OS,COM sys
+    class SEC goal</code></pre>
 <ul>
-<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（抽象代数：群/环/域，椭圆曲线） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>（数论、模运算） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a>（安全归约、随机预言机） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%80%BC%E4%B8%8E%E4%BC%98%E5%8C%96/">数值与优化</a>（格密码、NTT） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">专题</a>（密码学）</li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（抽象代数：群/环/域，椭圆曲线） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>（数论、模运算） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a>（安全归约、随机预言机） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%80%BC%E4%B8%8E%E4%BC%98%E5%8C%96/">数值与优化</a>（格密码、NTT） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">密码学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%B8%93%E9%A2%98/">信息论</a>（侧信道泄露的信息度量）</li>
 <li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/">量子计算</a>（Shor 算法动机，后量子密码背景） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a>（功耗/EM 侧信道物理机制）</li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（工具链安全）</li>

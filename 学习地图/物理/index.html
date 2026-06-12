@@ -13225,20 +13225,23 @@
 <h2 id="_1">课程关系</h2>
 <p>箭头从前置课程指向后置课程。</p>
 <pre class="mermaid"><code>graph LR
-    A["大学物理&lt;br/&gt;力学 · 电磁学 · 光学 · 热学"] --&gt; B["量子力学&lt;br/&gt;波函数 · 算符 · 散射"]
-    B --&gt; C["固体物理&lt;br/&gt;晶格 · 能带 · 输运"]
-    B --&gt; H["量子计算&lt;br/&gt;量子算法 · Qiskit"]
-    C --&gt; D["半导体物理&lt;br/&gt;载流子 · PN 结物理"]
-    A --&gt; E["电磁场与电磁波&lt;br/&gt;(交叉至射频/天线)"]
-    A --&gt; F["光学&lt;br/&gt;波动光学 · 集成光子学"]
-    A --&gt; G["传热学&lt;br/&gt;导热 · 对流 · 辐射"]
+    A[大学物理] --&gt; B[量子力学]
+    A --&gt; E[电磁场与微波]
+    A --&gt; F[光学]
+    A --&gt; G[传热学]
+    A --&gt; T[热力学与统计物理]
+    A -.- LAB[物理实验]
+    B --&gt; C[固体物理]
+    T --&gt; C
+    B --&gt; H[量子计算]
+    C --&gt; D[半导体物理]
 
     classDef base fill:#FEF3F2,stroke:#DC2626,stroke-width:2px
     classDef advanced fill:#FFFBEB,stroke:#B7791F,stroke-width:2px
-    classDef next fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
-    class A base
+    classDef pending fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
+    class A,LAB base
     class B,C,D,F,G,H advanced
-    class E next</code></pre>
+    class E,T pending</code></pre>
 <p>主链 <strong>大物 → 量子 → 固体 → 半物</strong> 是器件/工艺方向的硬核前置。<strong>电磁场理论</strong>(国内通常单独开课)是射频/天线/光电子方向的另一条主线。<strong>光学</strong>(尤其集成光子学)是硅光、光互连、光计算方向的物理基础。<strong>传热学</strong>是先进封装、功率半导体方向的物理基础——芯片功率密度逼近极限后,"热"已成为继性能、功耗后的第三个一阶设计约束。<strong>量子计算</strong>以量子力学为前置，覆盖量子算法与 Qiskit 实操。</p>
 <hr />
 <p><strong><a href="大学物理/">大学物理</a></strong> — 力学、电磁学、光学、热力学；高中物理的"加强版",所有理工科学生的共同基础。</p>

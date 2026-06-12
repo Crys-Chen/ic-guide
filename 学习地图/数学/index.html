@@ -13260,9 +13260,10 @@
 <pre class="mermaid"><code>graph TB
     A[数学分析]
     B[线性代数]
+    Q[入门速成]
     A --&gt; M[复变函数]
     A --&gt; G[数值分析]
-    A --&gt; C[概率统计]
+    A --&gt; C[概率与统计]
     A --&gt; L[凸优化]
     B --&gt; L
     B --&gt; E[矩阵分析]
@@ -13271,12 +13272,17 @@
     D --&gt; I[抽象代数]
     I --&gt; J[密码学]
     H[离散数学]
+    Q -.-&gt; M
+    Q -.-&gt; C
+    Q -.-&gt; H
 
     classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef advanced fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
+    classDef quick fill:#FFF7ED,stroke:#F97316,stroke-width:1.5px,stroke-dasharray:3 3
     class A,B base
-    class C,D,E,F,G,H,I,J,L,M advanced</code></pre>
-<p>课程分三条线。分析线从数学分析延伸出复变函数、数值分析、概率统计，概率统计再支撑信息论。代数线从线性代数延伸出矩阵分析和高等代数，高等代数经抽象代数通向密码学。凸优化同时依赖数学分析和线性代数。离散数学不依赖分析与代数，可以直接学。</p>
+    class C,D,E,F,G,H,I,J,L,M advanced
+    class Q quick</code></pre>
+<p>课程分三条线。分析线从数学分析延伸出复变函数、数值分析、概率与统计，概率与统计再支撑信息论。代数线从线性代数延伸出矩阵分析和高等代数，高等代数经抽象代数通向密码学。凸优化同时依赖数学分析和线性代数。离散数学不依赖分析与代数，可以直接学。入门速成是多主题压缩课，虚线指向它能替代入门的三门课。</p>
 <h2 id="_4">对应的科研方向</h2>
 <table>
 <thead>

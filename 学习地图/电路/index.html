@@ -13303,67 +13303,67 @@
         A0[半导体物理] --&gt; A1[半导体器件] --&gt; A2[集成电路工艺]
     end
 
+    Q[入门速成]
+
     subgraph B1[数字设计]
         direction TB
-        B1_1[数字逻辑基础]
-        subgraph B1_2[HDL]
-            B1_2_1[Verilog]
-            B1_2_2[Chisel]
-            B1_2_3[HLS]
-        end
-        B1_4[FPGA 系统设计]
-        B1_5[数字集成电路设计原理]
-        B1_6[数字验证]
-        B1_7[ASIC 与数字后端]
+        B1_1[数字逻辑基础] --&gt; B1_2[HDL]
+        B1_1 --&gt; B1_4[数字集成电路]
+        B1_2 --&gt; B1_3[FPGA]
+        B1_2 --&gt; B1_5[数字验证]
+        B1_4 --&gt; B1_6[ASIC与数字后端]
+        B1_4 --&gt; B1_7[低功耗设计]
     end
 
     subgraph B2[模拟与射频]
         direction TB
-        B2_0[电路分析基础]
-        B2_1[模拟电子线路]
-        B2_2[模拟集成电路设计]
-        B2_6[ADC / DAC]
-        B2_4[射频电路]
+        B2_0[电路分析基础] --&gt; B2_1[模拟电子线路] --&gt; B2_2[模拟集成电路]
+        B2_2 --&gt; B2_3[数模模数转换器]
+        B2_2 --&gt; B2_4[射频电路]
+        B2_2 --&gt; B2_5[版图设计]
+        B2_1 --&gt; B2_6[功率电子]
     end
 
     subgraph B3[信号处理]
         direction TB
-        B3_0[信号与系统]
-        B3_1[数字信号处理]
+        B3_0[信号与系统] --&gt; B3_1[数字信号处理]
     end
 
-    subgraph C[系统集成]
-        C2[嵌入式 SoC]
-        D["EDA 工具与开发"]
+    subgraph C[系统与支撑]
+        C1[嵌入式SoC]
+        C2[EDA]
+        C3[测试与可靠性]
+        C4[电路实验]
     end
+
+    APP1[控制与机器人]
+    APP2[生物电子]
 
     A1 --&gt; B1
     A1 --&gt; B2
-    B1_1 --&gt; B1_2
-    B1_1 --&gt; B1_5
-    B1_2 --&gt; B1_5
-    B1_2 --&gt; B1_4
-    B1_5 --&gt; B1_4
-    B1_5 --&gt; B1_6
-    B1_5 --&gt; B1_7
-    B2_0 --&gt; B2_1 --&gt; B2_2 --&gt; B2_4
-    B2_2 --&gt; B2_6
-    B3_0 --&gt; B3_1
-    B3_1 -.-&gt; B2_6
+    Q -.-&gt; B1
+    Q -.-&gt; B2
+    B3_1 -.-&gt; B2_3
     B1 --&gt; C
     B2 --&gt; C
     B3 --&gt; C
+    B3 --&gt; APP1
+    B2 --&gt; APP2
 
     classDef device fill:#FDE8D8,stroke:#C0530A,stroke-width:1.5px
     classDef digital fill:#FFFBEB,stroke:#B7791F,stroke-width:1.5px
     classDef analog fill:#E6FFEC,stroke:#276749,stroke-width:1.5px
     classDef signal fill:#EBF4FF,stroke:#2C5282,stroke-width:1.5px
     classDef system fill:#F3E8FF,stroke:#553C9A,stroke-width:1.5px
+    classDef quick fill:#FFF7ED,stroke:#F97316,stroke-width:1.5px,stroke-dasharray:3 3
+    classDef pending fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     class A device
     class B1 digital
     class B2 analog
     class B3 signal
-    class C system</code></pre>
+    class C system
+    class Q quick
+    class B1_5,B2_5,B2_6,APP1,APP2 pending</code></pre>
 <p>可以看出这份谱系有两个特点：</p>
 <ul>
 <li><strong>以设计为主</strong>——设计方向是复旦微电的强项，略有侧重不足为奇</li>

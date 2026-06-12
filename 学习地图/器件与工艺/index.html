@@ -13212,19 +13212,28 @@
 <h2 id="_2">课程关系</h2>
 <p>实线箭头表示先修关系，虚线表示知识供给关系。</p>
 <pre class="mermaid"><code>graph LR
-    P0["量子力学 · 固体物理&lt;br/&gt;(物理板块前置)"] --&gt; P1[半导体物理]
-    P1 --&gt; A[半导体器件&lt;br/&gt;PN 结 · MOSFET · BJT]
-    A --&gt; B[集成电路工艺&lt;br/&gt;光刻 · 刻蚀 · CVD · CMP]
+    P1["半导体物理（物理板块）"] --&gt; A[半导体器件]
+    M[材料] --&gt; A
+    M --&gt; B
+    A --&gt; B[集成电路工艺]
+    A --&gt; PWR[功率半导体器件]
+    A --&gt; MEM[存储器]
+    A --&gt; FRO[前沿器件]
+    B --&gt; FRO
+    B --&gt; PKG[先进封装]
+    B --&gt; MS[MEMS]
     A -.-&gt;|供给器件模型| D[模拟/数字电路设计]
     B -.-&gt;|供给 PDK| D
 
     classDef phy fill:#FEF3F2,stroke:#DC2626,stroke-width:1.5px
     classDef dev fill:#FDE8D8,stroke:#C0530A,stroke-width:2px
+    classDef pending fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     classDef next fill:#E6FFEC,stroke:#276749,stroke-width:1.5px,stroke-dasharray:3 3
-    class P0,P1 phy
-    class A,B dev
+    class P1 phy
+    class A,B,M,MEM,FRO dev
+    class PWR,PKG,MS pending
     class D next</code></pre>
-<p>主链只有一条，半导体物理 → 半导体器件 → 集成电路工艺，三门课严格递进。这条链的产出（器件模型和 PDK）是电路板块全部设计工作的物理输入。</p>
+<p>主链只有一条，半导体物理 → 半导体器件 → 集成电路工艺，三门课严格递进。功率半导体器件、存储器、前沿器件、先进封装、MEMS 都从这条主链上分出去。这条链的产出（器件模型和 PDK）是电路板块全部设计工作的物理输入。</p>
 <hr />
 <p><strong><a href="半导体器件/">半导体器件</a></strong> — MOSFET、BJT、PN 结的工作原理；器件物理是所有电路设计的物理基础。</p>
 <p><strong><a href="集成电路工艺/">集成电路工艺</a></strong> — 光刻、刻蚀、薄膜沉积、离子注入等微纳加工技术；解释芯片是如何从设计图纸变成硅片的。</p>

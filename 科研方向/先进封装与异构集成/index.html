@@ -13776,32 +13776,45 @@
 <li><strong>异质材料与光电 I/O 集成</strong>：III-V、玻璃基板、片上光互连各有所长，却和硅热膨胀失配、工艺互相污染，要把它们缝进同一个封装而不牺牲可靠性。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>物理线（量子力学→固体→半导体→器件）提供材料和工艺基础，系统线（数字设计→EDA、体系结构）驱动 chiplet 互连设计需求，传热学和模拟接口贯穿始终。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>物理线（分析→大学物理→量子力学→固体→半导体→器件→工艺）通向封装本体，传热学管散热，电磁场与微波管高速互连的信号完整性，系统线（数字设计→EDA、体系结构）驱动 chiplet 设计分工。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    QM[量子力学] --&gt; SS[固体物理]
+    AN[分析] --&gt; PHY[大学物理]
+    PHY --&gt; QM[量子力学]
+    QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
-    MAT[材料] --&gt; DEV
-    MAT --&gt; PRO[集成电路工艺]
+    PHY --&gt; HEAT[传热学]
+    PHY --&gt; EM[电磁场与微波]
+    MAT[材料] --&gt; PRO[集成电路工艺]
     DEV --&gt; PRO
     PRO --&gt; PKG[先进封装]
+    MAT --&gt; PKG
+    SIG[信号处理] --&gt; MAS[模拟与射频]
+    EM --&gt; MAS
     DIG[数字设计] --&gt; EDA[EDA]
-    ARCH[体系结构] --&gt; EDA
-    EDA --&gt; PKG
-    HEAT[传热学] --&gt; PKG
-    SIG[信号处理] --&gt; PKG
+    PKG --&gt; X[先进封装与异构集成]
+    HEAT --&gt; X
+    EM --&gt; X
+    MAS --&gt; X
+    EDA --&gt; X
+    ARCH[体系结构] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#F3E8FF,stroke:#553C9A
     classDef dev fill:#FDE8D8,stroke:#C0530A
     classDef sys fill:#FFFBEB,stroke:#B7791F
-    class QM,SS,SP,HEAT phys
+    classDef goal fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    class AN math
+    class PHY,QM,SS,SP,HEAT,EM phys
     class DEV,MAT,PRO,PKG dev
-    class DIG,SIG,ARCH,EDA sys</code></pre>
+    class DIG,SIG,MAS,ARCH,EDA sys
+    class X goal</code></pre>
 <ul>
-<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分，大学物理与传热学的前置）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E5%BE%AE%E6%B3%A2/">电磁场与微波</a>（待建，SI/PI 分析的基础）</li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%85%88%E8%BF%9B%E5%B0%81%E8%A3%85/">先进封装</a>（待建）</li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
-<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（SerDes、高速接口） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a>（chiplet 架构划分）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢全系统协同优化的人。不需要某一门课特别拔尖，而是要能同时兼顾各方各面。封装里没有单点的最优解，每个方案都是良率、带宽、散热、成本之间的讨价还价，最终的方案往往来源于极致的权衡。这个方向有两拨人在合作，一拨是做工艺的，基本上要泡超净间；另一波是做设计的，日常工作和做架构的差不多，就是设计电路和做仿真。</p>

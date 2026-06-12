@@ -13739,31 +13739,42 @@
 <li><strong>光学计算</strong>：MZI 网格能做矩阵乘法，却做不出 ReLU 这样的非线性，绕回电域又把省下的能耗还给光电转换；加上温漂和工艺偏差把有效精度压到 4 到 6 位，离实用还隔着几道硬关。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>物理线（量子→固体→半导体 + 电磁→光学）提供理论基础，器件线与高速模拟电路汇合后，通过工艺和 EDA 形成完整的硅光设计链路。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>物理是这个方向的重头，两条物理线（量子→固体→半导体，电磁→光学）在器件层汇合，激光器和调制器既是光学器件也是半导体器件；电路线（信号处理→模拟与射频）提供驱动和跨阻放大器，材料、工艺和 EDA 支撑流片。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PHY[大学物理] --&gt; QM[量子力学]
+    AN[分析] --&gt; PHY[大学物理]
+    PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
-    PHY --&gt; OPT[光学]
-    EM[电磁场与微波] --&gt; OPT
+    PHY --&gt; EM[电磁场与微波]
+    EM --&gt; OPT[光学]
+    PHY --&gt; OPT
+    QM --&gt; OPT
     SP --&gt; DEV[半导体器件]
-    OPT --&gt; DEV
-    DEV --&gt; MAS[模拟与射频]
-    DEV --&gt; PRO[集成电路工艺]
-    PRO --&gt; FRO[前沿器件]
-    MAS --&gt; FRO
-    EDA[EDA] --&gt; FRO
+    MAT[材料] --&gt; DEV
+    AN --&gt; SIG[信号处理]
+    SIG --&gt; MAS[模拟与射频]
+    DEV --&gt; MAS
+    OPT --&gt; X[光电子与硅光集成]
+    DEV --&gt; X
+    MAS --&gt; X
+    PRO[集成电路工艺] --&gt; X
+    EDA[EDA] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#F3E8FF,stroke:#553C9A
     classDef dev fill:#FDE8D8,stroke:#C0530A
-    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef goal fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    class AN math
     class PHY,QM,SS,SP,OPT,EM phys
-    class DEV,PRO,FRO dev
-    class MAS,EDA ckt</code></pre>
+    class DEV,MAT,PRO dev
+    class SIG,MAS,EDA ckt
+    class X goal</code></pre>
 <ul>
-<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%85%89%E5%AD%A6/">光学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E5%BE%AE%E6%B3%A2/">电磁场与微波</a>（待建）</li>
-<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%89%8D%E6%B2%BF%E5%99%A8%E4%BB%B6/">前沿器件</a></li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（跨阻放大器、高速驱动） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分、复变函数，物理和信号处理共同的前置）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a>（激光与光电效应的物理基础） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E5%BE%AE%E6%B3%A2/">电磁场与微波</a>（待建，波导理论的来源） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%85%89%E5%AD%A6/">光学</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a>（III-V 异质集成） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（跨阻放大器、高速驱动） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合物理直觉和动手能力都强的人。这个方向要换好几套语言，电磁场算波导，固体物理看材料，模拟电路做驱动和放大，其中电磁场与波是第一道门槛。日常一半在仿真里扫波导和调制器，一半在光学平台上对光纤、测插损、排查温漂，对准是亚微米级的精细活，手稳心细很重要。流片走专门的光子平台，一轮要几个月，性子急的人要慎重考虑。</p>

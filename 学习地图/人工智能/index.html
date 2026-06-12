@@ -13212,14 +13212,15 @@
 <h2 id="_2">课程关系</h2>
 <p>箭头从前置课程指向后置课程。</p>
 <pre class="mermaid"><code>graph TB
-    A["入门速成&lt;br/&gt;Karpathy · CS50 AI · CS188"] --&gt; B["机器学习&lt;br/&gt;CS229 · CS189 · Data100"]
-    B --&gt; C["深度学习&lt;br/&gt;CS231n · CS224n · LHY"]
-    C --&gt; D["深度生成模型&lt;br/&gt;扩散模型 · CS294-158"]
-    D --&gt; L["大语言模型&lt;br/&gt;CS336 · 11-711"]
-    B --&gt; E["机器学习理论&lt;br/&gt;PGM · 统计学习理论"]
-    B --&gt; G["强化学习&lt;br/&gt;赵世钰 · Silver"]
-    C --&gt; H["类脑与SNN"]
-    C --&gt; F["AI 系统&lt;br/&gt;10-414 · TinyML · MLC"]
+    A[入门速成] --&gt; B[机器学习]
+    B --&gt; C[深度学习]
+    C --&gt; D[深度生成模型]
+    D --&gt; L[大语言模型]
+    B --&gt; E[机器学习理论]
+    B --&gt; G[强化学习]
+    B --&gt; X[AI交叉应用]
+    C --&gt; H[类脑与SNN]
+    C --&gt; F[AI系统]
     L --&gt; F
 
     classDef intro fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
@@ -13229,8 +13230,8 @@
     class A intro
     class B,C,D,L algo
     class F sys
-    class E,G,H theory</code></pre>
-<p>主链是算法层，入门 → 机器学习 → 深度学习 → 深度生成模型 → 大语言模型。AI 系统在算法层之上，讲怎么把模型高效跑起来，是芯片研究者最该投入的一层。机器学习理论、强化学习、类脑与SNN 是从主链分出的三个专题方向，按研究需要选学。</p>
+    class E,G,H,X theory</code></pre>
+<p>主链是算法层，入门 → 机器学习 → 深度学习 → 深度生成模型 → 大语言模型。AI 系统在算法层之上，讲怎么把模型高效跑起来，是芯片研究者最该投入的一层。机器学习理论、强化学习、类脑与SNN、AI交叉应用是从主链分出的专题方向，按研究需要选学。</p>
 <hr />
 <p><strong><a href="入门速成/">入门速成</a></strong> — Neural Networks: Zero to Hero、CS50 AI、CS188；几天之内建立 AI 的基本图景，适合从零开始。</p>
 <p><strong><a href="机器学习/">机器学习</a></strong> — CS229、CS189、Data100；监督学习、优化、泛化理论；做 AI 硬件协同设计的数学基础。</p>

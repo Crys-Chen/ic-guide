@@ -13674,30 +13674,39 @@
 <li><strong>功率 IC 与电路-器件协同</strong>：宽禁带器件开关快到纳秒级，几纳亨寄生电感就能激起上百伏过电压，门极驱动、保护与开关贴着器件特性单片集成成功率 IC，性能才能兑现。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>物理线（量子力学→固体→半导体）决定器件性能上限，材料和工艺线决定 SiC/GaN 能否制造，传热线决定系统能用多大功率。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>物理线（分析→大学物理→量子力学→固体→半导体）决定器件性能上限，材料和工艺线决定 SiC/GaN 能否制造，传热和可靠性决定系统能用多大功率，模拟与射频里的功率电子是器件的应用出口。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PHY[大学物理] --&gt; QM[量子力学]
+    AN[分析] --&gt; PHY[大学物理]
+    DS[代数] --&gt; QM
+    PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
-    MAT[材料] --&gt; DEV
-    DEV --&gt; FRO[前沿器件]
-    PRO[集成电路工艺] --&gt; FRO
-    HEAT[传热学] --&gt; FRO
-    MAS[模拟与射频] --&gt; FRO
-    SIG[信号处理] --&gt; MAS
-    EDA[EDA] --&gt; FRO
+    MAT[材料] --&gt; PWR
+    DEV --&gt; PWR[功率半导体器件]
+    PRO[集成电路工艺] --&gt; PWR
+    PHY --&gt; HEAT[传热学]
+    PWR --&gt; X[功率半导体与宽禁带器件]
+    HEAT --&gt; X
+    MAS[模拟与射频] --&gt; X
+    TEST[测试与可靠性] --&gt; X
+    EDA[EDA] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#F3E8FF,stroke:#553C9A
     classDef dev fill:#FDE8D8,stroke:#C0530A
-    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    classDef ckt fill:#FFFBEB,stroke:#B7791F
+    classDef goal fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    class AN,DS math
     class PHY,QM,SS,SP,HEAT phys
-    class DEV,MAT,PRO,FRO dev
-    class SIG,MAS,EDA ckt</code></pre>
+    class DEV,MAT,PRO,PWR dev
+    class MAS,TEST,EDA ckt
+    class X goal</code></pre>
 <ul>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（线性代数，量子力学的语言）</li>
 <li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a></li>
-<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%89%8D%E6%B2%BF%E5%99%A8%E4%BB%B6/">前沿器件</a>（GaN/SiC 器件）</li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（功率电子、栅驱动） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">功率半导体器件</a>（待建）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（功率电子、栅驱动） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8F%AF%E9%9D%A0%E6%80%A7/">测试与可靠性</a>（高压器件的可靠性测试） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（TCAD 仿真）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢跟实际的材料与电学打交道的人。课程上学固体物理、半导体物理和模拟电路，看到 I-V 曲线异常就想深入查是哪层物理出了问题，这种人很合适。这里也是两拨人，做器件的在 TCAD（Technology Computer-Aided Design）仿真和高压测试台之间来回，做电路的围绕门极驱动和纳秒级开关来设计功率 IC。节奏偏慢，一颗器件从设计到敢说可靠常以季度甚至年计，而且高压大电流的实验是真有危险，胆大心细缺一不可。</p>

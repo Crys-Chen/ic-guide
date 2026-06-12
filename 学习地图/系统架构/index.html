@@ -13203,21 +13203,22 @@
 <h2 id="_2">课程关系</h2>
 <p>箭头从前置课程指向后置课程，虚线表示通向其他板块的去向。</p>
 <pre class="mermaid"><code>graph TB
-    A["计算机系统基础&lt;br/&gt;CSAPP · 计组原理"] --&gt; B[体系结构]
+    A[计算机系统基础] --&gt; B[体系结构]
     A --&gt; C[操作系统]
     A --&gt; D[编译原理]
-    B --&gt; E["并行与分布式系统&lt;br/&gt;MPI · CUDA · cache coherence"]
+    B --&gt; E[并行与分布式系统]
     C --&gt; E
-    B --&gt; F["GPU体系结构&lt;br/&gt;warp 调度 · HBM"]
-    D -.-&gt; G["AI 编译&lt;br/&gt;(人工智能板块 AI系统)"]
+    B --&gt; F[GPU体系结构]
+    B --&gt; H[AI加速器]
+    D -.-&gt; G["AI 编译（人工智能板块 AI系统）"]
 
     classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef arch fill:#F3E8FF,stroke:#553C9A,stroke-width:2px
     classDef other fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray:3 3
     class A base
-    class B,C,D,E,F arch
+    class B,C,D,E,F,H arch
     class G other</code></pre>
-<p>计算机系统基础是全板块的公共入口。往上分三条路：体系结构通向 GPU 体系结构和并行与分布式系统，是做硬件的主线；操作系统和并行与分布式系统是做系统软件的主线；编译原理自成一条线，通向人工智能板块的 AI 编译。</p>
+<p>计算机系统基础是全板块的公共入口。往上分三条路：体系结构通向 GPU 体系结构、AI 加速器和并行与分布式系统，是做硬件的主线；操作系统和并行与分布式系统是做系统软件的主线；编译原理自成一条线，通向人工智能板块的 AI 编译。</p>
 <hr />
 <p><strong><a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a></strong> — 计算机组成原理、CSAPP；从头建立"程序在硬件上怎么跑"的系统性图景，是所有后续内容的前置。</p>
 <p><strong><a href="体系结构/">体系结构</a></strong> — 处理器微架构、流水线、缓存层次、内存系统；研究处理器和加速器设计的核心知识。</p>

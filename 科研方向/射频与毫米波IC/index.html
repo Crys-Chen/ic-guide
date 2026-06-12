@@ -13853,30 +13853,37 @@
 <h3 id="_3">知识路径</h3>
 <p>物理线（大学物理→量子力学→固体→半导体→器件）打通器件认知，电磁场与微波是射频独有的物理基础，信号处理支撑系统链路分析，模拟电路是核心设计能力，工艺和 EDA 形成完整 IC 流程。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PHY[大学物理] --&gt; QM[量子力学]
+    AN[分析] --&gt; PHY[大学物理]
+    AN --&gt; SIG[信号处理]
+    DS[代数] --&gt; SIG
+    PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
     PHY --&gt; EM[电磁场与微波]
-    分析[分析] --&gt; SIG[信号处理]
     SIG --&gt; MAS[模拟与射频]
     DEV --&gt; MAS
     EM --&gt; MAS
     PRO[集成电路工艺] --&gt; MAS
-    MAS --&gt; EDA[EDA]
+    MAS --&gt; X[射频与毫米波IC]
+    EDA[EDA] --&gt; X
+    TEST[测试与可靠性] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
-    classDef ckt fill:#F0FDF4,stroke:#16A34A
     classDef math fill:#FFFBEB,stroke:#B7791F
+    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class AN,DS math
     class PHY,QM,SS,SP,EM phys
     class DEV,PRO dev
-    class SIG,MAS,EDA ckt
-    class 分析 math</code></pre>
+    class SIG,MAS,EDA,TEST ckt
+    class X goal</code></pre>
 <ul>
-<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（傅里叶、拉普拉斯变换基础）</li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分、复变函数，傅里叶与拉普拉斯变换的来源） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（线性代数）</li>
 <li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E5%BE%AE%E6%B3%A2/">电磁场与微波</a>（待建）</li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a></li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（RF layout、EM 仿真）</li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（电路分析→模电→模拟 IC→射频电路这条链是本方向的主干） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（RF layout、EM 仿真） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8F%AF%E9%9D%A0%E6%80%A7/">测试与可靠性</a>（射频微波测试）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>模拟电路学得踏实的人在这里会走得更深。射频和纯低频模拟不同，频段一上 GHz，走线本身就是电路的一部分，S 参数和史密斯圆图是这里的工作语言，电磁场课上过了还不够，得在仿真里自己摸过才算有底。日常大约一半在仿真器里追噪声指标、调 PA 偏置、搭相控阵阵列，另一半在测试间操作网络分析仪和频谱仪，毫米波的测量有一套专门的手法要学。流片半年一轮，仿真和实测对不上是常态，能追着不放、一层层往芯片里找原因，是这个方向最需要的习惯。</p>

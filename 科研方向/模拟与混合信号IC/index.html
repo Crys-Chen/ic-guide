@@ -13750,32 +13750,40 @@
 <li><strong>数字辅助与 AI 辅助设计</strong>：把误差测出来再用便宜的数字逻辑算掉，模拟那一半可以做糙一点吃工艺缩放红利；但模拟设计没有单一的优化目标，SPICE 高频下又不准，AI 眼下更像加速器，替不了人。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>器件物理打底，电磁场与微波提供高频寄生效应认知，信号处理贯穿 ADC/DAC 和高速接口，工艺线和 EDA 形成完整模拟 IC 设计链路。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>器件物理打底，分析和概率统计是信号与噪声分析的数学语言，电磁场与微波提供高频寄生效应认知，信号处理贯穿 ADC/DAC 和高速接口，混合信号还要懂数字设计，工艺、EDA 和测试形成完整链路。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PHY[大学物理] --&gt; QM[量子力学]
+    AN[分析] --&gt; PHY[大学物理]
+    AN --&gt; SIG[信号处理]
+    PROB[概率与统计] --&gt; SIG
+    PHY --&gt; QM[量子力学]
     QM --&gt; SS[固体物理]
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
     PHY --&gt; EM[电磁场与微波]
     EM --&gt; MAS[模拟与射频]
     DEV --&gt; MAS
-    分析[分析] --&gt; SIG[信号处理]
     SIG --&gt; MAS
     PRO[集成电路工艺] --&gt; MAS
-    MAS --&gt; EDA[EDA]
+    MAS --&gt; X[模拟与混合信号IC]
+    DIG[数字设计] --&gt; X
+    EDA[EDA] --&gt; X
+    TEST[测试与可靠性] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
-    classDef ckt fill:#F0FDF4,stroke:#16A34A
     classDef math fill:#FFFBEB,stroke:#B7791F
+    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef dev fill:#FDE8D8,stroke:#C0530A
+    classDef ckt fill:#F0FDF4,stroke:#16A34A
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class AN,PROB math
     class PHY,QM,SS,SP,EM phys
     class DEV,PRO dev
-    class SIG,MAS,EDA ckt
-    class 分析 math</code></pre>
+    class SIG,MAS,DIG,EDA,TEST ckt
+    class X goal</code></pre>
 <ul>
-<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（傅里叶变换、噪声谱分析）</li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分、复变函数） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a>（噪声的统计描述）</li>
 <li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E5%BE%AE%E6%B3%A2/">电磁场与微波</a>（待建）</li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a></li>
-<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
+<li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a>（电路分析→模电→模拟 IC→ADC/DAC 这条链是本方向的主干） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a>（混合信号的数字侧） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8F%AF%E9%9D%A0%E6%80%A7/">测试与可靠性</a>（模拟电路测试）</li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合沉得住气、重经验的人。模拟电子线路和信号与系统是根基，觉得差分对和反馈环路优雅而不是折磨的人，适合走这条路。日常就是在 Cadence 里调尺寸、跑仿真、画版图，一轮轮逼近物理极限，然后等流片、回片测试，论文的分量压在实测数据上。这一行属于“越老越吃香”的类型，AI 在模拟电路上的直觉目前还远远比不上一个老师傅的直觉。但成长曲线也慢，入行前几年最辛苦。</p>

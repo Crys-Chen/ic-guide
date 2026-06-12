@@ -13890,10 +13890,14 @@
 <li><strong>先进工艺与可靠性</strong>：FeFET（Ferroelectric FET，铁电晶体管）、高κ 金属栅、二维材料接触、铜互连各有各的失效机制，要靠 ALD（Atomic Layer Deposition，原子层沉积）这类原子层级工艺把界面缺陷压下去。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>物理线逐级深入（大学物理→量子力学→固体物理→半导体物理），材料线与器件线在先进工艺汇合，最终延伸至前沿器件和量子效应器件。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>物理线逐级深入（分析→大学物理→量子力学→固体物理→半导体物理），数学是这条链的地基，材料线与器件线在先进工艺汇合，最终延伸至前沿器件。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PHY[大学物理] --&gt; QM[量子力学]
+    AN[分析] --&gt; PHY[大学物理]
+    DS[代数] --&gt; QM
+    PHY --&gt; QM[量子力学]
+    PHY --&gt; TD[热力学与统计物理]
     QM --&gt; SS[固体物理]
+    TD --&gt; SS
     SS --&gt; SP[半导体物理]
     SP --&gt; DEV[半导体器件]
     MAT[材料] --&gt; DEV
@@ -13901,17 +13905,25 @@
     DEV --&gt; PRO
     DEV --&gt; FRO[前沿器件]
     PRO --&gt; FRO
-    EDA[EDA] --&gt; PRO
-    HEAT[传热学] --&gt; FRO
+    DEV --&gt; X[半导体器件与先进工艺]
+    PRO --&gt; X
+    FRO --&gt; X
+    EDA[EDA] --&gt; X
+    HEAT[传热学] --&gt; X
 
-    classDef phys fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef phys fill:#F3E8FF,stroke:#553C9A
     classDef dev fill:#FDE8D8,stroke:#C0530A
-    classDef tool fill:#F0FDF4,stroke:#16A34A
-    class PHY,QM,SS,SP phys
+    classDef tool fill:#FFFBEB,stroke:#B7791F
+    classDef goal fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    class AN,DS math
+    class PHY,QM,TD,SS,SP,HEAT phys
     class DEV,MAT,PRO,FRO dev
-    class EDA,HEAT tool</code></pre>
+    class EDA tool
+    class X goal</code></pre>
 <ul>
-<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>（微积分） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（线性代数，量子力学的语言）</li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E7%83%AD%E5%8A%9B%E5%AD%A6%E4%B8%8E%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86/">热力学与统计物理</a>（待建，载流子统计的来源） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E4%BC%A0%E7%83%AD%E5%AD%A6/">传热学</a>（自热效应与散热）</li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E6%9D%90%E6%96%99/">材料</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%89%8D%E6%B2%BF%E5%99%A8%E4%BB%B6/">前沿器件</a></li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（TCAD 仿真、DRC/LVS 工具链）</li>
 </ul>

@@ -13927,30 +13927,44 @@
 <li><strong>开源处理器与微架构</strong>：RISC-V 把指令集开源后，学术组也能造芯片，从香山这样的高性能核到流水线、分支预测、缓存层次，每个微架构细节都是独立课题。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>数字设计打底，EDA 提供 RTL→GDSII 工具链，体系结构是核心，编译原理和操作系统向上延伸，GPU 和并行系统是当前热点。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>离散数学和编程是两条线共同的地基，硬件线走数字设计→计算机系统基础→体系结构，软件线走数据结构与算法→编译原理，操作系统、GPU、并行系统从体系结构向上延伸，EDA 负责把架构落成芯片。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    DIG[数字设计] --&gt; SYS[计算机系统基础]
+    DIS[离散数学] --&gt; DIG[数字设计]
+    DIS --&gt; DSA
+    PY[编程入门] --&gt; DSA[数据结构与算法]
+    PY --&gt; SYS[计算机系统基础]
+    DIG --&gt; SYS
     DIG --&gt; EDA[EDA]
-    EDA --&gt; ARCH[体系结构]
-    SYS --&gt; ARCH
-    DSA[数据结构与算法] --&gt; COM[编译原理]
-    ARCH --&gt; OS[操作系统]
-    ARCH --&gt; COM
+    SYS --&gt; ARCH[体系结构]
+    SYS --&gt; OS[操作系统]
+    SYS --&gt; COM[编译原理]
+    DSA --&gt; COM
+    DSA --&gt; ARCH
     ARCH --&gt; GPU[GPU体系结构]
     ARCH --&gt; PAR[并行与分布式系统]
-    COM --&gt; PAR
     OS --&gt; PAR
+    ARCH --&gt; X[处理器架构与编译系统]
+    COM --&gt; X
+    EDA --&gt; X
+    GPU --&gt; X
+    PAR --&gt; X
+    OS --&gt; X
 
+    classDef math fill:#F3E8FF,stroke:#553C9A
     classDef ckt fill:#FFFBEB,stroke:#B7791F
     classDef sys fill:#EBF4FF,stroke:#2C5282
     classDef alg fill:#F0FDF4,stroke:#16A34A
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class DIS math
     class DIG,EDA ckt
     class SYS,ARCH,OS,GPU,PAR sys
-    class DSA,COM alg</code></pre>
+    class PY,DSA,COM alg
+    class X goal</code></pre>
 <ul>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>（布尔代数、图论、自动机的共同语言）</li>
+<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/">编程入门</a>（C/C++） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a>（RTL 综合、时序分析）</li>
 <li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/GPU%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">GPU体系结构</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/">并行与分布式系统</a></li>
-<li>算法编程：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%AE%97%E6%B3%95%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合喜欢写代码、又不满足于只调 API 的人。这个方向的日常和程序员几乎没有区别，写 RTL、跑仿真、给编译器写 pass，改完代码当天就有数据，不用等流片。课程上数字逻辑和计算机组成是底子，学到流水线和缓存觉得有意思而不是负担的人合适。另外要有读大代码库的耐心，gem5、LLVM 都是百万行的开源工程，进组第一件事常是在别人的代码里花几个月。这个领域看重实现，想法再好也得先复现 baseline 才有资格比较。</p>

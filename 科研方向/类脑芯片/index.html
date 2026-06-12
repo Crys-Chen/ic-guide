@@ -13658,33 +13658,46 @@
 <li><strong>类脑感知器件</strong>：让感光、感触这些感知环节本身就以脉冲事件输出、就地稀疏处理，仿视网膜的事件相机是代表。</li>
 </ul>
 <h3 id="_3">知识路径</h3>
-<p>算法线（ML→DL→SNN）提供神经形态计算模型，器件线（固体物理→前沿器件）提供忆阻器等新型存储单元，电路线与体系结构线决定芯片最终能实现什么。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
+<p>算法线（数学→ML→DL→SNN）提供神经形态计算模型，器件线（物理→半导体器件→前沿器件）提供忆阻器等新型存储单元，电路线与体系结构线决定芯片最终能实现什么。节点对应<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>里的目录：</p>
 <pre class="mermaid"><code>graph LR
-    PROB[概率与统计] --&gt; ML[机器学习]
+    AN[分析] --&gt; PROB[概率与统计]
+    PROB --&gt; ML[机器学习]
+    DS[代数] --&gt; ML
     ML --&gt; DL[深度学习]
     DL --&gt; SNN[类脑与SNN]
-    SS[固体物理] --&gt; DEV[半导体器件]
+    PHY[大学物理] --&gt; QM[量子力学]
+    QM --&gt; SS[固体物理]
+    SS --&gt; SP[半导体物理]
+    SP --&gt; DEV[半导体器件]
     DEV --&gt; FRO[前沿器件]
     PRO[集成电路工艺] --&gt; FRO
-    FRO --&gt; SNN
-    MAS[模拟与射频] --&gt; SNN
-    DIG[数字设计] --&gt; ARCH[体系结构]
-    ARCH --&gt; SNN
-    EDA[EDA] --&gt; SNN
+    SYS[计算机系统基础] --&gt; ARCH[体系结构]
+    DIG[数字设计] --&gt; ARCH
+    SNN --&gt; X[类脑芯片]
+    FRO --&gt; X
+    MAS[模拟与射频] --&gt; X
+    ARCH --&gt; X
+    EDA[EDA] --&gt; X
 
-    classDef ai fill:#EBF4FF,stroke:#2C5282
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef ai fill:#F0FDF4,stroke:#16A34A
+    classDef phys fill:#F3E8FF,stroke:#553C9A
     classDef ckt fill:#FFFBEB,stroke:#B7791F
     classDef dev fill:#FDE8D8,stroke:#C0530A
-    class PROB,ML,DL,SNN ai
-    class MAS,DIG,ARCH,EDA ckt
-    class SS,DEV,PRO,FRO dev</code></pre>
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class AN,DS,PROB math
+    class ML,DL,SNN ai
+    class PHY,QM,SS,SP phys
+    class MAS,DIG,SYS,ARCH,EDA ckt
+    class DEV,PRO,FRO dev
+    class X goal</code></pre>
 <ul>
-<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a></li>
+<li>数学：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>（线性代数） · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E4%B8%8E%E7%BB%9F%E8%AE%A1/">概率与统计</a></li>
 <li>人工智能：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E7%B1%BB%E8%84%91%E4%B8%8ESNN/">类脑与SNN</a></li>
-<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a></li>
+<li>物理：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/">固体物理</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></li>
 <li>器件与工艺：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/">半导体器件</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E5%B7%A5%E8%89%BA/">集成电路工艺</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%99%A8%E4%BB%B6%E4%B8%8E%E5%B7%A5%E8%89%BA/%E5%89%8D%E6%B2%BF%E5%99%A8%E4%BB%B6/">前沿器件</a>（忆阻器、相变存储）</li>
 <li>电路：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E5%B0%84%E9%A2%91/">模拟与射频</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1/">数字设计</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%94%B5%E8%B7%AF/EDA/">EDA</a></li>
-<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a></li>
+<li>系统架构：<a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/">计算机系统基础</a> · <a href="../../%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">体系结构</a></li>
 </ul>
 <h2 id="_4">这个方向适合谁</h2>
 <p>适合觉得“换一种计算方式”比沿着旧路再挤一点性能更有意思的人。切口有两个，模拟电路扎实的去做神经元电路和脉冲路由，对器件物理有兴趣的去研究忆阻器，让它的漂移对齐 STDP、把学习直接搬进硬件本身。日常横跨两个领域，白天调电路或器件，晚上读 SNN 训练的算法论文，社区偏小且分散，得习惯两边来回切换。还要有心理准备，SNN 的精度至今落后主流神经网络几个百分点，做这个方向看重的是能效那几个数量级的差距，不是榜单上的名次。</p>
