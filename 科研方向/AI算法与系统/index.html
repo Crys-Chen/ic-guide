@@ -11707,7 +11707,7 @@
 <li><strong>L4：创新型</strong>(协助发明)</li>
 <li><strong>L5：组织型</strong>(替代整个组织)</li>
 </ul>
-<p>思维链(Chain-of-Thought)让模型学会一步步推理，<strong>L2 已经坐稳</strong>。再往上，Claude Code、OpenAI Codex 这半年快速迭代，能自己改代码、跑通多步任务，<strong>L3 正在加速兑现</strong>。<strong>L4</strong> 还在远处，但科学智能已经在蛋白质结构(AlphaFold)、新材料发现上露了头。每跨一级都不是靠某个单点突破。<strong>模型怎么变强、系统跑不跑得动、拿什么数据喂它，这三件事被同一堵墙逼着一起往前</strong>。AI 变聪明的这些年，与其说一路高歌，不如说是一轮轮撞上瓶颈、再换下一种打法。下面就顺这条线走一遍。</p>
+<p>思维链(Chain-of-Thought)让模型学会一步步推理，<strong>L2 已经坐稳</strong>。再往上，Claude Code、OpenAI Codex 这半年快速迭代，能自己改代码、跑通多步任务，<strong>L3 正在加速兑现</strong>。<strong>L4</strong> 还在远处，但科学智能已经在蛋白质结构(AlphaFold)、新材料发现上露了头。每跨一级都不是靠某个单点突破。<u>模型怎么变强、系统跑不跑得动、拿什么数据喂它，这三件事被同一堵墙逼着一起往前</u>。AI 变聪明的这些年，与其说一路高歌，不如说是一轮轮撞上瓶颈、再换下一种打法。下面就顺这条线走一遍。</p>
 <div><svg viewBox="0 0 880 305" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif">
   <text x="440.0" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">OpenAI 2024 年 7 月披露的 AGI 5 级路线图</text>
   <text x="440.0" y="46" text-anchor="middle" font-size="12" fill="#64748B">每跨一级,需要算法、系统、数据三方面同步突破</text>
@@ -11775,7 +11775,7 @@
   <text x="788.0" y="279" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">远期</text>
 </svg></div>
 
-<p>最早大家信奉一个朴素的道理，模型越大越聪明，这就是 <strong>scaling</strong>。可这条路很快见了底。Llama 3 的 4050 亿参数版本，Meta 动用 1.6 万张 H100 训了 54 天，再往上堆，提升却越来越小。打法于是转向<strong>怎么把模型训得更巧</strong>。<strong>MoE</strong>(混合专家，DeepSeek-V3)把模型拆成一群"专家"，每次只激活一两个，让参数规模和计算成本脱钩。更要紧的是<strong>强化学习</strong>。R1-Zero 只给一份很小的"冷启动"数据教模型怎么写推理过程，剩下全靠 RL 让它自己试错摸索，思维链这才稳定落地、撑起 L2。模型的输入也从纯文本扩到图像和视频，这就是<strong>多模态</strong>(GPT-4V、Sora)。</p>
+<p>最早大家信奉一个朴素的道理，模型越大越聪明，这就是 <strong>scaling</strong>（规模扩展）。可这条路很快见了底。Llama 3 的 4050 亿参数版本，Meta 动用 1.6 万张 H100 训了 54 天，再往上堆，提升却越来越小。打法于是转向怎么把模型训得更巧。<strong>MoE</strong>（Mixture of Experts，混合专家；如 DeepSeek-V3）把模型拆成一群"专家"，每次只激活一两个，让参数规模和计算成本脱钩。更要紧的是<strong>强化学习</strong>。R1-Zero 只给一份很小的"冷启动"数据教模型怎么写推理过程，剩下全靠 RL 让它自己试错摸索，思维链这才稳定落地、撑起 L2。模型的输入也从纯文本扩到图像和视频，这就是<strong>多模态</strong>（multimodal；如 GPT-4V、Sora）。</p>
 <div><svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <defs>
     <marker id="aiAx" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#475569"/></marker>
@@ -11800,7 +11800,7 @@
   <text x="540" y="321" text-anchor="middle" font-size="10.5" fill="#C2410C">MoE · 强化学习(R1-Zero) · 多模态</text>
 </svg></div>
 
-<p>模型再聪明，<strong>跑不起来也是白搭</strong>。一到真实部署，瓶颈就卡在显存和带宽上。注意力机制要让序列里每个词两两交互，中间生成一大堆临时矩阵，反复在显存(HBM)和计算核心之间搬来搬去，又慢又费带宽。上下文越长，要缓存的 <strong>KV Cache</strong> 越大，显存越紧。一批工作专门来抠这件事。<strong>Flash Attention</strong> 把注意力分块，数据从 HBM 取出后在片上尽量算完再写回，省掉大量来回搬运。<strong>vLLM 的 PagedAttention</strong> 借虚拟内存的分页思路管 KV Cache，把零碎显存利用起来。<strong>量化</strong>则盯上另一处浪费，神经网络的权重绝大多数挤在很小的区间，32 位浮点白白占着，压到 8 位甚至 4 位整数、做得当几乎不掉精度。这条线最贴硬件，也是微电子背景最容易切进来的地方。在模型之外再包一层 <strong>Agent</strong>，用一套控制框架(skill、harness 那些)引导它调用工具、跑通多步任务，就把"会想"推成了"会做事"，也就是 L3。Claude Code、Openclaw 都是这类工程。</p>
+<p><u>模型再聪明，跑不起来也是白搭</u>。一到真实部署，瓶颈就卡在显存和带宽上。注意力机制要让序列里每个词两两交互，中间生成一大堆临时矩阵，反复在显存(HBM)和计算核心之间搬来搬去，又慢又费带宽。上下文越长，要缓存的 <strong>KV Cache</strong>（Key-Value Cache，键值缓存）越大，显存越紧。一批工作专门来抠这件事。<strong>Flash Attention</strong> 把注意力分块，数据从 HBM 取出后在片上尽量算完再写回，省掉大量来回搬运。<strong>vLLM 的 PagedAttention</strong>（分页注意力）借虚拟内存的分页思路管 KV Cache，把零碎显存利用起来。<strong>量化</strong>则盯上另一处浪费，神经网络的权重绝大多数挤在很小的区间，32 位浮点白白占着，压到 8 位甚至 4 位整数、做得当几乎不掉精度。<u>这条线最贴硬件，也是微电子背景最容易切进来的地方</u>。在模型之外再包一层 <strong>Agent</strong>（智能体），用一套控制框架(skill、harness 那些)引导它调用工具、跑通多步任务，就把"会想"推成了"会做事"，也就是 L3。Claude Code、Openclaw 都是这类工程。</p>
 <div><svg viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
   <defs>
     <marker id="aiRW" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#DC2626"/></marker>
@@ -11838,10 +11838,10 @@
   <text x="410" y="384" text-anchor="middle" font-size="11" fill="#64748B">量化：权重集中于窄区间，由 32 位浮点降至 4 位整数，精度损失很小</text>
 </svg></div>
 
-<p>算法和系统再使劲，模型到底学成什么样，归根到底由数据定。GPT-4、Llama 3 这个量级，训练数据在 10 到 15 万亿词(token)，差不多把开放互联网上的高质量内容啃了一遍。如今公开数据快见底，往后只剩两条路。一条是<strong>合成数据</strong>，让强模型造出新数据喂下一代，比如 Tesla 的 FSD 用仿真造出暴雨夜驾、小孩突然冲上马路这类极端场景来练。另一条是<strong>专家精选数据</strong>，比如科学论文、专业的推理过程标注，或者请顶尖数学家出一套题库给模型学。</p>
-<p>到这里为止，所有打法都还在 LLM 这一条路上。但这条路对不对，本身就有人怀疑。Yann LeCun 长期质疑，模型逐字预测下一个词，学不到物理世界的规律。他主推的 <strong>JEPA</strong> 让模型去预测视频里被遮住部分的高层含义("这是个球，正在落地")，而不是逐像素还原。<strong>神经符号(Neuro-symbolic)</strong> 则想把神经网络的模糊感知和符号系统的严格推理接起来。这些都是在 LLM 之外另起的路线，胜负未分。</p>
-<p>还有一件事和能力同样要紧。把越来越多的决策交给模型之前，得先看得懂它、也管得住它。2026 年 2 月的中东战事里，Claude 把伊朗的一所小学误标成军火库，导致美军误炸，156 条无辜生命遇难。同类的还有越狱攻击、ChatGPT 写法律文书时引用根本不存在的判例被法庭处罚。<strong>AI 安全</strong>就是给模型划一条可控的行为边界，比如 Anthropic 的<strong>宪法 AI</strong>(Constitutional AI)让模型按一组原则边生成边自检。<strong>可解释性</strong>则要搞清楚模型内部到底在做什么，人类其实至今都没有理解 LLM 为什么能这么厉害。输入在模型内部的每一次乘法加法到底意味着什么，我们至今没有完全弄明白，LLM 对人类来说还是一个黑盒。但还是有一些计算意图能被识别，比如稀疏自编码器(SAE)能从大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。</p>
-<p>最后说说格局。前沿大模型的训练已经被大厂垄断。表面看是钱，单次训练 1 亿美元起步。但更硬的壁垒是数据和算力。开放互联网的数据大家都能用，可 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类<strong>高质量私有数据</strong>只有它们自己有，这才决定模型在真实任务上的天花板。算力也一样，一个顶级大模型要万卡级的数据中心，背后是电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有因此被边缘化，反而和工业界形成一种<strong>对称依赖</strong>。大厂把训好的底座开源放出来，比如 Llama、DeepSeek。学术界拿去做后训练、推理优化、可解释性研究，再反哺工业。Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作后来都被大厂的推理引擎采用。学术界真正的机会，不在跟大厂拼规模，而在那些能让所有模型都用得更好的算法、系统和数据方法上。</p>
+<p>算法和系统再使劲，<u>模型到底学成什么样，归根到底由数据定</u>。GPT-4、Llama 3 这个量级，训练数据在 10 到 15 万亿词(token)，差不多把开放互联网上的高质量内容啃了一遍。如今公开数据快见底，往后只剩两条路。一条是<strong>合成数据</strong>，让强模型造出新数据喂下一代，比如 Tesla 的 FSD 用仿真造出暴雨夜驾、小孩突然冲上马路这类极端场景来练。另一条是<strong>专家精选数据</strong>，比如科学论文、专业的推理过程标注，或者请顶尖数学家出一套题库给模型学。</p>
+<p>到这里为止，所有打法都还在 LLM 这一条路上。但这条路对不对，本身就有人怀疑。Yann LeCun 长期质疑，模型逐字预测下一个词，学不到物理世界的规律。他主推的 <strong>JEPA</strong>（Joint-Embedding Predictive Architecture，联合嵌入预测架构）让模型去预测视频里被遮住部分的高层含义("这是个球，正在落地")，而不是逐像素还原。<strong>神经符号</strong>（Neuro-symbolic）则想把神经网络的模糊感知和符号系统的严格推理接起来。这些都是在 LLM 之外另起的路线，胜负未分。</p>
+<p>还有一件事和能力同样要紧。把越来越多的决策交给模型之前，得先看得懂它、也管得住它。2026 年 2 月的中东战事里，Claude 把伊朗的一所小学误标成军火库，导致美军误炸，156 条无辜生命遇难。同类的还有越狱攻击、ChatGPT 写法律文书时引用根本不存在的判例被法庭处罚。<strong>AI 安全</strong>就是给模型划一条可控的行为边界，比如 Anthropic 的<strong>宪法 AI</strong>(Constitutional AI)让模型按一组原则边生成边自检。<strong>可解释性</strong>则要搞清楚模型内部到底在做什么，人类其实至今都没有理解 LLM 为什么能这么厉害。输入在模型内部的每一次乘法加法到底意味着什么，我们至今没有完全弄明白，LLM 对人类来说还是一个黑盒。但还是有一些计算意图能被识别，比如稀疏自编码器（Sparse Autoencoder, SAE）能从大模型的中间表征里识别出"概念神经元"，某个神经元的激活恰好对应"金门大桥"或"代码里的 bug"。</p>
+<p>最后说说格局。前沿大模型的训练已经被大厂垄断。表面看是钱，单次训练 1 亿美元起步。但更硬的壁垒是数据和算力。开放互联网的数据大家都能用，可 Google 的搜索行为、Meta 的社交内容、字节的视频互动这类高质量私有数据只有它们自己有，这才决定模型在真实任务上的天花板。算力也一样，一个顶级大模型要万卡级的数据中心，背后是电力、液冷、高速互联，学校募几十亿也建不起来。但学术界并没有因此被边缘化，反而和工业界形成一种对称依赖。大厂把训好的底座开源放出来，比如 Llama、DeepSeek。学术界拿去做后训练、推理优化、可解释性研究，再反哺工业。Flash Attention 出自 Stanford，vLLM 出自 UC Berkeley，AWQ 出自 MIT，这些工作后来都被大厂的推理引擎采用。学术界真正的机会，不在跟大厂拼规模，而在那些能让所有模型都用得更好的算法、系统和数据方法上。</p>
 <h3 id="_2">核心研究问题</h3>
 <ul>
 <li><strong>模型架构与数据效率</strong>：纯堆参数已撞墙，MoE 把参数规模和算力解耦但路由与稀疏激活没解，高质量语料快训光、合成数据怕退化，新架构和数据工程要一起往前推。</li>
