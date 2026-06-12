@@ -217,4 +217,3 @@ def on_page_context(context, *, page, config, nav):
     if page.meta.get("comments") is None:
         page.meta["comments"] = True
     return context
-    return _orig_on_post_build(config, **kwargs)
