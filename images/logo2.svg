@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230" width="400" height="460">
+  <defs>
+    <style>
+      .pin-bg { fill: #1A9C8E; }
+      .chip-die { fill: #0D3692; }
+      .chip-pad { fill: rgba(255,255,255,0.85); }
+      .chip-inner-border { fill: none; stroke: rgba(255,255,255,0.3); stroke-width: 1.5; }
+      .chip-dot { fill: rgba(255,255,255,0.9); }
+      .chip-text { fill: #ffffff; }
+    </style>
+  </defs>
+  <!-- Map pin: rounded-square top + downward triangle -->
+  <path d="M 32,8 Q 20,8 20,20 L 20,170 L 100,226 L 180,170 L 180,20 Q 180,8 168,8 Z" class="pin-bg"/>
+  <!-- IC package pin pads (white on teal background) -->
+  <g class="chip-pad">
+    <rect x="70" y="43" width="12" height="15" rx="3"/>
+    <rect x="118" y="43" width="12" height="15" rx="3"/>
+    <rect x="70" y="122" width="12" height="15" rx="3"/>
+    <rect x="118" y="122" width="12" height="15" rx="3"/>
+    <rect x="53" y="60" width="15" height="12" rx="3"/>
+    <rect x="53" y="108" width="15" height="12" rx="3"/>
+    <rect x="132" y="60" width="15" height="12" rx="3"/>
+    <rect x="132" y="108" width="15" height="12" rx="3"/>
+  </g>
+  <!-- Chip die body -->
+  <rect x="65" y="55" width="70" height="70" class="chip-die" rx="8"/>
+  <!-- Inner decorative border -->
+  <rect x="71" y="61" width="58" height="58" class="chip-inner-border" rx="5"/>
+  <!-- Pin 1 indicator dot -->
+  <circle cx="79" cy="69" r="3.5" class="chip-dot"/>
+  <!-- IC text -->
+  <text x="100" y="102" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" class="chip-text" text-anchor="middle" letter-spacing="1">IC</text>
+</svg>
