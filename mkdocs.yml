@@ -27,6 +27,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - navigation.expand
     - content.code.annotate
     - content.tooltips
     - toc.follow
