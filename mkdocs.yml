@@ -15,6 +15,7 @@ theme:
   static_templates:
     - 404.html
   favicon: images/favicon.ico
+  logo: images/logo.svg
   apple-touch-icon-precomposed: images/mobile_icon.png
   include_search_page: false
   search_index_only: true

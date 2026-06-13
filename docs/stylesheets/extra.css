@@ -2746,3 +2746,51 @@ body.pf-noscroll { overflow: hidden !important; }
     overflow: visible !important;
   }
 }
+
+/* ⑤ 移动端导航抽屉：深色背景统一化
+   抽屉顶部 header 已用 primary 色（#06091A，接近纯黑）；
+   把抽屉主体也改为深海军蓝，形成整体；
+   同时移除激活项的渐变卡片，改为左边框高亮。 */
+@media screen and (max-width: 76.1875em) {
+  [data-md-color-scheme="default"] .md-sidebar--primary,
+  [data-md-color-scheme="default"] .md-sidebar--primary .md-sidebar__inner {
+    background: #0d1428 !important;
+  }
+  [data-md-color-scheme="default"] .md-nav--primary,
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav {
+    background: transparent !important;
+  }
+
+  /* 所有导航链接：浅色文字 */
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link,
+  [data-md-color-scheme="default"] .md-nav--primary label.md-nav__link,
+  [data-md-color-scheme="default"] .md-nav--primary a.md-nav__link,
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__item > .md-nav__link,
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__item--section > .md-nav__link {
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
+
+  /* 激活项：左边框 + 高亮浅蓝，移除渐变卡片 */
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-radius: 0 !important;
+    border-left: 3px solid #7bb5ff !important;
+    color: #9ecbff !important;
+  }
+
+  /* 悬停：轻微增亮 */
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link:not(.md-nav__link--active):hover {
+    color: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+
+  /* 二级标题（← 返回按钮）适配深色背景 */
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
+  }
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title::before {
+    color: rgba(255, 255, 255, 0.60) !important;
+  }
+}
