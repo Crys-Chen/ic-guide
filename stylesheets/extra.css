@@ -1399,6 +1399,22 @@ body .md-typeset,
   font-family: "Noto Sans SC",sans-serif !important;
 }
 .df-lred { color: #032168; }
+
+/* 打字机光标 */
+.tw-cursor {
+  display: inline;
+  color: inherit;
+  font-weight: 800;
+  animation: tw-blink .75s step-end infinite;
+}
+.tw-cursor.tw-active {
+  animation: none;
+  opacity: 1;
+}
+@keyframes tw-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
 .df-ldeck {
   font-size: .88rem;
   color: rgba(10,7,6,.52);
