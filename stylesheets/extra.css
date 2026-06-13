@@ -2945,7 +2945,18 @@ body.pf-noscroll { overflow: hidden !important; }
   background: transparent !important;
   box-shadow: none !important;
   color: inherit !important;
-  font-size: inherit !important;
+  font-size: 1rem !important;
+}
+
+.md-typeset details.private-note p,
+.md-typeset details.private-note li {
+  font-size: 1rem !important;
+}
+
+.md-typeset details.private-note img {
+  max-width: 100% !important;
+  display: block !important;
+  margin: .8rem auto !important;
 }
 
 .md-typeset details.private-note > summary {
