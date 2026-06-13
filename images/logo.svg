@@ -1,33 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230" width="400" height="460">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+
   <defs>
+
     <style>
-      .pin-bg { fill: #1A9C8E; }
-      .chip-die { fill: #0D3692; }
-      .chip-pad { fill: rgba(255,255,255,0.85); }
-      .chip-inner-border { fill: none; stroke: rgba(255,255,255,0.3); stroke-width: 1.5; }
-      .chip-dot { fill: rgba(255,255,255,0.9); }
-      .chip-text { fill: #ffffff; }
+
+      .bg-blue { fill: #0D3692; }
+
+      .bg-light-blue { fill: #144CC7; }
+
+      .bg-dark-blue { fill: #08215C; }
+
+      .bg-light-red { fill: #D42B2B; }
+
+      .bg-dark-red { fill: #8B1A1A; }
+
+      .stroke-blue { stroke: #0D3692; }
+
+      .bg-teal { fill: #1A9C8E; }
+
+      .stroke-teal { stroke: #1A9C8E; }
+
     </style>
+
   </defs>
-  <!-- Map pin: rounded-square top + downward triangle -->
-  <path d="M 32,8 Q 20,8 20,20 L 20,170 L 100,226 L 180,170 L 180,20 Q 180,8 168,8 Z" class="pin-bg"/>
-  <!-- IC package pin pads (white on teal background) -->
-  <g class="chip-pad">
-    <rect x="70" y="43" width="12" height="15" rx="3"/>
-    <rect x="118" y="43" width="12" height="15" rx="3"/>
-    <rect x="70" y="122" width="12" height="15" rx="3"/>
-    <rect x="118" y="122" width="12" height="15" rx="3"/>
-    <rect x="53" y="60" width="15" height="12" rx="3"/>
-    <rect x="53" y="108" width="15" height="12" rx="3"/>
-    <rect x="132" y="60" width="15" height="12" rx="3"/>
-    <rect x="132" y="108" width="15" height="12" rx="3"/>
+
+
+
+  <circle cx="100" cy="100" r="88" fill="none" class="stroke-teal" stroke-width="4"/>
+
+
+
+  <line x1="100" y1="12" x2="100" y2="26" class="stroke-teal" stroke-width="6" stroke-linecap="round"/>
+
+  <line x1="100" y1="188" x2="100" y2="174" class="stroke-teal" stroke-width="6" stroke-linecap="round"/>
+
+  <line x1="188" y1="100" x2="174" y2="100" class="stroke-teal" stroke-width="6" stroke-linecap="round"/>
+
+  <line x1="12" y1="100" x2="26" y2="100" class="stroke-teal" stroke-width="6" stroke-linecap="round"/>
+
+
+
+  <polygon points="170,30 113,113 30,170 100,100" class="bg-dark-red"/>
+
+  <polygon points="170,30 100,100 30,170 87,87" class="bg-light-red"/>
+
+
+
+  <g class="bg-teal">
+
+    <rect x="70" y="53" width="12" height="15" rx="3"/>
+
+    <rect x="118" y="53" width="12" height="15" rx="3"/>
+
+
+
+    <rect x="70" y="132" width="12" height="15" rx="3"/>
+
+    <rect x="118" y="132" width="12" height="15" rx="3"/>
+
+
+
+    <rect x="53" y="70" width="15" height="12" rx="3"/>
+
+    <rect x="53" y="118" width="15" height="12" rx="3"/>
+
+
+
+    <rect x="132" y="70" width="15" height="12" rx="3"/>
+
+    <rect x="132" y="118" width="15" height="12" rx="3"/>
+
   </g>
-  <!-- Chip die body -->
-  <rect x="65" y="55" width="70" height="70" class="chip-die" rx="8"/>
-  <!-- Inner decorative border -->
-  <rect x="71" y="61" width="58" height="58" class="chip-inner-border" rx="5"/>
-  <!-- Pin 1 indicator dot -->
-  <circle cx="79" cy="69" r="3.5" class="chip-dot"/>
-  <!-- IC text -->
-  <text x="100" y="102" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" class="chip-text" text-anchor="middle" letter-spacing="1">IC</text>
+
+
+
+  <rect x="65" y="65" width="70" height="70" class="bg-blue" rx="8"/>
+
+
+
+  <rect x="71" y="71" width="58" height="58" fill="none" class="stroke-teal" stroke-width="1.5" rx="5" opacity="0.8"/>
+
+
+
+  <circle cx="79" cy="79" r="3.5" class="bg-teal"/>
+
+
+
+  <text x="100" y="112" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="1">IC</text>
+
+
+
 </svg>
