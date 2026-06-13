@@ -2674,3 +2674,75 @@ body.pf-noscroll { overflow: hidden !important; }
 }
 [data-md-color-scheme="slate"] .vc-meta { color: rgba(226,226,232,.50) !important; }
 [data-md-color-scheme="default"] .vc-meta { color: rgba(10,7,6,.48) !important; }
+
+/* ══════════════════════════════════════════════════════════
+   移动端修复 (2026-06)
+   ══════════════════════════════════════════════════════════ */
+
+/* ① 导航抽屉被 header 遮挡
+   header 自定义了 z-index:10，Material 默认 drawer z-index:3 < 10，
+   把 drawer 和遮罩层提到 header 上方即可。 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    z-index: 12 !important;
+  }
+  [data-md-component="overlay"] {
+    z-index: 11 !important;
+  }
+}
+
+/* ② 专题社区页移动端边距过小
+   该页 hide: navigation/toc，内容铺满宽度；移动端补水平内边距。 */
+@media screen and (max-width: 59.9375em) {
+  .md-content__inner:has(.community-cards) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* ③ 搜索弹窗移动端显示区域过小
+   确保搜索模态框撑满可用视口高度，结果滚动区不受压缩。 */
+@media screen and (max-width: 59.9375em) {
+  .md-search__overlay {
+    display: none !important;
+  }
+  .md-search__inner {
+    position: fixed !important;
+    top: var(--md-header-height, 2.4rem) !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-height: calc(100dvh - var(--md-header-height, 2.4rem)) !important;
+    overflow: hidden !important;
+    z-index: 13 !important;
+  }
+  .md-search__form {
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+  .md-search__scrollwrap {
+    max-height: calc(100dvh - var(--md-header-height, 2.4rem) - 3rem) !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* ④ Mermaid 移动端节点文字出界
+   mermaid SVG 的 foreignObject 在某些移动端浏览器尺寸计算有误；
+   改为水平滚动容器 + SVG 保持原始尺寸，避免缩放导致文字被裁剪。 */
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .mermaid {
+    overflow-x: scroll !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch !important;
+    cursor: grab !important;
+  }
+  .md-typeset .mermaid svg {
+    min-width: max-content !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+  }
+  /* foreignObject 允许文字超出矩形边界而不被裁剪 */
+  .md-typeset .mermaid svg foreignObject {
+    overflow: visible !important;
+  }
+}
