@@ -7,20 +7,19 @@
   </defs>
   <!-- Shadow: rx:ry=52:17≈3:1, e≈0.945 -->
   <ellipse cx="100" cy="180" rx="52" ry="17" fill="#1A9C8E" fill-opacity="0.2" stroke="#1A9C8E" stroke-width="2.5"/>
-  <!-- Triangle: base overlaps die bottom by 2px to seal the joint -->
-  <polygon points="60,118 140,118 100,180" class="bg-blue"/>
-  <!-- 6 pads only (no bottom pads — bottom flows into triangle)
-       Width=10px (12.5% of die), extension=14px, at 1/4 and 3/4 of each edge -->
+  <!-- Unified die+triangle path: top corners rounded (rx=10), bottom corners square → triangle tip -->
+  <path d="M 70,40 Q 60,40 60,50 L 60,120 L 100,180 L 140,120 L 140,50 Q 140,40 130,40 Z" class="bg-blue"/>
+  <!-- 8 pads: top/bottom/left/right, width=10px, extension=14px, at 1/4 and 3/4 of each edge -->
   <g class="bg-teal">
     <rect x="75" y="26" width="10" height="14" rx="2"/>
     <rect x="115" y="26" width="10" height="14" rx="2"/>
+    <rect x="75" y="120" width="10" height="14" rx="2"/>
+    <rect x="115" y="120" width="10" height="14" rx="2"/>
     <rect x="46" y="55" width="14" height="10" rx="2"/>
     <rect x="46" y="95" width="14" height="10" rx="2"/>
     <rect x="140" y="55" width="14" height="10" rx="2"/>
     <rect x="140" y="95" width="14" height="10" rx="2"/>
   </g>
-  <!-- Chip die: 80×80 -->
-  <rect x="60" y="40" width="80" height="80" class="bg-blue" rx="10"/>
   <!-- Inner border -->
   <rect x="67" y="47" width="66" height="66" fill="none" stroke="#1A9C8E" stroke-width="1.5" rx="7" opacity="0.8"/>
   <!-- Pin 1 dot -->
