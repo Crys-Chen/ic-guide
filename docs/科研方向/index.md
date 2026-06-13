@@ -128,7 +128,7 @@ hide:
   <text x="246" y="522" text-anchor="start" font-size="10.5" fill="#475569">数字 / 模拟 交叉</text>
 </svg></div>
 
-<div class=”admonition abstract”><p class=”admonition-title”>本文涉及的 17 个科研方向（按出现顺序，括注首次介绍的章节）</p><ol>
+<details class=”admonition abstract”><summary class=”admonition-title”>本文涉及的 17 个科研方向（按出现顺序，括注首次介绍的章节）</summary><ol>
 <li><a href=”#dir-1”>半导体器件与先进工艺</a>（第 3 章）</li>
 <li><a href=”#dir-2”>EDA 与设计自动化</a>（第 3 章）</li>
 <li><a href=”#dir-3”>光电子与硅光集成</a>（第 4 章）</li>
@@ -146,7 +146,7 @@ hide:
 <li><a href=”#dir-15”>具身智能</a>（第 6 章）</li>
 <li><a href=”#dir-16”>类脑芯片</a>（第 6 章）</li>
 <li><a href=”#dir-17”>量子计算与量子芯片</a>（第 6 章）</li>
-</ol></div>
+</ol></details>
 
 ---
 
