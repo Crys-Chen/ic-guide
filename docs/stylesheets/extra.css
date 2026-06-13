@@ -38,6 +38,11 @@
   padding-bottom: .6rem;
 }
 
+.md-logo img, .md-logo svg {
+  height: 2rem !important;
+  width: auto !important;
+}
+
 /* ─── Tabs 行：铺满全宽 + 统一背景 ─────────────────────── */
 [data-md-color-scheme="default"] .md-tabs {
   background: #ffffff !important;
