@@ -1005,17 +1005,25 @@ body .md-typeset,
     border-top: 1px solid rgba(0, 0, 0, .07) !important;
   }
 
-  /* 6. 二级条目：左缩进 */
+  /* 6. 二级条目：轻微缩进 */
   .md-nav--primary .md-nav .md-nav__link {
-    padding-left: 1rem !important;
+    padding-left: .6rem !important;
     font-size: .9rem !important;
   }
 
   /* 7. 三级条目：再缩进 + 字号略小 + 灰色 */
   .md-nav--primary .md-nav .md-nav .md-nav__link {
-    padding-left: 2rem !important;
+    padding-left: 1.1rem !important;
     font-size: .83rem !important;
     color: rgba(0, 0, 0, .65) !important;
+  }
+
+  /* 8. 展开图标旋转：展开时顺时针 90° */
+  .md-nav--primary label.md-nav__link .md-nav__icon {
+    transition: transform 260ms cubic-bezier(.4, 0, .2, 1) !important;
+  }
+  .md-nav--primary .md-nav__toggle:checked ~ label.md-nav__link .md-nav__icon {
+    transform: rotate(90deg) !important;
   }
 }
 
