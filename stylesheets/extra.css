@@ -969,8 +969,9 @@ body .md-typeset,
     font-weight: 700 !important;
   }
 
-  /* 移动端：二级 nav 标题（← 返回）— 排除 md-nav--lifted（会出现在列表中间） */
-  .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title {
+  /* 移动端：二级 nav 标题（← 返回）只在 drill-down 模式（md-nav--lifted 在 primary 上）才显示；
+     navigation.expand 模式下 primary 不带 md-nav--lifted，全部隐藏，避免空白标题条铺满屏幕。 */
+  .md-nav--primary.md-nav--lifted .md-nav .md-nav__title {
     display: flex !important;
     align-items: center;
     background: var(--md-default-bg-color) !important;
@@ -981,9 +982,13 @@ body .md-typeset,
     border-bottom: 1px solid rgba(3,33,104,.10) !important;
     cursor: pointer;
   }
-  .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title::before {
+  .md-nav--primary.md-nav--lifted .md-nav .md-nav__title::before {
     color: #032168 !important;
     font-weight: 900 !important;
+  }
+  /* expand 模式：primary 上没有 md-nav--lifted，sub-nav 标题（back button）不需要，隐藏 */
+  .md-nav--primary:not(.md-nav--lifted) .md-nav .md-nav__title {
+    display: none !important;
   }
 }
 
@@ -2784,13 +2789,13 @@ body.pf-noscroll { overflow: hidden !important; }
     background: rgba(255, 255, 255, 0.05) !important;
   }
 
-  /* 二级标题（← 返回按钮）适配深色背景 */
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title {
+  /* 二级标题（← 返回按钮）仅在 drill-down 模式下出现，深色背景适配 */
+  [data-md-color-scheme="default"] .md-nav--primary.md-nav--lifted .md-nav .md-nav__title {
     background: rgba(255, 255, 255, 0.05) !important;
     color: rgba(255, 255, 255, 0.87) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
   }
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav:not(.md-nav--lifted) .md-nav__title::before {
+  [data-md-color-scheme="default"] .md-nav--primary.md-nav--lifted .md-nav .md-nav__title::before {
     color: rgba(255, 255, 255, 0.60) !important;
   }
 }
