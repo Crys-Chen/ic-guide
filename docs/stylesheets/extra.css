@@ -2737,37 +2737,82 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* 5b. 手风琴折叠展开：覆盖 Material 的左右平移 drill-down 效果
-   原理：
-   · 父导航带 md-nav--lifted 时本来会向左 translateX(-100%) 消失 → 强制不动
-   · 子 .md-nav 本来是 position:absolute + translateX(100%) 在视口右侧 → 改为
-     静态定位 + max-height:0 折叠，选中后就地展开
-   · 子 nav 标题（← 返回按钮）在手风琴模式无意义，统一隐藏 */
+/* 5b. 移动端浮动 TOC 面板
+   Material 在移动端隐藏 .md-sidebar--secondary；
+   改为固定定位的小面板，点击右下角按钮展开/收起。 */
 @media screen and (max-width: 76.1875em) {
-  /* 父导航不再滑出 */
-  .md-nav--primary.md-nav--lifted {
-    transform: none !important;
+  /* TOC 面板 */
+  .md-sidebar--secondary {
+    position: fixed !important;
+    bottom: 5rem !important;
+    right: 1rem !important;
+    left: auto !important;
+    top: auto !important;
+    width: 260px !important;
+    max-width: calc(100vw - 2rem) !important;
+    max-height: 55vh !important;
+    background: var(--md-default-bg-color) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .18) !important;
+    z-index: 50 !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transform: translateY(6px) !important;
+    pointer-events: none !important;
+    transition: opacity .18s, transform .18s, visibility .18s !important;
   }
-
-  /* 子导航：静态定位 + 高度折叠 */
-  .md-nav--primary .md-nav {
-    position: static !important;
-    transform: none !important;
+  .md-sidebar--secondary.toc-open {
+    visibility: visible !important;
     opacity: 1 !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
-    transition: max-height .2s ease !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+  .md-sidebar--secondary .md-sidebar__inner {
+    position: static !important;
+    overflow-y: auto !important;
+    max-height: 55vh !important;
+    padding: 0.4rem 0 0.6rem !important;
+  }
+  /* TOC 内容字号 */
+  .md-sidebar--secondary .md-nav--secondary .md-nav__title {
+    font-size: .72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+    padding: .4rem .9rem .2rem !important;
+    color: var(--md-default-fg-color--light) !important;
+    display: block !important;
+  }
+  .md-sidebar--secondary .md-nav--secondary .md-nav__link {
+    font-size: .82rem !important;
+    line-height: 1.35 !important;
+    padding: .28rem .9rem !important;
   }
 
-  /* 展开时撑开高度 */
-  .md-nav--primary .md-nav__toggle:checked ~ .md-nav {
-    max-height: 60rem !important;
-    overflow: visible !important;
+  /* 浮动按钮 */
+  .toc-float-btn {
+    position: fixed !important;
+    bottom: 1.3rem !important;
+    right: 1rem !important;
+    width: 2.8rem !important;
+    height: 2.8rem !important;
+    border-radius: 50% !important;
+    background: #032168 !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 51 !important;
+    box-shadow: 0 2px 10px rgba(3, 33, 104, .35) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    transition: background .15s !important;
   }
-
-  /* 所有子 nav 标题（back button）在手风琴模式下不需要 */
-  .md-sidebar--primary .md-nav .md-nav__title {
-    display: none !important;
+  .toc-float-btn:hover,
+  .toc-float-btn[aria-expanded="true"] {
+    background: #1a48a8 !important;
   }
 }
 

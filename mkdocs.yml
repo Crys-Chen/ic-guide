@@ -343,6 +343,7 @@ extra_css:
   - stylesheets/pending.css
 
 extra_javascript:
+  - javascripts/toc_mobile.js
   - javascripts/likes.js
   - javascripts/prof-collapse.js
   - javascripts/orbit-galaxy.js
