@@ -5,22 +5,21 @@
       .bg-teal { fill: #1A9C8E; }
     </style>
   </defs>
-  <!-- Shadow ellipse: rx:ry=52:17≈3:1, eccentricity≈0.945, wider than pin head for perspective -->
+  <!-- Shadow: rx:ry=52:17≈3:1, e≈0.945 -->
   <ellipse cx="100" cy="180" rx="52" ry="17" fill="#1A9C8E" fill-opacity="0.2" stroke="#1A9C8E" stroke-width="2.5"/>
-  <!-- Triangle shaft: 60px tall, base=die width 80px, tip pierces ellipse center -->
-  <polygon points="60,120 140,120 100,180" class="bg-blue"/>
-  <!-- IC chip pads: rendered after triangle so bottom pads show at junction -->
+  <!-- Triangle: base overlaps die bottom by 2px to seal the joint -->
+  <polygon points="60,118 140,118 100,180" class="bg-blue"/>
+  <!-- 6 pads only (no bottom pads — bottom flows into triangle)
+       Width=10px (12.5% of die), extension=14px, at 1/4 and 3/4 of each edge -->
   <g class="bg-teal">
-    <rect x="76" y="24" width="14" height="16" rx="3"/>
-    <rect x="110" y="24" width="14" height="16" rx="3"/>
-    <rect x="76" y="120" width="14" height="16" rx="3"/>
-    <rect x="110" y="120" width="14" height="16" rx="3"/>
-    <rect x="44" y="56" width="16" height="14" rx="3"/>
-    <rect x="44" y="104" width="16" height="14" rx="3"/>
-    <rect x="140" y="56" width="16" height="14" rx="3"/>
-    <rect x="140" y="104" width="16" height="14" rx="3"/>
+    <rect x="75" y="26" width="10" height="14" rx="2"/>
+    <rect x="115" y="26" width="10" height="14" rx="2"/>
+    <rect x="46" y="55" width="14" height="10" rx="2"/>
+    <rect x="46" y="95" width="14" height="10" rx="2"/>
+    <rect x="140" y="55" width="14" height="10" rx="2"/>
+    <rect x="140" y="95" width="14" height="10" rx="2"/>
   </g>
-  <!-- Chip die: 80x80, unified dark-blue body with triangle -->
+  <!-- Chip die: 80×80 -->
   <rect x="60" y="40" width="80" height="80" class="bg-blue" rx="10"/>
   <!-- Inner border -->
   <rect x="67" y="47" width="66" height="66" fill="none" stroke="#1A9C8E" stroke-width="1.5" rx="7" opacity="0.8"/>
