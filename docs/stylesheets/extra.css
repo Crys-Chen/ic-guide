@@ -944,33 +944,79 @@ body .md-typeset,
   transform: scaleX(1.012) translateX(2px);
 }
 
-/* ─── 移动端导航抽屉：条目字号和行高 ────────────────────── */
+/* ─── 移动端导航：手风琴模式（取代 drill-down） ─────────── */
 @media screen and (max-width: 76.25em) {
-  /* 统一 <a> 和 <label> 两种 nav__link 的字体、颜色、不透明度
-     navigation.tabs 对 section label 施加了灰色 + 较小字号 */
+
+  /* 1. 取消 drill-down 的横向平移变换 */
+  .md-nav--primary,
+  .md-nav--primary.md-nav--lifted {
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  /* 2. 子导航：脱离绝对定位，改为正常流 + max-height 折叠 */
+  .md-nav--primary .md-nav {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 260ms cubic-bezier(.4, 0, .2, 1) !important;
+  }
+  /* toggle 选中时展开 */
+  .md-nav--primary .md-nav__toggle:checked ~ .md-nav {
+    max-height: 60rem !important;
+  }
+
+  /* 3. 隐藏"← 返回 X"标题条（手风琴不需要层级回退） */
+  .md-sidebar--primary .md-nav .md-nav__title {
+    display: none !important;
+  }
+
+  /* 4. 统一条目字体：覆盖 navigation.tabs 施加的小字/灰色 */
   .md-nav--primary .md-nav__link,
   .md-nav--primary label.md-nav__link,
   .md-nav--primary a.md-nav__link,
   .md-nav--primary .md-nav__item > .md-nav__link,
   .md-nav--primary .md-nav__item--section > .md-nav__link {
-    font-size: .95rem !important;
+    font-size: .93rem !important;
     font-weight: 500 !important;
     line-height: 1.4 !important;
-    padding-top: .28rem !important;
-    padding-bottom: .28rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
     color: var(--md-typeset-color) !important;
     opacity: 1 !important;
     letter-spacing: 0 !important;
     text-transform: none !important;
   }
-  /* 移动端激活项：不标注当前页，与普通条目同色同粗细 */
-  .md-nav--primary .md-nav__link--active {
-    color: var(--md-typeset-color) !important;
-    font-weight: 500 !important;
+
+  /* 5. 一级 section 标签：分割线 + 小字灰色（视觉层级锚点） */
+  .md-nav--primary > .md-nav__list > .md-nav__item > label.md-nav__link {
+    font-size: .72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+    color: rgba(0, 0, 0, .38) !important;
+    padding-top: .8rem !important;
+    padding-bottom: .55rem !important;
+    border-top: 1px solid rgba(0, 0, 0, .07) !important;
   }
 
-  /* 手风琴模式：sub-nav 标题（← 返回按钮）不再需要，统一隐藏
-     （在 5b 中已用更高优先级规则覆盖，此处保留以防桌面端回退） */
+  /* 6. 二级条目：左缩进 */
+  .md-nav--primary .md-nav .md-nav__link {
+    padding-left: 1rem !important;
+    font-size: .9rem !important;
+  }
+
+  /* 7. 三级条目：再缩进 + 字号略小 + 灰色 */
+  .md-nav--primary .md-nav .md-nav .md-nav__link {
+    padding-left: 2rem !important;
+    font-size: .83rem !important;
+    color: rgba(0, 0, 0, .65) !important;
+  }
 }
 
 /* ─── 桌面端：修复 navigation.indexes 导致 nav 标题与首项重叠 ── */
@@ -2725,15 +2771,15 @@ body.pf-noscroll { overflow: hidden !important; }
 
 /* ⑤ 移动端：激活项去卡片化 + 导航折叠手风琴 + 图片居中 */
 
-/* 5a. 激活项：移动端完全去掉当前页高亮（背景/边框/颜色全部还原） */
+/* 5a. 激活项：移动端轻量标注（仅深蓝色 + 加粗，无背景/边框） */
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__link--active,
   [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
+    color: #032168 !important;
+    font-weight: 600 !important;
     background: none !important;
     border-left: none !important;
     border-radius: 0 !important;
-    color: var(--md-typeset-color) !important;
-    font-weight: 500 !important;
   }
 }
 
