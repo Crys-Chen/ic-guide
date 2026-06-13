@@ -2743,6 +2743,7 @@ body.pf-noscroll { overflow: hidden !important; }
 @media screen and (max-width: 76.1875em) {
   /* TOC 面板 */
   .md-sidebar--secondary {
+    display: block !important;        /* 覆盖 Material 的 display:none */
     position: fixed !important;
     bottom: 5rem !important;
     right: 1rem !important;
