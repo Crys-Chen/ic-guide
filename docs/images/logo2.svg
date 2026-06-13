@@ -25,5 +25,5 @@
   <!-- Pin 1 dot -->
   <circle cx="74" cy="54" r="4.5" class="bg-teal"/>
   <!-- IC text -->
-  <text x="100" y="96" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="38" fill="#ffffff" text-anchor="middle" letter-spacing="2">IC</text>
+  <text x="100" y="96" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle" letter-spacing="2">IC</text>
 </svg>
