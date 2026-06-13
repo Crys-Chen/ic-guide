@@ -2005,6 +2005,31 @@ body .md-typeset,
     border-color: rgba(102,114,245,.30);
     color: #A78BFA !important;
   }
+
+  /* 科研方向细分页：移动端调整浮动按钮 */
+  /* 巡礼按钮隐藏 */
+  .rg-dir-back {
+    display: none !important;
+  }
+  /* 随机按钮：移到左下角返回键正上方，纯图标圆形 */
+  .rg-dir-nav {
+    bottom: calc(1.5rem + 44px + .6rem) !important;
+    left: 1.5rem !important;
+    right: auto !important;
+  }
+  .rg-dir-random {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+  }
+  .rg-dir-random .rg-dir-label {
+    display: none !important;
+  }
+  .rg-dir-random .rg-dir-icon {
+    font-size: 1.2rem !important;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
