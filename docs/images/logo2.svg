@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 265" width="400" height="530">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 235" width="400" height="470">
   <defs>
     <style>
       .bg-blue { fill: #0D3692; }
       .bg-teal { fill: #1A9C8E; }
     </style>
   </defs>
-  <!-- Ground shadow -->
-  <ellipse cx="100" cy="248" rx="45" ry="12" fill="#1A9C8E" fill-opacity="0.25" stroke="#1A9C8E" stroke-width="2"/>
-  <!-- Pin pointer: base aligns exactly with die width, tall and pointy -->
-  <polygon points="65,115 135,115 100,235" class="bg-teal"/>
-  <!-- IC chip pads -->
+  <!-- Ground shadow ellipse: tip pierces center -->
+  <ellipse cx="100" cy="200" rx="62" ry="19" fill="#1A9C8E" fill-opacity="0.18" stroke="#1A9C8E" stroke-width="3"/>
+  <!-- Triangle shaft: same dark-blue as die, tip at ellipse center -->
+  <polygon points="65,107 135,107 100,200" class="bg-blue"/>
+  <!-- IC pads: rendered after triangle so bottom pads are not covered -->
   <g class="bg-teal">
-    <rect x="70" y="33" width="12" height="15" rx="3"/>
-    <rect x="118" y="33" width="12" height="15" rx="3"/>
-    <rect x="70" y="112" width="12" height="15" rx="3"/>
-    <rect x="118" y="112" width="12" height="15" rx="3"/>
-    <rect x="53" y="50" width="15" height="12" rx="3"/>
-    <rect x="53" y="98" width="15" height="12" rx="3"/>
-    <rect x="132" y="50" width="15" height="12" rx="3"/>
-    <rect x="132" y="98" width="15" height="12" rx="3"/>
+    <rect x="70" y="28" width="12" height="15" rx="3"/>
+    <rect x="118" y="28" width="12" height="15" rx="3"/>
+    <rect x="70" y="107" width="12" height="15" rx="3"/>
+    <rect x="118" y="107" width="12" height="15" rx="3"/>
+    <rect x="53" y="45" width="15" height="12" rx="3"/>
+    <rect x="53" y="93" width="15" height="12" rx="3"/>
+    <rect x="132" y="45" width="15" height="12" rx="3"/>
+    <rect x="132" y="93" width="15" height="12" rx="3"/>
   </g>
-  <!-- Chip die -->
-  <rect x="65" y="45" width="70" height="70" class="bg-blue" rx="8"/>
+  <!-- Chip die: same blue as triangle, forms unified pin body -->
+  <rect x="65" y="40" width="70" height="70" class="bg-blue" rx="8"/>
   <!-- Inner border -->
-  <rect x="71" y="51" width="58" height="58" fill="none" stroke="#1A9C8E" stroke-width="1.5" rx="5" opacity="0.8"/>
+  <rect x="71" y="46" width="58" height="58" fill="none" stroke="#1A9C8E" stroke-width="1.5" rx="5" opacity="0.8"/>
   <!-- Pin 1 dot -->
-  <circle cx="79" cy="59" r="3.5" class="bg-teal"/>
+  <circle cx="79" cy="54" r="3.5" class="bg-teal"/>
   <!-- IC text -->
-  <text x="100" y="92" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="1">IC</text>
+  <text x="100" y="87" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="1">IC</text>
 </svg>
