@@ -2705,27 +2705,17 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* ③ 搜索弹窗移动端显示区域过小
-   确保搜索模态框撑满可用视口高度，结果滚动区不受压缩。 */
+/* ③ 搜索弹窗移动端：扩大结果滚动区
+   不覆盖 Material 的定位动画（header.autohide 对 .md-header 施加
+   transform，position:fixed 子元素会相对该元素而非 viewport 定位，
+   造成搜索框变成小浮窗）。让 Material 自己的展开逻辑工作，
+   仅把结果区最大高度放开，并移除 Material 默认的高度上限。 */
 @media screen and (max-width: 59.9375em) {
-  .md-search__overlay {
-    display: none !important;
-  }
-  .md-search__inner {
-    position: fixed !important;
-    top: var(--md-header-height, 2.4rem) !important;
-    left: 0 !important;
-    width: 100% !important;
-    max-height: calc(100dvh - var(--md-header-height, 2.4rem)) !important;
-    overflow: hidden !important;
-    z-index: 13 !important;
-  }
-  .md-search__form {
-    width: 100% !important;
-    border-radius: 0 !important;
+  .md-search__output {
+    max-height: 70dvh !important;
   }
   .md-search__scrollwrap {
-    max-height: calc(100dvh - var(--md-header-height, 2.4rem) - 3rem) !important;
+    max-height: 68dvh !important;
     overflow-y: auto !important;
   }
 }
