@@ -2742,50 +2742,17 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* ⑤ 移动端导航抽屉：深色背景统一化
-   抽屉顶部 header 已用 primary 色（#06091A，接近纯黑）；
-   把抽屉主体也改为深海军蓝，形成整体；
-   同时移除激活项的渐变卡片，改为左边框高亮。 */
+/* ⑤ 移动端导航抽屉：激活项去卡片化
+   深色背景方案（白字在白底不可见）与 navigation.expand 有结构冲突，
+   放弃深色背景，保留 Material 默认白底深字，只去掉激活项的圆角渐变卡片。 */
 @media screen and (max-width: 76.1875em) {
-  [data-md-color-scheme="default"] .md-sidebar--primary,
-  [data-md-color-scheme="default"] .md-sidebar--primary .md-sidebar__inner {
-    background: #0d1428 !important;
-  }
-  [data-md-color-scheme="default"] .md-nav--primary,
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav {
-    background: transparent !important;
-  }
-
-  /* 所有导航链接：浅色文字 */
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link,
-  [data-md-color-scheme="default"] .md-nav--primary label.md-nav__link,
-  [data-md-color-scheme="default"] .md-nav--primary a.md-nav__link,
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav__item > .md-nav__link,
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav__item--section > .md-nav__link {
-    color: rgba(255, 255, 255, 0.75) !important;
-  }
-
-  /* 激活项：左边框 + 高亮浅蓝，移除渐变卡片 */
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
-    background: rgba(255, 255, 255, 0.07) !important;
+  /* 激活项：去掉圆角 → 渐变不再显示为浮卡；加左边框作视觉锚点 */
+  .md-nav--primary .md-nav__link--active {
     border-radius: 0 !important;
-    border-left: 3px solid #7bb5ff !important;
-    color: #9ecbff !important;
   }
-
-  /* 悬停：轻微增亮 */
-  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link:not(.md-nav__link--active):hover {
-    color: rgba(255, 255, 255, 0.95) !important;
-    background: rgba(255, 255, 255, 0.05) !important;
-  }
-
-  /* 二级标题（← 返回按钮）仅在 drill-down 模式下出现，深色背景适配 */
-  [data-md-color-scheme="default"] .md-nav--primary.md-nav--lifted .md-nav .md-nav__title {
-    background: rgba(255, 255, 255, 0.05) !important;
-    color: rgba(255, 255, 255, 0.87) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
-  }
-  [data-md-color-scheme="default"] .md-nav--primary.md-nav--lifted .md-nav .md-nav__title::before {
-    color: rgba(255, 255, 255, 0.60) !important;
+  [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
+    background: rgba(3, 33, 104, 0.07) !important;
+    border-left: 3px solid #032168 !important;
+    color: #032168 !important;
   }
 }
