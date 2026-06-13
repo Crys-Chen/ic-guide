@@ -2935,9 +2935,8 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* ─── 前言折叠私话框（"也许你的感受是对的"段落）────────── */
-.md-typeset details.private-note,
-details.private-note {
+/* ─── 前言折叠私话框（"致离开微电的你"） ────────────────── */
+.md-typeset details.private-note {
   border: none !important;
   border-left: 2px solid rgba(3,33,104,.2) !important;
   border-radius: 0 !important;
@@ -2945,50 +2944,58 @@ details.private-note {
   margin: 1.8rem 0 !important;
   background: transparent !important;
   box-shadow: none !important;
+  color: inherit !important;
+  font-size: inherit !important;
 }
 
-.md-typeset details.private-note summary,
-details.private-note summary {
-  list-style: none !important;
-  cursor: pointer;
+.md-typeset details.private-note > summary {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: .2rem 0 !important;
   color: rgba(3,33,104,.5) !important;
   font-size: .88rem !important;
-  letter-spacing: .04em;
-  padding: .2rem 0 !important;
-  user-select: none;
-  font-style: italic;
+  font-style: italic !important;
+  cursor: pointer !important;
   display: flex !important;
-  align-items: center;
-  gap: .4rem;
+  align-items: center !important;
+  gap: .4rem !important;
   margin: 0 !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
 }
 
-.md-typeset details.private-note summary::-webkit-details-marker,
-details.private-note summary::-webkit-details-marker { display: none !important; }
-
-.md-typeset details.private-note summary::before,
-details.private-note summary::before {
-  content: '▸';
-  font-style: normal;
-  font-size: .72rem;
-  transition: transform .2s ease;
-  display: inline-block;
-  flex-shrink: 0;
+/* 清除 pymdownx SVG 图标，换成纯文本箭头 */
+.md-typeset details.private-note > summary::before {
+  content: '▸' !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+  font-size: .72rem !important;
+  font-style: normal !important;
+  transition: transform .2s ease !important;
   color: rgba(3,33,104,.35) !important;
+  flex-shrink: 0 !important;
 }
 
-.md-typeset details.private-note[open] summary::before,
-details.private-note[open] summary::before {
-  transform: rotate(90deg);
+/* 清除 pymdownx 右侧展开箭头 */
+.md-typeset details.private-note > summary::after {
+  display: none !important;
 }
 
-.md-typeset details.private-note[open],
-details.private-note[open] {
+.md-typeset details.private-note[open] > summary::before {
+  transform: rotate(90deg) !important;
+}
+
+.md-typeset details.private-note[open] {
   border-left-color: rgba(3,33,104,.38) !important;
 }
 
-.md-typeset details.private-note[open] summary,
-details.private-note[open] summary {
+.md-typeset details.private-note[open] > summary {
   margin-bottom: 1rem !important;
   color: rgba(3,33,104,.7) !important;
 }
