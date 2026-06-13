@@ -349,6 +349,7 @@ extra_javascript:
   - javascripts/orbit-galaxy.js
   - javascripts/hero-scroll.js
   - javascripts/stock-quote.js
+  - javascripts/typewriter.js
   - javascripts/search-pagefind.js
   - https://cdn.jsdelivr.net/npm/markmap-autoloader@latest
 
