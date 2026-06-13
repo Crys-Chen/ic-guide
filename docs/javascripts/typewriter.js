@@ -7,8 +7,7 @@
   ];
 
   var TYPE_MS  = 68;   // ms per char while typing
-  var DEL_MS   = 28;   // ms per char while deleting (faster)
-  var PAUSE_MS = 2800; // pause after full phrase before deleting
+  var PAUSE_MS = 1800; // pause after full phrase before clearing
   var INIT_MS  = 400;  // delay before first character
 
   function run(h1) {
@@ -67,30 +66,12 @@
     }
 
     function deletePhrase() {
-      setActive(true);
-
-      function delLine2() {
-        if (!span2.textContent.length) {
-          br.style.display = 'none';
-          setTimeout(delLine1, DEL_MS);
-          return;
-        }
-        span2.textContent = span2.textContent.slice(0, -1);
-        setTimeout(delLine2, DEL_MS);
-      }
-
-      function delLine1() {
-        if (!span1.textContent.length) {
-          phraseIdx = (phraseIdx + 1) % PHRASES.length;
-          setActive(false);
-          setTimeout(typePhrase, 220);
-          return;
-        }
-        span1.textContent = span1.textContent.slice(0, -1);
-        setTimeout(delLine1, DEL_MS);
-      }
-
-      delLine2();
+      span1.textContent = '';
+      span2.textContent = '';
+      br.style.display = 'none';
+      phraseIdx = (phraseIdx + 1) % PHRASES.length;
+      setActive(false);
+      setTimeout(typePhrase, 220);
     }
 
     setTimeout(typePhrase, INIT_MS);

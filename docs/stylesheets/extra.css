@@ -1405,7 +1405,7 @@ body .md-typeset,
   display: inline;
   color: inherit;
   font-weight: 800;
-  animation: tw-blink .75s step-end infinite;
+  animation: tw-blink 1.4s step-end infinite;
 }
 .tw-cursor.tw-active {
   animation: none;
