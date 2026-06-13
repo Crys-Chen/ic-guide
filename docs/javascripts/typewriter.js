@@ -66,12 +66,22 @@
     }
 
     function deletePhrase() {
-      span1.textContent = '';
-      span2.textContent = '';
-      br.style.display = 'none';
-      phraseIdx = (phraseIdx + 1) % PHRASES.length;
+      /* 淡出 → 清空 → 淡入 → 开始打下一句 */
       setActive(false);
-      setTimeout(typePhrase, 220);
+      h1.style.transition = 'opacity 90ms ease';
+      h1.style.opacity = '0';
+      setTimeout(function () {
+        span1.textContent = '';
+        span2.textContent = '';
+        br.style.display = 'none';
+        phraseIdx = (phraseIdx + 1) % PHRASES.length;
+        h1.style.opacity = '1';
+        setTimeout(function () {
+          h1.style.transition = '';
+          setActive(true);
+          typePhrase();
+        }, 100);
+      }, 100);
     }
 
     setTimeout(typePhrase, INIT_MS);
