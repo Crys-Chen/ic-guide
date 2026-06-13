@@ -963,10 +963,10 @@ body .md-typeset,
     letter-spacing: 0 !important;
     text-transform: none !important;
   }
-  /* 激活项保留主色高亮 */
+  /* 移动端激活项：不标注当前页，与普通条目同色同粗细 */
   .md-nav--primary .md-nav__link--active {
-    color: var(--md-primary-fg-color) !important;
-    font-weight: 700 !important;
+    color: var(--md-typeset-color) !important;
+    font-weight: 500 !important;
   }
 
   /* 手风琴模式：sub-nav 标题（← 返回按钮）不再需要，统一隐藏
@@ -2725,15 +2725,15 @@ body.pf-noscroll { overflow: hidden !important; }
 
 /* ⑤ 移动端：激活项去卡片化 + 导航折叠手风琴 + 图片居中 */
 
-/* 5a. 激活项：去掉圆角浮卡，改为左边框 */
+/* 5a. 激活项：移动端完全去掉当前页高亮（背景/边框/颜色全部还原） */
 @media screen and (max-width: 76.1875em) {
-  .md-nav--primary .md-nav__link--active {
-    border-radius: 0 !important;
-  }
+  .md-nav--primary .md-nav__link--active,
   [data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
-    background: rgba(3, 33, 104, 0.07) !important;
-    border-left: 3px solid #032168 !important;
-    color: #032168 !important;
+    background: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    color: var(--md-typeset-color) !important;
+    font-weight: 500 !important;
   }
 }
 
