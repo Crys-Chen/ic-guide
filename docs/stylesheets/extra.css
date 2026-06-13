@@ -2771,15 +2771,20 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* 5c. 移动端图片居中：text-indent:2em 会把 inline 图片往右推
-   改为 block 元素，auto 边距居中 */
+/* 5c. 移动端图片/SVG 居中：text-indent:2em 会把 inline 元素往右推。
+   根本原因：Python-Markdown 不把 <svg> 识别为块级元素，会把它包进 <p>，
+   导致 p 的 text-indent 生效。设为 display:block 可脱离行内格式上下文，
+   同时用 :has() 将父 <p> 的缩进清零（iOS 16+ 支持）。 */
 @media screen and (max-width: 59.9375em) {
-  .md-typeset img:not([class]) {
+  .md-typeset img:not([class]),
+  .md-typeset p > svg {
     display: block !important;
+    max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
-  .md-typeset p:has(img) {
+  .md-typeset p:has(img),
+  .md-typeset p:has(> svg) {
     text-indent: 0 !important;
   }
 }
