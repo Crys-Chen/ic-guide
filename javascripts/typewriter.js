@@ -80,7 +80,7 @@
           h1.style.transition = '';
           setActive(true);
           typePhrase();
-        }, 100);
+        }, 500);
       }, 100);
     }
 
