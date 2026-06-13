@@ -956,8 +956,8 @@ body .md-typeset,
     font-size: .95rem !important;
     font-weight: 500 !important;
     line-height: 1.4 !important;
-    padding-top: .55rem !important;
-    padding-bottom: .55rem !important;
+    padding-top: .28rem !important;
+    padding-bottom: .28rem !important;
     color: var(--md-typeset-color) !important;
     opacity: 1 !important;
     letter-spacing: 0 !important;
@@ -969,27 +969,8 @@ body .md-typeset,
     font-weight: 700 !important;
   }
 
-  /* 移动端：二级 nav 标题（← 返回）只在 drill-down 模式（md-nav--lifted 在 primary 上）才显示；
-     navigation.expand 模式下 primary 不带 md-nav--lifted，全部隐藏，避免空白标题条铺满屏幕。 */
-  .md-nav--primary.md-nav--lifted .md-nav .md-nav__title {
-    display: flex !important;
-    align-items: center;
-    background: var(--md-default-bg-color) !important;
-    color: #032168 !important;
-    font-weight: 700 !important;
-    font-size: .88rem !important;
-    padding: .75rem 1rem .75rem .8rem !important;
-    border-bottom: 1px solid rgba(3,33,104,.10) !important;
-    cursor: pointer;
-  }
-  .md-nav--primary.md-nav--lifted .md-nav .md-nav__title::before {
-    color: #032168 !important;
-    font-weight: 900 !important;
-  }
-  /* expand 模式：primary 上没有 md-nav--lifted，sub-nav 标题（back button）不需要，隐藏 */
-  .md-nav--primary:not(.md-nav--lifted) .md-nav .md-nav__title {
-    display: none !important;
-  }
+  /* 手风琴模式：sub-nav 标题（← 返回按钮）不再需要，统一隐藏
+     （在 5b 中已用更高优先级规则覆盖，此处保留以防桌面端回退） */
 }
 
 /* ─── 桌面端：修复 navigation.indexes 导致 nav 标题与首项重叠 ── */
@@ -2742,11 +2723,10 @@ body.pf-noscroll { overflow: hidden !important; }
   }
 }
 
-/* ⑤ 移动端导航抽屉：激活项去卡片化
-   深色背景方案（白字在白底不可见）与 navigation.expand 有结构冲突，
-   放弃深色背景，保留 Material 默认白底深字，只去掉激活项的圆角渐变卡片。 */
+/* ⑤ 移动端：激活项去卡片化 + 导航折叠手风琴 + 图片居中 */
+
+/* 5a. 激活项：去掉圆角浮卡，改为左边框 */
 @media screen and (max-width: 76.1875em) {
-  /* 激活项：去掉圆角 → 渐变不再显示为浮卡；加左边框作视觉锚点 */
   .md-nav--primary .md-nav__link--active {
     border-radius: 0 !important;
   }
@@ -2754,5 +2734,52 @@ body.pf-noscroll { overflow: hidden !important; }
     background: rgba(3, 33, 104, 0.07) !important;
     border-left: 3px solid #032168 !important;
     color: #032168 !important;
+  }
+}
+
+/* 5b. 手风琴折叠展开：覆盖 Material 的左右平移 drill-down 效果
+   原理：
+   · 父导航带 md-nav--lifted 时本来会向左 translateX(-100%) 消失 → 强制不动
+   · 子 .md-nav 本来是 position:absolute + translateX(100%) 在视口右侧 → 改为
+     静态定位 + max-height:0 折叠，选中后就地展开
+   · 子 nav 标题（← 返回按钮）在手风琴模式无意义，统一隐藏 */
+@media screen and (max-width: 76.1875em) {
+  /* 父导航不再滑出 */
+  .md-nav--primary.md-nav--lifted {
+    transform: none !important;
+  }
+
+  /* 子导航：静态定位 + 高度折叠 */
+  .md-nav--primary .md-nav {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height .2s ease !important;
+  }
+
+  /* 展开时撑开高度 */
+  .md-nav--primary .md-nav__toggle:checked ~ .md-nav {
+    max-height: 60rem !important;
+    overflow: visible !important;
+  }
+
+  /* 所有子 nav 标题（back button）在手风琴模式下不需要 */
+  .md-sidebar--primary .md-nav .md-nav__title {
+    display: none !important;
+  }
+}
+
+/* 5c. 移动端图片居中：text-indent:2em 会把 inline 图片往右推
+   改为 block 元素，auto 边距居中 */
+@media screen and (max-width: 59.9375em) {
+  .md-typeset img:not([class]) {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .md-typeset p:has(img) {
+    text-indent: 0 !important;
   }
 }
