@@ -1461,8 +1461,9 @@ body .md-typeset,
   /* 收紧标题和正文区垂直空间，让 2×2 nav 完整落在首屏内 */
   .df-linner { padding: 1.1rem 1.4rem 1rem !important; }
   .df-lmark  { margin-bottom: .7rem !important; }
-  .df-lhl    { font-size: 2.2rem !important; margin-bottom: .9rem !important; }
-  .df-ldeck  { margin-bottom: 1.2rem !important; font-size: .84rem !important; }
+  .df-lhl    { font-size: 2.5rem !important; margin-bottom: .9rem !important; }
+  .df-ldeck  { margin-bottom: 1.2rem !important; font-size: .82rem !important; }
+  .df-lbp, .df-lbg-btn { font-size: .76rem !important; padding: .46em 1.1em !important; }
 }
 
 
