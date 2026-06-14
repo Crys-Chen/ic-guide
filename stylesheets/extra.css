@@ -1451,7 +1451,7 @@ body .md-typeset,
 
 @media (max-width: 760px) {
   .df-lhl { font-size: 2.6rem !important; }
-  .df-linner { padding: 1.5rem 0.9rem 2.5rem; }
+  .df-linner { padding: 1.5rem 0.6rem 2.5rem; }
   .df-dark { margin-top: -1.5rem; }
   .df-title { font-size: 2.4rem !important; }
   .df-light, .df-dark { opacity: 1 !important; }
@@ -1459,7 +1459,7 @@ body .md-typeset,
 
 @media (max-width: 660px) {
   /* 收紧标题和正文区垂直空间，让 2×2 nav 完整落在首屏内 */
-  .df-linner { padding: 1.1rem 0.9rem 1rem !important; }
+  .df-linner { padding: 1.1rem 0.6rem 1rem !important; }
   .df-lmark  { margin-bottom: .7rem !important; }
   .df-lhl    { font-size: 2.8rem !important; margin-bottom: .9rem !important; }
   .df-ldeck  { margin-bottom: 1.2rem !important; font-size: .82rem !important; }
@@ -1533,7 +1533,7 @@ body .md-typeset,
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
-  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .4rem 0.9rem .6rem; flex-direction: column; gap: 0; }
+  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .4rem 0.6rem .6rem; flex-direction: column; gap: 0; }
   .df-lnav-inner { display: grid; grid-template-columns: 1fr 1fr; border-left: none; border-top: 1px solid rgba(3,33,104,.14); }
   .df-lnc { padding: .7rem .9rem; border-bottom: 1px solid rgba(3,33,104,.10) !important; border-right: 1px solid rgba(3,33,104,.10); }
   .df-lnc:nth-child(2n) { border-right: none; }
@@ -1558,8 +1558,8 @@ body .md-typeset,
 }
 /* 移动端直接显示正文，不做 fixed-hero 效果 */
 @media (max-width: 767px) {
-  .df-below { opacity: 1 !important; pointer-events: auto !important; padding-left: 0.9rem !important; padding-right: 0.9rem !important; }
-  .md-content__inner { padding-left: 0.9rem !important; padding-right: 0.9rem !important; }
+  .df-below { opacity: 1 !important; pointer-events: auto !important; padding-left: 0.6rem !important; padding-right: 0.6rem !important; }
+  .md-content__inner { margin-left: 0.6rem !important; margin-right: 0.6rem !important; }
 }
 
 /* ════════════════════════════════════════════════════════
