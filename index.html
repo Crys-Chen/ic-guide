@@ -13437,6 +13437,7 @@
 
     subgraph APP[应用层：电路与EDA]
         direction TB
+        CB[电路分析基础]
         AE[模拟电子线路]
         ANA[模拟集成电路]
         RF[射频电路]
@@ -13450,10 +13451,11 @@
     CALC --&gt; SS
     CALC --&gt; OPT
     CALC --&gt; DSA
+    CALC --&gt; CB
     DISC --&gt; DSA
     DEV --&gt; AE
-    DEV --&gt; DIG
     SS --&gt; AE
+    CB --&gt; AE
     AE --&gt; ANA
     ANA --&gt; RF
     EM --&gt; RF
@@ -13468,7 +13470,7 @@
     classDef app fill:#F0FDF4,stroke:#16A34A,color:#14532D
     class CALC,DISC,PROB,QM,EM base
     class SP,DEV,SS,DSA,OPT bridge
-    class AE,ANA,RF,DIG,DICS,EDA app</code></pre>
+    class CB,AE,ANA,RF,DIG,DICS,EDA app</code></pre>
 </div>
 <p>在优质网课与大模型蔚然成风的当下，这件事终于今天有解了。尽管内地几百所高校或许凑不出一门令人满意的线性代数，但 MIT 早就将 <a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/MIT_18.06/">Gilbert Strang 教授的经典神课</a>公之于众；尽管集成电路的开源论坛远不如计算机领域活跃，但有了 AI 的加持，什么傻瓜问题都能得到耐心的解答。任何一条知识链，今天都可以用公开资源拼出来。</p>
 <p>「<a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>」所做的，便是把散落在各处的知识领域按承接关系组织起来，覆盖微电子相关的七大板块与 200 余门课程，力图将本专业的知识编织成一张细密的网。高年级同学可以按图索骥、查漏补缺；低年级同学也可以将其作为选课参考。</p>
