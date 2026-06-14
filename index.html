@@ -13419,11 +13419,11 @@
 <pre class="mermaid"><code>graph LR
     subgraph BASE[基础层：数学与物理]
         direction TB
-        CALC[微积分：线性代数]
+        CALC[微积分/线代]
         DISC[离散数学]
         PROB[概率论]
         QM[量子力学]
-        EM[电磁场与微波]
+        EM[电磁·微波]
     end
 
     subgraph BRIDGE[中间层：器件与算法]
@@ -13431,19 +13431,19 @@
         SP[半导体物理]
         DEV[半导体器件]
         SS[信号与系统]
-        DSA[数据结构与算法]
+        DSA[算法设计]
         OPT[凸优化]
     end
 
     subgraph APP[应用层：电路与EDA]
         direction TB
-        CB[电路分析基础]
-        AE[模拟电子线路]
-        ANA[模拟集成电路]
+        CB[电路基础]
+        AE[模拟电路]
+        ANA[模拟IC]
         RF[射频电路]
-        DIG[数字逻辑基础]
-        DICS[数字集成电路]
-        EDA[EDA：综合与布线]
+        DIG[数字逻辑]
+        DICS[数字IC]
+        EDA[EDA]
     end
 
     QM --&gt; SP

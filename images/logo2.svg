@@ -21,9 +21,9 @@
     <rect x="140" y="95" width="14" height="10" rx="2"/>
   </g>
   <!-- Inner border -->
-  <rect x="67" y="47" width="66" height="66" fill="none" stroke="#1A9C8E" stroke-width="1.5" rx="7" opacity="0.8"/>
+  <rect x="67" y="47" width="66" height="66" fill="#ffffff" stroke="#1A9C8E" stroke-width="1.5" rx="7" opacity="0.8"/>
   <!-- Pin 1 dot -->
   <circle cx="74" cy="54" r="4.5" class="bg-teal"/>
   <!-- IC text -->
-  <text x="102" y="96" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="41" fill="#ffffff" text-anchor="middle" letter-spacing="2">IC</text>
+  <text x="102" y="96" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="41" fill="#0D3692" text-anchor="middle" letter-spacing="2">IC</text>
 </svg>
