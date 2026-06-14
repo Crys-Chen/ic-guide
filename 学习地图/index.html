@@ -13305,13 +13305,14 @@
     DEV --&gt; CIR
     CS --&gt; SYS
     CS --&gt; AI
+    CIR --&gt; SYS
     SYS --&gt; AI
 
     classDef base fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
     classDef upper fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
     class MATH,PHY,CS base
     class DEV,CIR,SYS,AI upper</code></pre>
-<p>数学是除物理以外所有板块的共同基础。物理→器件与工艺→电路构成器件和模拟方向的纵向路径。算法编程→系统架构→人工智能构成数字和AI方向的纵向路径。</p>
+<p>数学是除物理以外所有板块的共同基础。物理→器件与工艺→电路构成器件和模拟方向的纵向路径。算法编程→系统架构→人工智能构成数字和AI方向的纵向路径。电路也是系统架构的前置，理解时序、总线、存储层次需要有数字电路的基础。</p>
 <h2 id="_4">芯片生产流程</h2>
 <p>下图展示数字 IC 从 RTL 设计到晶圆量产的完整链条，供理解各板块知识在工业流程中的位置参考。模拟/射频 IC 走原理图→版图→后仿路线，流程不同。</p>
 <pre class="mermaid"><code>graph TD
