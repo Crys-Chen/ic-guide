@@ -2945,11 +2945,11 @@ body.pf-noscroll { overflow: hidden !important; }
   background: transparent !important;
   box-shadow: none !important;
   color: inherit !important;
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 
 .md-typeset details.private-note p {
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
   text-indent: 2em !important;
 }
 
