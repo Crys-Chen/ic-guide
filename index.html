@@ -13418,33 +13418,55 @@
 <p>集成电路包罗万象，想要皓首穷经地把所有知识全盘吸收，既不可能也没必要。比起盲目追求知识的覆盖率，我们首先要保证的是<strong>知识的连续性</strong>。</p>
 <p>行业似乎并不需要一个既精通半导体物理、又能手写编译的人（这样的交叉人才能干嘛？），真正渴求的，是那些点满“半导体物理 + 半导体器件 + 集成电路工艺”技能树的器件专家，或是精通“数据结构与算法 + 编译原理 + 计算机体系结构”的架构人才。前者深耕物理底层，后者主攻系统架构。选定一个细分方向，以点带面地挖出一个坑，对其他方向则“但当涉猎，见往事耳”。这样既能既构筑起完备的知识体系，又能保证本科生应有的视野。</p>
 <p>我们以 <strong><a href="%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/AI%E7%AE%97%E6%B3%95%E4%B8%8E%E7%B3%BB%E7%BB%9F/">AI 算法与系统</a></strong> 为例，这个方向需要的知识体系大致如下：</p>
-<pre class="mermaid"><code>graph TB
-    AI[AI 算法与系统]
+<pre class="mermaid"><code>graph LR
+    AIS[AI 算法与系统]
 
-    subgraph CS[计算机]
-    DL[深度学习]
+    subgraph 数学
+    A[线性代数·矩阵分析]
+    P[概率与统计]
+    O[数值与优化]
+    end
+
+    subgraph 计算机·人工智能
+    PY[编程入门·Python]
     ML[机器学习]
-    CL[编译原理]
-    DS[数据结构与算法]
+    DL[深度学习]
+    RL[强化学习]
+    LLM[大语言模型]
     end
 
-    subgraph Math[数学]
-    DM[离散数学·图论]
-    P[概率论]
-    Matrix[矩阵分析]
-    Info[信息论]
-    end
-
-    subgraph IC[集成电路]
-    DC[数字集成电路设计]
-    CN[片上互连 NoC]
+    subgraph 系统架构·集成电路
+    SYS[计算机系统基础]
+    ARCH[体系结构]
     GPU[GPU 架构]
-    Mem[存储器]
+    COMP[编译原理]
     end
 
-    CS --&gt; AI
-    IC --&gt; AI
-    Math --&gt; AI</code></pre>
+    A --&gt; ML
+    P --&gt; ML
+    O --&gt; ML
+    PY --&gt; ML
+    PY --&gt; SYS
+    ML --&gt; DL
+    DL --&gt; RL
+    DL --&gt; LLM
+    DL --&gt; AIS
+    LLM --&gt; AIS
+    RL --&gt; AIS
+    SYS --&gt; ARCH
+    ARCH --&gt; GPU
+    ARCH --&gt; COMP
+    GPU --&gt; AIS
+    COMP --&gt; AIS
+
+    classDef math fill:#EBF4FF,stroke:#2C5282
+    classDef ai fill:#F0FDF4,stroke:#16A34A
+    classDef sys fill:#FFFBEB,stroke:#B7791F
+    classDef goal fill:#F1F5F9,stroke:#64748B,stroke-width:2px
+    class A,P,O math
+    class PY,ML,DL,RL,LLM ai
+    class SYS,ARCH,GPU,COMP sys
+    class AIS goal</code></pre>
 <p>这一方向是计算机与集成电路深度交叉的典型。在我就读时，没有任何一个本科专业能囊括它所需的全部基础。因此，对它感兴趣的同学，如果本科学的是集成电路，就必须自行补充 AI 相关知识；反之，如果本科学的是 AI 或计算机，就得自己去啃电路原理。</p>
 <p>面对这样快速迭代的学科，体制内的培养方案永远是后知后觉的。与其被动地等待，不如主动出击，上网寻找优质网课，把 AI 当作自己的专属助教。尽管内地几百所高校或许凑不出一门令人满意的线性代数，但 MIT 早就将 <a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/MIT_18.06/">Gilbert Strang 教授的经典神课</a>公之于众；尽管集成电路的开源论坛远不如计算机领域活跃，但如今有了 AI 的加持，什么傻瓜问题都能得到耐心的解答。</p>
 <p>本网站的「<a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>」板块，就是为了给现有的培养方案打补丁，把所有相关知识与课程都连接起来，构成一张连续的网。我们将各个细分方向所需的基础课程及相关优质资源进行了汇总，高年级同学可以按图索骥、查漏补缺；低年级同学也可以将其视为一份学习辅助文档或选课指南。自助者天助之。</p>
