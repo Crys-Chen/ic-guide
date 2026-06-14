@@ -2,11 +2,11 @@
   <defs>
     <style>
       .bg-blue { fill: #0D3692; }
-      .bg-teal { fill: #1A9C8E; }
+      .bg-teal { fill: #C9A84C; }
     </style>
   </defs>
   <!-- Shadow: rx:ry=58:21≈2.76:1, e≈0.93 — contact shadow anchoring the pin -->
-  <ellipse cx="100" cy="180" rx="88" ry="21" fill="#1A9C8E" fill-opacity="0.2" stroke="#1A9C8E" stroke-width="2.5"/>
+  <ellipse cx="100" cy="180" rx="88" ry="21" fill="#C9A84C" fill-opacity="0.2" stroke="#C9A84C" stroke-width="2.5"/>
   <!-- Unified die+triangle: top corners rounded (r=10), bottom corners curve smoothly into triangle -->
   <path d="M 70,40 Q 60,40 60,50 L 60,110 Q 60,120 66,128 L 100,180 L 134,128 Q 140,120 140,110 L 140,50 Q 140,40 130,40 Z" class="bg-blue"/>
   <!-- 8 pads: width=10px, extension=14px, at 1/4 and 3/4 of each edge -->
