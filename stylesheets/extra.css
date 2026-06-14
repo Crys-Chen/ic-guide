@@ -1457,6 +1457,14 @@ body .md-typeset,
   .df-light, .df-dark { opacity: 1 !important; }
 }
 
+@media (max-width: 660px) {
+  /* 收紧标题和正文区垂直空间，让 2×2 nav 完整落在首屏内 */
+  .df-linner { padding: 1.1rem 1.4rem 1rem !important; }
+  .df-lmark  { margin-bottom: .7rem !important; }
+  .df-lhl    { font-size: 2.2rem !important; margin-bottom: .9rem !important; }
+  .df-ldeck  { margin-bottom: 1.2rem !important; font-size: .84rem !important; }
+}
+
 
 /* Day mode: right nav column — editorial, unified with hero */
 [data-md-color-scheme="default"] .df-cards { display: none !important; }
@@ -1524,9 +1532,9 @@ body .md-typeset,
 
 @media (max-width: 660px) {
   .df-lwrap { flex-direction: column; min-height: unset; }
-  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .6rem 1.4rem 1rem; flex-direction: column; gap: 0; }
+  .df-lnav { flex: unset; border-left: none; border-top: 1px solid rgba(3,33,104,.08); padding: .4rem 1.4rem .6rem; flex-direction: column; gap: 0; }
   .df-lnav-inner { display: grid; grid-template-columns: 1fr 1fr; border-left: none; border-top: 1px solid rgba(3,33,104,.14); }
-  .df-lnc { padding: .9rem 1rem; border-bottom: 1px solid rgba(3,33,104,.10) !important; border-right: 1px solid rgba(3,33,104,.10); }
+  .df-lnc { padding: .7rem .9rem; border-bottom: 1px solid rgba(3,33,104,.10) !important; border-right: 1px solid rgba(3,33,104,.10); }
   .df-lnc:nth-child(2n) { border-right: none; }
   .df-lnc:nth-last-child(-n+2) { border-bottom: none !important; }
   .df-lnc-t   { font-size: 1rem !important; white-space: normal !important; }
