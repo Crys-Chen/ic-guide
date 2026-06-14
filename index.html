@@ -13415,45 +13415,60 @@
 <h3 id="_3">让知识回归连续</h3>
 <p>培养方案提供的只是节点，有哪些课，每门课几个学分。但节点之间的承接关系是隐形的。这门课需要哪些前置，那门课学完能通向哪里，需要我们自己去苦苦思索。这就是”碎而不广”的症结所在。</p>
 <p>几条不那么显眼的跨学科依赖：</p>
-<pre class="mermaid"><code>graph LR
-    subgraph MATH[“数学”]
-    GRAPH[图论]
-    OPT[最优化理论]
-    PROB[概率论]
+<pre class="mermaid"><code>graph TD
+    subgraph BASE[“基础层 · 数学与物理”]
+        direction LR
+        MA[“微积分 · 线性代数”]
+        MG[“图论 · 离散数学”]
+        MP[“概率论”]
+        QM[“量子力学”]
+        EM[“电磁场与微波”]
     end
 
-    subgraph CS[“计算机科学”]
-    COMP[编译原理]
-    ALGO[算法设计]
+    subgraph BRIDGE[“中间层 · 器件与算法”]
+        direction LR
+        SP[“半导体物理”]
+        DT[“晶体管模型”]
+        SS[“信号与系统”]
+        DSA[“数据结构与算法”]
+        OPT[“最优化理论”]
     end
 
-    subgraph PHY[“物理”]
-    QM[量子力学]
-    THERMO[热力学·统计物理]
+    subgraph APP[“应用层 · 电路与 EDA”]
+        direction LR
+        ANA[“模拟集成电路”]
+        RF[“射频电路”]
+        DIG[“数字逻辑 · RTL”]
+        SYN[“逻辑综合”]
+        PR[“布局布线 P&amp;R”]
+        STA[“静态时序分析 STA”]
     end
 
-    subgraph IC[“集成电路”]
-    EDA[EDA · 综合与布线]
-    RF[射频电路 · 噪声]
-    NANO[纳米器件]
-    end
+    QM --&gt; SP
+    SP --&gt; DT
+    MA --&gt; SS
+    MA --&gt; OPT
+    MA --&gt; DSA
+    MG --&gt; DSA
+    DT --&gt; ANA
+    DT --&gt; DIG
+    SS --&gt; ANA
+    ANA --&gt; RF
+    EM --&gt; RF
+    MP -.-&gt;|热噪声建模| RF
+    DIG --&gt; SYN
+    DSA --&gt; SYN
+    DSA --&gt; PR
+    OPT -.-&gt;|布局优化| PR
+    SYN --&gt; STA
+    PR --&gt; STA
 
-    COMP --&gt; EDA
-    GRAPH --&gt; EDA
-    OPT --&gt; EDA
-    ALGO --&gt; EDA
-    PROB --&gt; RF
-    THERMO --&gt; RF
-    QM --&gt; NANO
-
-    classDef math fill:#EBF4FF,stroke:#2C5282,color:#1E3A5F
-    classDef cs fill:#F0FDF4,stroke:#16A34A,color:#14532D
-    classDef phy fill:#FFF7ED,stroke:#EA580C,color:#7C2D12
-    classDef ic fill:#F1F5F9,stroke:#475569,color:#1E293B,stroke-width:2px
-    class GRAPH,OPT,PROB math
-    class COMP,ALGO cs
-    class QM,THERMO phy
-    class EDA,RF,NANO ic</code></pre>
+    classDef base fill:#EBF4FF,stroke:#2C5282,color:#1E3A5F
+    classDef bridge fill:#FFF7ED,stroke:#B7791F,color:#7C2D12
+    classDef app fill:#F0FDF4,stroke:#16A34A,color:#14532D
+    class MA,MG,MP,QM,EM base
+    class SP,DT,SS,DSA,OPT bridge
+    class ANA,RF,DIG,SYN,PR,STA app</code></pre>
 <p>在优质网课与大模型蔚然成风的当下，这件事终于今天有解了。尽管内地几百所高校或许凑不出一门令人满意的线性代数，但 MIT 早就将 <a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/MIT_18.06/">Gilbert Strang 教授的经典神课</a>公之于众；尽管集成电路的开源论坛远不如计算机领域活跃，但有了 AI 的加持，什么傻瓜问题都能得到耐心的解答。任何一条知识链，今天都可以用公开资源拼出来。</p>
 <p>「<a href="%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/">学习地图</a>」所做的，便是把散落在各处的知识领域按承接关系组织起来，覆盖微电子相关的七大板块与 200 余门课程，力图将本专业的知识编织成一张细密的网。高年级同学可以按图索骥、查漏补缺；低年级同学也可以将其作为选课参考。</p>
 <h3 id="_4">让信息回归透明</h3>
