@@ -13200,17 +13200,17 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐：自己动手改文件
+      🛠 推荐：自己动手改文件
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="推荐：自己动手改文件">
+    <nav class="md-nav" aria-label="🛠 推荐：自己动手改文件">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      完善现有某一节
+      ✏️ 完善现有某一节
     </span>
   </a>
   
@@ -13219,7 +13219,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      新建课程页
+      📄 新建课程页
     </span>
   </a>
   
@@ -13228,7 +13228,7 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      新建学习地图知识版块
+      🗂 新建学习地图知识版块
     </span>
   </a>
   
@@ -13237,7 +13237,7 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      新建科研方向页
+      🌌 新建科研方向页
     </span>
   </a>
   
@@ -13246,7 +13246,7 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      新建工程工具页或专题社区页
+      🔧 新建工程工具页或专题社区页
     </span>
   </a>
   
@@ -13260,17 +13260,17 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      提交信息，维护者处理
+      📬 提交信息，维护者处理
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="提交信息，维护者处理">
+    <nav class="md-nav" aria-label="📬 提交信息，维护者处理">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      随手改错
+      🔍 随手改错
     </span>
   </a>
   
@@ -13279,7 +13279,7 @@
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      推荐内容
+      💡 推荐内容
     </span>
   </a>
   
@@ -13288,7 +13288,7 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      分享笔记
+      📝 分享笔记
     </span>
   </a>
   
@@ -13523,10 +13523,10 @@
 </li>
 </ol>
 </details>
-<h3 id="_6">推荐：自己动手改文件</h3>
-<h4 id="_7">完善现有某一节</h4>
+<h3 id="_6">🛠 推荐：自己动手改文件</h3>
+<h4 id="_7">✏️ 完善现有某一节</h4>
 <p>发现某一节有问题或缺失，直接找到对应文件发 PR。按页面已有结构写就行，不需要提前对齐。</p>
-<h4 id="_8">新建课程页</h4>
+<h4 id="_8">📄 新建课程页</h4>
 <p>按<a href="https://github.com/Crys-Chen/ic-guide/blob/main/template.md">课程页模板</a>写，发 PR。文件命名规则：</p>
 <ul>
 <li>有课号的课：<code>校名缩写_课号.md</code>，如 <code>MIT_6.042J.md</code>、<code>FDU_MICR130008.md</code></li>
@@ -13539,39 +13539,49 @@
 <li><strong>父级 <code>index.md</code> 的子目录列表</strong>：在对应子分类的 index.md 里加一行课程条目</li>
 <li><strong><code>mkdocs.yml</code> 的 nav</strong>：在对应位置注册新文件路径，否则页面无法被导航到</li>
 </ul>
-<p>如果课程所在的子分类目录是全新建的，还需要在上一级 index.md 的 mermaid 知识谱系图里加节点、在板块介绍里加条目。这部分改动比较容易出错，PR 里可以注明"上层 index 和 nav 请维护者处理"，维护者来跟进。</p>
-<h4 id="_9">新建学习地图知识版块</h4>
+<p>如果课程所在的子分类目录是全新建的，还需要在上一级 index.md 的 mermaid 知识谱系图里加节点、在板块介绍里加条目。</p>
+<div class="admonition tip">
+<p class="admonition-title">搞不定上层结构？</p>
+<p>PR 里注明"上层 index 和 nav 请维护者处理"，维护者来跟进。</p>
+</div>
+<h4 id="_9">🗂 新建学习地图知识版块</h4>
 <p>指在某个板块下新增一个完整的子分类（如"数字验证""功率电子"这类空白槽位）。除了新建目录和课程页之外，需要改两个地方：</p>
 <ul>
 <li><strong>父级 <code>index.md</code></strong>：mermaid 知识谱系图里加节点、板块介绍里加条目</li>
 <li><strong><code>mkdocs.yml</code> nav</strong>：注册新子目录路径</li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>建议先<a href="https://github.com/Crys-Chen/ic-guide/issues/new">开 Issue</a> 确认方向和定位再动手。</p>
-<h4 id="_10">新建科研方向页</h4>
+</div>
+<h4 id="_10">🌌 新建科研方向页</h4>
 <p>比课程页复杂不少，内容页之外还需要改三个地方：</p>
 <ul>
 <li><strong><code>docs/科研方向/index.md</code></strong>：fallback 芯片列表里选好分组加一条；全景图 SVG 里加一个方块</li>
 <li><strong><code>docs/javascripts/orbit-galaxy.js</code></strong>：<code>DIRECTIONS</code> 数组加一条（name + slug）；<code>CARDS</code> 数组加一条（选 ring / angle / tag 标签）</li>
 <li><strong><code>mkdocs.yml</code> nav</strong>：<code>科研方向:</code> 下注册新页</li>
 </ul>
-<p>其中 orbit-galaxy.js 的 ring / angle 需要手动调整避免节点重叠，建议先<a href="https://github.com/Crys-Chen/ic-guide/issues/new">开 Issue</a> 说明想做哪个方向，写好内容页发 PR，其余由维护者接手。</p>
-<h4 id="_11">新建工程工具页或专题社区页</h4>
+<div class="admonition warning">
+<p class="admonition-title">orbit-galaxy.js 需要手动调整</p>
+<p>ring / angle 参数需要手动配置避免节点重叠，直接改容易出错。建议先<a href="https://github.com/Crys-Chen/ic-guide/issues/new">开 Issue</a> 说明想做哪个方向，写好内容页发 PR，其余由维护者接手。</p>
+</div>
+<h4 id="_11">🔧 新建工程工具页或专题社区页</h4>
 <ul>
 <li>工程工具页：按站内现有工具页结构写，文件放在 <code>docs/工程工具/</code> 下，文件名用工具官方英文名，如 <code>Vivado.md</code>。</li>
 <li>专题社区页：按 <code>docs/专题社区/index.md</code> 里已有条目的格式添加，或者<a href="https://github.com/Crys-Chen/ic-guide/issues/new">填写表单 →</a>。</li>
 </ul>
-<h3 id="_12">提交信息，维护者处理</h3>
+<h3 id="_12">📬 提交信息，维护者处理</h3>
 <p>填表单或留言，由维护者来处理后续。当然，如果想自己动手改，直接发 PR 也行。</p>
-<h4 id="_13">随手改错</h4>
+<h4 id="_13">🔍 随手改错</h4>
 <p>发现错别字、死链、教授信息过时、事实错误，在<strong>页面底部评论区</strong>留言（需要 GitHub 登录），或者<a href="https://github.com/Crys-Chen/ic-guide/issues/new">开一个 Issue</a>，一句话描述就够。</p>
-<h4 id="_14">推荐内容</h4>
+<h4 id="_14">💡 推荐内容</h4>
 <p>有各自的表单，填完提交就行：</p>
 <ul>
 <li><a href="https://github.com/Crys-Chen/ic-guide/issues/new?template=add_entry.yml">补充教授或企业 →</a>　选好归属方向，填姓名/名称、主页 URL、子方向描述。URL 必须能打开，且确实是本人个人主页或企业官网，不接受学院门户页。</li>
 <li><a href="https://github.com/Crys-Chen/ic-guide/issues/new">推荐论文 →</a>　填归属方向、标题、DOI 或公开链接、推荐理由。</li>
 <li><a href="https://github.com/Crys-Chen/ic-guide/issues/new?template=submit_video.yml">推荐科普视频 →</a>　填归属方向、平台、链接、推荐理由。内容必须公开免费可看，合并后挂在对应方向页的「相关科普」区。</li>
 </ul>
-<h4 id="_15">分享笔记</h4>
+<h4 id="_15">📝 分享笔记</h4>
 <p><a href="https://github.com/Crys-Chen/ic-guide/issues/new?template=submit_notes.yml">填写表单 →</a>，文件直接拖进 Issue 正文（PDF / zip，单个 ≤ 25 MB）。放在自己网盘或仓库的，评论区加一行链接也行。会有人工审核，防止不当链接。</p>
 <h2 id="_16">一点说明</h2>
 <p>本站点暂不接受产品推广或付费推广。课题组招生、企业招聘等免费社区信息视站点发展情况另议，未来可能会单独开辟一个分区供大家投放此类信息~</p>
