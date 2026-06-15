@@ -3031,3 +3031,25 @@ body.pf-noscroll { overflow: hidden !important; }
   margin-bottom: 1rem !important;
   color: rgba(3,33,104,.7) !important;
 }
+
+/* ─── 移动端抽屉：GitHub 链接移至底部 ─────────────────────
+   Material 默认把 .md-source 渲染在导航列表上方，紧挨首页标题，
+   容易在点首页时误触。用 flexbox order 把它推到列表末尾。 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary .md-nav--primary {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .md-sidebar--primary .md-nav--primary > .md-nav__title {
+    order: 0 !important;
+  }
+  .md-sidebar--primary .md-nav--primary > .md-nav__list {
+    order: 1 !important;
+  }
+  .md-sidebar--primary .md-nav--primary > .md-source {
+    order: 2 !important;
+    margin-top: 1.2rem !important;
+    padding: .6rem 0 .4rem !important;
+    border-top: 1px solid var(--md-default-fg-color--lightest) !important;
+  }
+}
