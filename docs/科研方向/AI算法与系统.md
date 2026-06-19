@@ -416,6 +416,14 @@ graph LR
 
     大模型指令微调 | 多模态大模型 | AI 系统与开放平台
 
+-   **[周军](https://www.sice.uestc.edu.cn/info/1089/6303.htm)** <span class="badge-other">电子科大</span>
+
+    超低功耗 AI 芯片 | 算法-芯片协同设计 | 智能感知终端
+
+-   **[刘洋](https://icse.uestc.edu.cn/info/1205/7310.htm)** <span class="badge-other">电子科大</span>
+
+    AI 芯片 | 忆阻器和神经网络 | 集成电路设计
+
 
 </div>
 <button class="prof-show-all">显示全部 ↓</button>
