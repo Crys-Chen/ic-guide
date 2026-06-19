@@ -299,7 +299,7 @@
 ## 鸣谢
 
 <a href="https://github.com/Crys-Chen/ic-guide/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Crys-Chen/ic-guide"/>
+  <img src="https://contrib.rocks/image?repo=Crys-Chen/ic-guide&exclude=github-actions%5Bbot%5D"/>
 </a>
 
 ## 许可
