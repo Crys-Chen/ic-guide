@@ -22,6 +22,7 @@ graph TB
         B6["ModelSim · HDL 仿真"]
         B7["Gem5 · 体系结构仿真"]
         B8["GPGPU-Sim · GPU 仿真"]
+        B9["TCAD · 器件工艺仿真"]
     end
     subgraph C[构建与开发]
         C1[GNU Make]
@@ -33,7 +34,7 @@ graph TB
     classDef ee fill:#FDE8D8,stroke:#C0530A,stroke-width:2px
     classDef build fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px
     class A1,A2,A3,A4,A5 gen
-    class B1,B2,B3,B4,B5,B6,B7,B8 ee
+    class B1,B2,B3,B4,B5,B6,B7,B8,B9 ee
     class C1,C2,C3 build
 ```
 
@@ -57,8 +58,9 @@ graph TB
 - **[Cadence Virtuoso](../学习地图/电路/EDA/cadence.md)** — 模拟 IC 设计工业标准
 - **[Vivado](../学习地图/电路/EDA/vivado.md)** — Xilinx FPGA 综合 + 实现
 - **[ModelSim](ModelSim.md)** — HDL 仿真器(数字验证入门)
-- **[Gem5](Gem5.md)** — 体系结构研究的“国民仿真器”,ISCA/MICRO 标配
+- **[Gem5](Gem5.md)** — 体系结构研究的”国民仿真器”,ISCA/MICRO 标配
 - **[GPGPU-Sim](GPGPUSIM.md)** — GPU 仿真,做 GPU 架构研究必备
+- **[TCAD](TCAD.md)** — 器件物理与工艺仿真,Sentaurus / Silvaco
 
 ## [构建与开发](GNU_Make.md)
 
@@ -78,4 +80,6 @@ graph TB
 | [可重构计算与FPGA](../科研方向/可重构计算与FPGA.md) | Vivado + ModelSim + Verilog/Chisel |
 | [EDA 与设计自动化](../科研方向/EDA与设计自动化.md) | Cadence/Synopsys + Python + C++ + Make/CMake |
 | [AI 算法与系统](../科研方向/AI算法与系统.md) | Docker + Git + Python 生态 |
+| [半导体器件与先进工艺](../科研方向/半导体器件与先进工艺.md) | TCAD（Sentaurus / Silvaco）|
+| [功率半导体与宽禁带器件](../科研方向/功率半导体与宽禁带器件.md) | TCAD + LTspice |
 | 任何方向 | Git + LaTeX + Linux Shell |

@@ -824,6 +824,7 @@ nav:
           - ModelSim HDL仿真: "工程工具/ModelSim.md"
           - Gem5 体系结构仿真: "工程工具/Gem5.md"
           - GPGPU-Sim GPU 仿真: "工程工具/GPGPUSIM.md"
+          - TCAD 器件工艺仿真: "工程工具/TCAD.md"
       - 构建与开发:
           - Docker: "工程工具/Docker.md"
           - "GNU Make": "工程工具/GNU_Make.md"
