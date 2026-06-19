@@ -22,8 +22,6 @@ TCAD（Technology Computer-Aided Design）是**仿真半导体器件物理与制
 - 研究功率器件（SiC MOSFET、GaN HEMT）的击穿与导通特性
 - 工艺参数优化（如栅氧厚度、沟道掺杂）而不用每次流片
 
-做电路设计（模拟/数字 IC）的人几乎不需要碰 TCAD，那是 SPICE 的地盘。
-
 ## 快速上手
 
 Sentaurus 的学习路径：
