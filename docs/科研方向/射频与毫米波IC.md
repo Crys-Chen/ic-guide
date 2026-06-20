@@ -588,11 +588,11 @@ graph LR
 
     超低功耗 CMOS 无线收发芯片 | 无源无电池背散射 Radio | 物联网/生物医疗 RF SoC
 
--   **[康凯](https://faculty.uestc.edu.cn/kangkai/zh_CN/index.htm)** <span class="badge-other">电子科大</span>
+-   **[康凯](https://faculty.uestc.edu.cn/kangkai/zh_CN/index.htm)** <span class="badge-other">成电</span>
 
     射频/毫米波集成电路设计 | 器件建模 | RF/mmWave 芯片
 
--   **[王政](https://faculty.uestc.edu.cn/wangzheng/zh_CN/index.htm)** <span class="badge-other">电子科大</span>
+-   **[王政](https://faculty.uestc.edu.cn/wangzheng/zh_CN/index.htm)** <span class="badge-other">成电</span>
 
     射频集成电路 | 毫米波前端 | 无线通信芯片
 

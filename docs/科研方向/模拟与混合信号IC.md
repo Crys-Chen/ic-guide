@@ -507,27 +507,27 @@ graph LR
 
     模拟与混合信号 IC | 高精度 ADC 与隔离放大器 | 图像传感器读出
 
--   **[明鑫](https://icse.uestc.edu.cn/info/1812/6534.htm)** <span class="badge-other">电子科大</span>
+-   **[明鑫](https://icse.uestc.edu.cn/info/1812/6534.htm)** <span class="badge-other">成电</span>
 
     电源管理 IC | 功率集成电路 | 模拟集成电路
 
--   **[张红帅](https://faculty.uestc.edu.cn/zhanghongshuai/zh_CN/index.htm)** <span class="badge-other">电子科大</span>
+-   **[张红帅](https://faculty.uestc.edu.cn/zhanghongshuai/zh_CN/index.htm)** <span class="badge-other">成电</span>
 
     数据转换器 | 频率综合电路 | 高速接口电路
 
--   **[杨世恒](https://faculty.uestc.edu.cn/yangshiheng/zh_CN/index.htm)** <span class="badge-other">电子科大</span>
+-   **[杨世恒](https://faculty.uestc.edu.cn/yangshiheng/zh_CN/index.htm)** <span class="badge-other">成电</span>
 
     低功耗高性能锁相环 | 时钟生成电路 | 数模混合 IC
 
--   **[周泽坤](https://icse.uestc.edu.cn/info/1199/7297.htm)** <span class="badge-other">电子科大</span>
+-   **[周泽坤](https://icse.uestc.edu.cn/info/1199/7297.htm)** <span class="badge-other">成电</span>
 
     电源管理 IC | 功率集成电路 | 模拟集成电路
 
--   **[严颖怡](https://icse.uestc.edu.cn/info/1812/6563.htm)** <span class="badge-other">电子科大</span> <span class="prof-w"></span>
+-   **[严颖怡](https://icse.uestc.edu.cn/info/1812/6563.htm)** <span class="badge-other">成电</span> <span class="prof-w"></span>
 
     电源管理 IC | 功率集成电路 | 模拟集成电路
 
--   **[乔明](https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/11047?yxsh=28)** <span class="badge-other">电子科大</span>
+-   **[乔明](https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/11047?yxsh=28)** <span class="badge-other">成电</span>
 
     功率 IC 可靠性 | 高压功率集成电路 | 功率半导体器件
 
