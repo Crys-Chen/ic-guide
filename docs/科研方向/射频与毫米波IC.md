@@ -600,6 +600,10 @@ graph LR
 
     射频/微波/毫米波/太赫兹 IC | 超宽带振荡器与频率源 | 数字功率放大器
 
+-   **[王成](https://faculty.uestc.edu.cn/wangcheng/zh_CN/index.htm)** <span class="badge-other">成电</span>
+
+    低温 CMOS 量子测控 | 芯片级分子时钟 | 毫米波/太赫兹相控阵
+
 -   **[罗讯](https://ceie.szu.edu.cn/info/1016/3512.htm)** <span class="badge-other">深圳大学</span>
 
     数字射频集成电路 | 片上太赫兹通信 | 可重构无源电路与异构封装
@@ -608,7 +612,7 @@ graph LR
 
     射频/微波/毫米波 IC | 太赫兹功率放大器 | 发射机集成电路
 
--   **[钱慧珍](https://faculty.xidian.edu.cn/QIANHUIZHEN/zh_CN/index.htm)** <span class="badge-other">西电</span>
+-   **[钱慧珍](https://faculty.xidian.edu.cn/QIANHUIZHEN/zh_CN/index.htm)** <span class="badge-other">西电</span> <span class="prof-w"></span>
 
     数字化射频 IC | 微波/毫米波/太赫兹 IC | 片上相控阵与可重构无源电路
 
