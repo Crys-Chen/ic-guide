@@ -2810,11 +2810,7 @@ body.pf-noscroll { overflow: hidden !important; }
     max-height: 68dvh !important;
     overflow-y: auto !important;
   }
-  .md-search__form {
-    width: 88vw !important;
-    max-width: 480px !important;
-    margin: 0 auto !important;
-  }
+
 }
 
 /* ④ Mermaid 移动端节点文字出界

@@ -85,9 +85,19 @@
   /* ── 定位 #pf-box 到 header 标题右边缘 → 搜索按钮右边缘之间 ── */
   function positionBox() {
     var box  = document.getElementById('pf-box');
+    if (!box) return;
+
+    /* 移动端：居中固定宽度，不跟着 header 元素走 */
+    if (window.innerWidth < 960) {
+      var mw = Math.min(window.innerWidth * 0.88, 480);
+      var ml = (window.innerWidth - mw) / 2;
+      box.style.left  = ml + 'px';
+      box.style.right = ml + 'px';
+      return;
+    }
+
     var title = document.querySelector('.md-header__title');
     var btn  = document.getElementById('pf-search-btn');
-    if (!box) return;
     if (title && btn) {
       var GAP = 16;
       var titleSpan = document.querySelector('.md-header__topic .md-ellipsis');
