@@ -596,6 +596,10 @@ graph LR
 
     射频集成电路 | 毫米波前端 | 无线通信芯片
 
+-   **[舒一洋](https://faculty.uestc.edu.cn/shuyiyang/zh_CN/index.htm)** <span class="badge-other">成电</span>
+
+    射频/微波/毫米波/太赫兹 IC | 超宽带振荡器与频率源 | 数字功率放大器
+
 -   **[罗讯](https://ceie.szu.edu.cn/info/1016/3512.htm)** <span class="badge-other">深圳大学</span>
 
     数字射频集成电路 | 片上太赫兹通信 | 可重构无源电路与异构封装
