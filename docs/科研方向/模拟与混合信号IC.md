@@ -539,7 +539,7 @@ graph LR
 
     电源管理 IC | 功率集成电路 | 模拟集成电路
 
--   **[严颖怡](https://icse.uestc.edu.cn/info/1812/6563.htm)** <span class="badge-other">成电</span> <span class="prof-w"></span>
+-   **[严颖怡](https://icse.uestc.edu.cn/info/1812/6563.htm)** <span class="badge-other">成电</span>
 
     电源管理 IC | 功率集成电路 | 模拟集成电路
 
