@@ -362,7 +362,7 @@ graph LR
 
     数值代数 | EDA 科学计算 | 电路降阶与矩阵算法
 
--   **[李颖洲](https://yingzhouli.com/presentation.html)** <span class="badge-fudan">复旦数院</span>
+-   **[李颖洲](https://yingzhouli.com/)** <span class="badge-fudan">复旦数院</span>
 
     EDA 工具算法 | 静态时序分析 | 计算数学视角
 
