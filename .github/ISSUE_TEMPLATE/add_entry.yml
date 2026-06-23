@@ -3,6 +3,12 @@ description: 在科研方向页补充相关课题组或代表性企业
 title: "[补充] "
 labels: ["contribution/add-entry"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您补充教授、课题组或企业信息，每个人的一点一滴都能让世界更好！
+        填到你能确认的程度就可以，维护者会继续核对链接和归属方向。
+
   - type: dropdown
     id: type
     attributes:

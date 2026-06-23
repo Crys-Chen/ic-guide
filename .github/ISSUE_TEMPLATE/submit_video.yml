@@ -3,6 +3,12 @@ description: 向某个科研方向页的「相关科普」区推荐科普视频
 title: "[视频] "
 labels: ["contribution/video"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您推荐科普视频，每个人的一点一滴都能让世界更好！
+        只要能帮助维护者定位视频内容和适合放置的方向，这个表单就已经足够有用了。
+
   - type: dropdown
     id: direction
     attributes:
