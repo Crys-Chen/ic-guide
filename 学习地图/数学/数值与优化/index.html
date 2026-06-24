@@ -13245,7 +13245,7 @@
 
 
 <h1 id="_1">数值与优化</h1>
-<p>计算机里“解数学”的两门课。数值分析管算得准、算得稳,凸优化管找最优。</p>
+<p>计算机里“解数学”的核心板块。数值分析管算得准、算得稳，数值代数管大规模线性系统和稀疏矩阵怎么解，凸优化管找最优。问题规模真正上来以后，还要接上高性能计算（HPC）和并行求解。</p>
 <pre class="mermaid"><code>graph LR
     classDef intro fill:#EFF6FF,stroke:#3B82F6,color:#1E40AF
     classDef mid fill:#F0FDF4,stroke:#16A34A,color:#15803D
@@ -13266,9 +13266,10 @@
     FDU_NA --&gt; STAN</code></pre>
 <h2 id="_2">子目录</h2>
 <ul>
-<li><strong><a href="%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/USTC_numerical/">数值分析</a></strong> — 复旦吴宗敏、中科大、MIT 18.330;EDA 求解器与 SPICE 仿真的算法基础</li>
+<li><strong><a href="%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/USTC_numerical/">数值分析</a></strong> — 复旦吴宗敏、中科大、MIT 18.330;EDA 求解器、SPICE 仿真和数值代数的算法基础</li>
 <li><strong><a href="%E5%87%B8%E4%BC%98%E5%8C%96/Stanford_EE364A/">凸优化</a></strong> — 中科大凌青、Stanford EE364A(Boyd);ML 与 EDA 布局优化的核心工具</li>
 </ul>
+<p>HPC 本身更接近系统架构能力，但在 EDA 科学计算里常和数值算法绑在一起：稀疏矩阵、迭代求解、预条件、GPU/多核并行和任务调度，决定了仿真器和求解器能否处理真实规模问题。</p>
 <h2 id="_3">相关科研方向</h2>
 <ul>
 <li><a href="../../../%E7%A7%91%E7%A0%94%E6%96%B9%E5%90%91/EDA%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96/">EDA 与设计自动化</a></li>
@@ -13294,7 +13295,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2026-06-19
+    2026-06-24
   </span>
 
     
