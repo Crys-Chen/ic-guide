@@ -3,6 +3,12 @@ description: 分享课程笔记或学习资料
 title: "[笔记] "
 labels: ["contribution/notes"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您愿意分享笔记或资料。每个人的一点一滴，都能让这张地图更完整，也让世界更好一点。
+        信息不必一次写满，能帮助维护者判断内容范围和版权情况就可以。
+
   - type: input
     id: course
     attributes:

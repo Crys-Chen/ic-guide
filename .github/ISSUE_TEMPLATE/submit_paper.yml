@@ -1,0 +1,78 @@
+name: 推荐论文
+description: 向某个科研方向页的「论文推荐」区推荐入门综述或经典论文
+title: "[论文] "
+labels: ["contribution/paper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您愿意推荐论文。每个人的一点一滴，都能让这张地图更完整，也让世界更好一点。
+        不用填得很正式，知道多少填多少即可。只要能帮助维护者找到论文并判断适合放在哪个方向就很好。
+
+  - type: dropdown
+    id: direction
+    attributes:
+      label: 归属科研方向
+      description: 如果不确定，可以先随便选一个最接近的方向，并在推荐理由里说明。
+      options:
+        - EDA 与设计自动化
+        - 先进封装与异构集成
+        - 光电子与硅光集成
+        - 具身智能
+        - 功率半导体与宽禁带器件
+        - 半导体器件与先进工艺
+        - 处理器架构与编译系统
+        - 存算一体与近存计算
+        - 生物电子与脑机接口
+        - 硬件安全与可信计算
+        - 类脑芯片
+        - 量子计算与量子芯片
+        - AI 算法与系统
+        - 可重构计算与 FPGA
+        - 射频与毫米波 IC
+        - 模拟与混合信号 IC
+        - MEMS 与微纳传感器
+
+  - type: input
+    id: title
+    attributes:
+      label: 论文标题
+      description: 大致标题也可以，维护者会帮忙核对。
+      placeholder: "如：Chip Placement with Deep Reinforcement Learning"
+
+  - type: input
+    id: url
+    attributes:
+      label: DOI / arXiv / 出版社 / 公开链接
+      description: 有 DOI、arXiv、会议/期刊页面或作者公开页面最好；没有也可以留空。
+      placeholder: "https://doi.org/... / https://arxiv.org/abs/..."
+
+  - type: dropdown
+    id: paper_type
+    attributes:
+      label: 推荐类型（大致判断即可）
+      options:
+        - 入门综述
+        - 经典论文
+        - 代表性系统 / 工具论文
+        - 近期重要进展
+        - 数据集 / Benchmark
+        - 其他
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 推荐理由
+      description: 简单写为什么推荐即可；一句话也可以。
+      placeholder: "适合刚了解该方向的同学；文章系统梳理了……；和本方向的……问题直接相关。"
+
+  - type: input
+    id: venue_year
+    attributes:
+      label: 发表 venue / 年份（选填）
+      placeholder: "Nature 2021 / DAC 2024 / TCAD 2023"
+
+  - type: markdown
+    attributes:
+      value: |
+        小提示：如果方便，请尽量给一个能打开的链接，并说明它为什么适合这个方向；不确定也没关系，维护者会复核。

@@ -1,0 +1,64 @@
+name: 新建学习地图知识版块
+description: 建议在学习地图中新增一个完整子分类，如数字验证、功率电子等
+title: "[版块] "
+labels: ["contribution/learning-map"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您愿意提出新版块建议。每个人的一点一滴，都能让这张地图更完整，也让世界更好一点。
+        不用一次写得很完整，知道多少填多少即可。维护者会一起判断归属、目录和导航怎么放。
+
+  - type: dropdown
+    id: parent
+    attributes:
+      label: 所属上级板块
+      description: 如果不确定，选“其他 / 不确定”即可。
+      options:
+        - 电路
+        - 器件与工艺
+        - 系统架构
+        - 人工智能
+        - 数学
+        - 物理
+        - 算法编程
+        - 工程工具
+        - 其他 / 不确定
+
+  - type: input
+    id: section_name
+    attributes:
+      label: 新版块名称（如果已经想好）
+      description: 使用希望展示在网站导航里的中文名称
+      placeholder: "如：数字验证 / 功率电子 / 控制与机器人"
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: 为什么想到新增这个版块？
+      description: 简单写几句即可；如果只是觉得现在缺这个方向，也可以直接说。
+      placeholder: "这个方向主要覆盖……；和现有的……不同，因为……"
+
+  - type: textarea
+    id: courses
+    attributes:
+      label: 可能收录的课程或资源
+      description: 有链接最好；没有链接也可以先写名字。
+      placeholder: |
+        - 复旦：课程名（如有课号请写课号）— 链接
+        - MIT / Stanford / NPTEL：课程名 — 链接
+
+  - type: textarea
+    id: structure
+    attributes:
+      label: 建议的子目录结构（选填）
+      description: 只有在已经想好目录层级时填写；不确定可以留空。
+      placeholder: |
+        docs/学习地图/电路/数字验证/
+        ├── index.md
+        └── FDU_xxx.md
+
+  - type: markdown
+    attributes:
+      value: |
+        小提示：这类改动通常还要更新父级 `index.md`（知识谱系图和板块介绍）以及 `mkdocs.yml` 导航。你不需要全部处理，维护者可以协助。

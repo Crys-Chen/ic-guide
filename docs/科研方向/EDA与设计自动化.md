@@ -358,6 +358,14 @@ graph LR
 
     数字芯片物理设计 | 工艺-设计协同优化
 
+-   **[苏仰锋](https://am.fudan.edu.cn/70/fb/c48458a684283/page.htm)** <span class="badge-fudan">复旦数院</span>
+
+    数值代数 | EDA 科学计算 | 电路降阶与矩阵算法
+
+-   **[李颖洲](https://yingzhouli.com/)** <span class="badge-fudan">复旦数院</span>
+
+    EDA 工具算法 | 静态时序分析 | 计算数学视角
+
 -   **[梁云](https://ericlyun.me/)** <span class="badge-pku">北大</span>
 
     硬件综合与 EDA | FPGA 可重构计算 | AI 芯片硬件软件协同

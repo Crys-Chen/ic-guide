@@ -208,6 +208,8 @@
 
 能 PR 就 PR——贡献合并后你的名字会永久留在[贡献者列表](https://github.com/Crys-Chen/ic-guide/graphs/contributors)里，想改哪里就改哪里，不用等别人处理。不熟悉 GitHub 也没关系，全程网页操作：
 
+更完整的贡献规范见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
 <details>
 <summary>PR 教程（5 步）</summary>
 
@@ -227,7 +229,7 @@
 
 **📄 新建课程页**
 
-按[课程页模板](./template.md)写，发 PR。文件命名规则：
+按[课程页模板](./course_template.md)写，发 PR。文件命名规则：
 
 - 有课号的课：`校名缩写_课号.md`，如 `MIT_6.042J.md`、`FDU_MICR130008.md`
 - 无课号的大学课：`校名缩写_教师拼音.md`，否则用 `校名缩写_主题.md`
@@ -249,7 +251,7 @@
 - **父级 `index.md`**：mermaid 知识谱系图里加节点、板块介绍里加条目
 - **`mkdocs.yml` nav**：注册新子目录路径
 
-建议先[开 Issue](https://github.com/Crys-Chen/ic-guide/issues/new) 确认方向和定位再动手。
+建议先[开 Issue](https://github.com/Crys-Chen/ic-guide/issues/new?template=add_learning_section.yml) 确认方向和定位再动手。
 
 **🌌 新建科研方向页**
 
@@ -279,7 +281,8 @@
 有各自的表单，填完提交就行：
 
 - [补充教授或企业 →](https://github.com/Crys-Chen/ic-guide/issues/new?template=add_entry.yml)　选好归属方向，填姓名/名称、主页 URL、子方向描述。URL 必须能打开，且确实是本人个人主页或企业官网，不接受学院门户页。
-- [推荐论文 →](https://github.com/Crys-Chen/ic-guide/issues/new)　填归属方向、标题、DOI 或公开链接、推荐理由。
+- [新建学习地图知识版块 →](https://github.com/Crys-Chen/ic-guide/issues/new?template=add_learning_section.yml)　说明上级板块、版块边界、候选课程资源，以及是否需要维护者协助更新 `index.md` 和 `mkdocs.yml`。
+- [推荐论文 →](https://github.com/Crys-Chen/ic-guide/issues/new?template=submit_paper.yml)　填归属方向、标题、DOI 或公开链接、推荐理由。
 - [推荐科普视频 →](https://github.com/Crys-Chen/ic-guide/issues/new?template=submit_video.yml)　填归属方向、平台、链接、推荐理由。内容必须公开免费可看，合并后挂在对应方向页的「相关科普」区。
 
 **📝 分享笔记**
