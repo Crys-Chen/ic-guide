@@ -13,7 +13,10 @@ graph TB
     OoO["姚永斌 超标量处理器设计"]
     N2T --> THU
     N2T --> CS61C
-    CS61C --> DDCA
+    N2T --> DDCA
+    CS61C --> CA
+    CS61C --> UCAS
+    CS61C --> OoO
     THU --> CA
     THU --> UCAS
     THU --> OoO
