@@ -10,14 +10,16 @@ graph TB
     CS61C["UCB CS61C"]
     UCAS["国科大 胡伟武 计算机体系结构"]
     CA["ETH Computer Architecture"]
+    OoO["姚永斌 超标量处理器设计"]
     N2T --> THU
     N2T --> CS61C
-    DDCA --> THU
-    DDCA --> CS61C
-    DDCA --> CA
+    CS61C --> DDCA
+    THU --> CA
     THU --> UCAS
-    CS61C --> UCAS
-    CS61C --> CA
+    THU --> OoO
+    DDCA --> CA
+    DDCA --> UCAS
+    DDCA --> OoO
     classDef beginner fill:#EFF6FF,stroke:#3B82F6,color:#1e3a5f
     classDef intermediate fill:#F0FDF4,stroke:#16A34A,color:#14532d
     classDef advanced fill:#F8FAFC,stroke:#64748B,color:#1e293b
