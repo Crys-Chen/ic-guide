@@ -1,0 +1,424 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-08-10",
+  "source": {
+    "repository": "https://github.com/Crys-Chen/ic-guide",
+    "snapshot_type": "temporary_read_only_clone",
+    "commit": "ec90dfde5c36e89461386547903c7caaff107436",
+    "commit_date": "2026-07-21T18:15:09+08:00",
+    "live_site": "https://crys-chen.github.io/ic-guide/",
+    "working_tree_was_clean": true
+  },
+  "methodology": {
+    "authoritative_counts": "对本地快照使用 find、rg、wc 与 git 进行只读统计。",
+    "live_site_check": "2026-08-10 尝试使用 ego-browser；桥接连续约 60 秒无任何输出，随后终止。使用公开网页抓取确认首页、顶级导航和已发布的深层学习地图导航；未据此声称完成移动端或交互式搜索验收。",
+    "likely_course_page_definition": "学习地图中的非 index Markdown，排除 2 个 roadmap.md、10 个补充资源.md、2 个课程表和 1 个数字后端待建说明页。",
+    "skeleton_definition": "文件包含站点模板规定的精确标记：!!! note \"待补充\"。",
+    "pending_slot_definition": "文件包含精确标题标记：# 〔待建〕。",
+    "limitations": [
+      "未对约两千个外部 URL 做全量网络存活性检查。",
+      "审计环境没有 mkdocs 命令，因此未对上游快照执行 mkdocs build --strict；启发式相对 Markdown 链接检查未发现缺失目标。",
+      "README 的‘空白’按没有子课程页解释；其中类脑与 SNN 索引页已有三组替代资源，并非内容为空。"
+    ]
+  },
+  "totals": {
+    "markdown_pages": 373,
+    "learning_map_markdown_pages": 328,
+    "learning_map_index_pages": 66,
+    "learning_map_non_index_pages": 262,
+    "likely_course_pages": 247,
+    "skeleton_course_pages": 60,
+    "skeleton_share_of_likely_courses_percent": 24.3,
+    "pending_slot_pages": 11,
+    "knowledge_sections": 7,
+    "research_direction_pages": 17,
+    "engineering_tool_pages": 23,
+    "unique_external_urls_in_docs": 1937,
+    "mkdocs_nav_markdown_paths": 368,
+    "redirect_map_entries": 263,
+    "inline_svg_blocks": 91,
+    "research_badge_occurrences": 660,
+    "stock_quote_spans": 164,
+    "foreign_quote_spans": 13,
+    "foreign_quote_unique_symbols": 11,
+    "pages_with_explicit_resource_check_date": 0,
+    "learning_map_pages_mentioning_learning_outcome_or_acceptance_terms": 3
+  },
+  "learning_sections": [
+    {
+      "name": "数学",
+      "markdown_pages": 42,
+      "index_pages": 8,
+      "likely_course_pages": 31,
+      "skeleton_pages": 2,
+      "pending_slot_pages": 0
+    },
+    {
+      "name": "物理",
+      "markdown_pages": 32,
+      "index_pages": 11,
+      "likely_course_pages": 21,
+      "skeleton_pages": 5,
+      "pending_slot_pages": 2
+    },
+    {
+      "name": "器件与工艺",
+      "markdown_pages": 38,
+      "index_pages": 9,
+      "likely_course_pages": 27,
+      "skeleton_pages": 21,
+      "pending_slot_pages": 3
+    },
+    {
+      "name": "电路",
+      "markdown_pages": 88,
+      "index_pages": 14,
+      "likely_course_pages": 71,
+      "skeleton_pages": 19,
+      "pending_slot_pages": 6
+    },
+    {
+      "name": "系统架构",
+      "markdown_pages": 34,
+      "index_pages": 8,
+      "likely_course_pages": 26,
+      "skeleton_pages": 4,
+      "pending_slot_pages": 0
+    },
+    {
+      "name": "算法编程",
+      "markdown_pages": 34,
+      "index_pages": 4,
+      "likely_course_pages": 30,
+      "skeleton_pages": 2,
+      "pending_slot_pages": 0
+    },
+    {
+      "name": "人工智能",
+      "markdown_pages": 57,
+      "index_pages": 11,
+      "likely_course_pages": 41,
+      "skeleton_pages": 7,
+      "pending_slot_pages": 0
+    }
+  ],
+  "research_directions": {
+    "confidence_source": "README.md:25-62",
+    "confidence_is_page_metadata": false,
+    "all_pages_share_six_standard_sections": true,
+    "standard_sections": [
+      "这个方向在研究什么",
+      "这个方向适合谁",
+      "学术界",
+      "毕业去向",
+      "相关科普",
+      "论文推荐"
+    ],
+    "pages": [
+      {
+        "name": "EDA与设计自动化",
+        "path": "docs/科研方向/EDA与设计自动化.md",
+        "confidence": "low",
+        "external_url_occurrences": 59
+      },
+      {
+        "name": "功率半导体与宽禁带器件",
+        "path": "docs/科研方向/功率半导体与宽禁带器件.md",
+        "confidence": "low",
+        "external_url_occurrences": 61
+      },
+      {
+        "name": "半导体器件与先进工艺",
+        "path": "docs/科研方向/半导体器件与先进工艺.md",
+        "confidence": "low",
+        "external_url_occurrences": 69
+      },
+      {
+        "name": "生物电子与脑机接口",
+        "path": "docs/科研方向/生物电子与脑机接口.md",
+        "confidence": "low",
+        "external_url_occurrences": 48
+      },
+      {
+        "name": "量子计算与量子芯片",
+        "path": "docs/科研方向/量子计算与量子芯片.md",
+        "confidence": "low",
+        "external_url_occurrences": 86
+      },
+      {
+        "name": "射频与毫米波IC",
+        "path": "docs/科研方向/射频与毫米波IC.md",
+        "confidence": "low",
+        "external_url_occurrences": 71
+      },
+      {
+        "name": "模拟与混合信号IC",
+        "path": "docs/科研方向/模拟与混合信号IC.md",
+        "confidence": "low",
+        "external_url_occurrences": 86
+      },
+      {
+        "name": "MEMS与微纳传感器",
+        "path": "docs/科研方向/MEMS与微纳传感器.md",
+        "confidence": "low",
+        "external_url_occurrences": 59
+      },
+      {
+        "name": "具身智能",
+        "path": "docs/科研方向/具身智能.md",
+        "confidence": "medium",
+        "external_url_occurrences": 74
+      },
+      {
+        "name": "硬件安全与可信计算",
+        "path": "docs/科研方向/硬件安全与可信计算.md",
+        "confidence": "medium",
+        "external_url_occurrences": 55
+      },
+      {
+        "name": "可重构计算与FPGA",
+        "path": "docs/科研方向/可重构计算与FPGA.md",
+        "confidence": "medium",
+        "external_url_occurrences": 52
+      },
+      {
+        "name": "类脑芯片",
+        "path": "docs/科研方向/类脑芯片.md",
+        "confidence": "medium",
+        "external_url_occurrences": 46
+      },
+      {
+        "name": "先进封装与异构集成",
+        "path": "docs/科研方向/先进封装与异构集成.md",
+        "confidence": "high",
+        "external_url_occurrences": 51
+      },
+      {
+        "name": "光电子与硅光集成",
+        "path": "docs/科研方向/光电子与硅光集成.md",
+        "confidence": "high",
+        "external_url_occurrences": 63
+      },
+      {
+        "name": "处理器架构与编译系统",
+        "path": "docs/科研方向/处理器架构与编译系统.md",
+        "confidence": "high",
+        "external_url_occurrences": 94
+      },
+      {
+        "name": "存算一体与近存计算",
+        "path": "docs/科研方向/存算一体与近存计算.md",
+        "confidence": "high",
+        "external_url_occurrences": 70
+      },
+      {
+        "name": "AI算法与系统",
+        "path": "docs/科研方向/AI算法与系统.md",
+        "confidence": "high",
+        "external_url_occurrences": 82
+      }
+    ]
+  },
+  "quality_debt": {
+    "readme_skeleton_claim": "80余个",
+    "readme_listed_skeleton_links": 85,
+    "readme_listed_links_still_marked_skeleton": 59,
+    "readme_listed_links_no_longer_marked_skeleton": 26,
+    "marked_skeletons_missing_from_readme_list": 1,
+    "readme_declared_blank_sections": [
+      {
+        "name": "控制与机器人",
+        "path": "docs/学习地图/电路/控制与机器人/index.md",
+        "child_course_pages": 0,
+        "page_state": "slot_description_only"
+      },
+      {
+        "name": "生物电子",
+        "path": "docs/学习地图/电路/生物电子/index.md",
+        "child_course_pages": 0,
+        "page_state": "slot_description_only"
+      },
+      {
+        "name": "数字验证",
+        "path": "docs/学习地图/电路/数字设计/数字验证/index.md",
+        "child_course_pages": 0,
+        "page_state": "slot_description_only"
+      },
+      {
+        "name": "功率电子",
+        "path": "docs/学习地图/电路/模拟与射频/功率电子/index.md",
+        "child_course_pages": 0,
+        "page_state": "slot_description_only"
+      },
+      {
+        "name": "类脑与SNN",
+        "path": "docs/学习地图/人工智能/类脑与SNN/index.md",
+        "child_course_pages": 0,
+        "page_state": "resource_index_with_three_alternative_resource_groups"
+      }
+    ],
+    "pending_marker_pages": [
+      "docs/学习地图/器件与工艺/MEMS/index.md",
+      "docs/学习地图/器件与工艺/先进封装/index.md",
+      "docs/学习地图/器件与工艺/功率半导体器件/index.md",
+      "docs/学习地图/物理/热力学与统计物理/index.md",
+      "docs/学习地图/物理/电磁场与微波/index.md",
+      "docs/学习地图/电路/控制与机器人/index.md",
+      "docs/学习地图/电路/数字设计/ASIC与数字后端/数字后端.md",
+      "docs/学习地图/电路/数字设计/数字验证/index.md",
+      "docs/学习地图/电路/模拟与射频/功率电子/index.md",
+      "docs/学习地图/电路/模拟与射频/版图设计/index.md",
+      "docs/学习地图/电路/生物电子/index.md"
+    ],
+    "skeleton_pages": [
+      "docs/学习地图/人工智能/AI交叉应用/FDU_AIT410017.md",
+      "docs/学习地图/人工智能/AI交叉应用/FDU_EST30001.md",
+      "docs/学习地图/人工智能/AI交叉应用/FDU_ICSE30035.md",
+      "docs/学习地图/人工智能/AI交叉应用/FDU_ICSE40019.md",
+      "docs/学习地图/人工智能/入门速成/FDU_EST10001.md",
+      "docs/学习地图/人工智能/大语言模型/FDU_EST20001.md",
+      "docs/学习地图/人工智能/机器学习/FDU_ICSE30001.md",
+      "docs/学习地图/器件与工艺/MEMS/FDU_ICSE30023.md",
+      "docs/学习地图/器件与工艺/MEMS/FDU_ICSE40015.md",
+      "docs/学习地图/器件与工艺/先进封装/FDU_ICSE30013.md",
+      "docs/学习地图/器件与工艺/先进封装/FDU_ICSE40004.md",
+      "docs/学习地图/器件与工艺/先进封装/FDU_ICSE40006.md",
+      "docs/学习地图/器件与工艺/前沿器件/FDU_ICSE30012.md",
+      "docs/学习地图/器件与工艺/前沿器件/FDU_ICSE30029.md",
+      "docs/学习地图/器件与工艺/前沿器件/FDU_ICSE30031.md",
+      "docs/学习地图/器件与工艺/功率半导体器件/FDU_ICSE20012.md",
+      "docs/学习地图/器件与工艺/存储器/FDU_ICSE30005.md",
+      "docs/学习地图/器件与工艺/存储器/FDU_ICSE30024.md",
+      "docs/学习地图/器件与工艺/存储器/FDU_ICSE30025.md",
+      "docs/学习地图/器件与工艺/材料/FDU_ICSE20003.md",
+      "docs/学习地图/器件与工艺/材料/FDU_ICSE40011.md",
+      "docs/学习地图/器件与工艺/材料/FDU_ICSE40017.md",
+      "docs/学习地图/器件与工艺/材料/FDU_MASE20002.md",
+      "docs/学习地图/器件与工艺/材料/FDU_MASE30015.md",
+      "docs/学习地图/器件与工艺/材料/FDU_MASE30019.md",
+      "docs/学习地图/器件与工艺/材料/FDU_MASE30023.md",
+      "docs/学习地图/器件与工艺/集成电路工艺/FDU_ICSE40003.md",
+      "docs/学习地图/器件与工艺/集成电路工艺/FDU_ICSE40016.md",
+      "docs/学习地图/数学/分析/数学分析/FDU_MATH10015-16.md",
+      "docs/学习地图/数学/数值与优化/数值分析/FDU_PHYS20009.md",
+      "docs/学习地图/物理/光学/FDU_ICSE30004.md",
+      "docs/学习地图/物理/光学/FDU_ICSE30008.md",
+      "docs/学习地图/物理/固体物理/FDU_PHYS30011.md",
+      "docs/学习地图/物理/热力学与统计物理/FDU_PHYS20013.md",
+      "docs/学习地图/物理/电磁场与微波/FDU_ICE50009.md",
+      "docs/学习地图/电路/EDA/FDU_ICSE30002.md",
+      "docs/学习地图/电路/EDA/FDU_ICSE30018.md",
+      "docs/学习地图/电路/EDA/FDU_ICSE30019.md",
+      "docs/学习地图/电路/EDA/FDU_ICSE30026.md",
+      "docs/学习地图/电路/EDA/FDU_ICSE30028.md",
+      "docs/学习地图/电路/信号处理/FDU_ICSE30030.md",
+      "docs/学习地图/电路/数字设计/ASIC与数字后端/FDU_ICSE20016.md",
+      "docs/学习地图/电路/数字设计/HDL/FDU_ICSE30027.md",
+      "docs/学习地图/电路/数字设计/低功耗设计/FDU_ICSE40005.md",
+      "docs/学习地图/电路/模拟与射频/射频电路/FDU_ICSE20001.md",
+      "docs/学习地图/电路/模拟与射频/版图设计/FDU_ICSE20015.md",
+      "docs/学习地图/电路/测试与可靠性/FDU_ICSE30003.md",
+      "docs/学习地图/电路/测试与可靠性/FDU_ICSE30033.md",
+      "docs/学习地图/电路/测试与可靠性/FDU_ICSE40010.md",
+      "docs/学习地图/电路/测试与可靠性/FDU_ICSE50008.md",
+      "docs/学习地图/电路/电路实验/FDU_EST40012.md",
+      "docs/学习地图/电路/电路实验/FDU_ICSE40008.md",
+      "docs/学习地图/电路/电路实验/FDU_ICSE40009.md",
+      "docs/学习地图/电路/电路实验/FDU_ICSE40014.md",
+      "docs/学习地图/算法编程/编程入门/FDU_ICSE20002.md",
+      "docs/学习地图/算法编程/编程入门/FDU_ICSE20014.md",
+      "docs/学习地图/系统架构/AI加速器/FDU_ICSE30034.md",
+      "docs/学习地图/系统架构/AI加速器/FDU_ICSE30036.md",
+      "docs/学习地图/系统架构/AI加速器/FDU_ICSE40002.md",
+      "docs/学习地图/系统架构/AI加速器/FDU_ICSE40018.md"
+    ],
+    "readme_listed_but_unmarked": [
+      "docs/学习地图/器件与工艺/集成电路工艺/FDU_ICSE30014.md",
+      "docs/学习地图/器件与工艺/集成电路工艺/FDU_ICSE30032.md",
+      "docs/学习地图/器件与工艺/半导体器件/FDU_MICR130006.md",
+      "docs/学习地图/电路/模拟与射频/模拟电子线路/razavi_e2.md",
+      "docs/学习地图/电路/数字设计/ASIC与数字后端/NPTEL_synthesis.md",
+      "docs/学习地图/电路/数字设计/HDL/HLS/gaoyajun_hls.md",
+      "docs/学习地图/电路/数字设计/HDL/HLS/Lehigh_hls.md",
+      "docs/学习地图/人工智能/机器学习理论/CMU_10-708.md",
+      "docs/学习地图/人工智能/机器学习理论/Stanford_CS229M.md",
+      "docs/学习地图/人工智能/入门速成/ZJU_wufei_AI.md",
+      "docs/学习地图/人工智能/深度学习/limu_d2l.md",
+      "docs/学习地图/系统架构/GPU体系结构/NPTEL_GPU.md",
+      "docs/学习地图/系统架构/GPU体系结构/ZOMI_GPU.md",
+      "docs/学习地图/系统架构/并行与分布式系统/parallel101.md",
+      "docs/学习地图/系统架构/并行与分布式系统/USTC_parallel.md",
+      "docs/学习地图/算法编程/编程入门/FDU_CS10004.md",
+      "docs/学习地图/算法编程/编程入门/C/PKU_guowei_C.md",
+      "docs/学习地图/算法编程/编程入门/C/ZJU_wengkai.md",
+      "docs/学习地图/算法编程/编程入门/Python/PKU_chenbin_python.md",
+      "docs/学习地图/算法编程/编程入门/Rust/linghu_rust.md",
+      "docs/学习地图/算法编程/编程入门/Rust/yangxu_rust.md",
+      "docs/学习地图/物理/半导体物理/FDU_MICR130005.md",
+      "docs/学习地图/物理/物理实验/FDU_PHYS120015.md",
+      "docs/学习地图/物理/量子计算/PKU_li_quantum.md",
+      "docs/学习地图/数学/代数/线性代数/FDU_COMP120004.md",
+      "docs/学习地图/数学/入门速成/FDU_MICR130008.md"
+    ],
+    "marked_but_not_listed_in_readme": [
+      "docs/学习地图/系统架构/AI加速器/FDU_ICSE30034.md"
+    ]
+  },
+  "technical_findings": [
+    {
+      "id": "TECH-001",
+      "severity": "high",
+      "title": "hooks.py 的第二个 on_post_build 覆盖第一个",
+      "evidence": "hooks.py:143-158 定义搜索索引修补，hooks.py:209 保存其引用，hooks.py:212-214 又定义同名 hook，但没有调用 _orig_on_post_build。",
+      "impact": "Material search_index.json 的中文 n-gram 修补永远不会从 MkDocs hook 入口执行。生产页头当前使用 PageFind，所以最终用户影响取决于是否仍需要 Material 搜索回退。"
+    },
+    {
+      "id": "TECH-002",
+      "severity": "high",
+      "title": "CI 调用不存在的行情脚本且吞掉失败",
+      "evidence": ".github/workflows/ci.yml:35 调用 scripts/fetch_foreign_quotes.py；scripts/ 仅含 inject_ngrams.py 与 annotate_inherited.py；命令尾部使用 || true。",
+      "impact": "13 个海外行情占位（11 个代码）无法生成 quotes.json，只能退回‘行情↗’，同时 CI 仍显示成功。"
+    },
+    {
+      "id": "TECH-003",
+      "severity": "medium",
+      "title": "构建与前端依赖不可复现",
+      "evidence": "CI 使用 actions/checkout@v2、actions/setup-python@v2、python-version: 3.x 和未固定版本的 npx pagefind；mkdocs.yml:354 使用 markmap-autoloader@latest，comments.html:77 使用 mermaid@11。",
+      "impact": "上游版本变化可以在无内容变更时改变或破坏站点。"
+    },
+    {
+      "id": "TECH-004",
+      "severity": "medium",
+      "title": "CI 没有严格构建、链接或内容一致性门禁",
+      "evidence": ".github/workflows/ci.yml:28 运行 mkdocs build 而非 --strict，且没有链接检查、骨架统计检查、方向元数据检查或 JSON/YAML schema 检查。",
+      "impact": "导航漂移、缺页、失效资源和统计过期只能靠人工发现。"
+    },
+    {
+      "id": "TECH-005",
+      "severity": "medium",
+      "title": "页面负载和维护面偏大",
+      "evidence": "首页引用 6,847,500 字节的 galton.gif；科研方向总览为 173,605 字节；站内有 91 个内联 SVG、660 个机构 badge 和 164 个行情 span。",
+      "impact": "移动网络首访成本、Markdown 审阅成本和重复数据维护成本偏高。"
+    },
+    {
+      "id": "TECH-006",
+      "severity": "low",
+      "title": "两个 HTML 属性使用弯引号",
+      "evidence": "docs/index.md:81 的 style=”…”，docs/科研方向/index.md:162 的 class=”…”。",
+      "impact": "浏览器可能不按预期解析横向滚动包装和 admonition class。"
+    },
+    {
+      "id": "TECH-007",
+      "severity": "medium",
+      "title": "搜索对话框键盘可达但缺少完整焦点管理",
+      "evidence": "search-pagefind.js 支持 /、Ctrl/Cmd+K 与 Escape，并设置 dialog/aria-modal；代码没有焦点陷阱、显式关闭按钮或关闭后恢复触发按钮焦点。",
+      "impact": "键盘和读屏用户可能跳出模态区域或在关闭后丢失操作位置。"
+    }
+  ],
+  "static_checks": {
+    "relative_markdown_link_candidate_files_with_missing_targets": 0,
+    "relative_markdown_link_missing_target_candidates": 0,
+    "json_parse_status": "passed_2026-08-10",
+    "upstream_strict_build_status": "not_run_mkdocs_unavailable"
+  }
+}

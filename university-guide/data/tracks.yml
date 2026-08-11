@@ -1,0 +1,192 @@
+- id: T-DEV
+  name: 器件与制造
+  directions:
+    - 半导体器件与先进工艺
+    - 功率半导体与宽禁带器件
+    - 光电子与硅光集成
+    - MEMS与微纳传感器
+  prerequisites:
+    - C-MATH-01
+    - C-MATH-02
+    - C-PHY-02
+    - C-PHY-03
+    - C-PHY-04
+    - C-PHY-05
+  competencies:
+    - DEV-01
+    - DEV-02
+    - DEV-03
+    - DEV-04
+  project: >-
+    选择 MOSFET、GaN 功率器件、硅光调制器或 MEMS 加速度计之一，完成从物理模型、
+    工艺流程到 TCAD/电路级仿真的设计报告，并用公开数据或文献曲线校准关键参数。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 微电子器件与集成技术硕博
+    - 宽禁带半导体与功率电子
+    - 集成光子学与微纳系统
+  careers:
+    - 器件研发工程师
+    - 工艺整合/良率工程师
+    - 功率器件应用工程师
+    - 硅光或 MEMS 设计工程师
+
+- id: T-ANA
+  name: 模拟、射频与生物电子
+  directions:
+    - 模拟与混合信号IC
+    - 射频与毫米波IC
+    - 生物电子与脑机接口
+  prerequisites:
+    - C-MATH-01
+    - C-MATH-03
+    - C-CIR-01
+    - C-CIR-02
+    - C-CIR-04
+    - C-CIR-05
+  competencies:
+    - ANA-01
+    - ANA-02
+    - ANA-03
+    - ANA-04
+  project: >-
+    设计并仿真一个低噪声传感前端：包括偏置、差分放大、频率补偿和噪声预算；
+    可选择扩展为 RF LNA/混频器或 EEG/神经电极读出链路，并提交 PVT 与蒙特卡洛结果。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 模拟与混合信号集成电路
+    - 射频/毫米波集成电路
+    - 生物医学电子与神经工程
+  careers:
+    - 模拟 IC 设计工程师
+    - RFIC/MMIC 设计工程师
+    - 混合信号验证工程师
+    - 生物电子系统工程师
+
+- id: T-DIG
+  name: 数字、FPGA 与硬件安全
+  directions:
+    - 可重构计算与FPGA
+    - 硬件安全与可信计算
+  prerequisites:
+    - C-CIR-03
+    - C-CIR-06
+    - C-SYS-01
+    - C-SYS-03
+    - C-SYS-04
+  competencies:
+    - DIG-01
+    - DIG-02
+    - DIG-03
+    - DIG-04
+  project: >-
+    用 SystemVerilog 实现带总线接口的小型加速器，在 FPGA 上验证吞吐与资源占用，
+    再使用开源 RTL-to-GDS 流程完成时序收敛；加入至少一种安全机制并进行攻击测试。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 数字 VLSI 与可重构计算
+    - 形式化验证与 EDA
+    - 硬件安全和可信执行
+  careers:
+    - RTL/FPGA 设计工程师
+    - ASIC 前端设计工程师
+    - 数字验证工程师
+    - 硬件安全工程师
+
+- id: T-ARCH
+  name: 架构、EDA 与 AI 芯片
+  directions:
+    - 处理器架构与编译系统
+    - EDA与设计自动化
+    - AI算法与系统
+  prerequisites:
+    - C-MATH-05
+    - C-SYS-03
+    - C-SYS-04
+    - C-SYS-05
+  competencies:
+    - ARCH-01
+    - ARCH-02
+    - ARCH-03
+    - ARCH-04
+  project: >-
+    构建一个可复现实验链：为小型 RISC-V 核或张量算子建立性能模型，完成编译映射、
+    缓存/数据流设计与 EDA 约束优化，并在模拟器或 FPGA 上报告性能、面积和能耗权衡。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 计算机体系结构与系统
+    - 编译器与领域专用语言
+    - EDA 算法与机器学习系统
+  careers:
+    - CPU/GPU/NPU 架构工程师
+    - 编译器工程师
+    - EDA 算法工程师
+    - AI 系统性能工程师
+
+- id: T-PKG
+  name: 先进集成、测试与可靠性
+  directions:
+    - 先进封装与异构集成
+  prerequisites:
+    - C-PHY-01
+    - C-PHY-04
+    - C-PHY-05
+    - C-CIR-01
+    - C-CIR-07
+  competencies:
+    - PKG-01
+    - PKG-02
+    - PKG-03
+    - PKG-04
+  project: >-
+    为一个双芯粒系统提出 2.5D/3D 封装方案，完成互连、SI/PI、热阻与可靠性预算；
+    同时为其中一个数字芯粒设计 scan/BIST 测试策略并给出覆盖率与量产测试流程。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 先进封装与异构集成
+    - 信号/电源完整性与热管理
+    - VLSI 测试、可靠性与失效分析
+  careers:
+    - 封装/Chiplet 设计工程师
+    - SI/PI 工程师
+    - 热设计与可靠性工程师
+    - DFT/测试工程师
+
+- id: T-NEW
+  name: 新型计算
+  directions:
+    - 存算一体与近存计算
+    - 具身智能
+    - 量子计算与量子芯片
+    - 类脑芯片
+  prerequisites:
+    - C-MATH-03
+    - C-MATH-05
+    - C-PHY-02
+    - C-CIR-05
+    - C-SYS-05
+  competencies:
+    - NEW-01
+    - NEW-02
+    - NEW-03
+    - NEW-04
+  project: >-
+    从存算一体、类脑、量子或具身边缘智能中选择一个范式，复现公开基线，建立传统方案
+    与新型方案的公平比较，并提交可运行代码、误差/能耗分析和对研究可行性的审慎结论。
+  project_included: true
+  project_hours: 0
+  further_study:
+    - 新型存储与存算一体
+    - 神经形态工程
+    - 量子信息与量子硬件
+    - 机器人学习与边缘智能
+  careers:
+    - 新型计算架构研究工程师
+    - 神经形态/存算芯片工程师
+    - 量子软硬件工程师
+    - 机器人与边缘 AI 工程师

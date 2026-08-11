@@ -1,0 +1,660 @@
+- competency_id: C-MATH-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: MATH10015, course_name: "高等数学A(上）", module: 学科基础课程}
+    - {course_code: MATH10016, course_name: "高等数学A(下）", module: 学科基础课程}
+  track_ids: [T-DEV, T-ANA]
+  coverage: full
+  note: "两学期高等数学直接覆盖微积分主体；工程建模产物仍按能力页另做。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-MATH-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: CS10003, course_name: 线性代数, module: 学科基础课程}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "课程名称与线性代数能力主体直接对应；工程算例与数值验证另做。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-MATH-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20009, course_name: 工程数学及概率方法, module: 新算力课程模块}
+  track_ids: [T-ANA, T-NEW]
+  coverage: partial
+  note: "课程名明确包含概率方法，但课程表不足以证明完整覆盖统计推断与蒙特卡洛验收。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-MATH-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: PHYS20006, course_name: 数学物理方法A, module: 新算力课程模块}
+    - {course_code: ICSE20006, course_name: 信号与系统概论, module: 专业核心教育课程}
+  track_ids: []
+  coverage: partial
+  note: "两门课与复变和 Fourier 应用相关，但课程表未给出逐章大纲，不能认定完整覆盖。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-MATH-05
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: PHYS20009, course_name: 计算物理基础, module: 新制造课程模块}
+    - {course_code: ICSE30026, course_name: 超大规模集成电路物理设计中的数学方法, module: 芯粒集成课程模块}
+  track_ids: [T-ARCH, T-NEW]
+  coverage: partial
+  note: "可支撑数值方法与工程优化应用，但课程表没有独立凸优化课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-PHY-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: PHYS10003, course_name: "大学物理B(上)", module: 学科基础课程}
+    - {course_code: PHYS10004, course_name: "大学物理B(下)", module: 学科基础课程}
+    - {course_code: ICE50009, course_name: 电磁场与电磁波, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: full
+  note: "大学物理与电磁场课程共同覆盖场、电磁波及互连所需基础。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-PHY-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20010, course_name: 固体物理基础, module: 新制造课程模块}
+    - {course_code: ICSE20011, course_name: 量子力学, module: 新制造课程模块}
+  track_ids: [T-DEV, T-NEW]
+  coverage: full
+  note: "量子力学与固体物理基础两门课直接对应能力的两个组成部分。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-PHY-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20007, course_name: 半导体物理, module: 专业核心教育课程}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "专业核心课与半导体物理能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-PHY-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30020, course_name: 半导体器件原理, module: 专业核心教育课程}
+  track_ids: [T-DEV, T-PKG]
+  coverage: full
+  note: "专业核心课与半导体器件能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-PHY-05
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30010, course_name: 集成电路工艺原理, module: 专业核心教育课程}
+    - {course_code: ICSE40016, course_name: 先进集成电路工艺技术, module: 新制造课程模块}
+  track_ids: [T-DEV, T-PKG]
+  coverage: full
+  note: "核心工艺课和先进工艺选修构成基础到进阶的直接覆盖。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE10001, course_name: 电路基础, module: 学科基础课程}
+  track_ids: [T-ANA, T-PKG]
+  coverage: full
+  note: "学科基础课与电路分析主体直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20004, course_name: 模拟电子线路, module: 专业核心教育课程}
+  track_ids: [T-ANA]
+  coverage: full
+  note: "专业核心课与模拟电子技术能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20005, course_name: 数字逻辑基础, module: 专业核心教育课程}
+  track_ids: [T-DIG]
+  coverage: full
+  note: "专业核心课与数字逻辑能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20006, course_name: 信号与系统概论, module: 专业核心教育课程}
+  track_ids: [T-ANA]
+  coverage: full
+  note: "专业核心课与信号与系统能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-05
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30022, course_name: 模拟集成电路设计原理, module: 专业核心教育课程}
+    - {course_code: ICSE20015, course_name: 集成电路版图设计基础, module: 芯粒集成课程模块}
+  track_ids: [T-ANA, T-NEW]
+  coverage: full
+  note: "模拟 IC 原理课直接覆盖主体，版图课补充实现环节。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-06
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30021, course_name: 数字集成电路设计原理, module: 专业核心教育课程}
+  track_ids: [T-DIG]
+  coverage: full
+  note: "专业核心课与数字集成电路能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-CIR-07
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: EST30002, course_name: 数字信号处理A, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: full
+  note: "选修课与数字信号处理能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: CS10004, course_name: 程序设计, module: 学科基础课程}
+    - {course_code: EST30001, course_name: 人工智能的计算机软件基础, module: 新算力课程模块}
+  track_ids: [T-DIG]
+  coverage: partial
+  note: "课程表能确认编程与软件基础课程，但不能仅凭名称确认同时覆盖 C 和 Python 的全部目标。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30011, course_name: 数据结构与算法, module: 芯粒集成课程模块}
+  track_ids: []
+  coverage: full
+  note: "选修课与数据结构和算法能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20008, course_name: 嵌入式处理器与芯片系统设计, module: 专业核心教育课程}
+  track_ids: [T-DIG, T-ARCH]
+  coverage: partial
+  note: "嵌入式处理器课程支撑组成与 SoC，但课程表没有独立计算机组成课可证明全部覆盖。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-04
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: [T-DIG, T-ARCH]
+  coverage: gap
+  note: "课程表中未发现操作系统课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-05
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20008, course_name: 嵌入式处理器与芯片系统设计, module: 专业核心教育课程}
+    - {course_code: ICSE40002, course_name: AI专用处理器架构设计方法, module: 新算力课程模块}
+  track_ids: [T-ARCH, T-NEW]
+  coverage: partial
+  note: "两门处理器课程覆盖嵌入式和专用架构，通用体系结构主题需按大纲补核。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-06
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: []
+  coverage: gap
+  note: "课程表中未发现编译原理课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-SYS-07
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30018, course_name: 模拟集成电路设计自动化基础, module: 芯粒集成课程模块}
+    - {course_code: ICSE30019, course_name: 数字集成电路设计自动化基础, module: 芯粒集成课程模块}
+    - {course_code: ICSE30028, course_name: EDA系统软件分析和设计方法学, module: 芯粒集成课程模块}
+  track_ids: []
+  coverage: full
+  note: "模拟、数字和 EDA 软件三门选修共同覆盖设计自动化基础链条。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-01
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: []
+  coverage: gap
+  note: "课程表中未发现 Linux 或 Git 工程环境课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30002, course_name: 器件模型与SPICE仿真, module: 芯粒集成课程模块}
+    - {course_code: ICSE30014, course_name: 集成电路制造仿真模拟原理和应用, module: 芯粒集成课程模块}
+  track_ids: []
+  coverage: full
+  note: "器件、电路 SPICE 与制造仿真两门课直接覆盖主要仿真对象。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: PHYS10005, course_name: 基础物理实验, module: 学科基础课程}
+    - {course_code: EST40012, course_name: 模拟与数字电路实验, module: 芯粒集成课程模块}
+    - {course_code: ICSE40008, course_name: "集成电路实验(上)", module: 融合创新能力}
+    - {course_code: ICSE40009, course_name: "集成电路实验(下)", module: 融合创新能力}
+  track_ids: []
+  coverage: full
+  note: "物理、电路和集成电路实验构成递进测量实践；误差分析仍需按能力页验收。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30009, course_name: 微电子重要进展及研究方法, module: 芯粒集成课程模块}
+  track_ids: []
+  coverage: partial
+  note: "研究方法课程可支撑检索训练，但课程名不足以确认引用管理和系统检索全覆盖。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-05
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30009, course_name: 微电子重要进展及研究方法, module: 芯粒集成课程模块}
+    - {course_code: ICSE40021, course_name: 毕业论文, module: 融合创新能力}
+  track_ids: []
+  coverage: partial
+  note: "研究方法和毕业论文提供写作场景，课程表未列独立技术表达训练。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-06
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30009, course_name: 微电子重要进展及研究方法, module: 芯粒集成课程模块}
+    - {course_code: ICSE40021, course_name: 毕业论文, module: 融合创新能力}
+  track_ids: []
+  coverage: partial
+  note: "两门课提供研究与论文实践，但课程表没有明确的论文或设计复现课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-07
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE40014, course_name: 集成电路设计实验, module: 芯粒集成课程模块}
+    - {course_code: ICSE40008, course_name: "集成电路实验(上)", module: 融合创新能力}
+    - {course_code: ICSE40009, course_name: "集成电路实验(下)", module: 融合创新能力}
+  track_ids: []
+  coverage: partial
+  note: "实验课提供工程项目载体，但课程表没有说明团队协作、接口和项目管理要求。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: C-ENG-08
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: []
+  coverage: gap
+  note: "课程表中未发现工程伦理或知识产权课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DEV-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30031, course_name: 超低功耗半导体器件, module: 新制造课程模块}
+    - {course_code: ICSE30029, course_name: 半导体表面与界面, module: 新制造课程模块}
+    - {course_code: ICSE30012, course_name: 新型微纳器件概论, module: 新制造课程模块}
+    - {course_code: ICSE40003, course_name: 集成电路纳米技术, module: 新制造课程模块}
+    - {course_code: ICSE40016, course_name: 先进集成电路工艺技术, module: 新制造课程模块}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "先进器件、界面、纳米技术与工艺课程共同覆盖器件—工艺协同。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DEV-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20012, course_name: 特色工艺与功率半导体技术, module: 新制造课程模块}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "选修课与功率半导体及其工艺能力直接对应。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DEV-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30008, course_name: 半导体光电子器件, module: 新制造课程模块}
+    - {course_code: ICSE30004, course_name: 光电子器件与集成, module: 新制造课程模块}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "光电子器件及集成两门课直接支撑光子器件与集成主体；硅平台细节需按大纲核对。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DEV-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30023, course_name: 传感器原理及应用, module: 新制造课程模块}
+    - {course_code: ICSE40015, course_name: 微机电系统应用, module: 新制造课程模块}
+  track_ids: [T-DEV]
+  coverage: full
+  note: "传感器和 MEMS 应用两门课共同覆盖结构、接口与系统应用。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ANA-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30022, course_name: 模拟集成电路设计原理, module: 专业核心教育课程}
+    - {course_code: ICSE20015, course_name: 集成电路版图设计基础, module: 芯粒集成课程模块}
+  track_ids: [T-ANA]
+  coverage: full
+  note: "模拟 IC 原理和版图基础直接支撑模拟单元、偏置及实现。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ANA-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30022, course_name: 模拟集成电路设计原理, module: 专业核心教育课程}
+    - {course_code: ICSE50001, course_name: 数模/模数转换器原理概论, module: 芯粒集成课程模块}
+  track_ids: [T-ANA]
+  coverage: partial
+  note: "课程覆盖模拟 IC 和转换器设计，但噪声、反馈稳定性及蒙特卡洛深度需按大纲确认。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ANA-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20001, course_name: 高频电子线路A, module: 芯粒集成课程模块}
+    - {course_code: ICSE30015, course_name: 射频集成电路基础, module: 芯粒集成课程模块}
+  track_ids: [T-ANA]
+  coverage: full
+  note: "高频电路与 RFIC 基础两门课直接覆盖射频收发前端主体。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ANA-04
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: [T-ANA]
+  coverage: gap
+  note: "课程表中未发现生物电子、生物电采集或脑机接口课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DIG-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30016, course_name: FPGA结构原理和应用, module: 新算力课程模块}
+    - {course_code: ICSE30027, course_name: 集成电路高级硬件描述语言, module: 芯粒集成课程模块}
+  track_ids: [T-DIG]
+  coverage: full
+  note: "FPGA 与高级 HDL 两门选修直接覆盖 RTL 描述和可重构实现。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DIG-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20016, course_name: 数字电路逻辑综合及描述方法概论, module: 芯粒集成课程模块}
+    - {course_code: ICSE30027, course_name: 集成电路高级硬件描述语言, module: 芯粒集成课程模块}
+  track_ids: [T-DIG]
+  coverage: partial
+  note: "课程可支撑 HDL 与综合验证，但课程表没有形式化验证或覆盖率课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DIG-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30007, course_name: 专用集成电路设计方法, module: 芯粒集成课程模块}
+    - {course_code: ICSE40005, course_name: 超低功耗集成电路设计, module: 芯粒集成课程模块}
+    - {course_code: ICSE30019, course_name: 数字集成电路设计自动化基础, module: 芯粒集成课程模块}
+  track_ids: [T-DIG]
+  coverage: full
+  note: "ASIC 方法、低功耗和数字设计自动化共同覆盖实现、时序与功耗主体。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: DIG-04
+  institution: 复旦大学
+  program_year: 2025
+  courses: []
+  track_ids: [T-DIG]
+  coverage: gap
+  note: "课程表中未发现硬件安全、侧信道或可信计算课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ARCH-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20008, course_name: 嵌入式处理器与芯片系统设计, module: 专业核心教育课程}
+    - {course_code: ICSE40002, course_name: AI专用处理器架构设计方法, module: 新算力课程模块}
+  track_ids: [T-ARCH]
+  coverage: partial
+  note: "两门处理器课程可支撑微架构设计，通用存储层次深度需按课程大纲确认。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ARCH-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: EST30001, course_name: 人工智能的计算机软件基础, module: 新算力课程模块}
+    - {course_code: ICSE40002, course_name: AI专用处理器架构设计方法, module: 新算力课程模块}
+  track_ids: [T-ARCH]
+  coverage: partial
+  note: "软件与处理器课程可支撑软硬件映射，但课程表没有编译原理或编译优化课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ARCH-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30026, course_name: 超大规模集成电路物理设计中的数学方法, module: 芯粒集成课程模块}
+    - {course_code: ICSE30019, course_name: 数字集成电路设计自动化基础, module: 芯粒集成课程模块}
+    - {course_code: ICSE40019, course_name: 人工智能算法在EDA的应用, module: 芯粒集成课程模块}
+  track_ids: [T-ARCH]
+  coverage: full
+  note: "物理设计数学、数字 EDA 与 AI-EDA 三门课直接覆盖算法和物理设计主体。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: ARCH-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE40002, course_name: AI专用处理器架构设计方法, module: 新算力课程模块}
+    - {course_code: ICSE40018, course_name: 基于FPGA的人工智能算法加速及应用, module: 新算力课程模块}
+    - {course_code: ICSE30036, course_name: AI专用芯片设计, module: 芯粒集成课程模块}
+  track_ids: [T-ARCH]
+  coverage: full
+  note: "架构、FPGA 加速和 AI 芯片设计三门课共同覆盖软硬件协同。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: PKG-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE40004, course_name: 集成电路封装与测试, module: 专业核心教育课程}
+    - {course_code: ICSE40006, course_name: 先进封装, module: 芯粒集成课程模块}
+    - {course_code: ICSE30013, course_name: 微电子封装材料及工艺, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: full
+  note: "核心封测、先进封装和封装材料工艺共同覆盖异构集成基础。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: PKG-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICE50009, course_name: 电磁场与电磁波, module: 芯粒集成课程模块}
+    - {course_code: ICSE40010, course_name: 射频微波测试基础, module: 芯粒集成课程模块}
+    - {course_code: ICSE40006, course_name: 先进封装, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: partial
+  note: "课程支撑电磁、测试和封装，但课程表未明确列出 SI/PI 或 PDN 专门课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: PKG-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE50008, course_name: 器件可靠性原理与测试, module: 芯粒集成课程模块}
+    - {course_code: ICSE30013, course_name: 微电子封装材料及工艺, module: 芯粒集成课程模块}
+    - {course_code: ICSE40017, course_name: 电子材料薄膜测试表征方法, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: partial
+  note: "可靠性、材料工艺和表征课程支撑失效分析，但课程表未列独立热设计课程。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: PKG-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE40004, course_name: 集成电路封装与测试, module: 专业核心教育课程}
+    - {course_code: ICSE30003, course_name: 模拟电路测试原理, module: 芯粒集成课程模块}
+    - {course_code: ICSE30033, course_name: 模拟测试原理与电路设计, module: 芯粒集成课程模块}
+  track_ids: [T-PKG]
+  coverage: partial
+  note: "测试课程覆盖封测和模拟测试，课程表未明确列出数字 DFT、ATPG 或 MBIST。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: NEW-01
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE30005, course_name: 存储器技术, module: 新制造课程模块}
+    - {course_code: ICSE30025, course_name: 存储器电路设计导论, module: 芯粒集成课程模块}
+    - {course_code: ICSE40007, course_name: 新型计算范式概论, module: 新算力课程模块}
+  track_ids: [T-NEW]
+  coverage: partial
+  note: "存储器和新型计算课程提供基础，但课程表未明确列出存算一体或近存计算专门课。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: NEW-02
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE40007, course_name: 新型计算范式概论, module: 新算力课程模块}
+  track_ids: [T-NEW]
+  coverage: partial
+  note: "新型计算概论可能提供范式入口，但课程表未列类脑芯片或脉冲神经网络专门课。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: NEW-03
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: ICSE20011, course_name: 量子力学, module: 新制造课程模块}
+    - {course_code: ICSE40007, course_name: 新型计算范式概论, module: 新算力课程模块}
+  track_ids: [T-NEW]
+  coverage: partial
+  note: "量子力学与新型计算概论提供前置，课程表未列量子计算或量子芯片专门课。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"
+
+- competency_id: NEW-04
+  institution: 复旦大学
+  program_year: 2025
+  courses:
+    - {course_code: AIT410017, course_name: 自动驾驶人工智能原理与实践, module: 新算力课程模块}
+    - {course_code: ICSE30036, course_name: AI专用芯片设计, module: 芯粒集成课程模块}
+  track_ids: [T-NEW]
+  coverage: partial
+  note: "自动驾驶 AI 与专用芯片课程支撑感知和边缘硬件，通用机器人闭环与控制仍有缺口。"
+  source_url: "https://crys-chen.github.io/ic-guide/%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE/%E5%A4%8D%E6%97%A6%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E8%AF%BE%E7%A8%8B%E8%A1%A8/"
+  verified_at: "2026-08-10"

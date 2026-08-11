@@ -1,0 +1,565 @@
+  - id: C-MATH-01
+    name: 微积分与工程建模
+    suggested_window: start
+    domain: 数学
+    prerequisites: []
+    outcomes:
+      - 能用极限、导数和积分描述连续时间电路与器件中的变化率和累积量
+      - 能建立一阶工程模型并检查量纲、边界条件与结果合理性
+      - 能用数值或符号工具验证手算结论
+    estimated_hours: 24
+    evidence: 一份含建模假设、推导、数值验证和误差讨论的 RC 充放电微积分报告
+    deliverable: 一份含建模假设、推导、数值验证和误差讨论的 RC 充放电微积分报告
+    assessment: 方程量纲与初始/边界条件全部正确；闭式解与数值解在至少 50 个采样点的最大相对误差不超过 5%；明确列出至少 2 项模型假设及适用边界。
+    requirement: recommended
+    type: common
+
+  - id: C-MATH-02
+    name: 线性代数
+    suggested_window: foundation
+    domain: 数学
+    prerequisites: []
+    outcomes:
+      - 能用矩阵、子空间、秩和线性变换表达线性系统
+      - 能求解线性方程组并解释特征值、特征向量和正交投影的工程意义
+      - 能用分解方法判断解的存在性、稳定性与数值敏感性
+    estimated_hours: 24
+    evidence: 一个用 Python 求解节点方程并以特征值分析二阶系统模态的可复现实验笔记
+    deliverable: 一个用 Python 求解节点方程并以特征值分析二阶系统模态的可复现实验笔记
+    assessment: 节点方程归一化残差不超过 1e-8；特征分解重构相对误差不超过 1e-6；在干净环境中从头运行可生成全部数值与图表。
+    requirement: recommended
+    type: common
+
+  - id: C-MATH-03
+    name: 概率统计
+    suggested_window: foundation
+    domain: 数学
+    prerequisites:
+      - C-MATH-01
+    outcomes:
+      - 能使用条件概率、随机变量、常见分布、期望和方差分析不确定性
+      - 能从样本估计参数、构造置信区间并检验基本假设
+      - 能区分相关与因果并正确解释噪声和工艺波动数据
+    estimated_hours: 22
+    evidence: 一份基于器件参数样本的分布拟合、置信区间和蒙特卡洛良率分析报告
+    deliverable: 一份基于器件参数样本的分布拟合、置信区间和蒙特卡洛良率分析报告
+    assessment: 使用固定随机种子和不少于 10000 次蒙特卡洛样本；给出 95% 置信区间；模拟良率与解析或重采样基准相差不超过 2 个百分点，并说明检验假设。
+    requirement: recommended
+    type: common
+
+  - id: C-MATH-04
+    name: 复变函数与 Fourier 分析
+    suggested_window: foundation
+    domain: 数学
+    prerequisites:
+      - C-MATH-01
+      - C-MATH-02
+    outcomes:
+      - 能用复数、解析函数和留数思想处理频域表达与积分
+      - 能建立 Fourier 级数和 Fourier 变换并解释频谱、带宽与采样现象
+      - 能在时域和频域之间验证同一线性系统结论
+    estimated_hours: 22
+    evidence: 一份对方波及 RC 滤波输出进行解析频谱、数值 FFT 和误差对照的笔记
+    deliverable: 一份对方波及 RC 滤波输出进行解析频谱、数值 FFT 和误差对照的笔记
+    assessment: 前 10 个非零解析 Fourier 系数与 FFT 结果的相对误差均不超过 5%；正确标注采样率、频率分辨率和窗函数；时域重构归一化均方根误差不超过 5%。
+    requirement: recommended
+    type: common
+
+  - id: C-MATH-05
+    name: 数值方法与凸优化
+    suggested_window: core
+    domain: 数学
+    prerequisites:
+      - C-MATH-01
+      - C-MATH-02
+      - C-MATH-03
+    outcomes:
+      - 能实现线性方程、插值、数值积分和非线性方程的基础算法
+      - 能识别凸集、凸函数和约束优化问题并使用梯度或 Newton 方法求解
+      - 能报告收敛条件、停止准则和数值误差而不只给出最优值
+    estimated_hours: 22
+    evidence: 一个带单元测试的 Python 优化小项目，用约束最小二乘完成晶体管模型参数拟合
+    deliverable: 一个带单元测试的 Python 优化小项目，用约束最小二乘完成晶体管模型参数拟合
+    assessment: 至少 3 类数值算法均有正常、边界和失败测试；最终约束违反量不超过 1e-6；目标值与 CVXPY 或另一可信求解器基准的相对差不超过 1e-4。
+    requirement: recommended
+    type: common
+
+  - id: C-PHY-01
+    name: 电磁学
+    suggested_window: foundation
+    domain: 物理与器件
+    prerequisites:
+      - C-MATH-01
+    outcomes:
+      - 能用电场、电势、磁场和 Maxwell 方程解释集总模型的适用边界
+      - 能计算典型导体、介质和磁路结构中的场、能量与边界条件
+      - 能定性判断寄生、电磁耦合和传播效应
+    estimated_hours: 24
+    evidence: 一份平行板电容和传输互连的场量推导、数量级估计及仿真对照报告
+    deliverable: 一份平行板电容和传输互连的场量推导、数量级估计及仿真对照报告
+    assessment: 场量单位、方向和至少 2 个边界条件全部正确；解析数量级与仿真结果相差不超过 10%；能依据尺寸与波长给出集总或分布模型选择并列出至少 2 种寄生效应。
+    requirement: recommended
+    type: common
+
+  - id: C-PHY-02
+    name: 量子与固体物理基础
+    suggested_window: foundation
+    domain: 物理与器件
+    prerequisites:
+      - C-MATH-01
+      - C-MATH-02
+      - C-PHY-01
+    outcomes:
+      - 能解释波函数、测量、能级、隧穿和量子统计的基本含义
+      - 能由周期势、能带和费米能级说明金属、绝缘体与半导体的差异
+      - 能把微观模型与器件尺度下的载流子行为联系起来
+    estimated_hours: 24
+    evidence: 一份从无限深势阱到能带形成的推导笔记，并用数值本征值计算验证前三个能级
+    deliverable: 一份从无限深势阱到能带形成的推导笔记，并用数值本征值计算验证前三个能级
+    assessment: 前三个数值能级与解析值相对误差均不超过 1%；波函数归一化误差和两两内积绝对值均不超过 1e-3；能用能带与费米能级正确区分三类材料。
+    requirement: recommended
+    type: common
+
+  - id: C-PHY-03
+    name: 半导体物理
+    suggested_window: core
+    domain: 物理与器件
+    prerequisites:
+      - C-PHY-02
+      - C-MATH-03
+    outcomes:
+      - 能计算载流子浓度、费米能级、漂移扩散与复合生成
+      - 能解释掺杂、温度和电场对材料电学性质的影响
+      - 能由 Poisson 方程和连续性方程建立简单半导体结构模型
+    estimated_hours: 24
+    evidence: 一个计算不同掺杂与温度下载流子浓度、费米能级和电导率的可复现笔记
+    deliverable: 一个计算不同掺杂与温度下载流子浓度、费米能级和电导率的可复现笔记
+    assessment: 至少覆盖 3 个掺杂浓度和 3 个温度；各工况电荷中性残差不超过总掺杂量的 1%；曲线单位完整，且能解释本征、非简并与简并近似的适用范围。
+    requirement: recommended
+    type: common
+
+  - id: C-PHY-04
+    name: 半导体器件
+    suggested_window: core
+    domain: 物理与器件
+    prerequisites:
+      - C-PHY-03
+      - C-CIR-01
+    outcomes:
+      - 能由物理机制解释 PN 结、二极管、BJT 和 MOSFET 的 I-V/C-V 特性
+      - 能选择器件工作区并建立适合电路分析的小信号或大信号模型
+      - 能识别短沟道、击穿、速度和功耗等非理想效应
+    estimated_hours: 26
+    evidence: 一份 MOS 电容与 MOSFET 特性提取报告，包含模型、曲线、参数和偏差解释
+    deliverable: 一份 MOS 电容与 MOSFET 特性提取报告，包含模型、曲线、参数和偏差解释
+    assessment: 正确标出积累、耗尽、反型及 MOSFET 三个主要工作区；从曲线提取阈值电压、跨导和输出电阻，重复拟合偏差不超过 10%；说明至少 3 种非理想效应。
+    requirement: recommended
+    type: common
+
+  - id: C-PHY-05
+    name: 集成电路工艺
+    suggested_window: core
+    domain: 物理与器件
+    prerequisites:
+      - C-PHY-04
+    outcomes:
+      - 能说明晶圆制备、氧化、光刻、掺杂、刻蚀、沉积和平坦化的作用与顺序
+      - 能从截面和版图推断关键工艺步骤、设计规则与主要缺陷来源
+      - 能连接工艺波动、器件参数、良率和可靠性
+    estimated_hours: 24
+    evidence: 一份从简化 CMOS 版图到工艺截面的流程卡，含关键控制参数和失效模式清单
+    deliverable: 一份从简化 CMOS 版图到工艺截面的流程卡，含关键控制参数和失效模式清单
+    assessment: 流程卡含不少于 8 个有序工艺步骤且每步截面与材料变化一致；至少列出 5 个失效模式，并为每项给出可测控制量或检查方法；版图层与最终截面可相互追踪。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-01
+    name: 电路分析
+    suggested_window: start
+    domain: 电路与信号
+    prerequisites: []
+    outcomes:
+      - 能使用 KCL、KVL、节点法、网孔法和等效定理分析线性电路
+      - 能求解一阶和二阶电路的瞬态、稳态与频率响应
+      - 能通过功率守恒和仿真检查答案
+    estimated_hours: 24
+    evidence: 一套含直流、瞬态和交流题目的完整解答及 SPICE 交叉验证文件
+    deliverable: 一套含直流、瞬态和交流题目的完整解答及 SPICE 交叉验证文件
+    assessment: 至少完成 12 题且覆盖节点法、等效定理、一阶/二阶瞬态和相量；每题 KCL/KVL 或功率残差不超过 1e-6；关键电压电流与 SPICE 相差不超过 2%。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-02
+    name: 模拟电子技术
+    suggested_window: foundation
+    domain: 电路与信号
+    prerequisites:
+      - C-CIR-01
+      - C-PHY-01
+    outcomes:
+      - 能分析二极管、BJT、MOSFET 放大与开关电路的偏置和小信号性能
+      - 能解释反馈、稳定性、频率响应、噪声和失真的基本权衡
+      - 能完成运算放大器接口电路的设计、仿真和测量
+    estimated_hours: 26
+    evidence: 一个满足增益、带宽和摆幅指标的两级放大器设计包，含计算、仿真和实测
+    deliverable: 一个满足增益、带宽和摆幅指标的两级放大器设计包，含计算、仿真和实测
+    assessment: 预先冻结的增益、带宽、摆幅和功耗指标全部通过；实测直流偏置与仿真相差不超过 5%，增益不超过 1 dB、带宽不超过 10%；报告探头和负载影响。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-03
+    name: 数字逻辑
+    suggested_window: foundation
+    domain: 电路与信号
+    prerequisites:
+      - C-SYS-01
+    outcomes:
+      - 能化简组合逻辑并设计算术、译码和多路选择模块
+      - 能分析锁存器、触发器、时序约束、有限状态机和同步系统
+      - 能用 HDL 描述、仿真并在 FPGA 上验证一个数字模块
+    estimated_hours: 24
+    evidence: 一个带测试平台、波形和 FPGA 演示的有限状态机或简易运算单元仓库
+    deliverable: 一个带测试平台、波形和 FPGA 演示的有限状态机或简易运算单元仓库
+    assessment: 组合模块通过不少于 100 组随机向量；状态机覆盖全部状态与合法转移；综合报告无意外锁存器且时序约束通过；FPGA 演示结果与仿真一致。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-04
+    name: 信号与系统
+    suggested_window: core
+    domain: 电路与信号
+    prerequisites:
+      - C-MATH-02
+      - C-MATH-04
+      - C-CIR-01
+    outcomes:
+      - 能判断连续与离散系统的线性、时不变、因果和稳定性质
+      - 能用卷积、Fourier、Laplace 和 Z 变换求 LTI 系统响应
+      - 能从极零点、频率响应和采样关系解释系统行为
+    estimated_hours: 26
+    evidence: 一份同一滤波系统的卷积、变换域、数值仿真三种解法及一致性检查
+    deliverable: 一份同一滤波系统的卷积、变换域、数值仿真三种解法及一致性检查
+    assessment: 卷积、变换域与数值仿真输出两两归一化均方根误差不超过 1e-3；正确判断因果性与稳定性；极零点、冲激响应和频率响应结论互相一致。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-05
+    name: 模拟集成电路
+    suggested_window: core
+    domain: 电路与信号
+    prerequisites:
+      - C-CIR-02
+      - C-PHY-04
+      - C-CIR-04
+    outcomes:
+      - 能设计电流镜、差分对、有源负载和基础运算放大器
+      - 能从增益、带宽、相位裕度、噪声、失真、功耗与面积进行权衡
+      - 能用 PVT 与 Monte Carlo 仿真验证规格鲁棒性
+    estimated_hours: 26
+    evidence: 一个带规格表、手算、原理图、PVT/Monte Carlo 结果的 CMOS 运放设计报告
+    deliverable: 一个带规格表、手算、原理图、PVT/Monte Carlo 结果的 CMOS 运放设计报告
+    assessment: 标称与所有指定 PVT 角均满足规格表；最差相位裕度不少于 60 度；至少 200 次 Monte Carlo 的规格良率不低于 95%；网表、模型角和随机种子可复现。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-06
+    name: 数字集成电路
+    suggested_window: core
+    domain: 电路与信号
+    prerequisites:
+      - C-CIR-03
+      - C-PHY-04
+    outcomes:
+      - 能分析 CMOS 反相器与组合、时序、存储单元的延迟、功耗和噪声裕量
+      - 能使用逻辑努力、尺寸设计和互连模型进行基础优化
+      - 能从 RTL、门级到版图后结果解释实现差异
+    estimated_hours: 26
+    evidence: 一个标准单元小库的晶体管级设计与表征报告，含延迟、功耗和版图检查
+    deliverable: 一个标准单元小库的晶体管级设计与表征报告，含延迟、功耗和版图检查
+    assessment: 至少含反相器和 3 个不同逻辑单元；每个单元在不少于 3 个负载和 3 个 PVT 角下完成延迟/功耗表征；DRC 与 LVS 零错误，表征脚本重复运行差异不超过 1%。
+    requirement: recommended
+    type: common
+
+  - id: C-CIR-07
+    name: 数字信号处理
+    suggested_window: core
+    domain: 电路与信号
+    prerequisites:
+      - C-CIR-04
+      - C-MATH-04
+      - C-SYS-01
+    outcomes:
+      - 能解释采样、混叠、DFT/FFT、频谱泄漏与窗函数
+      - 能设计和评估基础 FIR/IIR 滤波器
+      - 能把定点量化误差与硬件资源、吞吐和延迟联系起来
+    estimated_hours: 24
+    evidence: 一个从浮点设计到定点实现的数字滤波器项目，含频响、误差和资源报告
+    deliverable: 一个从浮点设计到定点实现的数字滤波器项目，含频响、误差和资源报告
+    assessment: 浮点滤波器满足预设通带纹波和阻带衰减；定点与浮点输出信噪比不低于 40 dB；不少于 10 组测试向量全通过，并报告位宽、溢出、资源和吞吐量。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-01
+    name: C 与 Python 编程
+    suggested_window: start
+    domain: 软件与系统
+    prerequisites: []
+    outcomes:
+      - 能用 C 编写包含指针、结构体、动态内存和文件 I/O 的小程序
+      - 能用 Python 进行数组计算、数据处理、绘图与自动化
+      - 能通过调试器、测试和代码风格检查定位并修复问题
+    estimated_hours: 28
+    evidence: 一个含 C 命令行程序、Python 分析脚本、测试和使用说明的公开可复现仓库
+    deliverable: 一个含 C 命令行程序、Python 分析脚本、测试和使用说明的公开可复现仓库
+    assessment: C 代码以 -Wall -Wextra 编译零警告并通过 AddressSanitizer；C/Python 合计不少于 20 个自动测试且全部通过；干净环境按 README 可一条命令生成结果图。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-02
+    name: 数据结构与算法
+    suggested_window: foundation
+    domain: 软件与系统
+    prerequisites:
+      - C-SYS-01
+    outcomes:
+      - 能实现数组、链表、栈、队列、树、哈希表和图的核心操作
+      - 能用渐近复杂度比较排序、搜索和图算法
+      - 能针对数据规模、内存与访问模式选择并验证算法
+    estimated_hours: 26
+    evidence: 一个含至少六种数据结构、复杂度说明和自动测试的算法实现仓库
+    deliverable: 一个含至少六种数据结构、复杂度说明和自动测试的算法实现仓库
+    assessment: 至少 6 种数据结构的插入、删除、查找和边界行为均有测试；每种实现通过不少于 1000 次随机操作对照测试；规模扩大 10 倍时的实测增长趋势与声明复杂度相符。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-03
+    name: 计算机组成
+    suggested_window: foundation
+    domain: 软件与系统
+    prerequisites:
+      - C-CIR-03
+      - C-SYS-01
+    outcomes:
+      - 能解释指令集、数据通路、控制器、存储层次和 I/O 的协同工作
+      - 能读写基础汇编并追踪 C 程序到机器执行的映射
+      - 能实现并测试一个简化处理器或其关键部件
+    estimated_hours: 26
+    evidence: 一个可运行测试程序的简化 RISC-V 单周期或多周期处理器仿真项目
+    deliverable: 一个可运行测试程序的简化 RISC-V 单周期或多周期处理器仿真项目
+    assessment: 通过不少于 30 个覆盖算术、访存、分支和跳转的 ISA 测试；寄存器和内存终态与参考模型逐项一致；综合无锁存器并给出关键路径与最高频率。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-04
+    name: 操作系统
+    suggested_window: core
+    domain: 软件与系统
+    prerequisites:
+      - C-SYS-02
+      - C-SYS-03
+    outcomes:
+      - 能解释进程、线程、系统调用、虚拟内存、文件系统和设备抽象
+      - 能使用锁、信号量和条件变量分析并发正确性
+      - 能通过内核实验追踪调度、异常与资源管理路径
+    estimated_hours: 24
+    evidence: 一组 xv6 或教学内核实验，至少实现一个系统调用和一个并发或内存功能
+    deliverable: 一组 xv6 或教学内核实验，至少实现一个系统调用和一个并发或内存功能
+    assessment: 新系统调用含正常、非法参数和并发测试；并发压力测试连续运行 1000 轮无死锁、竞态或资源泄漏；干净源码树可构建启动且原有回归测试全通过。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-05
+    name: 计算机体系结构
+    suggested_window: core
+    domain: 软件与系统
+    prerequisites:
+      - C-SYS-03
+      - C-SYS-04
+    outcomes:
+      - 能量化流水线、缓存、分支预测、乱序与并行对性能的影响
+      - 能使用 CPI、加速比、带宽和能效比较体系结构方案
+      - 能从工作负载和测量数据提出可验证的微体系结构改进
+    estimated_hours: 24
+    evidence: 一份基于模拟器或性能计数器的缓存与流水线设计空间探索报告
+    deliverable: 一份基于模拟器或性能计数器的缓存与流水线设计空间探索报告
+    assessment: 至少使用 5 个工作负载并扫描 3 个以上体系结构参数；每个配置重复不少于 3 次并报告离散度；所有性能结论可由 CPI、命中率、带宽或能效数据直接追溯。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-06
+    name: 编译原理
+    suggested_window: integration
+    domain: 软件与系统
+    prerequisites:
+      - C-SYS-02
+      - C-SYS-03
+    outcomes:
+      - 能解释词法、语法、语义分析和中间表示的编译流水线
+      - 能实现基础数据流分析、局部优化和代码生成
+      - 能连接高级语言结构、指令集与硬件性能
+    estimated_hours: 22
+    evidence: 一个支持表达式、控制流和简单优化的教学编译器及测试集
+    deliverable: 一个支持表达式、控制流和简单优化的教学编译器及测试集
+    assessment: 不少于 30 个正向与 15 个错误输入测试全通过；优化前后程序在测试集上的可观察输出完全一致；生成代码可由目标工具链执行，且错误信息含位置和原因。
+    requirement: recommended
+    type: common
+
+  - id: C-SYS-07
+    name: EDA 基础
+    suggested_window: integration
+    domain: 软件与系统
+    prerequisites:
+      - C-CIR-05
+      - C-CIR-06
+      - C-PHY-05
+    outcomes:
+      - 能解释从规格、RTL/原理图到 GDS、验证和签核的设计流程
+      - 能使用至少一条开源 EDA 流程完成综合、时序、布局布线或版图检查
+      - 能阅读工具报告、约束和日志并定位基础失败原因
+    estimated_hours: 26
+    evidence: 一个含源码、约束、脚本、工具版本和关键报告的开源 RTL-to-GDS 或模拟版图流程包
+    deliverable: 一个含源码、约束、脚本、工具版本和关键报告的开源 RTL-to-GDS 或模拟版图流程包
+    assessment: 干净环境可一条命令完成综合、STA 和布局布线或等价模拟流程；零未约束时序路径、关键检查零错误；日志记录工具版本，产物哈希在重复运行中一致或差异有解释。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-01
+    name: Linux 与 Git 工程环境
+    suggested_window: start
+    domain: 工程与科研
+    prerequisites: []
+    outcomes:
+      - 能在 shell 中导航、组合文本工具、管理进程与编写基础脚本
+      - 能用 Git 完成提交、分支、合并、冲突处理和远程协作
+      - 能用环境说明和自动化脚本复现开发环境
+    estimated_hours: 20
+    evidence: 一个带分支历史、合并记录、自动化脚本和可复现环境说明的 Git 仓库
+    deliverable: 一个带分支历史、合并记录、自动化脚本和可复现环境说明的 Git 仓库
+    assessment: 仓库含至少 2 个功能分支、1 次有记录的冲突解决和 1 次 bisect 定位；shell 脚本启用失败即停并返回正确状态码；新环境按 README 在 15 分钟内可复现实验。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-02
+    name: 电路与器件仿真
+    suggested_window: integration
+    domain: 工程与科研
+    prerequisites:
+      - C-SYS-01
+      - C-CIR-01
+      - C-PHY-04
+    outcomes:
+      - 能建立 SPICE 模型并设置 DC、AC、瞬态、噪声和参数扫描
+      - 能区分模型、数值设置和电路本身导致的异常结果
+      - 能保存网表、模型、版本与脚本以支持复现
+    estimated_hours: 20
+    evidence: 一套含网表、模型来源、参数扫描、收敛诊断和结果解释的 SPICE 实验
+    deliverable: 一套含网表、模型来源、参数扫描、收敛诊断和结果解释的 SPICE 实验
+    assessment: DC、AC、瞬态、噪声和参数扫描均可由脚本重跑；关键工作点与手算相差不超过 10%；日志无未解释的收敛警告，模型文件来源、版本和温度完整记录。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-03
+    name: 实验测量与误差分析
+    suggested_window: integration
+    domain: 工程与科研
+    prerequisites:
+      - C-CIR-02
+      - C-CIR-04
+    outcomes:
+      - 能安全使用电源、万用表、信号源和示波器完成基础测量
+      - 能选择带宽、采样、探头、接地和触发设置并识别测量扰动
+      - 能报告不确定度、重复性、校准与理论偏差
+    estimated_hours: 20
+    evidence: 一份放大器增益带宽实测报告，含原始数据、仪器设置、不确定度和误差预算
+    deliverable: 一份放大器增益带宽实测报告，含原始数据、仪器设置、不确定度和误差预算
+    assessment: 每个关键测点至少重复 3 次；原始数据含仪器型号、探头、带宽、采样率和校准日期；不确定度传播可复算，理论值与实测值之差落在合成不确定度内或有定量解释。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-04
+    name: 文献检索与引用管理
+    suggested_window: foundation
+    domain: 工程与科研
+    prerequisites: []
+    outcomes:
+      - 能把研究问题拆成关键词、同义词、布尔式和检索边界
+      - 能在学术数据库中迭代检索并按证据质量筛选来源
+      - 能用统一格式管理引用、去重并记录检索过程
+    estimated_hours: 18
+    evidence: 一份可复查的检索式、筛选流程图、20 篇注释书目和引用库导出文件
+    deliverable: 一份可复查的检索式、筛选流程图、20 篇注释书目和引用库导出文件
+    assessment: 至少在 2 个数据库运行并保存完整检索式与日期；去重后含不少于 20 篇来源，每篇有纳入理由和证据等级；引用库无重复、缺作者/年份或断裂附件链接。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-05
+    name: 技术写作与表达
+    suggested_window: integration
+    domain: 工程与科研
+    prerequisites:
+      - C-ENG-04
+    outcomes:
+      - 能围绕受众、目的和证据组织技术报告、图表与摘要
+      - 能用清晰、准确、可追溯的语言描述方法和结果
+      - 能通过同伴评审迭代书面报告和口头展示
+    estimated_hours: 18
+    evidence: 一篇经两轮评审修订的四页技术报告及一个八分钟配音演示
+    deliverable: 一篇经两轮评审修订的四页技术报告及一个八分钟配音演示
+    assessment: 完成两轮有记录的同伴评审并逐条处置意见；报告中每张图均有单位、图注和来源，引用可追踪；统一 rubric 得分不低于 80%，演示时长为 8 分钟正负 30 秒。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-06
+    name: 论文与设计复现
+    suggested_window: integration
+    domain: 工程与科研
+    prerequisites:
+      - C-ENG-01
+      - C-ENG-02
+      - C-ENG-04
+      - C-ENG-05
+    outcomes:
+      - 能从论文提取主张、数据、方法、超参数和隐含假设
+      - 能建立可追踪环境并复现至少一个核心图表或指标
+      - 能区分复现失败、结果差异和原结论不成立并如实报告
+    estimated_hours: 24
+    evidence: 一个带锁定环境、数据说明、运行脚本、复现结果和差异分析的复现包
+    deliverable: 一个带锁定环境、数据说明、运行脚本、复现结果和差异分析的复现包
+    assessment: 在全新环境中一条命令可生成目标图表或指标；核心数值与论文结果相差不超过 5% 或有逐项证据解释；数据来源、许可、哈希、随机种子和失败尝试全部记录。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-07
+    name: 团队工程项目
+    suggested_window: integration
+    domain: 工程与科研
+    prerequisites:
+      - C-ENG-01
+      - C-ENG-05
+      - C-ENG-06
+    outcomes:
+      - 能把开放目标拆成需求、接口、里程碑、风险和可测试任务
+      - 能通过版本控制、评审、问题跟踪和设计记录协作
+      - 能完成集成验收、复盘并清晰说明个人贡献
+    estimated_hours: 26
+    evidence: 一个三至五人项目的需求书、架构图、迭代记录、验收演示和个人贡献说明
+    deliverable: 一个三至五人项目的需求书、架构图、迭代记录、验收演示和个人贡献说明
+    assessment: 每项需求均映射到接口、负责人和可执行验收测试且最终全部有状态；至少完成 3 个里程碑和 2 次设计评审；演示通过冻结测试清单，版本记录可量化每名成员贡献。
+    requirement: recommended
+    type: common
+
+  - id: C-ENG-08
+    name: 工程伦理与知识产权
+    suggested_window: start
+    domain: 工程与科研
+    prerequisites: []
+    outcomes:
+      - 能识别安全、诚信、利益冲突、隐私、公平和社会影响问题
+      - 能区分专利、著作权、商标、商业秘密与开源许可的基本边界
+      - 能用利益相关者、职业规范和风险证据论证工程决策
+    estimated_hours: 18
+    evidence: 一份芯片设计或数据使用案例的伦理决策备忘录及 IP/许可清单
+    deliverable: 一份芯片设计或数据使用案例的伦理决策备忘录及 IP/许可清单
+    assessment: 至少识别 4 类利益相关者、3 个可选行动和 5 项风险；引用不少于 2 份职业规范或法规来源；专利、著作权、商标、商业秘密和开源许可分类无误且给出兼容性结论。
+    requirement: recommended
+    type: common

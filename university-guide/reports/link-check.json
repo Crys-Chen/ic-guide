@@ -1,0 +1,1015 @@
+[
+  {
+    "competency_id": "C-MATH-01",
+    "role": "primary",
+    "title": "Single Variable Calculus — Differentiation",
+    "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-01",
+    "role": "backup",
+    "title": "18.01.1x Calculus 1A — Differentiation",
+    "url": "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B18.01.1x%2B2T2019/course/",
+    "status": 200,
+    "final_url": "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B18.01.1x%2B2T2019/course/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-02",
+    "role": "primary",
+    "title": "18.06SC Linear Algebra",
+    "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/resource-index/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/resource-index/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-02",
+    "role": "backup",
+    "title": "18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning",
+    "url": "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video_galleries/video-lectures/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video_galleries/video-lectures/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-03",
+    "role": "primary",
+    "title": "6.041SC Probabilistic Systems Analysis and Applied Probability",
+    "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/resource-index/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/resource-index/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-03",
+    "role": "backup",
+    "title": "STAT 110 Lecture 1 — Probability and Counting",
+    "url": "https://www.youtube.com/watch?v=KbB0FjPg0mw",
+    "status": 200,
+    "final_url": "https://www.youtube.com/watch?v=KbB0FjPg0mw",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-04",
+    "role": "primary",
+    "title": "Fourier Series Basics",
+    "url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-04",
+    "role": "backup",
+    "title": "Calculus Revisited — Complex Variables, Part I",
+    "url": "https://ocw.mit.edu/courses/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/video_galleries/part-i/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/video_galleries/part-i/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-05",
+    "role": "primary",
+    "title": "EE364A Convex Optimization I",
+    "url": "https://see.stanford.edu/Course/EE364A",
+    "status": 200,
+    "final_url": "https://see.stanford.edu/Course/EE364A",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-MATH-05",
+    "role": "backup",
+    "title": "Optimization",
+    "url": "https://nptel.ac.in/courses/111105039",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/111105039",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-01",
+    "role": "primary",
+    "title": "8.02SC Physics II — Electricity and Magnetism",
+    "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-01",
+    "role": "backup",
+    "title": "PHYS 201 Fundamentals of Physics II",
+    "url": "https://oyc.yale.edu/physics/phys-201",
+    "status": 200,
+    "final_url": "https://oyc.yale.edu/physics/phys-201",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-02",
+    "role": "primary",
+    "title": "8.04 Quantum Physics I — Part 1",
+    "url": "https://www.ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/video-lectures/part-1/",
+    "status": 200,
+    "final_url": "https://www.ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/video-lectures/part-1/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-02",
+    "role": "backup",
+    "title": "Fundamentals of Electronic Materials and Devices",
+    "url": "https://nptel.ac.in/courses/113106065",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/113106065",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-03",
+    "role": "primary",
+    "title": "Fundamentals of Electronic Materials and Devices — Semiconductor Modules",
+    "url": "https://nptel.ac.in/courses/113106065",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/113106065",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-03",
+    "role": "backup",
+    "title": "Introduction to Semiconductor Devices — Physics Foundations",
+    "url": "https://nptel.ac.in/courses/108106181",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106181",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-04",
+    "role": "primary",
+    "title": "Introduction to Semiconductor Devices",
+    "url": "https://nptel.ac.in/courses/108106181",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106181",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-04",
+    "role": "backup",
+    "title": "Semiconductor Devices",
+    "url": "https://nptel.ac.in/courses/117102061",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117102061",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-05",
+    "role": "primary",
+    "title": "Basic Overview of Semiconductor Device Processing and IC Fabrication",
+    "url": "https://nptel.ac.in/courses/108104865",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108104865",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-PHY-05",
+    "role": "backup",
+    "title": "Fundamentals of Electronic Device Fabrication",
+    "url": "https://nptel.ac.in/courses/113106062",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/113106062",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-01",
+    "role": "primary",
+    "title": "6.002 Circuits and Electronics",
+    "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-01",
+    "role": "backup",
+    "title": "6.01SC Unit 3 — Circuits",
+    "url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/unit-3-circuits/circuits/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/unit-3-circuits/circuits/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-02",
+    "role": "primary",
+    "title": "Analog Circuits",
+    "url": "https://nptel.ac.in/courses/108106084",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106084",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-02",
+    "role": "backup",
+    "title": "Analog Electronic Circuits",
+    "url": "https://nptel.ac.in/courses/108106188",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106188",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-03",
+    "role": "primary",
+    "title": "6.004 Computation Structures — Digital Logic Modules",
+    "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-03",
+    "role": "backup",
+    "title": "Digital Circuits",
+    "url": "https://nptel.ac.in/courses/108105113",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108105113",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-04",
+    "role": "primary",
+    "title": "6.003 Signals and Systems — Lecture Series",
+    "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/lecture-1-signals-and-systems/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/lecture-1-signals-and-systems/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-04",
+    "role": "backup",
+    "title": "RES.6-007 Signals and Systems — Lecture 1 and Sequence",
+    "url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-1-introduction/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-1-introduction/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-05",
+    "role": "primary",
+    "title": "Analog IC Design",
+    "url": "https://nptel.ac.in/courses/108106105",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106105",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-05",
+    "role": "backup",
+    "title": "Analog VLSI Design",
+    "url": "https://nptel.ac.in/courses/108104193",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108104193",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-06",
+    "role": "primary",
+    "title": "VLSI Design",
+    "url": "https://nptel.ac.in/courses/117101058",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117101058",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-06",
+    "role": "backup",
+    "title": "Low Power VLSI Circuits and Systems",
+    "url": "https://nptel.ac.in/courses/106105034",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105034",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-07",
+    "role": "primary",
+    "title": "RES.6-008 Digital Signal Processing",
+    "url": "https://www.ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/resources/lecture-videos/",
+    "status": 200,
+    "final_url": "https://www.ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/resources/lecture-videos/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-CIR-07",
+    "role": "backup",
+    "title": "Digital Signal Processing",
+    "url": "https://nptel.ac.in/courses/117102060",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117102060",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-01",
+    "role": "primary",
+    "title": "CS50x Week 1 — C",
+    "url": "https://cs50.harvard.edu/x/weeks/1/",
+    "status": 200,
+    "final_url": "https://cs50.harvard.edu/x/weeks/1/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-01",
+    "role": "backup",
+    "title": "CS50x Week 6 — Python",
+    "url": "https://cs50.harvard.edu/x/weeks/6/",
+    "status": 200,
+    "final_url": "https://cs50.harvard.edu/x/weeks/6/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-02",
+    "role": "primary",
+    "title": "6.006 Introduction to Algorithms",
+    "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/download/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/download/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-02",
+    "role": "backup",
+    "title": "CS50x Week 5 — Data Structures",
+    "url": "https://cs50.harvard.edu/x/weeks/5/",
+    "status": 200,
+    "final_url": "https://cs50.harvard.edu/x/weeks/5/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-03",
+    "role": "primary",
+    "title": "Computer Architecture",
+    "url": "https://nptel.ac.in/courses/106102157",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106102157",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-03",
+    "role": "backup",
+    "title": "6.004 Computation Structures — Assembly and Processor Modules",
+    "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c10/c10s2/",
+    "status": null,
+    "final_url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c10/c10s2/",
+    "result": "manual_review_ok",
+    "verification_method": "官方当前 10.2 Topic Videos 页人工打开核验；原深层地址重定向循环后改为该稳定入口",
+    "verified_at": "2026-08-10"
+  },
+  {
+    "competency_id": "C-SYS-04",
+    "role": "primary",
+    "title": "Introduction to Operating Systems",
+    "url": "https://nptel.ac.in/courses/106106144",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106106144",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-04",
+    "role": "backup",
+    "title": "Operating System",
+    "url": "https://nptel.ac.in/courses/106102132",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106102132",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-05",
+    "role": "primary",
+    "title": "Advanced Computer Architecture",
+    "url": "https://nptel.ac.in/courses/106102229",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106102229",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-05",
+    "role": "backup",
+    "title": "Computer Organization and Architecture",
+    "url": "https://nptel.ac.in/courses/106106166",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106106166",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-06",
+    "role": "primary",
+    "title": "Compiler Design",
+    "url": "https://nptel.ac.in/courses/106104123",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106104123",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-06",
+    "role": "backup",
+    "title": "Compiler Design",
+    "url": "https://nptel.ac.in/courses/106105190",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105190",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-07",
+    "role": "primary",
+    "title": "VLSI Design Flow — RTL to GDS",
+    "url": "https://nptel.ac.in/courses/108106191",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106191",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-SYS-07",
+    "role": "backup",
+    "title": "VLSI Physical Design",
+    "url": "https://nptel.ac.in/courses/106105161",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105161",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-01",
+    "role": "primary",
+    "title": "The Missing Semester — The Shell",
+    "url": "https://missing.csail.mit.edu/2020/course-shell/",
+    "status": 200,
+    "final_url": "https://missing.csail.mit.edu/2020/course-shell/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-01",
+    "role": "backup",
+    "title": "The Missing Semester — Version Control (Git)",
+    "url": "https://missing.csail.mit.edu/2020/version-control/",
+    "status": 200,
+    "final_url": "https://missing.csail.mit.edu/2020/version-control/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-02",
+    "role": "primary",
+    "title": "Getting Started with LTspice",
+    "url": "https://www.analog.com/en/resources/media-center/videos/6344562474112.html",
+    "status": 200,
+    "final_url": "https://www.analog.com/en/resources/media-center/videos/6344562474112.html",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-02",
+    "role": "backup",
+    "title": "How to Use LTspice for AC and Noise Analysis",
+    "url": "https://www.analog.com/en/resources/media-center/videos/video-series/ltspice-ac-noise-analysis-tutorial.html",
+    "status": 200,
+    "final_url": "https://www.analog.com/en/resources/media-center/videos/video-series/ltspice-ac-noise-analysis-tutorial.html",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-03",
+    "role": "primary",
+    "title": "Introduction to Uncertainty Analysis and Experimentation",
+    "url": "https://nptel.ac.in/courses/112102298",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/112102298",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-03",
+    "role": "backup",
+    "title": "Introduction to Oscilloscopes Webinar",
+    "url": "https://www.tek.com/en/video/webinar/introduction-to-oscilloscopes-webinar",
+    "status": 200,
+    "final_url": "https://www.tek.com/en/video/webinar/introduction-to-oscilloscopes-webinar",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-04",
+    "role": "primary",
+    "title": "Literature Searching — Video Guide",
+    "url": "https://www.lse.ac.uk/library/research-support/library-resources-guide/literature-searching",
+    "status": 200,
+    "final_url": "https://www.lse.ac.uk/library/research-support/library-resources-guide/literature-searching",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-04",
+    "role": "backup",
+    "title": "Literature Searching with Scopus",
+    "url": "https://youtu.be/Zr2Z5z81b80",
+    "status": 200,
+    "final_url": "https://www.youtube.com/watch?v=Zr2Z5z81b80&feature=youtu.be",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-05",
+    "role": "primary",
+    "title": "Strategic Communication",
+    "url": "https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/resources/strategic-communication/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/resources/strategic-communication/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-05",
+    "role": "backup",
+    "title": "Teaching Communication in an Engineering Design Project",
+    "url": "https://ocw.mit.edu/courses/22-033-nuclear-systems-design-project-fall-2011/pages/instructor-insights/teaching-communication/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/22-033-nuclear-systems-design-project-fall-2011/pages/instructor-insights/teaching-communication/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-06",
+    "role": "primary",
+    "title": "CORES Reproducible Research Lecture Series",
+    "url": "https://datascience.stanford.edu/news/cores-fall-lecture-series-recordings",
+    "status": 200,
+    "final_url": "https://datascience.stanford.edu/news/cores-fall-lecture-series-recordings",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-06",
+    "role": "backup",
+    "title": "Reproducible Research Essentials",
+    "url": "https://rcpedia-dev.stanford.edu/blog/2024/02/28/reproducible-research-essentials/",
+    "status": 200,
+    "final_url": "https://rcpedia-dev.stanford.edu/blog/2024/02/28/reproducible-research-essentials/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-07",
+    "role": "primary",
+    "title": "Project Management",
+    "url": "https://nptel.ac.in/courses/110107430",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/110107430",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-07",
+    "role": "backup",
+    "title": "18.821 Project Laboratory — Teamwork",
+    "url": "https://ocw.mit.edu/courses/18-821-project-laboratory-in-mathematics-spring-2013/pages/teamwork/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/18-821-project-laboratory-in-mathematics-spring-2013/pages/teamwork/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-08",
+    "role": "primary",
+    "title": "Professional Ethics in Engineering",
+    "url": "https://www.youtube.com/playlist?list=PLdHmP-EKPCRD3-mFYjOjapYPYSnbBpFRV",
+    "status": 200,
+    "final_url": "https://www.youtube.com/playlist?list=PLdHmP-EKPCRD3-mFYjOjapYPYSnbBpFRV",
+    "result": "ok"
+  },
+  {
+    "competency_id": "C-ENG-08",
+    "role": "backup",
+    "title": "DL-001 Primer on Intellectual Property",
+    "url": "https://www.wipo.int/en/web/wipo-academy/programs/ip-elearning/index",
+    "status": null,
+    "final_url": "https://www.wipo.int/en/web/wipo-academy/programs/ip-elearning/index",
+    "result": "manual_review_ok",
+    "verification_method": "WIPO Academy 官方课程目录人工打开核验；页面列出 DL-001、主题范围与 3 小时学时",
+    "verified_at": "2026-08-10"
+  },
+  {
+    "competency_id": "DEV-01",
+    "role": "primary",
+    "title": "Introduction to Semiconductor Devices",
+    "url": "https://nptel.ac.in/courses/108106181",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106181",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-01",
+    "role": "backup",
+    "title": "Basic Overview of Semiconductor Device Processing and IC Fabrication",
+    "url": "https://nptel.ac.in/courses/108104865",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108104865",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-02",
+    "role": "primary",
+    "title": "Power Electronics with Wide Band Gap Devices",
+    "url": "https://nptel.ac.in/courses/108106480",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106480",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-02",
+    "role": "backup",
+    "title": "Power Electronics",
+    "url": "https://nptel.ac.in/courses/108105066",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108105066",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-03",
+    "role": "primary",
+    "title": "Integrated Photonics Devices and Circuits",
+    "url": "https://nptel.ac.in/courses/108106180",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106180",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-03",
+    "role": "backup",
+    "title": "Silicon Photonics Design, Fabrication and Data Analysis",
+    "url": "https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana/",
+    "status": 200,
+    "final_url": "https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana",
+    "result": "ok",
+    "redirected_from": "https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana/"
+  },
+  {
+    "competency_id": "DEV-04",
+    "role": "primary",
+    "title": "MEMS and Microsystems",
+    "url": "https://nptel.ac.in/courses/117105082",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117105082",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DEV-04",
+    "role": "backup",
+    "title": "A Brief Introduction of Micro-Sensors",
+    "url": "https://nptel.ac.in/courses/108106165",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106165",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-01",
+    "role": "primary",
+    "title": "Analog Electronic Circuit",
+    "url": "https://nptel.ac.in/courses/108102112",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108102112",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-01",
+    "role": "backup",
+    "title": "Analog Circuits",
+    "url": "https://nptel.ac.in/courses/117101106",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117101106",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-02",
+    "role": "primary",
+    "title": "Analog IC Design",
+    "url": "https://nptel.ac.in/courses/108106105",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106105",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-02",
+    "role": "backup",
+    "title": "Analog VLSI Design",
+    "url": "https://nptel.ac.in/courses/108104193",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108104193",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-03",
+    "role": "primary",
+    "title": "RF Integrated Circuits",
+    "url": "https://nptel.ac.in/courses/117102012",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117102012",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-03",
+    "role": "backup",
+    "title": "Basics of Semiconductor Microwave Devices",
+    "url": "https://nptel.ac.in/courses/108108377",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108108377",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-04",
+    "role": "primary",
+    "title": "Microsensors, Implantable Devices and Rodent Surgeries for Biomedical Applications",
+    "url": "https://nptel.ac.in/courses/102108344",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/102108344",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ANA-04",
+    "role": "backup",
+    "title": "Biomedical Instrumentation",
+    "url": "https://nptel.ac.in/courses/102106669",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/102106669",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-01",
+    "role": "primary",
+    "title": "Hardware Modeling using Verilog",
+    "url": "https://nptel.ac.in/courses/106105165",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105165",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-01",
+    "role": "backup",
+    "title": "FPGA Based Signal Processing Systems",
+    "url": "https://nptel.ac.in/courses/108107870",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108107870",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-02",
+    "role": "primary",
+    "title": "VLSI Design Flow: RTL to GDS",
+    "url": "https://nptel.ac.in/courses/108106191",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106191",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-02",
+    "role": "backup",
+    "title": "Advanced VLSI Design",
+    "url": "https://nptel.ac.in/courses/117101004",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117101004",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-03",
+    "role": "primary",
+    "title": "VLSI Design Flow: RTL to GDS",
+    "url": "https://nptel.ac.in/courses/108106191",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106191",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-03",
+    "role": "backup",
+    "title": "VLSI Physical Design with Timing Analysis",
+    "url": "https://nptel.ac.in/courses/108107380",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108107380",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-04",
+    "role": "primary",
+    "title": "Hardware Security",
+    "url": "https://nptel.ac.in/courses/106105194",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105194",
+    "result": "ok"
+  },
+  {
+    "competency_id": "DIG-04",
+    "role": "backup",
+    "title": "Ethical Hacking",
+    "url": "https://nptel.ac.in/courses/106105217",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105217",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-01",
+    "role": "primary",
+    "title": "Computation Structures",
+    "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-01",
+    "role": "backup",
+    "title": "Computer Organisation and Architecture",
+    "url": "https://nptel.ac.in/courses/106104073",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106104073",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-02",
+    "role": "primary",
+    "title": "Compiler Design",
+    "url": "https://nptel.ac.in/courses/106108052",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106108052",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-02",
+    "role": "backup",
+    "title": "ACM Summer School on Compiler Design and Construction",
+    "url": "https://nptel.ac.in/courses/128106009",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/128106009",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-03",
+    "role": "primary",
+    "title": "VLSI Physical Design",
+    "url": "https://nptel.ac.in/courses/106105161",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106105161",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-03",
+    "role": "backup",
+    "title": "VLSI Design Verification and Test",
+    "url": "https://nptel.ac.in/courses/106103016",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106103016",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-04",
+    "role": "primary",
+    "title": "TinyML and Efficient Deep Learning Computing (MIT 6.S965/6.5940)",
+    "url": "https://www.aihardware.mit.edu/tinyml-and-efficient-deep-learning-course-6-s965/",
+    "status": 200,
+    "final_url": "https://www.aihardware.mit.edu/tinyml-and-efficient-deep-learning-course-6-s965/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "ARCH-04",
+    "role": "backup",
+    "title": "Re-Engineering Computing with Neuro-Inspired Learning: Algorithms, Architecture, Devices",
+    "url": "https://engineering.purdue.edu/NRL/Presentations",
+    "status": 200,
+    "final_url": "https://engineering.purdue.edu/NRL/Presentations",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-01",
+    "role": "primary",
+    "title": "Electronic Packaging and Manufacturing",
+    "url": "https://nptel.ac.in/courses/112105267",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/112105267",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-01",
+    "role": "backup",
+    "title": "An Introduction to Electronics Systems Packaging",
+    "url": "https://nptel.ac.in/courses/108108031",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108108031",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-02",
+    "role": "primary",
+    "title": "VLSI Interconnects",
+    "url": "https://nptel.ac.in/courses/108105187",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108105187",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-02",
+    "role": "backup",
+    "title": "EMI/EMC and Signal Integrity",
+    "url": "https://nptel.ac.in/courses/108105375",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108105375",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-03",
+    "role": "primary",
+    "title": "Electronic Packaging and Manufacturing",
+    "url": "https://nptel.ac.in/courses/112105267",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/112105267",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-03",
+    "role": "backup",
+    "title": "VLSI Interconnects",
+    "url": "https://nptel.ac.in/courses/108105187",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108105187",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-04",
+    "role": "primary",
+    "title": "Digital VLSI Testing",
+    "url": "https://nptel.ac.in/courses/117105137",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/117105137",
+    "result": "ok"
+  },
+  {
+    "competency_id": "PKG-04",
+    "role": "backup",
+    "title": "VLSI Design Verification and Test",
+    "url": "https://nptel.ac.in/courses/106103016",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106103016",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-01",
+    "role": "primary",
+    "title": "Memory Device Technology for AI/ML Computing",
+    "url": "https://nptel.ac.in/courses/108106868",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106868",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-01",
+    "role": "backup",
+    "title": "In-Memory Computing based Machine Learning Accelerators: Opportunities and Challenges",
+    "url": "https://engineering.purdue.edu/NRL/Presentations",
+    "status": 200,
+    "final_url": "https://engineering.purdue.edu/NRL/Presentations",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-02",
+    "role": "primary",
+    "title": "Memory Device Technology for AI/ML Computing",
+    "url": "https://nptel.ac.in/courses/108106868",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/108106868",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-02",
+    "role": "backup",
+    "title": "Neuro-Inspired Computing Video Series",
+    "url": "https://engineering.purdue.edu/NRL/Presentations",
+    "status": 200,
+    "final_url": "https://engineering.purdue.edu/NRL/Presentations",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-03",
+    "role": "primary",
+    "title": "Quantum Computing",
+    "url": "https://nptel.ac.in/courses/104104082",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/104104082",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-03",
+    "role": "backup",
+    "title": "Introduction to Quantum Computing: Quantum Algorithms and Qiskit",
+    "url": "https://nptel.ac.in/courses/106106232",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106106232",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-04",
+    "role": "primary",
+    "title": "Underactuated Robotics",
+    "url": "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/video_galleries/video-lectures/",
+    "status": 200,
+    "final_url": "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/video_galleries/video-lectures/",
+    "result": "ok"
+  },
+  {
+    "competency_id": "NEW-04",
+    "role": "backup",
+    "title": "Edge Computing",
+    "url": "https://nptel.ac.in/courses/106104449",
+    "status": 200,
+    "final_url": "https://nptel.ac.in/courses/106104449",
+    "result": "ok"
+  }
+]

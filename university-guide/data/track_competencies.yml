@@ -1,0 +1,431 @@
+- id: DEV-01
+  route_id: T-DEV
+  name: 先进 MOS 器件与工艺协同
+  suggested_window: specialization
+  domain: 器件与制造
+  prerequisites: [C-MATH-01, C-MATH-02, C-PHY-02, C-PHY-03, C-PHY-04, C-PHY-05]
+  outcomes:
+    - 从能带、载流子输运和 MOS 电容推导长沟道 MOSFET 的工作区与小信号参数
+    - 解释短沟道效应、FinFET/GAA 结构和关键工艺步骤之间的设计权衡
+    - 用紧凑模型或器件仿真对 I-V、C-V 和缩放趋势进行校准
+  estimated_hours: 28
+  deliverable: 一份含工艺剖面、模型假设、I-V/C-V 曲线及误差讨论的器件设计报告
+  assessment: 模型曲线与公开数据的关键点误差不超过 10%，并能口头解释至少三种短沟道效应
+  evidence: >-
+    产出：一份含工艺剖面、模型假设、I-V/C-V 曲线及误差讨论的器件设计报告；验收：模型曲线与公开数据的关键点误差不超过 10%，并能口头解释至少三种短沟道效应
+  type: specialization
+  requirement: route_recommended
+
+- id: DEV-02
+  route_id: T-DEV
+  name: 功率半导体与宽禁带器件
+  suggested_window: specialization
+  domain: 器件与制造
+  prerequisites: [C-PHY-03, C-PHY-04, C-PHY-05, DEV-01]
+  outcomes:
+    - 比较 Si、SiC 与 GaN 的临界电场、导通电阻、开关速度和热性能
+    - 分析功率二极管、MOSFET、IGBT 与 GaN HEMT 的结构和开关损耗
+    - 为给定电压、电流与频率约束选择器件、栅极驱动和热管理方案
+  estimated_hours: 28
+  deliverable: 面向 48 V 至 400 V 变换器的器件选型、损耗分解与驱动方案
+  assessment: 损耗预算闭合到输入功率的 5% 以内，并完成双脉冲波形的定性或仿真验证
+  evidence: >-
+    产出：面向 48 V 至 400 V 变换器的器件选型、损耗分解与驱动方案；验收：损耗预算闭合到输入功率的 5% 以内，并完成双脉冲波形的定性或仿真验证
+  type: specialization
+  requirement: route_recommended
+
+- id: DEV-03
+  route_id: T-DEV
+  name: 硅光器件与光子集成
+  suggested_window: specialization
+  domain: 器件与制造
+  prerequisites: [C-MATH-02, C-PHY-01, C-PHY-04, DEV-01]
+  outcomes:
+    - 计算平板/条形波导的模式、有效折射率与传播损耗
+    - 设计耦合器、MZI、环形谐振器以及基本调制和探测单元
+    - 使用版图与电磁/电路模型建立可制造的硅光链路
+  estimated_hours: 28
+  deliverable: 一个含波导、耦合器和 MZI 或环形谐振器的版图、仿真与测试计划
+  assessment: 给出可复现模型，报告插入损耗、消光比/品质因数和至少两项工艺容差
+  evidence: >-
+    产出：一个含波导、耦合器和 MZI 或环形谐振器的版图、仿真与测试计划；验收：给出可复现模型，报告插入损耗、消光比/品质因数和至少两项工艺容差
+  type: specialization
+  requirement: route_recommended
+
+- id: DEV-04
+  route_id: T-DEV
+  name: MEMS 与微纳传感系统
+  suggested_window: specialization
+  domain: 器件与制造
+  prerequisites: [C-MATH-01, C-PHY-01, C-PHY-05, DEV-01]
+  outcomes:
+    - 运用尺度效应、梁/膜力学和静电驱动模型分析 MEMS 结构
+    - 规划体硅/表面微加工、光刻、刻蚀、键合与封装流程
+    - 联合设计传感结构、读出接口、噪声与校准流程
+  estimated_hours: 28
+  deliverable: 压力计或加速度计的结构模型、工艺流程卡和接口电路框图
+  assessment: 预测灵敏度与量程，列出主要噪声/漂移源，并以仿真或公开样片数据交叉验证
+  evidence: >-
+    产出：压力计或加速度计的结构模型、工艺流程卡和接口电路框图；验收：预测灵敏度与量程，列出主要噪声/漂移源，并以仿真或公开样片数据交叉验证
+  type: specialization
+  requirement: route_recommended
+
+- id: ANA-01
+  route_id: T-ANA
+  name: CMOS 模拟单元与偏置
+  suggested_window: specialization
+  domain: 模拟与射频电路
+  prerequisites: [C-CIR-01, C-CIR-02, C-CIR-04, C-CIR-05]
+  outcomes:
+    - 用小信号模型设计共源、共栅、源跟随、级联与差分放大器
+    - 设计电流镜、偏置和基准并核算摆幅、增益、带宽与功耗
+    - 在 PVT 角落与器件失配下解释电路性能变化
+  estimated_hours: 28
+  deliverable: 一套晶体管级偏置与差分前端原理图、尺寸表及 PVT 仿真
+  assessment: 满足预先声明的增益、摆幅、功耗和共模范围，且所有测试平台可复现
+  evidence: >-
+    产出：一套晶体管级偏置与差分前端原理图、尺寸表及 PVT 仿真；验收：满足预先声明的增益、摆幅、功耗和共模范围，且所有测试平台可复现
+  type: specialization
+  requirement: route_recommended
+
+- id: ANA-02
+  route_id: T-ANA
+  name: 运放、噪声与反馈稳定性
+  suggested_window: specialization
+  domain: 模拟与射频电路
+  prerequisites: [C-MATH-03, C-CIR-04, ANA-01]
+  outcomes:
+    - 从环路增益、极点零点与相位裕度分析反馈系统稳定性
+    - 设计单级、两级或折叠共源共栅 OTA 及补偿网络
+    - 进行输入参考噪声、失调、CMRR、PSRR 和蒙特卡洛预算
+  estimated_hours: 28
+  deliverable: 满足一组负载和功耗约束的 OTA 设计与完整验证报告
+  assessment: 在全部 PVT 角落达到目标相位裕度，并提交噪声积分和 200 次以上蒙特卡洛统计
+  evidence: >-
+    产出：满足一组负载和功耗约束的 OTA 设计与完整验证报告；验收：在全部 PVT 角落达到目标相位裕度，并提交噪声积分和 200 次以上蒙特卡洛统计
+  type: specialization
+  requirement: route_recommended
+
+- id: ANA-03
+  route_id: T-ANA
+  name: RF 与毫米波收发前端
+  suggested_window: specialization
+  domain: 模拟与射频电路
+  prerequisites: [C-MATH-03, C-CIR-04, C-CIR-05, ANA-01]
+  outcomes:
+    - 使用 S 参数、Smith 圆图、噪声系数和线性度指标分析 RF 网络
+    - 完成 LNA、混频器、振荡器或功放的基本拓扑选择与匹配
+    - 建立接收机级联增益、噪声和 IIP3 预算
+  estimated_hours: 28
+  deliverable: 一个目标频段 RF 前端的系统预算与至少一个晶体管级模块仿真
+  assessment: S 参数、NF、稳定因子和线性度均按同一参考阻抗验证，并解释版图寄生影响
+  evidence: >-
+    产出：一个目标频段 RF 前端的系统预算与至少一个晶体管级模块仿真；验收：S 参数、NF、稳定因子和线性度均按同一参考阻抗验证，并解释版图寄生影响
+  type: specialization
+  requirement: route_recommended
+
+- id: ANA-04
+  route_id: T-ANA
+  name: 生物电信号采集与脑机接口
+  suggested_window: specialization
+  domain: 模拟与射频电路
+  prerequisites: [C-MATH-03, C-CIR-02, C-CIR-04, ANA-02]
+  outcomes:
+    - 解释电极-组织接口、动作电位以及 EEG/EMG/神经信号的幅频特征
+    - 设计低噪声、高输入阻抗、低功耗的采集与刺激链路
+    - 建立伪迹抑制、滤波、采样、安全与伦理约束
+  estimated_hours: 28
+  deliverable: 使用公开生物电数据集验证的采集前端模型、滤波流程和安全说明
+  assessment: 给出输入参考噪声与动态范围预算，准确区分信号、工频和运动伪迹
+  evidence: >-
+    产出：使用公开生物电数据集验证的采集前端模型、滤波流程和安全说明；验收：给出输入参考噪声与动态范围预算，准确区分信号、工频和运动伪迹
+  type: specialization
+  requirement: route_recommended
+
+- id: DIG-01
+  route_id: T-DIG
+  name: RTL 设计与 FPGA 实现
+  suggested_window: specialization
+  domain: 数字与可重构计算
+  prerequisites: [C-CIR-03, C-CIR-06, C-SYS-01]
+  outcomes:
+    - 用可综合 SystemVerilog 描述组合、时序、FSM 与流水数据通路
+    - 理解阻塞/非阻塞赋值、时钟域、复位和亚稳态约束
+    - 在 FPGA 上完成综合、时序约束、资源分析和板级验证
+  estimated_hours: 24
+  deliverable: 带自检 testbench 的流水算术单元或总线外设及 FPGA 实测记录
+  assessment: lint、仿真和时序检查通过，功能覆盖目标达到 90% 且无未解释警告
+  evidence: >-
+    产出：带自检 testbench 的流水算术单元或总线外设及 FPGA 实测记录；验收：lint、仿真和时序检查通过，功能覆盖目标达到 90% 且无未解释警告
+  type: specialization
+  requirement: route_recommended
+
+- id: DIG-02
+  route_id: T-DIG
+  name: 数字验证与形式化基础
+  suggested_window: specialization
+  domain: 数字与可重构计算
+  prerequisites: [DIG-01, C-SYS-04]
+  outcomes:
+    - 建立参考模型、约束随机激励、断言和覆盖率闭环
+    - 区分仿真、等价检查与有界/符号模型检查的适用边界
+    - 对协议、流水线和跨时钟域缺陷进行定位与最小化复现
+  estimated_hours: 24
+  deliverable: 针对 DIG-01 设计的验证计划、断言集、覆盖率报告与缺陷日志
+  assessment: 证明关键安全/活性性质，达到声明的功能覆盖并注入至少五类可检测缺陷
+  evidence: >-
+    产出：针对 DIG-01 设计的验证计划、断言集、覆盖率报告与缺陷日志；验收：证明关键安全/活性性质，达到声明的功能覆盖并注入至少五类可检测缺陷
+  type: specialization
+  requirement: route_recommended
+
+- id: DIG-03
+  route_id: T-DIG
+  name: ASIC 实现、时序与低功耗
+  suggested_window: specialization
+  domain: 数字与可重构计算
+  prerequisites: [DIG-01, DIG-02, C-SYS-03]
+  outcomes:
+    - 执行综合、静态时序分析、布局布线、CTS 和签核的开源流程
+    - 解释 setup/hold、时钟偏斜、OCV、拥塞与寄生对收敛的影响
+    - 进行动态/漏电功耗分析并应用门控、尺寸或结构优化
+  estimated_hours: 28
+  deliverable: 一个小型 RTL 模块的可复现 RTL-to-GDS 流程和 PPA 对比报告
+  assessment: 严格约束下无 setup/hold 违例，并量化至少两轮优化对 PPA 的影响
+  evidence: >-
+    产出：一个小型 RTL 模块的可复现 RTL-to-GDS 流程和 PPA 对比报告；验收：严格约束下无 setup/hold 违例，并量化至少两轮优化对 PPA 的影响
+  type: specialization
+  requirement: route_recommended
+
+- id: DIG-04
+  route_id: T-DIG
+  name: 硬件安全与可信计算
+  suggested_window: specialization
+  domain: 数字与可重构计算
+  prerequisites: [DIG-01, DIG-02, C-SYS-04]
+  outcomes:
+    - 建立侧信道、故障注入、硬件木马、PUF 与微架构攻击的威胁模型
+    - 实现基础加密硬件并分析功耗/时序泄漏
+    - 设计检测、掩码、冗余或可信根等防护并评估代价
+  estimated_hours: 24
+  deliverable: 一个可重复的 AES/PUF 攻防实验、威胁模型和防护开销报告
+  assessment: 攻击前后以统一指标比较成功率、面积、性能与功耗，并说明残余风险
+  evidence: >-
+    产出：一个可重复的 AES/PUF 攻防实验、威胁模型和防护开销报告；验收：攻击前后以统一指标比较成功率、面积、性能与功耗，并说明残余风险
+  type: specialization
+  requirement: route_recommended
+
+- id: ARCH-01
+  route_id: T-ARCH
+  name: 处理器微架构与存储层次
+  suggested_window: specialization
+  domain: 体系结构与系统
+  prerequisites: [C-SYS-03, C-SYS-04, C-SYS-05]
+  outcomes:
+    - 从 ISA 到单周期、多周期和流水线数据通路建立性能模型
+    - 分析数据/控制冒险、分支预测、乱序执行与指令级并行
+    - 计算缓存、虚拟内存和一致性机制对 AMAT 与吞吐的影响
+  estimated_hours: 28
+  deliverable: 一个流水 RISC-V 核或架构模拟器扩展及基准测试报告
+  assessment: 通过指令一致性测试，并用计数器解释至少三个基准的 CPI 与缓存行为
+  evidence: >-
+    产出：一个流水 RISC-V 核或架构模拟器扩展及基准测试报告；验收：通过指令一致性测试，并用计数器解释至少三个基准的 CPI 与缓存行为
+  type: specialization
+  requirement: route_recommended
+
+- id: ARCH-02
+  route_id: T-ARCH
+  name: 编译优化与硬件映射
+  suggested_window: specialization
+  domain: 体系结构与系统
+  prerequisites: [C-MATH-05, C-SYS-05, ARCH-01]
+  outcomes:
+    - 构建 IR、控制/数据流图并执行数据流分析
+    - 实现局部/全局优化、指令选择、调度和寄存器分配
+    - 将算子映射到 SIMD、GPU、FPGA 或领域专用加速器并解释代价
+  estimated_hours: 28
+  deliverable: 一个 LLVM/MLIR 或自定义 IR 优化 pass 与硬件性能对比
+  assessment: 通过语义等价测试，并在至少三组输入上量化运行时间、访存或面积改进
+  evidence: >-
+    产出：一个 LLVM/MLIR 或自定义 IR 优化 pass 与硬件性能对比；验收：通过语义等价测试，并在至少三组输入上量化运行时间、访存或面积改进
+  type: specialization
+  requirement: route_recommended
+
+- id: ARCH-03
+  route_id: T-ARCH
+  name: EDA 图算法与物理设计
+  suggested_window: specialization
+  domain: 体系结构与系统
+  prerequisites: [C-MATH-05, C-SYS-03, ARCH-02]
+  outcomes:
+    - 将划分、布局、布线、时钟树和时序优化形式化为图/优化问题
+    - 实现并比较启发式、动态规划、最短路或数值优化算法
+    - 使用开源设计与工具评估线长、拥塞、时序和运行时间
+  estimated_hours: 28
+  deliverable: 一个小型布局或全局布线器、基准集和与开源工具的对照实验
+  assessment: 算法结果可复现，覆盖正常与极端案例，并报告质量-运行时间权衡
+  evidence: >-
+    产出：一个小型布局或全局布线器、基准集和与开源工具的对照实验；验收：算法结果可复现，覆盖正常与极端案例，并报告质量-运行时间权衡
+  type: specialization
+  requirement: route_recommended
+
+- id: ARCH-04
+  route_id: T-ARCH
+  name: AI 加速器与软硬件协同
+  suggested_window: specialization
+  domain: 体系结构与系统
+  prerequisites: [C-MATH-05, C-SYS-05, ARCH-01, ARCH-02]
+  outcomes:
+    - 分析卷积、矩阵乘和注意力算子的计算/访存强度
+    - 设计数据流、PE 阵列、片上存储、互连和低精度计算方案
+    - 联合使用量化、稀疏、算子融合与编译调度优化端到端性能
+  estimated_hours: 28
+  deliverable: 一个张量加速器模型或 FPGA 原型及 roofline/PPA/精度报告
+  assessment: 与 CPU/GPU 或朴素基线公平比较，报告吞吐、延迟、能效和精度损失
+  evidence: >-
+    产出：一个张量加速器模型或 FPGA 原型及 roofline/PPA/精度报告；验收：与 CPU/GPU 或朴素基线公平比较，报告吞吐、延迟、能效和精度损失
+  type: specialization
+  requirement: route_recommended
+
+- id: PKG-01
+  route_id: T-PKG
+  name: 先进封装、Chiplet 与异构集成
+  suggested_window: specialization
+  domain: 先进集成与测试
+  prerequisites: [C-PHY-04, C-PHY-05, C-CIR-01]
+  outcomes:
+    - 比较 wire-bond、flip-chip、2.5D interposer、3D TSV 与扇出封装
+    - 进行芯粒划分、微凸点/TSV 密度、带宽和成本的一级预算
+    - 理解 UCIe 等 die-to-die 接口与协同设计、测试和供应链约束
+  estimated_hours: 24
+  deliverable: 一个双芯粒系统的封装截面、I/O 预算、BOM 与集成风险表
+  assessment: 方案闭合带宽、功耗、面积与温度约束，并有可追溯的假设和替代方案
+  evidence: >-
+    产出：一个双芯粒系统的封装截面、I/O 预算、BOM 与集成风险表；验收：方案闭合带宽、功耗、面积与温度约束，并有可追溯的假设和替代方案
+  type: specialization
+  requirement: route_recommended
+
+- id: PKG-02
+  route_id: T-PKG
+  name: 高速互连与信号/电源完整性
+  suggested_window: specialization
+  domain: 先进集成与测试
+  prerequisites: [C-PHY-01, C-CIR-01, C-CIR-07, PKG-01]
+  outcomes:
+    - 建立封装/PCB 互连的传输线、S 参数和回流路径模型
+    - 分析反射、串扰、损耗、抖动、同时开关噪声与电源阻抗
+    - 设计终端、层叠、去耦和通道均衡策略
+  estimated_hours: 24
+  deliverable: 一条高速 die-to-die 或存储通道的眼图、阻抗与 PDN 仿真报告
+  assessment: 达到声明的眼高/眼宽和目标阻抗，且解释模型带宽与端口参考面的选择
+  evidence: >-
+    产出：一条高速 die-to-die 或存储通道的眼图、阻抗与 PDN 仿真报告；验收：达到声明的眼高/眼宽和目标阻抗，且解释模型带宽与端口参考面的选择
+  type: specialization
+  requirement: route_recommended
+
+- id: PKG-03
+  route_id: T-PKG
+  name: 热设计、可靠性与失效分析
+  suggested_window: specialization
+  domain: 先进集成与测试
+  prerequisites: [C-PHY-01, C-PHY-05, PKG-01]
+  outcomes:
+    - 建立结到环境热阻网络并估算稳态/瞬态结温
+    - 分析热循环、疲劳、蠕变、电迁移与湿热等失效机理
+    - 制定 FMEA、加速寿命试验和失效定位流程
+  estimated_hours: 24
+  deliverable: 多芯粒封装的热模型、FMEA 和加速试验计划
+  assessment: 能量与边界条件闭合，列出最高风险失效模式并用物理模型解释加速因子
+  evidence: >-
+    产出：多芯粒封装的热模型、FMEA 和加速试验计划；验收：能量与边界条件闭合，列出最高风险失效模式并用物理模型解释加速因子
+  type: specialization
+  requirement: route_recommended
+
+- id: PKG-04
+  route_id: T-PKG
+  name: DFT、ATPG 与量产测试
+  suggested_window: specialization
+  domain: 先进集成与测试
+  prerequisites: [C-CIR-03, C-CIR-06, PKG-01]
+  outcomes:
+    - 使用 stuck-at、transition 与存储器故障模型估计覆盖率
+    - 设计 scan、ATPG、LBIST/MBIST、边界扫描与测试压缩结构
+    - 把覆盖率、测试时间、功耗、良率和成本连接到量产策略
+  estimated_hours: 24
+  deliverable: 一个小型数字核的 scan/ATPG 或 BIST 实验与量产测试流程图
+  assessment: 报告可复现故障覆盖率和 pattern 数，并解释未检出故障与测试功耗风险
+  evidence: >-
+    产出：一个小型数字核的 scan/ATPG 或 BIST 实验与量产测试流程图；验收：报告可复现故障覆盖率和 pattern 数，并解释未检出故障与测试功耗风险
+  type: specialization
+  requirement: route_recommended
+
+- id: NEW-01
+  route_id: T-NEW
+  name: 存算一体与近存计算
+  suggested_window: specialization
+  domain: 新型计算
+  prerequisites: [C-CIR-05, C-SYS-05]
+  outcomes:
+    - 量化冯·诺依曼数据搬移瓶颈并区分 near-memory、数字与模拟 CIM
+    - 分析 SRAM、RRAM、PCM/MRAM 阵列及 ADC/DAC 外围开销
+    - 将矩阵向量乘映射到交叉阵列并评估精度、漂移和能效
+  estimated_hours: 28
+  deliverable: 一个数字或模拟 CIM 阵列模型及与传统加速器的公平比较
+  assessment: 包含器件/电路非理想性，报告 TOPS/W、延迟、面积和任务精度的完整权衡
+  evidence: >-
+    产出：一个数字或模拟 CIM 阵列模型及与传统加速器的公平比较；验收：包含器件/电路非理想性，报告 TOPS/W、延迟、面积和任务精度的完整权衡
+  type: specialization
+  requirement: route_recommended
+
+- id: NEW-02
+  route_id: T-NEW
+  name: 类脑芯片与脉冲神经网络
+  suggested_window: specialization
+  domain: 新型计算
+  prerequisites: [C-MATH-03, C-PHY-02, C-CIR-05, NEW-01]
+  outcomes:
+    - 从膜电位与突触可塑性建立 LIF/脉冲神经元模型
+    - 训练或转换 SNN 并分析事件驱动、稀疏与时序编码
+    - 比较数字、模拟和新型存储神经形态硬件的优势与限制
+  estimated_hours: 28
+  deliverable: 一个 SNN 任务复现、神经元/突触硬件映射和能耗估算
+  assessment: 与 ANN 或非事件驱动基线比较精度、延迟和事件数，并做消融实验
+  evidence: >-
+    产出：一个 SNN 任务复现、神经元/突触硬件映射和能耗估算；验收：与 ANN 或非事件驱动基线比较精度、延迟和事件数，并做消融实验
+  type: specialization
+  requirement: route_recommended
+
+- id: NEW-03
+  route_id: T-NEW
+  name: 量子计算与量子芯片基础
+  suggested_window: specialization
+  domain: 新型计算
+  prerequisites: [C-MATH-02, C-MATH-03, C-PHY-02]
+  outcomes:
+    - 使用态矢、张量积、量子门和测量描述小规模量子电路
+    - 实现基础算法并解释噪声、退相干、读出和纠错需求
+    - 比较超导、离子阱、光子与自旋量子比特及控制电子学
+  estimated_hours: 28
+  deliverable: 一组 Qiskit/模拟器实验及一种量子硬件路线的控制与误差预算
+  assessment: 结果含统计置信度与噪声模型，能区分算法优势、硬件限制和营销性表述
+  evidence: >-
+    产出：一组 Qiskit/模拟器实验及一种量子硬件路线的控制与误差预算；验收：结果含统计置信度与噪声模型，能区分算法优势、硬件限制和营销性表述
+  type: specialization
+  requirement: route_recommended
+
+- id: NEW-04
+  route_id: T-NEW
+  name: 具身智能与边缘 AI 系统
+  suggested_window: specialization
+  domain: 新型计算
+  prerequisites: [C-MATH-05, C-SYS-05]
+  outcomes:
+    - 串联感知、状态估计、规划、控制与学习的机器人闭环
+    - 分析模型预测控制、模仿/强化学习和视觉运动策略的适用边界
+    - 在边缘算力、实时性、能耗、安全和隐私约束下部署模型
+  estimated_hours: 28
+  deliverable: 仿真或小型平台上的感知-决策-控制闭环与边缘部署报告
+  assessment: 在至少三种扰动下报告成功率、延迟和能耗，并提供失败案例与安全停止机制
+  evidence: >-
+    产出：仿真或小型平台上的感知-决策-控制闭环与边缘部署报告；验收：在至少三种扰动下报告成功率、延迟和能耗，并提供失败案例与安全停止机制
+  type: specialization
+  requirement: route_recommended

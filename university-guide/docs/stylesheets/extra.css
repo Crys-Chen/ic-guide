@@ -1,0 +1,103 @@
+:root {
+  --md-text-font: "Noto Sans SC", "PingFang SC", sans-serif;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.74rem;
+}
+
+.md-typeset .resource-score {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.md-typeset .badge {
+  display: inline-block;
+  padding: 0.08rem 0.38rem;
+  border-radius: 0.5rem;
+  background: #e8eefc;
+  color: #244a8f;
+  font-size: 0.68rem;
+}
+
+.resource-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0;
+  padding: 0.9rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: var(--md-code-bg-color);
+}
+
+.resource-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.72rem;
+}
+
+.resource-filters input,
+.resource-filters select,
+.resource-filters button {
+  min-height: 2rem;
+  padding: 0.3rem 0.45rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+}
+
+.resource-filters button {
+  align-self: end;
+  cursor: pointer;
+}
+
+.resource-count {
+  align-self: end;
+  margin: 0 !important;
+  padding: 0.35rem 0;
+}
+
+.resource-empty {
+  padding: 0.8rem;
+  border: 0.05rem dashed var(--md-default-fg-color--lighter);
+  border-radius: 0.25rem;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#resource-table {
+  min-width: 72rem;
+  border-collapse: collapse;
+  font-size: 0.7rem;
+}
+
+#resource-table th,
+#resource-table td {
+  padding: 0.45rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+#resource-table tr[hidden] {
+  display: none;
+}
+
+@media (max-width: 44.9rem) {
+  .resource-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resource-filters label:first-child,
+  .resource-count {
+    grid-column: 1 / -1;
+  }
+}
