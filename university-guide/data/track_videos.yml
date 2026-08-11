@@ -1,0 +1,1007 @@
+- id: VID-DEV-01-P
+  competency_id: DEV-01
+  role: primary
+  title: Introduction to Semiconductor Devices
+  instructor: Naresh Kumar Emani
+  institution: IIT Hyderabad
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106181
+  section: 第 7–10 周：理想 MOS 电容、C-V 与非理想效应、长沟道 MOSFET、缩放/短沟道效应及 FinFET
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 18 讲）
+  duration_hours: 8
+  exercises: 完成 MOSCAP 能带图、阈值电压和短沟道 MOSFET 参数拟合作业
+  materials: 课程页讲义、作业与 nanoHUB 演示
+  score: 92
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 12, access: 9, presentation: 4}
+  reason: 器件物理到 MOSFET 模型的链条完整，章节细分明确且配有仿真演示，适合作为先进器件主线。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-01-A
+  competency_id: DEV-01
+  role: backup
+  title: Basic Overview of Semiconductor Device Processing and IC Fabrication
+  instructor: S. Sundar Kumar Iyer
+  institution: IIT Kanpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108104865
+  section: 第 3–13 讲缩放、CMOS 平面工艺与先进 FET；第 21、35–37 讲 SOI、光刻、刻蚀与统计工艺控制
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（所选 15 讲）
+  duration_hours: 7
+  exercises: 绘制 CMOS 掩模/流程卡并比较 planar、FinFET 与 GAA 的工艺约束
+  materials: 课程讲义、工艺流程图与测验
+  score: 84
+  score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 8, access: 9, presentation: 4}
+  reason: 从制造视角补足主资源偏重器件物理的部分，适合快速建立器件—工艺协同意识。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-02-P
+  competency_id: DEV-02
+  role: primary
+  title: Power Electronics with Wide Band Gap Devices
+  instructor: Moumita Das
+  institution: IIT Mandi
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106480
+  section: 第 1 周 Si MOSFET/IGBT 与 SiC、GaN 宽禁带器件；第 2–3 周驱动、开关损耗、热设计与变换器应用
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（前 3 周）
+  duration_hours: 7
+  exercises: 对同一变换器工况完成 Si、SiC、GaN 损耗与结温比较
+  materials: 课程讲义、周测与器件选型案例
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 课程直接围绕宽禁带器件及驱动/热设计展开，能把材料优势落实为系统级工程指标。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-02-A
+  competency_id: DEV-02
+  role: backup
+  title: Power Electronics
+  instructor: D. Prasad、N. K. De、D. Kastha、Sabyasachi Sengupta
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108105066
+  section: 功率二极管、BJT、GTO、MOSFET、IGBT 及 Hard/Soft Switching 章节
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 6 小时（器件与开关专题）
+  duration_hours: 6
+  exercises: 从波形估算导通/开关损耗并解释安全工作区与栅极驱动要求
+  materials: 课程页逐讲视频与例题
+  score: 83
+  score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 8, access: 8, presentation: 4}
+  reason: 以经典功率器件为骨架，便于在进入 SiC/GaN 前补齐器件比较和开关机理。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-03-P
+  competency_id: DEV-03
+  role: primary
+  title: Integrated Photonics Devices and Circuits
+  instructor: Bijoy Krishna Das
+  institution: IIT Madras
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106180
+  section: 第 3–4 周 8 讲波导模式/色散/二维约束；第 7–9 周 8 讲 MZI、定向耦合器、微环和 DBR；第 11–12 周 6 讲电光调制、集成光源与硅光探测器
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选 22 讲）
+  duration_hours: 10
+  exercises: 计算波导模式并设计 MZI、环或 DBR 器件的关键尺寸
+  materials: 课程讲义、周作业与器件设计示例
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 从 Maxwell/波导基础直达硅光有源与无源器件，深度和方向匹配度均很高。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-03-A
+  competency_id: DEV-03
+  role: backup
+  title: Silicon Photonics Design, Fabrication and Data Analysis
+  instructor: Lukas Chrostowski
+  institution: University of British Columbia
+  platform: edX / UBCx
+  source_kind: official_university_course
+  url: https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana/
+  section: Modules 1–4：waveguides、couplers、Mach–Zehnder interferometer、layout/fabrication；Module 6：measurement data analysis
+  language: English
+  subtitles: English transcript（平台提供多语界面）
+  duration: 6 周，核心视频约 8 小时
+  duration_hours: 8
+  exercises: 使用 KLayout/SiEPIC 或 gdsfactory 完成可制造版图并分析测量数据
+  materials: 视频、教程、版图工具、练习与实验数据
+  score: 89
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 10, access: 9, presentation: 4}
+  reason: 项目驱动、包含真实制造和测试数据，是理论型主资源的高质量实践补充。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-04-P
+  competency_id: DEV-04
+  role: primary
+  title: MEMS and Microsystems
+  instructor: Santiram Kal
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/117105082
+  section: 第 10–14 讲微加工；第 16–27 讲热/机械/压力/惯性传感器；Wafer Bonding、Packaging 与 Interface Electronics
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 12 小时（所选 26 讲）
+  duration_hours: 12
+  exercises: 建立梁/膜模型，完成压力或加速度传感器工艺流程和读出预算
+  materials: 逐讲视频、课程讲义和传感器案例
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 覆盖材料、加工、传感结构、封装和接口电子学，能支撑完整 MEMS 系统项目。
+  checked_at: "2026-08-10"
+
+- id: VID-DEV-04-A
+  competency_id: DEV-04
+  role: backup
+  title: A Brief Introduction of Micro-Sensors
+  instructor: Santanu Talukder
+  institution: IISER Bhopal
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106165
+  section: 第 1–2 周尺度效应、力学与静电驱动；第 3 周硅刻蚀/沉积/光刻；第 4 周压力计与加速度计
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（4 周）
+  duration_hours: 8
+  exercises: 复现 KOH/TMAH 刻蚀与电容式加速度计的一阶计算
+  materials: 课程讲义、周测和设计例题
+  score: 84
+  score_breakdown: {fit: 28, authority: 20, depth: 15, practice: 8, access: 9, presentation: 4}
+  reason: 篇幅较短、推导集中，适合作为 MEMS 主课前的结构力学和微加工预热。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-01-P
+  competency_id: ANA-01
+  role: primary
+  title: Analog Electronic Circuit
+  instructor: Shouribrata Chatterjee
+  institution: IIT Delhi
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108102112
+  section: 第 2–7 周共源/共栅/源退化、电流镜、差分放大器、级联与两级放大器
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选 21 讲）
+  duration_hours: 10
+  exercises: 为给定增益、摆幅和功耗设计偏置、差分对和两级放大器
+  materials: 课程讲义、作业与设计例题
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 以负反馈和 MOS 单元逐步合成完整放大器，特别适合建立晶体管级设计直觉。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-01-A
+  competency_id: ANA-01
+  role: backup
+  title: Analog Circuits
+  instructor: A. N. Chandorkar
+  institution: IIT Bombay
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/117101106
+  section: 第 5–16 讲 MOS 模型、偏置、MOS/cascode 放大器与差分放大器
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 6 小时（12 讲）
+  duration_hours: 6
+  exercises: 推导各级小信号增益、输出电阻与频率限制并用 SPICE 核验
+  materials: 逐讲视频与课程例题
+  score: 82
+  score_breakdown: {fit: 26, authority: 20, depth: 16, practice: 8, access: 8, presentation: 4}
+  reason: 讲次紧凑，适合用不同推导路径复习 MOS 放大单元与差分结构。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-02-P
+  competency_id: ANA-02
+  role: primary
+  title: Analog IC Design
+  instructor: S. Aniruddhan、Nagendra Krishnapura
+  institution: IIT Madras
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106105
+  section: 第 1–5 周反馈、稳定性与补偿；第 8 周噪声；第 10–12 周单级、折叠与两级运放
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 13 小时（所选 29 讲）
+  duration_hours: 13
+  exercises: 完成环路增益、相位裕度、输入参考噪声与两级 OTA 尺寸设计
+  materials: 讲义、周作业、数据手册分析与设计例题
+  score: 93
+  score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 9, presentation: 4}
+  reason: 稳定性、噪声、失配和 OTA 设计完整贯通，是公开模拟 IC 课程中的强主线。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-02-A
+  competency_id: ANA-02
+  role: backup
+  title: Analog VLSI Design
+  instructor: Imon Mondal
+  institution: IIT Kanpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108104193
+  section: 第 34–38 讲两级放大器、MOS 电容、频率响应、相位裕度与两级运放极点
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 4 小时（10 个分段视频）
+  duration_hours: 4
+  exercises: 用波特图和阶跃响应交叉验证补偿前后的稳定性
+  materials: 课程讲义、分段视频和测验
+  score: 83
+  score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 8, access: 8, presentation: 4}
+  reason: 聚焦两级放大与相位裕度，适合作为主课程稳定性章节的精炼复习。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-03-P
+  competency_id: ANA-03
+  role: primary
+  title: RF Integrated Circuits
+  instructor: Shouribrata Chatterjee
+  institution: IIT Delhi
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/117102012
+  section: 第 5–6 讲匹配；第 20–24 讲噪声与 LNA；第 25–27 讲混频器；第 28–30 讲振荡器；第 37–39 讲功放（共 16 讲）
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 15 小时（所选 16 讲）
+  duration_hours: 15
+  exercises: 完成 50 Ω 匹配、接收机噪声级联预算并设计一个 LNA 或混频器
+  materials: 课程讲义、公式推导与电路例题
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 从分布参数和噪声出发覆盖完整 CMOS RF 前端，主题与能力点高度一致。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-03-A
+  competency_id: ANA-03
+  role: backup
+  title: Basics of Semiconductor Microwave Devices
+  instructor: Digbijoy N. Nath
+  institution: IISc Bangalore
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108108377
+  section: 第 50–54 讲传输线、S 参数、Smith 图与匹配；第 55–60 讲片上无源、在片测量、去嵌与校准
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 6 小时（11 讲）
+  duration_hours: 6
+  exercises: 用 S 参数完成器件稳定性、匹配和去嵌练习
+  materials: 课程讲义、测量示例和周测
+  score: 84
+  score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+  reason: 从微波器件与测量角度补充 RFIC 课程，强化毫米波设计不可缺少的建模和校准能力。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-04-P
+  competency_id: ANA-04
+  role: primary
+  title: Microsensors, Implantable Devices and Rodent Surgeries for Biomedical Applications
+  instructor: Shabari Girishan K. V.、Hardik J. Pandya
+  institution: RUAS / IISc Bangalore
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/102108344
+  section: 第 7、10 讲 BCI/神经信号；第 20–21 讲柔性 MEA；第 39、44、49、54 讲采集、刺激与电子系统
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 5 小时（8 个核心讲次）
+  duration_hours: 5
+  exercises: 设计电极—低噪声前端—滤波/刺激的完整链路和安全约束
+  materials: 神经植入工艺演示、系统案例与讲义
+  score: 90
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 11, access: 9, presentation: 4}
+  reason: 同时涵盖 BCI、植入电极、柔性阵列和电子系统，能把生物接口与 IC 前端连接起来。
+  checked_at: "2026-08-10"
+
+- id: VID-ANA-04-A
+  competency_id: ANA-04
+  role: backup
+  title: Biomedical Instrumentation
+  instructor: Varadhan SKM
+  institution: IIT Madras
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/102106669
+  section: 第 5–7 周生物电势、电极阵列、ECG/EEG/EMG 采集与比较
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 9 小时（所选 28 个短讲）
+  duration_hours: 9
+  exercises: 对公开 EEG 数据完成电极、采样、滤波和动态范围预算
+  materials: 课程讲义、仪器框图与测验
+  score: 84
+  score_breakdown: {fit: 28, authority: 20, depth: 15, practice: 8, access: 9, presentation: 4}
+  reason: 生理信号和电极基础讲解系统，适合弥补纯电路背景学生的生物测量知识。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-01-P
+  competency_id: DIG-01
+  role: primary
+  title: Hardware Modeling using Verilog
+  instructor: Indranil Sengupta
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106105165
+  section: 第 12–20 讲描述风格、过程赋值与阻塞/非阻塞；第 21–24 讲 testbench 与 FSM；第 25 讲 datapath/controller；共 14 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（所选 14 讲）
+  duration_hours: 7
+  exercises: 实现 FSM+datapath、流水模块和简化处理器并建立自检 testbench
+  materials: 课程代码示例、讲义与作业
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 不止讲语法，还覆盖可综合风格、流水线和处理器案例，适合形成工程级 RTL 能力。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-01-A
+  competency_id: DIG-01
+  role: backup
+  title: FPGA Based Signal Processing Systems
+  instructor: P. Sumathi
+  institution: IIT Roorkee
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108107870
+  section: 第 1–5 周 FPGA 架构、Verilog、testbench、组合/时序逻辑与 FSM
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（5 周）
+  duration_hours: 10
+  exercises: 综合并在 FPGA 工具中验证计数器、FSM 和串流数据通路
+  materials: 工具演示、讲义、代码与测验
+  score: 85
+  score_breakdown: {fit: 28, authority: 20, depth: 16, practice: 9, access: 8, presentation: 4}
+  reason: FPGA 和工具链实践更强，能补足主资源偏语言/模型的部分。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-02-P
+  competency_id: DIG-02
+  role: primary
+  title: "VLSI Design Flow: RTL to GDS"
+  instructor: Sneh Saurabh
+  institution: IIIT Delhi
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106191
+  section: 第 3–6 周 functional verification、Icarus、formal verification I–IV、Yosys 与等价检查
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 18 讲/演示）
+  duration_hours: 8
+  exercises: 为一个 RTL 模块建立仿真、覆盖、形式化性质和等价检查闭环
+  materials: Icarus/Yosys 实操、讲义、教程和周作业
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 12, access: 9, presentation: 4}
+  reason: 同一开源工具链内并列仿真与形式化验证，便于学生真正动手建立验证流程。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-02-A
+  competency_id: DIG-02
+  role: backup
+  title: Advanced VLSI Design
+  instructor: D. K. Sharma、Sachin Patkar、Virendra Singh、A. N. Chandorkar
+  institution: IIT Bombay
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/117101004
+  section: L39–L42：VLSI Design Verification、Equivalence Checking 与 Model Checking
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 3 小时（4 讲）
+  duration_hours: 3
+  exercises: 为 FSM 编写性质并比较等价检查和模型检查输出
+  materials: 逐讲视频与课程讲义
+  score: 82
+  score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 7, access: 8, presentation: 4}
+  reason: 四讲集中解释验证方法边界，适合在实践主课后形成清晰概念框架。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-03-P
+  competency_id: DIG-03
+  role: primary
+  title: "VLSI Design Flow: RTL to GDS"
+  instructor: Sneh Saurabh
+  institution: IIIT Delhi
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106191
+  section: 第 7 周 4 单元 STA/OpenSTA；第 8 周 5 单元 constraints、mapping 与 timing-driven optimization；第 9 周 3 个功耗分析/优化单元；第 11–12 周 8 个 floorplan、placement、CTS、routing 与 signoff 单元
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选 20 个讲授/演示单元）
+  duration_hours: 10
+  exercises: 用 OpenSTA/OpenROAD 把小型 RTL 推到 GDS 并完成 PPA 优化
+  materials: 开源工具教程、讲义、实验与作业
+  score: 94
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 13, access: 9, presentation: 4}
+  reason: 覆盖实现全链并提供开源工具实操，能直接产出可复现 RTL-to-GDS 项目。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-03-A
+  competency_id: DIG-03
+  role: backup
+  title: VLSI Physical Design with Timing Analysis
+  instructor: Bishnu Prasad Das
+  institution: IIT Roorkee
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108107380
+  section: 第 7–18 讲 STA、skew/jitter/OCV/CRPR；第 59–60 讲 OpenROAD Physical Synthesis Flow
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（14 讲）
+  duration_hours: 7
+  exercises: 用 OpenSTA 分析 setup/hold、OCV 和时钟不确定性
+  materials: 讲义、OpenSTA/OpenROAD 演示与测验
+  score: 86
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+  reason: 对 STA 的覆盖明显更深，是实现主线中时序收敛部分的优质专题补充。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-04-P
+  competency_id: DIG-04
+  role: primary
+  title: Hardware Security
+  instructor: Debdeep Mukhopadhyay
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106105194
+  section: 第 1–5 讲威胁模型与密码硬件；第 8–16 讲 AES 实现、功耗侧信道与基础防护；共 14 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（所选 14 讲）
+  duration_hours: 7
+  exercises: 实现小型 AES 并完成相关功耗分析与一种掩码/隐藏防护
+  materials: 讲义、案例、算法推导和周作业
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 由硬件安全领域权威教师系统讲授，密码实现与侧信道分析深度突出。
+  checked_at: "2026-08-10"
+
+- id: VID-DIG-04-A
+  competency_id: DIG-04
+  role: backup
+  title: Ethical Hacking
+  instructor: Indranil Sengupta
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106105217
+  section: 第 46–50 讲 Elements of Hardware Security、Side-Channel Attacks、PUF 与 Hardware Trojan
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 2.5 小时（5 讲）
+  duration_hours: 2.5
+  exercises: 为 PUF、木马与侧信道分别写出资产、攻击面、检测和残余风险
+  materials: 课程讲义与案例视频
+  score: 81
+  score_breakdown: {fit: 26, authority: 20, depth: 15, practice: 7, access: 9, presentation: 4}
+  reason: 用五讲快速覆盖 PUF 和木马等主课以外的威胁类型，适合作为方向导览与复习。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-01-P
+  competency_id: ARCH-01
+  role: primary
+  title: Computation Structures
+  instructor: Chris Terman 等
+  institution: Massachusetts Institute of Technology
+  platform: MIT OpenCourseWare
+  source_kind: official_university_course
+  url: https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/
+  section: Modules 9、10、13、14、15 的 Topic Videos：ISA、assembly、Beta processor、cache/memory hierarchy 与 pipelining
+  language: English
+  subtitles: English transcript
+  duration: 约 9 小时（所选五个模块的 Topic Videos）
+  duration_hours: 9
+  exercises: 完成 Beta 数据通路、流水/缓存 worksheet 并用基准解释 CPI 与 AMAT
+  materials: 注释讲义、topic videos、worksheets、labs 与 exams
+  score: 94
+  score_breakdown: {fit: 29, authority: 20, depth: 19, practice: 13, access: 9, presentation: 4}
+  reason: 视频、工作表与实验高度一体化，从 ISA 到缓存的教学结构非常适合自学。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-01-A
+  competency_id: ARCH-01
+  role: backup
+  title: Computer Organisation and Architecture
+  instructor: Bhaskaran Raman
+  institution: IIT Kanpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106104073
+  section: DLX、Data Hazards、Dynamic Scheduling、Branch Prediction、Superscalar/Speculation、Cache Performance 与 Coherence 讲次
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选专题）
+  duration_hours: 10
+  exercises: 计算流水冒险、分支预测和缓存优化对 CPI/AMAT 的影响
+  materials: 视频、PDF 讲义与体系结构例题
+  score: 85
+  score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+  reason: 对动态调度、推测和缓存优化更集中，适合作为 MIT 基础主线后的微架构深化。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-02-P
+  competency_id: ARCH-02
+  role: primary
+  title: Compiler Design
+  instructor: Y. N. Srikant
+  institution: Indian Institute of Science
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106108052
+  section: 第 4–11 讲：局部优化、机器码生成、全局寄存器分配、机器无关优化与数据流分析；共 8 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 8 讲）
+  duration_hours: 8
+  exercises: 实现 liveness/data-flow、图着色寄存器分配和一个局部优化 pass
+  materials: 视频、讲义与 mini-project 建议
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 19, practice: 10, access: 9, presentation: 4}
+  reason: 直接覆盖后端优化与机器映射，能把编译原理连接到处理器和加速器约束。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-02-A
+  competency_id: ARCH-02
+  role: backup
+  title: ACM Summer School on Compiler Design and Construction
+  instructor: IIT Madras / ACM India 邀请教师
+  institution: IIT Madras
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/128106009
+  section: Machine Dependent Optimizations Parts 1–10；High Level Optimizations Parts 1–6
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 12 小时（16 讲）
+  duration_hours: 12
+  exercises: 选择一个优化在 LLVM/自定义 IR 中复现，并用微基准检验语义和性能
+  materials: 暑期学校视频、讲义与专题案例
+  score: 85
+  score_breakdown: {fit: 28, authority: 20, depth: 18, practice: 7, access: 8, presentation: 4}
+  reason: 专题式讲授比完整编译器课程更深入，适合围绕后端和高层优化查缺补漏。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-03-P
+  competency_id: ARCH-03
+  role: primary
+  title: VLSI Physical Design
+  instructor: Indranil Sengupta
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106105161
+  section: 第 7–14 讲 partitioning、floorplanning 与 placement；第 15–22 讲 grid/global/detailed routing；第 32–35 讲 timing closure；共 20 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选 20 讲）
+  duration_hours: 10
+  exercises: 实现一个划分/布局或网格路由算法，并在公开小基准上比较质量和时间
+  materials: 课程讲义、算法推导、周作业与基准示例
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 10, access: 9, presentation: 4}
+  reason: 算法覆盖完整且讲到性能驱动设计，能够支撑独立实现 EDA 小工具。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-03-A
+  competency_id: ARCH-03
+  role: backup
+  title: VLSI Design Verification and Test
+  instructor: Jatindra Kumar Deka、Santosh Biswas
+  institution: IIT Guwahati
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106103016
+  section: HLS Scheduling/Allocation/Binding；Logic Optimization；BDD；Temporal Logic 与 Symbolic Model Checking 章节
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 9 小时（所选 18 讲）
+  duration_hours: 9
+  exercises: 实现列表调度、BDD 操作或符号模型检查中的一项核心算法
+  materials: 逐讲视频、算法讲义与测试案例
+  score: 84
+  score_breakdown: {fit: 27, authority: 20, depth: 18, practice: 8, access: 7, presentation: 4}
+  reason: 从逻辑综合与形式化侧补充物理设计主线，帮助理解 EDA 不止是版图算法。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-04-P
+  competency_id: ARCH-04
+  role: primary
+  title: TinyML and Efficient Deep Learning Computing (MIT 6.S965/6.5940)
+  instructor: Song Han
+  institution: Massachusetts Institute of Technology
+  platform: MIT AI Hardware Program / YouTube
+  source_kind: official_university_course
+  url: https://www.aihardware.mit.edu/tinyml-and-efficient-deep-learning-course-6-s965/
+  section: Efficient Inference 中 Pruning、Quantization、Neural Architecture Search、Hardware-aware Optimization 四个具名单元，以及 TinyML Deployment 实验单元
+  language: English
+  subtitles: English auto captions
+  duration: 约 8 小时（所选五个具名单元）
+  duration_hours: 8
+  exercises: 完成量化/剪枝实验并在 MCU、移动端或模拟加速器上测延迟与能耗
+  materials: 课程录像、slides、Colab labs 与开放项目
+  score: 94
+  score_breakdown: {fit: 29, authority: 20, depth: 19, practice: 13, access: 9, presentation: 4}
+  reason: 由高效 AI 硬件一线研究团队公开，算法—系统—硬件协同与实践资源都很强。
+  checked_at: "2026-08-10"
+
+- id: VID-ARCH-04-A
+  competency_id: ARCH-04
+  role: backup
+  title: "Re-Engineering Computing with Neuro-Inspired Learning: Algorithms, Architecture, Devices"
+  instructor: Kaushik Roy
+  institution: Purdue University
+  platform: Purdue Nanoelectronics Research Laboratory
+  source_kind: official_university_course
+  url: https://engineering.purdue.edu/NRL/Presentations
+  section: "视频 Re-Engineering Computing with Neuro-Inspired Learning: Algorithms, Architecture, Devices"
+  language: English
+  subtitles: English auto captions
+  duration: 约 1 小时（专题讲座）
+  duration_hours: 1
+  exercises: 依据讲座的数据流和存储瓶颈，为一个 CNN/SNN 算子画出加速器与访存预算
+  materials: Purdue 官方视频与配套 slides
+  score: 80
+  score_breakdown: {fit: 26, authority: 20, depth: 16, practice: 5, access: 9, presentation: 4}
+  reason: 一小时内给出算法、架构、器件的跨层视角，适合在完整主课后快速扩展研究视野。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-01-P
+  competency_id: PKG-01
+  role: primary
+  title: Electronic Packaging and Manufacturing
+  instructor: Anandaroop Bhattacharya、Goutam Chakraborty
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/112105267
+  section: 第 6–15 讲一级封装、area array、flip-chip 与 advanced packaging；第 21 讲 system integration
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 6 小时（11 讲）
+  duration_hours: 6
+  exercises: 为双芯粒系统选择互连/载板并完成 I/O 密度、成本和装配流程预算
+  materials: 课程讲义、包装截面案例与作业
+  score: 91
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 12, access: 9, presentation: 4}
+  reason: 兼顾材料、制造和系统集成，能为 Chiplet/异构集成建立可靠的封装基础。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-01-A
+  competency_id: PKG-01
+  role: backup
+  title: An Introduction to Electronics Systems Packaging
+  instructor: G. V. Mahesh
+  institution: Indian Institute of Science
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108108031
+  section: 第 6–10 讲 wafer packaging、wire bonding、TAB 与 flip-chip；第 11–15 讲封装需求、single-chip 与 multichip modules
+  language: English
+  subtitles: English（NPTEL SRT）
+  duration: 约 10 小时（10 讲）
+  duration_hours: 10
+  exercises: 比较 wire-bond、flip-chip、MCM 和先进封装的电/热/制造权衡
+  materials: 逐讲视频、PDF slides、review questions 与字幕
+  score: 85
+  score_breakdown: {fit: 28, authority: 20, depth: 16, practice: 8, access: 9, presentation: 4}
+  reason: 经典而系统的封装课程，以不同教学视角巩固一级封装和多芯片模块知识。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-02-P
+  competency_id: PKG-02
+  role: primary
+  title: VLSI Interconnects
+  instructor: Sarang Pendharker
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108105187
+  section: 第 10–17 讲 RLC、传输线与趋肤效应；第 28–35 讲串扰、耦合互连、参数提取与 S 参数；共 16 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 16 讲）
+  duration_hours: 8
+  exercises: 建立 RLC 互连模型，提取参数并比较时域串扰、抖动和损耗
+  materials: 讲义、仿真示例、周作业与 live session
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 10, access: 9, presentation: 4}
+  reason: 从芯片互连模型到 S 参数和串扰覆盖严密，是 SI 分析的高质量主资源。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-02-A
+  competency_id: PKG-02
+  role: backup
+  title: EMI/EMC and Signal Integrity
+  instructor: Amitabha Bhattacharya
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108105375
+  section: 信号频谱与 transmission-line 单元；Crosstalk、Shielding、Grounding 与 ESD（含第 54–59 讲）
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 9 小时（所选专题）
+  duration_hours: 9
+  exercises: 对高速通道建立源—路径—受害者 EMC 模型并提出回流/屏蔽/接地方案
+  materials: 课程讲义、行业案例和周作业
+  score: 84
+  score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+  reason: 将 SI 扩展到系统 EMC、接地与 ESD，补足封装/板级工程边界。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-03-P
+  competency_id: PKG-03
+  role: primary
+  title: Electronic Packaging and Manufacturing
+  instructor: Anandaroop Bhattacharya、Goutam Chakraborty
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/112105267
+  section: 第 22–29 讲热阻、散热器与冷却；第 31–36 讲冲击、振动与封装可靠性；共 14 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（所选 14 讲）
+  duration_hours: 7
+  exercises: 建立结到环境热阻网络并为关键失效模式制定加速试验
+  materials: 热设计例题、可靠性案例、讲义与作业
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 9, presentation: 4}
+  reason: 热、机械和可靠性由同一系统封装语境贯通，便于完成工程化 FMEA。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-03-A
+  competency_id: PKG-03
+  role: backup
+  title: VLSI Interconnects
+  instructor: Sarang Pendharker
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108105187
+  section: 第 22–27 讲 interconnect power、thermal modeling、compact thermal circuits、electromigration 与 mitigation
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 3 小时（6 讲）
+  duration_hours: 3
+  exercises: 构造互连等效热路并计算电流密度/温度变化对电迁移寿命的影响
+  materials: 课程讲义、等效电路模型和例题
+  score: 82
+  score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 8, access: 8, presentation: 3}
+  reason: 用电互连视角深化热点、电迁移和紧凑热模型，是系统热课程的精确补充。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-04-P
+  competency_id: PKG-04
+  role: primary
+  title: Digital VLSI Testing
+  instructor: Santanu Chattopadhyay
+  institution: IIT Kharagpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/117105137
+  section: 第 1–4 讲 DFT/故障模型；第 13–18 讲 fault simulation/ATPG；第 25–28 讲 logic BIST/测试压缩；第 57–58 讲 memory testing；共 16 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 16 讲）
+  duration_hours: 8
+  exercises: 对小型核插入 scan，生成 pattern 并实现 LFSR/MISR 或 memory BIST
+  materials: 讲义、周作业、故障/测试算法例题
+  score: 92
+  score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 10, access: 9, presentation: 4}
+  reason: 覆盖从故障模型到测试压缩和存储器测试的完整量产测试知识链。
+  checked_at: "2026-08-10"
+
+- id: VID-PKG-04-A
+  competency_id: PKG-04
+  role: backup
+  title: VLSI Design Verification and Test
+  instructor: Jatindra Kumar Deka、Santosh Biswas
+  institution: IIT Guwahati
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106103016
+  section: Digital Testing、Fault Simulation/SCOAP、ATPG/D-Algorithm、Scan Chains、BIST 与 Memory Testing 章节
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 10 小时（所选 19 讲）
+  duration_hours: 10
+  exercises: 手算 D 算法/SCOAP 并在 RTL/门级网表上比较 scan 前后覆盖率
+  materials: 逐讲视频、算法讲义和测试案例
+  score: 85
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 8, access: 7, presentation: 4}
+  reason: 对 ATPG 算法和 scan 结构讲解集中，可作为完整测试课程的算法型备选。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-01-P
+  competency_id: NEW-01
+  role: primary
+  title: Memory Device Technology for AI/ML Computing
+  instructor: Shubhadeep Bhattacharjee
+  institution: IIT Hyderabad
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106868
+  section: 第 7.1–7.5、8.1–8.5、9.1–9.4 讲 PCRAM/RRAM/MRAM 与 AI 工作负载；第 10.3 讲 AI/ML 计算瓶颈；第 12.3–12.4 讲数字/模拟存内计算；共 17 讲
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8.5 小时（所选 17 讲）
+  duration_hours: 8.5
+  exercises: 建立含 ADC/DAC 与器件非理想性的 crossbar MVM 模型并评估 TOPS/W
+  materials: 课程讲义、器件比较、周测和体系结构案例
+  score: 93
+  score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 9, presentation: 4}
+  reason: 从新型存储器一路讲到数字/模拟 CIM，最适合建立器件—阵列—AI 工作负载的跨层链条。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-01-A
+  competency_id: NEW-01
+  role: backup
+  title: "In-Memory Computing based Machine Learning Accelerators: Opportunities and Challenges"
+  instructor: Kaushik Roy
+  institution: Purdue University
+  platform: Purdue Nanoelectronics Research Laboratory
+  source_kind: official_university_course
+  url: https://engineering.purdue.edu/NRL/Presentations
+  section: "同名专题视频；另看 Hardware Fabrics/Compute-in-Memory: Neuro-Inspired Computing"
+  language: English
+  subtitles: English auto captions
+  duration: 约 2 小时（2 个专题视频）
+  duration_hours: 2
+  exercises: 归纳模拟/数字 CIM 的转换器、精度、稀疏和映射瓶颈并提出一项协同优化
+  materials: Purdue 官方视频与 slides
+  score: 84
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 6, access: 8, presentation: 4}
+  reason: 一线研究团队的专题讲座聚焦 CIM 真正的系统瓶颈，可纠正只看峰值 TOPS/W 的片面理解。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-02-P
+  competency_id: NEW-02
+  role: primary
+  title: Memory Device Technology for AI/ML Computing
+  instructor: Shubhadeep Bhattacharjee
+  institution: IIT Hyderabad
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/108106868
+  section: 第 10.4–10.5、11.1–11.4、12.1–12.2 讲神经形态、硬件神经元/突触、SNN 操作/训练/实现
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 5 小时（8 讲）
+  duration_hours: 5
+  exercises: 实现 LIF/SNN 并估算映射到数字或新型存储突触阵列的事件与能耗
+  materials: 课程讲义、器件模型、SNN 案例与周测
+  score: 91
+  score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 10, access: 9, presentation: 4}
+  reason: 课程将生物启发、神经元/突触电路和 SNN 训练合在同一硬件语境中。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-02-A
+  competency_id: NEW-02
+  role: backup
+  title: Neuro-Inspired Computing Video Series
+  instructor: Kaushik Roy
+  institution: Purdue University
+  platform: Purdue Nanoelectronics Research Laboratory
+  source_kind: official_university_course
+  url: https://engineering.purdue.edu/NRL/Presentations
+  section: Neuron and Synaptic Models；ANN and SNNs and Learning Algorithms；Hardware Fabrics/Compute-in-Memory 三个视频
+  language: English
+  subtitles: English auto captions
+  duration: 约 3 小时（3 个专题视频）
+  duration_hours: 3
+  exercises: 比较 rate/temporal coding 与 ANN-to-SNN，画出事件驱动硬件的数据流
+  materials: Purdue 官方视频与 slides
+  score: 85
+  score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 7, access: 8, presentation: 4}
+  reason: 从神经元模型到硬件织构的短系列适合快速建立类脑芯片跨层全景。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-03-P
+  competency_id: NEW-03
+  role: primary
+  title: Quantum Computing
+  instructor: Debabrata Goswami
+  institution: IIT Kanpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/104104082
+  section: 第 23–28 讲离子阱与商业量子比特；第 31–33 讲实现问题与超导量子比特；第 34–36 讲密度矩阵/测量
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 7 小时（14 讲）
+  duration_hours: 7
+  exercises: 为一种量子比特建立控制、读出、退相干和误差来源预算
+  materials: 课程讲义、问题集和多种硬件路线案例
+  score: 90
+  score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 9, access: 9, presentation: 5}
+  reason: 相比只讲算法的课程，它系统比较量子硬件实现，直接贴合“量子芯片”能力点。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-03-A
+  competency_id: NEW-03
+  role: backup
+  title: "Introduction to Quantum Computing: Quantum Algorithms and Qiskit"
+  instructor: Prabha Mandayam、Anupama Ray、Sheshashayee Raghunathan
+  institution: IIT Madras / IBM
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106106232
+  section: 第 1–2 周量子态、测量、门/电路与 Qiskit；第 4 周 NISQ、变分算法和量子纠错
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选 18 个短讲）
+  duration_hours: 8
+  exercises: 在 Qiskit 噪声模型上实现小电路并比较理想、含噪和误差缓解结果
+  materials: Qiskit hands-on、讲义、作业和 IBM Quantum Experience
+  score: 88
+  score_breakdown: {fit: 28, authority: 20, depth: 16, practice: 12, access: 8, presentation: 4}
+  reason: 实操和 NISQ 内容突出，能补足硬件主资源中的编程与误差实验。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-04-P
+  competency_id: NEW-04
+  role: primary
+  title: Underactuated Robotics
+  instructor: Russell Tedrake
+  institution: Massachusetts Institute of Technology
+  platform: MIT OpenCourseWare
+  source_kind: official_university_course
+  url: https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/video_galleries/video-lectures/
+  section: 第 5–10 讲动态规划、策略搜索、轨迹优化与稳定；第 14–18 讲规划、随机控制与强化学习；共 11 讲
+  language: English
+  subtitles: English transcript
+  duration: 约 14 小时（所选 11 讲）
+  duration_hours: 14
+  exercises: 在仿真器中完成 cart-pole/acrobot 的轨迹优化、反馈控制或策略学习
+  materials: 视频、讲义、problem sets、solutions、programming assignments 与 projects
+  score: 94
+  score_breakdown: {fit: 29, authority: 20, depth: 19, practice: 13, access: 9, presentation: 4}
+  reason: 具身系统所需动力学、规划、控制和学习在同一项目链中贯通，且实验材料完整。
+  checked_at: "2026-08-10"
+
+- id: VID-NEW-04-A
+  competency_id: NEW-04
+  role: backup
+  title: Edge Computing
+  instructor: Rajiv Misra
+  institution: IIT Kanpur
+  platform: NPTEL
+  source_kind: official_university_course
+  url: https://nptel.ac.in/courses/106104449
+  section: 第 9 讲 Edge AI；实时低时延、容器/消息系统、self-driving 与 deep reinforcement learning for edge 单元
+  language: English
+  subtitles: English（NPTEL 字幕/转写）
+  duration: 约 8 小时（所选单元）
+  duration_hours: 8
+  exercises: 把感知模型部署到边缘设备，记录端到端延迟、能耗和离线降级行为
+  materials: 课程讲义、框架演示、用例与周作业
+  score: 83
+  score_breakdown: {fit: 27, authority: 20, depth: 15, practice: 9, access: 8, presentation: 4}
+  reason: 从部署侧补足机器人课程对边缘算力、实时性、通信和隐私约束的讨论。
+  checked_at: "2026-08-10"

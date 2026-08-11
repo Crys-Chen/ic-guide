@@ -1,0 +1,39 @@
+site_name: 大学 IC 培养指南
+site_description: 面向全国 IC 与微电子本科生的自由探索路线、能力地图与视频资源库
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search:
+      lang:
+        - zh
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/resource-filter.js

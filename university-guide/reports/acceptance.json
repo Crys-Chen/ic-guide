@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.1",
+  "verified_at": "2026-08-11",
+  "counts": {
+    "competencies": 56,
+    "common_competencies": 32,
+    "specialization_competencies": 24,
+    "videos": 112,
+    "primary_videos": 56,
+    "backup_videos": 56,
+    "tracks": 6,
+    "directions": 17,
+    "course_mappings": 56,
+    "built_html_pages": 75
+  },
+  "learning_model": {
+    "mode": "free_exploration",
+    "semester_assignments": false,
+    "semester_workload_quotas": false,
+    "entry_paths": ["interest_first", "project_first", "foundation_first"],
+    "requirements": {
+      "common": "recommended",
+      "specialization": "route_recommended"
+    }
+  },
+  "suggested_windows": {
+    "start": {"label": "入门与试做", "competencies": 5},
+    "foundation": {"label": "基础工具箱", "competencies": 10},
+    "core": {"label": "IC 公共核心", "competencies": 10},
+    "specialization": {"label": "方向探索与深化", "competencies": 24},
+    "integration": {"label": "综合创作与迁移", "competencies": 7}
+  },
+  "course_mapping_coverage": {"full": 29, "partial": 21, "gap": 6},
+  "checks": {
+    "validate_strict": "pass",
+    "render": "pass",
+    "render_check": "pass",
+    "mkdocs_build_strict": "pass",
+    "offline_site_and_internal_links": "pass",
+    "free_exploration_model": "pass",
+    "content_spot_check": {"pass": 12, "review": 0, "fail": 0},
+    "external_links": {"automated_ok": 110, "manual_review_ok": 2, "current_failed": 0},
+    "live_mobile_browser_visual": "not_run_environment_restricted"
+  },
+  "known_release_actions": [
+    "在联网发布环境重跑 check_links.py --strict，以自动复核两个替换后的官方入口。",
+    "在可启动本地服务器的环境，以 390x844 和 768x1024 视口补做真实视觉与点击回归。"
+  ]
+}

@@ -1,0 +1,1215 @@
+  - competency_id: C-MATH-01
+    role: primary
+    title: Single Variable Calculus — Differentiation
+    instructor: David Jerison
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/"
+    section: "Unit 1, Sessions 1–22: limits, derivatives, approximation and applications"
+    language: English
+    subtitles: English transcript
+    duration_hours: 11.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 13, access: 7, presentation: 4}
+    reason: 自学版按短视频、例题、习题和考试组成完整微分主线，特别适合用工程变化率问题边学边验收。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 课程页提供讲义、例题、问题集、解答与考试。
+    exercises: 完成 Sessions 1–22 的 problem sets，并用导数建立一个 RC 或热过程模型。
+
+  - competency_id: C-MATH-01
+    role: backup
+    title: 18.01.1x Calculus 1A — Differentiation
+    instructor: MITx Calculus teaching team
+    institution: Massachusetts Institute of Technology
+    platform: MIT Open Learning Library
+    url: "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B18.01.1x%2B2T2019/course/"
+    section: "Units 0–2: functions, limits, derivatives and linear approximation"
+    language: English
+    subtitles: English
+    duration_hours: 12.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 15, practice: 10, access: 8, presentation: 4}
+    reason: 交互式题目反馈更密集，可作为需要更多引导的替代路径，也适合分段复习。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 平台内含交互讲义、例题、测验和讨论提示。
+    exercises: 完成 Units 0–2 测验，并提交一页量纲与线性化检查表。
+
+  - competency_id: C-MATH-02
+    role: primary
+    title: 18.06SC Linear Algebra
+    instructor: Gilbert Strang
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/resource-index/"
+    section: "Lectures 1–10: geometry of linear equations through independence, basis and dimension"
+    language: English
+    subtitles: English transcript
+    duration_hours: 8.5
+    score: 95
+    score_breakdown: {fit: 30, authority: 20, depth: 20, practice: 15, access: 6, presentation: 4}
+    reason: 从几何直觉到矩阵分解完整贯通，资源索引逐讲关联视频、讲义、习题和解答，是工程线代的可靠主线。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 逐讲视频、文字稿、讲义、习题集、考试与解答齐全。
+    exercises: 完成每单元至少一组题，并用矩阵求解一个节点电压系统。
+
+  - competency_id: C-MATH-02
+    role: backup
+    title: 18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
+    instructor: Gilbert Strang
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video_galleries/video-lectures/"
+    section: "Lectures 1–5 and 10: column spaces, factorizations, least squares and eigenvalues"
+    language: English
+    subtitles: English transcript
+    duration_hours: 5.0
+    score: 82
+    score_breakdown: {fit: 25, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 以计算和数据应用重访核心概念，适合已经看过基础定义、希望建立矩阵方法直觉的学生。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频页关联课程讲义、作业和代码材料。
+    exercises: 复现一次最小二乘与一次特征分解，并比较直接求逆和分解算法。
+
+  - competency_id: C-MATH-03
+    role: primary
+    title: 6.041SC Probabilistic Systems Analysis and Applied Probability
+    instructor: John Tsitsiklis
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/resource-index/"
+    section: "Unit I Lectures 1–8 plus Recitations 1–4: probability models, conditioning and discrete random variables"
+    language: English
+    subtitles: English transcript
+    duration_hours: 8.5
+    score: 94
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 15, access: 6, presentation: 4}
+    reason: 面向工程系统组织概率模型，讲授、解题课与习题三线对应，能避免只背分布公式。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、讲义、解题课、问题集、考试和完整解答。
+    exercises: 完成 Unit I 的问题集，并对一组器件参数做概率模型与 Monte Carlo 检查。
+
+  - competency_id: C-MATH-03
+    role: backup
+    title: STAT 110 Lecture 1 — Probability and Counting
+    instructor: Joseph Blitzstein
+    institution: Harvard University
+    platform: Harvard official YouTube
+    url: "https://www.youtube.com/watch?v=KbB0FjPg0mw"
+    section: "Lecture 1: sample spaces, naive probability and counting"
+    language: English
+    subtitles: English
+    duration_hours: 1.3
+    score: 78
+    score_breakdown: {fit: 24, authority: 20, depth: 13, practice: 8, access: 9, presentation: 4}
+    reason: 用故事化例题建立概率与计数直觉，适合在正式主线前破冰或在条件概率学习受阻时换一种讲法。
+    checked_at: "2026-08-10"
+    source_kind: official_university_video
+    materials: 视频简介关联 STAT 110 课程与后续讲次。
+    exercises: 写出三个计数模型的样本空间，并检查等可能假设是否成立。
+
+  - competency_id: C-MATH-04
+    role: primary
+    title: Fourier Series Basics
+    instructor: Arthur Mattuck and Haynes Miller
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/"
+    section: "Unit III, Fourier Series Basics: orthogonality, coefficients, symmetry and convergence"
+    language: English
+    subtitles: English transcript
+    duration_hours: 3.5
+    score: 90
+    score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 13, access: 7, presentation: 4}
+    reason: 一个页面集成概念视频、例题、测验与问题集，可直接把级数系数和波形频谱联系起来。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 讲义、问题求解视频、测验、问题集及解答。
+    exercises: 推导方波和三角波 Fourier 级数，再用 FFT 验证幅度衰减规律。
+
+  - competency_id: C-MATH-04
+    role: backup
+    title: Calculus Revisited — Complex Variables, Part I
+    instructor: Herbert Gross
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/video_galleries/part-i/"
+    section: "Part I, Lectures 1–5: complex numbers, functions, differentiation and integration"
+    language: English
+    subtitles: English transcript
+    duration_hours: 4.2
+    score: 80
+    score_breakdown: {fit: 25, authority: 20, depth: 15, practice: 8, access: 8, presentation: 4}
+    reason: 讲解节奏舒缓并持续回扣微积分，适合补齐复变量直觉后再进入频域分析。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、文字稿与配套学习说明。
+    exercises: 用复指数重写正弦信号，并完成一个围道积分和一个频率响应极坐标图。
+
+  - competency_id: C-MATH-05
+    role: primary
+    title: EE364A Convex Optimization I
+    instructor: Stephen Boyd
+    institution: Stanford University
+    platform: Stanford Engineering Everywhere
+    url: "https://see.stanford.edu/Course/EE364A"
+    section: "Lectures 1, 6 and 15: problem classes, convex functions, gradient and Newton methods"
+    language: English
+    subtitles: English transcript
+    duration_hours: 3.9
+    score: 93
+    score_breakdown: {fit: 30, authority: 20, depth: 20, practice: 13, access: 6, presentation: 4}
+    reason: 权威课程把可证明的凸结构、算法和建模实例连接起来，适合建立优化结果可解释、可验证的习惯。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 完整讲义、视频、阅读材料、作业和解答。
+    exercises: 完成所选讲次对应题目，并用 CVXPY 与手写梯度法求同一约束最小二乘问题。
+
+  - competency_id: C-MATH-05
+    role: backup
+    title: Optimization
+    instructor: A. Goswami and Debjani Chakraborty
+    institution: Indian Institute of Technology Kharagpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/111105039"
+    section: "Lectures 21–34: classical, numerical and constrained nonlinear optimization"
+    language: English
+    subtitles: English
+    duration_hours: 7.0
+    score: 82
+    score_breakdown: {fit: 26, authority: 20, depth: 16, practice: 8, access: 8, presentation: 4}
+    reason: 同时覆盖经典约束条件、数值搜索与非线性方法，可作为 Boyd 课程之前的计算型过渡。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: NPTEL 课程页逐讲列出视频与课程大纲。
+    exercises: 实现黄金分割、梯度下降和带罚函数的约束优化，并比较收敛曲线。
+
+  - competency_id: C-PHY-01
+    role: primary
+    title: 8.02SC Physics II — Electricity and Magnetism
+    instructor: Peter Dourmashkin, Michelle Tomasik, Krishna Rajagopal, Analia Barrantes and Robert Redwine
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/"
+    section: "8.02.1x Electrostatics, 8.02.2x Magnetic Fields and Forces, and 8.02.3x Maxwell's Equations — lecture-video segments only"
+    language: English
+    subtitles: English transcript
+    duration_hours: 11.5
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 10, access: 7, presentation: 5}
+    reason: 自学版以场的可视化、问题求解和实验演示贯通静电到电磁感应，工程直觉与数学均衡。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 三个 MITx 模块的分段视频、可视化和开放学习材料。
+    exercises: 完成每单元至少两题，并估算一段片上互连的电容、电感和传播延迟。
+
+  - competency_id: C-PHY-01
+    role: backup
+    title: PHYS 201 Fundamentals of Physics II
+    instructor: Ramamurti Shankar
+    institution: Yale University
+    platform: Open Yale Courses
+    url: "https://oyc.yale.edu/physics/phys-201"
+    section: "Lectures 2–20: electric fields, circuits, magnetism, induction and Maxwell equations"
+    language: English
+    subtitles: English transcript
+    duration_hours: 16.0
+    score: 86
+    score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 10, access: 8, presentation: 4}
+    reason: 长课堂推导完整且逐讲有章节标记，适合喜欢连续板书叙事、需要重新梳理物理逻辑的学生。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 每讲含视频、音频、文字稿和章节时间点。
+    exercises: 选做 Lectures 2、10、17 后的场与感应题，并写一页集总/分布模型边界总结。
+
+  - competency_id: C-PHY-02
+    role: primary
+    title: 8.04 Quantum Physics I — Part 1
+    instructor: Barton Zwiebach
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://www.ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/video-lectures/part-1/"
+    section: "Part 1, L1.1–L7.5: wave-particle duality, wave functions, uncertainty and one-dimensional Schrödinger equation"
+    language: English
+    subtitles: English transcript
+    duration_hours: 7.0
+    score: 92
+    score_breakdown: {fit: 29, authority: 20, depth: 20, practice: 13, access: 6, presentation: 4}
+    reason: 短章节清楚分隔概念与推导，并有问题集支撑，可在有限学时内建立半导体所需量子基础。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 分段视频、文字稿、讲义、问题集与考试。
+    exercises: 完成 Part 1 对应习题，数值求解一维势阱前三个本征态并检查归一化。
+
+  - competency_id: C-PHY-02
+    role: backup
+    title: Fundamentals of Electronic Materials and Devices
+    instructor: Parasuraman Swaminathan
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/113106065"
+    section: "Weeks 1–4: bonding, crystal structure, free-electron model and energy bands"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 9, access: 8, presentation: 4}
+    reason: 从材料与能带角度直达电子器件语境，比纯物理课程更快连接晶体、费米能级和输运。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐周视频、课程大纲和 NPTEL 配套作业信息。
+    exercises: 绘制金属、绝缘体和本征半导体能带图，并解释温度改变后的占据差异。
+
+  - competency_id: C-PHY-03
+    role: primary
+    title: Fundamentals of Electronic Materials and Devices — Semiconductor Modules
+    instructor: Parasuraman Swaminathan
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/113106065"
+    section: "Weeks 5–8: semiconductor statistics, carriers, drift, diffusion and junction foundations"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 90
+    score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 8, presentation: 4}
+    reason: 在同一材料框架中推导载流子统计与输运，数学层次适合本科生进入器件课之前使用。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 课程页提供逐周视频、大纲与作业入口。
+    exercises: 计算三组掺杂和温度条件下的费米能级、载流子浓度与电导率。
+
+  - competency_id: C-PHY-03
+    role: backup
+    title: Introduction to Semiconductor Devices — Physics Foundations
+    instructor: Naresh Kumar Emani
+    institution: Indian Institute of Technology Hyderabad
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106181"
+    section: "Weeks 1–3: energy bands, carrier statistics, drift-diffusion and excess carriers"
+    language: English
+    subtitles: English
+    duration_hours: 7.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 9, access: 8, presentation: 4}
+    reason: 以即将使用这些物理量的器件问题为动机，适合希望缩短材料背景、直接进入器件分析的学生。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、讲次标题、课程说明和作业信息。
+    exercises: 用连续性方程分析一个均匀光生载流子问题，并画出稳态浓度分布。
+
+  - competency_id: C-PHY-04
+    role: primary
+    title: Introduction to Semiconductor Devices
+    instructor: Naresh Kumar Emani
+    institution: Indian Institute of Technology Hyderabad
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106181"
+    section: "Weeks 4–7: PN junction, metal-semiconductor contact, MOS capacitor and MOS electrostatics"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 8, presentation: 4}
+    reason: 从能带与电荷控制推到器件端口特性，覆盖面完整且保持统一物理主线。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐周视频、课程大纲、作业与讨论信息。
+    exercises: 从模型计算 PN 结和 MOSFET 曲线，再从曲线提取阈值、电流因子与工作区。
+
+  - competency_id: C-PHY-04
+    role: backup
+    title: Semiconductor Devices
+    instructor: G. S. Visweswaran
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/117102061"
+    section: "PN Junction, BJT and MOS modules (Lectures 8–39)"
+    language: English
+    subtitles: English
+    duration_hours: 16.0
+    score: 85
+    score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 传统板书推导细致，适合作为 MOS 或 BJT 某一环节理解不牢时的第二讲法。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: NPTEL 逐讲视频与课程大纲。
+    exercises: 选择 PN、BJT、MOS 各两讲后的推导自行重做，并建立三种器件模型比较表。
+
+  - competency_id: C-PHY-05
+    role: primary
+    title: Basic Overview of Semiconductor Device Processing and IC Fabrication
+    instructor: S. Sundar Kumar Iyer
+    institution: Indian Institute of Technology Kanpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108104865"
+    section: "Lectures 1–12: cleanroom and wafer basics, oxidation, diffusion/implantation and lithography fundamentals"
+    language: English
+    subtitles: English
+    duration_hours: 6.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 8, presentation: 4}
+    reason: 以器件制造全流程组织 39 讲，既说明单步机理，也强调洁净室、集成顺序和工艺控制。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 课程页逐讲视频、完整大纲和参考资料信息。
+    exercises: 为简化 CMOS 反相器绘制逐步截面流程，并标注每一步的关键缺陷与监控量。
+
+  - competency_id: C-PHY-05
+    role: backup
+    title: Fundamentals of Electronic Device Fabrication
+    instructor: Parasuraman Swaminathan
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/113106062"
+    section: "Weeks 1–4: cleanroom, oxidation, diffusion/implantation, lithography and thin films"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 9, access: 8, presentation: 4}
+    reason: 内容更紧凑，适合在进入制造实习前集中复习基本工艺、设备与控制变量。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、课程提纲和 NPTEL 作业入口。
+    exercises: 制作一页工艺选择矩阵，对比热预算、分辨率、选择比、均匀性和成本。
+
+  - competency_id: C-CIR-01
+    role: primary
+    title: 6.002 Circuits and Electronics
+    instructor: Anant Agarwal and Jeffrey Lang
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    section: "Lectures 1–12 and Labs 1–3: KCL/KVL, node method, transient and sinusoidal response"
+    language: English
+    subtitles: English transcript
+    duration_hours: 17.0
+    score: 94
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 15, access: 6, presentation: 4}
+    reason: 将分析方法、器件近似、演示与真实实验统一在一条主线中，适合作为后续模拟和数字电路的共同入口。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 讲义、课堂视频、习题、实验、考试和解答齐全。
+    exercises: 完成前三个实验和相应问题集，并用功率守恒与 SPICE 双重检查结果。
+
+  - competency_id: C-CIR-01
+    role: backup
+    title: 6.01SC Unit 3 — Circuits
+    instructor: Leslie Kaelbling and Dennis Freeman
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/unit-3-circuits/circuits/"
+    section: "Unit 3 Circuits: nodal constraints, Thevenin equivalents, op-amps and design lab"
+    language: English
+    subtitles: English transcript
+    duration_hours: 5.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 15, practice: 11, access: 7, presentation: 4}
+    reason: 以设计任务驱动较少的核心定理，适合希望先做出系统、再补全推导的学生。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、软件实验、设计实验、讲义和检查题。
+    exercises: 完成 Unit 3 的软件实验与设计实验，并解释等效电路假设。
+
+  - competency_id: C-CIR-02
+    role: primary
+    title: Analog Circuits
+    instructor: Nagendra Krishnapura
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106084"
+    section: "Weeks 1–5: diode circuits, MOS/BJT biasing, small-signal models and single-stage amplifiers"
+    language: English
+    subtitles: English
+    duration_hours: 10.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 8, presentation: 4}
+    reason: 从器件偏置到反馈与运放循序完整，推导紧密结合电路设计，是模拟电子的稳定本科主线。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、讲次目录、作业与课程说明。
+    exercises: 设计并仿真一个满足增益、摆幅和带宽指标的单管或两级放大器。
+
+  - competency_id: C-CIR-02
+    role: backup
+    title: Analog Electronic Circuits
+    instructor: Shanthi Pavan
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106188"
+    section: "Weeks 1–8: device models, biasing, single-stage amplifiers, differential pair and feedback"
+    language: English
+    subtitles: English
+    duration_hours: 16.0
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 9, access: 8, presentation: 4}
+    reason: 侧重用近似和反馈直觉快速判断电路，适合在主线之外强化“先估算后精算”的工程方法。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐周视频、大纲与平台作业。
+    exercises: 对同一放大器先手算数量级、再仿真完整模型，并解释主要误差来源。
+
+  - competency_id: C-CIR-03
+    role: primary
+    title: 6.004 Computation Structures — Digital Logic Modules
+    instructor: Chris Terman
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/"
+    section: "Sections 1–4 topic videos: digital abstraction, CMOS switches, combinational logic and timing"
+    language: English
+    subtitles: English transcript
+    duration_hours: 7.0
+    score: 93
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 15, access: 6, presentation: 4}
+    reason: 短视频与在线问题、实验逐节对应，并自然过渡到处理器，能把布尔逻辑与系统行为连起来。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: Topic Videos、Check Yourself、Labs、讲义和问题集。
+    exercises: 完成组合与时序实验，并提交带自检测试平台的有限状态机 HDL。
+
+  - competency_id: C-CIR-03
+    role: backup
+    title: Digital Circuits
+    instructor: Santanu Chattopadhyay
+    institution: Indian Institute of Technology Kharagpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108105113"
+    section: "Lectures 1–45: number systems, Boolean logic, combinational/sequential circuits, FSM, memory and FPGA"
+    language: English
+    subtitles: English
+    duration_hours: 22.5
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 9, access: 8, presentation: 4}
+    reason: 传统课程覆盖更广、讲次粒度细，适合按国内课程顺序复习或补齐存储器与 FPGA 概念。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、大纲与 NPTEL 作业信息。
+    exercises: 手工化简一个多输出逻辑并实现一个含计数器和状态机的 FPGA 模块。
+
+  - competency_id: C-CIR-04
+    role: primary
+    title: 6.003 Signals and Systems — Lecture Series
+    instructor: Dennis Freeman
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/lecture-1-signals-and-systems/"
+    section: "Lectures 1–10: signals, system properties, LTI systems, convolution and continuous-time Fourier representation"
+    language: English
+    subtitles: English transcript
+    duration_hours: 10.0
+    score: 93
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 14, access: 6, presentation: 4}
+    reason: 从系统性质到多种变换域的课程结构清楚，完整问题集能检验是否真正会在时域和频域之间切换。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 每讲视频与文字稿，课程页另有讲义、作业、实验和考试。
+    exercises: 完成卷积、Fourier、Laplace/Z 各一组题，并用数值工具验证同一滤波器响应。
+
+  - competency_id: C-CIR-04
+    role: backup
+    title: RES.6-007 Signals and Systems — Lecture 1 and Sequence
+    instructor: Alan V. Oppenheim
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-1-introduction/"
+    section: "Lectures 1–26: classic treatment of signals, LTI systems, transforms, sampling and communication examples"
+    language: English
+    subtitles: English transcript
+    duration_hours: 26.0
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 19, practice: 7, access: 8, presentation: 4}
+    reason: 经典讲法数学连续性很强，适合希望通过第二套完整推导巩固概念的学习者。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 逐讲视频、文字稿和配套课程说明。
+    exercises: 从所选讲次复推卷积和采样定理，并制作极零点与频响的对应图。
+
+  - competency_id: C-CIR-05
+    role: primary
+    title: Analog IC Design
+    instructor: S. Aniruddhan and Nagendra Krishnapura
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106105"
+    section: "Weeks 7–10: MOS small-signal design, current mirrors, differential amplifiers and op-amp building blocks"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 8, presentation: 4}
+    reason: 围绕晶体管级设计推导关键单元，并持续量化增益、噪声、速度和功耗权衡。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、大纲、作业与参考资料。
+    exercises: 设计两级 CMOS 运放并完成 DC、AC、瞬态、噪声、PVT 与 Monte Carlo 验证。
+
+  - competency_id: C-CIR-05
+    role: backup
+    title: Analog VLSI Design
+    instructor: Imon Mondal
+    institution: Indian Institute of Technology Kanpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108104193"
+    section: "Lectures 1–38: bias circuits, amplifiers, frequency response, feedback, stability and noise"
+    language: English
+    subtitles: English
+    duration_hours: 19.0
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 18, practice: 8, access: 8, presentation: 4}
+    reason: 讲次更细且完整复述从偏置到稳定性，适合按薄弱单元精准补课。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、课程大纲与平台材料。
+    exercises: 选一个主线设计，用本课程的另一套方法重算补偿与噪声并比较差异。
+
+  - competency_id: C-CIR-06
+    role: primary
+    title: VLSI Design
+    instructor: A. N. Chandorkar
+    institution: Indian Institute of Technology Bombay
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/117101058"
+    section: "Lectures 1–12: MOS review, CMOS inverter, static characteristics, delay and basic combinational gates"
+    language: English
+    subtitles: English
+    duration_hours: 6.0
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 10, access: 8, presentation: 4}
+    reason: 从 CMOS 器件到逻辑、时序和版图的路径完整，能把数字功能与晶体管级代价联系起来。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、课程目录和参考资料。
+    exercises: 表征反相器与一个组合门的延迟、功耗和噪声裕量，并完成版图检查。
+
+  - competency_id: C-CIR-06
+    role: backup
+    title: Low Power VLSI Circuits and Systems
+    instructor: Ajit Pal
+    institution: Indian Institute of Technology Kharagpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106105034"
+    section: "Lectures 2–21 and 27–35: MOS/CMOS logic, memories, dynamic/leakage power and low-power techniques"
+    language: English
+    subtitles: English
+    duration_hours: 14.5
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 以功耗为主轴重访数字 IC 单元，适合完成基础设计后建立能效优化视角。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、课程大纲及教程讲次。
+    exercises: 对一个 CMOS 数据通路估算动态与泄漏功耗，并验证两种降低功耗策略的代价。
+
+  - competency_id: C-CIR-07
+    role: primary
+    title: RES.6-008 Digital Signal Processing
+    instructor: Alan V. Oppenheim
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://www.ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/resources/lecture-videos/"
+    section: "Lectures 1–10: discrete-time systems, convolution, DTFT, discrete Fourier series and DFT"
+    language: English
+    subtitles: English transcript
+    duration_hours: 10.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 20, practice: 12, access: 6, presentation: 4}
+    reason: 经典课程严格推导 DFT、滤波与多率处理，能够建立不依赖软件按钮的 DSP 基础。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 逐讲视频、文字稿与课程配套资料。
+    exercises: 实现 DFT/FFT、FIR 和 IIR，并以频响、稳定性和运算量进行比较。
+
+  - competency_id: C-CIR-07
+    role: backup
+    title: Digital Signal Processing
+    instructor: S. C. Dutta Roy
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/117102060"
+    section: "Lectures 1–43: discrete systems, DFT/Z-transform, filter structures and FIR/IIR design"
+    language: English
+    subtitles: English
+    duration_hours: 21.5
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 18, practice: 8, access: 8, presentation: 4}
+    reason: 课程包含多次问题求解课和滤波器设计实例，适合需要更慢板书节奏的学习者。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、问题求解讲次和课程目录。
+    exercises: 完成一次窗函数 FIR 和一次双线性变换 IIR 设计，并测试定点量化影响。
+
+  - competency_id: C-SYS-01
+    role: primary
+    title: CS50x Week 1 — C
+    instructor: David J. Malan
+    institution: Harvard University
+    platform: CS50
+    url: "https://cs50.harvard.edu/x/weeks/1/"
+    section: "Week 1: C syntax, types, operators, conditionals, loops, command line and compilation"
+    language: English
+    subtitles: English and multilingual
+    duration_hours: 3.0
+    score: 91
+    score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 15, access: 6, presentation: 4}
+    reason: 讲解、短节、源码、实验和自动评测一体，能快速建立写程序、编译和调试的完整闭环。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 课堂视频、分段视频、讲义、源码、实验和 problem set。
+    exercises: 完成 Week 1 Lab 与 Problem Set，再把其中一个程序改写为读取测量 CSV 的工具。
+
+  - competency_id: C-SYS-01
+    role: backup
+    title: CS50x Week 6 — Python
+    instructor: David J. Malan
+    institution: Harvard University
+    platform: CS50
+    url: "https://cs50.harvard.edu/x/weeks/6/"
+    section: "Week 6: Python syntax, functions, data structures, files, libraries and C-to-Python translation"
+    language: English
+    subtitles: English and multilingual
+    duration_hours: 3.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 14, practice: 14, access: 5, presentation: 4}
+    reason: 用与 C 的逐项对照解释 Python 抽象层，特别适合已经学过 C 后建立科研脚本能力。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、讲义、源码、实验和 problem set。
+    exercises: 完成 Week 6 练习，并用 NumPy/Matplotlib 分析和绘制一组电路数据。
+
+  - competency_id: C-SYS-02
+    role: primary
+    title: 6.006 Introduction to Algorithms
+    instructor: Erik Demaine and Srini Devadas
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/download/"
+    section: "Lectures 1–8: algorithmic analysis, insertion/merge sort, heaps, binary search trees and hashing"
+    language: English
+    subtitles: English transcript
+    duration_hours: 6.7
+    score: 94
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 15, access: 6, presentation: 4}
+    reason: 以问题、抽象数据类型、算法和证明四层组织内容，习题能验证复杂度分析而不止代码能跑。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、讲义、问题集、测验、考试和解答。
+    exercises: 实现至少六种数据结构并完成两道复杂度证明题和一次基准测试。
+
+  - competency_id: C-SYS-02
+    role: backup
+    title: CS50x Week 5 — Data Structures
+    instructor: David J. Malan
+    institution: Harvard University
+    platform: CS50
+    url: "https://cs50.harvard.edu/x/weeks/5/"
+    section: "Week 5: pointers, linked lists, trees, hash tables, tries, queues and stacks"
+    language: English
+    subtitles: English and multilingual
+    duration_hours: 3.0
+    score: 82
+    score_breakdown: {fit: 26, authority: 20, depth: 14, practice: 13, access: 5, presentation: 4}
+    reason: 通过内存图和现场演示把指针结构可视化，适合在抽象算法课前建立实现直觉。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、讲义、源码、实验和自动评测题。
+    exercises: 完成 Week 5 Lab 与 Problem Set，并为哈希表记录负载率与查找时间曲线。
+
+  - competency_id: C-SYS-03
+    role: primary
+    title: Computer Architecture
+    instructor: Smruti Ranjan Sarangi
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106102157"
+    section: "Weeks 1–3, 6 and 9–10: bits, assembly/ISA, digital logic, processor design and pipeline"
+    language: English
+    subtitles: English
+    duration_hours: 12.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 11, access: 8, presentation: 4}
+    reason: 从位表示、汇编和 ISA 逐步推到处理器、流水线和存储层次，适合建立软硬件接口的完整本科主线。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、课程大纲和 NPTEL 作业信息。
+    exercises: 为一段汇编追踪指令执行，并实现、仿真和测试一个简化单周期处理器。
+
+  - competency_id: C-SYS-03
+    role: backup
+    title: 6.004 Computation Structures — Assembly and Processor Modules
+    instructor: Chris Terman
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c10/c10s2/"
+    section: "Sections 10–14 topic videos: assembly, procedures, instruction encoding, processor implementation and memory"
+    language: English
+    subtitles: English transcript
+    duration_hours: 8.0
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 10, access: 7, presentation: 4}
+    reason: 视频切成单一概念并配即时检查，适合针对指令编码、数据通路或存储器某个薄弱点补课。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: Topic Videos、Check Yourself、讲义、练习和实验。
+    exercises: 完成 Sections 10–14 检查题，并为一段汇编画出逐周期数据通路状态。
+
+  - competency_id: C-SYS-04
+    role: primary
+    title: Introduction to Operating Systems
+    instructor: Chester Rebeiro
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106106144"
+    section: "Weeks 1–4: OS overview, processes, virtual memory, system calls, interrupts and context switching"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 8, presentation: 4}
+    reason: 以 xv6 为共同实现参照，从 PC 启动、异常到资源管理逐层展开，硬件与内核接口尤其适合 IC 学生。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、讲次目录、大纲和 NPTEL 作业信息。
+    exercises: 在 xv6 中增加一个系统调用，并完成一个锁或调度实验及并发正确性说明。
+
+  - competency_id: C-SYS-04
+    role: backup
+    title: Operating System
+    instructor: Sorav Bansal
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106102132"
+    section: "Core modules: processes/threads, synchronization, memory management, file systems and I/O"
+    language: English
+    subtitles: English
+    duration_hours: 20.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 从设计和实现角度覆盖传统 OS 核心模块，适合作为 xv6 主线之外的第二套系统化讲解。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: NPTEL 视频课程、课程大纲与配套说明。
+    exercises: 写两个线程程序演示竞态与修复，并跟踪一次缺页到页表更新的完整路径。
+
+  - competency_id: C-SYS-05
+    role: primary
+    title: Advanced Computer Architecture
+    instructor: Smruti R. Sarangi
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106102229"
+    section: "Weeks 1–4: pipeline review, out-of-order fetch/decode, issue, execute and commit"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 20, practice: 10, access: 8, presentation: 4}
+    reason: 从现代处理器前端到存储、一致性和能效覆盖完整，持续用性能模型解释微体系结构选择。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、课程计划和平台作业信息。
+    exercises: 用模拟器改变分支预测与缓存参数，报告 CPI、命中率、能耗代理量和敏感性。
+
+  - competency_id: C-SYS-05
+    role: backup
+    title: Computer Organization and Architecture
+    instructor: V. Kamakoti
+    institution: Indian Institute of Technology Madras
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106106166"
+    section: "Weeks 6–12: pipelines, hazards, branch prediction, virtual memory, caches and coherence"
+    language: English
+    subtitles: English
+    duration_hours: 14.0
+    score: 85
+    score_breakdown: {fit: 28, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 以较慢节奏重访流水线、虚拟内存、缓存和一致性，并含静态/动态调度与实验讲次。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、实验讲次、课程大纲和作业信息。
+    exercises: 分析一组流水线 hazard 和缓存 trace，并比较两种分支预测与缓存组织。
+
+  - competency_id: C-SYS-06
+    role: primary
+    title: Compiler Design
+    instructor: Sanjeev K. Aggarwal
+    institution: Indian Institute of Technology Kanpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106104123"
+    section: "Lectures 1–12: compiler overview, lexical analysis and top-down/bottom-up parsing"
+    language: English
+    subtitles: English
+    duration_hours: 6.0
+    score: 90
+    score_breakdown: {fit: 29, authority: 20, depth: 18, practice: 11, access: 8, presentation: 4}
+    reason: 用 30 讲覆盖经典编译流水线，理论与实现粒度适合作为本科生第一次完整编译器项目的主线。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、课程大纲与参考材料。
+    exercises: 实现表达式语言的 lexer、parser、IR 与一个局部优化，并建立正反测试集。
+
+  - competency_id: C-SYS-06
+    role: backup
+    title: Compiler Design
+    instructor: Santanu Chattopadhyay
+    institution: Indian Institute of Technology Kharagpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106105190"
+    section: "Weeks 1–8: introduction, lexical analysis, parsing, syntax-directed translation, type checking and runtime basics"
+    language: English
+    subtitles: English
+    duration_hours: 16.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 17, practice: 8, access: 8, presentation: 4}
+    reason: 对自动机、语法分析和运行时的讲次更多，适合针对形式基础或某一编译阶段逐项补强。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、课程计划与 NPTEL 作业信息。
+    exercises: 为同一小语言构造 LL/LR 分析表并比较错误定位，再扩展函数调用运行时。
+
+  - competency_id: C-SYS-07
+    role: primary
+    title: VLSI Design Flow — RTL to GDS
+    instructor: Sneh Saurabh
+    institution: Indraprastha Institute of Information Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/108106191"
+    section: "Weeks 1–8: RTL-to-GDS overview, Verilog, simulation, Yosys synthesis, formal verification, OpenSTA and constraints"
+    language: English
+    subtitles: English
+    duration_hours: 16.0
+    score: 94
+    score_breakdown: {fit: 30, authority: 20, depth: 19, practice: 15, access: 6, presentation: 4}
+    reason: 每个 EDA 阶段都有开源工具演示，从 RTL 到 GDS 的输入、约束、报告和失败点可以实际复现。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周视频、Yosys/OpenSTA/OpenROAD 教程、作业和课程大纲。
+    exercises: 用固定版本工具跑通一个小 RTL 到 GDS 流程，并保存脚本、约束、日志和签核摘要。
+
+  - competency_id: C-SYS-07
+    role: backup
+    title: VLSI Physical Design
+    instructor: Indranil Sengupta
+    institution: Indian Institute of Technology Kharagpur
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/106105161"
+    section: "Lectures 1–47: representation, partitioning, floorplanning, placement, routing, clock, timing and DRC"
+    language: English
+    subtitles: English
+    duration_hours: 23.5
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 19, practice: 7, access: 8, presentation: 4}
+    reason: 对物理设计算法和数据结构推导更深，适合完成工具流后理解布局布线为何给出当前结果。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 逐讲视频、课程大纲与作业信息。
+    exercises: 手工实现一个简化划分或放置算法，并与 OpenROAD 报告中的拥塞和时序现象对照。
+
+  - competency_id: C-ENG-01
+    role: primary
+    title: The Missing Semester — The Shell
+    instructor: Anish Athalye, Jon Gjengset and Jose Javier Gonzalez Ortiz
+    institution: Massachusetts Institute of Technology
+    platform: MIT Missing Semester
+    url: "https://missing.csail.mit.edu/2020/course-shell/"
+    section: "Lecture 1: shell navigation, streams, pipes, permissions, processes and shell scripting"
+    language: English
+    subtitles: English transcript
+    duration_hours: 1.0
+    score: 90
+    score_breakdown: {fit: 29, authority: 20, depth: 16, practice: 14, access: 7, presentation: 4}
+    reason: 围绕真实命令行工作流讲解并附可执行练习，学习后即可整理 IC 工具链和批处理脚本。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、文字讲义、命令示例、参考链接和逐项练习。
+    exercises: 完成页面全部 exercises，并写一个批量运行仿真、收集日志和生成摘要的 shell 脚本。
+
+  - competency_id: C-ENG-01
+    role: backup
+    title: The Missing Semester — Version Control (Git)
+    instructor: Anish Athalye, Jon Gjengset and Jose Javier Gonzalez Ortiz
+    institution: Massachusetts Institute of Technology
+    platform: MIT Missing Semester
+    url: "https://missing.csail.mit.edu/2020/version-control/"
+    section: "Lecture 6: Git data model, staging, branches, remotes, merging, rebasing and recovery"
+    language: English
+    subtitles: English transcript
+    duration_hours: 1.0
+    score: 86
+    score_breakdown: {fit: 28, authority: 20, depth: 15, practice: 13, access: 6, presentation: 4}
+    reason: 从 Git 对象模型解释命令行为，比背命令更容易理解分支、冲突和历史修复。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、文字讲义、图示、命令示例和练习。
+    exercises: 建立功能分支、制造并解决一次冲突，再用 bisect 定位一个刻意加入的错误。
+
+  - competency_id: C-ENG-02
+    role: primary
+    title: Getting Started with LTspice
+    instructor: Analog Devices LTspice applications team
+    institution: Analog Devices
+    platform: Analog Devices Media Center
+    url: "https://www.analog.com/en/resources/media-center/videos/6344562474112.html"
+    section: "Full seminar: schematic capture, component libraries, probing, measurements and transient simulation"
+    language: English
+    subtitles: English
+    duration_hours: 1.0
+    score: 88
+    score_breakdown: {fit: 30, authority: 19, depth: 15, practice: 10, access: 9, presentation: 5}
+    reason: 由 LTspice 开发方演示从原理图到波形的完整操作，入口清晰且避免第三方教程的版本和菜单偏差。
+    checked_at: "2026-08-10"
+    source_kind: official_vendor_training
+    materials: 官方视频、示例/参考设计库和 LTspice 帮助资源。
+    exercises: 建立 RC 与晶体管放大器，分别运行 DC、参数扫描和瞬态分析并保存可复现文件。
+
+  - competency_id: C-ENG-02
+    role: backup
+    title: How to Use LTspice for AC and Noise Analysis
+    instructor: Analog Devices LTspice applications team
+    institution: Analog Devices
+    platform: Analog Devices Media Center
+    url: "https://www.analog.com/en/resources/media-center/videos/video-series/ltspice-ac-noise-analysis-tutorial.html"
+    section: "Video series: AC analysis setup, Bode plots, input/output noise and result interpretation"
+    language: English
+    subtitles: English
+    duration_hours: 0.6
+    score: 80
+    score_breakdown: {fit: 27, authority: 19, depth: 13, practice: 7, access: 9, presentation: 5}
+    reason: 聚焦最容易设置错误的 AC 与噪声分析，可在入门后作为精确补充和排错参考。
+    checked_at: "2026-08-10"
+    source_kind: official_vendor_training
+    materials: 官方分集视频与相关 LTspice 技术资源。
+    exercises: 对同一放大器提取增益带宽、相位裕度、输出噪声和输入等效噪声并解释设置。
+
+  - competency_id: C-ENG-03
+    role: primary
+    title: Introduction to Uncertainty Analysis and Experimentation
+    instructor: S. R. Kale
+    institution: Indian Institute of Technology Delhi
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/112102298"
+    section: "Modules 1–4: experimentation workflow, error classification, uncertainty definitions, instruments and data acquisition"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 11, access: 8, presentation: 4}
+    reason: 按 ASME 与 ISO GUM 思路系统讲实验和不确定度，使测量结果不仅有曲线，也有可信区间和可追溯过程。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分模块视频、示例工作表、课程说明和平台作业。
+    exercises: 为放大器增益带宽实验制作误差预算，传播不确定度并报告重复性、校准和残差。
+
+  - competency_id: C-ENG-03
+    role: backup
+    title: Introduction to Oscilloscopes Webinar
+    instructor: Trevor Smith
+    institution: Tektronix
+    platform: Tektronix official video
+    url: "https://www.tek.com/en/video/webinar/introduction-to-oscilloscopes-webinar"
+    section: "Full webinar: controls, probes, bandwidth, sample rate, triggering and measurement specifications"
+    language: English
+    subtitles: English
+    duration_hours: 0.65
+    score: 81
+    score_breakdown: {fit: 27, authority: 19, depth: 13, practice: 7, access: 10, presentation: 5}
+    reason: 仪器厂商用真实界面集中演示示波器设置和规格，适合第一次进实验室前快速建立操作地图。
+    checked_at: "2026-08-10"
+    source_kind: official_vendor_training
+    materials: 官方 38 分 51 秒视频和相关示波器基础资源。
+    exercises: 测量方波的幅度、周期、上升时间与相位，并记录探头补偿、带宽和触发设置。
+
+  - competency_id: C-ENG-04
+    role: primary
+    title: Literature Searching — Video Guide
+    instructor: LSE Library research support team
+    institution: London School of Economics and Political Science
+    platform: LSE Library
+    url: "https://www.lse.ac.uk/library/research-support/library-resources-guide/literature-searching"
+    section: "Videos 2–4: planning a search, choosing databases, keywords, Boolean logic and citation chaining"
+    language: English
+    subtitles: English
+    duration_hours: 0.5
+    score: 88
+    score_breakdown: {fit: 29, authority: 20, depth: 14, practice: 12, access: 9, presentation: 4}
+    reason: 把问题拆解、数据库选择和检索式迭代分成短视频，能直接转化为可审计的检索记录。
+    checked_at: "2026-08-10"
+    source_kind: official_university_library
+    materials: 九段视频、逐步指南和数据库选择建议。
+    exercises: 围绕一个 IC 问题建立关键词矩阵、三版检索式和前后向引文追踪记录。
+
+  - competency_id: C-ENG-04
+    role: backup
+    title: Literature Searching with Scopus
+    instructor: Albert S. Cook Library instruction team
+    institution: Towson University
+    platform: Towson University Cook Library official YouTube
+    url: "https://youtu.be/Zr2Z5z81b80"
+    section: "Full video (16:00): Scopus topic search, query refinement, filters, records and citation navigation"
+    language: English
+    subtitles: English
+    duration_hours: 0.27
+    score: 79
+    score_breakdown: {fit: 26, authority: 19, depth: 12, practice: 8, access: 10, presentation: 4}
+    reason: 由高校图书馆官方教学资源索引收录，以真实 Scopus 界面完整演示从主题检索到筛选和引文追踪。
+    checked_at: "2026-08-10"
+    source_kind: official_university_library
+    materials: Towson University Cook Library 的 Library Learning Materials 官方索引及公开视频。
+    exercises: 在 Scopus 用同一主题运行两版布尔检索式，保存筛选条件并沿一篇种子论文完成前后向引文追踪。
+
+  - competency_id: C-ENG-05
+    role: primary
+    title: Strategic Communication
+    instructor: MIT Teaching and Learning Laboratory
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/resources/strategic-communication/"
+    section: "Full 18:42 video: audience, context, purpose, credibility, content, structure and style"
+    language: English
+    subtitles: English transcript
+    duration_hours: 0.32
+    score: 89
+    score_breakdown: {fit: 29, authority: 20, depth: 14, practice: 13, access: 8, presentation: 5}
+    reason: 通过三段 MIT 学生演示让学习者暂停评估并修正信息策略，适合技术报告与答辩共同使用。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、完整文字稿、教师指南和互动暂停提示。
+    exercises: 用受众—目的—证据模板重构一页技术摘要和三张演示幻灯片，并接受同伴评审。
+
+  - competency_id: C-ENG-05
+    role: backup
+    title: Teaching Communication in an Engineering Design Project
+    instructor: Michael Short
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/22-033-nuclear-systems-design-project-fall-2011/pages/instructor-insights/teaching-communication/"
+    section: "Instructor insight video: reports, presentations, organization, visual design and team delivery"
+    language: English
+    subtitles: English transcript
+    duration_hours: 0.15
+    score: 79
+    score_breakdown: {fit: 26, authority: 20, depth: 11, practice: 8, access: 10, presentation: 4}
+    reason: 从真实工程设计课说明写作与设计不可分离，适合项目中期用来审查报告和展示是否服务决策。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 视频、文字稿、项目实例、讲义和作业示例链接。
+    exercises: 对照视频为自己的报告做一次结构、图表、术语和团队交接审查。
+
+  - competency_id: C-ENG-06
+    role: primary
+    title: CORES Reproducible Research Lecture Series
+    instructor: Maya Mathur, Jan Voelkel, Percy Liang, Armin Thomas, Mike Frank, Shilaan Alzahawi, John Borghi and Zac Painter
+    institution: Stanford University
+    platform: Stanford Data Science
+    url: "https://datascience.stanford.edu/news/cores-fall-lecture-series-recordings"
+    section: "Recordings 1–8: reproducible data analysis, modeling, manuscripts and sharing research objects"
+    language: English
+    subtitles: English
+    duration_hours: 8.0
+    score: 92
+    score_breakdown: {fit: 30, authority: 20, depth: 18, practice: 14, access: 6, presentation: 4}
+    reason: 每个主题都有概念课和实践课成对出现，覆盖代码、数据、模型、论文和研究对象的完整复现链。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 八场录像及讲者、主题和开放科研背景说明。
+    exercises: 选择一篇公开论文，锁定环境并复现一个核心图表，随后打包代码、数据说明和差异报告。
+
+  - competency_id: C-ENG-06
+    role: backup
+    title: Reproducible Research Essentials
+    instructor: Stanford Research Computing
+    institution: Stanford University
+    platform: Stanford Research Computing
+    url: "https://rcpedia-dev.stanford.edu/blog/2024/02/28/reproducible-research-essentials/"
+    section: "One-hour workshop: project organization, environment capture, version control, data and workflow documentation"
+    language: English
+    subtitles: English
+    duration_hours: 1.0
+    score: 82
+    score_breakdown: {fit: 27, authority: 20, depth: 14, practice: 10, access: 7, presentation: 4}
+    reason: 一小时工作坊配代码和幻灯，可在正式复现前快速建立文件结构、环境和执行记录的最低规范。
+    checked_at: "2026-08-10"
+    source_kind: official_university_training
+    materials: 课程页提供录像、幻灯和示例代码。
+    exercises: 用模板重构一个旧项目，使他人可用单条命令生成主要结果并记录软件版本。
+
+  - competency_id: C-ENG-07
+    role: primary
+    title: Project Management
+    instructor: A. Ramesh
+    institution: Indian Institute of Technology Roorkee
+    platform: NPTEL
+    url: "https://nptel.ac.in/courses/110107430"
+    section: "Weeks 1–8, Lectures 1–40: agile/traditional planning, manager and team roles, stakeholders, conflict, budget, risk, CPM and project control"
+    language: English
+    subtitles: English transcript
+    duration_hours: 20.0
+    score: 89
+    score_breakdown: {fit: 29, authority: 20, depth: 17, practice: 11, access: 8, presentation: 4}
+    reason: 面向各工程专业系统覆盖团队、干系人、计划、预算、风险和控制，可直接转化为毕业项目的协作与验收机制。
+    checked_at: "2026-08-10"
+    source_kind: official_national_course
+    materials: 分周官方视频、课程大纲、作业与案例。
+    exercises: 为 IC 团队项目形成项目章程、WBS、责任矩阵、风险登记册、里程碑和变更控制日志。
+
+  - competency_id: C-ENG-07
+    role: backup
+    title: 18.821 Project Laboratory — Teamwork
+    instructor: Haynes Miller and Susan Ruff
+    institution: Massachusetts Institute of Technology
+    platform: MIT OpenCourseWare
+    url: "https://ocw.mit.edu/courses/18-821-project-laboratory-in-mathematics-spring-2013/pages/teamwork/"
+    section: "Teamwork workshop videos: expectations, listening, task allocation, feedback and team health"
+    language: English
+    subtitles: English transcript
+    duration_hours: 0.5
+    score: 82
+    score_breakdown: {fit: 26, authority: 20, depth: 13, practice: 10, access: 9, presentation: 4}
+    reason: 短工作坊强调可观察的协作行为和反思，适合项目启动会或团队出现失速时集体观看。
+    checked_at: "2026-08-10"
+    source_kind: official_university_course
+    materials: 多段视频、文字说明和团队练习提示。
+    exercises: 团队完成一次期望对齐与匿名健康检查，并把行动项写入项目看板。
+
+  - competency_id: C-ENG-08
+    role: primary
+    title: Professional Ethics in Engineering
+    instructor: Michael C. Loui
+    institution: Online Ethics Center at University of Virginia
+    platform: University of Virginia Online Ethics Center YouTube
+    url: "https://www.youtube.com/playlist?list=PLdHmP-EKPCRD3-mFYjOjapYPYSnbBpFRV"
+    section: "Parts 1–7: professionalism, responsibility, conflicts, confidentiality, decisions, codes and research ethics"
+    language: English
+    subtitles: English
+    duration_hours: 1.5
+    score: 91
+    score_breakdown: {fit: 30, authority: 20, depth: 17, practice: 14, access: 6, presentation: 4}
+    reason: 由大学伦理中心发布的完整分集课程，用案例和职业规范覆盖工程决策与研究诚信的核心情境。
+    checked_at: "2026-08-10"
+    source_kind: official_university_center
+    materials: 七部分视频、案例文本、讨论问题和伦理规范链接。
+    exercises: 对一个芯片安全或数据隐私案例做利益相关者分析，并以职业规范论证行动方案。
+
+  - competency_id: C-ENG-08
+    role: backup
+    title: DL-001 Primer on Intellectual Property
+    instructor: WIPO Academy faculty
+    institution: World Intellectual Property Organization
+    platform: WIPO eLearning Center
+    url: "https://www.wipo.int/en/web/wipo-academy/programs/ip-elearning/index"
+    section: "DL-001（3 小时）：版权与相关权、商标、专利、地理标志、工业品外观设计、植物新品种、不正当竞争、执法与新兴议题"
+    language: English
+    subtitles: English
+    duration_hours: 3.0
+    score: 84
+    score_breakdown: {fit: 27, authority: 20, depth: 16, practice: 8, access: 9, presentation: 4}
+    reason: 由联合国专门机构提供的免费多媒体入门课，能建立全球通用的 IP 分类和基本权利边界。
+    checked_at: "2026-08-10"
+    source_kind: official_international_organization
+    materials: WIPO Academy 免费自学多媒体课程、术语解释和自测；官方目录列明范围和 3 小时学时。
+    exercises: 为团队项目列出代码、版图、文档、数据和发明点的权利类型、许可与披露风险。
