@@ -13418,9 +13418,9 @@
 <div class="highlight"><pre><span></span><code><span class="c"># 设置 PowerShell 执行策略</span>
 <span class="nb">Set-ExecutionPolicy</span> <span class="n">-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 <span class="c"># 下载安装脚本</span>
-<span class="nb">irm </span><span class="n">get</span><span class="p">.</span><span class="n">scoop</span><span class="p">.</span><span class="n">sh</span> <span class="n">-outfile</span> <span class="s1">&#39;install.ps1&#39;</span>
+<span class="nb">irm </span><span class="n">get</span><span class="p">.</span><span class="n">scoop</span><span class="p">.</span><span class="n">sh</span> <span class="n">-outfile</span> <span class="s1">'install.ps1'</span>
 <span class="c"># 执行安装, --ScoopDir 参数指定 Scoop 安装路径</span>
-<span class="p">.\</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ScoopDir</span> <span class="s1">&#39;C:\Scoop&#39;</span>
+<span class="p">.\</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ScoopDir</span> <span class="s1">'C:\Scoop'</span>
 </code></pre></div>
 <h2 id="scoop_3">使用 Scoop</h2>
 <p>Scoop 的官方文档对于新手非常友好，相对于在此处赘述更推荐阅读 <a href="https://github.com/ScoopInstaller/Scoop">官方文档</a> 或 <a href="https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start">快速入门</a> 。</p>
