@@ -11,10 +11,11 @@
 - 任课教师：陈建利
 - 课程难度：🌟🌟🌟🌟
 
-系统讲授VLSI设计的全流程（Partitioning、Floorplaning、Placement、Routing）的数学建模、计算难点、启发算法（Kernighan-Lin 、 Fiduccia-Mattheyses 、 BSG 、 模拟退火 、 迷宫算法 、 A* 、 Steiner 树）。无实验和上机的教学安排，但要求学生结合本专业的特点和所研究的课题，选择部分算法自己上机实现。陈老师上课有一点口音，使用全英文PPT，但是没有任何理解障碍。期末论文要求一定的实践和创新。学习结构主要参考《超大规模集成电路物理设计理论与算法，徐宁，洪先龙，清华大学出版社，2009》
+系统讲授VLSI设计的全流程（Partitioning、Floorplanning、Placement、Routing）的数学建模、计算难点、启发算法（Kernighan-Lin、Fiduccia-Mattheyses、BSG、模拟退火、迷宫算法、A*、Steiner 树）。无实验和上机的教学安排，但要求学生结合本专业的特点和所研究的课题，选择部分算法自己上机实现。陈老师上课有一点口音，使用全英文PPT，但是没有任何理解障碍。期末论文要求一定的实践和创新。课程内容主要参考徐宁、洪先龙编著的《超大规模集成电路物理设计理论与算法》。
 
 ## 课程资源
 
-课程教材：《超大规模集成电路物理设计理论与算法》徐宁，洪先龙，清华大学出版社，2009
-《Electronic DesignAutomation: Synthesis, Verification, and Test》Wang, Chang, and Cheng (Ed. ), MorganKaufmann, 2009.
-《Handbook of Algorithms forPhysical Design Automation》Alpert, Mehta, and Sachin, CRC Press, 2009.
+- 课程教材：
+    - 《超大规模集成电路物理设计理论与算法》，徐宁、洪先龙，清华大学出版社，2009
+    - 《Electronic Design Automation: Synthesis, Verification, and Test》，Wang, Chang, and Cheng (Eds.)，Morgan Kaufmann，2009
+    - 《Handbook of Algorithms for Physical Design Automation》，Alpert, Mehta, and Sapatnekar (Eds.)，CRC Press，2009

@@ -153,12 +153,11 @@ graph TD
 </details>
 
 <details markdown>
-<summary>电路（24 个）</summary>
+<summary>电路（22 个）</summary>
 
 - EDA：[复旦：器件模型与SPICE仿真](电路/EDA/FDU_ICSE30002.md)
 - EDA：[复旦：模拟集成电路设计自动化基础](电路/EDA/FDU_ICSE30018.md)
 - EDA：[复旦：数字集成电路设计自动化基础](电路/EDA/FDU_ICSE30019.md)
-- EDA：[复旦：超大规模集成电路物理设计中的数学方法](电路/EDA/FDU_ICSE30026.md)
 - EDA：[复旦：EDA系统软件分析和设计方法学](电路/EDA/FDU_ICSE30028.md)
 - 电路实验：[复旦：模拟与数字电路实验](电路/电路实验/FDU_EST40012.md)
 - 电路实验：[复旦：集成电路实验(上)](电路/电路实验/FDU_ICSE40008.md)
