@@ -314,7 +314,7 @@ graph LR
 
     VLSI 电磁仿真算法 | 混合信号电路仿真 | EDA 数值方法
 
--   **[王彦](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm)** <span class="badge-tsinghua">清华</span> <span class="prof-w"></span>
+-   **[王燕](https://www.sic.tsinghua.edu.cn/en/info/1094/1421.htm)** <span class="badge-tsinghua">清华</span> <span class="prof-w"></span>
 
     器件建模与 EDA | 宽禁带半导体器件 | 毫米波电路自动设计
 
